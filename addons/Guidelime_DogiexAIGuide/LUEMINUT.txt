@@ -1,8 +1,11 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v8.2)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v1.0)
 Varavaihtoehto, jos RestedXP ei toimi.
 
 ASENNUS
 1. Asenna Guidelime ja Questie (Forever-versiot). Poista vanhat kansiot Guidelime_OmaReitti (ja aiemmat versiot).
+   Guidelime: https://www.curseforge.com/wow/addons/guidelime
+   Questie: https://www.curseforge.com/wow/addons/questie
+   QuestieDB (erillinen, pakollinen Questielle): https://github.com/Questie/QuestieDB/releases/latest (QuestieDB-Forever.zip)
 2. Kopioi kansio "Guidelime_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
 3. Käynnistä peli. /lime -> oppaat -> "Dogiex's AI Guide: Horde 1-60 (Forever)" -> aloitusalueesi luku
    (esim. "1-9 Durotar (Warlock)"). Näet vain oman luokkasi oppaat.
