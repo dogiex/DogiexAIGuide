@@ -5,9 +5,11 @@ from r3base import blocks_of
 OUTD='/home/claude/work7/parts'; os.makedirs(OUTD,exist_ok=True)
 mode=sys.argv[1] if len(sys.argv)>1 and __name__=='__main__' else None
 VALLEY=(38.0,47.5,55.0,72.5)   # Valley of Trials (Durotar %, QuestieDB): laakso tehdään loppuun ennen muuta Durotaria
+DEATHKNELL=(22.0,37.5,57.0,76.0)   # Deathknell (Tirisfal %)
+NARACHE=(36.0,64.0,70.0,95.0)   # Camp Narache / Red Cloud Mesa (Mulgore %)
 STARTS={'DUROTAR':(['Orc','Troll'],[V('Valley of Trials','DUROTAR',box=VALLEY),V('Durotar','DUROTAR',maxq=8),V('Orgrimmar','ORG',maxq=10),V('Durotar','DUROTAR',maxq=12)]),
- 'TIRISFAL':(['Undead'],[V('Tirisfal','TIRISFAL',maxq=8),V('Undercity','UC',maxq=10),V('Tirisfal','TIRISFAL',maxq=12),V('Silverpine','SILVERPINE',maxq=13)]),
- 'MULGORE':(['Tauren'],[V('Mulgore','MULGORE',maxq=8),V('Thunder Bluff','TB',maxq=10),V('Mulgore','MULGORE',maxq=12)]),
+ 'TIRISFAL':(['Undead'],[V('Deathknell','TIRISFAL',box=DEATHKNELL),V('Tirisfal','TIRISFAL',maxq=8),V('Undercity','UC',maxq=10),V('Tirisfal','TIRISFAL',maxq=12),V('Silverpine','SILVERPINE',maxq=13)]),
+ 'MULGORE':(['Tauren'],[V('Camp Narache','MULGORE',box=NARACHE),V('Mulgore','MULGORE',maxq=8),V('Thunder Bluff','TB',maxq=10),V('Mulgore','MULGORE',maxq=12)]),
  'ZEPHRAS':(['Skyborne'],[V('Zephras Isle','ZEPHRAS',maxq=13)])}
 def pre_main(): return PRE[3:]
 def tagname(c): return '%s (%s)'%(c['title'],CT)

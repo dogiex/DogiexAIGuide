@@ -150,8 +150,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Rogue, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Rogue]
-[N1-10 Tirisfal Glades (Rogue)]
-[NX10-15 Silverpine Forest (Rogue)]
+[N1-6 Tirisfal Glades (Rogue)]
+[NX6-10 Tirisfal Glades (Rogue)]
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
@@ -162,11 +162,7 @@ Guidelime.registerGuide([[
 [G 32.5,65.7 Tirisfal Glades]Puhu: *David Trias* [QT3096 Encrypted Scroll]
 [G 33.0,61.7 Tirisfal Glades]Tapa *Rattlecage Skeleton* [QC3901,1 Rattling the Rattlecages]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT3901 Rattling the Rattlecages]
-[G 33.6,61.1 Tirisfal Glades]Kerää *Duskbat Wing* (Duskbat, Mangy Duskbat) [QC376,2 The Damned]
-[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA8 A Rogue's Deal]
-[G 40.9,54.2 Tirisfal Glades]Puhu: *Deathguard Simmer* [QA365 Fields of Grief]
-[G 35.6,50.3 Tirisfal Glades]Kerää *Tirisfal Pumpkin* (Tirisfal Pumpkin) [QC365,1 Fields of Grief]
-[G 34.3,61.3 Tirisfal Glades]Kerää *Scavenger Paw* (Ragged Scavenger, Young Scavenger) [QC376,1 The Damned]
+[G 33.6,61.1 Tirisfal Glades]Kerää *Duskbat Wing* (Duskbat, Mangy Duskbat); Kerää *Scavenger Paw* (Ragged Scavenger, Young Scavenger) [QC376,2 The Damned] [QC376,1 The Damned]
 [G 30.9,66.0 Tirisfal Glades]Puhu: *Novice Elreth* [QT376 The Damned] [QA6395 Marla's Last Wish]
 [G 31.1,66.4 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QA98389 A Light in the Darkness]
 [G 31.6,65.6 Tirisfal Glades]Puhu: *Deathguard Saltain* [QA3902 Scavenging Deathknell]
@@ -182,7 +178,17 @@ Guidelime.registerGuide([[
 [G 37.5,67.8 Tirisfal Glades]Kerää *Scarlet Armband* (Scarlet Convert, Scarlet Initiate, Meven Korgal) [QC381,1 The Scarlet Crusade]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT381 The Scarlet Crusade] [QA382 The Red Messenger]
 [G 36.6,68.5 Tirisfal Glades]Kerää *Scarlet Crusade Documents* (Meven Korgal) [QC382,1 The Red Messenger]
-[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger] [QA383 Vital Intelligence]
+[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger]
+]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: Horde 1-60 (Forever) - Rogue, aloitus: Undead. Quest-data: QuestieDB.]
+[GA Undead,Rogue]
+[N6-10 Tirisfal Glades (Rogue)]
+[NX10-15 Silverpine Forest (Rogue)]
+[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QA383 Vital Intelligence]
+[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA8 A Rogue's Deal]
+[G 40.9,54.2 Tirisfal Glades]Puhu: *Deathguard Simmer* [QA365 Fields of Grief]
 [G 43.1,54.7 Tirisfal Glades]Puhu: *Gordo* [QA5481 Gordo's Task]
 [G 46.3,55.3 Tirisfal Glades]Kerää *Gloom Weed* (Gloom Weed) [QC5481,1 Gordo's Task]
 [G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
@@ -190,10 +196,9 @@ Guidelime.registerGuide([[
 [G 61.7,52.0 Tirisfal Glades][S Aseta Hearthstone tähän] (*Innkeeper Renee*)
 [G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QA404 A Putrid Task]
 [G 58.5,51.4 Tirisfal Glades]Puhu: *Deathguard Bartholomew* [QA86784 Sticks and Bones]
-[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT365 Fields of Grief] [QA367 A New Plague] [QA407 Fields of Grief]
+[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA367 A New Plague]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT383 Vital Intelligence] [QA427 At War With The Scarlet Crusade]
 [G 61.7,52.0 Tirisfal Glades]Puhu: *Innkeeper Renee* [QT8 A Rogue's Deal]
-[G 62.0,51.3 Tirisfal Glades]Puhu: *Captured Scarlet Zealot* [QT407 Fields of Grief]
 [G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA358 Graverobbers]
 [G 61.8,50.0 Tirisfal Glades][V Myy harmaat roinat] (*Selina Weston*)
 [G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5481 Gordo's Task] [QA5482 Doom Weed]
@@ -202,24 +207,25 @@ Guidelime.registerGuide([[
 [G 53.1,54.0 Tirisfal Glades]Kerää *Putrid Claw* (Rotting Dead, Ravaged Corpse) [QC404,1 A Putrid Task]
 [G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT404 A Putrid Task] [QA426 The Mills Overrun]
 [G 55.9,42.6 Tirisfal Glades]Tapa *Rot Hide Graverobber*; Kerää *Embalming Ichor* (Rot Hide Graverobber, Rot Hide Mongrel, Rot Hide Gnoll); Kerää *Doom Weed* (Doom Weed) [QC358,1 Graverobbers] [QC358,3 Graverobbers] [QC5482,1 Doom Weed]
-[G 61.8,52.0 Tirisfal Glades][T Rogue-trainer (taso 8)] (*Marion Call*): Gouge, Eviscerate r2, Evasion, First Aid, Stealth
 [G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5482 Doom Weed]
 [G 59.0,34.3 Tirisfal Glades]Tapa *Rot Hide Mongrel* [QC358,2 Graverobbers]
+[G 61.8,52.0 Tirisfal Glades][T Rogue-trainer (taso 8)] (*Marion Call*): Gouge, Eviscerate r2, Evasion, First Aid, Stealth
 [G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QT358 Graverobbers] [QA405 The Prodigal Lich]
 [G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA590 A Rogue's Deal]
 [G 38.2,56.8 Tirisfal Glades]Tapa *Calvin Montague*; Defeat Calvin Montague [QC590,1 A Rogue's Deal] [QC590,2 A Rogue's Deal]
 [G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QT590 A Rogue's Deal]
 [G 32.0,46.3 Tirisfal Glades]Puhu: *Bareth Dawnstone* [QA99144 Seeking Refuge]
-[G 32.5,48.0 Tirisfal Glades]Tapa *Scarlet Warrior* [QC427,1 At War With The Scarlet Crusade]
+[G 32.5,48.0 Tirisfal Glades]Tapa *Scarlet Warrior*; Kerää *Tirisfal Pumpkin* (Tirisfal Pumpkin) [QC427,1 At War With The Scarlet Crusade] [QC365,1 Fields of Grief]
 [G 39.0,48.8 Tirisfal Glades]Escort Bareth Dawnstone out of Crusader's Outpost [QC99144,1 Seeking Refuge]
 [G 41.6,44.4 Tirisfal Glades]Kerää *Darkhound Blood* (Cursed Darkhound, Decrepit Darkhound, Ravenous Darkhound) [QC367,1 A New Plague]
 [G 46.8,34.7 Tirisfal Glades]Kerää *Blackened Skull* (Darkeye Bonecaster, Shadowvale Mystic); Kerää *Notched Rib* (Cracked Skull Soldier, Rattlecage Soldier) [QC426,2 The Mills Overrun] [QC426,1 The Mills Overrun]
 [G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT426 The Mills Overrun]
-[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT367 A New Plague]
+[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT365 Fields of Grief] [QT367 A New Plague] [QA407 Fields of Grief]
 [G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT99144 Seeking Refuge]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT427 At War With The Scarlet Crusade]
 [G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QA374 Proof of Demise]
-[G 60.3,52.8 Tirisfal Glades][V Myy harmaat roinat] ja [R korjaa varusteet] (*Eliza Callen*)
+[G 62.0,51.3 Tirisfal Glades]Puhu: *Captured Scarlet Zealot* [QT407 Fields of Grief]
+[G 61.8,52.0 Tirisfal Glades][V Myy harmaat roinat] (*Penny Hawkins*)
 [G 14.2,63.4 Tirisfal Glades]Kerää *Scarlet Insignia Ring* (Tarnished Zealot, Scarlet Zealot, Scarlet Warrior) [QC374,1 Proof of Demise]
 [G 61.8,52.0 Tirisfal Glades][T Rogue-trainer (taso 10)] (*Marion Call*): Evasion, Dual Wield, Sprint, H Swords, Mining, Anti-venom(fa)
 [H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)

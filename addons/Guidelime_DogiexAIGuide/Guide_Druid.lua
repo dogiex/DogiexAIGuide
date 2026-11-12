@@ -6,8 +6,8 @@ if _cls ~= "DRUID" then return end
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Druid, aloitus: Tauren. Quest-data: QuestieDB.]
 [GA Tauren,Druid]
-[N1-10 Mulgore (Druid)]
-[NX10-12 Mulgore, Moonglade (Druid)]
+[N1-6 Mulgore (Druid)]
+[NX6-11 Mulgore (Druid)]
 [OC]Matkusta: *Mulgore*. Thunder Bluffista alas Mulgoreen
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QA747 The Hunt Begins]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA752 A Humble Task]
@@ -18,80 +18,89 @@ Guidelime.registerGuide([[
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QT747 The Hunt Begins] [QA750 The Hunt Continues] [QA3094 Verdant Note]
 [G 44.2,77.0 Mulgore]Puhu: *Brave Windfeather* [QA3376 Break Sharptusk!]
 [G 44.6,76.5 Mulgore]Puhu: *Gart Mistrunner* [QT3094 Verdant Note]
-[G 39.2,81.2 Mulgore]Puhu: *Antur Fallow* [QA1656 A Task Unfinished]
 [G 42.5,90.1 Mulgore]Puhu: *Seer Graytongue* [QT755 Rites of the Earthmother] [QA757 Rite of Strength] [QA95805 Grace of An'she and Mu'sha]
 [G 44.6,76.5 Mulgore][T Druid-trainer (taso 4)] (*Gart Mistrunner*): Rejuvenation, Moonfire
 [G 47.0,88.6 Mulgore]Kerää *Mountain Cougar Pelt* (Mountain Cougar) [QC750,1 The Hunt Continues]
 [G 56.6,88.7 Mulgore]Klikkaa: *Ritual Fire* [QT95805 Grace of An'she and Mu'sha]
 [G 58.6,79.2 Mulgore]Kerää *Bristleback Belt* (Bristleback Quilboar, Bristleback Shaman); Kerää *Chief Sharptusk Thornmantle's Head* (Chief Sharptusk Thornmantle) [QC757,1 Rite of Strength] [QC3376,1 Break Sharptusk!]
-[G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
-[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
-[G 45.9,64.2 Mulgore][S Aseta Hearthstone tähän] (*Innkeeper Kauth*)
-[G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QA749 The Ravaged Caravan]
-[G 48.4,63.7 Mulgore]Puhu: *Krang Stonehoof* [QA99108 Sparring Match]
-[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QA748 Poison Water]
-[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QA745 Sharing the Land] [QA767 Rite of Vision]
-[G 45.9,64.2 Mulgore]Puhu: *Innkeeper Kauth* [QT1656 A Task Unfinished]
-[G 46.5,64.9 Mulgore]Puhu: *Ruul Eagletalon* [QA743 Dangers of the Windfury]
-[G 47.7,62.7 Mulgore]Puhu: *Harken Windtotem* [QA761 Swoop Hunting]
-[G 46.9,61.2 Mulgore]Puhu: *Zarlman Two-Moons* [QT767 Rite of Vision] [QA771 Rite of Vision]
-[G 46.2,60.8 Mulgore]Puhu: *Maur Raincaller* [QA766 Mazzranache]
-[G 45.3,62.2 Mulgore][V Myy harmaat roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
-[G 51.9,53.4 Mulgore]Klikkaa: *Sealed Supply Crate* [QT749 The Ravaged Caravan] [QA751 The Ravaged Caravan]
-[G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QT751 The Ravaged Caravan]
-[G 47.5,63.0 Mulgore][T Druid-trainer (taso 6)] (*Gennia Runetotem*): Thorns, Wrath r2
-[G 58.7,64.9 Mulgore]Kerää *Prairie Wolf Paw* (Prairie Stalker, Prairie Wolf, Prairie Wolf Alpha); Kerää *Prairie Wolf Heart* (Prairie Stalker, Prairie Wolf, Prairie Wolf Alpha) [QC748,1 Poison Water] [QC766,1 Mazzranache]
-[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QA746 Dwarven Digging]
-[G 48.7,63.7 Mulgore]Tapa *Novice Warrior* [QC99108,1 Sparring Match]
-[G 48.4,63.7 Mulgore]Puhu: *Krang Stonehoof* [QT99108 Sparring Match]
-[G 45.6,70.2 Mulgore]Kerää *Ambercorn* (Ambercorn) [QC771,2 Rite of Vision]
-[G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QT757 Rite of Strength]
-[G 44.2,77.0 Mulgore]Puhu: *Brave Windfeather* [QT3376 Break Sharptusk!]
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QT750 The Hunt Continues] [QA780 The Battleboars]
-[G 47.4,80.5 Mulgore]Kerää *Plainstrider Talon* (Elder Plainstrider, Plainstrider, Adult Plainstrider) [QC748,2 Poison Water]
+[G 44.2,77.0 Mulgore]Puhu: *Brave Windfeather* [QT3376 Break Sharptusk!]
+[G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QT757 Rite of Strength]
+[G 44.6,76.5 Mulgore][T Druid-trainer (taso 6)] (*Gart Mistrunner*): Thorns, Wrath r2
 [G 53.8,81.7 Mulgore]Kerää *Battleboar Snout* (Battleboar, Bristleback Battleboar); Kerää *Battleboar Flank* (Battleboar, Bristleback Battleboar) [QC780,1 The Battleboars] [QC780,2 The Battleboars]
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QT780 The Battleboars]
-[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT748 Poison Water] [QA754 Winterhoof Cleansing]
-[G 46.8,64.5 Mulgore][V Myy harmaat roinat] (*Jhawna Oatwind*)
-[G 46.9,59.6 Mulgore]Puhu: *Yaw Sharpmane* [QA96130 Chakuyak]
-[G 33.1,66.0 Mulgore]Puhu: *Perith Stormhoof* [QA98430 The Longwalkers]
-[G 32.7,64.3 Mulgore]Tapa *Palemane Poacher*; Tapa *Palemane Skinner*; Tapa *Palemane Tanner* [QC745,3 Sharing the Land] [QC745,2 Sharing the Land] [QC745,1 Sharing the Land]
-[G 47.5,63.0 Mulgore][T Druid-trainer (taso 8)] (*Gennia Runetotem*): Entangling Roots, Healing Touch r2
-[G 37.2,64.6 Mulgore]Escort Perith Stormhoof out of Palemane Rock; Kerää *Chakuyak's Pelt* (Chakuyak) [QC98430,1 The Longwalkers] [QC96130,1 Chakuyak]
-[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT745 Sharing the Land]
-[G 46.9,59.6 Mulgore]Puhu: *Yaw Sharpmane* [QT96130 Chakuyak]
-[G 44.1,50.8 Mulgore]Kerää *Well Stone* (Well Stone) [QC771,1 Rite of Vision]
-[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
-[G 46.9,61.2 Mulgore]Puhu: *Zarlman Two-Moons* [QT771 Rite of Vision] [QA772 Rite of Vision]
-[G 51.8,68.4 Mulgore]Cleanse the Winterhoof Water Well [QC754,1 Winterhoof Cleansing]
-[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT754 Winterhoof Cleansing] [QA756 Thunderhorn Totem]
-[G 47.1,49.1 Mulgore]Kerää *Stalker Claws* (Prairie Stalker) [QC756,1 Thunderhorn Totem]
-[G 47.3,57.6 Mulgore]Puhu: *Ahab Wheathoof* [QA99411 Kyle's Gone Missing!]
-[G 46.3,62.3 Mulgore]Tapa *Kyle the Frenzied* [QC99411,1 Kyle's Gone Missing!]
-[G 47.3,57.6 Mulgore]Puhu: *Ahab Wheathoof* [QT99411 Kyle's Gone Missing!]
-[G 49.3,46.6 Mulgore]Kerää *Trophy Swoop Quill* (Swoop, Taloned Swoop, Wiry Swoop); Kerää *Swoop Gizzard* (Swoop, Taloned Swoop, Wiry Swoop); Kerää *Cougar Claws* (Flatland Cougar); Kerää *Flatland Cougar Femur* (Flatland Cougar) [QC761,1 Swoop Hunting] [QC766,4 Mazzranache] [QC756,2 Thunderhorn Totem] [QC766,2 Mazzranache]
-[G 34.3,43.3 Mulgore]Puhu: *Seer Wiserunner* [QT772 Rite of Vision]
-[G 33.1,54.8 Mulgore]Kerää *Broken Tools* (Forge) [QC746,1 Dwarven Digging]
-[G 47.5,63.0 Mulgore][T Druid-trainer (taso 10)] (*Gennia Runetotem*): Demoralizing Roar, Rejuvenation r2, Mark of the Wild r2, Moonfire r2
-[O][A First Aid50][G 46.1,64.0 Mulgore]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Vira Younghoof*) [LE First Aid 150]
-[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT746 Dwarven Digging]
-[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT756 Thunderhorn Totem] [QA758 Thunderhorn Cleansing]
-[G 47.5,63.0 Mulgore]Puhu: *Gennia Runetotem* [QA5928 Heeding the Call]
-[G 47.7,62.7 Mulgore]Puhu: *Harken Windtotem* [QT761 Swoop Hunting]
-[G 46.6,62.1 Mulgore][V Myy harmaat roinat] (*Harb Clawhoof*)
-[G 44.2,51.1 Mulgore]Cleanse the Thunderhorn Water Well [QC758,1 Thunderhorn Cleansing]
-[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT758 Thunderhorn Cleansing]
-[G 61.6,72.0 Mulgore]Kerää *Windfury Talon* (Windfury Harpy, Windfury Wind Witch) [QC743,1 Dangers of the Windfury]
-[G 46.5,64.9 Mulgore]Puhu: *Ruul Eagletalon* [QT743 Dangers of the Windfury]
-[G 52.7,33.6 Mulgore]Kerää *Plainstrider Scale* (Elder Plainstrider, Adult Plainstrider) [QC766,3 Mazzranache]
-[O][A Leatherworking50][G 44.9,61.5 Mulgore]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Chaw Stronghide*) [LE Leatherworking 150]
-[G 46.2,60.8 Mulgore]Puhu: *Maur Raincaller* [QT766 Mazzranache]
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Druid, aloitus: Tauren. Quest-data: QuestieDB.]
 [GA Tauren,Druid]
-[N10-12 Mulgore, Moonglade (Druid)]
+[N6-11 Mulgore (Druid)]
+[NX11-12 Mulgore, Moonglade (Druid)]
+[G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA763 Rites of the Earthmother]
+[G 39.2,81.2 Mulgore]Puhu: *Antur Fallow* [QA1656 A Task Unfinished]
+[G 33.1,66.0 Mulgore]Puhu: *Perith Stormhoof* [QA98430 The Longwalkers]
+[G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
+[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
+[G 45.9,64.2 Mulgore][S Aseta Hearthstone tähän] (*Innkeeper Kauth*)
+[G 37.2,64.6 Mulgore]Escort Perith Stormhoof out of Palemane Rock [QC98430,1 The Longwalkers]
+[G 45.9,64.2 Mulgore]Puhu: *Innkeeper Kauth* [QT1656 A Task Unfinished]
+[G 46.5,64.9 Mulgore]Puhu: *Ruul Eagletalon* [QA743 Dangers of the Windfury]
+[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT763 Rites of the Earthmother] [QA745 Sharing the Land] [QA746 Dwarven Digging] [QA767 Rite of Vision]
+[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QA748 Poison Water]
+[G 48.4,63.7 Mulgore]Puhu: *Krang Stonehoof* [QA99108 Sparring Match]
+[G 47.7,62.7 Mulgore]Puhu: *Harken Windtotem* [QA761 Swoop Hunting]
+[G 46.9,61.2 Mulgore]Puhu: *Zarlman Two-Moons* [QT767 Rite of Vision] [QA771 Rite of Vision]
+[G 46.2,60.8 Mulgore]Puhu: *Maur Raincaller* [QA766 Mazzranache]
+[G 46.9,59.6 Mulgore]Puhu: *Yaw Sharpmane* [QA96130 Chakuyak]
+[G 46.7,59.1 Mulgore][V Myy harmaat roinat] (*Harn Longcast*)
+[G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QA749 The Ravaged Caravan]
+[G 58.7,64.9 Mulgore]Kerää *Prairie Wolf Paw* (Prairie Stalker, Prairie Wolf, Prairie Wolf Alpha); Kerää *Prairie Wolf Heart* (Prairie Stalker, Prairie Wolf, Prairie Wolf Alpha) [QC748,1 Poison Water] [QC766,1 Mazzranache]
+[G 51.9,53.4 Mulgore]Klikkaa: *Sealed Supply Crate* [QT749 The Ravaged Caravan] [QA751 The Ravaged Caravan]
+[G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QT751 The Ravaged Caravan]
+[G 48.7,63.7 Mulgore]Tapa *Novice Warrior* [QC99108,1 Sparring Match]
+[G 48.4,63.7 Mulgore]Puhu: *Krang Stonehoof* [QT99108 Sparring Match]
+[G 45.6,70.2 Mulgore]Kerää *Ambercorn* (Ambercorn) [QC771,2 Rite of Vision]
+[G 39.5,66.2 Mulgore]Kerää *Chakuyak's Pelt* (Chakuyak) [QC96130,1 Chakuyak]
+[G 47.5,63.0 Mulgore][T Druid-trainer (taso 8)] (*Gennia Runetotem*): Entangling Roots, Healing Touch r2
+[G 46.9,59.6 Mulgore]Puhu: *Yaw Sharpmane* [QT96130 Chakuyak]
+[G 44.1,50.8 Mulgore]Kerää *Well Stone* (Well Stone) [QC771,1 Rite of Vision]
+[G 46.9,61.2 Mulgore]Puhu: *Zarlman Two-Moons* [QT771 Rite of Vision] [QA772 Rite of Vision]
+[G 35.4,64.7 Mulgore]Tapa *Palemane Tanner*; Tapa *Palemane Skinner*; Tapa *Palemane Poacher* [QC745,1 Sharing the Land] [QC745,2 Sharing the Land] [QC745,3 Sharing the Land]
+[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT745 Sharing the Land]
+[G 46.8,64.5 Mulgore][V Myy harmaat roinat] (*Jhawna Oatwind*)
+[G 33.1,54.8 Mulgore]Kerää *Broken Tools* (Forge) [QC746,1 Dwarven Digging]
+[G 34.3,43.3 Mulgore]Puhu: *Seer Wiserunner* [QT772 Rite of Vision]
+[G 49.3,46.6 Mulgore]Kerää *Trophy Swoop Quill* (Swoop, Taloned Swoop, Wiry Swoop); Kerää *Swoop Gizzard* (Swoop, Taloned Swoop, Wiry Swoop); Kerää *Flatland Cougar Femur* (Flatland Cougar) [QC761,1 Swoop Hunting] [QC766,4 Mazzranache] [QC766,2 Mazzranache]
+[G 47.3,57.6 Mulgore]Puhu: *Ahab Wheathoof* [QA99411 Kyle's Gone Missing!]
+[G 47.7,62.7 Mulgore]Puhu: *Harken Windtotem* [QT761 Swoop Hunting]
+[G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT746 Dwarven Digging]
+[G 46.3,62.3 Mulgore]Tapa *Kyle the Frenzied* [QC99411,1 Kyle's Gone Missing!]
+[G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
+[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
+[G 47.3,57.6 Mulgore]Puhu: *Ahab Wheathoof* [QT99411 Kyle's Gone Missing!]
+[G 61.6,72.0 Mulgore]Kerää *Windfury Talon* (Windfury Harpy, Windfury Wind Witch) [QC743,1 Dangers of the Windfury]
+[G 47.5,63.0 Mulgore][T Druid-trainer (taso 10)] (*Gennia Runetotem*): Demoralizing Roar, Rejuvenation r2, Mark of the Wild r2, Moonfire r2
+[O][A First Aid50][G 46.1,64.0 Mulgore]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Vira Younghoof*) [LE First Aid 150]
+[G 46.5,64.9 Mulgore]Puhu: *Ruul Eagletalon* [QT743 Dangers of the Windfury]
+[G 47.5,63.0 Mulgore]Puhu: *Gennia Runetotem* [QA5928 Heeding the Call]
+[G 46.6,62.1 Mulgore][V Myy harmaat roinat] (*Harb Clawhoof*)
+[G 47.4,80.5 Mulgore]Kerää *Plainstrider Talon* (Elder Plainstrider, Plainstrider, Adult Plainstrider) [QC748,2 Poison Water]
+[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT748 Poison Water] [QA754 Winterhoof Cleansing]
+[G 51.8,68.4 Mulgore]Cleanse the Winterhoof Water Well [QC754,1 Winterhoof Cleansing]
+[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT754 Winterhoof Cleansing] [QA756 Thunderhorn Totem]
+[G 47.1,49.1 Mulgore]Kerää *Stalker Claws* (Prairie Stalker); Kerää *Cougar Claws* (Flatland Cougar) [QC756,1 Thunderhorn Totem] [QC756,2 Thunderhorn Totem]
+[G 52.7,33.6 Mulgore]Kerää *Plainstrider Scale* (Elder Plainstrider, Adult Plainstrider) [QC766,3 Mazzranache]
+[O][A Leatherworking50][G 44.9,61.5 Mulgore]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Chaw Stronghide*) [LE Leatherworking 150]
+[G 46.2,60.8 Mulgore]Puhu: *Maur Raincaller* [QT766 Mazzranache]
+[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT756 Thunderhorn Totem] [QA758 Thunderhorn Cleansing]
+[G 44.2,51.1 Mulgore]Cleanse the Thunderhorn Water Well [QC758,1 Thunderhorn Cleansing]
+[G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT758 Thunderhorn Cleansing]
+]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: Horde 1-60 (Forever) - Druid, aloitus: Tauren. Quest-data: QuestieDB.]
+[GA Tauren,Druid]
+[N11-12 Mulgore, Moonglade (Druid)]
 [NX12-14 Moonglade, Barrens (Druid)]
 [OC]Matkusta: *Thunder Bluff*. Lennä Thunder Bluffiin
 [O][A Skinning1][G 44.4,44.7 Thunder Bluff]Ammattitehtävä (Skinning 1+): puhu *Veren Tallstrider* [QA768 Gathering Leather] Tavoite: Bring 12 pieces of Light Leather to Veren Tallstrider in Thunder Bluff.
@@ -119,19 +128,19 @@ Guidelime.registerGuide([[
 [G 47.0,49.8 Thunder Bluff][P Thunder Bluff]Hae flight path (*Tal*)
 [G 38.0,55.9 Thunder Bluff]Puhu: *Eylah Sunhorn* [QA97485 Traditions of the Bluff]
 [G 39.8,55.6 Thunder Bluff][V Myy harmaat roinat] ja [R korjaa varusteet] (*Taur Stonehoof*)
+[G 53.0,87.8 Thunder Bluff]Käytä / kerää: *Incense Burner* [QC97485,2 Traditions of the Bluff]
 [O][A Skinning1][G 44.4,44.7 Thunder Bluff]Ammattitehtävä: palauta *Veren Tallstrider* [QT768 Gathering Leather] (jos tavoite valmis)
 [O][A Leatherworking10][G 44.4,44.7 Thunder Bluff]Ammattitehtävä: palauta *Veren Tallstrider* [QT769 Kodo Hide Bag] (jos tavoite valmis)
-[G 53.0,87.8 Thunder Bluff]Käytä / kerää: *Incense Burner* [QC97485,2 Traditions of the Bluff]
 [G 38.0,55.9 Thunder Bluff]Puhu: *Eylah Sunhorn* [QT97485 Traditions of the Bluff]
 [G 39.8,55.6 Thunder Bluff][V Myy harmaat roinat] ja [R korjaa varusteet] (*Taur Stonehoof*)
 [H Hearthstone: Innkeeper Kauth] (jos cooldownilla, juokse tai lennä)
-[G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
-[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
 [G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QA759 Wildmane Totem]
 [G 46.7,63.8 Mulgore]Puhu: *Brave Wildrunner* [QA99079 Longwalker Malah]
 [G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QA764 The Venture Co.] [QA765 Supervisor Fizsprocket]
 [G 57.6,63.2 Mulgore]Puhu: *Malah Longwind* [QT99079 Longwalker Malah] [QA99081 Grim Tidings]
 [G 60.7,65.1 Mulgore]Kerää *Prairie Alpha Tooth* (Prairie Wolf Alpha) [QC759,1 Wildmane Totem]
+[G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
+[G 45.9,64.2 Mulgore][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Kauth*)
 [G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT759 Wildmane Totem] [QA760 Wildmane Cleansing]
 [G 46.7,63.8 Mulgore]Puhu: *Brave Wildrunner* [QT99081 Grim Tidings] [QA99101 Our Ancient Enemy]
 [G 46.7,63.4 Mulgore]Puhu: *Baine Bloodhoof* [QT99101 Our Ancient Enemy] [QA99080 Drive Them Out]
@@ -147,7 +156,6 @@ Guidelime.registerGuide([[
 [G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QT764 The Venture Co.] [QT765 Supervisor Fizsprocket]
 [G 42.7,25.0 Mulgore]Cleanse the Wildmane Well [QC760,1 Wildmane Cleansing]
 [G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT760 Wildmane Cleansing]
-[G 46.8,64.5 Mulgore][V Myy harmaat roinat] (*Jhawna Oatwind*)
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
 
 Guidelime.registerGuide([[

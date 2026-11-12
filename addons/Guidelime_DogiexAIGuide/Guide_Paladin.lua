@@ -6,8 +6,8 @@ if _cls ~= "PALADIN" then return end
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Paladin, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Paladin]
-[N1-12 Tirisfal Glades (Paladin)]
-[NX12-16 Durotar, Silverpine Forest (Paladin)]
+[N1-10 Tirisfal Glades (Paladin)]
+[NX10-16 Durotar, Silverpine Forest (Paladin)]
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
@@ -24,37 +24,7 @@ Guidelime.registerGuide([[
 [G 31.1,66.4 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QA91208 Coming to Terms] [QA91209 Continue Your Training]
 [G 27.7,63.8 Tirisfal Glades]Tapa *Frightened Paladin* [QC91208,1 Coming to Terms]
 [G 31.1,66.4 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QT91208 Coming to Terms]
-[G 33.6,61.1 Tirisfal Glades]Kerää *Duskbat Wing* (Duskbat, Mangy Duskbat) [QC376,2 The Damned]
-[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA8 A Rogue's Deal]
-[G 40.9,54.2 Tirisfal Glades]Puhu: *Deathguard Simmer* [QA365 Fields of Grief]
-[G 43.1,54.7 Tirisfal Glades]Puhu: *Gordo* [QA5481 Gordo's Task]
-[G 46.3,55.3 Tirisfal Glades]Kerää *Gloom Weed* (Gloom Weed) [QC5481,1 Gordo's Task]
-[G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
-[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
-[G 61.7,52.0 Tirisfal Glades][S Aseta Hearthstone tähän] (*Innkeeper Renee*)
-[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QA404 A Putrid Task]
-[G 58.5,51.4 Tirisfal Glades]Puhu: *Deathguard Bartholomew* [QA86784 Sticks and Bones]
-[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QA427 At War With The Scarlet Crusade]
-[G 61.7,52.0 Tirisfal Glades]Puhu: *Innkeeper Renee* [QT8 A Rogue's Deal]
-[G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA358 Graverobbers]
-[G 61.8,50.0 Tirisfal Glades][V Myy harmaat roinat] (*Selina Weston*)
-[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5481 Gordo's Task] [QA5482 Doom Weed]
-[G 56.7,53.2 Tirisfal Glades]Kerää *Dry Branch* (Dry Branch) [QC86784,1 Sticks and Bones]
-[G 57.3,55.5 Tirisfal Glades]Puhu: *Eleanor Shackleton* [QT86784 Sticks and Bones]
-[G 60.2,52.7 Tirisfal Glades]Tapa *Shari Stilwell* [QC91209,1 Continue Your Training]
-[G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT91209 Continue Your Training]
-[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 6)] (*Shari Stilwell*): Holy Light R2, Parry, Divine Protection
-[G 53.1,54.0 Tirisfal Glades]Kerää *Putrid Claw* (Rotting Dead, Ravaged Corpse) [QC404,1 A Putrid Task]
-[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT404 A Putrid Task] [QA426 The Mills Overrun]
-[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA367 A New Plague]
-[G 55.9,42.6 Tirisfal Glades]Tapa *Rot Hide Graverobber*; Kerää *Embalming Ichor* (Rot Hide Graverobber, Rot Hide Mongrel, Rot Hide Gnoll); Kerää *Doom Weed* (Doom Weed) [QC358,1 Graverobbers] [QC358,3 Graverobbers] [QC5482,1 Doom Weed]
-[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5482 Doom Weed]
-[G 59.0,34.3 Tirisfal Glades]Tapa *Rot Hide Mongrel* [QC358,2 Graverobbers]
-[G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QT358 Graverobbers] [QA405 The Prodigal Lich]
-[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA590 A Rogue's Deal]
-[G 38.2,56.8 Tirisfal Glades]Tapa *Calvin Montague*; Defeat Calvin Montague [QC590,1 A Rogue's Deal] [QC590,2 A Rogue's Deal]
-[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QT590 A Rogue's Deal]
-[G 34.3,61.3 Tirisfal Glades]Kerää *Scavenger Paw* (Ragged Scavenger, Young Scavenger) [QC376,1 The Damned]
+[G 33.6,61.1 Tirisfal Glades]Kerää *Duskbat Wing* (Duskbat, Mangy Duskbat); Kerää *Scavenger Paw* (Ragged Scavenger, Young Scavenger) [QC376,2 The Damned] [QC376,1 The Damned]
 [G 30.9,66.0 Tirisfal Glades]Puhu: *Novice Elreth* [QT376 The Damned] [QA6395 Marla's Last Wish]
 [G 31.1,66.4 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QA98389 A Light in the Darkness]
 [G 31.6,65.6 Tirisfal Glades]Puhu: *Deathguard Saltain* [QA3902 Scavenging Deathknell]
@@ -64,91 +34,115 @@ Guidelime.registerGuide([[
 [G 32.9,63.9 Tirisfal Glades]Kerää *Scavenged Goods* (Equipment Boxes) [QC3902,1 Scavenging Deathknell]
 [G 31.6,65.6 Tirisfal Glades]Puhu: *Deathguard Saltain* [QT3902 Scavenging Deathknell]
 [G 28.5,57.6 Tirisfal Glades]Tapa *Young Night Web Spider*; Tapa *Webbed Forsaken*, *Forsaken Adventurer* [QC380,1 Night Web's Hollow] [QC98389,1 A Light in the Darkness]
-[G 31.1,66.4 Tirisfal Glades][T Paladin-trainer (taso 8)] (*Aramis Hammerhand*): Hammer of Justice, Purify
+[G 31.1,66.4 Tirisfal Glades][T Paladin-trainer (taso 6)] (*Aramis Hammerhand*): Holy Light R2, Parry, Divine Protection
 [G 24.7,59.7 Tirisfal Glades]Tapa *Night Web Spider* [QC380,2 Night Web's Hollow]
 [G 31.1,66.4 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QT98389 A Light in the Darkness]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT380 Night Web's Hollow] [QA381 The Scarlet Crusade]
 [G 37.5,67.8 Tirisfal Glades]Kerää *Scarlet Armband* (Scarlet Convert, Scarlet Initiate, Meven Korgal) [QC381,1 The Scarlet Crusade]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT381 The Scarlet Crusade] [QA382 The Red Messenger]
 [G 36.6,68.5 Tirisfal Glades]Kerää *Scarlet Crusade Documents* (Meven Korgal) [QC382,1 The Red Messenger]
-[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger] [QA383 Vital Intelligence]
-[G 32.0,46.3 Tirisfal Glades]Puhu: *Bareth Dawnstone* [QA99144 Seeking Refuge]
-[G 32.5,48.0 Tirisfal Glades]Tapa *Scarlet Warrior*; Kerää *Tirisfal Pumpkin* (Tirisfal Pumpkin) [QC427,1 At War With The Scarlet Crusade] [QC365,1 Fields of Grief]
-[G 39.0,48.8 Tirisfal Glades]Escort Bareth Dawnstone out of Crusader's Outpost [QC99144,1 Seeking Refuge]
-[G 41.6,44.4 Tirisfal Glades]Kerää *Darkhound Blood* (Cursed Darkhound, Decrepit Darkhound, Ravenous Darkhound) [QC367,1 A New Plague]
-[G 46.8,34.7 Tirisfal Glades]Kerää *Blackened Skull* (Darkeye Bonecaster, Shadowvale Mystic); Kerää *Notched Rib* (Cracked Skull Soldier, Rattlecage Soldier) [QC426,2 The Mills Overrun] [QC426,1 The Mills Overrun]
+[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger]
+[G 21.9,45.2 Tirisfal Glades]Puhu: *Breton Samuels* [QA91285 Murlocs at the Gates]
+[G 16.8,56.7 Tirisfal Glades]Tapa *Vile Fin Seer*; Tapa *Vile Fin Attacker* [QC91285,2 Murlocs at the Gates] [QC91285,1 Murlocs at the Gates]
+[G 21.9,45.2 Tirisfal Glades]Puhu: *Breton Samuels* [QT91285 Murlocs at the Gates]
+[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 8)] (*Shari Stilwell*): Hammer of Justice, Purify
 [G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
 [G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
-[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT426 The Mills Overrun]
-[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT365 Fields of Grief] [QT367 A New Plague] [QA407 Fields of Grief]
-[G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT99144 Seeking Refuge] [QA91282 A Second Home]
-[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT383 Vital Intelligence] [QT427 At War With The Scarlet Crusade]
-[G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QA374 Proof of Demise]
-[G 62.0,51.3 Tirisfal Glades]Puhu: *Captured Scarlet Zealot* [QT407 Fields of Grief]
-[G 61.8,52.0 Tirisfal Glades][V Myy harmaat roinat] (*Penny Hawkins*)
-[G 22.0,47.2 Tirisfal Glades][T Paladin-trainer (taso 10)] (*Hilda the Breaker*): Lay On Hands, Blessing of Protection, Devotion Aura R2
-[G 21.9,45.2 Tirisfal Glades]Puhu: *Breton Samuels* [QT91282 A Second Home] [QA91285 Murlocs at the Gates]
-[G 16.8,56.7 Tirisfal Glades]Tapa *Vile Fin Seer*; Tapa *Vile Fin Attacker* [QC91285,2 Murlocs at the Gates] [QC91285,1 Murlocs at the Gates]
-[G 14.2,63.4 Tirisfal Glades]Kerää *Scarlet Insignia Ring* (Tarnished Zealot, Scarlet Zealot, Scarlet Warrior) [QC374,1 Proof of Demise]
-[G 21.9,45.2 Tirisfal Glades]Puhu: *Breton Samuels* [QT91285 Murlocs at the Gates] [QA91294 Touring the Grounds]
+[G 61.7,52.0 Tirisfal Glades][S Aseta Hearthstone tähän] (*Innkeeper Renee*)
+[G 60.2,52.7 Tirisfal Glades]Tapa *Shari Stilwell* [QC91209,1 Continue Your Training]
+[G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT91209 Continue Your Training] [QA91282 A Second Home]
+[G 21.9,45.2 Tirisfal Glades]Puhu: *Breton Samuels* [QT91282 A Second Home] [QA91294 Touring the Grounds]
 [G 22.1,44.7 Tirisfal Glades]Tapa *Danitha Morr (elite, ryhmä)*; Tapa *Jorin Croge*; Tapa *Hilda the Breaker* [QC91294,4 Touring the Grounds] [QC91294,2 Touring the Grounds] [QC91294,1 Touring the Grounds]
 [G 25.4,50.4 Tirisfal Glades]Tapa *Ander Solliden* [QC91294,3 Touring the Grounds]
 [G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT91294 Touring the Grounds] [QA91317 The Tarnished]
 [G 22.7,44.7 Tirisfal Glades]Puhu: *Jorin Croge* [QA91316 Making Repairs]
 [G 14.2,63.4 Tirisfal Glades]Tapa *Tarnished Zealot*; Tapa *Tarnished Drudge*; Kerää *Rudolph Gelhardt's Head* (Rudolph Gelhardt); Kerää *Sturdy Lumber* (Lumber Pile) [QC91317,3 The Tarnished] [QC91317,2 The Tarnished] [QC91317,1 The Tarnished] [QC91316,1 Making Repairs]
-[G 22.0,47.2 Tirisfal Glades][T Paladin-trainer (taso 12)] (*Hilda the Breaker*): Seal of Righteousness R2, Blessing of Might R2
-[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT91317 The Tarnished] [QA94427 A Lesson in Divinity] [QA95803 A Token of Good Faith]
+[G 22.0,47.2 Tirisfal Glades][T Paladin-trainer (taso 10)] (*Hilda the Breaker*): Lay On Hands, Blessing of Protection, Devotion Aura R2
+[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT91317 The Tarnished] [QA95803 A Token of Good Faith]
 [G 22.7,44.7 Tirisfal Glades]Puhu: *Jorin Croge* [QT91316 Making Repairs]
-[H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
-[O][A First Aid50][G 61.8,52.8 Tirisfal Glades]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Nurse Neela*) [LE First Aid 150]
-[O][A Cooking50][G 61.8,51.4 Tirisfal Glades]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*William Pickman*) [LE Cooking 150]
-[O][A Alchemy50][G 59.4,52.2 Tirisfal Glades]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Carolai Anise*) [LE Alchemy 150]
-[O][A Enchanting50][G 61.8,51.6 Tirisfal Glades]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Vance Undergloom*) [LE Enchanting 150]
-[G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QT374 Proof of Demise]
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Paladin, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Paladin]
-[N12-16 Durotar, Silverpine Forest (Paladin)]
+[N10-16 Durotar, Silverpine Forest (Paladin)]
 [NX12-14 Barrens (Paladin)]
 [OC]Matkusta: *Undercity*. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+[O][A First Aid50][G 73.2,55.1 Undercity]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Mary Edras*) [LE First Aid 150]
+[O][A Cooking50][G 62.1,44.9 Undercity]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Eunice Burch*) [LE Cooking 150]
 [O][A Fishing50][G 80.7,31.3 Undercity]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Armand Cromwell*) [LE Fishing 150]
 [O][A Mining50][G 56.0,37.5 Undercity]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Brom Killian*) [LE Mining 150]
 [O][A Herbalism50][G 54.0,49.5 Undercity]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Martha Alliestar*) [LE Herbalism 150]
 [O][A Skinning50][G 70.2,59.2 Undercity]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Killian Hagey*) [LE Skinning 150]
+[O][A Alchemy50][G 50.9,74.6 Undercity]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Doctor Marsh*) [LE Alchemy 150]
 [O][A Blacksmithing50][G 61.3,30.6 Undercity]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*James Van Brunt*) [LE Blacksmithing 150]
+[O][A Enchanting50][G 62.5,61.8 Undercity]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Lavinia Crowe*) [LE Enchanting 150]
 [O][A Engineering50][G 75.3,73.1 Undercity]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Graham Van Talen*) [LE Engineering 150]
 [O][A Leatherworking50][G 70.9,58.4 Undercity]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Dan Golthas*) [LE Leatherworking 150]
 [O][A Tailoring50][G 70.0,30.6 Undercity]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Rhiannon Davis*) [LE Tailoring 150]
 [G 58.0,91.8 Undercity]Puhu: *Lady Sylvanas Windrunner* [QT95803 A Token of Good Faith]
+[G 58.3,97.9 Undercity][V Myy harmaat roinat] (*Horde Warbringer*)
+[H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
+[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA8 A Rogue's Deal]
+[G 40.9,54.2 Tirisfal Glades]Puhu: *Deathguard Simmer* [QA365 Fields of Grief]
+[G 43.1,54.7 Tirisfal Glades]Puhu: *Gordo* [QA5481 Gordo's Task]
+[G 46.3,55.3 Tirisfal Glades]Kerää *Gloom Weed* (Gloom Weed) [QC5481,1 Gordo's Task]
+[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QA404 A Putrid Task]
+[G 58.5,51.4 Tirisfal Glades]Puhu: *Deathguard Bartholomew* [QA86784 Sticks and Bones]
+[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA367 A New Plague]
+[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QA427 At War With The Scarlet Crusade]
+[G 61.7,52.0 Tirisfal Glades]Puhu: *Innkeeper Renee* [QT8 A Rogue's Deal]
+[G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA358 Graverobbers]
+[G 61.8,50.0 Tirisfal Glades][V Myy harmaat roinat] (*Selina Weston*)
+[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5481 Gordo's Task] [QA5482 Doom Weed]
+[G 56.7,53.2 Tirisfal Glades]Kerää *Dry Branch* (Dry Branch) [QC86784,1 Sticks and Bones]
+[G 57.3,55.5 Tirisfal Glades]Puhu: *Eleanor Shackleton* [QT86784 Sticks and Bones]
+[G 53.1,54.0 Tirisfal Glades]Kerää *Putrid Claw* (Rotting Dead, Ravaged Corpse) [QC404,1 A Putrid Task]
+[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT404 A Putrid Task] [QA426 The Mills Overrun]
+[G 55.9,42.6 Tirisfal Glades]Tapa *Rot Hide Graverobber*; Kerää *Embalming Ichor* (Rot Hide Graverobber, Rot Hide Mongrel, Rot Hide Gnoll); Kerää *Doom Weed* (Doom Weed) [QC358,1 Graverobbers] [QC358,3 Graverobbers] [QC5482,1 Doom Weed]
+[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5482 Doom Weed]
+[G 59.0,34.3 Tirisfal Glades]Tapa *Rot Hide Mongrel* [QC358,2 Graverobbers]
+[G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QT358 Graverobbers]
+[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
+[G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA405 The Prodigal Lich]
+[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QA590 A Rogue's Deal]
+[G 38.2,56.8 Tirisfal Glades]Tapa *Calvin Montague*; Defeat Calvin Montague [QC590,1 A Rogue's Deal] [QC590,2 A Rogue's Deal]
+[G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QT590 A Rogue's Deal]
+[G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QA383 Vital Intelligence]
+[G 32.0,46.3 Tirisfal Glades]Puhu: *Bareth Dawnstone* [QA99144 Seeking Refuge]
+[G 32.5,48.0 Tirisfal Glades]Tapa *Scarlet Warrior*; Kerää *Tirisfal Pumpkin* (Tirisfal Pumpkin) [QC427,1 At War With The Scarlet Crusade] [QC365,1 Fields of Grief]
+[G 39.0,48.8 Tirisfal Glades]Escort Bareth Dawnstone out of Crusader's Outpost [QC99144,1 Seeking Refuge]
+[G 41.6,44.4 Tirisfal Glades]Kerää *Darkhound Blood* (Cursed Darkhound, Decrepit Darkhound, Ravenous Darkhound) [QC367,1 A New Plague]
+[G 46.8,34.7 Tirisfal Glades]Kerää *Blackened Skull* (Darkeye Bonecaster, Shadowvale Mystic); Kerää *Notched Rib* (Cracked Skull Soldier, Rattlecage Soldier) [QC426,2 The Mills Overrun] [QC426,1 The Mills Overrun]
+[G 58.2,51.5 Tirisfal Glades]Puhu: *Deathguard Dillinger* [QT426 The Mills Overrun]
+[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT365 Fields of Grief] [QT367 A New Plague] [QA407 Fields of Grief]
+[G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT99144 Seeking Refuge]
+[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT383 Vital Intelligence] [QT427 At War With The Scarlet Crusade]
+[G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QA374 Proof of Demise]
+[G 62.0,51.3 Tirisfal Glades]Puhu: *Captured Scarlet Zealot* [QT407 Fields of Grief]
+[G 61.8,52.0 Tirisfal Glades][V Myy harmaat roinat] (*Penny Hawkins*)
+[G 14.2,63.4 Tirisfal Glades]Kerää *Scarlet Insignia Ring* (Tarnished Zealot, Scarlet Zealot, Scarlet Warrior) [QC374,1 Proof of Demise]
+[G 22.0,47.2 Tirisfal Glades][T Paladin-trainer (taso 12)] (*Hilda the Breaker*): Seal of Righteousness R2, Blessing of Might R2
+[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QA94427 A Lesson in Divinity]
+[H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
+[G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QT374 Proof of Demise]
+[OC]Matkusta: *Undercity*. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+[G 84.1,17.4 Undercity]Puhu: *Bethor Iceshard* [QT405 The Prodigal Lich]
 [G 63.2,48.6 Undercity][P Undercity]Hae flight path (*Michael Garrett*)
 [G 65.5,37.5 Undercity]Puhu: *Tanis Alderwood* [QT94427 A Lesson in Divinity] [QA94434 A Lesson in Divinity]
-[G 84.1,17.4 Undercity]Puhu: *Bethor Iceshard* [QT405 The Prodigal Lich]
-[G 82.8,15.8 Undercity][V Myy harmaat roinat] (*Hannah Akeley*)
-[OC]Matkusta: *Durotar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Orgrimmarin portista ulos Durotariin
-[G 50.8,23.2 Durotar]Kerää *Linen Cloth* (Battered Chest) [QC94434,1 A Lesson in Divinity]
-[OC]Matkusta: *Undercity*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-[G 65.5,37.5 Undercity]Puhu: *Tanis Alderwood* [QT94434 A Lesson in Divinity] [QA94435 A Lesson in Divinity]
 [G 63.8,38.0 Undercity][V Myy harmaat roinat] ja [R korjaa varusteet] (*Lauren Newcomb*)
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
-[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT94435 A Lesson in Divinity] [QA94436 A Lesson in Divinity]
-[G 21.9,44.5 Tirisfal Glades]Puhu: *Deathguard Billmuth* [QT94436 A Lesson in Divinity] [QA94438 A Lesson in Divinity]
-[G 86.7,47.7 Tirisfal Glades]Puhu: *Deathguard Falgan* [QT94438 A Lesson in Divinity] [QA94440 A Lesson in Divinity]
-[G 14.2,63.4 Tirisfal Glades]Kerää *Scarlet Crusade Attack Plans* (Tarnished Zealot, Scarlet Zealot, Scarlet Friar) [QC94440,1 A Lesson in Divinity]
-[G 21.9,44.5 Tirisfal Glades]Puhu: *Deathguard Billmuth* [QT94440 A Lesson in Divinity] [QA94441 A Lesson in Divinity]
-[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT94441 A Lesson in Divinity]
-[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QA99142 Tomb Weed]
-[G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
-[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
-[G 59.4,52.2 Tirisfal Glades]Puhu: *Carolai Anise* [QA95314 That Shadowvale Green Elixir]
-[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA368 A New Plague] [QA445 Delivery to Silverpine Forest]
+[G 61.7,52.3 Tirisfal Glades]Puhu: *Coleman Farthing* [QA354 Deaths in the Family] [QA362 The Haunted Mills]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QA370 At War With The Scarlet Crusade]
 [G 60.7,51.5 Tirisfal Glades]Klikkaa: *Wanted!* [QA398 WANTED: Maggot Eye]
 [G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA359 Forsaken Duties]
-[G 61.7,52.3 Tirisfal Glades]Puhu: *Coleman Farthing* [QA354 Deaths in the Family] [QA362 The Haunted Mills]
+[G 59.4,52.2 Tirisfal Glades]Puhu: *Carolai Anise* [QA95314 That Shadowvale Green Elixir]
+[G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA368 A New Plague] [QA445 Delivery to Silverpine Forest]
 [G 61.5,53.5 Tirisfal Glades]Puhu: *Deathguard Terrence* [QA96895 The Argent Emissary]
+[G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QA99142 Tomb Weed]
 [G 65.4,60.1 Tirisfal Glades]Puhu: *Shelene Rhobart* [QA97558 Hides for the Forsaken]
+[G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
+[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
 [G 65.5,60.2 Tirisfal Glades]Puhu: *Deathguard Linnea* [QT359 Forsaken Duties] [QA356 Rear Guard Patrol] [QA360 Return to the Magistrate]
 [G 65.9,61.1 Tirisfal Glades]Puhu: *Hadric Harlson* [QT96895 The Argent Emissary] [QA96897 The Cult of the Damned] [QA96898 Remnants of War]
 [G 68.2,63.5 Tirisfal Glades]Kerää *Necrotic Crystal Fragment* (Dark Enforcer, Dark Neophyte, Naxxramas Crystal Fragment) [QC96898,1 Remnants of War]
@@ -164,17 +158,15 @@ Guidelime.registerGuide([[
 [G 42.8,32.5 Tirisfal Glades]Kerää *Thurman's Remains* (Thurman Agamand); Kerää *Gregor's Remains* (Gregor Agamand) [QC354,3 Deaths in the Family] [QC354,1 Deaths in the Family]
 [G 58.7,30.8 Tirisfal Glades]Kerää *Maggot Eye's Paw* (Maggot Eye) [QC398,1 WANTED: Maggot Eye]
 [G 67.3,27.5 Tirisfal Glades]Kerää *Vile Fin Murloc Skin* (Vile Fin Muckdweller, Vile Fin Minor Oracle) [QC97558,3 Hides for the Forsaken]
-[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 14)] (*Shari Stilwell*): Blessing of Wisdom, Holy Light R3, Seal of the Crusader r1, Seal of the Crusader r2
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT398 WANTED: Maggot Eye]
 [G 61.7,52.3 Tirisfal Glades]Puhu: *Coleman Farthing* [QT354 Deaths in the Family] [QT362 The Haunted Mills] [QA355 Speak with Sevren]
+[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 14)] (*Shari Stilwell*): Blessing of Wisdom, Holy Light R3, Seal of the Crusader r1, Seal of the Crusader r2
 [G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QT355 Speak with Sevren]
 [G 45.6,59.2 Tirisfal Glades]Kerää *Duskbat Wing Membrane* (Vampiric Duskbat, Greater Duskbat) [QC97558,1 Hides for the Forsaken]
 [G 49.0,66.8 Tirisfal Glades]Tapa *Scarlet Missionary*; Tapa *Captain Perrine*; Tapa *Scarlet Zealot* [QC370,3 At War With The Scarlet Crusade] [QC370,1 At War With The Scarlet Crusade] [QC370,2 At War With The Scarlet Crusade]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT370 At War With The Scarlet Crusade] [QA371 At War With The Scarlet Crusade]
 [G 78.8,56.1 Tirisfal Glades]Tapa *Captain Vachon*; Tapa *Scarlet Friar* [QC371,1 At War With The Scarlet Crusade] [QC371,2 At War With The Scarlet Crusade]
-[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT371 At War With The Scarlet Crusade]
-[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
-[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QA372 At War With The Scarlet Crusade]
+[G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT371 At War With The Scarlet Crusade] [QA372 At War With The Scarlet Crusade]
 [G 60.3,52.8 Tirisfal Glades][V Myy harmaat roinat] ja [R korjaa varusteet] (*Eliza Callen*)
 [G 41.6,44.4 Tirisfal Glades]Kerää *Darkhound Hide* (Cursed Darkhound, Decrepit Darkhound) [QC97558,2 Hides for the Forsaken]
 [G 22.0,44.7 Tirisfal Glades]Puhu: *Leonid Barthalomew the Revered* [QT96899 Bandarion Keep]
@@ -185,10 +177,35 @@ Guidelime.registerGuide([[
 [G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT368 A New Plague] [QA369 A New Plague]
 [G 65.4,60.1 Tirisfal Glades]Puhu: *Shelene Rhobart* [QT97558 Hides for the Forsaken]
 [G 86.6,52.3 Tirisfal Glades]Kerää *Vicious Night Web Spider Venom* (Vicious Night Web Spider) [QC369,1 A New Plague]
+[O][A First Aid50][G 61.8,52.8 Tirisfal Glades]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Nurse Neela*) [LE First Aid 150]
+[O][A Cooking50][G 61.8,51.4 Tirisfal Glades]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*William Pickman*) [LE Cooking 150]
+[O][A Alchemy50][G 59.4,52.2 Tirisfal Glades]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Carolai Anise*) [LE Alchemy 150]
+[O][A Enchanting50][G 61.8,51.6 Tirisfal Glades]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Vance Undergloom*) [LE Enchanting 150]
+[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
 [G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QT369 A New Plague] [QA492 A New Plague]
 [G 61.9,51.4 Tirisfal Glades]Puhu: *Captured Mountaineer* [QT492 A New Plague]
 [G 79.4,25.2 Tirisfal Glades]Tapa *Scarlet Bodyguard*; Tapa *Captain Melrache* [QC372,2 At War With The Scarlet Crusade] [QC372,1 At War With The Scarlet Crusade]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QT372 At War With The Scarlet Crusade]
+[OC]Matkusta: *Durotar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Orgrimmarin portista ulos Durotariin
+[G 50.8,23.2 Durotar]Kerää *Linen Cloth* (Battered Chest) [QC94434,1 A Lesson in Divinity]
+[OC]Matkusta: *Undercity*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+[O][A Fishing50][G 80.7,31.3 Undercity]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Armand Cromwell*) [LE Fishing 150]
+[O][A Mining50][G 56.0,37.5 Undercity]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Brom Killian*) [LE Mining 150]
+[O][A Herbalism50][G 54.0,49.5 Undercity]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Martha Alliestar*) [LE Herbalism 150]
+[O][A Skinning50][G 70.2,59.2 Undercity]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Killian Hagey*) [LE Skinning 150]
+[O][A Blacksmithing50][G 61.3,30.6 Undercity]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*James Van Brunt*) [LE Blacksmithing 150]
+[O][A Engineering50][G 75.3,73.1 Undercity]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Graham Van Talen*) [LE Engineering 150]
+[O][A Leatherworking50][G 70.2,57.4 Undercity]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Arthur Moore*) [LE Leatherworking 150]
+[O][A Tailoring50][G 70.0,30.6 Undercity]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Rhiannon Davis*) [LE Tailoring 150]
+[G 65.5,37.5 Undercity]Puhu: *Tanis Alderwood* [QT94434 A Lesson in Divinity] [QA94435 A Lesson in Divinity]
+[G 63.8,38.0 Undercity][V Myy harmaat roinat] ja [R korjaa varusteet] (*Lauren Newcomb*)
+[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
+[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT94435 A Lesson in Divinity] [QA94436 A Lesson in Divinity]
+[G 21.9,44.5 Tirisfal Glades]Puhu: *Deathguard Billmuth* [QT94436 A Lesson in Divinity] [QA94438 A Lesson in Divinity]
+[G 86.7,47.7 Tirisfal Glades]Puhu: *Deathguard Falgan* [QT94438 A Lesson in Divinity] [QA94440 A Lesson in Divinity]
+[G 14.2,63.4 Tirisfal Glades]Kerää *Scarlet Crusade Attack Plans* (Tarnished Zealot, Scarlet Zealot, Scarlet Friar) [QC94440,1 A Lesson in Divinity]
+[G 21.9,44.5 Tirisfal Glades]Puhu: *Deathguard Billmuth* [QT94440 A Lesson in Divinity] [QA94441 A Lesson in Divinity]
+[G 22.1,44.7 Tirisfal Glades]Puhu: *Danitha Morr* [QT94441 A Lesson in Divinity]
 [OC]Matkusta: *Silverpine Forest*. Undercitystä lounaaseen Silverpine Forestiin
 [G 42.8,40.9 Silverpine Forest]Puhu: *Apothecary Renferrel* [QT445 Delivery to Silverpine Forest]
 [G 43.4,40.9 Silverpine Forest]Puhu: *High Executor Hadrec* [QA428 Lost Deathstalkers]
@@ -210,13 +227,13 @@ Guidelime.registerGuide([[
 [G 44.6,39.1 Silverpine Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Alexandre Lefevre*)
 [G 53.4,12.6 Silverpine Forest]Puhu: *Quinn Yorick* [QT430 Return to Quinn] [QA91920 Wild Eyes]
 [G 78.9,30.6 Silverpine Forest]Kerää *Murloc Eye* (Vile Fin Shredder, Vile Fin Tidecaller) [QC91920,1 Wild Eyes]
-[H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
-[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 16)] (*Shari Stilwell*): Retribution Aura
-[OC]Matkusta: *Silverpine Forest*. Undercitystä lounaaseen Silverpine Forestiin
 [G 43.2,41.3 Silverpine Forest][V Osta vettä (Melon Juice) ja ruokaa, noin 20+20] (*Innkeeper Bates*)
 [G 42.8,40.9 Silverpine Forest]Puhu: *Apothecary Renferrel* [QT91920 Wild Eyes] [QA91921 Return to Quinn (Again)]
 [G 53.4,12.6 Silverpine Forest]Puhu: *Quinn Yorick* [QT91921 Return to Quinn (Again)]
 [G 53.5,13.4 Silverpine Forest]Puhu: *Rane Yorick* [QA425 Ivar the Foul]
+[H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
+[G 60.2,52.7 Tirisfal Glades][T Paladin-trainer (taso 16)] (*Shari Stilwell*): Retribution Aura
+[OC]Matkusta: *Silverpine Forest*. Undercitystä lounaaseen Silverpine Forestiin
 [G 51.5,13.9 Silverpine Forest]Kerää *Ivar's Head* (Ivar the Foul) [QC425,1 Ivar the Foul]
 [G 53.5,13.4 Silverpine Forest]Puhu: *Rane Yorick* [QT425 Ivar the Foul]
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
