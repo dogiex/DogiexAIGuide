@@ -3721,6 +3721,11 @@ step
     .skill leatherworking,225,1,1
     .target Arthur Moore
 step
+    .goto 1458/0,334.02,1287.77
+    >>Puhu: |cRXP_FRIENDLY_Varimathras|r
+    .accept 1048 >>Ota: Into The Scarlet Monastery
+    .target Varimathras
+step
     .goto 1458/0,405.02,1434.35
     >>Puhu: |cRXP_FRIENDLY_Master Apothecary Faranell|r
     .accept 1113 >>Ota: Hearts of Zeal
@@ -3775,14 +3780,27 @@ step
     .goto 1420/0,-699.15,2819.27
     >>|cRXP_WARN_Mene dungeoniin: Scarlet Monastery|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä, olet todennäköisesti healer
+    >>Tapa |cRXP_ENEMY_High Inquisitor Whitemane|r
+    >>Tapa |cRXP_ENEMY_Scarlet Commander Mograine|r
+    >>Tapa |cRXP_ENEMY_Herod|r
+    >>Tapa |cRXP_ENEMY_Houndmaster Loksey|r
     >>Kerää |cRXP_LOOT_Compendium of the Fallen|r (|cRXP_PICK_Compendium of the Fallen|r)
     >>Kerää |cRXP_LOOT_Heart of Zeal|r (|cRXP_ENEMY_Houndmaster Loksey|r, |cRXP_ENEMY_Herod|r, |cRXP_ENEMY_Scarlet Commander Mograine|r)
     >>Kerää |cRXP_LOOT_Fragments of Rok'Alim|r (|cRXP_ENEMY_Rok'Alim the Pounder|r)
+    .complete 1048,1
+    .complete 1048,2
+    .complete 1048,3
+    .complete 1048,4
     .complete 1049,1
     .complete 1113,1
     .complete 1151,1
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,334.02,1287.77
+    >>Puhu: |cRXP_FRIENDLY_Varimathras|r
+    .turnin 1048 >>Palauta: Into The Scarlet Monastery
+    .target Varimathras
 step
     .goto 1458/0,405.02,1434.35
     >>Puhu: |cRXP_FRIENDLY_Master Apothecary Faranell|r
@@ -4491,13 +4509,6 @@ step
     .turnin 604 >>Palauta: The Bloodsail Buccaneers
     .target Fleet Master Seahorn
 step
-    .goto 1434/0,274.55,-14899.65
-    >>Kerää |cRXP_LOOT_Dizzy's Eye|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
-    .complete 576,1
-    .mob Bloodsail Sea Dog
-    .mob Bloodsail Elder Magus
-    .mob Bloodsail Warlock
-step
     .goto 1434/0,506.19,-14448.71
     .fly Undercity >>Lennä: Undercity
     .target Gringer
@@ -4513,7 +4524,9 @@ step
     .zoneskip Stranglethorn Vale
 step
     .goto 1434/0,274.55,-14899.65
+    >>Kerää |cRXP_LOOT_Dizzy's Eye|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
     >>Kerää |cRXP_LOOT_Snuff|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
+    .complete 576,1
     .complete 587,1
     .mob Bloodsail Sea Dog
     .mob Bloodsail Elder Magus
@@ -4524,6 +4537,11 @@ step
     .turnin 587 >>Palauta: Up to Snuff
     .target Deeg
 step
+    .goto 1434/0,459.61,-14431.70
+    >>Puhu: |cRXP_FRIENDLY_Fin Fizracket|r
+    .accept 348 >>Ota: Stranglethorn Fever
+    .target Fin Fizracket
+step
     .goto 1434/0,495.34,-14457.65
     .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
     .target Innkeeper Skindle
@@ -4531,11 +4549,6 @@ step
     .goto 1434/0,495.34,-14457.65
     .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
     .target Innkeeper Skindle
-step
-    .goto 1434/0,459.61,-14431.70
-    >>Puhu: |cRXP_FRIENDLY_Fin Fizracket|r
-    .accept 348 >>Ota: Stranglethorn Fever
-    .target Fin Fizracket
 step
     .goto 1434/0,395.80,-14397.66
     >>Puhu: |cRXP_FRIENDLY_Dizzy One-Eye|r
@@ -4712,14 +4725,14 @@ step
     .turnin 209 >>Palauta: Skullsplitter Tusks
     .target Kebok
 step
-    .goto 1434/0,495.34,-14457.65
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Skindle
-step
     .goto 1434/0,491.51,-14452.97
     >>Puhu: |cRXP_FRIENDLY_Crank Fizzlebub|r
     .turnin 600 >>Palauta: Venture Company Mining
     .target Crank Fizzlebub
+step
+    .goto 1434/0,495.34,-14457.65
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Skindle
 step
     .goto 1434/0,446.85,-14448.71
     >>Puhu: |cRXP_FRIENDLY_"Sea Wolf" MacKinley|r
@@ -5971,6 +5984,11 @@ step
     .accept 2863 >>Ota: Alpha Strike
     .target Hadoken Swiftstrider
 step
+    .goto 1444/1,145.77,-4396.07
+    >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
+    .accept 3063 >>Ota: Vengeance on the Northspring
+    .target Talo Thornhoof
+step
     .goto 1444/1,632.27,-4882.57
     >>Tapa |cRXP_ENEMY_Woodpaw Alpha|r
     .complete 2863,1
@@ -5979,24 +5997,23 @@ step
     .goto 1444/1,236.12,-4335.83
     >>Puhu: |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 2863 >>Palauta: Alpha Strike
-    .accept 2902 >>Ota: Woodpaw Investigation
     .target Hadoken Swiftstrider
-step
-    .goto 1444/1,145.77,-4396.07
-    >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
-    .accept 3063 >>Ota: Vengeance on the Northspring
-    .target Talo Thornhoof
-step
-    .goto 1444/1,465.47,-4956.70
-    >>Klikkaa: |cRXP_PICK_Woodpaw Battle Map|r
-    .turnin 2902 >>Palauta: Woodpaw Investigation
-    .accept 2903 >>Ota: The Battle Plans
 step
     .goto 1444/1,273.65,-4364.56
     .trainer >>|cRXP_WARN_Ammatti: Leatherworking 200+|r. Opettele Artisan Leatherworking (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Hahrana Ironhide|r
     .skill leatherworking,<200,1
     .skill leatherworking,300,1,1
     .target Hahrana Ironhide
+step
+    .goto 1444/1,236.12,-4335.83
+    >>Puhu: |cRXP_FRIENDLY_Hadoken Swiftstrider|r
+    .accept 2902 >>Ota: Woodpaw Investigation
+    .target Hadoken Swiftstrider
+step
+    .goto 1444/1,465.47,-4956.70
+    >>Klikkaa: |cRXP_PICK_Woodpaw Battle Map|r
+    .turnin 2902 >>Palauta: Woodpaw Investigation
+    .accept 2903 >>Ota: The Battle Plans
 step
     .goto 1444/1,236.12,-4335.83
     >>Puhu: |cRXP_FRIENDLY_Hadoken Swiftstrider|r
@@ -6053,6 +6070,10 @@ step
     .turnin 7731 >>Palauta: Stinglasher
     .accept 7732 >>Ota: Zukk'ash Report
     .target Hadoken Swiftstrider
+step
+    .goto 1444/1,249.32,-4339.54
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
+    .target Worb Strongstitch
 step
     .goto 1444/1,1209.12,-4998.40
     >>Tapa |cRXP_ENEMY_Gordunni Mauler|r
@@ -6144,10 +6165,6 @@ step
     .turnin 3063 >>Palauta: Vengeance on the Northspring
     .target Talo Thornhoof
 step
-    .goto 1444/1,155.50,-4371.97
-    .vendor >>Myy harmaat roinat (Bronk)
-    .target Bronk
-step
     .goto 1444/1,1695.62,-3853.97
     >>Kerää |cRXP_LOOT_Rage Scar Yeti Hide|r (|cRXP_ENEMY_Rage Scar Yeti|r, |cRXP_ENEMY_Elder Rage Scar|r, |cRXP_ENEMY_Ferocious Rage Scar|r)
     .complete 7734,1
@@ -6176,6 +6193,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Rok Orhan|r
     .turnin 2980 >>Palauta: The Ogres of Feralas
     .target Rok Orhan
+step
+    .goto 1444/1,155.50,-4371.97
+    .vendor >>Myy harmaat roinat (Bronk)
+    .target Bronk
 step
     .goto 1444/1,197.89,-4422.01
     .fly Orgrimmar >>Lennä: Orgrimmar
@@ -6301,6 +6322,10 @@ step
     .goto 1456/1,-219.80,-1043.65
     .vendor >>Myy harmaat roinat (Lunar Festival Vendor)
     .target Lunar Festival Vendor
+step
+    .goto 1456/1,249.05,-994.04
+    .trainer >>Priest-trainer (taso 48): Power Word, Mana Burn r4, Power Word Shield r8, Prayer of, All The Moneyskips Here, Psychic Scream r3, Mind Vision r2, Shadow Protection r2, Flash Heal r4 ...
+    .target Father Cobb
 step
     .zone The Hinterlands >>Matkusta: The Hinterlands. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Hillsbradin koillisnurkasta (Durnholde Keepin ohi) polkua Hinterlandsiin. Revantusk Village on itärannikolla
 step
@@ -6453,17 +6478,8 @@ step
     .xp 44 >>Tavoitetaso 44 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
     .goto 1425/0,-4720.45,-631.84
-    .fly Undercity >>Lennä: Undercity
-    .target Gorkas
-    .zoneskip Undercity
-step
-    .goto 1458/0,400.60,1768.36
-    .trainer >>Priest-trainer (taso 48): Power Word, Mana Burn r4, Power Word Shield r8, Prayer of, All The Moneyskips Here, Psychic Scream r3, Mind Vision r2, Shadow Protection r2, Flash Heal r4 ...
-    .target Aelthalyste
-step
-    .goto 1458/0,266.39,1567.11
     .fly Booty Bay >>Lennä: Booty Bay
-    .target Michael Garrett
+    .target Gorkas
     .zoneskip Stranglethorn Vale
 step
     .goto 1434/0,378.57,-14377.24
@@ -8874,8 +8890,17 @@ step
     .target Kalaran Windblade
 step
     .goto 1427/0,-1100.28,-6559.19
-    .fly Kargath >>Lennä: Kargath
+    .fly Undercity >>Lennä: Undercity
     .target Grisha
+    .zoneskip Undercity
+step
+    .goto 1458/0,400.60,1768.36
+    .trainer >>Priest-trainer (taso 56): Flash Heal r7, Psychic Scream r4, Renew r9, Shadow Protection r3, Mana Burn r5, Prayer of Shadow Protection Nope
+    .target Aelthalyste
+step
+    .goto 1458/0,266.39,1567.11
+    .fly Kargath >>Lennä: Kargath
+    .target Michael Garrett
     .zoneskip Badlands
 step
     .goto 1418/0,-2151.55,-6673.15
@@ -8907,17 +8932,8 @@ step
     .target Lexlort
 step
     .goto 1418/0,-2178.42,-6632.18
-    .fly Undercity >>Lennä: Undercity
-    .target Gorrik
-    .zoneskip Undercity
-step
-    .goto 1458/0,400.60,1768.36
-    .trainer >>Priest-trainer (taso 56): Flash Heal r7, Psychic Scream r4, Renew r9, Shadow Protection r3, Mana Burn r5, Prayer of Shadow Protection Nope
-    .target Aelthalyste
-step
-    .goto 1458/0,266.39,1567.11
     .fly Flame Crest >>Lennä: Flame Crest
-    .target Michael Garrett
+    .target Gorrik
     .zoneskip Burning Steppes
 step
     .goto 1428/0,-3052.30,-7648.11

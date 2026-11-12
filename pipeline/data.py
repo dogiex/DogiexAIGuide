@@ -29,7 +29,11 @@ def xp_to_level(L):
     v=(8*L+d)*(45+5*L)
     return int(round(v/100.0))*100
 BL=set()
-for m in re.finditer(r'^\s*\[(\d+)\]\s*=\s*([^,]+),', open(R+'/Questie/Database/Corrections/QuestieQuestBlacklist.lua').read(), re.M):
+_bltxt=open(R+'/Questie/Database/Corrections/QuestieQuestBlacklist.lua').read()
+# Vain Foreverissa voimassa olevat taulut: Load() (pääblacklist), AQWarEffortQuests ja InvasionQuests.
+# LoadAutoBlacklistWotlk / LoadAutoBlacklistIsTitanReforged koskevat vain Wotlk- ja Titan-versioita.
+_bltxt=_bltxt.split('function QuestieQuestBlacklist.LoadAutoBlacklistWotlk')[0]
+for m in re.finditer(r'^\s*\[(\d+)\]\s*=\s*([^,]+),', _bltxt, re.M):
     BL.add((int(m.group(1)), m.group(2).strip()))
 BLACK={i for i,v in BL if v=='true' or 'Era' in v}
 TAGS={}

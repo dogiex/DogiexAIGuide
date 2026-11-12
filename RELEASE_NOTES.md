@@ -1,18 +1,15 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) v1.0
+Dogiex's AI Guide: Horde 1-60 (Forever) v1.1
 
-Ensimmäinen julkinen versio.
+Korjaukset:
+- Durotarin aloitus (Guidelime, Orc/Troll): Valley of Trialsin tehtävät tehdään nyt loppuun ennen kuin reitti lähtee laaksosta. Aiemmin reitti lähti Sen'jinin suuntaan jo tasolla 3 ja jätti Galgarin, Sarkothin ja Lazy Peonsin kesken.
+- Questien blacklist luetaan nyt vain Foreverissa voimassa olevista tauluista. Aiemmin mukana olivat myös Wotlk- ja Titan-versioiden automaattiset listat, jotka estivät noin 480 classic-questia, mm. warlockin Vile Familiars ja Piercing the Veil.
+- Tulos: warlockille Vile Familiars (1485, 1499), Piercing the Veil ja Burning Blade Medallion; kaikille luokille mm. Into The Scarlet Monastery ja The Power to Destroy...; Warriorille ja Paladinille Dire Maulin Nostro's Compendium -ketju. Class- ja dungeon-questien kattavuus ei heikentynyt millään luokalla.
+- Pieniä reittisiirtymiä: Hunterin Durotar-aloituksesta jäi pois breadcrumb The Hunter's Path (Taming the Beast -ketju tehdään edelleen, Razor Hillissä), Paladin Rin'ji's Secret ja Warlock Glyphed Oaken Branch pois, Druid Sister Pamela vaihtui Little Pamelaan.
 
-- Kaikki Horde-rodut (Orc, Troll, Undead, Tauren, Skyborne) ja yhdeksän luokkaa, tasot 1-60.
-- RestedXP-versio: tasot 1-22 RestedXP:n ilmaisesta reitistä, 22-60 oma reitti luokittain. Guidelime-versio: kokonaan oma reitti.
-- Dungeonit ja niiden questit pääreitillä, luokan class-questit, trainer-käynnit, lennot, hearthstone, myynti, korjaus ja ostokset.
-- Kaikki 12 ammattia ehdollisina askeleina: trainer-käynnit kun taito on rajalla, ammattitehtävät. Näkyvät vain, jos ammatti on opeteltu.
-- Ei talentti- tai spec-suosituksia.
-- Quest-data: QuestieDB (Forever), commit e19dfdf.
+Quest-data: QuestieDB (Forever), commit e19dfdf. RestedXP-version tasot 1-22 ovat edelleen RestedXP:n ilmaista reittiä.
 
-Vaatimukset ja latauslinkit: katso README. Asennus: pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
-- RestedXP: `RXPGuides_DogiexAIGuide_v1.0.zip`
-- Guidelime: `Guidelime_DogiexAIGuide_v1.0.zip`
-
-Versioinnista: julkaisut v8.1 ja v8.2 olivat kehitysversioita, ja v1.0 on sisällöltään sama kuin v8.2 (lisäksi latauslinkit LUEMINUT-tiedostoissa).
+Asennus: pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v1.1.zip`
+- Guidelime: `Guidelime_DogiexAIGuide_v1.1.zip`
 
 Ei pelitestattu kokonaisuutena.

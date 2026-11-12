@@ -204,6 +204,11 @@ class Sim:
         if not s.prereq_ok(qid): return None
         if len(s.log)>=38: return None
         p=s.plan(qid,vi)
+        bx=v.get('box')
+        if p and bx:
+            # rajattu alue (esim. Valley of Trials): aloitus, tavoitteet ja palautus laatikon sisällä
+            inb=lambda z,pt: z==v['zones'][0] and bx[0]<=pt[0]<=bx[1] and bx[2]<=pt[1]<=bx[3]
+            if not (inb(p['start'][2],p['start'][3]) and inb(p['fin'][2],p['fin'][3]) and all(inb(o['loc'][0],o['loc'][1]) for o in p['obs'])): return None
         if p:
             # objective mobs too high?
             for ob in p['obs']:
