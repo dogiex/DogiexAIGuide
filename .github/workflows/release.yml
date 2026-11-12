@@ -1,0 +1,27 @@
+name: Julkaisu
+# Kun repoon työnnetään tagi vX.Y, tehdään julkaisu ja liitetään molemmat addonit omina zipeinään.
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paketoi addonit
+        run: |
+          cd addons
+          zip -qr "../RXPGuides_DogiexAIGuide_${GITHUB_REF_NAME}.zip" RXPGuides_DogiexAIGuide
+          zip -qr "../Guidelime_DogiexAIGuide_${GITHUB_REF_NAME}.zip" Guidelime_DogiexAIGuide
+      - name: Luo julkaisu
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTES="$(git tag -l --format='%(contents)' "$GITHUB_REF_NAME")"
+          [ -n "$NOTES" ] || NOTES="Dogiex's AI Guide $GITHUB_REF_NAME"
+          gh release create "$GITHUB_REF_NAME" \
+            "RXPGuides_DogiexAIGuide_${GITHUB_REF_NAME}.zip" \
+            "Guidelime_DogiexAIGuide_${GITHUB_REF_NAME}.zip" \
+            --title "$GITHUB_REF_NAME" --notes "$NOTES"
