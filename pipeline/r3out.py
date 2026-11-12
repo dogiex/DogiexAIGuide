@@ -306,8 +306,6 @@ def route(vis,level,done,known_fp,bounds,maxchain=99,final=True):
         c['hi']=ch[i+1]['lo'] if i+1<len(ch) else (60 if final else max(c['lo']+1,s.L))
         if c['hi']==c['lo']: c['hi']+=1
         c['title']=title(c)
-        tips=[k for k in TIPS if k<=c['lo']] if CLASSNAME=='WARLOCK' else []
-        if tips: c['steps'].insert(0,dict(t='note',cls=True,text='Demonology-vinkki (tasot %d+): %s'%(c['lo'],TIPS[max(tips)])))
     assert len({c['title'] for c in ch})==len(ch),[c['title'] for c in ch]
     if final: ch[-1]['steps'].append(dict(t='note',text='Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.'))
     return s,vis,ch

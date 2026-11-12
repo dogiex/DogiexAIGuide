@@ -13,8 +13,6 @@ RXPGuides.RegisterGuide([[
 #next Warlock 26-30 Ashenvale, Stonetalon, Barrens
 
 step
-    +Demonology-vinkki (tasot 22+): Demonology ilman respeciä: Unholy Power 5/5, Demonic Energies 2/2, Fel Vitality 3/3, sitten Improved Sayaad ja Master Summoner. Demonic Brand 3/3 tasoilla 25-27. Voidwalker tankkaa, sinä: Bane of Agony + Immolate + wand, Life Tap manaksi. Tarkista pisteet talenttilaskurista, puu on muuttunut Foreverissa.
-step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4353.57,1844.24
@@ -983,8 +981,6 @@ RXPGuides.RegisterGuide([[
 #next Warlock 30-34 1K Needles, Barrens, Hillsbrad + RFK/Exc. Site
 
 step
-    +Demonology-vinkki (tasot 26+): Demonic Brand 3/3 viimeistään tasolla 27: avaa Searing Painilla (laittaa Brandin), sitten Bane of Agony + Immolate ja wand. Brandin jälkeen Sayaad (succubus/incubus) on hyvä levutuspet.
-step
     .goto 1440/1,1024.72,3362.20
     .vendor >>Myy harmaat roinat (Wik'Tar)
     .target Wik'Tar
@@ -1694,8 +1690,6 @@ RXPGuides.RegisterGuide([[
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 #next Warlock 34-38 1K Needles, Desolace, STV + Gnomer
 
-step
-    +Demonology-vinkki (tasot 30+): Taso 30+: Fel Domination, Demonic Sacrifice ja Soul Link heti kun pisteet riittävät. Soul Linkin kanssa pidä demoni aina elossa.
 step
     .goto 1441/1,-2419.49,-5407.23
     .fly Ratchet >>Lennä: Ratchet
@@ -2573,8 +2567,6 @@ RXPGuides.RegisterGuide([[
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 #next Warlock 38-42 Hillsbrad, Alterac, Arathi + Dalaran/SM/RFD
 
-step
-    +Demonology-vinkki (tasot 34+): Seuraavaksi Demonic Knowledge 3/3 ja Master Demonologist 5/5. Osta trainerilta aina uudet rankit ja demonin grimoiret.
 step
     .goto 1454/1,-4360.44,1848.92
     .trainer >>Warlock-trainer (taso 34): Corruption r4, Create Healthstone r3, Searing Pain r3. Osta myös uudet demonin grimoiret
@@ -3602,8 +3594,6 @@ RXPGuides.RegisterGuide([[
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 #next Warlock 42-46 STV, Swamp, Badlands + Ulda
 
-step
-    +Demonology-vinkki (tasot 38+): Taso 40: Demonic Pact (31 pistettä Demonologyssa) ja Felsteed-mount warlock-trainerilta.
 step
     .xp 33 >>Tavoitetaso 33 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -4714,8 +4704,6 @@ RXPGuides.RegisterGuide([[
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 #next Warlock 46-50 Tanaris, Feralas, Hinterlands
 
-step
-    +Demonology-vinkki (tasot 42+): Demonology on nyt valmis: loput pisteet Afflictioniin (Improved Corruption 5/5, sitten Suppression).
 step
     .xp 37 >>Tavoitetaso 37 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -6087,8 +6075,6 @@ RXPGuides.RegisterGuide([[
 #next Warlock 50-54 Tanaris, Feralas, Azshara + ZF/Mara/ST
 
 step
-    +Demonology-vinkki (tasot 46+): Affliction-pisteet jatkuvat: Suppression, Improved Bane of Agony, Grim Reach. Felhunter on hyvä casteria vastaan.
-step
     .xp 43 >>Tavoitetaso 43 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
     .goto 1446/1,-3779.15,-7045.24
@@ -7144,8 +7130,6 @@ RXPGuides.RegisterGuide([[
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 #next Warlock 54-57 Tanaris, Felwood, Azshara + BRD
 
-step
-    +Demonology-vinkki (tasot 50+): Pidä wand ja spell damage -varusteet ajan tasalla, dungeon-questit (Sunken Temple, BRD) antavat hyviä palkintoja.
 step
     +|cRXP_WARN_Dungeon: Zul'Farrak|r (suositus taso 46+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Tanaris) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -8332,8 +8316,6 @@ RXPGuides.RegisterGuide([[
 #next Warlock 57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat
 
 step
-    +Demonology-vinkki (tasot 54+): Viimeiset tasot: Plaguelands, Winterspring ja Silithus. Tason 60 Dreadsteed-ketju alkaa warlock-trainerilta.
-step
     .xp 51 >>Tavoitetaso 51 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
     .goto 1446/1,-3779.15,-7045.24
@@ -9456,8 +9438,6 @@ RXPGuides.RegisterGuide([[
 #version 7
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
 
-step
-    +Demonology-vinkki (tasot 57+): Viimeiset tasot: Plaguelands, Winterspring ja Silithus. Tason 60 Dreadsteed-ketju alkaa warlock-trainerilta.
 step
     .xp 54 >>Tavoitetaso 54 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step

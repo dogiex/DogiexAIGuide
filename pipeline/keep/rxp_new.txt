@@ -1,4 +1,4 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v8.1)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v8.2)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanhat kansiot RXPGuides_OmaReitti (ja aiemmat versiot).
@@ -15,7 +15,7 @@ SISÄLTÖ
   Mukana dungeonit, luokan class-questit, trainer joka parillisella tasolla, lennot, hearthstone,
   myynti ja korjaus sekä luokan mukaiset ostokset (vesi/ruoka, Hunterille ammukset).
 - Rotukohtaiset questit näkyvät vain sille rodulle. Jo tehdyt questit ohittuvat itsestään.
-- Demonology-vinkit vain warlockille; muille luokille ei spec-vinkkejä.
+- Opas ei sisällä talentti- tai spec-suosituksia.
 - AMMATIT (22-60): kaikki 12 ammattia. Askeleet näkyvät vain, jos olet opetellut ammatin:
   * Trainer-käynti, kun reitti kulkee kaupungin tai kylän läpi, jossa on ammattisi trainer, ja taitosi
     on rajalla (Journeyman 50+, Expert 125+, Artisan 200+). Askel ohittuu itsestään, jos taito on alle

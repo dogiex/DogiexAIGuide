@@ -728,7 +728,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N23-27 Ashenvale, Barrens, Stonetalon (Warlock)]
 [NX27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Warlock)]
-[OC]Demonology-vinkki (tasot 23+): Demonology ilman respeciä: Unholy Power 5/5, Demonic Energies 2/2, Fel Vitality 3/3, sitten Improved Sayaad ja Master Summoner. Demonic Brand 3/3 tasoilla 25-27. Voidwalker tankkaa, sinä: Bane of Agony + Immolate + wand, Life Tap manaksi. Tarkista pisteet talenttilaskurista, puu on muuttunut Foreverissa.
 [OC]Matkusta: *Ashenvale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Lennä Splintertree Postiin (Ashenvale)
 [G 73.2,61.6 Ashenvale][P Splintertree Post]Hae flight path (*Vhulgra*)
 [G 73.8,61.5 Ashenvale]Puhu: *Senani Thunderheart* [QT6382 The Ashenvale Hunt]
@@ -869,7 +868,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Warlock)]
 [NX30-34 Stonetalon, Barrens, Hillsbrad + RFK (Warlock)]
-[OC]Demonology-vinkki (tasot 27+): Demonic Brand 3/3 viimeistään tasolla 27: avaa Searing Painilla (laittaa Brandin), sitten Bane of Agony + Immolate ja wand. Brandin jälkeen Sayaad (succubus/incubus) on hyvä levutuspet.
 [OC]*Dungeon: Shadowfang Keep* (suositus taso 24+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Silverpine Forest) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 60.1,18.6 Hillsbrad Foothills]Lennä (*Zarise*): [F Undercity]
 [OC]Matkusta: *Silverpine Forest*. Undercitystä lounaaseen Silverpine Forestiin
@@ -959,7 +957,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N30-34 Stonetalon, Barrens, Hillsbrad + RFK (Warlock)]
 [NX34-39 Arathi, 1K Needles, Desolace + Exc. Site (Warlock)]
-[OC]Demonology-vinkki (tasot 30+): Taso 30+: Fel Domination, Demonic Sacrifice ja Soul Link heti kun pisteet riittävät. Soul Linkin kanssa pidä demoni aina elossa.
 [G 45.1,59.8 Stonetalon Mountains]Lennä (*Tharm*): [F Crossroads]
 [G 35.3,27.9 The Barrens]Puhu: *Seereth Stonebreak* [QT1062 Goblin Invaders]
 [G 35.2,27.8 The Barrens]Puhu: *Makaba Flathoof* [QT6548 Avenge My Village]
@@ -1180,7 +1177,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N34-39 Arathi, 1K Needles, Desolace + Exc. Site (Warlock)]
 [NX39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Warlock)]
-[OC]Demonology-vinkki (tasot 34+): Seuraavaksi Demonic Knowledge 3/3 ja Master Demonologist 5/5. Osta trainerilta aina uudet rankit ja demonin grimoiret.
 [OC]*Dungeon: Excavation Site* (suositus taso 31+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Wetlands) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 74.8,34.6 Arathi Highlands][V Myy harmaat roinat] (*Tunkk*)
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
@@ -1416,7 +1412,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Warlock)]
 [NX42-46 Dustwallow, STV, Swamp + RFD/Ulda (Warlock)]
-[OC]Demonology-vinkki (tasot 39+): Taso 40: Demonic Pact (31 pistettä Demonologyssa) ja Felsteed-mount warlock-trainerilta.
 [OC]*Dungeon: Gnomeregan* (suositus taso 32+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Dun Morogh) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 28.1,77.6 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Qixdi Goodstitch*)
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
@@ -1590,7 +1585,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N42-46 Dustwallow, STV, Swamp + RFD/Ulda (Warlock)]
 [NX46-50 Badlands, Tanaris, Feralas (Warlock)]
-[OC]Demonology-vinkki (tasot 42+): Demonology on nyt valmis: loput pisteet Afflictioniin (Improved Corruption 5/5, sitten Suppression).
 [G 50.1,68.0 Undercity]Puhu: *Apothecary Zinge* [QA232 Errand for Apothecary Zinge]
 [G 48.8,69.3 Undercity]Puhu: *Master Apothecary Faranell* [QT513 Elixir of Agony]
 [G 58.6,54.7 Undercity]Puhu: *Alessandro Luca* [QT232 Errand for Apothecary Zinge] [QA238 Errand for Apothecary Zinge]
@@ -1856,7 +1850,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N46-50 Badlands, Tanaris, Feralas (Warlock)]
 [NX50-54 Blasted Lands, Searing Gorge, Tanaris + ZF/Mara/ST (Warlock)]
-[OC]Demonology-vinkki (tasot 46+): Affliction-pisteet jatkuvat: Suppression, Improved Bane of Agony, Grim Reach. Felhunter on hyvä casteria vastaan.
 [XP42 Tavoitetaso 42: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 2.9,47.2 Badlands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Sranda*)
 [G 4.0,44.8 Badlands]Lennä (*Gorrik*): [F Undercity]
@@ -2060,7 +2053,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N50-54 Blasted Lands, Searing Gorge, Tanaris + ZF/Mara/ST (Warlock)]
 [NX54-57 Tanaris, Felwood, Azshara + BRD (Warlock)]
-[OC]Demonology-vinkki (tasot 50+): Pidä wand ja spell damage -varusteet ajan tasalla, dungeon-questit (Sunken Temple, BRD) antavat hyviä palkintoja.
 [XP46 Tavoitetaso 46: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Searing Gorge*. Kargathista länteen solan kautta Searing Gorgeen. Thorium Point on pohjoisessa
 [G 65.6,62.2 Searing Gorge]Klikkaa: *Wooden Outhouse* [QA4449 Caught!]
@@ -2344,7 +2336,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Undead,Warlock]
 [N54-57 Tanaris, Felwood, Azshara + BRD (Warlock)]
 [NX57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Warlock)]
-[OC]Demonology-vinkki (tasot 54+): Viimeiset tasot: Plaguelands, Winterspring ja Silithus. Tason 60 Dreadsteed-ketju alkaa warlock-trainerilta.
 [XP51 Tavoitetaso 51: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 51.6,25.4 Tanaris]Lennä (*Bulkrek Ragefist*): [F Bloodvenom Post]
 [G 46.8,83.1 Felwood]Puhu: *Maybess Riverbreeze* [QA4102 Cleansing Felwood]
@@ -2552,7 +2543,6 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
 [GA Orc,Troll,Undead,Warlock]
 [N57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Warlock)]
-[OC]Demonology-vinkki (tasot 57+): Viimeiset tasot: Plaguelands, Winterspring ja Silithus. Tason 60 Dreadsteed-ketju alkaa warlock-trainerilta.
 [XP54 Tavoitetaso 54: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 2.9,47.2 Badlands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Sranda*)
 [OC]Matkusta: *Winterspring*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Felwoodin pohjoispäästä Timbermaw Holdin tunnelin läpi Winterspringiin. Everlook on keskellä
