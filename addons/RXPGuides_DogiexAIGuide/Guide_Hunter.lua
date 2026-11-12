@@ -566,6 +566,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -586,6 +591,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -597,10 +615,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -1022,18 +1036,8 @@ step
     .target Witch Doctor Jin'Zil
 step
     .goto 1442/1,1042.47,968.13
-    .fly Crossroads >>Lennä: Crossroads
-    .target Tharm
-    .zoneskip The Barrens
-step
-    .goto 1413/1,-954.15,-272.49
-    >>Puhu: |cRXP_FRIENDLY_Seereth Stonebreak|r
-    .turnin 1061 >>Palauta: The Spirits of Stonetalon
-    .target Seereth Stonebreak
-step
-    .goto 1413/1,-2595.75,-437.35
     .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Devrak
+    .target Tharm
     .zoneskip Thunder Bluff
 step
     .goto 1456/1,-81.40,-1474.79
@@ -1044,6 +1048,11 @@ step
     .fly Crossroads >>Lennä: Crossroads
     .target Tal
     .zoneskip The Barrens
+step
+    .goto 1413/1,-954.15,-272.49
+    >>Puhu: |cRXP_FRIENDLY_Seereth Stonebreak|r
+    .turnin 1061 >>Palauta: The Spirits of Stonetalon
+    .target Seereth Stonebreak
 step
     .goto 1413/1,-944.02,-265.74
     >>Puhu: |cRXP_FRIENDLY_Makaba Flathoof|r
@@ -4947,6 +4956,10 @@ step
     .complete 1430,1
     .mob Monstrous Crawler
 step
+    .goto 1435/0,-3306.94,-10437.87
+    .trainer >>Hunter-trainer (taso 44): Immolation Trap r4
+    .target Ogromm
+step
     .goto 1435/0,-3336.07,-10474.87
     .trainer >>|cRXP_WARN_Ammatti: Alchemy 200+|r. Opettele Artisan Alchemy (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Rogvar|r
     .skill alchemy,<200,1
@@ -5028,16 +5041,9 @@ step
 step
     .xp 38 >>Tavoitetaso 38 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .hs >>Hearthstone: Innkeeper Thulbek
-    .cooldown item,6948,>0
-step
-    .goto 1434/0,227.97,-12388.84
-    .trainer >>Hunter-trainer (taso 44): Immolation Trap r4
-    .target Kragg
-step
-    .goto 1434/0,144.37,-12417.35
+    .goto 1435/0,-3279.65,-10459.28
     .fly Kargath >>Lennä: Kargath
-    .target Thysta
+    .target Breyk
     .zoneskip Badlands
 step
     .goto 1418/0,-3128.89,-6763.52
@@ -5192,6 +5198,9 @@ step
     .goto 1418/0,-3021.93,-6113.46
     >>Kerää |cRXP_LOOT_Magenta Fungus Cap|r (|cRXP_PICK_Magenta Cap Clusters|r)
     .complete 2202,1
+step
+    .hs >>Hearthstone: Innkeeper Shul'kar
+    .cooldown item,6948,>0
 step
     .goto 1418/0,-2139.36,-6653.41
     >>|cRXP_WARN_Ammattitehtävä (Alchemy 210+)|r: puhu |cRXP_FRIENDLY_Jarkal Mossmeld|r

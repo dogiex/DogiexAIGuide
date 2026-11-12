@@ -595,6 +595,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -615,6 +620,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -626,10 +644,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -663,6 +677,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mastok Wrilehiss|r
     .turnin 25 >>Palauta: Stonetalon Standstill
     .target Mastok Wrilehiss
+step
+    .goto 1440/1,-2566.76,2341.68
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Kaylisk
 step
     .goto 1440/1,-2573.10,2332.07
     >>Puhu: |cRXP_FRIENDLY_Yama Snowhoof|r
@@ -980,18 +998,6 @@ step
     .complete 6461,2
     .mob Deepmoss Venomspitter
 step
-    .goto 1442/1,1030.75,992.22
-    .vendor >>Myy roinat ja korjaa varusteet (Borand)
-    .target Borand
-step
-    .goto 1442/1,927.72,893.56
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Jayka
-step
-    .goto 1442/1,927.72,893.56
-    .home >>Aseta Hearthstone tähän (Innkeeper Jayka)
-    .target Innkeeper Jayka
-step
     .goto 1442/1,931.13,826.15
     >>Puhu: |cRXP_FRIENDLY_Tsunaman|r
     .accept 6393 >>Ota: Elemental War
@@ -1042,6 +1048,18 @@ step
     .mob Bloodfury Slayer
     .mob Rogue Flame Spirit
     .mob Burning Destroyer
+step
+    .goto 1442/1,1030.75,992.22
+    .vendor >>Myy roinat ja korjaa varusteet (Borand)
+    .target Borand
+step
+    .goto 1442/1,927.72,893.56
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Jayka
+step
+    .goto 1442/1,927.72,893.56
+    .home >>Aseta Hearthstone tähän (Innkeeper Jayka)
+    .target Innkeeper Jayka
 step
     .goto 1442/1,940.90,832.67
     >>Puhu: |cRXP_FRIENDLY_Mor'rogal|r
@@ -1156,18 +1174,8 @@ step
     .target Witch Doctor Jin'Zil
 step
     .goto 1442/1,1042.47,968.13
-    .fly Crossroads >>Lennä: Crossroads
-    .target Tharm
-    .zoneskip The Barrens
-step
-    .goto 1413/1,-954.15,-272.49
-    >>Puhu: |cRXP_FRIENDLY_Seereth Stonebreak|r
-    .turnin 1061 >>Palauta: The Spirits of Stonetalon
-    .target Seereth Stonebreak
-step
-    .goto 1413/1,-2595.75,-437.35
     .fly Orgrimmar >>Lennä: Orgrimmar
-    .target Devrak
+    .target Tharm
     .zoneskip Orgrimmar
 step
     .goto 1454/1,-4185.68,1453.24
@@ -1178,6 +1186,11 @@ step
     .fly Crossroads >>Lennä: Crossroads
     .target Doras
     .zoneskip The Barrens
+step
+    .goto 1413/1,-954.15,-272.49
+    >>Puhu: |cRXP_FRIENDLY_Seereth Stonebreak|r
+    .turnin 1061 >>Palauta: The Spirits of Stonetalon
+    .target Seereth Stonebreak
 step
     .goto 1413/1,-944.02,-265.74
     >>Puhu: |cRXP_FRIENDLY_Makaba Flathoof|r
@@ -1211,14 +1224,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Sputtervalve|r
     .turnin 1094 >>Palauta: Further Instructions
     .target Sputtervalve
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Wiley
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .home >>Aseta Hearthstone tähän (Innkeeper Wiley)
-    .target Innkeeper Wiley
 step
     .goto 1413/1,-3690.15,-1022.44
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
@@ -1267,6 +1272,18 @@ step
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .turnin 898 >>Palauta: Free From the Hold
     .target Captain Thalo'thas Brightsun
+step
+    .goto 1413/1,-1949.24,-2374.36
+    .vendor >>Myy roinat ja korjaa varusteet (Sanuye Runetotem)
+    .target Sanuye Runetotem
+step
+    .goto 1413/1,-1995.86,-2376.39
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Byula
+step
+    .goto 1413/1,-1995.86,-2376.39
+    .home >>Aseta Hearthstone tähän (Innkeeper Byula)
+    .target Innkeeper Byula
 step
     .goto 1413/1,-1947.22,-2285.86
     >>Puhu: |cRXP_FRIENDLY_Tatternack Steelforge|r
@@ -1444,6 +1461,16 @@ step
     .fp Freewind Post >>Hae flight path: Freewind Post
     .target Nyse
 step
+    .goto 1441/1,-2408.93,-5401.07
+    >>Puhu: |cRXP_FRIENDLY_Elu|r
+    .accept 4767 >>Ota: Wind Rider
+    .target Elu
+step
+    .goto 1441/1,-2395.73,-5442.13
+    >>Puhu: |cRXP_FRIENDLY_Hagar Lightninghoof|r
+    .accept 4821 >>Ota: Alien Egg
+    .target Hagar Lightninghoof
+step
     .goto 1441/1,-2408.49,-5453.28
     .vendor >>Myy roinat ja korjaa varusteet (Starn)
     .target Starn
@@ -1455,16 +1482,6 @@ step
     .goto 1441/1,-2460.41,-5477.92
     .home >>Aseta Hearthstone tähän (Innkeeper Abeqwa)
     .target Innkeeper Abeqwa
-step
-    .goto 1441/1,-2408.93,-5401.07
-    >>Puhu: |cRXP_FRIENDLY_Elu|r
-    .accept 4767 >>Ota: Wind Rider
-    .target Elu
-step
-    .goto 1441/1,-2395.73,-5442.13
-    >>Puhu: |cRXP_FRIENDLY_Hagar Lightninghoof|r
-    .accept 4821 >>Ota: Alien Egg
-    .target Hagar Lightninghoof
 step
     .goto 1441/1,-2444.13,-5453.87
     >>Puhu: |cRXP_FRIENDLY_Cliffwatcher Longhorn|r
@@ -3064,6 +3081,7 @@ step
     .goto 1434/0,159.69,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Kin'weelay|r
     .turnin 596 >>Palauta: Bloody Bone Necklaces
+    .accept 95748 >>Ota: The Gurubashi Legends of Old
     .target Kin'weelay
 step
     .goto 1434/0,166.07,-12347.15
@@ -3071,11 +3089,6 @@ step
     .turnin 581 >>Palauta: Hunt for Yenniku
     .accept 582 >>Ota: Headhunting
     .target Nimboya
-step
-    .goto 1434/0,159.69,-12347.15
-    >>Puhu: |cRXP_FRIENDLY_Kin'weelay|r
-    .accept 95748 >>Ota: The Gurubashi Legends of Old
-    .target Kin'weelay
 step
     .goto 1434/0,12.92,-12202.51
     >>Tapa |cRXP_ENEMY_Lashtail Raptor|r
@@ -3332,16 +3345,6 @@ step
     .goto 1454/1,-4746.58,2036.28
     >>Puhu: |cRXP_FRIENDLY_Nogg|r
     .turnin 2841 >>Palauta: Rig Wars
-    .target Nogg
-step
-    .goto 1454/1,-4569.29,1849.01
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 200+|r. Opettele Artisan Skinning (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Thuwd|r
-    .skill skinning,<200,1
-    .skill skinning,300,1,1
-    .target Thuwd
-step
-    .goto 1454/1,-4746.58,2036.28
-    >>Puhu: |cRXP_FRIENDLY_Nogg|r
     .turnin 2949 >>Palauta: Return of the Ring
     .target Nogg
 ]])
@@ -3378,6 +3381,11 @@ step
     .skill tailoring,300,1,1
     .target Daryl Stack
 step
+    .goto 1424/0,-955.73,-41.60
+    >>Puhu: |cRXP_FRIENDLY_Krusk|r
+    .accept 503 >>Ota: Gol'dir
+    .target Krusk
+step
     .goto 1424/0,-867.09,-158.51
     .vendor >>Myy roinat ja korjaa varusteet (Ott)
     .target Ott
@@ -3385,11 +3393,6 @@ step
     .goto 1424/0,-942.29,-5.97
     .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
     .target Innkeeper Shay
-step
-    .goto 1424/0,-955.73,-41.60
-    >>Puhu: |cRXP_FRIENDLY_Krusk|r
-    .accept 503 >>Ota: Gol'dir
-    .target Krusk
 step
     .goto 1424/0,-936.53,-39.47
     >>Puhu: |cRXP_FRIENDLY_Melisara|r
@@ -3442,6 +3445,12 @@ step
     .target Zarise
     .zoneskip Undercity
 step
+    .goto 1458/0,200.10,1499.13
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 200+|r. Opettele Artisan Skinning (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
+    .skill skinning,<200,1
+    .skill skinning,300,1,1
+    .target Killian Hagey
+step
     .goto 1458/0,414.90,1408.49
     .trainer >>|cRXP_WARN_Ammatti: Alchemy 200+|r. Opettele Artisan Alchemy (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Doctor Herbert Halsey|r
     .skill alchemy,<200,1
@@ -3470,18 +3479,6 @@ step
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
-    .goto 1424/0,-905.49,-9.39
-    .trainer >>|cRXP_WARN_Ammatti: Alchemy 125+|r. Opettele Expert Alchemy (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Serge Hinott|r
-    .skill alchemy,<125,1
-    .skill alchemy,225,1,1
-    .target Serge Hinott
-step
-    .goto 1424/0,-973.33,-43.52
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Daryl Stack|r
-    .skill tailoring,<125,1
-    .skill tailoring,225,1,1
-    .target Daryl Stack
-step
     .goto 1424/0,-936.53,-39.47
     >>Puhu: |cRXP_FRIENDLY_Melisara|r
     .turnin 96986 >>Palauta: The Grave Knight
@@ -3491,12 +3488,6 @@ step
     .fly Undercity >>Lennä: Undercity
     .target Zarise
     .zoneskip Undercity
-step
-    .goto 1458/0,285.48,1681.88
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_James Van Brunt|r
-    .skill blacksmithing,<125,1
-    .skill blacksmithing,225,1,1
-    .target James Van Brunt
 step
     .goto 1458/0,426.12,1403.63
     >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
@@ -3715,11 +3706,29 @@ step
     .target Urda
     .zoneskip Undercity
 step
+    .goto 1458/0,384.58,1400.68
+    .trainer >>|cRXP_WARN_Ammatti: Alchemy 125+|r. Opettele Expert Alchemy (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Doctor Marsh|r
+    .skill alchemy,<125,1
+    .skill alchemy,225,1,1
+    .target Doctor Marsh
+step
+    .goto 1458/0,285.48,1681.88
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_James Van Brunt|r
+    .skill blacksmithing,<125,1
+    .skill blacksmithing,225,1,1
+    .target James Van Brunt
+step
     .goto 1458/0,199.90,1510.40
     .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
     .skill leatherworking,<125,1
     .skill leatherworking,225,1,1
     .target Arthur Moore
+step
+    .goto 1458/0,201.25,1682.33
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Rhiannon Davis|r
+    .skill tailoring,<125,1
+    .skill tailoring,225,1,1
+    .target Rhiannon Davis
 step
     .goto 1458/0,334.02,1287.77
     >>Puhu: |cRXP_FRIENDLY_Varimathras|r
@@ -4504,11 +4513,6 @@ step
     .complete 604,1
     .mob Bloodsail Swashbuckler
 step
-    .goto 1434/0,485.13,-14444.46
-    >>Puhu: |cRXP_FRIENDLY_Fleet Master Seahorn|r
-    .turnin 604 >>Palauta: The Bloodsail Buccaneers
-    .target Fleet Master Seahorn
-step
     .goto 1434/0,506.19,-14448.71
     .fly Undercity >>Lennä: Undercity
     .target Gringer
@@ -4523,6 +4527,16 @@ step
     .target Michael Garrett
     .zoneskip Stranglethorn Vale
 step
+    .goto 1434/0,485.13,-14444.46
+    >>Puhu: |cRXP_FRIENDLY_Fleet Master Seahorn|r
+    .turnin 604 >>Palauta: The Bloodsail Buccaneers
+    .target Fleet Master Seahorn
+step
+    .goto 1434/0,459.61,-14431.70
+    >>Puhu: |cRXP_FRIENDLY_Fin Fizracket|r
+    .accept 348 >>Ota: Stranglethorn Fever
+    .target Fin Fizracket
+step
     .goto 1434/0,274.55,-14899.65
     >>Kerää |cRXP_LOOT_Dizzy's Eye|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
     >>Kerää |cRXP_LOOT_Snuff|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
@@ -4536,11 +4550,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Deeg|r
     .turnin 587 >>Palauta: Up to Snuff
     .target Deeg
-step
-    .goto 1434/0,459.61,-14431.70
-    >>Puhu: |cRXP_FRIENDLY_Fin Fizracket|r
-    .accept 348 >>Ota: Stranglethorn Fever
-    .target Fin Fizracket
 step
     .goto 1434/0,495.34,-14457.65
     .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20

@@ -1,16 +1,17 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) v1.2
+Dogiex's AI Guide: Horde 1-60 (Forever) v1.3
 
-Korjaukset (Guidelime-version aloitusalueet):
-- Tirisfal Glades (Undead): Deathknellin tehtävät tehdään nyt loppuun ennen kuin reitti lähtee alueelta. Aiemmin reitti kävi tasolla 4 Deathknellin ulkopuolella (Calvin Montague, Deathguard Simmer, kurpitsapellot) ja palasi takaisin.
-- Mulgore (Tauren): Camp Narachen tehtävät (The Hunt Continues, Break Sharptusk!, Rite of Strength) palautetaan nyt ennen Bloodhoof Villageen lähtöä. Aiemmin reitti kävi Bloodhoofissa tasolla 5 ja palasi Camp Narachelle tasolla 7 palauttamaan ne.
-- Mulgore: lisäksi Rites of the Earthmother (763) tulee nyt mukaan.
-- Zephras Isle (Skyborne) ja Durotar (korjattu v1.1): ei muutoksia, reitti pysyy aloitusalueella.
+Korjaus: Questien ehdolliset merkinnät arvioidaan nyt Foreverin arvoilla.
+- Questien korjaustiedostoissa osa merkinnöistä on ehdollisia (esim. "Elite vain TBC:ssä ja sitä uudemmissa"). Opas sovelsi niitä ehdosta riippumatta. Nyt ehdot lasketaan kuten Questie tekee Foreverissa (Expansions.Current = Era).
+- Uusi kaikille luokille: Vorsha the Lasher (Ashenvale), joka oli virheellisesti merkitty eliteksi.
+- Muita: Hunter Report to Helgrum, Druid Lines of Communication.
+- Pieniä reittisiirtymiä: Paladinilta Boulderslide Ravine ja Shamanilta Protect Kaya jäivät pois RestedXP-versiosta.
+- Estolistaan lisättiin 24 Foreverissa ehdollisesti estettyä questia (lähinnä Season of Discoveryn Duskwood-tehtävät); yksikään ei ollut oppaassa.
+- Class- ja dungeon-questien kattavuus ei heikentynyt yhdelläkään luokalla.
 
-RestedXP-versio: vain versionumero muuttui (tasot 1-22 ovat RestedXP:n ilmaista reittiä).
 Quest-data: QuestieDB (Forever), commit e19dfdf.
 
 Asennus: pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
-- RestedXP: `RXPGuides_DogiexAIGuide_v1.2.zip`
-- Guidelime: `Guidelime_DogiexAIGuide_v1.2.zip`
+- RestedXP: `RXPGuides_DogiexAIGuide_v1.3.zip`
+- Guidelime: `Guidelime_DogiexAIGuide_v1.3.zip`
 
 Ei pelitestattu kokonaisuutena.

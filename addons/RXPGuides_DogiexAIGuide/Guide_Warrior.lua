@@ -603,6 +603,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -623,6 +628,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -634,10 +652,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -3800,15 +3814,15 @@ step
     .complete 601,1
     .mob Lesser Water Elemental
 step
-    .goto 1434/0,-389.10,-12006.82
-    >>Kerää |cRXP_LOOT_Snapjaw Crocolisk Skin|r (|cRXP_ENEMY_Snapjaw Crocolisk|r)
-    .complete 577,1
-    .mob Snapjaw Crocolisk
-step
     .goto 1434/0,166.07,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Nimboya|r
     .accept 2932 >>Ota: Grim Message
     .target Nimboya
+step
+    .goto 1434/0,-389.10,-12006.82
+    >>Kerää |cRXP_LOOT_Snapjaw Crocolisk Skin|r (|cRXP_ENEMY_Snapjaw Crocolisk|r)
+    .complete 577,1
+    .mob Snapjaw Crocolisk
 step
     .hs >>Hearthstone: Innkeeper Skindle
     .cooldown item,6948,>0

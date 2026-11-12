@@ -7,10 +7,10 @@ if _cls ~= "WARLOCK" then return end
 RXPGuides.RegisterGuide([[
 #forever
 << Horde Warlock
-#name Warlock 22-26 Durotar, Hillsbrad, Ashenvale + SFK/BFD
+#name Warlock 22-26 Durotar, Hillsbrad, Ashenvale + SFK
 #version 7
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Warlock 26-30 Ashenvale, Stonetalon, Barrens
+#next Warlock 26-30 Ashenvale, Stonetalon, Barrens + BFD
 
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
@@ -628,6 +628,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -648,6 +653,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -659,10 +677,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -714,6 +728,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .turnin 6621 >>Palauta: King of the Foulweald
     .target Karang Amakkar
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Horde Warlock
+#name Warlock 26-30 Ashenvale, Stonetalon, Barrens + BFD
+#version 7
+#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#next Warlock 30-34 1K Needles, Barrens, Hillsbrad + RFK/Exc. Site
+
 step
     +|cRXP_WARN_Dungeon: Blackfathom Deeps|r (suositus taso 25+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -722,8 +746,17 @@ step
     .target Wik'Tar
 step
     .goto 1440/1,994.16,3373.73
-    .fly Camp Taurajo >>Lennä: Camp Taurajo
+    .fly Orgrimmar >>Lennä: Orgrimmar
     .target Andruk
+    .zoneskip Orgrimmar
+step
+    .goto 1454/1,-4353.57,1844.24
+    .trainer >>Warlock-trainer (taso 26): Curse of Tongues, Life Tap r3, Detect Lesser Invisibility, Searing Pain r2. Osta myös uudet demonin grimoiret
+    .target Grol'dar
+step
+    .goto 1454/1,-4313.46,1676.24
+    .fly Camp Taurajo >>Lennä: Camp Taurajo
+    .target Doras
     .zoneskip The Barrens
 step
     .goto 1413/1,-2372.82,-2252.08
@@ -795,17 +828,8 @@ step
     .target Je'neu Sancrea
 step
     .goto 1440/1,994.16,3373.73
-    .fly Orgrimmar >>Lennä: Orgrimmar
-    .target Andruk
-    .zoneskip Orgrimmar
-step
-    .goto 1454/1,-4353.57,1844.24
-    .trainer >>Warlock-trainer (taso 26): Curse of Tongues, Life Tap r3, Detect Lesser Invisibility, Searing Pain r2. Osta myös uudet demonin grimoiret
-    .target Grol'dar
-step
-    .goto 1454/1,-4313.46,1676.24
     .fly Camp Taurajo >>Lennä: Camp Taurajo
-    .target Doras
+    .target Andruk
     .zoneskip The Barrens
 step
     .goto 1413/1,-2372.82,-2252.08
@@ -970,16 +994,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Je'neu Sancrea|r
     .turnin 6565 >>Palauta: Allegiance to the Old Gods
     .target Je'neu Sancrea
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Horde Warlock
-#name Warlock 26-30 Ashenvale, Stonetalon, Barrens
-#version 7
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Warlock 30-34 1K Needles, Barrens, Hillsbrad + RFK/Exc. Site
-
 step
     .goto 1440/1,1024.72,3362.20
     .vendor >>Myy harmaat roinat (Wik'Tar)
@@ -2941,20 +2955,15 @@ step
     .complete 5581,1
     .mob Demon Portal Guardian
 step
-    .goto 1443/1,3073.41,-1592.50
-    >>Puhu: |cRXP_FRIENDLY_Taiga Wisemane|r
-    .turnin 5581 >>Palauta: Portals of the Legion
-    .target Taiga Wisemane
+    .goto 1443/1,2084.32,-1400.63
+    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
+    .accept 6134 >>Ota: Ghost-o-plasm Round Up
+    .target Hornizz Brimbuzzle
 step
     .goto 1443/1,2704.75,-1151.80
     >>Puhu: |cRXP_FRIENDLY_Melizza Brimbuzzle|r
     .accept 6132 >>Ota: Get Me Out of Here!
     .target Melizza Brimbuzzle
-step
-    .goto 1443/1,2084.32,-1400.63
-    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
-    .accept 6134 >>Ota: Ghost-o-plasm Round Up
-    .target Hornizz Brimbuzzle
 step
     .goto 1443/1,2430.50,-1394.63
     >>Melizza Brimbuzzle escorted to safety
@@ -2964,6 +2973,11 @@ step
     >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
     .turnin 6132 >>Palauta: Get Me Out of Here!
     .target Hornizz Brimbuzzle
+step
+    .goto 1443/1,3073.41,-1592.50
+    >>Puhu: |cRXP_FRIENDLY_Taiga Wisemane|r
+    .turnin 5581 >>Palauta: Portals of the Legion
+    .target Taiga Wisemane
 step
     .goto 1443/1,1432.43,-717.10
     >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r

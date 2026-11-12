@@ -35,10 +35,35 @@ _bltxt=open(R+'/Questie/Database/Corrections/QuestieQuestBlacklist.lua').read()
 _bltxt=_bltxt.split('function QuestieQuestBlacklist.LoadAutoBlacklistWotlk')[0]
 for m in re.finditer(r'^\s*\[(\d+)\]\s*=\s*([^,]+),', _bltxt, re.M):
     BL.add((int(m.group(1)), m.group(2).strip()))
-BLACK={i for i,v in BL if v=='true' or 'Era' in v}
+# Questien ehtolausekkeet arvioidaan Foreverin arvoilla: Expansions.Current = Era (Questie Modules/Expansions.lua:
+# "if Questie.IsForever then Expansions.Current = Expansions.Era"), Questie.IsForever tosi, muut Questie.Is* epätosia,
+# ContentPhases-viittaukset epätosia, HIDE_ON_MAP = vain piilotus kartalta (ei estoa).
+_ORD={'Era':0,'Tbc':1,'Wotlk':2,'Cata':3,'MoP':4,'Mop':4}
+def lua_cond(expr):
+    e=re.sub(r'Expansions\.Current','0',expr)
+    e=re.sub(r'Expansions\.(\w+)',lambda m:str(_ORD.get(m.group(1),99)),e)
+    e=re.sub(r'Questie\.IsForever','True',e)
+    e=re.sub(r'Questie\.Is\w+','False',e)
+    e=re.sub(r'ContentPhases\.[\w.]+\s*(==|<|>|<=|>=)\s*\d+','False',e)
+    e=e.replace('HIDE_ON_MAP','False').replace('~=','!=').replace('nil','None')
+    return bool(eval(e,{'__builtins__':{}},{'True':True,'False':False,'None':None}))
+def _bl_on(v):
+    if v=='true': return True
+    if v in ('false','HIDE_ON_MAP'): return False
+    try: return lua_cond(v)
+    except Exception: return False
+BLACK={i for i,v in BL if _bl_on(v)}
 TAGS={}
 for m in re.finditer(r'^\s*\[(\d+)\]\s*=\s*(.*?\{(\d+),\s*l10n\("([^"]+)"\)\}.*?),\s*(?:--.*)?$', open(R+'/Questie/Database/Corrections/questTagInfoCorrections.lua').read(), re.M):
-    TAGS[int(m.group(1))]=m.group(4)
+    body=m.group(2).strip()
+    if body.startswith('{'): TAGS[int(m.group(1))]=m.group(4); continue
+    cond,_,rest=body.partition(' and {')
+    try: ok=lua_cond(cond)
+    except Exception: ok=True
+    if ok: TAGS[int(m.group(1))]=m.group(4)
+    else:
+        alt=re.search(r'\bor\s*\{\d+,\s*l10n\("([^"]+)"\)\}',rest)
+        if alt: TAGS[int(m.group(1))]=alt.group(1)
 import os as _os
 CLASSES={'WARRIOR':(1,-81),'PALADIN':(2,-141),'HUNTER':(4,-261),'ROGUE':(8,-162),'PRIEST':(16,-262),'SHAMAN':(64,-82),'MAGE':(128,-161),'WARLOCK':(256,-61),'DRUID':(1024,-263)}
 RACEBITS={'Orc':2,'Undead':16,'Tauren':32,'Troll':128,'Skyborne':(1<<32)|(1<<33)}

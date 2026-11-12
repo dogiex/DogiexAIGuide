@@ -7,10 +7,10 @@ if _cls ~= "ROGUE" then return end
 RXPGuides.RegisterGuide([[
 #forever
 << Horde Rogue
-#name Rogue 22-26 Silverpine Forest, Stonetalon, Hillsbrad + SFK/BFD
+#name Rogue 22-26 Silverpine Forest, Stonetalon, Hillsbrad + SFK
 #version 7
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Rogue 26-30 Ashenvale, Stonetalon, Barrens
+#next Rogue 26-30 Ashenvale, Stonetalon, Barrens + BFD
 
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
@@ -755,6 +755,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -775,6 +780,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -786,10 +804,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -841,6 +855,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .turnin 6621 >>Palauta: King of the Foulweald
     .target Karang Amakkar
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Horde Rogue
+#name Rogue 26-30 Ashenvale, Stonetalon, Barrens + BFD
+#version 7
+#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#next Rogue 30-34 1K Needles, Hillsbrad, Alterac + RFK/Exc. Site
+
 step
     +|cRXP_WARN_Dungeon: Blackfathom Deeps|r (suositus taso 25+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -849,8 +873,17 @@ step
     .target Wik'Tar
 step
     .goto 1440/1,994.16,3373.73
-    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
+    .fly Orgrimmar >>Lennä: Orgrimmar
     .target Andruk
+    .zoneskip Orgrimmar
+step
+    .goto 1454/1,-4279.37,1792.32
+    .trainer >>Rogue-trainer (taso 26): Kick r2, Heavy Wool Bandage
+    .target Gest
+step
+    .goto 1454/1,-4313.46,1676.24
+    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
+    .target Doras
     .zoneskip Stonetalon Mountains
 step
     .goto 1442/1,931.13,826.15
@@ -908,17 +941,8 @@ step
     .target Je'neu Sancrea
 step
     .goto 1440/1,994.16,3373.73
-    .fly Orgrimmar >>Lennä: Orgrimmar
-    .target Andruk
-    .zoneskip Orgrimmar
-step
-    .goto 1454/1,-4279.37,1792.32
-    .trainer >>Rogue-trainer (taso 26): Kick r2, Heavy Wool Bandage
-    .target Gest
-step
-    .goto 1454/1,-4313.46,1676.24
     .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Doras
+    .target Andruk
     .zoneskip Thunder Bluff
 step
     .goto 1456/1,53.35,-1161.04
@@ -1073,16 +1097,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Je'neu Sancrea|r
     .turnin 6565 >>Palauta: Allegiance to the Old Gods
     .target Je'neu Sancrea
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Horde Rogue
-#name Rogue 26-30 Ashenvale, Stonetalon, Barrens
-#version 7
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Rogue 30-34 1K Needles, Hillsbrad, Alterac + RFK/Exc. Site
-
 step
     .goto 1440/1,1024.72,3362.20
     .vendor >>Myy harmaat roinat (Wik'Tar)
@@ -2984,28 +2998,15 @@ step
     .turnin 5581 >>Palauta: Portals of the Legion
     .target Taiga Wisemane
 step
-    .goto 1443/1,2884.58,191.26
-    >>Klikkaa: |cRXP_PICK_Rackmore's Chest|r
-    .turnin 6161 >>Palauta: Claim Rackmore's Treasure!
-step
-    .goto 1443/1,1432.43,-717.10
-    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
-    .accept 5501 >>Ota: Bone Collector
-    .target Bibbly F'utzbuckle
+    .goto 1443/1,2704.75,-1151.80
+    >>Puhu: |cRXP_FRIENDLY_Melizza Brimbuzzle|r
+    .accept 6132 >>Ota: Get Me Out of Here!
+    .target Melizza Brimbuzzle
 step
     .goto 1443/1,2084.32,-1400.63
     >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
     .accept 6134 >>Ota: Ghost-o-plasm Round Up
     .target Hornizz Brimbuzzle
-step
-    .goto 1443/1,1917.98,-1334.67
-    >>Kerää |cRXP_LOOT_Kodo Bone|r (|cRXP_PICK_Kodo Bones|r)
-    .complete 5501,1
-step
-    .goto 1443/1,2704.75,-1151.80
-    >>Puhu: |cRXP_FRIENDLY_Melizza Brimbuzzle|r
-    .accept 6132 >>Ota: Get Me Out of Here!
-    .target Melizza Brimbuzzle
 step
     .goto 1443/1,2430.50,-1394.63
     >>Melizza Brimbuzzle escorted to safety
@@ -3018,8 +3019,21 @@ step
 step
     .goto 1443/1,1432.43,-717.10
     >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
+    .accept 5501 >>Ota: Bone Collector
+    .target Bibbly F'utzbuckle
+step
+    .goto 1443/1,1917.98,-1334.67
+    >>Kerää |cRXP_LOOT_Kodo Bone|r (|cRXP_PICK_Kodo Bones|r)
+    .complete 5501,1
+step
+    .goto 1443/1,1432.43,-717.10
+    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
     .turnin 5501 >>Palauta: Bone Collector
     .target Bibbly F'utzbuckle
+step
+    .goto 1443/1,2884.58,191.26
+    >>Klikkaa: |cRXP_PICK_Rackmore's Chest|r
+    .turnin 6161 >>Palauta: Claim Rackmore's Treasure!
 step
     .goto 1443/1,1347.01,-2294.01
     >>Kerää |cRXP_LOOT_Ghost-o-plasm|r (|cRXP_ENEMY_Magrami Spectre|r)
@@ -3455,6 +3469,14 @@ step
     .goto 1434/0,497.90,-14448.71
     >>Puhu: |cRXP_FRIENDLY_Kebok|r
     .turnin 189 >>Palauta: Bloodscalp Ears
+    .target Kebok
+step
+    .goto 1434/0,509.38,-14450.84
+    .trainer >>Rogue-trainer (taso 38): Sinister Strike r6, Garrote r4
+    .target Ian Strom
+step
+    .goto 1434/0,497.90,-14448.71
+    >>Puhu: |cRXP_FRIENDLY_Kebok|r
     .turnin 213 >>Palauta: Hostile Takeover
     .target Kebok
 step
@@ -3467,10 +3489,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Tokal|r
     .accept 79242 >>Ota: No Honor Among Thieves
     .target Tokal
-step
-    .goto 1434/0,509.38,-14450.84
-    .trainer >>Rogue-trainer (taso 38): Sinister Strike r6, Garrote r4
-    .target Ian Strom
 step
     .goto 1434/0,491.51,-14452.97
     >>Puhu: |cRXP_FRIENDLY_Crank Fizzlebub|r
@@ -3542,6 +3560,14 @@ step
     .accept 572 >>Ota: Mok'thardin's Enchantment
     .target Far Seer Mok'thardin
 step
+    .goto 1434/0,203.72,-12410.12
+    .vendor >>Myy roinat ja korjaa varusteet (Hragran)
+    .target Hragran
+step
+    .goto 1434/0,211.38,-12434.36
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Thulbek
+step
     .goto 1434/0,166.07,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Nimboya|r
     .accept 584 >>Ota: Bloodscalp Clan Heads
@@ -3564,14 +3590,6 @@ step
     .complete 584,1
     .mob Nezzliok the Dire
     .mob Gan'zulah
-step
-    .goto 1434/0,203.72,-12410.12
-    .vendor >>Myy roinat ja korjaa varusteet (Hragran)
-    .target Hragran
-step
-    .goto 1434/0,211.38,-12434.36
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Thulbek
 step
     .goto 1434/0,166.07,-12342.90
     >>Klikkaa: |cRXP_PICK_Bubbling Cauldron|r
@@ -3876,6 +3894,14 @@ step
     .skill tailoring,300,1,1
     .target Daryl Stack
 step
+    .goto 1424/0,-867.09,-158.51
+    .vendor >>Myy roinat ja korjaa varusteet (Ott)
+    .target Ott
+step
+    .goto 1424/0,-942.29,-5.97
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Shay
+step
     .goto 1424/0,-955.73,-41.60
     >>Puhu: |cRXP_FRIENDLY_Krusk|r
     .accept 503 >>Ota: Gol'dir
@@ -3914,14 +3940,6 @@ step
     .mob Baron Vardus
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
-step
-    .goto 1424/0,-867.09,-158.51
-    .vendor >>Myy roinat ja korjaa varusteet (Ott)
-    .target Ott
-step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Shay
 step
     .goto 1424/0,-955.73,-41.60
     >>Puhu: |cRXP_FRIENDLY_Krusk|r
@@ -4000,6 +4018,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Melisara|r
     .turnin 96986 >>Palauta: The Grave Knight
     .target Melisara
+step
+    .goto 1424/0,-935.25,-24.75
+    .vendor >>Myy harmaat roinat (Kayren Soothallow)
+    .target Kayren Soothallow
 step
     .goto 1424/0,-857.81,2.77
     .fly Undercity >>Lennä: Undercity

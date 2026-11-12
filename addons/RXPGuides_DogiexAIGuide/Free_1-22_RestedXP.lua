@@ -12270,13 +12270,13 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 21-22 Wailing Caverns
 #next Warrior 22-26 Barrens, Durotar, Hillsbrad + SFK/BFD << Warrior
-#next Paladin 22-26 Silverpine Forest, Hillsbrad, Ashenvale + SFK/BFD << Paladin
+#next Paladin 22-26 Silverpine Forest, Hillsbrad, Ashenvale + SFK << Paladin
 #next Hunter 22-26 Durotar, Mulgore, Hillsbrad + SFK/BFD << Hunter
-#next Rogue 22-26 Silverpine Forest, Stonetalon, Hillsbrad + SFK/BFD << Rogue
+#next Rogue 22-26 Silverpine Forest, Stonetalon, Hillsbrad + SFK << Rogue
 #next Priest 22-26 Hillsbrad, Ashenvale + SFK/BFD << Priest
 #next Shaman 22-26 Barrens, Durotar, Hillsbrad + SFK << Shaman
 #next Mage 22-26 Hillsbrad, Ashenvale + SFK/BFD << Mage
-#next Warlock 22-26 Durotar, Hillsbrad, Ashenvale + SFK/BFD << Warlock
+#next Warlock 22-26 Durotar, Hillsbrad, Ashenvale + SFK << Warlock
 #next Druid 22-26 Moonglade, Hillsbrad, Ashenvale + SFK/BFD << Druid
 #version 11
 #group Dogiex's AI Guide: Horde 1-60 (Forever)

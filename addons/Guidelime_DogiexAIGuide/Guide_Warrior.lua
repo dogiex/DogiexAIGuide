@@ -999,24 +999,26 @@ Guidelime.registerGuide([[
 [G 42.5,63.7 Ashenvale]Tapa *Shadowhorn Stag*; Tapa *Ashenvale Bear* [QC98251,1 Never Coming Back] [QC98251,2 Never Coming Back]
 [G 40.5,61.4 Ashenvale]Puhu: *Va'xug Firefure* [QT98251 Never Coming Back]
 [G 12.2,33.8 Ashenvale][P Zoram'gar Outpost]Hae flight path (*Andruk*)
+[G 12.1,34.6 Ashenvale]Puhu: *Muglash* [QA6641 Vorsha the Lasher]
 [G 11.7,34.9 Ashenvale]Puhu: *Marukai* [QA6442 Naga at the Zoram Strand]
 [G 11.6,34.3 Ashenvale]Puhu: *Je'neu Sancrea* [QA6921 Amongst the Ruins]
+[G 9.6,27.6 Ashenvale]Defeat Vorsha the Lasher [QC6641,1 Vorsha the Lasher]
+[G 12.2,34.2 Ashenvale]Puhu: *Warsong Runner* [QT6641 Vorsha the Lasher]
+[G 11.7,34.1 Ashenvale][V Myy harmaat roinat] (*Wik'Tar*)
 [G 8.7,14.4 Ashenvale]Kerää *Wrathtail Head* (Wrathtail Sorceress, Wrathtail Priestess, Wrathtail Myrmidon) [QC6442,1 Naga at the Zoram Strand]
 [G 11.7,34.9 Ashenvale]Puhu: *Marukai* [QT6442 Naga at the Zoram Strand]
-[G 11.7,34.1 Ashenvale][V Myy harmaat roinat] (*Wik'Tar*)
 [G 12.2,33.8 Ashenvale]Lennä (*Andruk*): [F Camp Taurajo]
 [G 45.9,77.0 The Barrens]Puhu: *Gann Stonespire* [QA843 Gann's Reclamation]
 [G 47.6,85.2 The Barrens]Tapa *Bael'dun Excavator*; Tapa *Bael'dun Foreman*; Kerää *Khazgorm's Journal* (Prospector Khazgorm) [QC843,1 Gann's Reclamation] [QC843,2 Gann's Reclamation] [QC843,3 Gann's Reclamation]
 [G 45.9,77.0 The Barrens]Puhu: *Gann Stonespire* [QT843 Gann's Reclamation]
-[G 44.5,59.3 The Barrens]Puhu: *Mangletooth* [QA878 Tribes at War]
-[G 45.1,57.7 The Barrens]Puhu: *Tatternack Steelforge* [QA893 Weapons of Choice]
-[G 47.1,54.4 The Barrens]Tapa *Bristleback Water Seeker* [QC878,1 Tribes at War]
 [G 45.1,59.0 The Barrens][V Myy roinat] ja [R korjaa varusteet] (*Sanuye Runetotem*)
 [G 45.6,59.0 The Barrens][V Osta ruokaa, noin 20] (*Innkeeper Byula*)
 [G 45.6,59.0 The Barrens][S Aseta Hearthstone tähän] (*Innkeeper Byula*)
-[G 52.0,54.9 The Barrens]Tapa *Bristleback Thornweaver*; Tapa *Bristleback Geomancer* [QC878,2 Tribes at War] [QC878,3 Tribes at War]
+[G 44.5,59.3 The Barrens]Puhu: *Mangletooth* [QA878 Tribes at War]
+[G 45.1,57.7 The Barrens]Puhu: *Tatternack Steelforge* [QA893 Weapons of Choice]
+[G 47.1,54.4 The Barrens]Tapa *Bristleback Water Seeker*; Tapa *Bristleback Thornweaver* [QC878,1 Tribes at War] [QC878,2 Tribes at War]
+[G 52.4,54.9 The Barrens]Tapa *Bristleback Geomancer* [QC878,3 Tribes at War]
 [G 44.5,59.3 The Barrens]Puhu: *Mangletooth* [QT878 Tribes at War] [QA5052 Blood Shards of Agamaggan]
-[G 44.7,59.4 The Barrens][V Myy harmaat roinat] (*Gahroot*)
 [G 48.0,53.8 The Barrens]Kerää *Blood Shard* (Bristleback Hunter, Oasis Snapjaw, Copper Vein) [QC5052,1 Blood Shards of Agamaggan]
 [G 44.5,59.3 The Barrens]Puhu: *Mangletooth* [QT5052 Blood Shards of Agamaggan]
 [G 41.6,80.3 The Barrens]Kerää *Razormane War Shield* (Razormane Warfrenzy); Kerää *Charred Razormane Wand* (Razormane Seer); Kerää *Razormane Backstabber* (Razormane Stalker, Razormane Pathfinder) [QC893,3 Weapons of Choice] [QC893,2 Weapons of Choice] [QC893,1 Weapons of Choice]
@@ -1047,13 +1049,13 @@ Guidelime.registerGuide([[
 [G 66.2,52.5 Stonetalon Mountains]Tapa *Venture Co. Logger*; Kerää *Super Reaper 6000 Blueprints* (Venture Co. Operator) [QC1062,1 Goblin Invaders] [QC1093,1 Super Reaper 6000]
 [G 59.0,62.6 Stonetalon Mountains]Puhu: *Ziz Fizziks* [QT1093 Super Reaper 6000] [QA1094 Further Instructions]
 [G 48.8,40.7 Stonetalon Mountains]Kerää *Gaea Seed* (Gaea Seed) [QC6301,1 Cycle of Rebirth]
+[O][A Enchanting125][G 49.2,57.2 Stonetalon Mountains]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Hgarth*) [LE Enchanting 225]
+[G 45.4,59.1 Stonetalon Mountains][V Myy roinat] ja [R korjaa varusteet] (*Borand*)
+[G 47.5,62.1 Stonetalon Mountains][V Osta ruokaa, noin 20] (*Innkeeper Jayka*)
 [G 47.5,58.4 Stonetalon Mountains]Puhu: *Tammra Windfield* [QT6301 Cycle of Rebirth] [QA6381 New Life]
 [G 33.1,68.0 Stonetalon Mountains]Käytä / kerää: *Gaea Dirt Mound*; Kerää *Incendrites* (Rogue Flame Spirit, Burning Destroyer, Burning Ravager) [QC6381,1 New Life] [QC6393,1 Elemental War]
 [G 47.4,64.2 Stonetalon Mountains]Puhu: *Tsunaman* [QT6393 Elemental War]
 [G 47.5,62.1 Stonetalon Mountains][V Myy harmaat roinat] (*Innkeeper Jayka*)
-[O][A Enchanting125][G 49.2,57.2 Stonetalon Mountains]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Hgarth*) [LE Enchanting 225]
-[G 45.4,59.1 Stonetalon Mountains][V Myy roinat] ja [R korjaa varusteet] (*Borand*)
-[G 47.5,62.1 Stonetalon Mountains][V Osta ruokaa, noin 20] (*Innkeeper Jayka*)
 [G 47.5,58.4 Stonetalon Mountains]Puhu: *Tammra Windfield* [QT6381 New Life]
 [G 36.0,13.5 Stonetalon Mountains]Tapa *Cenarion Botanist*; Tapa *Daughter of Cenarius*; Tapa *Son of Cenarius* [QC1087,3 Cenarius' Legacy] [QC1087,2 Cenarius' Legacy] [QC1087,1 Cenarius' Legacy]
 [G 45.9,60.4 Stonetalon Mountains]Puhu: *Braelyn Firehand* [QT1087 Cenarius' Legacy]
@@ -1063,6 +1065,7 @@ Guidelime.registerGuide([[
 [O][A Skinning125][G 70.2,59.2 Undercity]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Killian Hagey*) [LE Skinning 225]
 [O][A Alchemy125][G 50.9,74.6 Undercity]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Doctor Marsh*) [LE Alchemy 225]
 [O][A Blacksmithing50][G 61.3,30.6 Undercity]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*James Van Brunt*) [LE Blacksmithing 150]
+[O][A Engineering125][G 76.1,74.0 Undercity]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Franklin Lloyd*) [LE Engineering 225]
 [O][A Leatherworking125][G 70.2,57.4 Undercity]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Arthur Moore*) [LE Leatherworking 225]
 [O][A Tailoring50][G 70.0,30.6 Undercity]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Rhiannon Davis*) [LE Tailoring 150]
 [O][A Tailoring125][G 70.0,30.6 Undercity]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Rhiannon Davis*) [LE Tailoring 225]
@@ -1082,14 +1085,16 @@ Guidelime.registerGuide([[
 [G 33.2,34.8 Hillsbrad Foothills]Tapa *Farmer Ray* [QC527,3 Battle of Hillsbrad]
 [G 34.1,57.4 Hillsbrad Foothills]Kerää *Creeper Ichor* (Giant Moss Creeper, Forest Moss Creeper, Elder Moss Creeper) [QC496,2 Elixir of Suffering]
 [G 64.4,61.3 Hillsbrad Foothills]Kerää *Mudsnout Blossoms* (Mudsnout Blossom) [QC509,1 Elixir of Agony]
-[G 75.3,41.5 Hillsbrad Foothills]Käytä / kerää: *Locked ball and chain*; Tapa *Syndicate Watchman*; Tapa *Syndicate Rogue* [QC498,1 The Rescue] [QC549,2 WANTED: Syndicate Personnel] [QC549,1 WANTED: Syndicate Personnel] [QC498,2 The Rescue]
+[G 75.3,41.5 Hillsbrad Foothills]Käytä / kerää: *Locked ball and chain*; Tapa *Syndicate Watchman* [QC498,1 The Rescue] [QC549,2 WANTED: Syndicate Personnel]
 [G 60.1,18.6 Hillsbrad Foothills]Lennä (*Zarise*): [F Undercity]
 [G 46.9,15.2 Undercity][T Warrior-trainer (taso 26)] (*Christoph Walker*): Charge r2
 [G 63.2,48.6 Undercity]Lennä (*Michael Garrett*): [F Tarren Mill]
+[G 79.4,44.2 Hillsbrad Foothills]Tapa *Syndicate Rogue*; Käytä / kerää: *Locked ball and chain* [QC549,1 WANTED: Syndicate Personnel] [QC498,2 The Rescue]
 [G 63.2,20.7 Hillsbrad Foothills]Puhu: *Krusk* [QT498 The Rescue]
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT527 Battle of Hillsbrad] [QT549 WANTED: Syndicate Personnel] [QA528 Battle of Hillsbrad]
 [G 62.1,19.7 Hillsbrad Foothills]Puhu: *Deathguard Samsa* [QA546 Souvenirs of Death]
 [G 62.6,19.7 Hillsbrad Foothills]Klikkaa: *Dangerous!* [QA567 Dangerous!]
+[O][A Alchemy50][G 61.6,19.2 Hillsbrad Foothills]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Serge Hinott*) [LE Alchemy 150]
 [G 61.4,19.1 Hillsbrad Foothills]Puhu: *Apothecary Lydon* [QT496 Elixir of Suffering] [QT501 Elixir of Pain] [QT509 Elixir of Agony] [QA499 Elixir of Suffering] [QA502 Elixir of Pain] [QA513 Elixir of Agony]
 [G 61.5,19.1 Hillsbrad Foothills]Puhu: *Umpi* [QT499 Elixir of Suffering]
 [G 62.3,19.0 Hillsbrad Foothills][V Myy harmaat roinat] (*Christoph Jeffcoat*)
@@ -1098,11 +1103,12 @@ Guidelime.registerGuide([[
 [G 35.9,46.6 Hillsbrad Foothills]Tapa *Farmer Kalaba* [QC567,4 Dangerous!]
 [G 31.8,52.7 Hillsbrad Foothills]Tapa *Miner Hackett* [QC567,3 Dangerous!]
 [G 29.5,42.4 Hillsbrad Foothills]Tapa *Clerk Horrace Whitesteed* [QC567,1 Dangerous!]
-[O][A Alchemy50][G 61.6,19.2 Hillsbrad Foothills]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Serge Hinott*) [LE Alchemy 150]
+[G 62.8,19.0 Hillsbrad Foothills][V Osta ruokaa, noin 20] (*Innkeeper Shay*)
+[G 62.8,19.0 Hillsbrad Foothills][S Aseta Hearthstone tähän] (*Innkeeper Shay*)
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT528 Battle of Hillsbrad] [QT567 Dangerous!] [QA529 Battle of Hillsbrad]
 [G 62.1,19.7 Hillsbrad Foothills]Puhu: *Deathguard Samsa* [QT546 Souvenirs of Death]
 [G 32.1,44.4 Hillsbrad Foothills]Tapa *Blacksmith Verringtan*; Kerää *Shipment of Iron* (Shipment of Iron); Tapa *Hillsbrad Apprentice Blacksmith* [QC529,1 Battle of Hillsbrad] [QC529,3 Battle of Hillsbrad] [QC529,2 Battle of Hillsbrad]
-[G 62.8,19.0 Hillsbrad Foothills][V Osta ruokaa, noin 20] (*Innkeeper Shay*)
+[H Hearthstone: Innkeeper Shay] (jos cooldownilla, juokse tai lennä)
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT529 Battle of Hillsbrad] [QA532 Battle of Hillsbrad]
 [G 30.4,42.5 Hillsbrad Foothills]Tapa *Hillsbrad Councilman*; Käytä / kerää: *Hillsbrad Proclamation*; Tapa *Magistrate Burnside*; Kerää *Hillsbrad Town Registry* (Hillsbrad Town Registry) [QC532,2 Battle of Hillsbrad] [QC532,3 Battle of Hillsbrad] [QC532,1 Battle of Hillsbrad] [QC532,4 Battle of Hillsbrad]
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT532 Battle of Hillsbrad] [QA539 Battle of Hillsbrad]
@@ -1133,7 +1139,6 @@ Guidelime.registerGuide([[
 [O][A Skinning50][G 70.2,59.2 Undercity]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Killian Hagey*) [LE Skinning 150]
 [O][A Enchanting50][G 62.5,60.4 Undercity]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Malcomb Wynn*) [LE Enchanting 150]
 [O][A Engineering50][G 75.3,73.1 Undercity]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Graham Van Talen*) [LE Engineering 150]
-[O][A Engineering125][G 76.1,74.0 Undercity]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Franklin Lloyd*) [LE Engineering 225]
 [O][A Leatherworking50][G 70.2,57.4 Undercity]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Arthur Moore*) [LE Leatherworking 150]
 [G 53.7,54.5 Undercity]Puhu: *Keeper Bel'dugur* [QT1013 The Book of Ur]
 [G 54.7,48.9 Undercity][V Myy harmaat roinat] (*Katrina Alliestar*)
@@ -1158,11 +1163,10 @@ Guidelime.registerGuide([[
 [G 73.5,60.3 Ashenvale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Burkrum*)
 [G 68.3,75.3 Ashenvale]Puhu: *Torek* [QA6544 Torek's Assault]
 [G 64.7,75.3 Ashenvale]Take Silverwing Outpost. [QC6544,1 Torek's Assault]
-[G 73.0,62.5 Ashenvale]Puhu: *Ertog Ragetusk* [QT6544 Torek's Assault]
-[G 73.5,72.3 Ashenvale]Tapa *Ashenvale Outrunner* [QC6503,1 Ashenvale Outrunners]
-[G 73.5,60.3 Ashenvale][V Myy roinat] ja [R korjaa varusteet] (*Burkrum*)
 [G 74.0,60.6 Ashenvale][V Osta ruokaa, noin 20] (*Innkeeper Kaylisk*)
 [G 74.0,60.6 Ashenvale][S Aseta Hearthstone tähän] (*Innkeeper Kaylisk*)
+[G 73.0,62.5 Ashenvale]Puhu: *Ertog Ragetusk* [QT6544 Torek's Assault]
+[G 73.5,72.3 Ashenvale]Tapa *Ashenvale Outrunner* [QC6503,1 Ashenvale Outrunners]
 [G 71.1,68.1 Ashenvale]Puhu: *Kuray'bin* [QT6503 Ashenvale Outrunners]
 [A Skyborne][G 86.2,45.9 Ashenvale]Puhu: *Maseara Autumnmoon* [QA98417 Vengeful Trail] [QA98418 Shared Fury]
 [G 81.2,49.8 Ashenvale]Kerää *Vine-Wrapped Scroll* (Kurothel's Knapsack) [QC98417,1 Vengeful Trail]
@@ -1171,9 +1175,9 @@ Guidelime.registerGuide([[
 [G 78.2,44.6 Ashenvale]Tapa *Xavian Hellcaller* [QC98418,3 Shared Fury]
 [A Skyborne][G 86.2,45.9 Ashenvale]Puhu: *Maseara Autumnmoon* [QT98418 Shared Fury]
 [G 73.1,61.5 Ashenvale]Puhu: *Pixel* [QT6441 Satyr Horns]
-[G 73.5,60.3 Ashenvale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Burkrum*)
 [G 48.9,69.6 Ashenvale]Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.; Tapa *Befouled Water Elemental* [QC25,2 Stonetalon Standstill] [QC25,1 Stonetalon Standstill]
 [G 73.7,60.0 Ashenvale]Puhu: *Mastok Wrilehiss* [QT25 Stonetalon Standstill]
+[G 73.5,60.3 Ashenvale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Burkrum*)
 [G 11.9,34.5 Ashenvale]Puhu: *Karang Amakkar* [QT6621 King of the Foulweald]
 [OC]*Dungeon: Blackfathom Deeps* (suositus taso 25+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 11.7,34.1 Ashenvale][V Myy harmaat roinat] (*Wik'Tar*)
@@ -1184,6 +1188,7 @@ Guidelime.registerGuide([[
 [G 11.6,34.3 Ashenvale]Puhu: *Je'neu Sancrea* [QT6564 Allegiance to the Old Gods] [QA6565 Allegiance to the Old Gods] [QT6921 Amongst the Ruins] [QT6922 Baron Aquanis]
 [G 12.2,33.8 Ashenvale]Lennä (*Andruk*): [F Thunder Bluff]
 [O][A Blacksmithing125][G 39.4,55.1 Thunder Bluff]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Karn Stonehoof*) [LE Blacksmithing 225]
+[O][A Enchanting125][G 44.9,37.5 Thunder Bluff]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Teg Dawnstrider*) [LE Enchanting 225]
 [G 71.1,34.2 Thunder Bluff]Puhu: *Bashana Runetotem* [QT6561 Blackfathom Villainy]
 [G 71.1,34.2 Thunder Bluff][V Myy harmaat roinat] (*Bashana Runetotem*)
 [G 47.0,49.8 Thunder Bluff]Lennä (*Tal*): [F Zoram'gar Outpost]
@@ -1216,7 +1221,6 @@ Guidelime.registerGuide([[
 [O][A Skinning125][G 44.4,43.1 Thunder Bluff]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Mooranta*) [LE Skinning 225]
 [O][A Alchemy125][G 46.6,33.2 Thunder Bluff]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Bena Winterhoof*) [LE Alchemy 225]
 [O][A Blacksmithing50][G 39.4,56.7 Thunder Bluff]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Thrag Stonehoof*) [LE Blacksmithing 150]
-[O][A Enchanting125][G 44.9,37.5 Thunder Bluff]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Teg Dawnstrider*) [LE Enchanting 225]
 [O][A Leatherworking125][G 42.3,42.6 Thunder Bluff]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Tarn*) [LE Leatherworking 225]
 [O][A Tailoring50][G 44.5,45.4 Thunder Bluff]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Tepa*) [LE Tailoring 150]
 [O][A Tailoring125][G 44.5,45.4 Thunder Bluff]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Tepa*) [LE Tailoring 225]
@@ -1598,14 +1602,14 @@ Guidelime.registerGuide([[
 [G 28.1,77.6 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Qixdi Goodstitch*)
 [G 27.6,77.5 Stranglethorn Vale]Tapa *Scooty* [QC2843,1 Gnomer-gooooone!]
 [G 27.6,77.5 Stranglethorn Vale]Puhu: *Scooty* [QT2843 Gnomer-gooooone!]
+[G 26.9,77.1 Stranglethorn Vale]Lennä (*Gringer*): [F Undercity]
+[G 46.9,15.2 Undercity][T Warrior-trainer (taso 38)] (*Christoph Walker*): Pummel
+[G 63.2,48.6 Undercity]Lennä (*Michael Garrett*): [F Grom'gol]
 [G 41.1,47.8 Stranglethorn Vale]Kerää *Singing Crystal Shard* (Ironjaw Basilisk, Cold Eye Basilisk, Crystal Spine Basilisk) [QC605,1 Singing Blue Shards]
 [G 32.1,29.2 Stranglethorn Vale]Puhu: *Far Seer Mok'thardin* [QA570 Mok'thardin's Enchantment]
 [G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QA568 The Defense of Grom'gol] [QA95773 Enemies in the Water]
 [G 32.2,27.7 Stranglethorn Vale]Puhu: *Nimboya* [QA581 Hunt for Yenniku] [QA638 Trollbane]
 [G 32.3,27.7 Stranglethorn Vale]Puhu: *Kin'weelay* [QA596 Bloody Bone Necklaces] [QA95748 The Gurubashi Legends of Old]
-[G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Undercity]
-[G 46.9,15.2 Undercity][T Warrior-trainer (taso 38)] (*Christoph Walker*): Pummel
-[G 63.2,48.6 Undercity]Lennä (*Michael Garrett*): [F Grom'gol]
 [G 34.6,24.3 Stranglethorn Vale]Tapa *Lashtail Raptor* [QC568,1 The Defense of Grom'gol]
 [G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QT568 The Defense of Grom'gol] [QA569 The Defense of Grom'gol]
 [G 31.6,29.2 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hragran*)

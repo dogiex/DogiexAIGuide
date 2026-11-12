@@ -7,10 +7,10 @@ if _cls ~= "PALADIN" then return end
 RXPGuides.RegisterGuide([[
 #forever
 << Horde Paladin
-#name Paladin 22-26 Silverpine Forest, Hillsbrad, Ashenvale + SFK/BFD
+#name Paladin 22-26 Silverpine Forest, Hillsbrad, Ashenvale + SFK
 #version 7
 #group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Paladin 26-30 Ashenvale, Stonetalon, Barrens
+#next Paladin 26-30 Ashenvale, Stonetalon, Barrens + BFD
 
 step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
@@ -664,6 +664,11 @@ step
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1
 step
+    .goto 1440/1,1002.23,3342.98
+    >>Puhu: |cRXP_FRIENDLY_Muglash|r
+    .accept 6641 >>Ota: Vorsha the Lasher
+    .target Muglash
+step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .accept 216 >>Ota: Between a Rock and a Thistlefur
@@ -684,6 +689,19 @@ step
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
 step
+    .goto 1440/1,1146.40,3612.04
+    >>Defeat Vorsha the Lasher
+    .complete 6641,1
+step
+    .goto 1440/1,996.47,3358.35
+    >>Puhu: |cRXP_FRIENDLY_Warsong Runner|r
+    .turnin 6641 >>Palauta: Vorsha the Lasher
+    .target Warsong Runner
+step
+    .goto 1440/1,1024.72,3362.20
+    .vendor >>Myy harmaat roinat (Wik'Tar)
+    .target Wik'Tar
+step
     .goto 1440/1,1198.30,4119.42
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6442,1
@@ -695,10 +713,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .turnin 6442 >>Palauta: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-358.70,3269.95
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -746,6 +760,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
     .turnin 6621 >>Palauta: King of the Foulweald
     .target Karang Amakkar
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Horde Paladin
+#name Paladin 26-30 Ashenvale, Stonetalon, Barrens + BFD
+#version 7
+#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#next Paladin 30-34 1K Needles, Hillsbrad, Alterac + RFK/Exc. Site
+
 step
     +|cRXP_WARN_Dungeon: Blackfathom Deeps|r (suositus taso 25+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -754,8 +778,17 @@ step
     .target Wik'Tar
 step
     .goto 1440/1,994.16,3373.73
-    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
+    .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Andruk
+    .zoneskip Thunder Bluff
+step
+    .goto 1456/1,285.68,-967.67
+    .trainer >>Paladin-trainer (taso 26): Flash of Light r2, Retribution Aura r2
+    .target Alodan the Hopeful
+step
+    .goto 1456/1,26.10,-1196.73
+    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
+    .target Tal
     .zoneskip Stonetalon Mountains
 step
     .goto 1442/1,931.13,826.15
@@ -816,10 +849,6 @@ step
     .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Andruk
     .zoneskip Thunder Bluff
-step
-    .goto 1456/1,285.68,-967.67
-    .trainer >>Paladin-trainer (taso 26): Flash of Light r2, Retribution Aura r2
-    .target Alodan the Hopeful
 step
     .goto 1456/1,53.35,-1161.04
     >>|cRXP_WARN_Ammattitehtävä (Skinning 1+)|r: puhu |cRXP_FRIENDLY_Veren Tallstrider|r
@@ -973,16 +1002,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Je'neu Sancrea|r
     .turnin 6565 >>Palauta: Allegiance to the Old Gods
     .target Je'neu Sancrea
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Horde Paladin
-#name Paladin 26-30 Ashenvale, Stonetalon, Barrens
-#version 7
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
-#next Paladin 30-34 1K Needles, Hillsbrad, Alterac + RFK/Exc. Site
-
 step
     .goto 1440/1,1024.72,3362.20
     .vendor >>Myy harmaat roinat (Wik'Tar)
@@ -1061,11 +1080,6 @@ step
     .accept 6393 >>Ota: Elemental War
     .target Tsunaman
 step
-    .goto 1442/1,940.90,832.67
-    >>Puhu: |cRXP_FRIENDLY_Mor'rogal|r
-    .accept 6421 >>Ota: Boulderslide Ravine
-    .target Mor'rogal
-step
     .goto 1442/1,940.90,923.84
     >>Puhu: |cRXP_FRIENDLY_Maggran Earthbinder|r
     .accept 5881 >>Ota: Calling in the Reserves
@@ -1127,24 +1141,10 @@ step
     .complete 6461,1
     .mob Deepmoss Creeper
 step
-    .goto 1442/1,403.73,2.32
-    >>Investigate Cave in Boulderslide Ravine
-    >>Kerää |cRXP_LOOT_Resonite Crystal|r (|cRXP_PICK_Resonite Crystal|r)
-    .complete 6421,2
-    .complete 6421,1
-step
     .goto 1442/1,-231.10,-176.77
     >>Puhu: |cRXP_FRIENDLY_Xen'Zilla|r
     .turnin 6461 >>Palauta: Blood Feeders
     .target Xen'Zilla
-step
-    .hs >>Hearthstone: Innkeeper Jayka
-    .cooldown item,6948,>0
-step
-    .goto 1442/1,940.90,832.67
-    >>Puhu: |cRXP_FRIENDLY_Mor'rogal|r
-    .turnin 6421 >>Palauta: Boulderslide Ravine
-    .target Mor'rogal
 step
     .goto 1442/1,42.37,1226.67
     >>Kerää |cRXP_LOOT_Super Reaper 6000 Blueprints|r (|cRXP_ENEMY_Venture Co. Operator|r)
@@ -1204,6 +1204,9 @@ step
     >>Kerää |cRXP_LOOT_Twilight Whisker|r (|cRXP_ENEMY_Twilight Runner|r)
     .complete 1058,2
     .mob Twilight Runner
+step
+    .hs >>Hearthstone: Innkeeper Jayka
+    .cooldown item,6948,>0
 step
     .goto 1442/1,1004.38,949.89
     >>Puhu: |cRXP_FRIENDLY_Braelyn Firehand|r
@@ -1271,14 +1274,6 @@ step
     .turnin 1094 >>Palauta: Further Instructions
     .target Sputtervalve
 step
-    .goto 1413/1,-3664.82,-1050.14
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Wiley
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .home >>Aseta Hearthstone tähän (Innkeeper Wiley)
-    .target Innkeeper Wiley
-step
     .goto 1413/1,-3690.15,-1022.44
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .accept 891 >>Ota: The Guns of Northwatch
@@ -1312,6 +1307,14 @@ step
     .mob Theramore Marine
     .mob Theramore Preserver
     .mob Cannoneer Whessan
+step
+    .goto 1413/1,-3664.82,-1050.14
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Wiley
+step
+    .goto 1413/1,-3664.82,-1050.14
+    .home >>Aseta Hearthstone tähän (Innkeeper Wiley)
+    .target Innkeeper Wiley
 step
     .goto 1413/1,-3690.15,-1022.44
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
@@ -6024,15 +6027,15 @@ step
     .accept 2980 >>Ota: The Ogres of Feralas
     .target Rok Orhan
 step
-    .goto 1444/1,180.52,-4419.23
-    >>Puhu: |cRXP_FRIENDLY_Orwin Gizzmick|r
-    .turnin 2987 >>Palauta: Gordunni Cobalt
-    .target Orwin Gizzmick
-step
     .goto 1444/1,145.77,-4396.07
     >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
     .accept 3063 >>Ota: Vengeance on the Northspring
     .target Talo Thornhoof
+step
+    .goto 1444/1,180.52,-4419.23
+    >>Puhu: |cRXP_FRIENDLY_Orwin Gizzmick|r
+    .turnin 2987 >>Palauta: Gordunni Cobalt
+    .target Orwin Gizzmick
 step
     .goto 1444/1,500.22,-4896.47
     >>Kerää |cRXP_LOOT_Woodpaw Gnoll Mane|r (|cRXP_ENEMY_Woodpaw Mystic|r, |cRXP_ENEMY_Woodpaw Reaver|r, |cRXP_ENEMY_Woodpaw Trapper|r)
