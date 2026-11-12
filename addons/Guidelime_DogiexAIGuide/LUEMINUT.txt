@@ -1,0 +1,19 @@
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v8.1)
+Varavaihtoehto, jos RestedXP ei toimi.
+
+ASENNUS
+1. Asenna Guidelime ja Questie (Forever-versiot). Poista vanhat kansiot Guidelime_OmaReitti (ja aiemmat versiot).
+2. Kopioi kansio "Guidelime_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
+3. Käynnistä peli. /lime -> oppaat -> "Dogiex's AI Guide: Horde 1-60 (Forever)" -> aloitusalueesi luku
+   (esim. "1-9 Durotar (Warlock)"). Näet vain oman luokkasi oppaat.
+
+SISÄLTÖ
+- Kokonaan oma reitti: aloitus jokaiselle aloitusalueelle (Durotar, Tirisfal, Mulgore, Zephras Isle)
+  ja sen jälkeen luokan oma reitti 12-60.
+- Dungeonit, class-questit, trainer joka parillisella tasolla, lennot [F], hearthstone [S]/[H],
+  myynti [V], korjaus [R] ja luokan mukaiset ostokset.
+- Ammatit 1-60 (kaikki 12): trainer-rivit kun reitti kulkee trainerin ohi ja taito on rajalla
+  (Journeyman 50+, Expert 125+, Artisan 200+), sekä ammattitehtävät. Rivit ovat valinnaisia [O] ja näkyvät
+  vain, jos taitosi riittää. Trainer-rivi kuittautuu itsestään, kun olet opetellut seuraavan tason.
+  Guidelime ei osaa piilottaa palautusriviä, jos et ottanut tehtävää: ohita se käsin.
+- Jos et tee jotain dungeonia, ohita sen rivit käsin. Ei pelitestattu.

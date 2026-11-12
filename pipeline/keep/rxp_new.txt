@@ -1,0 +1,37 @@
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v8.1)
+
+ASENNUS
+1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanhat kansiot RXPGuides_OmaReitti (ja aiemmat versiot).
+2. Kopioi kansio "RXPGuides_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
+3. Käynnistä peli. Oikea hiirennappi RestedXP-ikkunaan -> ryhmä "Dogiex's AI Guide: Horde 1-60 (Forever)" ->
+   rotusi aloitusluku: Orc/Troll "1-6 Durotar", Undead "1-6 Tirisfal Glades", Tauren "1-6 Mulgore",
+   Skyborne "1-9 Zephras Isle". Luvut vaihtuvat automaattisesti 60:een asti.
+   Jos sinulla on jo hahmo kesken, valitse tasoasi vastaava luku (esim. "Warlock 30-34 ...").
+
+SISÄLTÖ
+- 1-22: RestedXP:n ilmaiset aloitukset kaikille Horde-roduille (tiedosto Free_1-22_RestedXP.lua),
+  mukana Ragefire Chasm, Ruins of Lordaeron ja Wailing Caverns.
+- 22-60: oma reitti jokaiselle luokalle (Guide_<Luokka>.lua). Addon lataa vain oman luokkasi reitin.
+  Mukana dungeonit, luokan class-questit, trainer joka parillisella tasolla, lennot, hearthstone,
+  myynti ja korjaus sekä luokan mukaiset ostokset (vesi/ruoka, Hunterille ammukset).
+- Rotukohtaiset questit näkyvät vain sille rodulle. Jo tehdyt questit ohittuvat itsestään.
+- Demonology-vinkit vain warlockille; muille luokille ei spec-vinkkejä.
+- AMMATIT (22-60): kaikki 12 ammattia. Askeleet näkyvät vain, jos olet opetellut ammatin:
+  * Trainer-käynti, kun reitti kulkee kaupungin tai kylän läpi, jossa on ammattisi trainer, ja taitosi
+    on rajalla (Journeyman 50+, Expert 125+, Artisan 200+). Askel ohittuu itsestään, jos taito on alle
+    rajan tai olet jo opetellut seuraavan tason. Ei erillisiä sivureissuja.
+  * First Aid, Cooking ja Fishing Expert opitaan kirjasta: opas näyttää myyjän, kun reitti kulkee ohi.
+  * Ammattitehtävät: otto näkyy vain, jos taitosi riittää. Palautus näkyy vain, jos tehtävä on lokissa.
+    Materiaalit kerätään/craftataan itse; jos tavoite ei ole valmis palautuskohdassa, ohita askel.
+  * 1-22 (ilmainen RestedXP-osa) käyttää RestedXP:n omia ammattiaskeleita.
+
+HYVÄ TIETÄÄ
+- Jumiin jäävä askel: oikea hiirennappi -> ohita. Jos et tee jotain dungeonia, ohita sen askeleet.
+- Class-questien "Hanki Auction Housesta tai ammatilla" -askeleet vaativat ostettavan/craftattavan esineen.
+- "(elite, ryhmä)" = class-questin kohde on elite, ryhmä voi olla tarpeen.
+- Reittiä ei ole pelitestattu. Quest-data: QuestieDB (Forever), yhteisön ylläpitämä.
+
+LISENSSI
+Free_1-22_RestedXP.lua on RestedXP Guides -addonin sisältöä (https://github.com/RestedXP/RXPGuides),
+lisenssi CC BY-NC-SA 4.0. Muutettu: ryhmän nimi, Alliance-linkit pois ja #next-linkit omiin lukuihin.
+Kansiota saa jakaa vain samalla lisenssillä, ei kaupallisesti.

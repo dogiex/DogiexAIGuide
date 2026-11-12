@@ -1,0 +1,15 @@
+## Interface: 16001
+## Title: Guidelime: Dogiex's AI Guide: Horde 1-60 (Forever)
+## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)
+## Version: 8.1
+## Dependencies: Guidelime
+
+Guide_Warrior.lua
+Guide_Paladin.lua
+Guide_Hunter.lua
+Guide_Rogue.lua
+Guide_Priest.lua
+Guide_Shaman.lua
+Guide_Mage.lua
+Guide_Warlock.lua
+Guide_Druid.lua

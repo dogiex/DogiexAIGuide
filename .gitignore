@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+pipeline/parts/
+pipeline/logs/
+pipeline/out7/
+*.zip
