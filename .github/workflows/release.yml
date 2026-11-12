@@ -1,8 +1,12 @@
 name: Julkaisu
-# Kun repoon työnnetään tagi vX.Y, tehdään julkaisu ja liitetään molemmat addonit omina zipeinään.
+# Kun addons/-kansio muuttuu main-haarassa, luetaan versio RestedXP-addonin TOC-tiedostosta (## Version: X.Y).
+# Jos julkaisua vX.Y ei vielä ole, se luodaan tageineen ja siihen liitetään molemmat addonit omina zipeinään.
+# Julkaisun kuvaus otetaan tiedostosta RELEASE_NOTES.md (jos on), muuten viimeisimmän commitin viestistä.
 on:
   push:
-    tags: ['v*']
+    branches: [main]
+    paths: ['addons/**', 'RELEASE_NOTES.md']
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -10,18 +14,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Paketoi addonit
+      - name: Lue versio
+        id: v
         run: |
-          cd addons
-          zip -qr "../RXPGuides_DogiexAIGuide_${GITHUB_REF_NAME}.zip" RXPGuides_DogiexAIGuide
-          zip -qr "../Guidelime_DogiexAIGuide_${GITHUB_REF_NAME}.zip" Guidelime_DogiexAIGuide
-      - name: Luo julkaisu
+          VER=$(grep -m1 '^## Version:' addons/RXPGuides_DogiexAIGuide/RXPGuides_DogiexAIGuide.toc | awk '{print $3}' | tr -d '\r')
+          [ -n "$VER" ] || { echo "Versio puuttuu TOC-tiedostosta"; exit 1; }
+          echo "tag=v$VER" >> "$GITHUB_OUTPUT"
+      - name: Luo julkaisu, jos sitä ei vielä ole
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.v.outputs.tag }}
         run: |
-          NOTES="$(git tag -l --format='%(contents)' "$GITHUB_REF_NAME")"
-          [ -n "$NOTES" ] || NOTES="Dogiex's AI Guide $GITHUB_REF_NAME"
-          gh release create "$GITHUB_REF_NAME" \
-            "RXPGuides_DogiexAIGuide_${GITHUB_REF_NAME}.zip" \
-            "Guidelime_DogiexAIGuide_${GITHUB_REF_NAME}.zip" \
-            --title "$GITHUB_REF_NAME" --notes "$NOTES"
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "Julkaisu $TAG on jo olemassa"; exit 0; fi
+          cd addons
+          zip -qr "../RXPGuides_DogiexAIGuide_${TAG}.zip" RXPGuides_DogiexAIGuide
+          zip -qr "../Guidelime_DogiexAIGuide_${TAG}.zip" Guidelime_DogiexAIGuide
+          cd ..
+          if [ -f RELEASE_NOTES.md ]; then cp RELEASE_NOTES.md notes.md; else git log -1 --format=%B > notes.md; fi
+          gh release create "$TAG" "RXPGuides_DogiexAIGuide_${TAG}.zip" "Guidelime_DogiexAIGuide_${TAG}.zip" \
+            --target "$GITHUB_SHA" --title "$TAG" --notes-file notes.md
