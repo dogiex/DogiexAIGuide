@@ -2,6 +2,7 @@ Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guid
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanhat kansiot RXPGuides_OmaReitti (ja aiemmat versiot).
+   RestedXP Guides: https://www.curseforge.com/wow/addons/restedxp-guide (Forever-versio, ilmainen)
 2. Kopioi kansio "RXPGuides_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
 3. Käynnistä peli. Oikea hiirennappi RestedXP-ikkunaan -> ryhmä "Dogiex's AI Guide: Horde 1-60 (Forever)" ->
    rotusi aloitusluku: Orc/Troll "1-6 Durotar", Undead "1-6 Tirisfal Glades", Tauren "1-6 Mulgore",
