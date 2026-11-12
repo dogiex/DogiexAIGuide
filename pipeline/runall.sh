@@ -15,4 +15,5 @@ run_class() {
   echo "done $c"
 }
 export -f run_class; mkdir -p logs parts
-for c in WARRIOR PALADIN HUNTER ROGUE PRIEST SHAMAN MAGE WARLOCK DRUID; do echo $c; done | while read c; do run_class $c & while [ $(jobs -r | wc -l) -ge 2 ]; do sleep 1; done; done; wait
+# wait putken sisällä: muuten viimeiset taustatyöt jäävät kesken, kun skripti palaa
+for c in WARRIOR PALADIN HUNTER ROGUE PRIEST SHAMAN MAGE WARLOCK DRUID; do echo $c; done | { while read c; do run_class $c & while [ $(jobs -r | wc -l) -ge 2 ]; do sleep 1; done; done; wait; }

@@ -265,9 +265,8 @@ step << Tauren
     .target Dendrite Starblaze
 step
     .goto 1450/1,-2283.81,8068.28
-    >>Tapa |cRXP_ENEMY_Great Bear Spirit|r
+    >>Puhu: |cRXP_FRIENDLY_Great Bear Spirit|r
     .complete 5930,1
-    .mob Great Bear Spirit
 step << Tauren
     .goto 1450/1,-2678.53,8020.55
     >>Puhu: |cRXP_FRIENDLY_Dendrite Starblaze|r
@@ -1065,9 +1064,8 @@ step
     .target Piznik
 step
     .goto 1442/1,-265.28,962.92
-    >>Tapa |cRXP_ENEMY_Piznik|r
+    >>Puhu: |cRXP_FRIENDLY_Piznik|r
     .complete 1090,1
-    .mob Piznik
 step
     .goto 1442/1,-265.28,962.92
     >>Puhu: |cRXP_FRIENDLY_Piznik|r
@@ -2988,9 +2986,8 @@ step
     .target Drizzlik
 step
     .goto 1434/0,459.61,-14465.73
-    >>Tapa |cRXP_ENEMY_Scooty|r
+    >>Puhu: |cRXP_FRIENDLY_Scooty|r
     .complete 2843,1
-    .mob Scooty
 step
     .zone Moonglade >>Matkusta: Moonglade. Käytä loitsua Teleport: Moonglade (paluu hearthstonella tai lentäen)
 step
@@ -3641,12 +3638,11 @@ step
     .goto 1416/0,-949.87,708.53
     >>Kerää |cRXP_LOOT_Rusted Iron Key|r (|cRXP_ENEMY_Jailor Borhuin|r)
     >>Find where Gol'dir is being held
-    >>Tapa |cRXP_ENEMY_Gol'dir|r
+    >>Puhu: |cRXP_FRIENDLY_Gol'dir|r
     .complete 503,1
     .complete 503,3
     .complete 503,2
     .mob Jailor Borhuin
-    .mob Gol'dir
 step
     .goto 1416/0,-896.67,684.27
     >>Puhu: |cRXP_FRIENDLY_Gol'dir|r
@@ -4260,10 +4256,9 @@ step
 step
     .goto 1445/1,-3206.25,-3366.83
     >>Question Reethe with Ogron
-    >>Tapa |cRXP_ENEMY_Paval Reethe|r
+    >>Puhu: |cRXP_FRIENDLY_Paval Reethe|r
     .complete 1273,2
     .complete 1273,1
-    .mob Paval Reethe
 step
     .goto 1445/1,-2886.00,-3149.83
     >>Puhu: |cRXP_FRIENDLY_Krog|r
@@ -5670,7 +5665,7 @@ step
     .goto 1418/0,-3188.59,-6090.24
     >>|cRXP_WARN_Mene dungeoniin: Uldaman|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Lore Keeper of Norgannon|r
+    >>Puhu: |cRXP_FRIENDLY_Lore Keeper of Norgannon|r
     >>Kerää |cRXP_LOOT_Shattered Necklace|r (|cRXP_ENEMY_Shadowforge Surveyor|r, |cRXP_ENEMY_Shadowforge Ruffian|r, |cRXP_ENEMY_Shadowforge Digger|r)
     >>Kerää |cRXP_LOOT_Dentrium Power Stone|r (|cRXP_ENEMY_Shadowforge Surveyor|r, |cRXP_ENEMY_Shadowforge Ruffian|r, |cRXP_ENEMY_Shadowforge Digger|r)
     >>Kerää |cRXP_LOOT_An'Alleum Power Stone|r (|cRXP_ENEMY_Shadowforge Surveyor|r, |cRXP_ENEMY_Shadowforge Ruffian|r, |cRXP_ENEMY_Shadowforge Digger|r)
@@ -6118,9 +6113,8 @@ step
     .target Blizrik Buckshot
 step
     .goto 1446/1,-4814.15,-7057.20
-    >>Tapa |cRXP_ENEMY_Torta|r
+    >>Puhu: |cRXP_FRIENDLY_Torta|r
     .complete 1560,1
-    .mob Torta
 step
     .goto 1446/1,-4814.15,-7057.20
     >>Puhu: |cRXP_FRIENDLY_Torta|r
@@ -6161,9 +6155,8 @@ step
     .target Zorbin Fandazzle
 step
     .goto 1444/1,2335.02,-4108.80
-    >>Tapa |cRXP_ENEMY_Screecher Spirit|r
+    >>Puhu: |cRXP_FRIENDLY_Screecher Spirit|r
     .complete 3520,1
-    .mob Screecher Spirit
 step
     .goto 1444/1,2703.37,-3423.07
     >>Kerää |cRXP_LOOT_Miniaturization Residue|r (|cRXP_ENEMY_Zapped Cliff Giant|r, |cRXP_ENEMY_Zapped Shore Strider|r, |cRXP_ENEMY_Zapped Land Walker|r)
@@ -9061,7 +9054,7 @@ step
     .goto 1427/0,-1099.39,-7368.84
     >>|cRXP_WARN_Mene dungeoniin: Blackrock Depths|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Kalaran Windblade|r
+    >>Puhu: |cRXP_FRIENDLY_Kalaran Windblade|r
     >>Kerää |cRXP_LOOT_Ironfel|r (|cRXP_ENEMY_Fineous Darkvire|r)
     >>Tapa |cRXP_ENEMY_Overmaster Pyron|r
     >>Kerää |cRXP_LOOT_Black Dragonflight Molt|r (|cRXP_ENEMY_Frenzied Black Drake|r)
@@ -9235,7 +9228,7 @@ step
     .goto 1427/0,-1099.39,-7368.84
     >>|cRXP_WARN_Mene dungeoniin: Blackrock Depths|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Commander Gor'shak|r
+    >>Puhu: |cRXP_FRIENDLY_Commander Gor'shak|r
     .complete 3982,1
 step
     .goto 1427/0,-1099.39,-7368.84
@@ -9247,7 +9240,7 @@ step
     .goto 1427/0,-1099.39,-7368.84
     >>|cRXP_WARN_Mene dungeoniin: Blackrock Depths|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Kharan Mighthammer|r
+    >>Puhu: |cRXP_FRIENDLY_Kharan Mighthammer|r
     .complete 4001,1
 step
     .goto 1427/0,-1195.34,-6680.12
@@ -9328,7 +9321,7 @@ step
     .goto 1427/0,-1099.39,-7368.84
     >>|cRXP_WARN_Mene dungeoniin: Blackrock Depths|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Kalaran Windblade|r
+    >>Puhu: |cRXP_FRIENDLY_Kalaran Windblade|r
     >>Tapa |cRXP_ENEMY_Emperor Dagran Thaurissan|r
     >>Kerää |cRXP_LOOT_Thorium Shackles|r
     .complete 3453,1
@@ -9829,9 +9822,8 @@ step
     .mob Ranger
 step
     .goto 1423/0,-3387.70,2983.60
-    >>Tapa |cRXP_ENEMY_Darrowshire Spirit|r
+    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
     .complete 5211,1
-    .mob Darrowshire Spirit
 step
     .goto 1423/0,-2479.96,2671.13
     >>Puhu: |cRXP_FRIENDLY_Tirion Fordring|r
@@ -9893,9 +9885,8 @@ step
     .target Yuka Screwspigot
 step
     .goto 1428/0,-2170.62,-7495.85
-    >>Tapa |cRXP_ENEMY_Ragged John|r
+    >>Puhu: |cRXP_FRIENDLY_Ragged John|r
     .complete 4866,1
-    .mob Ragged John
 step
     .goto 1428/0,-2170.62,-7495.85
     >>Puhu: |cRXP_FRIENDLY_Ragged John|r
@@ -10507,7 +10498,7 @@ step
     >>Kerää |cRXP_LOOT_Gordok Shackle Key|r (|cRXP_ENEMY_Gordok Brute|r, |cRXP_ENEMY_Gordok Mage-Lord|r, |cRXP_ENEMY_Gordok Captain|r)
     >>Kerää |cRXP_LOOT_Book of Incantations|r (|cRXP_ENEMY_Pusillin|r)
     >>Tapa |cRXP_ENEMY_Immol'thar|r
-    >>Tapa |cRXP_ENEMY_Prince Tortheldrin|r
+    >>Puhu: |cRXP_FRIENDLY_Prince Tortheldrin|r
     >>Käytä / kerää: |cRXP_PICK_Elven Legends|r
     >>Kerää |cRXP_LOOT_Lethtendris's Web|r (|cRXP_ENEMY_Lethtendris|r)
     .complete 5518,1
@@ -10729,7 +10720,7 @@ step
     >>Tapa |cRXP_ENEMY_Archivist Galford|r
     >>Käytä / kerää: |cRXP_PICK_Scarlet Archive|r
     >>Tapa |cRXP_ENEMY_Restless Soul|r
-    >>Tapa |cRXP_ENEMY_Tirion Fordring|r
+    >>Puhu: |cRXP_FRIENDLY_Tirion Fordring|r
     >>Kerää |cRXP_LOOT_Coagulated Rot|r
     >>Kerää |cRXP_LOOT_Wildheart Bracers|r (|cRXP_ENEMY_Crimson Inquisitor|r, |cRXP_ENEMY_Shrieking Banshee|r, |cRXP_ENEMY_Wailing Banshee|r)
     .complete 5122,1
@@ -11077,7 +11068,7 @@ step
     .goto 1423/0,-3397.16,3394.68
     >>|cRXP_WARN_Mene dungeoniin: Stratholme|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
-    >>Tapa |cRXP_ENEMY_Ysida Harmon|r
+    >>Puhu: |cRXP_FRIENDLY_Ysida Harmon|r
     .complete 8945,1
 step
     .goto 1423/0,-3397.16,3394.68

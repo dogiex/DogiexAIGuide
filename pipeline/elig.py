@@ -55,7 +55,7 @@ def eligible(qid):
     if q(qid,'requiredSkill') or q(qid,'requiredMinRep') or q(qid,'requiredMaxRep') or q(qid,'requiredSpecialization') or q(qid,'requiredRanks') or q(qid,'requiredSpell'): return False
     if TAGS.get(qid) in ('Dungeon','Raid','PvP','Elite','Raid (25)','Raid (10)','Heroic','Legendary','World Event','Account','Scenario','Celestial'): return False
     zs=q(qid,'zoneOrSort') or 0
-    if zs<0 and zs not in (CLASS_SORT,): # class sorts: warlock -61 ; allow only warlock
+    if zs<0 and zs not in (CLASS_SORT,-666):   # -666 = Questien CAMPING (Foreverin leiriytymisketju) # class sorts: warlock -61 ; allow only warlock
         # allow some generic sorts? -1 epic,-21..: skip events, professions, bg
         return False
     st=starters(qid); fi=finishers(qid)

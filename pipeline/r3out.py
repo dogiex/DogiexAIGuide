@@ -342,7 +342,9 @@ def obj_texts(items):
         npcs=[clean(nm) for k,nm in names if k=='npc' and nm]; objs=[clean(nm) for k,nm in names if k!='npc' and nm]
         t=ob['type']
         if ob.get('elite'): npcs=[x+' (elite, ryhmä)' for x in npcs]
-        if t in('monster','killcredit'): tx=('kill',tuple(npcs) or (clean(ob.get('text') or q(qid,'name')),))
+        talk=t in('monster','killcredit') and ob['ids'] and all(i in N and friendly(i) and (n(i,'npcFlags') or 0)>0 for i in ob['ids'])   # puhuttava NPC (ystävällinen + NPC-toiminto), ei neutraali mobi
+        if talk: tx=('talk',tuple(npcs) or tuple(clean(n(i,'name')) for i in ob['ids'] if i in N)); npcs=[]
+        elif t in('monster','killcredit'): tx=('kill',tuple(npcs) or (clean(ob.get('text') or q(qid,'name')),))
         elif t=='item': tx=('item',clean(it(ob['ids'][0],'name')) if ob['ids'][0] in I else 'quest-esine',tuple(npcs),tuple(objs))
         elif t=='object': tx=('use',tuple(objs) or (clean(q(qid,'name')),))
         else: tx=('event',clean(ob.get('text') or 'Suorita tehtävän tavoite täällä'))
@@ -415,6 +417,7 @@ def rxp_steps(c):
                 L.append('    >>'+DPREP)
             for tx in texts[:(14 if ins else 5)]:
                 if tx[0]=='kill': L.append('    >>Tapa '+', '.join('|cRXP_ENEMY_%s|r'%x for x in tx[1]))
+                elif tx[0]=='talk': L.append('    >>Puhu: '+', '.join('|cRXP_FRIENDLY_%s|r'%x for x in tx[1]))
                 elif tx[0]=='item':
                     src=', '.join(['|cRXP_ENEMY_%s|r'%x for x in tx[2]]+['|cRXP_PICK_%s|r'%x for x in tx[3]])
                     L.append('    >>Kerää |cRXP_LOOT_%s|r'%tx[1]+(' (%s)'%src if src else ''))
@@ -489,6 +492,7 @@ def gl_steps(c):
             parts=[]
             for tx in texts[:(14 if ins else 5)]:
                 if tx[0]=='kill': parts.append('Tapa '+', '.join('*%s*'%gc(x) for x in tx[1]))
+                elif tx[0]=='talk': parts.append('Puhu: '+', '.join('*%s*'%gc(x) for x in tx[1]))
                 elif tx[0]=='item': parts.append('Kerää *%s*'%gc(tx[1])+(' (%s)'%', '.join(gc(x) for x in tx[2]+tx[3]) if tx[2]+tx[3] else ''))
                 elif tx[0]=='use': parts.append('Käytä / kerää: '+', '.join('*%s*'%gc(x) for x in tx[1]))
                 else: parts.append(gc(tx[1]))

@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: RestedXP: Dogiex's AI Guide: Horde 1-60 (Forever)
 ## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)
-## Version: 1.3
+## Version: 1.4
 ## Dependencies: RXPGuides
 
 Free_1-22_RestedXP.lua
