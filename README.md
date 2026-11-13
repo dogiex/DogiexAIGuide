@@ -33,7 +33,7 @@ Lataa uusin julkaisu (Releases) ja pura zip kansioon `World of Warcraft\_forever
 - RestedXP-versiossa tasot 1-22 ovat RestedXP:n ilmaista reittiä, 22-60 oma reitti. Guidelime-versio on kokonaan oma reitti.
 
 ## Miten opas tehdään
-Quest-, NPC- ja esinedata tulee [QuestieDB](https://github.com/Questie/QuestieDB):n Forever-datasta. Reitti lasketaan simulaatiolla (`pipeline/`), ja ajoitettu tehtävä päivittää oppaan, kun QuestieDB muuttuu. Uusi versio julkaistaan vain, jos validointi menee läpi ja kattavuus ei heikkene. Ohjeet: `pipeline/README.md`.
+Quest-, NPC- ja esinedata tulee [QuestieDB](https://github.com/Questie/QuestieDB):n Forever-datasta. Reitti lasketaan simulaatiolla (`pipeline/`), ja ajoitettu tehtävä päivittää oppaan, kun QuestieDB muuttuu. Uusi versio julkaistaan vain, jos validointi menee läpi ja kattavuus ei heikkene. Ohjeet: `pipeline/README.md`. Kehityksen ohjeet ja oppaan tila: `docs/`.
 
 Opasta ei ole pelitestattu kokonaisuutena. Ilmoita virheet Issues-osioon: luku ja askel (esim. "Warlock 30-34, askel 45").
 
