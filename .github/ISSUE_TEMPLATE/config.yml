@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Asennusohjeet ja vaatimukset
+    url: https://github.com/dogiex/DogiexAIGuide#readme
+    about: Tarkista ensin README:stä, että addonit ja niiden versiot ovat oikein.

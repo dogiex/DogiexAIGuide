@@ -1,0 +1,160 @@
+name: Virhe oppaassa
+description: Askel, quest, koordinaatti tai reitti on väärin tai puuttuu
+title: "[Opas] <luku>, askel <nro>: <lyhyt kuvaus>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kiitos ilmoituksesta! Mitä tarkemmin kerrot missä kohtaa ja mitä tapahtui, sitä nopeammin virhe saadaan korjattua.
+        Yksi ongelma per ilmoitus.
+
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Addon
+      options:
+        - RestedXP
+        - Guidelime
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Oppaan versio
+      description: Näkyy julkaisun nimessä tai addonin .toc-tiedostossa (rivi "## Version").
+      placeholder: "1.5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: race
+    attributes:
+      label: Rotu
+      options:
+        - Orc
+        - Troll
+        - Undead
+        - Tauren
+        - Skyborne
+        - Human
+        - Dwarf
+        - Night Elf
+        - Gnome
+        - Muu
+    validations:
+      required: true
+
+  - type: dropdown
+    id: class
+    attributes:
+      label: Luokka
+      options:
+        - Druid
+        - Hunter
+        - Mage
+        - Paladin
+        - Priest
+        - Rogue
+        - Shaman
+        - Warlock
+        - Warrior
+    validations:
+      required: true
+
+  - type: input
+    id: level
+    attributes:
+      label: Hahmon taso
+      placeholder: "32"
+    validations:
+      required: true
+
+  - type: input
+    id: chapter
+    attributes:
+      label: Oppaan luku
+      description: Luvun nimi sellaisena kuin addon sen näyttää.
+      placeholder: "Warlock 30-34 Thousand Needles, Desolace"
+    validations:
+      required: true
+
+  - type: input
+    id: step
+    attributes:
+      label: Askeleen numero
+      description: RestedXP näyttää numeron askeleen vieressä. Guidelimessa jätä tyhjäksi ja kopioi askeleen teksti alle.
+      placeholder: "45"
+
+  - type: textarea
+    id: step-text
+    attributes:
+      label: Askeleen teksti
+      description: Kopioi tai kirjoita askeleen teksti sellaisenaan.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Ongelman tyyppi
+      options:
+        - Questia ei saa (ei näy NPC:llä)
+        - Quest tai askel ei kuittaudu valmiiksi
+        - Väärä sijainti tai koordinaatti
+        - NPC tai objekti puuttuu paikalta
+        - Väärä järjestys (esim. palautus ennen kuin quest on tehty)
+        - Quest puuttuu oppaasta
+        - Taso liian matala / mobit liian vaikeita
+        - Lento, hearthstone tai trainer-askel väärin
+        - Ammattiaskel
+        - Dungeon-askel
+        - Muu
+    validations:
+      required: true
+
+  - type: input
+    id: quest
+    attributes:
+      label: Questin nimi (ja ID jos tiedät)
+      description: ID näkyy esim. Questien tooltipissä tai Wowheadin osoitteessa.
+      placeholder: "Questin nimi (ID)"
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Mitä tapahtui?
+      description: Mitä opas käski tehdä ja mitä pelissä oikeasti tapahtui.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Mikä olisi oikein? (jos tiedät)
+      description: Esim. oikea sijainti (/way tai pelin koordinaatit), puuttuva esiquest, oikea NPC.
+
+  - type: checkboxes
+    id: context
+    attributes:
+      label: Taustatiedot
+      description: Nämä auttavat erottamaan oppaan virheen omasta reitistä poikkeamisesta.
+      options:
+        - label: Olen seurannut opasta alusta (tai tästä luvusta) ilman ohitettuja questeja
+        - label: Olen tehnyt questeja oppaan ulkopuolelta tai ohittanut askeleita
+        - label: Pelaan ryhmässä
+        - label: Questie on asennettu ja näyttää saman ongelman
+
+  - type: input
+    id: professions
+    attributes:
+      label: Ammatit
+      description: Vain jos ongelma liittyy ammattiin.
+      placeholder: "Herbalism 120, Alchemy 95"
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Kuvakaappaus tai lisätietoja
+      description: Vedä kuva tähän. Hyvä kuva näyttää oppaan ikkunan ja kartan/NPC:n samassa kuvassa.

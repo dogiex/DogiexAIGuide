@@ -1,0 +1,59 @@
+name: Lua-virhe tai addon ei lataudu
+description: Opas ei näy, addon kaatuu tai peli antaa Lua-virheen
+title: "[Lua] <lyhyt kuvaus>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tarkista ensin README:n vaatimukset: oikea addon-versio Foreverille, ja Guidelimea varten Questie sekä erillinen QuestieDB.
+
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Addon
+      options:
+        - RestedXP
+        - Guidelime
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Oppaan versio
+      placeholder: "1.5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: addon-versions
+    attributes:
+      label: Addonien versiot
+      description: RestedXP tai Guidelime, sekä Questie ja QuestieDB jos käytät Guidelimea. Versio näkyy hahmovalikon AddOns-listassa tai CurseForgessa.
+      placeholder: |
+        Guidelime 6.021
+        Questie 12.7.0
+        QuestieDB 1.0.14
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Mitä tapahtui?
+      description: Milloin ongelma tulee (sisäänkirjautuessa, luvun vaihtuessa, tietyssä askeleessa)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: lua-error
+    attributes:
+      label: Lua-virheviesti
+      description: Kopioi koko virhe, myös stack trace. Ota virheet näkyviin komennolla `/console scriptErrors 1` tai käytä BugSack-addonia.
+      render: text
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Kuvakaappaus tai lisätietoja

@@ -35,7 +35,7 @@ Lataa uusin julkaisu (Releases) ja pura zip kansioon `World of Warcraft\_forever
 ## Miten opas tehdään
 Quest-, NPC- ja esinedata tulee [QuestieDB](https://github.com/Questie/QuestieDB):n Forever-datasta. Reitti lasketaan simulaatiolla (`pipeline/`), ja ajoitettu tehtävä päivittää oppaan, kun QuestieDB muuttuu. Uusi versio julkaistaan vain, jos validointi menee läpi ja kattavuus ei heikkene. Ohjeet: `pipeline/README.md`. Kehityksen ohjeet ja oppaan tila: `docs/`.
 
-Opasta ei ole pelitestattu kokonaisuutena. Ilmoita virheet Issues-osioon: luku ja askel (esim. "Warlock 30-34, askel 45").
+Opasta ei ole pelitestattu kokonaisuutena. Ilmoita virheet [Issues](https://github.com/dogiex/DogiexAIGuide/issues/new/choose)-osioon valmiilla lomakkeella (oppaan virhe, Lua-virhe tai parannusehdotus).
 
 ## Lisenssi
 Katso [LICENSE.md](LICENSE.md). Lyhyesti: `addons/RXPGuides_DogiexAIGuide/Free_1-22_RestedXP.lua` on RestedXP Guides -addonin sisältöä lisenssillä CC BY-NC-SA 4.0, ja koko oppaan jakaminen tapahtuu samalla lisenssillä, ei kaupallisesti.

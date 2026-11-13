@@ -1,0 +1,26 @@
+name: Parannusehdotus
+description: Parempi reitti, puuttuva sisältö tai muu idea
+title: "[Ehdotus] <lyhyt kuvaus>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Huom: opas ei sisällä talenttipuu- tai spec-suosituksia eikä keräily-/farmausohjeita ammateille.
+
+  - type: input
+    id: where
+    attributes:
+      label: Mitä osaa ehdotus koskee?
+      description: Luokka, luku ja tasoväli, tai "koko opas".
+      placeholder: "Kaikki luokat, 40-44 Stranglethorn"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Ehdotus
+      description: Mitä pitäisi muuttaa ja miksi (esim. nopeampi, vähemmän juoksemista, turvallisempi).
+    validations:
+      required: true
