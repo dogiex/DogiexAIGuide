@@ -48,6 +48,19 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
   - Oletus (ei varmistettu datasta): kaupunkien Herbalism-, Mining- ja Skinning-trainerit opettavat Artisanin asti; First Aid-, Cooking- ja Fishing-trainerit Journeymaniin asti.
 - Quest-data: QuestieDB 1.1.0 (Forever), commit 90ab55b (v1.5, 13.11.2026; aiemmin e19dfdf). Ei pelitestattu kokonaisuutena.
 
+## Alliance-opas (suunnitteilla, aloitettu 13.11.2026)
+- Käyttäjän päätökset 13.11.2026:
+  - Samat addonit kuin Hordella (RXPGuides_DogiexAIGuide, Guidelime_DogiexAIGuide). Kummankin factionin oppaat samaan addoniin, faction-ehto näyttää vain oman factionin oppaat. Yksi zip per addon kuten ennenkin.
+  - Samat periaatteet kuin Hordella: RestedXP:ssä alku RestedXP:n ilmaisesta reitistä ja sen jälkeen oma reitti, Guidelime kokonaan oma, ammatit ehdollisina (OHJEET.md kohta 9), ei talentti- tai spec-suosituksia, ei keräysohjeita.
+  - Pilotti: Human Warrior (Guidelime, Northshire -> 60). Laajennus muihin rotuihin ja luokkiin vasta, kun pilotti on tarkistettu.
+- RestedXP:n ilmainen Alliance-pohja (RXPGuides GitHub 8d768c2, 12.11.2026, `Guides/forever/dungeon/`): Alliance-1-10_NightElf, Alliance-1-13_Human, Alliance-1-14_DwarfGnome, Alliance-11-20 ja RestedXP-Skyborne (Alliance-haara 9-13 Zephras Isle -> 13-15 Westfall). Ilmainen osa päättyy lukuun "20-21 Darkshore/Ashenvale", jonka `#next` osoittaa maksulliseen "21-23 Ashenvale/Stonetalon" -osaan. Oma Alliance-reitti alkaa siis tasolta 21 (Hordella 22). Pohjassa Foreverin omat dungeonit Hall of Thanes (17-18) ja Ruins of Lordaeron (18-19) sekä Deadmines (19-20).
+- Putken Horde-kohtaiset kohdat, jotka Alliance tarvitsee: data.py (rotubitit, faction-suodatus), sim7.py (aloitusalueet ja rajatut aloituskäynnit, ilmaisen pohjan tiedostot), visits.py (22-60-aluejärjestys ja dungeonit), r3base.py/plan.py (pohjan luvut), assemble7.py (nimet, faction-ehto, TOC:t).
+- Suunnitelma:
+  1. Tarkista QuestieDB:n Alliance-data (rodut, luokat, Skyborne-Alliance 2^32) -> lista rotu/luokkayhdistelmistä.
+  2. Pilotti Human Warrior Guidelimellä -> taso 60, class- ja dungeon-questit mukana, ei Horde-questeja.
+  3. Kaikki rodut ja luokat, RestedXP-versio -> validate7 0 virhettä, Lua-latauskoe.
+  4. Julkaisu ja päivittäistehtävän laajennus Alliance-osaan.
+
 ## Avoimet asiat
 - Vanhat kehitysjulkaisut v8.1 ja v8.2 (ja tagit) GitHubissa: käyttäjä voi poistaa käsin (Releases -> julkaisu -> Delete, ja tagi Tags-sivulta).
 - XP-simulaatio (havaittu 12.11.2026, ei korjattu): puhu-tyyppinen tavoite (ystävällinen NPC monster-tavoitteena, esim. Cook Torka) antaa simulaatiossa 10 tapon XP:n. Korjaus muutti kokeilussa luokkien pääreittejä useilla questeilla (esim. Mage -6, Warlock Felsteed-version vaihto), joten se peruttiin kirurgisuuden vuoksi. Vaatii käyttäjän päätöksen.
