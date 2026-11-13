@@ -8,7 +8,7 @@ Turvallisuussäännöt ovat ajastetun tehtävän omassa ohjeessa, ja ne menevät
 - GraphQL on estetty Claude-istunnoilta, joten `gh issue` -komennot eivät toimi. Käytä REST-rajapintaa:
   - avoimet issuet: `gh api 'repos/dogiex/DogiexAIGuide/issues?state=open&per_page=100'` (ohita rivit, joilla on `pull_request`-kenttä)
   - kommentit: `gh api 'repos/dogiex/DogiexAIGuide/issues/<nro>/comments?per_page=100'`
-  - kommentointi: `gh api -X POST repos/dogiex/DogiexAIGuide/issues/<nro>/comments -f body=@<tiedosto>` (tai `-f body="..."`)
+  - kommentointi: `gh api -X POST repos/dogiex/DogiexAIGuide/issues/<nro>/comments -F body=@<tiedosto>` (tiedostosta lukeminen vaatii isoa -F:ää)
 - Ohita issue, jonka sisällössä on tunniste `<!-- dogiex-known-issues -->` (kiinnitetty Tunnetut ongelmat -issue).
 - Käsiteltävä issue: siinä ei ole vielä tehtävän kommenttia (tunniste `<!-- dogiex-daily -->`), tai tehtävän viimeisimmän kommentin jälkeen joku muu on kommentoinut.
 - Enintään 5 vanhinta käsiteltävää issueta per ajo. Loput seuraavalla kerralla (määrä raporttiin).
