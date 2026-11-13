@@ -66,12 +66,15 @@ for m in re.finditer(r'^\s*\[(\d+)\]\s*=\s*(.*?\{(\d+),\s*l10n\("([^"]+)"\)\}.*?
         if alt: TAGS[int(m.group(1))]=alt.group(1)
 import os as _os
 CLASSES={'WARRIOR':(1,-81),'PALADIN':(2,-141),'HUNTER':(4,-261),'ROGUE':(8,-162),'PRIEST':(16,-262),'SHAMAN':(64,-82),'MAGE':(128,-161),'WARLOCK':(256,-61),'DRUID':(1024,-263)}
-RACEBITS={'Orc':2,'Undead':16,'Tauren':32,'Troll':128,'Skyborne':1<<33}  # 1<<32 = SKYBORNE_ALLIANCE, 1<<33 = SKYBORNE_HORDE (Questie Database/QuestieDB.lua)
+from faction import ALLY, FCODE, FACTION
+# 1<<32 = SKYBORNE_ALLIANCE, 1<<33 = SKYBORNE_HORDE (Questie Database/QuestieDB.lua)
+RACEBITS={'Orc':2,'Undead':16,'Tauren':32,'Troll':128,'Skyborne':1<<33} if not ALLY else {'Human':1,'Dwarf':4,'NightElf':8,'Gnome':64,'Skyborne':1<<32}
 CLASSNAME=_os.environ.get('WOW_CLASS','WARLOCK')
-RACENAMES=[x for x in _os.environ.get('WOW_RACES','Orc').split(',') if x]
+RACENAMES=[x for x in _os.environ.get('WOW_RACES','Human' if ALLY else 'Orc').split(',') if x]
 ORC=0
 for _r in RACENAMES: ORC|=RACEBITS[_r]
 WARLOCK,CLASS_SORT=CLASSES[CLASSNAME]
 HORDE_ALL=2|16|32|128|(1<<33)
+ALLIANCE_ALL=1|4|8|64|(1<<32)
 _tr=set(int(m.group(1)) for m in re.finditer(r'QuestXP\.db\[(\d+)\]', open(R+'/QuestieDB/support/Forever/QuestXP/xpDB-traces.lua').read()))
 def TRACE_OK(qid): return qid in _tr

@@ -8,10 +8,10 @@ import visits as _v
 KF=1.5; W=8
 Z.update(ZEPHRAS=16593,GNOMER=721,DUNMOROGH=1,LBRS=1583,DME=2557,SCHOLO=2057,STRAT=2017,RFC=2437,WC=718,ROL=16611,COD=16544,ES=16732,WETLANDS=11)
 ZKEY={v:k for k,v in Z.items()}
-TRAVEL.update(ZEPHRAS="Zephras Isle (Skyborne-aloitusalue)",TIRISFAL="Undercityn ulkopuolelle Tirisfal Gladesiin",DUNMOROGH="Horde: Booty Bayn Scooty-teleportilla Gnomereganiin (quest Chief Engineer Scooty)",WETLANDS="Hammerfallista etelään Thandol Spanin yli Wetlandsiin",DUROTAR="Orgrimmarin portista ulos Durotariin",MULGORE="Thunder Bluffista alas Mulgoreen",
+if not ALLY: TRAVEL.update(ZEPHRAS="Zephras Isle (Skyborne-aloitusalue)",TIRISFAL="Undercityn ulkopuolelle Tirisfal Gladesiin",DUNMOROGH="Horde: Booty Bayn Scooty-teleportilla Gnomereganiin (quest Chief Engineer Scooty)",WETLANDS="Hammerfallista etelään Thandol Spanin yli Wetlandsiin",DUROTAR="Orgrimmarin portista ulos Durotariin",MULGORE="Thunder Bluffista alas Mulgoreen",
  MOONGLADE="Felwoodin pohjoispäästä Timbermaw Holdin kautta Moongladeen")
 ALLOUT=[a for k,a in Z.items() if a not in DUNG]
-CITY={Z['ORG'],Z['UC'],Z['TB']}
+CITY={Z['SW'],Z['IF'],Z['DARN']} if ALLY else {Z['ORG'],Z['UC'],Z['TB']}
 # ---------- dungeon quest classification ----------
 def in_dungeon(k,x):
     sp=spawns_of('npc' if k=='npc' else 'obj',x)
@@ -130,7 +130,7 @@ def _auto_chains():
             out.append((nm,max(1,L),set(c)))
     return out
 CHAINS=_WL_CHAINS if CLASSNAME=='WARLOCK' else _auto_chains()
-START_OF={14:{'Orc','Troll'},215:{'Tauren'},85:{'Undead'},16593:{'Skyborne'}}
+START_OF={12:{'Human'},1:{'Dwarf','Gnome'},141:{'NightElf'},16593:{'Skyborne'}} if ALLY else {14:{'Orc','Troll'},215:{'Tauren'},85:{'Undead'},16593:{'Skyborne'}}
 def _foreign_start(qid):
     zs=set()
     for k,x in starters(qid):
@@ -301,12 +301,13 @@ class Sim3(Sim):
         L1=s.L+s.xp/xp_to_level(s.L) if s.L<60 else 60
         s.report.append((vi,('D:' if d else 'C:')+v['name'],round(L0,2),round(L1,2),sum(1 for st in s.steps[n0:] if st['type']=='turnin'),len(s.log),0))
 def B(key,mn):
-    d=Z[key]; return dict(name=DUNG[d][1],zones=[d]+ALLOUT,block=d,only=DQ[d]|ANC[d],min=mn,dungeon=True)
+    d=Z[key]; return dict(name=DUNG[d][1],zones=[d]+ALLOUT,block=d,only=DQ[d]|ANC.get(d,set()),min=mn,dungeon=True)
 def main_visits():
     out=[]
     for v in _v.VISITS:
         if v.get('dungeon'): out.append(B(ZKEY[v['zones'][0]],v['min'])); continue
         out.append(v)
+        if ALLY: continue
         if v['name']=='Stranglethorn' and v.get('min')==32: out.append(B('GNOMER',32))
         if v['name']=='Arathi' and v.get('min')==30: out.append(B('ES',31))
         if v['name']=='Hillsbrad' and v.get('min')==33: out.append(B('COD',33))
@@ -318,6 +319,13 @@ def main_visits():
 PRE=[V('Durotar','DUROTAR',maxq=8),V('Orgrimmar','ORG',maxq=10),V('Durotar','DUROTAR',maxq=12),V('Barrens','BARRENS',min=10,maxq=14),V('Orgrimmar','ORG',maxq=15),
  B('RFC',14),V('Barrens','BARRENS',maxq=17),V('Stonetalon','STONETALON',maxq=18),B('WC',18),V('Barrens','BARRENS',maxq=20),V('Thunder Bluff','TB',maxq=22),
  B('ROL',19),V('Ashenvale','ASHENVALE',maxq=23),V('Barrens','BARRENS',maxq=24),V('Stonetalon','STONETALON',maxq=25),V('Orgrimmar','ORG',maxq=25)]
+if ALLY:
+    # Alliance 12-25 (Guidelime-pääreitin alku; aloitukset sim7.py:n STARTS). PRE[3:] = pre_main()
+    PRE=[V('Elwynn','ELWYNN',maxq=8),V('Stormwind','SW',maxq=10),V('Elwynn','ELWYNN',maxq=12),
+     V('Westfall','WESTFALL',min=11,maxq=15),V('Loch Modan','LOCH',maxq=15),V('Ironforge','IF',maxq=16),B('HOT',17),
+     V('Westfall','WESTFALL',maxq=17),V('Stormwind','SW',maxq=18),V('Redridge','REDRIDGE',maxq=18),B('VC',18),
+     V('Darkshore','DARKSHORE',maxq=19),V('Redridge','REDRIDGE',maxq=21),B('ROL',19),V('Wetlands','WETLANDS',maxq=22),
+     V('Darkshore','DARKSHORE',maxq=22),V('Ashenvale','ASHENVALE',maxq=23),V('Duskwood','DUSKWOOD',maxq=24),V('Stormwind','SW',maxq=25)]
 def pruned(vis,level,done):
     vis=list(vis); skip=set()
     for _ in range(16):

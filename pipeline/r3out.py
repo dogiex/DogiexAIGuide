@@ -36,7 +36,7 @@ def supply_txt(l):
 DPREP={'WARLOCK':'Tee Healthstone ja Soulstone, varaa 5+ Soul Shardia','MAGE':'Tee vettä ja ruokaa koko ryhmälle','HUNTER':'Täytä ammukset ja lemmikin ruoka',
  'PRIEST':'Varaa vettä, olet todennäköisesti healer','SHAMAN':'Varaa vettä ja Ankh-reagenssi','DRUID':'Varaa vettä','PALADIN':'Varaa vettä',
  'WARRIOR':'Varaa ruokaa ja healing potioneita','ROGUE':'Varaa ruokaa ja myrkyt aseisiin'}[CLASSNAME]
-RACE_TOK=[(2,'Orc'),(16,'Undead'),(32,'Tauren'),(128,'Troll'),(1<<33,'Skyborne')]  # vain SKYBORNE_HORDE
+RACE_TOK=[(1,'Human'),(4,'Dwarf'),(8,'NightElf'),(64,'Gnome'),(1<<32,'Skyborne')] if ALLY else [(2,'Orc'),(16,'Undead'),(32,'Tauren'),(128,'Troll'),(1<<33,'Skyborne')]  # Skyborne: vain oman factionin bitti
 def race_tag(qids):
     toks=None
     for x in qids:
@@ -59,7 +59,7 @@ for _i in N:
         for _z,_p in spawns_of('npc',_i).items():
             if _z==16593 and not set(RACENAMES)<={'Skyborne'}: continue
             if _z not in DUNG: TRN[_z].append((_i,tuple(_p[0])))
-NEAR={Z['DUROTAR']:Z['ORG'],Z['MULGORE']:Z['TB'],Z['TIRISFAL']:Z['UC'],Z['ALTERAC']:Z['HILLSBRAD'],Z['BLASTED']:Z['SWAMP'],Z['SILVERPINE']:Z['UC'],Z['WPL']:Z['UC'],Z['WETLANDS']:Z['ARATHI']}
+NEAR={Z['ELWYNN']:Z['SW'],Z['DUNMOROGH']:Z['IF'],Z['DARN']:Z['TELDRASSIL'],Z['ALTERAC']:Z['HILLSBRAD'],Z['SWAMP']:Z['BLASTED'],Z['BADLANDS']:Z['LOCH'],Z['NEEDLES']:Z['TANARIS']} if ALLY else {Z['DUROTAR']:Z['ORG'],Z['MULGORE']:Z['TB'],Z['TIRISFAL']:Z['UC'],Z['ALTERAC']:Z['HILLSBRAD'],Z['BLASTED']:Z['SWAMP'],Z['SILVERPINE']:Z['UC'],Z['WPL']:Z['UC'],Z['WETLANDS']:Z['ARATHI']}
 def D(a,b): return math.hypot(a[0]-b[0],a[1]-b[1])
 def fms_in(zone): return [(i,name,tuple(spawns_of('npc',i)[zone][0])) for i,name in FP.items() if zone in spawns_of('npc',i)]
 def near_trainer(ez,ep):
@@ -127,7 +127,9 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 if z==cur and pos: c=D(p,pos)
                 elif S['bind'] and S['bind'][0]==z and S['cnt']-S['hs']>=25: c=25
                 elif cur and cont(z)==cont(cur) and any(f[0] in have for f in fms_in(z) or fms_in(NEAR.get(z,z))): c=60+(0 if (z in CITY) else 10)
+                elif ALLY and cur and z==Z['DARN'] and cont(z)==cont(cur) and 3841 in have: c=65   # Auberdine - Rut'theran -laiva
                 elif cur and cont(z)==cont(cur): c=110
+                elif ALLY and not cur: c=150 if z in CITY else 200   # pääreitin alku: kaupungin trainer
                 else: c=200
                 if best is None or c<best[0]: best=(c,z,i,p)
         return best
@@ -264,14 +266,14 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
             S['pobj']['items'].append((st['q'],st['o']))
         pos=ep
     flush(); sell_now()
-    chapters[0]['tlog']=S['tlog']
+    chapters[0]['tlog']=S['tlog']; chapters[0]['have']=sorted(have)
     return chapters
 def short(z):
     for a,b in ((' Foothills',''),(' Mountains',''),(' Highlands',''),(' Vale',''),(' Marsh',''),(' Crater',''),('The ',''),(' of Sorrows',''),('Western Plaguelands','WPL'),('Eastern Plaguelands','EPL'),('Stranglethorn','STV'),('Thousand Needles','1K Needles')): z=z.replace(a,b)
     return z
-DSH={'Shadowfang Keep':'SFK','Blackfathom Deeps':'BFD','Razorfen Kraul':'RFK','Razorfen Downs':'RFD','Scarlet Monastery':'SM','Gnomeregan':'Gnomer','Excavation Site':'Exc. Site','City of Dalaran':'Dalaran',"Zul'Farrak":'ZF','Maraudon':'Mara','Sunken Temple':'ST','Blackrock Depths':'BRD','Blackrock Spire':'LBRS','Dire Maul':'DM','Scholomance':'Scholo','Stratholme':'Strat','Uldaman':'Ulda','Ragefire Chasm':'RFC','Wailing Caverns':'WC','Ruins of Lordaeron':'RoL'}
+DSH={'Shadowfang Keep':'SFK','Blackfathom Deeps':'BFD','Razorfen Kraul':'RFK','Razorfen Downs':'RFD','Scarlet Monastery':'SM','Gnomeregan':'Gnomer','Excavation Site':'Exc. Site','City of Dalaran':'Dalaran',"Zul'Farrak":'ZF','Maraudon':'Mara','Sunken Temple':'ST','Blackrock Depths':'BRD','Blackrock Spire':'LBRS','Dire Maul':'DM','Scholomance':'Scholo','Stratholme':'Strat','Uldaman':'Ulda','Ragefire Chasm':'RFC','Wailing Caverns':'WC','Ruins of Lordaeron':'RoL','The Deadmines':'VC','The Stockade':'Stocks','The Hall of Thanes':'HoT'}
 def title(c):
-    zs=[short(z) for z in c['zones'] if z not in('Orgrimmar','Undercity','Thunder Bluff','Tirisfal Glades')] or [short(z) for z in c['zones']]
+    zs=[short(z) for z in c['zones'] if z not in(('Stormwind City','Ironforge','Darnassus') if ALLY else ('Orgrimmar','Undercity','Thunder Bluff','Tirisfal Glades'))] or [short(z) for z in c['zones']]
     t='%d-%d %s'%(c['lo'],c['hi'],', '.join(zs[:3]))
     if c['dungeons']: t+=' + '+'/'.join(DSH.get(x,x) for x in c['dungeons'][:4])
     return t
@@ -362,7 +364,8 @@ def trav_text(st):
     zn=zname(st['area']); tx=TRAVEL.get(ZKEY.get(st['area']),'')
     if st['area']==493 and CLASSNAME=='DRUID':
         return zn,'Käytä loitsua Teleport: Moonglade (paluu hearthstonella tai lentäen)'
-    if st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
+    if st.get('xc') and ALLY: tx="Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
+    elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     return zn,tx
 # ---------------- RXP ----------------
 def rxp_steps(c):

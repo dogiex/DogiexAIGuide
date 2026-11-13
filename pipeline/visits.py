@@ -82,3 +82,6 @@ VISITS=[
  V('Eastern Plaguelands','EPL','WPL',min=58),
  V('Silithus','SILITHUS',min=58),
 ]
+
+if ALLY:
+    from visits_a import VISITS

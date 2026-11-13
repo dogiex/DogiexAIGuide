@@ -56,10 +56,19 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
 - RestedXP:n ilmainen Alliance-pohja (RXPGuides GitHub 8d768c2, 12.11.2026, `Guides/forever/dungeon/`): Alliance-1-10_NightElf, Alliance-1-13_Human, Alliance-1-14_DwarfGnome, Alliance-11-20 ja RestedXP-Skyborne (Alliance-haara 9-13 Zephras Isle -> 13-15 Westfall). Ilmainen osa päättyy lukuun "20-21 Darkshore/Ashenvale", jonka `#next` osoittaa maksulliseen "21-23 Ashenvale/Stonetalon" -osaan. Oma Alliance-reitti alkaa siis tasolta 21 (Hordella 22). Pohjassa Foreverin omat dungeonit Hall of Thanes (17-18) ja Ruins of Lordaeron (18-19) sekä Deadmines (19-20).
 - Putken Horde-kohtaiset kohdat, jotka Alliance tarvitsee: data.py (rotubitit, faction-suodatus), sim7.py (aloitusalueet ja rajatut aloituskäynnit, ilmaisen pohjan tiedostot), visits.py (22-60-aluejärjestys ja dungeonit), r3base.py/plan.py (pohjan luvut), assemble7.py (nimet, faction-ehto, TOC:t).
 - Suunnitelma:
-  1. Tarkista QuestieDB:n Alliance-data (rodut, luokat, Skyborne-Alliance 2^32) -> lista rotu/luokkayhdistelmistä.
-  2. Pilotti Human Warrior Guidelimellä -> taso 60, class- ja dungeon-questit mukana, ei Horde-questeja.
+  1. Rotu/luokkayhdistelmät (osittain tehty): RestedXP:n Alliance-pohjassa on myös Alliance-Shaman, Human Hunter ja Skyborne Hunter, joten Foreverin yhdistelmät poikkeavat classicista. Täydellinen lista tarkistetaan ennen laajennusta.
+  2. Pilotti Human Warrior Guidelimellä: tehty 13.11.2026 (alla).
   3. Kaikki rodut ja luokat, RestedXP-versio -> validate7 0 virhettä, Lua-latauskoe.
   4. Julkaisu ja päivittäistehtävän laajennus Alliance-osaan.
+- Pilotti Human Warrior (Guidelime, 13.11.2026, QuestieDB 90ab55b): testiaddon `pilot/Guidelime_DogiexAIGuide_Alliance` (versio 0.1, ei julkaisua, ei addons/-kansiossa).
+  - Northshire 1-13 (2 lukua, 71 questia) + pääreitti 12-60 (13 lukua, 842 questia), taso 60, simulaation tarkistus 0 virhettä, Guidelime-validointi 0 virhettä, Lua-latauskoe 15 opasta.
+  - Ei Horde-questeja (rotumaski ja aloittajan faction tarkistettu kaikista 952 questista; 3 aloittajaa ilman factionia ovat dungeonin sisällä: Seal of Ascension 4742/4743, The Princess's Surprise 4363).
+  - Class-ketjut: kaikki valmiit paitsi tason 10 A Warrior's Training 12/15 (kolmen kaupungin asepalkintoketjut; Hordella vastaava Path of Defense 4/5). Tason 30 Whirlwind-ketju (The Islander - Cyclonian) kulkee mantereiden välillä kuten Hordella.
+  - Dungeon-questit: Deadmines 4/4, Stockade 6/6, Hall of Thanes 4/4, WC 3/3, BFD 5/5, Gnomeregan 16/16, RFK 5/5, SM 2/2, RFD 4/4, Uldaman 17/17, ZF 9/9, Maraudon 8/9, ST 8/8, BRD 16/23, LBRS 16/21, DM 11/13, Scholo 5/13, Strat 14/17, RoL 3/4, Dalaran 2/3, Excavation Site 4/5. SFK:lla ei Alliance-questeja.
+  - Matkat: 148 aluesiirtymää, 69 mantereenvaihtoa, 137 lentoa (Horde Warrior: 168 / 82 / 116).
+  - Alliance-ajossa lentoreitit, jotka haettiin aloitusalueella, tunnetaan pääreitin alussa, ja trainerin kiertotie suosii kaupunkia pääreitin alussa sekä Darnassusta Auberdine-laivan kautta. Ei vaikuta Hordeen.
+  - Ruins of Lordaeron: Alliance kulkee Southshoresta Undercityyn kuten RestedXP:n Alliance-reitti (PvP-merkintä Undercityssä).
+- Löydetty bugi (ei korjattu Hordelle): QuestieDB-viennissä Dun Moroghin (alue 1) spawnit ovat JSON-listana, ja elig.py `spawns_of` ohitti ne, joten Dun Moroghin NPC:t ja objektit puuttuivat. Korjaus on käytössä Alliance-ajoissa ja Hordelle ympäristömuuttujalla `SPAWNLIST_FIX=1`. Hordelle korjaus voi muuttaa reittiä (esim. Gnomeregan-questit), joten se vaatii käyttäjän päätöksen.
 
 ## Avoimet asiat
 - Vanhat kehitysjulkaisut v8.1 ja v8.2 (ja tagit) GitHubissa: käyttäjä voi poistaa käsin (Releases -> julkaisu -> Delete, ja tagi Tags-sivulta).

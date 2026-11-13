@@ -1,8 +1,8 @@
 from data import *
 EXTRA[2482]='Mount Hyjal'
 _dtxt=open(R+'/QuestieDB/support/Forever/Zones/dungeons.lua').read()
-_DT={209:'SFK',719:'BFD',491:'RFK',796:'SM',722:'RFD',1337:'ULDA',1176:'ZF',2100:'MARA',1477:'ST',1584:'BRD',1583:'LBRS',2557:'DME',2057:'SCHOLO',2017:'STRAT',2437:'RFC',718:'WC',16611:'ROL',16544:'COD',16732:'ES',721:'GNOMER'}
-_DN={1477:"Sunken Temple",1583:'Blackrock Spire',16732:'Excavation Site'}
+_DT={**({1581:'VC',717:'STOCKS',16919:'HOT'} if ALLY else {}),209:'SFK',719:'BFD',491:'RFK',796:'SM',722:'RFD',1337:'ULDA',1176:'ZF',2100:'MARA',1477:'ST',1584:'BRD',1583:'LBRS',2557:'DME',2057:'SCHOLO',2017:'STRAT',2437:'RFC',718:'WC',16611:'ROL',16544:'COD',16732:'ES',721:'GNOMER'}
+_DN={1581:'The Deadmines',717:'The Stockade',16919:'The Hall of Thanes',1477:"Sunken Temple",1583:'Blackrock Spire',16732:'Excavation Site'}
 DUNG={}; DALT={}
 for m in re.finditer(r'^\s*\[(\d+)\] = \{"([^"]+)",(nil|\{[^}]*\}),(\d+|nil),\{\{(\d+), ([\d.]+), ([\d.]+)\}',_dtxt,re.M):
     d=int(m.group(1))
@@ -10,6 +10,8 @@ for m in re.finditer(r'^\s*\[(\d+)\] = \{"([^"]+)",(nil|\{[^}]*\}),(\d+|nil),\{\
     DUNG[d]=(_DT[d],_DN.get(d,m.group(2)),int(m.group(5)),(float(m.group(6)),float(m.group(7))))
     for x in re.findall(r'\d+',m.group(3)): DALT[int(x)]=d
 assert len(DUNG)==len(_DT),set(_DT)-set(DUNG)
+import os as _os
+SPAWNLIST_FIX=ALLY or _os.environ.get('SPAWNLIST_FIX')=='1'
 def spawns_of(kind,id):
     """return dict zoneArea-> list of [x,y]"""
     try:
@@ -17,8 +19,10 @@ def spawns_of(kind,id):
     except KeyError: return {}
     if not s: return {}
     out={}
-    if isinstance(s,list):  # unlikely
-        return {}
+    if isinstance(s,list):
+        # Lua-taulu, jonka ainoa avain on 1 (Dun Morogh), viedään JSONiin listana: indeksi i = alue i+1
+        if not SPAWNLIST_FIX: return {}
+        s={str(i+1):v for i,v in enumerate(s) if v}
     for z,pts in s.items():
         zi=DALT.get(int(z),int(z))
         if zi in DUNG:
@@ -28,7 +32,7 @@ def spawns_of(kind,id):
     return out
 def friendly(nid):
     f=n(nid,'friendlyToFaction')
-    return f is not None and 'H' in f
+    return f is not None and FCODE in f
 def starters(qid):
     s=q(qid,'startedBy'); res=[]
     for kind,idx in (('npc',1),('obj',2),('item',3)):

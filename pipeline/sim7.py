@@ -12,6 +12,14 @@ STARTS={'DUROTAR':(['Orc','Troll'],[V('Valley of Trials','DUROTAR',box=VALLEY),V
  'TIRISFAL':(['Undead'],[V('Deathknell','TIRISFAL',box=DEATHKNELL),V('Tirisfal','TIRISFAL',maxq=8),V('Undercity','UC',maxq=10),V('Tirisfal','TIRISFAL',maxq=12),V('Silverpine','SILVERPINE',maxq=13)]),
  'MULGORE':(['Tauren'],[V('Camp Narache','MULGORE',box=NARACHE),V('Mulgore','MULGORE',maxq=8),V('Thunder Bluff','TB',maxq=10),V('Mulgore','MULGORE',maxq=12)]),
  'ZEPHRAS':(['Skyborne'],[V('Zephras Isle','ZEPHRAS',maxq=13)])}
+NORTHSHIRE=(40.0,56.0,25.0,49.0)   # Northshire Valley (Elwynn %, QuestieDB: McBride 48.9/41.6, Kelsey Fargo 47/32, Falkhaan 46/48)
+COLDRIDGE=(20.0,35.0,64.0,80.0)    # Coldridge Valley (Dun Morogh %: Sten Stoutarm 29.9/71.2, Talin Keeneye 22.6/71.4)
+SHADOWGLEN=(51.0,65.0,30.0,50.0)   # Shadowglen (Teldrassil %: Ilthalaine 58.7/44.3, Iverron 55/33, Porthannius 61/48)
+if ALLY:
+    STARTS={'NORTHSHIRE':(['Human'],[V('Northshire','ELWYNN',box=NORTHSHIRE),V('Elwynn','ELWYNN',maxq=8),V('Stormwind','SW',maxq=10),V('Elwynn','ELWYNN',maxq=12)]),
+     'COLDRIDGE':(['Dwarf','Gnome'],[V('Coldridge Valley','DUNMOROGH',box=COLDRIDGE),V('Dun Morogh','DUNMOROGH',maxq=8),V('Ironforge','IF',maxq=10),V('Dun Morogh','DUNMOROGH',maxq=12),V('Loch Modan','LOCH',maxq=13)]),
+     'SHADOWGLEN':(['NightElf'],[V('Shadowglen','TELDRASSIL',box=SHADOWGLEN),V('Teldrassil','TELDRASSIL',maxq=8),V('Darnassus','DARN',maxq=10),V('Teldrassil','TELDRASSIL',maxq=12)]),
+     'ZEPHRAS':(['Skyborne'],[V('Zephras Isle','ZEPHRAS',maxq=13)])}
 def pre_main(): return PRE[3:]
 def tagname(c): return '%s (%s)'%(c['title'],CT)
 def chains_cov(s,d0):
@@ -101,12 +109,14 @@ if mode=='glstart':
     e=check_ir(ch,set(),'GLS '+zone)
     for c in ch: c['title']=tagname(c)
     json.dump(dict(done=sorted(s.done),level=s.L,errs=e,races=races,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],
-        gl=[gl_steps(c) for c in ch],chains=chains_cov(s,()),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
+        gl=[gl_steps(c) for c in ch],chains=chains_cov(s,()),fps=ch[0].get('have',[]),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
 elif mode=='glmain':
     starts=[z for z,(rs,_) in STARTS.items() if set(rs)&set(RACENAMES)]
     dsets=[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z)))['done']) for z in starts]
     base=set.intersection(*dsets)
-    s,vis2,ch=route(pre_main()+main_visits(),12,base,set(),[14,18,22]+BOUNDS)
+    # Alliance: aloituksissa haetut lentoreitit tunnetaan pääreitin alussa (kaikkien aloitusten yhteiset)
+    kfp=set.intersection(*[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z))).get('fps',[])) for z in starts]) if ALLY else set()
+    s,vis2,ch=route(pre_main()+main_visits(),12,base,kfp,[14,18,22]+BOUNDS)
     e=check_ir(ch,base,'GLM')
     for c in ch: c['title']=tagname(c)
     json.dump(dict(errs=e,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],gl=[gl_steps(c) for c in ch],
