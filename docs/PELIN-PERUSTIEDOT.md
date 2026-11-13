@@ -66,6 +66,7 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
 - RestedXP-oppaiden sisäinen `#version 7` -otsake (assemble7.py) on eri asia kuin julkaisuversio; jätetty ennalleen, ettei pelaajien edistyminen nollaudu.
 
 ## Korjatut
+- daily.sh ja lupa (13.11.2026): vanha rivi `pip install ... lupa` asensi kirjaston eri Python-versioon (3.13) kuin skriptejä ajava `python3` (3.11), joten QuestieDB-vienti kaatui hiljaa (`2>/dev/null` + `set -e`) ilman NOCHANGE- tai DIFF-riviä. Nyt `python3 -m pip install` ja tarkistus `python3 -c "import lupa"`, joka pysäyttää ajon selvään virheeseen. Opas ennallaan.
 - v1.5 julkaisu (13.11.2026): ensimmäinen automaattiajo rakensi v1.5:n, mutta push estyi (git-proxy 403, repo ei ollut istunnon lähteissä). Toinen ajo samana aamuna pushasi v1.5:n mainiin (commit b6a8a2e).
 - Skyborne-rotumaski (v1.5, 13.11.2026): data.py `RACEBITS['Skyborne']` ja `HORDE_ALL` sisälsivät sekä bitin 2^32 (SKYBORNE_ALLIANCE) että 2^33 (SKYBORNE_HORDE), joten Skyborne-rotuja sisältävien luokkien reitteihin päätyi noin 17 Alliance-only-questia (esim. The Stone of the Tides 578). Nyt Skyborne = SKYBORNE_HORDE. Ks. RELEASE_NOTES.md v1.5.
 - `.mob`-rivit (korjattu 12.11.2026, kehitysversio 7.1): RestedXP jakaa `.mob`- ja `.target`-argumentit puolipisteellä (`addon.separators.mob = semicolonsep`), joten pilkkulistat (`.mob A,B,C`, noin 145 riviä per luokka) luettiin yhdeksi nimeksi. Nyt yksi `.mob` per rivi kuten virallisissa guideissa. Validointi tarkistaa jatkossa pilkkulistat `.mob`- ja `.target`-riveiltä.
