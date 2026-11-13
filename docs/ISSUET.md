@@ -56,8 +56,12 @@ Kiitos ehdotuksesta! Kävimme sen läpi, mutta sitä ei toteuteta.
 
 **Syy:** <1-2 lausetta selkokielellä, esim. arvioitu vaikutus aikaan tai reittiin, tai ristiriita oppaan periaatteiden kanssa>
 
-Jos sinulla on lisätietoa, joka muuttaa arviota, kommentoi tähän tai tee uusi ehdotus.
+Suljen issuen. Jos sinulla on lisätietoa, joka muuttaa arviota, voit silti kommentoida tähän tai tehdä uuden ehdotuksen.
 ```
+
+Kun käyttäjä valitsee hylkäyksen keskustelussa, kommentti lähetetään ja issue suljetaan syyllä "not planned":
+`gh api -X PATCH repos/dogiex/DogiexAIGuide/issues/<nro> -f state=closed -f state_reason=not_planned`
+Ajastettu tehtävä ei itse sulje issueita; sulkeminen tehdään vain käyttäjän päätöksestä. Merkitse ehdotus `docs/PELIN-PERUSTIEDOT.md`:ssä hylätyksi (siirrä Avoimista asioista, lyhyt syy).
 
 Kirjaa ehdotus `docs/PELIN-PERUSTIEDOT.md`:n Avoimet asiat -osioon ("Ehdotus #N, odottaa päätöstä"), jos sitä ei siellä vielä ole. Päätös tulee käyttäjältä keskustelussa, ei issuen kommenteista.
 
