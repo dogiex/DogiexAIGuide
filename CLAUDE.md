@@ -6,4 +6,4 @@ Lue ennen mitään muutoksia:
 - `pipeline/README.md`: rakennusputken ajo-ohje
 - `docs/ISSUET.md`: käyttäjien issueiden käsittely
 
-Kun oppaan tila muuttuu, päivitä `docs/PELIN-PERUSTIEDOT.md` samassa commitissa. Repo on julkinen: ei yksityisiä tietoja.
+Kun oppaan tila muuttuu, päivitä `docs/PELIN-PERUSTIEDOT.md` samassa commitissa, ja pelaajalle näkyvät avoimet asiat myös `docs/TUNNETUT-ONGELMAT.md`:hen. Repo on julkinen: ei yksityisiä tietoja.
