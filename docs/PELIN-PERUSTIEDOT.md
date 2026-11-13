@@ -46,7 +46,7 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
   - Ammattitehtävät: QuestieDB `requiredSkill`, taitovaatimus enintään 250. Otto vain, jos taito riittää; palautus aikaisintaan 15 askelta myöhemmin (`.isOnQuest`). Tehtävät, joiden palautusta reitti ei kohtaa, jätetty pois. 27-28 tehtävää per luokka.
   - Keräysohjeita (mistä materiaalit, farmausreitit, materiaalimäärät) ei lisätä lainkaan. Käyttäjän päätös 12.11.2026.
   - Oletus (ei varmistettu datasta): kaupunkien Herbalism-, Mining- ja Skinning-trainerit opettavat Artisanin asti; First Aid-, Cooking- ja Fishing-trainerit Journeymaniin asti.
-- Quest-data: QuestieDB 1.0.14 (Forever), commit 90ab55b (v1.5, 13.11.2026; aiemmin e19dfdf). Ei pelitestattu kokonaisuutena.
+- Quest-data: QuestieDB 1.1.0 (Forever), commit 90ab55b (v1.5, 13.11.2026; aiemmin e19dfdf). Ei pelitestattu kokonaisuutena.
 
 ## Avoimet asiat
 - Vanhat kehitysjulkaisut v8.1 ja v8.2 (ja tagit) GitHubissa: käyttäjä voi poistaa käsin (Releases -> julkaisu -> Delete, ja tagi Tags-sivulta).
@@ -66,6 +66,7 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
 - RestedXP-oppaiden sisäinen `#version 7` -otsake (assemble7.py) on eri asia kuin julkaisuversio; jätetty ennalleen, ettei pelaajien edistyminen nollaudu.
 
 ## Korjatut
+- Quest-data-rivin QuestieDB-versio (13.11.2026): rivillä luki 1.0.14, vaikka commit 90ab55b on QuestieDB 1.1.0 (QuestieDB.toc `## Version:`). Korjattu; daily.sh tulostaa jatkossa uuden commitin TOC-version, ja se päivitetään Quest-data-riville aina commitin kanssa. Addonit-taulukon 1.0.14 (11.11.2026) on käyttäjän asentama versio, jätetty ennalleen.
 - daily.sh ja lupa (13.11.2026): vanha rivi `pip install ... lupa` asensi kirjaston eri Python-versioon (3.13) kuin skriptejä ajava `python3` (3.11), joten QuestieDB-vienti kaatui hiljaa (`2>/dev/null` + `set -e`) ilman NOCHANGE- tai DIFF-riviä. Nyt `python3 -m pip install` ja tarkistus `python3 -c "import lupa"`, joka pysäyttää ajon selvään virheeseen. Opas ennallaan.
 - v1.5 julkaisu (13.11.2026): ensimmäinen automaattiajo rakensi v1.5:n, mutta push estyi (git-proxy 403, repo ei ollut istunnon lähteissä). Toinen ajo samana aamuna pushasi v1.5:n mainiin (commit b6a8a2e).
 - Skyborne-rotumaski (v1.5, 13.11.2026): data.py `RACEBITS['Skyborne']` ja `HORDE_ALL` sisälsivät sekä bitin 2^32 (SKYBORNE_ALLIANCE) että 2^33 (SKYBORNE_HORDE), joten Skyborne-rotuja sisältävien luokkien reitteihin päätyi noin 17 Alliance-only-questia (esim. The Stone of the Tides 578). Nyt Skyborne = SKYBORNE_HORDE. Ks. RELEASE_NOTES.md v1.5.

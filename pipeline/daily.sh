@@ -17,5 +17,6 @@ if [ "$OLD" = "$NEW" ]; then echo "NOCHANGE"; exit 0; fi
 git -C /home/claude/ref/QuestieDB log --oneline $OLD..$NEW > /tmp/qdb_log.txt
 git -C /home/claude/ref/QuestieDB checkout -q $NEW
 python3 /home/claude/work7/export_db.py /home/claude/ref/QuestieDB /home/claude/work7/dump.lua /home/claude/work/db 2>/dev/null
+echo "QuestieDB-versio (TOC): $(grep -m1 '^## Version:' /home/claude/ref/QuestieDB/QuestieDB.toc | sed 's/## Version: *//')"
 python3 /home/claude/work7/dbdiff.py /tmp/db_old /home/claude/work/db $STATE > /tmp/dbdiff.json
 echo "DIFF valmis: /tmp/dbdiff.json, commitit: /tmp/qdb_log.txt"
