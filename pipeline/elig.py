@@ -10,8 +10,6 @@ for m in re.finditer(r'^\s*\[(\d+)\] = \{"([^"]+)",(nil|\{[^}]*\}),(\d+|nil),\{\
     DUNG[d]=(_DT[d],_DN.get(d,m.group(2)),int(m.group(5)),(float(m.group(6)),float(m.group(7))))
     for x in re.findall(r'\d+',m.group(3)): DALT[int(x)]=d
 assert len(DUNG)==len(_DT),set(_DT)-set(DUNG)
-import os as _os
-SPAWNLIST_FIX=ALLY or _os.environ.get('SPAWNLIST_FIX')=='1'
 def spawns_of(kind,id):
     """return dict zoneArea-> list of [x,y]"""
     try:
@@ -21,7 +19,6 @@ def spawns_of(kind,id):
     out={}
     if isinstance(s,list):
         # Lua-taulu, jonka ainoa avain on 1 (Dun Morogh), viedään JSONiin listana: indeksi i = alue i+1
-        if not SPAWNLIST_FIX: return {}
         s={str(i+1):v for i,v in enumerate(s) if v}
     for z,pts in s.items():
         zi=DALT.get(int(z),int(z))
