@@ -41,7 +41,23 @@ Selvitä, johtuuko virhe oppaan tiedostoista (latauskoe `check7.lua`:lla, virhev
 - riskit ja sivuvaikutukset (reitin muut osat, Guidelime- ja RestedXP-erot, pelaajien edistymisen nollautuminen)
 - ristiriidat aiempien päätösten kanssa (`docs/PELIN-PERUSTIEDOT.md`; talentti-, spec- ja keräilyohjeet on kielletty)
 - toteutuksen arvioitu laajuus (tiedostot, muutoksen koko)
-- suositus (toteuta / toteuta muutettuna / älä toteuta) perusteluineen ja varmuusprosentti
+
+Tee analyysin pohjalta neljä vaihtoehtoa käyttäjän valittavaksi:
+1-3. Kolme erilaista toteutustapaa (esim. ehdotus sellaisenaan, rajattu versio, vaihtoehtoinen tapa saavuttaa sama tavoite). Jokaisesta: mitä muuttuu, arvioitu vaikutus, riskit, toteutuksen laajuus ja varmuusprosentti.
+4. Hylkäys: lyhyt perustelu ja valmis issue-kommenttiluonnos alla olevan pohjan mukaan.
+
+Merkitse, minkä vaihtoehdon suosittelet ja miksi. Jos ehdotus koskee kiellettyjä asioita tai perustuu virheelliseen tietoon, toteutusvaihtoehtoja ei tarvita: kerro syy ja anna vain hylkäys.
+
+Hylkäyskommentin pohja (täytä syy; tehtävä ei lähetä tätä, vaan se lähetetään vasta, kun käyttäjä valitsee hylkäyksen):
+
+```
+<!-- dogiex-daily -->
+Kiitos ehdotuksesta! Kävimme sen läpi, mutta sitä ei toteuteta.
+
+**Syy:** <1-2 lausetta selkokielellä, esim. arvioitu vaikutus aikaan tai reittiin, tai ristiriita oppaan periaatteiden kanssa>
+
+Jos sinulla on lisätietoa, joka muuttaa arviota, kommentoi tähän tai tee uusi ehdotus.
+```
 
 Kirjaa ehdotus `docs/PELIN-PERUSTIEDOT.md`:n Avoimet asiat -osioon ("Ehdotus #N, odottaa päätöstä"), jos sitä ei siellä vielä ole. Päätös tulee käyttäjältä keskustelussa, ei issuen kommenteista.
 
@@ -62,4 +78,4 @@ Vahvistetut mutta korjaamattomat viat (c ja keskeneräiset a) `docs/PELIN-PERUST
 `docs/TUNNETUT-ONGELMAT.md` on pelaajille tarkoitettu lista. Kun pelaajalle näkyvä avoin asia lisätään, korjataan tai muuttuu, päivitä lista samassa commitissa (selkokielellä, ei sisäisiä teknisiä yksityiskohtia). Kiinnitetty issue vain linkittää listaan, joten issueta ei tarvitse muokata.
 
 ## Raportti
-Käsitellyt issuet (numero, luokittelu a-d tai vanha versio / päällekkäinen, mitä tehtiin, käsittelemättä jääneiden määrä). Parannusehdotukset omana osionaan: numero, ehdotus yhdellä lauseella, vaikutus, riskit, suositus ja varmuus, ja mitä päätöstä käyttäjältä tarvitaan.
+Käsitellyt issuet (numero, luokittelu a-d tai vanha versio / päällekkäinen, mitä tehtiin, käsittelemättä jääneiden määrä). Parannusehdotukset omana osionaan: numero, ehdotus yhdellä lauseella, neljä vaihtoehtoa (kolme toteutustapaa ja hylkäys kommenttiluonnoksineen), suositeltu vaihtoehto ja varmuus.
