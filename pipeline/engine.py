@@ -7,6 +7,9 @@ import subprocess
 out=subprocess.run(f"grep -rhoE '(item|object|killCredit|spell)ObjectiveFirst\\[[0-9]+\\]' {R}/QuestieDB/src",shell=True,capture_output=True,text=True).stdout
 for m in re.finditer(r'(item|object|killCredit|spell)ObjectiveFirst\[(\d+)\]',out): FIRST[m.group(1)].add(int(m.group(2)))
 
+def _rmask(x):
+    rr=int(q(x,'requiredRaces') or 0)
+    return (rr&ORC) if rr else ORC
 def objectives(qid):
     """ordered list of dict(type,id/ids,text) mirroring Questie's ObjectiveData order"""
     ob=q(qid,'objectives'); res=[]
@@ -141,7 +144,8 @@ class Sim:
         pg=q(qid,'preQuestGroup')
         if pg and not all(p in s.done for p in aslist(pg) if p>0): return False
         ex=q(qid,'exclusiveTo')
-        if ex and any((p in s.done or p in s.log) for p in aslist(ex)): return False
+        # Eri rotujen rinnakkaisversiot (requiredRaces ei leikkaa reitin rotujen kesken) eivät sulje toisiaan pois.
+        if ex and any((p in s.done or p in s.log) and _rmask(p)&_rmask(qid) for p in aslist(ex)): return False
         nx=q(qid,'nextQuestInChain')
         if nx and (nx in s.done or nx in s.log): return False
         bc=q(qid,'breadcrumbForQuestId')

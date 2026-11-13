@@ -12270,9 +12270,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 21-22 Wailing Caverns
 #next Warrior 22-26 Barrens, Durotar, Hillsbrad + SFK/BFD << Warrior
-#next Paladin 22-26 Silverpine Forest, Hillsbrad, Ashenvale + SFK << Paladin
+#next Paladin 22-26 Hillsbrad, Ashenvale, Silverpine Forest + SFK/BFD << Paladin
 #next Hunter 22-26 Durotar, Mulgore, Hillsbrad + SFK/BFD << Hunter
-#next Rogue 22-26 Silverpine Forest, Stonetalon, Hillsbrad + SFK << Rogue
+#next Rogue 22-26 Silverpine Forest, Hillsbrad, Barrens + SFK/BFD << Rogue
 #next Priest 22-26 Hillsbrad, Ashenvale + SFK/BFD << Priest
 #next Shaman 22-26 Barrens, Durotar, Hillsbrad + SFK << Shaman
 #next Mage 22-26 Hillsbrad, Ashenvale + SFK/BFD << Mage

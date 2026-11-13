@@ -2,6 +2,7 @@
 import sys, json, re, os, collections
 from r3out import *
 from r3base import blocks_of
+from engine import _rmask
 OUTD='/home/claude/work7/parts'; os.makedirs(OUTD,exist_ok=True)
 mode=sys.argv[1] if len(sys.argv)>1 and __name__=='__main__' else None
 VALLEY=(38.0,47.5,55.0,72.5)   # Valley of Trials (Durotar %, QuestieDB): laakso tehdään loppuun ennen muuta Durotaria
@@ -28,7 +29,7 @@ def class_miss(s,d0):
     s2=Sim3([dict(name='x',zones=list(ALLOUT))],60,s.done|set(d0))
     for x in sorted(CLASSQ):
         if x in s.done or x in d0: continue
-        ex=[y for y in aslist(q(x,'exclusiveTo')) if y in s.done or y in d0] if q(x,'exclusiveTo') else []
+        ex=[y for y in aslist(q(x,'exclusiveTo')) if (y in s.done or y in d0) and _rmask(y)&_rmask(x)] if q(x,'exclusiveTo') else []
         if ex: continue
         r=[]
         if not s2.prereq_ok(x): r.append('prereq %s/%s'%(q(x,'preQuestSingle'),q(x,'preQuestGroup')))

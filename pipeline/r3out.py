@@ -36,7 +36,7 @@ def supply_txt(l):
 DPREP={'WARLOCK':'Tee Healthstone ja Soulstone, varaa 5+ Soul Shardia','MAGE':'Tee vettä ja ruokaa koko ryhmälle','HUNTER':'Täytä ammukset ja lemmikin ruoka',
  'PRIEST':'Varaa vettä, olet todennäköisesti healer','SHAMAN':'Varaa vettä ja Ankh-reagenssi','DRUID':'Varaa vettä','PALADIN':'Varaa vettä',
  'WARRIOR':'Varaa ruokaa ja healing potioneita','ROGUE':'Varaa ruokaa ja myrkyt aseisiin'}[CLASSNAME]
-RACE_TOK=[(2,'Orc'),(16,'Undead'),(32,'Tauren'),(128,'Troll'),((1<<32)|(1<<33),'Skyborne')]
+RACE_TOK=[(2,'Orc'),(16,'Undead'),(32,'Tauren'),(128,'Troll'),(1<<33,'Skyborne')]  # vain SKYBORNE_HORDE
 def race_tag(qids):
     toks=None
     for x in qids:
