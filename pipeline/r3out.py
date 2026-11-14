@@ -406,7 +406,8 @@ def rxp_steps(c):
             cls=all((q(x,'requiredClasses') or 0) for _,x in st['seq'])
             rt=race_tag([x for _,x in st['seq']])
             L+=['step'+(' << '+rt if rt else ''),eg(st['loc'])]
-            if kind=='item': L.append('    >>Dungeonissa: looti |cRXP_LOOT_%s|r aloittaa questin'%clean(it(eid,'name') if eid in I else 'quest-esine'))
+            if kind=='item' and not ins: L.append('    >>Käytä palkkioesinettä |cRXP_LOOT_%s|r (laukussa) aloittaaksesi questin'%clean(it(eid,'name') if eid in I else 'quest-esine'))
+            elif kind=='item': L.append('    >>Dungeonissa: looti |cRXP_LOOT_%s|r aloittaa questin'%clean(it(eid,'name') if eid in I else 'quest-esine'))
             else:
                 nm=clean(ent_name(kind,eid))
                 L.append('    >>%s%s: |cRXP_%s_%s|r'%('Dungeonin sisällä - ' if ins else '','Puhu' if kind=='npc' else 'Klikkaa','FRIENDLY' if kind=='npc' else 'PICK',nm))
@@ -484,7 +485,8 @@ def gl_steps(c):
             cls=all((q(x,'requiredClasses') or 0) for _,x in st['seq'])
             rt=race_tag([x for _,x in st['seq']])
             s=('[A %s]'%rt.replace('/',',') if rt else '')+eg(st['loc'])
-            if kind=='item': s+='Dungeonissa: looti *%s* aloittaa questin '%gc(it(eid,'name') if eid in I else 'quest-esine')
+            if kind=='item' and not ins: s+='Käytä palkkioesinettä *%s* (laukussa) aloittaaksesi questin '%gc(it(eid,'name') if eid in I else 'quest-esine')
+            elif kind=='item': s+='Dungeonissa: looti *%s* aloittaa questin '%gc(it(eid,'name') if eid in I else 'quest-esine')
             else: s+=('Dungeonin sisällä - ' if ins else '')+('Puhu: *%s* ' if kind=='npc' else 'Klikkaa: *%s* ')%gc(ent_name(kind,eid))
             s+=' '.join(('[QT%d %s]' if k_=='turnin' else '[QA%d %s]')%(qid,gc(q(qid,'name'))) for k_,qid in st['seq'])
             L.append(s)

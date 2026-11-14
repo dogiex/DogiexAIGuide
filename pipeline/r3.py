@@ -22,6 +22,13 @@ def ok_ent(k,x):
 def item_start(qid):
     st=starters(qid)
     return [x for k,x in st if k=='item'] if st and all(k=='item' for k,x in st) else []
+# Esineestä alkava ketjun jatko: edellinen quest (nextQuestInChain) antaa aloitusesineen palkkiona, joten jatko otetaan heti
+# edellisen palautuksen jälkeen sen palauttajan luona (esim. Paladinin Tome of Divinity 2998 -> 1642). Vain esinealoitteiset questit.
+ITEMNEXT=collections.defaultdict(list)   # jatko -> edeltäjät (esim. Dwarfin 2997 ja 3000 -> 1646; mikä tahansa riittää)
+for _q in Q:
+    _nx=q(_q,'nextQuestInChain')
+    if _nx and _nx in Q and item_start(_nx): ITEMNEXT[_nx].append(_q)
+ITEMNEXT=dict(ITEMNEXT)
 PREREQ_OF=set()
 for _q in Q:
     for _k in('preQuestSingle','preQuestGroup'):
@@ -95,7 +102,9 @@ def _cls(qid):
     rr=q(qid,'requiredRaces') or 0
     if rr and not int(rr)&ORC: return False
     if qid in BLACK or (q(qid,'requiredLevel') or 1)>=60 or (q(qid,'questLevel') or 0)>58: return False
-    if q(qid,'requiredSkill') or (q(qid,'specialFlags') or 0)&1: return False
+    # toistettava hylätään, paitsi jos se aloittaa esinealoitteisen jatkon (esim. Paladinin The Tome of Valor 1793/1794 -> 1649)
+    if q(qid,'requiredSkill') or ((q(qid,'specialFlags') or 0)&1 and q(qid,'nextQuestInChain') not in ITEMNEXT): return False
+    if qid in ITEMNEXT: return any(_cls(p) for p in ITEMNEXT[qid] if p not in ITEMNEXT)   # esinealoitus: kelpoisuus edeltäjän mukaan
     return any(k!='item' and ((k=='npc' and x in N and friendly(x)) or (k=='obj' and x in O)) for k,x in starters(qid))
 CLASSQ={x for x in Q if _cls(x)}-{4737,4739,1796,4781,4782,4783,4784,4786}
 _WL_CHAINS=[('Voidwalker',10,{3090,1499,1506,1501,1504,1478}),
@@ -155,6 +164,10 @@ class Sim3(Sim):
         for i in extra:
             s.elig.append(i)
             if item_start(i) and i in QD: s.byzone[QD[i]].append(i)
+            for p_ in ITEMNEXT.get(i,()):
+                for k,x in finishers(p_):
+                    if k!='item':
+                        for z in spawns_of('npc' if k=='npc' else 'obj',x): s.byzone[z].append(i)
             for k,x in starters(i):
                 if k=='item': continue
                 for z in spawns_of('npc' if k=='npc' else 'obj',x): s.byzone[z].append(i)
@@ -176,6 +189,13 @@ class Sim3(Sim):
             if not l and d and d in cur and nospawn(k,x): l=(d,DUNG[d][3])
             if l: st=(k,x)+l; break
         if not st and d and d in cur and item_start(qid): st=('item',item_start(qid)[0],d,DUNG[d][3])
+        if not st and qid in ITEMNEXT and not d:
+            for p_ in [p for p in ITEMNEXT[qid] if p in s.done]:
+                for k,x in finishers(p_):
+                    if not ok_ent(k,x): continue
+                    l=ent_loc(k,x,cur)
+                    if l: st=('item',item_start(qid)[0])+l; break
+                if st: break
         if not st: return None
         fi=None
         for k,x in finishers(qid):
@@ -220,6 +240,7 @@ class Sim3(Sim):
     def can_accept(s,qid,vi):
         v=s.visits[vi]; only=v.get('only')
         if qid in s.done or qid in s.log or qid in s.skip: return None
+        if qid in ITEMNEXT and not any(p in s.done for p in ITEMNEXT[qid]): return None   # aloitusesine saadaan vasta edeltäjän palautuksesta
         d=QD.get(qid)
         if only is None and d is None and qid in CLASSQ:
             if (q(qid,'requiredLevel') or 1)>s.L or not s.prereq_ok(qid) or len(s.log)>=40: return None
