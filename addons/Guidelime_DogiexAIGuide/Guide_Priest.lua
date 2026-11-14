@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Troll,Priest]
 [N1-6 Durotar (Priest)]
 [NX6-10 Durotar (Priest)]
-[OC]Matkusta: *Durotar*. Orgrimmarin portista ulos Durotariin
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -186,7 +185,6 @@ Guidelime.registerGuide([[
 [GA Undead,Priest]
 [N1-7 Tirisfal Glades (Priest)]
 [NX7-10 Tirisfal Glades (Priest)]
-[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
 [G 32.6,63.5 Tirisfal Glades]Tapa *Mindless Zombie* [QC364,1 The Mindless Ones]

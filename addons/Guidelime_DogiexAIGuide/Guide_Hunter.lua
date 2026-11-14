@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Hunter]
 [N1-9 Durotar (Hunter)]
 [NX9-13 Durotar (Hunter)]
-[OC]Matkusta: *Durotar*. Orgrimmarin portista ulos Durotariin
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -178,7 +177,6 @@ Guidelime.registerGuide([[
 [GA Tauren,Hunter]
 [N1-6 Mulgore (Hunter)]
 [NX6-11 Mulgore (Hunter)]
-[OC]Matkusta: *Mulgore*. Thunder Bluffista alas Mulgoreen
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QA747 The Hunt Begins]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA752 A Humble Task]
 [G 48.8,80.9 Mulgore]Puhu: *Greatmother Hawkwind* [QT752 A Humble Task] [QA753 A Humble Task]
@@ -351,7 +349,6 @@ Guidelime.registerGuide([[
 [GA Skyborne,Hunter]
 [N1-13 Zephras Isle (Hunter)]
 [NX12-14 Durotar, Mulgore, Barrens (Hunter)]
-[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]

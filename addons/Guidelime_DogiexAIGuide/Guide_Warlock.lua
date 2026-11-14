@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Warlock]
 [N1-9 Durotar (Warlock)]
 [NX9-13 Durotar (Warlock)]
-[OC]Matkusta: *Durotar*. Orgrimmarin portista ulos Durotariin
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 42.6,69.0 Durotar]Puhu: *Ruzan* [QA1485 Vile Familiars]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
@@ -178,7 +177,6 @@ Guidelime.registerGuide([[
 [GA Undead,Warlock]
 [N1-6 Tirisfal Glades (Warlock)]
 [NX6-10 Tirisfal Glades (Warlock)]
-[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 31.0,66.4 Tirisfal Glades]Puhu: *Venya Marthand* [QA1470 Piercing the Veil]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]

@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Rogue]
 [N1-9 Durotar (Rogue)]
 [NX9-12 Durotar, Barrens (Rogue)]
-[OC]Matkusta: *Durotar*. Orgrimmarin portista ulos Durotariin
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -180,7 +179,6 @@ Guidelime.registerGuide([[
 [GA Undead,Rogue]
 [N1-6 Tirisfal Glades (Rogue)]
 [NX6-10 Tirisfal Glades (Rogue)]
-[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
 [G 32.6,63.5 Tirisfal Glades]Tapa *Mindless Zombie* [QC364,1 The Mindless Ones]
@@ -408,7 +406,6 @@ Guidelime.registerGuide([[
 [GA Skyborne,Rogue]
 [N1-12 Zephras Isle (Rogue)]
 [NX12-14 Silverpine Forest, Barrens (Rogue)]
-[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]

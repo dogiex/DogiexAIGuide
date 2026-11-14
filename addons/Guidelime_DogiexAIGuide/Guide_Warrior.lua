@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Orc,Troll,Warrior]
 [N1-9 Durotar (Warrior)]
 [NX9-13 Durotar, Barrens (Warrior)]
-[OC]Matkusta: *Durotar*. Orgrimmarin portista ulos Durotariin
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -161,7 +160,6 @@ Guidelime.registerGuide([[
 [GA Tauren,Warrior]
 [N1-6 Mulgore (Warrior)]
 [NX6-11 Mulgore (Warrior)]
-[OC]Matkusta: *Mulgore*. Thunder Bluffista alas Mulgoreen
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QA747 The Hunt Begins]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA752 A Humble Task]
 [G 48.8,80.9 Mulgore]Puhu: *Greatmother Hawkwind* [QT752 A Humble Task] [QA753 A Humble Task]
@@ -338,7 +336,6 @@ Guidelime.registerGuide([[
 [GA Undead,Warrior]
 [N1-6 Tirisfal Glades (Warrior)]
 [NX6-10 Tirisfal Glades (Warrior)]
-[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
 [G 32.6,63.5 Tirisfal Glades]Tapa *Mindless Zombie* [QC364,1 The Mindless Ones]
@@ -552,7 +549,6 @@ Guidelime.registerGuide([[
 [GA Skyborne,Warrior]
 [N1-13 Zephras Isle, Barrens, Durotar (Warrior)]
 [NX12-14 Barrens (Warrior)]
-[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]

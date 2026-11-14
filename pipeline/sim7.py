@@ -108,8 +108,11 @@ if mode=='glstart':
     s,vis2,ch=route(vis,1,set(),set(),[6,10,99],maxchain=12,final=False)
     e=check_ir(ch,set(),'GLS '+zone)
     for c in ch: c['title']=tagname(c)
+    gl=[gl_steps(c) for c in ch]
+    # uusi hahmo syntyy aloitusalueelle: ensimmäisen luvun alun matkustusaskel on turha (käyttäjän palaute 14.11.2026)
+    if gl and gl[0] and gl[0][0].startswith('[OC]Matkusta:'): gl[0]=gl[0][1:]
     json.dump(dict(done=sorted(s.done),level=s.L,errs=e,races=races,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],
-        gl=[gl_steps(c) for c in ch],chains=chains_cov(s,()),fps=ch[0].get('have',[]),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
+        gl=gl,chains=chains_cov(s,()),fps=ch[0].get('have',[]),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
 elif mode=='glmain':
     starts=[z for z,(rs,_) in STARTS.items() if set(rs)&set(RACENAMES)]
     dsets=[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z)))['done']) for z in starts]

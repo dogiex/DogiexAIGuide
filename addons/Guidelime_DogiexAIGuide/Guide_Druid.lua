@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Tauren,Druid]
 [N1-6 Mulgore (Druid)]
 [NX6-11 Mulgore (Druid)]
-[OC]Matkusta: *Mulgore*. Thunder Bluffista alas Mulgoreen
 [G 44.5,77.5 Mulgore]Puhu: *Grull Hawkwind* [QA747 The Hunt Begins]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA752 A Humble Task]
 [G 48.8,80.9 Mulgore]Puhu: *Greatmother Hawkwind* [QT752 A Humble Task] [QA753 A Humble Task]
@@ -188,7 +187,6 @@ Guidelime.registerGuide([[
 [GA Skyborne,Druid]
 [N1-12 Zephras Isle, Moonglade (Druid)]
 [NX12-14 Moonglade, Barrens (Druid)]
-[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]

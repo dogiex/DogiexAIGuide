@@ -8,7 +8,6 @@ Guidelime.registerGuide([[
 [GA Undead,Paladin]
 [N1-7 Tirisfal Glades (Paladin)]
 [NX7-12 Tirisfal Glades (Paladin)]
-[OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
 [G 32.6,63.5 Tirisfal Glades]Tapa *Mindless Zombie* [QC364,1 The Mindless Ones]
