@@ -4,7 +4,7 @@
 import json, os, re, sys, shutil
 sys.path.insert(0,'/home/claude/work7')
 P='/home/claude/work7/parts_alliance'; ADDON='Guidelime_DogiexAIGuide_Alliance'; OUT='/home/claude/work7/pilot/'+ADDON
-# sama kuin runall_ally.sh (käyttäjän vahvistus 14.11.2026: Shaman, Hunter, Priest, Mage, Druid; muut QuestieDB:stä)
+# sama kuin runall_ally.sh (käyttäjän vahvistus 14.11.2026, kaikki luokat)
 ALLY={'WARRIOR':'Human,Dwarf,NightElf,Gnome,Skyborne','PALADIN':'Human,Dwarf','HUNTER':'Human,Dwarf,NightElf,Skyborne','ROGUE':'Human,Dwarf,NightElf,Gnome,Skyborne',
       'PRIEST':'Human,Dwarf,NightElf,Gnome','SHAMAN':'Dwarf','MAGE':'Human,Gnome,Skyborne','WARLOCK':'Human,Gnome','DRUID':'NightElf,Skyborne'}
 GROUP="Dogiex's AI Guide: Alliance 1-60 (Forever)"
