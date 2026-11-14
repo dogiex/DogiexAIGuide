@@ -13,7 +13,8 @@ OLD=$(py QuestieDB); NEW=$(git -C /home/claude/ref/QuestieDB rev-parse origin/HE
 echo "QuestieDB vanha=$OLD uusi=$NEW"
 git -C /home/claude/ref/QuestieDB checkout -q $OLD
 python3 /home/claude/work7/export_db.py /home/claude/ref/QuestieDB /home/claude/work7/dump.lua /tmp/db_old 2>/dev/null
-if [ "$OLD" = "$NEW" ]; then echo "NOCHANGE"; exit 0; fi
+# NOCHANGE: putki (lib.py) lukee /home/claude/work/db:tä, joten sama data sinne myös, jotta issue-korjauksen uudelleenrakennus toimii
+if [ "$OLD" = "$NEW" ]; then rm -rf /home/claude/work/db; cp -r /tmp/db_old /home/claude/work/db; echo "NOCHANGE"; exit 0; fi
 git -C /home/claude/ref/QuestieDB log --oneline $OLD..$NEW > /tmp/qdb_log.txt
 git -C /home/claude/ref/QuestieDB checkout -q $NEW
 python3 /home/claude/work7/export_db.py /home/claude/ref/QuestieDB /home/claude/work7/dump.lua /home/claude/work/db 2>/dev/null
