@@ -3,7 +3,7 @@ import sys, json, re, os, collections
 from r3out import *
 from r3base import blocks_of
 from engine import _rmask
-OUTD='/home/claude/work7/parts'; os.makedirs(OUTD,exist_ok=True)
+OUTD='/home/claude/work7/'+('parts_alliance' if os.environ.get('WOW_FACTION')=='Alliance' else 'parts'); os.makedirs(OUTD,exist_ok=True)   # Alliance-osat erilleen, etteivät ne korvaa Horden osia
 mode=sys.argv[1] if len(sys.argv)>1 and __name__=='__main__' else None
 VALLEY=(38.0,47.5,55.0,72.5)   # Valley of Trials (Durotar %, QuestieDB): laakso tehdään loppuun ennen muuta Durotaria
 DEATHKNELL=(22.0,37.5,57.0,76.0)   # Deathknell (Tirisfal %)

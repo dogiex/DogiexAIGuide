@@ -1,7 +1,15 @@
 ## Interface: 16001
 ## Title: Guidelime: Dogiex's AI Guide: Alliance 1-60 (Forever) [pilotti]
 ## Notes: Alliance-pilotti (WoW Forever)
-## Version: 0.1
+## Version: 0.2
 ## Dependencies: Guidelime
 
 Guide_Warrior.lua
+Guide_Paladin.lua
+Guide_Hunter.lua
+Guide_Rogue.lua
+Guide_Priest.lua
+Guide_Shaman.lua
+Guide_Mage.lua
+Guide_Warlock.lua
+Guide_Druid.lua

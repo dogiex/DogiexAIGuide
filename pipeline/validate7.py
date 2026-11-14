@@ -4,7 +4,7 @@ from plan import *
 funcs=set("accept turnin complete goto fp xp trainer zone target mob fly hs home vendor cooldown zoneskip skill isOnQuest".split())
 SKN={"firstaid","cooking","fishing","mining","herbalism","skinning","alchemy","blacksmithing","enchanting","engineering","leatherworking","tailoring"}
 GSK={"FIRSTAID","COOKING","FISHING","MINING","HERBALISM","SKINNING","ALCHEMY","BLACKSMITHING","ENCHANTING","ENGINEERING","LEATHERWORKING","TAILORING"}
-GRC={"ORC","TROLL","UNDEAD","TAUREN","SKYBORNE","WARRIOR","PALADIN","HUNTER","ROGUE","PRIEST","SHAMAN","MAGE","WARLOCK","DRUID","HORDE"}
+GRC={"ORC","TROLL","UNDEAD","TAUREN","SKYBORNE","HUMAN","DWARF","NIGHTELF","GNOME","WARRIOR","PALADIN","HUNTER","ROGUE","PRIEST","SHAMAN","MAGE","WARLOCK","DRUID","HORDE","ALLIANCE"}   # rodut: Guidelime Data/Data.lua D.races
 _tr=json.load(open(R+'/QuestieDB/data/Forever/conversion.json'))['geometry']['transforms']
 BND={t['ui_map_id']:t['target_bounds'] for t in _tr}
 KAL={1411,1412,1413,1438,1439,1440,1441,1442,1443,1444,1445,1446,1447,1448,1449,1450,1451,1452,1454,1456,1457}
@@ -59,7 +59,8 @@ print('RXP steps',tot,'chapters',len(allnames),'errors',len(errs)); print(errs[:
 # Guidelime
 codes=['QA','QC','QT','XP','GA','NX','OC','LE','O','G','N','D','A','P','T','F','H','S','V','R']
 e2=[]; gn=0; ln=0
-for f in sorted(glob.glob('out7/Guidelime_DogiexAIGuide/Guide_*.lua')):
+GLDIR=sys.argv[1] if len(sys.argv)>1 else 'out7/Guidelime_DogiexAIGuide'   # esim. pilot/Guidelime_DogiexAIGuide_Alliance
+for f in sorted(glob.glob(GLDIR+'/Guide_*.lua')):
     t=open(f,encoding='utf-8').read(); gg=re.findall(r'registerGuide\(\[\[\n(.*?)\n\]\], "([^"]+)"\)',t,re.S)
     names=[re.search(r'^\[N(.*)\]$',g,re.M).group(1) for g,_ in gg]
     if len(names)!=len(set(names)): e2.append('dup names '+f)

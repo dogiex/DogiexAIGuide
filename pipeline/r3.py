@@ -129,7 +129,7 @@ def _auto_chains():
             nm=q(min(st_),'name')
             out.append((nm,max(1,L),set(c)))
     return out
-CHAINS=_WL_CHAINS if CLASSNAME=='WARLOCK' else _auto_chains()
+CHAINS=_WL_CHAINS if CLASSNAME=='WARLOCK' and not ALLY else _auto_chains()   # _WL_CHAINS on Horden quest-ID:t; Alliance käyttää automaattista tunnistusta
 START_OF={12:{'Human'},1:{'Dwarf','Gnome'},141:{'NightElf'},16593:{'Skyborne'}} if ALLY else {14:{'Orc','Troll'},215:{'Tauren'},85:{'Undead'},16593:{'Skyborne'}}
 def _foreign_start(qid):
     zs=set()

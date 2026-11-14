@@ -69,6 +69,7 @@ def obj_location(ob, zones):
     """best (zone,(x,y),count,names,moblevel) for objective within given zone list order"""
     if ob['type']=='event':
         sp=ob.get('spawns') or {}
+        if isinstance(sp,list): sp={str(i+1):v for i,v in enumerate(sp) if v}   # alue 1 (Dun Morogh) JSON-listana, kuten elig.py spawns_of
         for z in zones:
             pts=sp.get(str(z))
             if pts:
