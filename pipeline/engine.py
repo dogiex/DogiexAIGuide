@@ -277,6 +277,9 @@ class Sim:
                 x['done']=True; loc=x['loc']
                 s.zone,s.pos=loc[0],loc[1]
                 ml=loc[4]
+                # puhu-tavoite (ystävällinen NPC, jolla NPC-toiminto) ei anna tappo-XP:tä; sama tunnistus kuin r3out.py:n 'talk'
+                ob_=x['ob']; ids_=ob_.get('ids') or []
+                if ob_['type'] in('monster','killcredit') and ids_ and all(i in N and friendly(i) and (n(i,'npcFlags') or 0)>0 for i in ids_): ml=None
                 if ml:
                     kills=10 if x['ob']['type'] in('monster','killcredit') else 12
                     s.gain(kills*mob_xp(s.L,ml)*s.kf,'k')

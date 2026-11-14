@@ -19,6 +19,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 
 ## Tarkoituksella pois jätetyt
 - **The Hunter's Path** (Hunter, Durotar): tämä vapaaehtoinen ohjausquest Sen'jinissä jää pois, koska Taming the Beast otetaan suoraan Razor Hillistä. Itse questiketju tehdään.
+- **Report to Danitha** (Paladin, RestedXP) ja **Speak with Dillinger** (Warrior, Guidelimen Tirisfal-aloitus): ohjausquestit jäävät pois, koska reitti kulkee suoraan varsinaisen questin antajalle. A Paladin's Steed ja Ulag the Cleaver -ketju tehdään.
 - Talenttipuu- ja spec-suositukset sekä ammattien keräily- ja farmausohjeet eivät kuulu oppaaseen.
 
 ## Ammatit
