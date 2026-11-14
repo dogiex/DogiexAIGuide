@@ -8,11 +8,13 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **The Adventurer (Orc/Troll-versio)**: QuestieDB:ssä ei ole questin antajaa.
 - **Camping 101: Cooking (Zephras)**: palauttaja ei ole reitin varrella.
 - **Noin 30 Hordelle kelpaavaa questia**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
+- **Weed Whacked** (Stranglethorn Vale): QuestieDB-datassa questin antajalta puuttuu faction-tieto.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
 ## Class-questit, jotka eivät ole reitillä
 - **Season of Discovery -rune-questit**, jotka ovat QuestieDB:n Forever-datassa, mutta joiden olemassaolo Foreverissa on epävarma: Elemental Aid (Shaman), The Talisman of Kazdor ja The Eye of Bhossca (Rogue), Oi! (Paladin).
 - **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen.
+- **Call of Fire** (Skyborne Shaman, ohjausquest Zephras Islelle): QuestieDB-datassa ei ole questin antajaa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
 
 ## Tarkoituksella pois jätetyt

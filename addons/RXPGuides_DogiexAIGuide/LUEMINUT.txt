@@ -1,4 +1,4 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v1.5)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v1.6)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanhat kansiot RXPGuides_OmaReitti (ja aiemmat versiot).

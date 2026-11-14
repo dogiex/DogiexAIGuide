@@ -1,6 +1,6 @@
 # Pelin perustiedot
 
-Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty claude.ai-projektista repoon 13.11.2026.
+Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 14.11.2026. Siirretty claude.ai-projektista repoon 13.11.2026.
 
 ## Peli
 - Versio: World of Warcraft: Forever (RestedXP:n pelityyppi "camelot", TOC Interface 16001)
@@ -23,10 +23,10 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
 | QuestieDB | 1.0.14 (11.11.2026), contract 4 | Oppaan quest-, NPC-, objekti- ja esinedata (Forever). Sama contract kuin Questie 12.7.0. |
 
 ## Oma opas: Dogiex's AI Guide: Horde 1-60 (Forever)
-- Versio 1.5 (13.11.2026: QuestieDB e19dfdf -> 90ab55b, Skyborne-rotumaski korjattu, Druidin Tauren-kissaketju säilyy; tarkemmin RELEASE_NOTES.md). v1.4: Foreverin leiriytymisketju Guidelime-aloituksiin, puhu-tavoitteet oikein. v1.3: Questien ehdolliset merkinnät. v1.2: Deathknell ja Camp Narache. v1.1: Valley of Trials ja blacklist-taulukorjaus. v1.0 = kehitysversio 8.2 + latauslinkit; kehityshistoria: v8.0 ammatit, v8.1 Magen Mana Surges ja Celestial Power, v8.2 Demonology-vinkit pois. Kansiot: `Interface/AddOns/RXPGuides_DogiexAIGuide` ja `Interface/AddOns/Guidelime_DogiexAIGuide`
+- Versio 1.6 (14.11.2026: QuestieDB 90ab55b -> 4dbb824, uudet ja korjatut questit, koordinaattitarkennukset; tarkemmin RELEASE_NOTES.md). v1.5: QuestieDB e19dfdf -> 90ab55b, Skyborne-rotumaski korjattu, Druidin Tauren-kissaketju säilyy. v1.4: Foreverin leiriytymisketju Guidelime-aloituksiin, puhu-tavoitteet oikein. v1.3: Questien ehdolliset merkinnät. v1.2: Deathknell ja Camp Narache. v1.1: Valley of Trials ja blacklist-taulukorjaus. v1.0 = kehitysversio 8.2 + latauslinkit; kehityshistoria: v8.0 ammatit, v8.1 Magen Mana Surges ja Celestial Power, v8.2 Demonology-vinkit pois. Kansiot: `Interface/AddOns/RXPGuides_DogiexAIGuide` ja `Interface/AddOns/Guidelime_DogiexAIGuide`
 - Talentti- ja spec-suosituksia ei lisätä oppaaseen (käyttäjän päätös 12.11.2026: talenttipuu ei ole tarpeellinen tieto levutuksessa). Luokkakohtaiset yleiset asiat (class-questit, trainer-käynnit, warlockin grimoire-muistutus, luokan ostokset) säilyvät.
 - GitHub (päälähde 12.11.2026 alkaen): https://github.com/dogiex/DogiexAIGuide (julkinen, haara main, päivitykset suoraan mainiin käyttäjän päätöksellä 12.11.2026). Sisältö: `addons/` (valmiit addonit), `pipeline/` (rakennusputki, keep/, state.json), `docs/` (ohjeet ja tämä tiedosto, 13.11.2026 alkaen), `RELEASE_NOTES.md`, README (vaatimukset ja latauslinkit: RestedXP, Guidelime, Questie, QuestieDB), LICENSE (CC BY-NC-SA 4.0 koska 1-22-osa on RestedXP:n sisältöä). Käyttäjä voi jakaa julkaisulinkin kavereilleen.
-  - Julkaisut: https://github.com/dogiex/DogiexAIGuide/releases. Uusin v1.5. Vanhat kehitysjulkaisut v8.1 ja v8.2 ovat yhä listalla, koska Claude ei voi poistaa julkaisuja tai tageja; käyttäjä voi poistaa ne GitHubissa käsin.
+  - Julkaisut: https://github.com/dogiex/DogiexAIGuide/releases. Uusin v1.6. Vanhat kehitysjulkaisut v8.1 ja v8.2 ovat yhä listalla, koska Claude ei voi poistaa julkaisuja tai tageja; käyttäjä voi poistaa ne GitHubissa käsin.
   - Julkaisut tekee GitHub Actions (`.github/workflows/release.yml`): kun `addons/` tai `RELEASE_NOTES.md` muuttuu mainissa, versio luetaan RestedXP-addonin TOC:sta ja julkaisu vX.Y luodaan, jos sitä ei vielä ole. Syy: Claude-istunnot eivät saa luoda tageja eivätkä julkaisuja (HTTP 403).
   - Claude.ai-projektissa ei pidetä kopioita (13.11.2026 alkaen vain LUE-ENSIN.md, joka ohjaa tähän repoon). Vanha `claude/pipeline/`-varmuuskopio poistettu.
 - Jakelu: kumpikin opas omana zip-tiedostonaan (`RXPGuides_DogiexAIGuide_vX.zip`, `Guidelime_DogiexAIGuide_vX.zip`), jotta niitä voi jakaa erikseen. Käyttäjän toive 12.11.2026, koskee kaikkia tulevia versioita.
@@ -46,7 +46,7 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
   - Ammattitehtävät: QuestieDB `requiredSkill`, taitovaatimus enintään 250. Otto vain, jos taito riittää; palautus aikaisintaan 15 askelta myöhemmin (`.isOnQuest`). Tehtävät, joiden palautusta reitti ei kohtaa, jätetty pois. 27-28 tehtävää per luokka.
   - Keräysohjeita (mistä materiaalit, farmausreitit, materiaalimäärät) ei lisätä lainkaan. Käyttäjän päätös 12.11.2026.
   - Oletus (ei varmistettu datasta): kaupunkien Herbalism-, Mining- ja Skinning-trainerit opettavat Artisanin asti; First Aid-, Cooking- ja Fishing-trainerit Journeymaniin asti.
-- Quest-data: QuestieDB 1.1.0 (Forever), commit 90ab55b (v1.5, 13.11.2026; aiemmin e19dfdf). Ei pelitestattu kokonaisuutena.
+- Quest-data: QuestieDB 1.1.1 (Forever), commit 4dbb824 (v1.6, 14.11.2026; aiemmin 90ab55b, e19dfdf). Ei pelitestattu kokonaisuutena.
 
 ## Alliance-opas (suunnitteilla, aloitettu 13.11.2026)
 - Käyttäjän päätökset 13.11.2026:
@@ -72,7 +72,10 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 13.11.2026. Siirretty cl
 - Dun Moroghin spawnit (käyttäjän päätös 13.11.2026: korjaus myös Hordelle): QuestieDB-viennissä alueen 1 spawnit ovat JSON-listana, ja elig.py `spawns_of` ohitti ne. Korjaus on nyt käytössä molemmille factioneille. Horde-opas ajettiin kokonaan uudelleen (runall.sh, 9 luokkaa): compare.py ei löytänyt yhtään muuttunutta questia, kaikki tasolle 60, Guidelime-tiedostot identtiset v1.5:n kanssa. Uutta versiota ei julkaistu, koska opas ei muuttunut.
 
 ## Avoimet asiat
-- RestedXP-oppaan uudelleenrakennus nykyisellä putkella (13.11.2026) antaa v1.5:een verrattuna pieniä eroja `.goto`-koordinaatteihin (muutaman jaardin siirtymiä, esim. Warrior 4 riviä; questit, järjestys ja Guidelime identtiset). Ero oli jo ennen Dun Morogh -korjausta (Horde Warrior ajettiin ennen muutoksia), syy selvittämättä. Seuraava julkaisu sisältää nämä siirtymät.
+- Ehdotus #1 (14.11.2026), odottaa päätöstä: dungeon-questit otettaisiin heti, kun reitti kulkee antajan ohi ja minimitaso täyttyy (esimerkkinä Warlockin Undercity-käynnit ja Ruins of Lordaeron). Analyysi päivitysraportissa: RoL-questien minimitaso on 15, ja Warlockin Silverpine/Undercity-käynnit ovat tasoilla 10-14; putki ottaa jo nyt dungeon-questit matkan varrelta, kun taso riittää ja dungeon on enintään 8 käynnin päässä (r3.py `W`).
+- Weed Whacked 97453 (v1.6): QuestieDB 4dbb824 poisti aloittajan Crank Fizzlebub; jäljelle jääneellä Gemmilillä (269166) ei ole faction- eikä npcFlags-tietoa, joten quest ei kelpaa reitille. Paranee QuestieDB-korjauksella.
+- Call of Fire 98517 (Skyborne-Shamanin ohjausquest, v1.6): QuestieDB 4dbb824 poisti aloittajan, joten quest ei reitity. Varsinainen class-ketju ennallaan.
+- RestedXP-oppaan uudelleenrakennus nykyisellä putkella (13.11.2026) antaa v1.5:een verrattuna pieniä eroja `.goto`-koordinaatteihin (muutaman jaardin siirtymiä, esim. Warrior 4 riviä; questit, järjestys ja Guidelime identtiset). Ero oli jo ennen Dun Morogh -korjausta (Horde Warrior ajettiin ennen muutoksia), syy selvittämättä. Siirtymät sisältyvät v1.6:een (samassa julkaisussa myös QuestieDB:n NPC-datan koordinaattimuutokset).
 - Vanhat kehitysjulkaisut v8.1 ja v8.2 (ja tagit) GitHubissa: käyttäjä voi poistaa käsin (Releases -> julkaisu -> Delete, ja tagi Tags-sivulta).
 - XP-simulaatio (havaittu 12.11.2026, ei korjattu): puhu-tyyppinen tavoite (ystävällinen NPC monster-tavoitteena, esim. Cook Torka) antaa simulaatiossa 10 tapon XP:n. Korjaus muutti kokeilussa luokkien pääreittejä useilla questeilla (esim. Mage -6, Warlock Felsteed-version vaihto), joten se peruttiin kirurgisuuden vuoksi. Vaatii käyttäjän päätöksen.
 - Mahdollinen vanhentunut osa v1.1-v1.2:ssa: runall.sh:n `wait` oli putken ulkopuolella, joten viimeiset rinnakkaisajot (yleensä DRUID glmain) saattoivat jäädä kesken ennen kokoamista. Korjattu v1.4:ssä; v1.3:ssa ja v1.4:ssä Druidin glmain ajettiin erikseen ja tarkistettiin.
