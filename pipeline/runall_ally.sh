@@ -1,9 +1,9 @@
 #!/bin/bash
 # Alliance-testiajo (Guidelime): kaikki luokat ja aloitukset -> parts_alliance/, lokit logs_alliance/
-# Rotu/luokkayhdistelmät päätelty QuestieDB:n class-questien rotuehdoista (14.11.2026), ks. docs/PELIN-PERUSTIEDOT.md
+# Rotu/luokkayhdistelmät: käyttäjän vahvistus pelin hahmonluonnista 14.11.2026 (Shaman, Hunter, Priest, Mage, Druid), muut QuestieDB:n class-questeista
 cd /home/claude/work7
 export WOW_FACTION=Alliance
-declare -A R=( [WARRIOR]=Human,Dwarf,NightElf,Gnome,Skyborne [PALADIN]=Human,Dwarf [HUNTER]=Human,Dwarf,NightElf,Skyborne [ROGUE]=Human,Dwarf,NightElf,Gnome,Skyborne [PRIEST]=Human,Dwarf,NightElf,Gnome [SHAMAN]=Dwarf,Gnome [MAGE]=Human,Gnome [WARLOCK]=Human,Gnome [DRUID]=NightElf,Skyborne )
+declare -A R=( [WARRIOR]=Human,Dwarf,NightElf,Gnome,Skyborne [PALADIN]=Human,Dwarf [HUNTER]=Human,Dwarf,NightElf,Skyborne [ROGUE]=Human,Dwarf,NightElf,Gnome,Skyborne [PRIEST]=Human,Dwarf,NightElf,Gnome [SHAMAN]=Dwarf [MAGE]=Human,Gnome,Skyborne [WARLOCK]=Human,Gnome [DRUID]=NightElf,Skyborne )
 declare -A S=( [NORTHSHIRE]=Human [COLDRIDGE]=Dwarf,Gnome [SHADOWGLEN]=NightElf [ZEPHRAS]=Skyborne )
 run_class() {
   c=$1; races=${R[$c]}

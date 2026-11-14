@@ -5,8 +5,8 @@ local _, _cls = UnitClass("player")
 if _cls ~= "SHAMAN" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[GA Dwarf,Shaman]
 [N1-6 Dun Morogh (Shaman)]
 [NX6-10 Dun Morogh (Shaman)]
 [OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
@@ -16,10 +16,10 @@ Guidelime.registerGuide([[
 [G 22.6,71.5 Dun Morogh]Tapa *Small Crag Boar* [QC183,1 The Boar Hunter]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QT183 The Boar Hunter]
 [G 28.1,74.8 Dun Morogh]Kerää *Tough Wolf Meat* (Ragged Young Wolf, Ragged Timber Wolf) [QC179,1 Dwarven Outfitters]
-[A Dwarf][G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QT179 Dwarven Outfitters] [QA233 Coldridge Valley Mail Delivery] [QA98581 Archaic Rune]
+[G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QT179 Dwarven Outfitters] [QA233 Coldridge Valley Mail Delivery] [QA98581 Archaic Rune]
 [G 29.7,71.2 Dun Morogh]Puhu: *Balir Frosthammer* [QA170 A New Threat]
 [G 28.6,67.6 Dun Morogh]Puhu: *Felix Whindlebolt* [QA3361 A Refugee's Quandary]
-[A Dwarf][G 28.8,66.2 Dun Morogh]Puhu: *Teo Hammerstorm* [QT98581 Archaic Rune]
+[G 28.8,66.2 Dun Morogh]Puhu: *Teo Hammerstorm* [QT98581 Archaic Rune]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QT233 Coldridge Valley Mail Delivery] [QA234 Coldridge Valley Mail Delivery]
 [G 25.1,75.7 Dun Morogh]Puhu: *Grelin Whitebeard* [QT234 Coldridge Valley Mail Delivery]
 [G 28.8,66.2 Dun Morogh][T Shaman-trainer (taso 4)] (*Teo Hammerstorm*): Earth Shock
@@ -46,8 +46,8 @@ Guidelime.registerGuide([[
 ]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[GA Dwarf,Shaman]
 [N6-10 Dun Morogh (Shaman)]
 [NX10-14 Dun Morogh, Loch Modan, Barrens (Shaman)]
 [G 28.7,67.5 Dun Morogh]Puhu: *Grund Drokda* [QA97277 Grund and Gozwin]
@@ -118,7 +118,7 @@ Guidelime.registerGuide([[
 [O][A First Aid1][G 47.2,52.6 Dun Morogh]Ammattitehtävä: palauta *Thamner Pol* [QT96047 Camping 101: First Aid] (jos tavoite valmis)
 [O][A Cooking50][G 47.7,52.3 Dun Morogh]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Gremlock Pilsnor*) [LE Cooking 150]
 [O][A Blacksmithing50][G 45.3,51.9 Dun Morogh]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Tognus Flintfire*) [LE Blacksmithing 150]
-[A Dwarf][G 47.6,52.0 Dun Morogh]Puhu: *Ingrid Dunwald* [QA94449 Call of Fire]
+[G 47.6,52.0 Dun Morogh]Puhu: *Ingrid Dunwald* [QA94449 Call of Fire]
 [G 57.7,44.9 Dun Morogh]Puhu: *Father Gavin* [QT99162 Treacherous Cold]
 [G 30.2,45.7 Dun Morogh]Puhu: *Rejold Barleybrew* [QT319 A Favor for Evershine] [QA320 Return to Bellowfiz]
 [O][A Mining1][G 50.0,50.3 Dun Morogh]Ammattitehtävä: palauta *Yarr Hammerstone* [QT96046 Camping 101: Mining] (jos tavoite valmis)
@@ -126,12 +126,12 @@ Guidelime.registerGuide([[
 [O][A Mining50][G 50.0,50.3 Dun Morogh]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Yarr Hammerstone*) [LE Mining 150]
 [O][A Engineering50][G 50.2,50.4 Dun Morogh]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Bronk Guzzlegear*) [LE Engineering 150]
 [G 49.4,48.4 Dun Morogh]Puhu: *Pilot Bellowfiz* [QT320 Return to Bellowfiz]
-[A Dwarf][G 87.9,44.8 Dun Morogh]Puhu: *Bruegs Kindleborn* [QT94449 Call of Fire] [QA94465 Call of Fire]
+[G 87.9,44.8 Dun Morogh]Puhu: *Bruegs Kindleborn* [QT94449 Call of Fire] [QA94465 Call of Fire]
 ]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[GA Dwarf,Shaman]
 [N10-14 Dun Morogh, Loch Modan, Barrens (Shaman)]
 [NX12-15 Westfall (Shaman)]
 [OC]Matkusta: *Loch Modan*. Dun Moroghin itäpäästä tunnelin läpi Loch Modaniin. Thelsamar on länsiosassa
@@ -190,19 +190,19 @@ Guidelime.registerGuide([[
 [G 86.3,48.8 Dun Morogh]Puhu: *Mountaineer Barleybrew* [QT413 Shimmer Stout] [QA414 Stout to Kadrell]
 [G 47.6,52.0 Dun Morogh][T Shaman-trainer (taso 12)] (*Ingrid Dunwald*): Fire Nova Totem, Healing Wave r3, Purge
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Thelsamar]
-[A Dwarf][G 32.2,66.0 Loch Modan]Puhu: *Braldir Ashmantle* [QA94466 Call of Fire]
+[G 32.2,66.0 Loch Modan]Puhu: *Braldir Ashmantle* [QA94466 Call of Fire]
 [OC]Matkusta: *The Barrens*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore). Lennä Ratchetiin (The Barrens)
 [G 63.1,37.2 The Barrens][P Ratchet]Hae flight path (*Bragok*)
 [G 56.3,25.7 The Barrens]Kerää *Fire Tar* (Razormane Seer, Razormane Water Seeker, Razormane Geomancer) [QC94466,1 Call of Fire]
 [OC]Matkusta: *Durotar*. 
 [G 52.4,25.5 Durotar]Kerää *Reagent Pouch* (Burning Blade Cultist) [QC94466,2 Call of Fire]
 [OC]Matkusta: *Loch Modan*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Dun Moroghin itäpäästä tunnelin läpi Loch Modaniin. Thelsamar on länsiosassa
-[A Dwarf][G 32.2,66.0 Loch Modan]Puhu: *Braldir Ashmantle* [QT94466 Call of Fire] [QA94467 Call of Fire]
+[G 32.2,66.0 Loch Modan]Puhu: *Braldir Ashmantle* [QT94466 Call of Fire] [QA94467 Call of Fire]
 [OC]Matkusta: *Durotar*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore).
 [G 38.7,58.3 Durotar]Kerää *Glowing Ember* (Minor Manifestation of Fire) [QC94467,1 Call of Fire]
-[A Dwarf][G 39.0,58.2 Durotar]Klikkaa: *Brazier of the Dormant Flame* [QT94467 Call of Fire] [QA94468 Call of Fire]
+[G 39.0,58.2 Durotar]Klikkaa: *Brazier of the Dormant Flame* [QT94467 Call of Fire] [QA94468 Call of Fire]
 [H Hearthstone: Innkeeper Belm] (jos cooldownilla, juokse tai lennä)
-[A Dwarf][G 87.9,44.8 Dun Morogh]Puhu: *Bruegs Kindleborn* [QT94468 Call of Fire]
+[G 87.9,44.8 Dun Morogh]Puhu: *Bruegs Kindleborn* [QT94468 Call of Fire]
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Thelsamar]
 [G 32.6,49.7 Loch Modan]Puhu: *Mountaineer Kadrell* [QT414 Stout to Kadrell]
 [G 35.5,48.4 Loch Modan][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Hearthstove*)
@@ -235,7 +235,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N12-15 Westfall (Shaman)]
 [NX15-18 Westfall, Loch Modan + HoT (Shaman)]
 [XP11 Tavoitetaso 11: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -292,7 +292,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N15-18 Westfall, Loch Modan + HoT (Shaman)]
 [NX18-22 Westfall, Redridge, Loch Modan + VC (Shaman)]
 [G 57.0,47.2 Westfall][V Myy harmaat roinat] (*Quartermaster Lewis*)
@@ -376,7 +376,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N18-22 Westfall, Redridge, Loch Modan + VC (Shaman)]
 [NX22-26 Darkshore, Dun Morogh, Redridge + RoL (Shaman)]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Ironforge]
@@ -614,7 +614,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N22-26 Darkshore, Dun Morogh, Redridge + RoL (Shaman)]
 [NX26-31 Duskwood, Redridge, Wetlands (Shaman)]
 [OC]Matkusta: *Dun Morogh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforgen portista ulos Dun Moroghiin
@@ -793,7 +793,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N26-31 Duskwood, Redridge, Wetlands (Shaman)]
 [NX31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)]
 [G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Ironforge]
@@ -1020,7 +1020,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)]
 [NX34-38 Hillsbrad, Duskwood, Arathi + RFK/Gnomer (Shaman)]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
@@ -1186,7 +1186,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N34-38 Hillsbrad, Duskwood, Arathi + RFK/Gnomer (Shaman)]
 [NX38-42 Desolace, Dun Morogh, Dustwallow + Exc. Site/Dalaran (Shaman)]
 [OC]*Dungeon: Razorfen Kraul* (suositus taso 28+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (The Barrens) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
@@ -1407,7 +1407,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N38-42 Desolace, Dun Morogh, Dustwallow + Exc. Site/Dalaran (Shaman)]
 [NX42-46 Hillsbrad, Dustwallow, STV + SM/RFD/Ulda (Shaman)]
 [OC]Matkusta: *Dun Morogh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforgen portista ulos Dun Moroghiin
@@ -1616,7 +1616,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N42-46 Hillsbrad, Dustwallow, STV + SM/RFD/Ulda (Shaman)]
 [NX46-50 Tanaris, Dun Morogh, Feralas + ZF (Shaman)]
 [OC]*Dungeon: Scarlet Monastery* (suositus taso 34+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Tirisfal Glades) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
@@ -1909,7 +1909,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N46-50 Tanaris, Dun Morogh, Feralas + ZF (Shaman)]
 [NX50-54 Blasted Lands, Azshara, Tanaris + Mara/ST (Shaman)]
 [XP43 Tavoitetaso 43: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -2112,7 +2112,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N50-54 Blasted Lands, Azshara, Tanaris + Mara/ST (Shaman)]
 [NX54-57 Felwood, Azshara, WPL + BRD (Shaman)]
 [XP47 Tavoitetaso 47: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -2361,7 +2361,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N54-57 Felwood, Azshara, WPL + BRD (Shaman)]
 [NX57-60 Searing Gorge, Un'Goro, Felwood + LBRS/DM/Scholo/Strat (Shaman)]
 [G 62.5,24.2 Felwood]Lennä (*Mishellena*): [F Talrendis Point]
@@ -2558,7 +2558,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
-[GA Dwarf,Gnome,Shaman]
+[GA Dwarf,Shaman]
 [N57-60 Searing Gorge, Un'Goro, Felwood + LBRS/DM/Scholo/Strat (Shaman)]
 [XP53 Tavoitetaso 53: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Un'Goro Crater*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Tanarisin lounaiskulmasta ramppia alas Un'Goro Crateriin (lento Marshal's Refuge)

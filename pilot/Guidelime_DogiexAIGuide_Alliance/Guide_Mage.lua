@@ -392,8 +392,135 @@ Guidelime.registerGuide([[
 ]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
 
 Guidelime.registerGuide([[
+[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Skyborne. Quest-data: QuestieDB.]
+[GA Skyborne,Mage]
+[N1-12 Zephras Isle, Elwynn Forest (Mage)]
+[NX12-15 Elwynn Forest, Westfall (Mage)]
+[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
+[G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
+[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
+[G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]
+[G 45.1,25.3 Zephras Isle]Tapa *Juvenile Vuldren* [QC92461,1 Harmony in Balance]
+[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92461 Harmony in Balance] [QA92464 Elemental Unrest] [QA92481 A Student of the Arcane]
+[G 41.5,23.7 Zephras Isle]Puhu: *Dorii Brightwhisper* [QT92481 A Student of the Arcane]
+[G 43.4,24.0 Zephras Isle]Puhu: *Dalia the Collector* [QA93552 Harvesting Windstones]
+[G 43.3,24.9 Zephras Isle]Puhu: *Falorne Fallwind* [QA92597 Reading the Leylines]
+[G 47.2,22.0 Zephras Isle]Puhu: *Yala Windwatcher* [QT92464 Elemental Unrest] [QA92465 Agitators]
+[G 46.9,20.6 Zephras Isle]Tapa *Roiling Winds*; Tapa *Al'Aketh Convert* [QC92465,2 Agitators] [QC92465,1 Agitators]
+[G 41.5,23.7 Zephras Isle][T Mage-trainer (taso 4)] (*Dorii Brightwhisper*): Frostbolt
+[G 47.2,22.0 Zephras Isle]Puhu: *Yala Windwatcher* [QT92465 Agitators] [QA92469 Return to Rorian]
+[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92469 Return to Rorian] [QA92471 Aetheen of the Gales]
+[G 42.8,23.7 Zephras Isle]Puhu: *Aetheen of the Gales* [QT92471 Aetheen of the Gales] [QA92470 Foul Matriarch]
+[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QA92473 Aggressive Encroachment]
+[G 38.3,30.2 Zephras Isle]Puhu: *Hanaa Nightwind* [QA92544 Al'Aketh Thugs]
+[G 37.4,32.4 Zephras Isle]Tapa *Al'Aketh Neophyte*; Tapa *Al'Aketh Brute*; Tapa *Malduko Cloudcrush* [QC92544,2 Al'Aketh Thugs] [QC92544,1 Al'Aketh Thugs] [QC92544,3 Al'Aketh Thugs]
+[G 38.3,30.2 Zephras Isle]Puhu: *Hanaa Nightwind* [QT92544 Al'Aketh Thugs]
+[G 39.8,27.9 Zephras Isle]Kerää *Scrawny Ursera Claw* (Scrawny Ursera) [QC92473,1 Aggressive Encroachment]
+[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QT92473 Aggressive Encroachment]
+[G 45.0,25.2 Zephras Isle]Kerää *Windstone Cluster* (Raw Windstone) [QC93552,1 Harvesting Windstones]
+[G 41.5,23.7 Zephras Isle][T Mage-trainer (taso 6)] (*Dorii Brightwhisper*): Fire Blast, Fireball r2
+[G 43.4,24.0 Zephras Isle]Puhu: *Dalia the Collector* [QT93552 Harvesting Windstones]
+[G 45.8,26.8 Zephras Isle]Tapa *Pesky Cirrusfly* [QC92462,1 Infestation Investigation]
+[G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QT92462 Infestation Investigation] [QA92463 The Cirrusfly Queen]
+[G 38.2,26.4 Zephras Isle]Tapa *Ursera Scavenger*; Kerää *Head of Urs'anah* (Urs'anah) [QC92470,1 Foul Matriarch] [QC92470,2 Foul Matriarch]
+[G 42.8,23.7 Zephras Isle]Puhu: *Aetheen of the Gales* [QT92470 Foul Matriarch] [QA92472 The Next Step] [QA96638 The Adventurer]
+[G 46.3,17.9 Zephras Isle]Käytä / kerää: *Ley Line* [QC92597,1 Reading the Leylines]
+[G 43.3,24.9 Zephras Isle]Puhu: *Falorne Fallwind* [QT92597 Reading the Leylines]
+[G 48.4,28.5 Zephras Isle]Tapa *Cirrusfly Queen* [QC92463,1 The Cirrusfly Queen]
+[G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QT92463 The Cirrusfly Queen]
+[G 43.8,24.1 Zephras Isle]Puhu: *Halaan Hawk-Eye* [QA94414 The Anchors of Zephras]
+[G 43.8,24.1 Zephras Isle]Tapa *Halaan Hawk-Eye* [QC94414,1 The Anchors of Zephras]
+[G 43.8,24.1 Zephras Isle]Puhu: *Halaan Hawk-Eye* [QT94414 The Anchors of Zephras]
+[G 44.8,44.2 Zephras Isle][V Myy roinat] ja [R korjaa varusteet] (*Tephri Thriceforged*)
+[G 43.0,43.2 Zephras Isle][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Coriella Calmbreeze*)
+[G 43.0,43.2 Zephras Isle][S Aseta Hearthstone tähän] (*Coriella Calmbreeze*)
+[G 41.7,44.8 Zephras Isle]Puhu: *Raan Wildwind* [QT96638 The Adventurer] [QA96101 The Great Outdoors]
+[G 45.7,45.5 Zephras Isle]Puhu: *Constable Aonda* [QT92472 The Next Step]
+[G 41.7,44.8 Zephras Isle]Käytä / kerää: *Basic Campfire* [QC96101,1 The Great Outdoors] [QC96101,2 The Great Outdoors]
+[G 41.7,44.8 Zephras Isle]Puhu: *Raan Wildwind* [QT96101 The Great Outdoors]
+[G 60.6,72.7 Zephras Isle]Puhu: *Nyalah Brightfire* [QA93317 Crab Season]
+[G 62.1,73.3 Zephras Isle]Puhu: *Alvarion Windfield* [QA92679 Blood Tithe]
+[G 62.1,73.3 Zephras Isle]Tapa *Alvarion Windfield* [QC92679,2 Blood Tithe]
+[G 46.7,82.0 Zephras Isle]Tapa *Aamelia Windfield* [QC92679,1 Blood Tithe]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92679 Blood Tithe] [QA92682 Make Yourself Useful] [QA92683 Flutterfly Dust] [QA92684 Ornery Ornery Galestriders]
+[G 48.9,78.2 Zephras Isle]Puhu: *Malfunctioning Cyclone Construct* [QA92698 What Is My Purpose?]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92698 What Is My Purpose?]
+[G 47.3,81.3 Zephras Isle]Kerää *Ripe Stormapple* (Ripe Stormapple); Tapa *Hungry Bandit* [QC92682,1 Make Yourself Useful] [QC92682,2 Make Yourself Useful]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92682 Make Yourself Useful]
+[G 50.3,78.8 Zephras Isle]Kerää *Flutterfly Dust* (Flutterfly Dust) [QC92683,1 Flutterfly Dust]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92683 Flutterfly Dust]
+[G 65.9,80.6 Zephras Isle][T Mage-trainer (taso 8)] (*Anathamaas Aetherwind*): Frostbolt r2, Polymorph
+[G 64.0,75.1 Zephras Isle]Puhu: *Lotheluum Starbreeze* [QA94484 Unnerving Silence]
+[G 66.0,74.3 Zephras Isle]Puhu: *Ealaane Nimbuswalker* [QA94896 Aid For The Refugees] [QA94897 The Fate of a Loved One]
+[G 58.3,70.9 Zephras Isle]Kerää *Lowlands Galestrider Tenderloin* (Ornery Galestrider) [QC92684,1 Ornery Ornery Galestriders]
+[G 56.8,61.1 Zephras Isle]Puhu: *Fendaal Windstone* [QA98512 Al'Aketh Assassins]
+[G 56.1,60.3 Zephras Isle]Tapa *Al'Aketh Assassin* [QC98512,1 Al'Aketh Assassins]
+[G 56.8,61.1 Zephras Isle]Puhu: *Fendaal Windstone* [QT98512 Al'Aketh Assassins]
+[G 51.2,48.2 Zephras Isle]Kerää *Windsong Crawler Meat* (Windsong Crawler) [QC93317,1 Crab Season]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94484 Unnerving Silence] [QA94485 Tears of the Lady] [QA94486 Feathers for Binding] [QA94487 Unwanted and Unworthy]
+[G 60.9,38.4 Zephras Isle]Kerää *Lady's Tear Moss* (Lady's Tear Moss) [QC94485,1 Tears of the Lady]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94485 Tears of the Lady]
+[G 59.6,38.7 Zephras Isle]Kerää *Pristine Shriekling Feather* (Shadowgale Shriekling) [QC94486,1 Feathers for Binding]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94486 Feathers for Binding]
+[G 63.8,36.0 Zephras Isle]Puhu: *Vayn Moongaze* [QA93165 Mercy Falls on Deaf Ears]
+[G 63.5,37.3 Zephras Isle]Kerää *Bloody Heirloom* (Al'Aketh Stormchaser, Al'Aketh Footsoldier) [QC94487,1 Unwanted and Unworthy]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94487 Unwanted and Unworthy] [QA94488 The Ties That Bind] [QA94489 The Wounds of Betrayal]
+[G 45.1,45.9 Zephras Isle][T Mage-trainer (taso 10)] (*Shenaan Spellwind*): Frost Armor r2, Frost Nova, Conjure Water, Conjure Water r2
+[G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QA93159 The Strange Hermit]
+[G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QC93159,1 The Strange Hermit]
+[G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93159 The Strange Hermit] [QA93160 The Forest's Bounty] [QA93172 Free the Hollows]
+[G 58.6,38.8 Zephras Isle]Kerää *Zephyrseed* (Zephyrseed Cone) [QC93160,1 The Forest's Bounty]
+[G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93160 The Forest's Bounty]
+[G 58.4,32.4 Zephras Isle]Tapa *Wind Hollow*; Kerää *Abandoned Belongings* (Abandoned Belongings) [QC93172,1 Free the Hollows] [QC94896,1 Aid For The Refugees]
+[G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93172 Free the Hollows]
+[G 57.0,29.4 Zephras Isle]Kerää *Resaan's Heirloom* (Resaan Nimbuswalker) [QC94897,1 The Fate of a Loved One]
+[G 64.9,33.6 Zephras Isle]Tapa *Naaleos Leafwhisper*, *Telenos Leafwhisper*, *Nayeela Snarlfang*; Tapa *Jorel Windsinger* [QC94489,1 The Wounds of Betrayal] [QC94489,2 The Wounds of Betrayal]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94489 The Wounds of Betrayal]
+[G 65.5,36.3 Zephras Isle]Kerää *Commander Haalien's Severed Head* (Commander Haalien) [QC94488,1 The Ties That Bind]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94488 The Ties That Bind]
+[G 63.4,50.5 Zephras Isle]Kerää *Al'Aketh Cultist's Ear* (Al'Aketh Preacher, Al'Aketh Pillager, Al'Aketh Blademaster) [QC93165,1 Mercy Falls on Deaf Ears]
+[G 63.8,36.0 Zephras Isle]Puhu: *Vayn Moongaze* [QT93165 Mercy Falls on Deaf Ears]
+[G 65.9,80.6 Zephras Isle][T Mage-trainer (taso 12)] (*Anathamaas Aetherwind*): Conjure Food, Conjure Food r2, Fireball r3, Slow Fall, Dampen Magic
+[G 59.7,76.0 Zephras Isle][V Myy roinat] ja [R korjaa varusteet] (*Ergaan Eastwind*)
+[G 62.2,72.6 Zephras Isle][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Donaal Downbreeze*)
+[G 62.2,72.6 Zephras Isle][S Aseta Hearthstone tähän] (*Donaal Downbreeze*)
+[G 60.6,72.7 Zephras Isle]Puhu: *Nyalah Brightfire* [QT93317 Crab Season]
+[G 66.0,74.3 Zephras Isle]Puhu: *Ealaane Nimbuswalker* [QT94896 Aid For The Refugees] [QT94897 The Fate of a Loved One]
+[G 65.9,80.6 Zephras Isle]Puhu: *Anathamaas Aetherwind* [QA93791 Speak with Belann]
+[G 62.9,77.4 Zephras Isle]Puhu: *Belann Windwood* [QT93791 Speak with Belann] [QA93797 Boughs in the Wind]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92684 Ornery Ornery Galestriders] [QA92685 The Hills Have Eyes]
+[G 49.4,75.2 Zephras Isle]Kerää *Blood-Stained Bandit Mask* (Bandit Highwayman) [QC92685,1 The Hills Have Eyes]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92685 The Hills Have Eyes] [QA92693 Standing Our Ground]
+[G 46.7,82.0 Zephras Isle]Tapa *Aamelia Windfield*; Tapa *Ferauu the Bludgeon* [QC92693,1 Standing Our Ground] [QC92693,2 Standing Our Ground]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92693 Standing Our Ground] [QA92703 Deliver the News]
+[G 62.1,73.3 Zephras Isle]Puhu: *Alvarion Windfield* [QT92703 Deliver the News]
+[G 48.6,67.8 Zephras Isle]Kerää *Wind-Infused Bough* (Wind-Infused Bough) [QC93797,1 Boughs in the Wind]
+[G 62.9,77.4 Zephras Isle]Puhu: *Belann Windwood* [QT93797 Boughs in the Wind]
+[OC]Matkusta: *Stormwind City*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore). Stormwind: lento, tai Deeprun Tram Ironforgesta
+[G 71.3,72.2 Stormwind City][P Stormwind]Hae flight path (*Dungar Longdrink*)
+[O][A First Aid50][G 53.0,44.7 Stormwind City]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Shaina Fuller*) [LE First Aid 150]
+[O][A Cooking50][G 78.2,53.1 Stormwind City]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Stephen Ryback*) [LE Cooking 150]
+[O][A Fishing50][G 55.0,69.7 Stormwind City]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Arnold Leland*) [LE Fishing 150]
+[O][A Mining50][G 59.2,37.8 Stormwind City]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 150]
+[O][A Herbalism50][G 54.3,84.1 Stormwind City]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 150]
+[O][A Skinning50][G 72.1,62.2 Stormwind City]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 150]
+[O][A Alchemy50][G 55.5,85.7 Stormwind City]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Tel'Athir*) [LE Alchemy 150]
+[O][A Blacksmithing50][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 150]
+[O][A Enchanting50][G 52.9,74.5 Stormwind City]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 150]
+[O][A Engineering50][G 61.9,30.6 Stormwind City]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Sprite Jumpsprocket*) [LE Engineering 150]
+[O][A Leatherworking50][G 71.7,63.0 Stormwind City]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Simon Tanner*) [LE Leatherworking 150]
+[O][A Tailoring50][G 52.2,83.1 Stormwind City]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Sellandus*) [LE Tailoring 150]
+[G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QA1861 Mirror Lake]
+[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
+[G 28.6,61.4 Elwynn Forest]Kerää *Mirror Lake Water Sample* (Mirror Lake Waterwall) [QC1861,1 Mirror Lake]
+[OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
+[G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QT1861 Mirror Lake]
+[G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
+]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+
+Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N12-15 Elwynn Forest, Westfall (Mage)]
 [NX15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)]
 [OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
@@ -473,14 +600,14 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)]
 [NX18-22 Westfall, Redridge, Darkshore + VC (Mage)]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Stormwind]
 [OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
-[G 43.2,66.2 Elwynn Forest]Puhu: *Zaldimar Wefhellt* [QA1919 Report to Jennea]
+[A Gnome,Human][G 43.2,66.2 Elwynn Forest]Puhu: *Zaldimar Wefhellt* [QA1919 Report to Jennea]
 [OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
-[G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QT1919 Report to Jennea]
+[A Gnome,Human][G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QT1919 Report to Jennea]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
 [OC]Matkusta: *Loch Modan*. Dun Moroghin itäpäästä tunnelin läpi Loch Modaniin. Thelsamar on länsiosassa
 [G 33.9,51.0 Loch Modan][P Thelsamar]Hae flight path (*Thorgrum Borrelson*)
@@ -566,7 +693,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N18-22 Westfall, Redridge, Darkshore + VC (Mage)]
 [NX22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)]
 [H Hearthstone: Innkeeper Heather] (jos cooldownilla, juokse tai lennä)
@@ -777,7 +904,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)]
 [NX26-31 Duskwood, Redridge, Wetlands (Mage)]
 [OC]Matkusta: *Elwynn Forest*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
@@ -965,7 +1092,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N26-31 Duskwood, Redridge, Wetlands (Mage)]
 [NX31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)]
 [G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Stormwind]
@@ -986,8 +1113,8 @@ Guidelime.registerGuide([[
 [O][A Tailoring50][G 53.5,81.5 Stormwind City]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Lawrence Schneider*) [LE Tailoring 150]
 [O][A Tailoring125][G 53.1,81.3 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 225]
 [G 69.2,82.7 Stormwind City]Puhu: *General Marcus Jonathan* [QT120 Messenger to Stormwind]
-[G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QA1939 High Sorcerer Andromath]
-[G 48.7,87.6 Stormwind City]Puhu: *High Sorcerer Andromath* [QT1939 High Sorcerer Andromath] [QA1938 Ur's Treatise on Shadow Magic]
+[A Gnome,Human][G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QA1939 High Sorcerer Andromath]
+[A Gnome,Human][G 48.7,87.6 Stormwind City]Puhu: *High Sorcerer Andromath* [QT1939 High Sorcerer Andromath] [QA1938 Ur's Treatise on Shadow Magic]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
 [G 55.0,54.2 Stormwind City]Puhu: *Brother Kristoff* [QA343 Speaking of Fortitude]
 [G 56.3,54.0 Stormwind City]Puhu: *Orphan Matron Nightingale* [QA95161 Remember That I Love You]
@@ -998,14 +1125,14 @@ Guidelime.registerGuide([[
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Lakeshire]
 [G 73.8,47.6 Redridge Mountains]Kerää *Ur's Treatise on Shadow Magic* (Ur's Treatise on Shadow Magic) [QC1938,1 Ur's Treatise on Shadow Magic]
 [G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Stormwind]
-[G 48.7,87.6 Stormwind City]Puhu: *High Sorcerer Andromath* [QT1938 Ur's Treatise on Shadow Magic] [QA1940 Pristine Spider Silk]
+[A Gnome,Human][G 48.7,87.6 Stormwind City]Puhu: *High Sorcerer Andromath* [QT1938 Ur's Treatise on Shadow Magic] [QA1940 Pristine Spider Silk]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
 [G 30.4,50.2 Duskwood]Kerää *Pristine Spider Silk* (Black Widow Hatchling, Carrion Recluse) [QC1940,1 Pristine Spider Silk]
 [G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Stormwind]
-[G 51.8,83.5 Stormwind City]Puhu: *Wynne Larson* [QT1940 Pristine Spider Silk] [QA1942 Astral Knot Garment]
+[A Gnome,Human][G 51.8,83.5 Stormwind City]Puhu: *Wynne Larson* [QT1940 Pristine Spider Silk] [QA1942 Astral Knot Garment]
 [G 51.8,83.5 Stormwind City]Suorita questin tavoite
-[G 51.8,83.5 Stormwind City]Puhu: *Wynne Larson* [QT1942 Astral Knot Garment]
+[A Gnome,Human][G 51.8,83.5 Stormwind City]Puhu: *Wynne Larson* [QT1942 Astral Knot Garment]
 [XP22 Tavoitetaso 22: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
 [G 73.0,44.4 Duskwood][V Myy roinat] ja [R korjaa varusteet] (*Avette Fellwood*)
@@ -1189,7 +1316,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)]
 [NX34-38 Hillsbrad, Duskwood, Arathi + RFK/Gnomer (Mage)]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
@@ -1373,7 +1500,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N34-38 Hillsbrad, Duskwood, Arathi + RFK/Gnomer (Mage)]
 [NX38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)]
 [OC]*Dungeon: Razorfen Kraul* (suositus taso 28+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (The Barrens) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
@@ -1606,7 +1733,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)]
 [NX42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)]
 [OC]Matkusta: *Elwynn Forest*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
@@ -1799,7 +1926,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)]
 [NX46-50 Tanaris, Elwynn Forest, Feralas + ZF (Mage)]
 [G 51.2,57.0 Hillsbrad Foothills][V Myy harmaat roinat] ja [R korjaa varusteet] (*Robert Aebischer*)
@@ -2090,7 +2217,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N46-50 Tanaris, Elwynn Forest, Feralas + ZF (Mage)]
 [NX50-54 Azshara, Tirisfal Glades, Swamp + Mara/ST (Mage)]
 [XP43 Tavoitetaso 43: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -2307,7 +2434,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N50-54 Azshara, Tirisfal Glades, Swamp + Mara/ST (Mage)]
 [NX54-57 Felwood, WPL, Searing Gorge + BRD (Mage)]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
@@ -2567,7 +2694,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N54-57 Felwood, WPL, Searing Gorge + BRD (Mage)]
 [NX57-60 Searing Gorge, Un'Goro, Felwood + LBRS/DM/Scholo/Strat (Mage)]
 [OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
@@ -2747,7 +2874,7 @@ Guidelime.registerGuide([[
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Mage]
+[GA Human,Gnome,Skyborne,Mage]
 [N57-60 Searing Gorge, Un'Goro, Felwood + LBRS/DM/Scholo/Strat (Mage)]
 [XP53 Tavoitetaso 53: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Un'Goro Crater*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Tanarisin lounaiskulmasta ramppia alas Un'Goro Crateriin (lento Marshal's Refuge)
