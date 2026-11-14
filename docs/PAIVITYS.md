@@ -22,7 +22,7 @@ Tavoite: päivitä opas "Dogiex's AI Guide: Horde 1-60 (Forever)" uusimpaan Ques
 6. Tarkista tulos:
    - jokainen luokka pääsee tasolle 60
    - poistuneille questeille on syy (QuestieDB poisti tai blacklistasi questin, se muuttui toisen rodun questiksi, tai issue-korjaus poisti sen perustellusti). Myös reittisiirtymä hyväksytään (uudet tai muuttuneet questit vievät ajan ja reitti järjestyy uudelleen), kun luokan osan questien kokonaismäärä ei laske eikä class- tai dungeon-kattavuus heikkene; nimeä nämä questit raportissa ja `RELEASE_NOTES.md`:ssä erikseen (käyttäjän päätös 14.11.2026)
-   - class- ja dungeon-questien kattavuus ei heikkene
+   - class- ja dungeon-questien kattavuus ei heikkene (`compare.py`:n `kattavuus_heikkeni` on `{}`; muuten jokaiselle riville peruste datasta)
    - issue-korjaus muutti vain sen, mitä issue koski (`compare.py`).
 
    Jos jokin heikkenee ilman datasta löytyvää perustetta, selvitä syy ja korjaa koodia mahdollisimman vähän. Jos et pysty korjaamaan varmasti, älä julkaise heikompaa versiota: raportoi ongelma, älä tee commitia oppaasta, ja edellinen versio jää voimaan. Ongelman voi silti kirjata `docs/PELIN-PERUSTIEDOT.md`:n Avoimet asiat -osioon omana committinaan.

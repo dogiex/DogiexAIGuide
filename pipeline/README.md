@@ -20,10 +20,10 @@ Tämä kansio sisältää kaiken, millä opas rakennetaan uudelleen tyhjästä y
    - tulostaa `NOCHANGE`, jos QuestieDB:ssä ei ole uusia committeja
    - muuten: tulostaa uuden commitin QuestieDB-version (`QuestieDB-versio (TOC): X`), `/tmp/dbdiff.json` (muuttuneet questit, myös oppaan questit ja puuttuvat class-questit) ja `/tmp/qdb_log.txt` (commitit)
 3. `cd /home/claude/work7 && bash runall.sh` (noin 8 min; kaikki luokat ja aloitukset)
-4. `python3 compare.py state.json` (muuttuneet questit osittain, tasoa 60 alle jäävät)
+4. `python3 compare.py state.json` (muuttuneet questit osittain, tasoa 60 alle jäävät ja `kattavuus_heikkeni`: dungeonit (`dq`) ja class-ketjut (`chains`), joissa tehtyjen questien määrä laski tai kohde puuttuu; tyhjä `{}` = ei heikkenemistä). Vertailupohja on state.json:n `cov`-kentässä, ja `--update` päivittää sen.
 5. `python3 assemble7.py`, sitten `cp keep/rxp_new.txt out7/RXPGuides_DogiexAIGuide/LUEMINUT.txt` ja `cp keep/gl_new.txt out7/Guidelime_DogiexAIGuide/LUEMINUT.txt` (assemble tyhjentää out7:n)
 6. `python3 validate7.py` (0 virhettä vaaditaan) ja Lua-latauskoe jokaiselle luokalle check7.lua:lla (lupa.lua51; argumentit: LUOKKA, Free_1-22_RestedXP.lua, Guide_<Luokka>.lua, Guidelime Guide_<Luokka>.lua; RestedXP 26 opasta per luokka)
-7. Versio: nosta `## Version:` assemble7.py:ssä ja `(vX)` keep/*_new.txt-tiedostoissa, paketoi kaksi erillistä zipiä (`RXPGuides_DogiexAIGuide_vX.zip`, `Guidelime_DogiexAIGuide_vX.zip`).
+7. Versio: nosta `## Version:` assemble7.py:ssä ja `(vX)` keep/*_new.txt-tiedostoissa, ja aja vaiheet 5-6 uudestaan. Zipejä ei paketoida itse: GitHub Actions tekee kaksi erillistä zipiä (`RXPGuides_DogiexAIGuide_vX.zip`, `Guidelime_DogiexAIGuide_vX.zip`) julkaisun yhteydessä (vaihe 8).
 8. `python3 compare.py state.json --update <QuestieDB-commit> <versio>`, kopioi muuttuneet skriptit, state.json ja `out7/`-kansiot takaisin repositorioon (`pipeline/`, `addons/`), kirjoita `RELEASE_NOTES.md`, päivitä `docs/PELIN-PERUSTIEDOT.md`:n Quest-data-riville sekä commit että QuestieDB-versio (TOC:n `## Version:`, daily.sh tulostaa sen; myös kun vain state.json päivitetään) ja tee commit + push main-haaraan. GitHub Actions (`.github/workflows/release.yml`) luo tagin `vX` ja julkaisun zipeineen TOC-tiedoston versiosta. Claude-istunto ei saa itse luoda tageja eikä julkaisuja (HTTP 403).
 
 ## Alliance (kehitysvaihe, 13.11.2026 alkaen)
