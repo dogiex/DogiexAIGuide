@@ -9,7 +9,6 @@ Guidelime.registerGuide([[
 [GA Human,Warlock]
 [N1-9 Elwynn Forest (Warlock)]
 [NX9-10 Elwynn Forest (Warlock)]
-[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
 [G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QA33 Wolves Across the Border]
 [G 49.9,42.6 Elwynn Forest]Puhu: *Drusilla La Salle* [QA1598 The Stolen Tome]
 [G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA783 A Threat Within]
@@ -200,7 +199,6 @@ Guidelime.registerGuide([[
 [GA Gnome,Warlock]
 [N1-10 Dun Morogh (Warlock)]
 [NX10-14 Dun Morogh, Elwynn Forest, Loch Modan (Warlock)]
-[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QA179 Dwarven Outfitters]
 [G 28.6,66.1 Dun Morogh]Puhu: *Alamar Grimm* [QA1599 Beginnings]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QA183 The Boar Hunter]

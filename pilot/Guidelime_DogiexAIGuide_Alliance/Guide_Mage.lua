@@ -9,7 +9,6 @@ Guidelime.registerGuide([[
 [GA Human,Mage]
 [N1-9 Elwynn Forest (Mage)]
 [NX9-10 Elwynn Forest (Mage)]
-[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
 [G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QA33 Wolves Across the Border]
 [G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA783 A Threat Within]
 [G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT783 A Threat Within] [QA7 Kobold Camp Cleanup]
@@ -196,7 +195,6 @@ Guidelime.registerGuide([[
 [GA Gnome,Mage]
 [N1-10 Dun Morogh (Mage)]
 [NX10-13 Dun Morogh, Loch Modan (Mage)]
-[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QA179 Dwarven Outfitters]
 [G 25.1,75.7 Dun Morogh]Puhu: *Grelin Whitebeard* [QA182 The Troll Cave]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QA183 The Boar Hunter]
@@ -396,7 +394,6 @@ Guidelime.registerGuide([[
 [GA Skyborne,Mage]
 [N1-12 Zephras Isle, Elwynn Forest (Mage)]
 [NX12-15 Elwynn Forest, Westfall (Mage)]
-[OC]Matkusta: *Zephras Isle*. Zephras Isle (Skyborne-aloitusalue)
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]

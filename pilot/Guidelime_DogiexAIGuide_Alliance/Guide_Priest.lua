@@ -9,7 +9,6 @@ Guidelime.registerGuide([[
 [GA Human,Priest]
 [N1-6 Elwynn Forest (Priest)]
 [NX6-10 Elwynn Forest (Priest)]
-[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
 [G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QA33 Wolves Across the Border]
 [G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA783 A Threat Within]
 [G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT783 A Threat Within] [QA7 Kobold Camp Cleanup]
@@ -200,7 +199,6 @@ Guidelime.registerGuide([[
 [GA Dwarf,Gnome,Priest]
 [N1-10 Dun Morogh (Priest)]
 [NX10-13 Dun Morogh, Loch Modan (Priest)]
-[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QA179 Dwarven Outfitters]
 [G 25.1,75.7 Dun Morogh]Puhu: *Grelin Whitebeard* [QA182 The Troll Cave]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QA183 The Boar Hunter]
@@ -404,7 +402,6 @@ Guidelime.registerGuide([[
 [GA NightElf,Priest]
 [N1-10 Teldrassil (Priest)]
 [NX10-12 Teldrassil (Priest)]
-[OC]Matkusta: *Teldrassil*. Lennä Rut'theran Villageen (Teldrassil) tai laiva Auberdinesta
 [G 58.7,44.3 Teldrassil]Puhu: *Conservator Ilthalaine* [QA456 The Balance of Nature]
 [G 59.9,42.5 Teldrassil]Puhu: *Melithar Staghelm* [QA458 The Woodland Protector]
 [G 57.8,45.2 Teldrassil]Puhu: *Tarindrella* [QT458 The Woodland Protector] [QA459 The Woodland Protector] [QA97977 Nature's Call]

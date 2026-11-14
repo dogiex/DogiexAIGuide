@@ -9,7 +9,6 @@ Guidelime.registerGuide([[
 [GA Dwarf,Shaman]
 [N1-6 Dun Morogh (Shaman)]
 [NX6-10 Dun Morogh (Shaman)]
-[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 29.9,71.2 Dun Morogh]Puhu: *Sten Stoutarm* [QA179 Dwarven Outfitters]
 [G 25.1,75.7 Dun Morogh]Puhu: *Grelin Whitebeard* [QA182 The Troll Cave]
 [G 22.6,71.4 Dun Morogh]Puhu: *Talin Keeneye* [QA183 The Boar Hunter]
