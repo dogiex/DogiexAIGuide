@@ -27,7 +27,9 @@ def chains_cov(s,d0):
     for nm,mn,qs in CHAINS:
         k='%s (%d)'%(nm,mn)
         if k in out: continue
-        out[k]=[len(qs&(s.done|set(d0))),len(qs)]
+        D=s.done|set(d0)
+        # vaihtoehtoiset versiot (exclusiveTo, esim. sama quest eri kaupungissa): yksi riittää
+        out[k]=[sum(1 for x in qs if x in D or any(y in D for y in aslist(q(x,'exclusiveTo') or []))),len(qs)]
     return out
 def dq_cov(s,d0):
     dn=collections.Counter(QD[x] for x in (s.done|set(d0)) if x in QD)
@@ -117,21 +119,23 @@ elif mode=='glmain':
     starts=[z for z,(rs,_) in STARTS.items() if set(rs)&set(RACENAMES)]
     dsets=[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z)))['done']) for z in starts]
     base=set.intersection(*dsets)
+    anyst=set.union(*dsets)   # raportointiin: rodun oma aloitus tekee nämä (kattavuusluku ei näytä niitä vajaina)
     # Alliance: aloituksissa haetut lentoreitit tunnetaan pääreitin alussa (kaikkien aloitusten yhteiset)
     kfp=set.intersection(*[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z))).get('fps',[])) for z in starts]) if ALLY else set()
     s,vis2,ch=route(pre_main()+main_visits(),12,base,kfp,[14,18,22]+BOUNDS)
     e=check_ir(ch,base,'GLM')
     for c in ch: c['title']=tagname(c)
     json.dump(dict(errs=e,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],gl=[gl_steps(c) for c in ch],
-        chains=chains_cov(s,base),dq=dq_cov(s,base),tlog=ch[0].get('tlog'),final=s.L,turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glmain.json'%(OUTD,CLASSNAME),'w'))
+        chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),tlog=ch[0].get('tlog'),final=s.L,turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glmain.json'%(OUTD,CLASSNAME),'w'))
 elif mode=='rxp':
     sets=[]; paths={}
     for r in RACENAMES:
         d,p=free_done_rc(r,CT); sets.append(d); paths[r]=p
     base=set.intersection(*sets)
+    anyst=set.union(*sets)   # raportointiin, ks. glmain
     s,vis2,ch=route(main_visits(),22,base,KNOWN_FP,BOUNDS)
     e=check_ir(ch,base,'RXP')
     for c in ch: c['title']='%s %s'%(CT,c['title'])
-    json.dump(dict(errs=e,titles=[c['title'] for c in ch],rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,base),dq=dq_cov(s,base),
+    json.dump(dict(errs=e,titles=[c['title'] for c in ch],rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),
         tlog=ch[0].get('tlog'),final=s.L,turnins=sum(1 for x in s.steps if x['type']=='turnin'),paths=paths,base=len(base),miss=class_miss(s,base)),open('%s/%s_rxp.json'%(OUTD,CLASSNAME),'w'))
 if mode: print('ok',CLASSNAME,mode,sys.argv[2:] if len(sys.argv)>2 else '')
