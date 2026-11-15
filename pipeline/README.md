@@ -26,6 +26,12 @@ Tämä kansio sisältää kaiken, millä opas rakennetaan uudelleen tyhjästä y
 7. Versio: nosta `## Version:` assemble7.py:ssä ja `(vX)` keep/*_new.txt-tiedostoissa, ja aja vaiheet 5-6 uudestaan. Zipejä ei paketoida itse: GitHub Actions tekee kaksi erillistä zipiä (`RXPGuides_DogiexAIGuide_vX.zip`, `Guidelime_DogiexAIGuide_vX.zip`) julkaisun yhteydessä (vaihe 8).
 8. `python3 compare.py state.json --update <QuestieDB-commit> <versio>`, kopioi muuttuneet skriptit, state.json ja `out7/`-kansiot takaisin repositorioon (`pipeline/`, `addons/`), kirjoita `RELEASE_NOTES.md`, päivitä `docs/PELIN-PERUSTIEDOT.md`:n Quest-data-riville sekä commit että QuestieDB-versio (TOC:n `## Version:`, daily.sh tulostaa sen; myös kun vain state.json päivitetään) ja tee commit + push main-haaraan. GitHub Actions (`.github/workflows/release.yml`) luo tagin `vX` ja julkaisun zipeineen TOC-tiedoston versiosta. Claude-istunto ei saa itse luoda tageja eikä julkaisuja (HTTP 403).
 
+## Aikasimulaatio (`timesim.py`)
+- Arvioi, kuinka kauan oppaan noudattaminen vie tiettyyn tasoon. Vaatii vaiheen 2 (lähteet ja `/home/claude/work/db`) ja putken kopion kansiossa `/home/claude/work7`.
+- `python3 -I timesim.py vertaa Orc Warlock 10`: RestedXP:n ilmainen reitti (rodun aloitus, `Guides/forever`) vs. oma Guidelime-opas (`addons/` tai `out7/`), tappoaika 18 s ja 28 s.
+- `python3 -I timesim.py aloitukset KANSIO1 KANSIO2 ...`: vertaa `parts/*_glstart_*.json`-kopioita (esim. nykyinen putki vs. parannusehdotuksen kokeilu) samaan lopputasoon: aika, juoksu, trainer-käynnit.
+- Aikamalli ja rajoitukset tiedoston alussa. Kokonaisajat ovat todennäköisesti yläkanttiin; samalla mallilla laskettujen reittien erotus on luotettavampi.
+
 ## Alliance (kehitysvaihe, 13.11.2026 alkaen)
 - Faction valitaan ympäristömuuttujalla `WOW_FACTION=Alliance` (oletus Horde, joten Horde-ajot ja päivittäistehtävä pysyvät ennallaan; tarkistettu: Horde Warriorin osat identtiset ennen ja jälkeen muutosten, glstart-JSONiin tuli vain uusi `fps`-kenttä).
 - Alliance-kohtaiset osat: `faction.py`, `visits_a.py` (22-60-aluejärjestys), sim7.py `STARTS` (NORTHSHIRE, COLDRIDGE, SHADOWGLEN, ZEPHRAS), r3.py `PRE`, `CITY`, `START_OF`, gen.py `FP`/`TRAVEL`, r3out.py `RACE_TOK`/`NEAR`, elig.py Alliance-dungeonit (Deadmines, Stockade, Hall of Thanes) ja `friendly()`.
