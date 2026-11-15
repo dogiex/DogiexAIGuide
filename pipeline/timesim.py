@@ -193,6 +193,8 @@ def run_gl(r, lines, grind=True):
         g = re.search(r'\[G ([\d.]+),([\d.]+) ([^\]]+)\]', line)
         if g: r.move(world_zone(g.group(3), float(g.group(1)), float(g.group(2))))
         if line.startswith('[H'): r.add('muu', T_HS); r.pos = home
+        m = re.match(r'\[XP(\d+)', line)
+        if m: r.grind_until(int(m.group(1)))   # tavoitetaso: grindaa (viimeisimmän mobin tasoisia)
         if '[F ' in line: r.add('muu', T_FLY); r.pos = None
         if '[S ' in line: home = r.pos
         npc = False
