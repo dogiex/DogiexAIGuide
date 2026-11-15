@@ -244,7 +244,13 @@ class Sim3(Sim):
         d=QD.get(qid)
         if only is None and d is None and qid in CLASSQ:
             if (q(qid,'requiredLevel') or 1)>s.L or not s.prereq_ok(qid) or len(s.log)>=40: return None
-            return s.plan3(qid,v['zones'],None)
+            p3=s.plan3(qid,v['zones'],None)
+            bx=v.get('box')
+            if p3 and bx:
+                # aloitusalueen käynnillä class-questin pitää pysyä alueella; muuten ketju tehdään omana kierroksenaan lähdön jälkeen (ehdotus #4)
+                inb=lambda z,pt: z==v['zones'][0] and bx[0]<=pt[0]<=bx[1] and bx[2]<=pt[1]<=bx[3]
+                if not (inb(p3['start'][2],p3['start'][3]) and inb(p3['fin'][2],p3['fin'][3]) and all(inb(o['loc'][0],o['loc'][1]) for o in p3['obs'])): return None
+            return p3
         if only is None and d is None:
             if qid not in s.normal: return None
             if v.get('maxq') and (q(qid,'questLevel') or 0)>v['maxq']: return None
@@ -355,7 +361,7 @@ def pruned(vis,level,done):
         for st in s.steps:
             if st['type']=='visit': cur=st['vi']
             elif st['type'] in('accept','turnin','obj'): cnt[cur]+=1
-        keep=[v for i,v in enumerate(vis) if v.get('block') or v.get('cblock') or cnt[i]>=2]
+        keep=[v for i,v in enumerate(vis) if v.get('block') or v.get('cblock') or v.get('lvl6') or cnt[i]>=2]   # lvl6: aloitusalueen tasokäynti (ehdotus #4)
         left=set(s.log)-skip-CLASSQ
         if len(keep)==len(vis) and not left: return s,vis
         skip|=left; vis=keep

@@ -7,7 +7,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Troll. Quest-data: QuestieDB.]
 [GA Troll,Priest]
 [N1-6 Durotar (Priest)]
-[NX6-10 Durotar (Priest)]
+[NX6-12 Durotar (Priest)]
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -27,23 +27,27 @@ Guidelime.registerGuide([[
 [G 43.8,62.2 Durotar]Kerää *Cactus Apple* (Cactus Apple) [QC4402,1 Galgar's Cactus Apple Surprise]
 [G 42.7,67.2 Durotar]Puhu: *Galgar* [QT4402 Galgar's Cactus Apple Surprise]
 [G 44.4,60.5 Durotar]Tapa *Lazy Peon* [QC5441,1 Lazy Peons]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT5441 Lazy Peons]
-[G 42.4,68.8 Durotar]Puhu: *Ken'jai* [QA5649 In Favor of Spirituality]
-[G 44.4,55.5 Durotar]Tapa *Vile Familiar* [QC792,1 Vile Familiars]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT792 Vile Familiars]
-[G 51.9,41.1 Durotar][V Myy roinat] ja [R korjaa varusteet] (*Wuark*)
-[G 51.5,41.6 Durotar][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Grosk*)
-[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QT5649 In Favor of Spirituality] [QA5648 Garments of Spirituality]
-[G 54.3,42.9 Durotar][T Priest-trainer (taso 6)] (*Tai'jin*): Smite r2, Power Word Shield
-[G 53.1,46.5 Durotar]Tapa *Grunt Kor'ja* [QC5648,1 Garments of Spirituality]
-[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QT5648 Garments of Spirituality]
+[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT5441 Lazy Peons] [QA6394 Thazz'ril's Pick]
+[G 44.4,55.5 Durotar]Tapa *Vile Familiar*; Kerää *Thazz'ril's Pick* (Thazz'ril's Pick) [QC792,1 Vile Familiars] [QC6394,1 Thazz'ril's Pick]
+[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT6394 Thazz'ril's Pick]
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT792 Vile Familiars] [QA794 Burning Blade Medallion]
+[G 42.7,53.0 Durotar]Kerää *Burning Blade Medallion* (Yarrog Baneshadow) [QC794,1 Burning Blade Medallion]
+[G 42.4,68.8 Durotar][T Priest-trainer (taso 6)] (*Ken'jai*): Smite r2, Power Word Shield
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion]
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Troll. Quest-data: QuestieDB.]
 [GA Troll,Priest]
-[N6-10 Durotar (Priest)]
-[NX10-12 Durotar (Priest)]
+[N6-12 Durotar (Priest)]
+[NX12-14 Barrens (Priest)]
+[G 42.4,68.8 Durotar]Puhu: *Ken'jai* [QA5649 In Favor of Spirituality]
+[G 51.9,41.1 Durotar][V Myy roinat] ja [R korjaa varusteet] (*Wuark*)
+[G 51.5,41.6 Durotar][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Grosk*)
+[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QA5648 Garments of Spirituality] [QT5649 In Favor of Spirituality]
+[G 53.1,46.5 Durotar]Tapa *Grunt Kor'ja* [QC5648,1 Garments of Spirituality]
+[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QT5648 Garments of Spirituality]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 54.0,42.6 Durotar]Puhu: *Turroc* [QA96822 For Honor]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QA784 Vanquish the Betrayers]
 [G 51.1,42.5 Durotar]Puhu: *Cook Torka* [QA815 Break a Few Eggs] [QA96825 This Fruit Could Bite Back]
@@ -77,10 +81,11 @@ Guidelime.registerGuide([[
 [G 56.0,73.9 Durotar]Puhu: *Vel'rin Fang* [QA817 Practical Prey] [QA96821 Legging It]
 [G 46.3,78.6 Durotar]Puhu: *Pal'juh* [QA99123 Lost in the Shadows]
 [G 46.2,78.9 Durotar]Käytä / kerää: *Attack Plan: Orgrimmar*; Käytä / kerää: *Attack Plan: Sen'jin Village* [QC786,3 Thwarting Kolkar Aggression] [QC786,2 Thwarting Kolkar Aggression]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QA6394 Thazz'ril's Pick]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QA794 Burning Blade Medallion]
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QA805 Report to Sen'jin Village]
+[G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QT805 Report to Sen'jin Village]
 [O][A Fishing1][G 53.2,81.6 Durotar]Ammattitehtävä: palauta *Lau'Tiki* [QT97904 Camping 101: Fishing] (jos tavoite valmis)
 [G 51.4,79.3 Durotar]Escort Pal'juh out of Kolkar Crag. [QC99123,1 Lost in the Shadows]
+[G 54.3,42.9 Durotar][T Priest-trainer (taso 8)] (*Tai'jin*): Renew
 [G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QT99123 Lost in the Shadows]
 [G 57.5,82.0 Durotar]Kerää *Crawler Mucus* (Surf Crawler, Pygmy Surf Crawler, Encrusted Surf Crawler) [QC818,2 A Solvent Spirit]
 [G 63.5,84.8 Durotar]Kerää *Durotar Tiger Fur* (Durotar Tiger) [QC817,1 Practical Prey]
@@ -90,7 +95,6 @@ Guidelime.registerGuide([[
 [G 54.4,74.3 Durotar]Puhu: *Lar Prowltusk* [QT786 Thwarting Kolkar Aggression]
 [G 66.8,72.8 Durotar]Kerää *Taillasher Egg* (Taillasher Eggs) [QC815,1 Break a Few Eggs]
 [G 63.6,54.5 Durotar]Kerää *Intact Makrura Eye* (Makrura Clacker, Makrura Shellhide, Makrura Snapclaw) [QC818,1 A Solvent Spirit]
-[G 54.3,42.9 Durotar][T Priest-trainer (taso 8)] (*Tai'jin*): Renew
 [O][A Blacksmithing1][G 52.0,40.7 Durotar]Ammattitehtävä: palauta *Dwukk* [QT97900 Camping 101: Blacksmithing] (jos tavoite valmis)
 [O][A First Aid1][G 54.2,41.9 Durotar]Ammattitehtävä: palauta *Rawrk* [QT97903 Camping 101: First Aid] (jos tavoite valmis)
 [O][A Engineering1][G 52.2,40.8 Durotar]Ammattitehtävä: palauta *Mukdrak* [QT97902 Camping 101: Engineering] (jos tavoite valmis)
@@ -105,33 +109,20 @@ Guidelime.registerGuide([[
 [G 51.5,41.6 Durotar]Puhu: *Innkeeper Grosk* [QT2161 A Peon's Burden]
 [G 49.9,40.4 Durotar]Puhu: *Furl Scornbrow* [QT791 Carry Your Weight]
 [G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
-[G 42.7,53.0 Durotar]Kerää *Burning Blade Medallion* (Yarrog Baneshadow); Kerää *Thazz'ril's Pick* (Thazz'ril's Pick) [QC794,1 Burning Blade Medallion] [QC6394,1 Thazz'ril's Pick]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT6394 Thazz'ril's Pick]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion] [QA805 Report to Sen'jin Village]
+[G 52.6,58.8 Durotar]Tapa *Ridgeshade Creeper*; Tapa *Ridgeshade Lurker* [QC96821,1 Legging It] [QC96821,2 Legging It]
 [G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QT818 A Solvent Spirit]
-[G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QT805 Report to Sen'jin Village]
-[G 52.5,59.6 Durotar]Tapa *Ridgeshade Lurker*; Tapa *Ridgeshade Creeper* [QC96821,2 Legging It] [QC96821,1 Legging It]
-[G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT96821 Legging It]
 [G 63.1,55.8 Durotar]Kerää *Gnomish Tools* (Gnomish Toolbox) [QC825,1 From The Wreckage....]
+[G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT825 From The Wreckage....] [QT96821 Legging It]
+[G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QA837 Encroachment]
+[G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QA806 Dark Storms] [QA99048 A Missing Hand]
+[G 58.6,45.6 Durotar]Puhu: *Heglan Shadeeye* [QT99048 A Missing Hand] [QA99049 Threat from Below]
+[G 58.9,44.4 Durotar]Kerää *Orcish Dagger* (Abandoned Dagger); Kerää *Broken Bone Trident* (Weapon Piece); Kerää *Banner Scrap* (Strange Debris) [QC99049,1 Threat from Below] [QC99049,3 Threat from Below] [QC99049,2 Threat from Below]
 [G 54.3,42.9 Durotar][T Priest-trainer (taso 10)] (*Tai'jin*): Desperate Prayer Human Dwarf, Mind Blast, Shadow Word Pain r2, Lesser Heal r3, Touch of Weakness Undead
 [O][A First Aid50][G 54.2,41.9 Durotar]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Rawrk*) [LE First Aid 150]
 [O][A Blacksmithing50][G 52.0,40.7 Durotar]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Dwukk*) [LE Blacksmithing 150]
 [O][A Engineering50][G 52.2,40.8 Durotar]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Mukdrak*) [LE Engineering 150]
-[G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT825 From The Wreckage....]
-[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QA5654 Hex of Weakness]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Troll. Quest-data: QuestieDB.]
-[GA Troll,Priest]
-[N10-12 Durotar (Priest)]
-[NX12-14 Barrens (Priest)]
-[G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QA806 Dark Storms] [QA99048 A Missing Hand]
-[G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QA837 Encroachment]
-[G 58.6,45.6 Durotar]Puhu: *Heglan Shadeeye* [QT99048 A Missing Hand] [QA99049 Threat from Below]
-[G 58.9,44.4 Durotar]Kerää *Orcish Dagger* (Abandoned Dagger); Kerää *Broken Bone Trident* (Weapon Piece); Kerää *Banner Scrap* (Strange Debris) [QC99049,1 Threat from Below] [QC99049,3 Threat from Below] [QC99049,2 Threat from Below]
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT99049 Threat from Below] [QA99051 Threat from Below]
-[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
+[G 54.3,42.9 Durotar]Puhu: *Tai'jin* [QA5654 Hex of Weakness]
 [G 47.4,49.0 Durotar]Tapa *Razormane Quilboar*; Tapa *Razormane Scout* [QC837,1 Encroachment] [QC837,2 Encroachment]
 [G 43.2,39.2 Durotar]Tapa *Razormane Dustrunner*; Tapa *Razormane Battleguard* [QC837,3 Encroachment] [QC837,4 Encroachment]
 [G 43.1,30.2 Durotar]Puhu: *Misha Tor'kren* [QA816 Lost But Not Forgotten]
@@ -142,9 +133,9 @@ Guidelime.registerGuide([[
 [G 52.0,21.9 Durotar]Tapa *Dustwind Storm Witch*; Tapa *Dustwind Savage* [QC835,2 Securing the Lines] [QC835,1 Securing the Lines]
 [G 46.4,22.9 Durotar]Puhu: *Rezlak* [QT835 Securing the Lines]
 [G 58.6,25.8 Durotar]Kerää *Naga Spinefin* (Spitelash Scout, Spitelash Attendant) [QC99051,1 Threat from Below]
-[G 51.5,41.6 Durotar][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Grosk*)
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT806 Dark Storms] [QT99051 Threat from Below] [QA828 Margoz]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT837 Encroachment]
+[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 56.4,20.0 Durotar]Puhu: *Margoz* [QT828 Margoz] [QA827 Skull Rock]
 [G 52.9,9.3 Durotar]Kerää *Searing Collar* (Burning Blade Fanatic, Burning Blade Apprentice, Burning Blade Cultist) [QC827,1 Skull Rock]
 [G 56.4,20.0 Durotar]Puhu: *Margoz* [QT827 Skull Rock]
@@ -183,8 +174,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Priest]
-[N1-7 Tirisfal Glades (Priest)]
-[NX7-10 Tirisfal Glades (Priest)]
+[N1-6 Tirisfal Glades (Priest)]
+[NX6-10 Tirisfal Glades (Priest)]
 [G 30.2,71.7 Tirisfal Glades]Puhu: *Undertaker Mordo* [QA363 Rude Awakening]
 [G 30.8,66.2 Tirisfal Glades]Puhu: *Shadow Priest Sarvis* [QT363 Rude Awakening] [QA364 The Mindless Ones]
 [G 32.6,63.5 Tirisfal Glades]Tapa *Mindless Zombie* [QC364,1 The Mindless Ones]
@@ -204,28 +195,28 @@ Guidelime.registerGuide([[
 [G 30.9,66.0 Tirisfal Glades]Puhu: *Novice Elreth* [QT6395 Marla's Last Wish]
 [G 32.9,63.9 Tirisfal Glades]Kerää *Scavenged Goods* (Equipment Boxes) [QC3902,1 Scavenging Deathknell]
 [G 31.6,65.6 Tirisfal Glades]Puhu: *Deathguard Saltain* [QT3902 Scavenging Deathknell]
-[G 31.1,66.0 Tirisfal Glades]Puhu: *Dark Cleric Duesten* [QA5651 In Favor of Darkness]
-[G 25.2,59.5 Tirisfal Glades]Tapa *Webbed Forsaken*, *Forsaken Adventurer*; Tapa *Night Web Spider* [QC98389,1 A Light in the Darkness] [QC380,2 Night Web's Hollow]
+[G 28.5,57.6 Tirisfal Glades]Tapa *Young Night Web Spider*; Tapa *Webbed Forsaken*, *Forsaken Adventurer*; Tapa *Night Web Spider* [QC380,1 Night Web's Hollow] [QC98389,1 A Light in the Darkness] [QC380,2 Night Web's Hollow]
 [G 31.0,66.2 Tirisfal Glades]Puhu: *Aramis Hammerhand* [QT98389 A Light in the Darkness]
-[G 28.5,57.6 Tirisfal Glades]Tapa *Young Night Web Spider* [QC380,1 Night Web's Hollow]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT380 Night Web's Hollow] [QA381 The Scarlet Crusade]
 [G 31.1,66.0 Tirisfal Glades][T Priest-trainer (taso 6)] (*Dark Cleric Duesten*): Smite r2, Power Word Shield
 [G 37.5,67.8 Tirisfal Glades]Kerää *Scarlet Armband* (Scarlet Convert, Scarlet Initiate, Meven Korgal) [QC381,1 The Scarlet Crusade]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT381 The Scarlet Crusade] [QA382 The Red Messenger]
 [G 36.6,68.5 Tirisfal Glades]Kerää *Scarlet Crusade Documents* (Meven Korgal) [QC382,1 The Red Messenger]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger]
-[G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
-[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
-[G 61.6,52.2 Tirisfal Glades]Puhu: *Dark Cleric Beryl* [QT5651 In Favor of Darkness] [QA5650 Garments of Darkness]
-[G 59.2,46.5 Tirisfal Glades]Tapa *Deathguard Kel* [QC5650,1 Garments of Darkness]
-[G 61.6,52.2 Tirisfal Glades]Puhu: *Dark Cleric Beryl* [QT5650 Garments of Darkness]
 ]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Priest]
-[N7-10 Tirisfal Glades (Priest)]
+[N6-10 Tirisfal Glades (Priest)]
 [NX10-15 Silverpine Forest (Priest)]
+[G 31.1,66.0 Tirisfal Glades]Puhu: *Dark Cleric Duesten* [QA5651 In Favor of Darkness]
+[G 60.3,52.8 Tirisfal Glades][V Myy roinat] ja [R korjaa varusteet] (*Eliza Callen*)
+[G 61.7,52.0 Tirisfal Glades][V Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20] (*Innkeeper Renee*)
+[G 61.6,52.2 Tirisfal Glades]Puhu: *Dark Cleric Beryl* [QA5650 Garments of Darkness] [QT5651 In Favor of Darkness]
+[G 59.2,46.5 Tirisfal Glades]Tapa *Deathguard Kel* [QC5650,1 Garments of Darkness]
+[G 61.6,52.2 Tirisfal Glades]Puhu: *Dark Cleric Beryl* [QT5650 Garments of Darkness]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 60.6,51.8 Tirisfal Glades]Puhu: *Executor Zygand* [QA427 At War With The Scarlet Crusade]
 [G 61.3,50.8 Tirisfal Glades]Puhu: *Magistrate Sevren* [QA358 Graverobbers]
 [G 59.5,52.4 Tirisfal Glades]Puhu: *Apothecary Johaan* [QA367 A New Plague]
@@ -283,9 +274,9 @@ Guidelime.registerGuide([[
 [G 38.2,56.8 Tirisfal Glades]Puhu: *Calvin Montague* [QT590 A Rogue's Deal]
 [G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5481 Gordo's Task] [QA5482 Doom Weed]
 [G 57.1,38.8 Tirisfal Glades]Kerää *Doom Weed* (Doom Weed) [QC5482,1 Doom Weed]
-[G 61.6,52.2 Tirisfal Glades][T Priest-trainer (taso 10)] (*Dark Cleric Beryl*): Desperate Prayer Human Dwarf, Mind Blast, Shadow Word Pain r2, Lesser Heal r3, Touch of Weakness Undead
 [G 57.4,48.9 Tirisfal Glades]Puhu: *Junior Apothecary Holland* [QT5482 Doom Weed]
 [G 14.5,63.1 Tirisfal Glades]Kerää *Scarlet Insignia Ring* (Tarnished Zealot, Scarlet Zealot, Scarlet Warrior) [QC374,1 Proof of Demise]
+[G 61.6,52.2 Tirisfal Glades][T Priest-trainer (taso 10)] (*Dark Cleric Beryl*): Desperate Prayer Human Dwarf, Mind Blast, Shadow Word Pain r2, Lesser Heal r3, Touch of Weakness Undead
 [H Hearthstone: Innkeeper Renee] (jos cooldownilla, juokse tai lennä)
 [O][A First Aid50][G 61.8,52.8 Tirisfal Glades]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Nurse Neela*) [LE First Aid 150]
 [O][A Cooking50][G 61.8,51.4 Tirisfal Glades]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*William Pickman*) [LE Cooking 150]

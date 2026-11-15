@@ -62,6 +62,10 @@ for _i in N:
 NEAR={Z['ELWYNN']:Z['SW'],Z['DUNMOROGH']:Z['IF'],Z['DARN']:Z['TELDRASSIL'],Z['ALTERAC']:Z['HILLSBRAD'],Z['SWAMP']:Z['BLASTED'],Z['BADLANDS']:Z['LOCH'],Z['NEEDLES']:Z['TANARIS']} if ALLY else {Z['DUROTAR']:Z['ORG'],Z['MULGORE']:Z['TB'],Z['TIRISFAL']:Z['UC'],Z['ALTERAC']:Z['HILLSBRAD'],Z['BLASTED']:Z['SWAMP'],Z['SILVERPINE']:Z['UC'],Z['WPL']:Z['UC'],Z['WETLANDS']:Z['ARATHI']}
 def D(a,b): return math.hypot(a[0]-b[0],a[1]-b[1])
 def fms_in(zone): return [(i,name,tuple(spawns_of('npc',i)[zone][0])) for i,name in FP.items() if zone in spawns_of('npc',i)]
+SBOX=[None]   # aloitusalueen laatikko lähdön jälkeen: sen trainereille ei tehdä erillisiä sivureissuja (ehdotus #4)
+def _insbox(z,p):
+    b=SBOX[0]
+    return bool(b) and z==b[0] and b[1][0]<=p[0]<=b[1][1] and b[1][2]<=p[1]<=b[1][3]
 def near_trainer(ez,ep):
     best=None
     for i,p in TRN.get(ez,()):
@@ -73,6 +77,7 @@ def effz(loc):
     z=loc[0]; return (DUNG[z][2],DUNG[z][3]) if z in DUNG else (z,loc[1])
 def water(l): return 'Ice Cold Milk' if l<15 else 'Melon Juice' if l<25 else 'Sweet Nectar' if l<35 else 'Moonberry Juice' if l<45 else 'Morning Glory Dew'
 def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
+    SBOX[0]=None
     chapters=[]; chap=None; have=set(known_fp); cur=None; pos=None; bi=0
     S=dict(pend=None,pobj=None,cnt=0,hs=-99,vend=-99,bind=None,trained=(20 if start_level>=22 else 1),block=None,arrived=False,tlog=[],sold=None,sellpend=None,lastp=None)
     ahead=[0]*len(simsteps); c={}
@@ -124,6 +129,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         best=None
         for z,lst_ in TRN.items():
             for i,p in lst_:
+                if _insbox(z,p): continue
                 if z==cur and pos: c=D(p,pos)
                 elif S['bind'] and S['bind'][0]==z and S['cnt']-S['hs']>=25: c=25
                 elif cur and cont(z)==cont(cur) and any(f[0] in have for f in fms_in(z) or fms_in(NEAR.get(z,z))): c=60+(0 if (z in CITY) else 10)
@@ -202,6 +208,16 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 if has:
                     if nm not in chap['dungeons']: chap['dungeons'].append(nm)
                     add(dict(t='dnote',d=v['block'],level=v.get('min') or int(lvl)))
+            elif v.get('lvl6'):
+                # aloitusalueen tasokäynti: grindaa tasolle 6 alueella ja opettele taidot sen trainerilta
+                add(dict(t='xp',level=v['min'],start=True))   # aina: Guidelime ohittaa, jos taso jo täynnä
+                lvp6=pending(v['min'])
+                bx=v['box']; z0=v['zones'][0]
+                cand=[(i_,p_) for i_,p_ in TRN.get(z0,()) if bx[0]<=p_[0]<=bx[1] and bx[2]<=p_[1]<=bx[3]]
+                if lvp6 and cand:
+                    i_,p_=min(cand,key=lambda t_:D(t_[1],pos) if pos and cur==z0 else 0)
+                    emit_train(i_,z0,p_,lvp6,True); pos=p_
+                SBOX[0]=(z0,bx)
             elif v.get('min'): add(dict(t='xp',level=v['min']))
             continue
         level=st['level']; ez,ep=effz(st['loc']); indung=st['loc'][0] in DUNG
@@ -473,7 +489,8 @@ def gl_steps(c):
         z=loc[0]; return G(DUNG[z][2],DUNG[z][3]) if z in DUNG else G(*loc)
     for st in c['steps']:
         t=st['t']
-        if t=='xp': L.append('[XP%d Tavoitetaso %d: jos olet alle, toista edellinen dungeon tai grindaa]'%(st['level'],st['level']))
+        if t=='xp' and st.get('start'): L.append('[XP%d Tavoitetaso %d: jos olet alle, grindaa aloitusalueella ennen lähtöä]'%(st['level'],st['level']))
+        elif t=='xp': L.append('[XP%d Tavoitetaso %d: jos olet alle, toista edellinen dungeon tai grindaa]'%(st['level'],st['level']))
         elif t=='dnote':
             tag,nm,par,p=DUNG[st['d']]
             L.append('[OC]*Dungeon: %s* (suositus taso %d+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (%s) ja palauttavat questit. Jos et tee dungeonia, ohita ne.'%(gc(nm),st['level'],gc(zname(par))))

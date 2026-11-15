@@ -5,7 +5,7 @@ from r3base import blocks_of
 from engine import _rmask
 OUTD='/home/claude/work7/'+('parts_alliance' if os.environ.get('WOW_FACTION')=='Alliance' else 'parts'); os.makedirs(OUTD,exist_ok=True)   # Alliance-osat erilleen, etteivät ne korvaa Horden osia
 mode=sys.argv[1] if len(sys.argv)>1 and __name__=='__main__' else None
-VALLEY=(38.0,47.5,55.0,72.5)   # Valley of Trials (Durotar %, QuestieDB): laakso tehdään loppuun ennen muuta Durotaria
+VALLEY=(38.0,47.5,51.0,72.5)   # Valley of Trials (Durotar %, QuestieDB): laakso tehdään loppuun ennen muuta Durotaria; y 51 kattaa Burning Blade Covenin (42.7,53.0, ehdotus #4)
 DEATHKNELL=(22.0,37.5,57.0,76.0)   # Deathknell (Tirisfal %)
 NARACHE=(36.0,64.0,70.0,95.0)   # Camp Narache / Red Cloud Mesa (Mulgore %)
 STARTS={'DUROTAR':(['Orc','Troll'],[V('Valley of Trials','DUROTAR',box=VALLEY),V('Durotar','DUROTAR',maxq=8),V('Orgrimmar','ORG',maxq=10),V('Durotar','DUROTAR',maxq=12)]),
@@ -20,6 +20,11 @@ if ALLY:
      'COLDRIDGE':(['Dwarf','Gnome'],[V('Coldridge Valley','DUNMOROGH',box=COLDRIDGE),V('Dun Morogh','DUNMOROGH',maxq=8),V('Ironforge','IF',maxq=10),V('Dun Morogh','DUNMOROGH',maxq=12),V('Loch Modan','LOCH',maxq=13)]),
      'SHADOWGLEN':(['NightElf'],[V('Shadowglen','TELDRASSIL',box=SHADOWGLEN),V('Teldrassil','TELDRASSIL',maxq=8),V('Darnassus','DARN',maxq=10),V('Teldrassil','TELDRASSIL',maxq=12)]),
      'ZEPHRAS':(['Skyborne'],[V('Zephras Isle','ZEPHRAS',maxq=13)])}
+# Ehdotus #4 (15.11.2026): aloitusalueella grindataan tasolle 6 ja tason 6 taidot opetellaan aloitusalueen trainerilta ennen lähtöä
+for _z,(_rs,_vs) in STARTS.items():
+    for _k,_v in enumerate(_vs):
+        if _v.get('box'):
+            _vs.insert(_k+1,dict(name=_v['name'],zones=list(_v['zones']),box=_v['box'],min=6,lvl6=True)); break
 def pre_main(): return PRE[3:]
 def tagname(c): return '%s (%s)'%(c['title'],CT)
 def chains_cov(s,d0):

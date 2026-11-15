@@ -6,8 +6,8 @@ if _cls ~= "HUNTER" then return end
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: Horde 1-60 (Forever) - Hunter, aloitus: Orc/Troll. Quest-data: QuestieDB.]
 [GA Orc,Troll,Hunter]
-[N1-9 Durotar (Hunter)]
-[NX9-13 Durotar (Hunter)]
+[N1-6 Durotar (Hunter)]
+[NX6-13 Durotar (Hunter)]
 [G 42.1,68.3 Durotar]Puhu: *Gornek* [QA788 Cutting Teeth] [QA97279 Wayward Weapons]
 [G 43.6,66.7 Durotar]Kerää *Abandoned Training Weapon* (Abandoned Training Weapon) [QC97279,1 Wayward Weapons]
 [G 40.5,68.0 Durotar]Puhu: *Kzan Thornslash* [QT97279 Wayward Weapons]
@@ -27,32 +27,45 @@ Guidelime.registerGuide([[
 [G 43.8,62.2 Durotar]Kerää *Cactus Apple* (Cactus Apple) [QC4402,1 Galgar's Cactus Apple Surprise]
 [G 42.7,67.2 Durotar]Puhu: *Galgar* [QT4402 Galgar's Cactus Apple Surprise]
 [G 44.4,60.5 Durotar]Tapa *Lazy Peon* [QC5441,1 Lazy Peons]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT5441 Lazy Peons]
-[G 44.4,55.5 Durotar]Tapa *Vile Familiar* [QC792,1 Vile Familiars]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT792 Vile Familiars]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QA794 Burning Blade Medallion]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QA6394 Thazz'ril's Pick]
+[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT5441 Lazy Peons] [QA6394 Thazz'ril's Pick]
+[G 44.4,55.5 Durotar]Tapa *Vile Familiar*; Kerää *Thazz'ril's Pick* (Thazz'ril's Pick) [QC792,1 Vile Familiars] [QC6394,1 Thazz'ril's Pick]
+[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT6394 Thazz'ril's Pick]
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT792 Vile Familiars] [QA794 Burning Blade Medallion]
+[G 42.7,53.0 Durotar]Kerää *Burning Blade Medallion* (Yarrog Baneshadow) [QC794,1 Burning Blade Medallion]
+[G 42.8,69.3 Durotar][T Hunter-trainer (taso 6)] (*Jen'shan*): Hunter's Mark
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion]
+]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: Horde 1-60 (Forever) - Hunter, aloitus: Orc/Troll. Quest-data: QuestieDB.]
+[GA Orc,Troll,Hunter]
+[N6-13 Durotar (Hunter)]
+[NX12-14 Durotar, Mulgore, Barrens (Hunter)]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
+[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QA805 Report to Sen'jin Village]
+[G 42.8,69.1 Durotar]Klikkaa: *Lost Journal* [QA96652 The Adventurer]
 [G 52.1,68.3 Durotar]Puhu: *Ukor* [QA2161 A Peon's Burden]
 [O][A Enchanting1][G 56.7,73.7 Durotar]Ammattitehtävä (Enchanting 1+): puhu *Pa'zula* [QA96873 A Pain in the Neck] Tavoite: Pa'zula in Sen'jin Village wants you to collect 3 Luminous Residue. Luminous Residue can be obtained by disenchanting Hexed Pendants dropped by trolls in the Echo Isles.
 [G 54.4,74.3 Durotar]Puhu: *Lar Prowltusk* [QA786 Thwarting Kolkar Aggression]
 [G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QA818 A Solvent Spirit]
-[G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QA823 Report to Orgnil]
+[G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QT805 Report to Sen'jin Village] [QA823 Report to Orgnil]
 [G 56.0,73.9 Durotar]Puhu: *Vel'rin Fang* [QA817 Practical Prey] [QA96821 Legging It]
 [G 46.3,78.6 Durotar]Puhu: *Pal'juh* [QA99123 Lost in the Shadows]
 [G 46.2,78.9 Durotar]Käytä / kerää: *Attack Plan: Orgrimmar*; Käytä / kerää: *Attack Plan: Sen'jin Village* [QC786,3 Thwarting Kolkar Aggression] [QC786,2 Thwarting Kolkar Aggression]
 [G 51.4,79.3 Durotar]Escort Pal'juh out of Kolkar Crag. [QC99123,1 Lost in the Shadows]
-[G 42.8,69.3 Durotar][T Hunter-trainer (taso 6)] (*Jen'shan*): Hunter's Mark
 [G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QT99123 Lost in the Shadows]
 [G 57.5,82.0 Durotar]Kerää *Crawler Mucus* (Surf Crawler, Pygmy Surf Crawler, Encrusted Surf Crawler) [QC818,2 A Solvent Spirit]
 [G 63.5,84.8 Durotar]Kerää *Durotar Tiger Fur* (Durotar Tiger) [QC817,1 Practical Prey]
 [G 56.0,73.9 Durotar]Puhu: *Vel'rin Fang* [QT817 Practical Prey]
 [G 49.8,81.3 Durotar]Käytä / kerää: *Attack Plan: Valley of Trials* [QC786,1 Thwarting Kolkar Aggression]
+[O][A Enchanting1][G 56.7,73.7 Durotar]Ammattitehtävä: palauta *Pa'zula* [QT96873 A Pain in the Neck] (jos tavoite valmis)
 [G 54.4,74.3 Durotar]Puhu: *Lar Prowltusk* [QT786 Thwarting Kolkar Aggression]
 [G 52.5,59.6 Durotar]Tapa *Ridgeshade Lurker*; Tapa *Ridgeshade Creeper* [QC96821,2 Legging It] [QC96821,1 Legging It]
+[G 51.9,43.5 Durotar][T Hunter-trainer (taso 8)] (*Thotar*): Concussive Shot, Raptor Strike r2, Aspect of the Monkey
 [G 51.9,41.1 Durotar][V Myy roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 51.5,41.6 Durotar][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Grosk*)
 [G 51.5,41.6 Durotar][S Aseta Hearthstone tähän] (*Innkeeper Grosk*)
-[G 52.0,47.3 Durotar]Puhu: *Brakk* [QA96604 The Great Outdoors]
+[G 52.0,47.3 Durotar]Puhu: *Brakk* [QT96652 The Adventurer] [QA96604 The Great Outdoors]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT96821 Legging It] [QA784 Vanquish the Betrayers]
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT823 Report to Orgnil]
 [G 51.1,42.5 Durotar]Puhu: *Cook Torka* [QA815 Break a Few Eggs] [QA96825 This Fruit Could Bite Back]
@@ -76,10 +89,8 @@ Guidelime.registerGuide([[
 [G 51.1,42.5 Durotar]Puhu: *Cook Torka* [QT96655 Camping 101: Cooking]
 [G 46.7,49.3 Durotar]Kerää *Prickly Pear Fruit* (Prickly Pear Fruit) [QC96825,1 This Fruit Could Bite Back]
 [G 51.1,42.5 Durotar]Puhu: *Cook Torka* [QT96825 This Fruit Could Bite Back]
-[G 56.5,53.0 Durotar]Kerää *Raider's Shield* (Raider's Shield) [QC96822,3 For Honor]
-[G 51.9,43.5 Durotar][T Hunter-trainer (taso 8)] (*Thotar*): Concussive Shot, Raptor Strike r2, Aspect of the Monkey
-[G 57.7,56.1 Durotar]Tapa *Kul Tiras Sailor*; Kerää *Raider's Battleaxe* (Raider's Battleaxe); Kerää *Canvas Scraps* (Kul Tiras Sailor, Kul Tiras Marine, Kolkar Drudge); Tapa *Kul Tiras Marine* [QC784,1 Vanquish the Betrayers] [QC96822,2 For Honor] [QC791,1 Carry Your Weight] [QC784,2 Vanquish the Betrayers]
-[G 59.4,56.4 Durotar]Kerää *Raider's Bow* (Raider's Bow); Tapa *Lieutenant Benedict*; Kerää *Intact Makrura Eye* (Makrura Clacker, Makrura Shellhide, Makrura Snapclaw) [QC96822,1 For Honor] [QC784,3 Vanquish the Betrayers] [QC818,1 A Solvent Spirit]
+[G 56.5,53.0 Durotar]Kerää *Raider's Shield* (Raider's Shield); Tapa *Kul Tiras Sailor*; Kerää *Raider's Battleaxe* (Raider's Battleaxe); Kerää *Canvas Scraps* (Kul Tiras Sailor, Kul Tiras Marine, Kolkar Drudge) [QC96822,3 For Honor] [QC784,1 Vanquish the Betrayers] [QC96822,2 For Honor] [QC791,1 Carry Your Weight]
+[G 59.1,56.6 Durotar]Tapa *Kul Tiras Marine*; Kerää *Raider's Bow* (Raider's Bow); Tapa *Lieutenant Benedict*; Kerää *Intact Makrura Eye* (Makrura Clacker, Makrura Shellhide, Makrura Snapclaw) [QC784,2 Vanquish the Betrayers] [QC96822,1 For Honor] [QC784,3 Vanquish the Betrayers] [QC818,1 A Solvent Spirit]
 [G 54.0,42.6 Durotar]Puhu: *Turroc* [QT96822 For Honor]
 [O][A Blacksmithing1][G 52.0,40.7 Durotar]Ammattitehtävä: palauta *Dwukk* [QT97900 Camping 101: Blacksmithing] (jos tavoite valmis)
 [O][A First Aid1][G 54.2,41.9 Durotar]Ammattitehtävä: palauta *Rawrk* [QT97903 Camping 101: First Aid] (jos tavoite valmis)
@@ -87,39 +98,29 @@ Guidelime.registerGuide([[
 [O][A Engineering1][G 52.2,40.8 Durotar]Ammattitehtävä: palauta *Mukdrak* [QT97902 Camping 101: Engineering] (jos tavoite valmis)
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT784 Vanquish the Betrayers] [QA825 From The Wreckage....]
 [G 49.9,40.4 Durotar]Puhu: *Furl Scornbrow* [QT791 Carry Your Weight]
-[G 42.7,53.0 Durotar]Kerää *Burning Blade Medallion* (Yarrog Baneshadow); Kerää *Thazz'ril's Pick* (Thazz'ril's Pick) [QC794,1 Burning Blade Medallion] [QC6394,1 Thazz'ril's Pick]
-[G 44.6,68.7 Durotar]Puhu: *Foreman Thazz'ril* [QT6394 Thazz'ril's Pick]
-[G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion] [QA805 Report to Sen'jin Village]
-[O][A Enchanting1][G 56.7,73.7 Durotar]Ammattitehtävä: palauta *Pa'zula* [QT96873 A Pain in the Neck] (jos tavoite valmis)
-[G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QT818 A Solvent Spirit]
-[G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QT805 Report to Sen'jin Village]
-[G 66.8,72.8 Durotar]Kerää *Taillasher Egg* (Taillasher Eggs) [QC815,1 Break a Few Eggs]
 [G 63.1,55.8 Durotar]Kerää *Gnomish Tools* (Gnomish Toolbox) [QC825,1 From The Wreckage....]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT825 From The Wreckage....]
+[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
+[G 55.9,74.4 Durotar]Puhu: *Master Vornal* [QT818 A Solvent Spirit]
+[G 66.8,72.8 Durotar]Kerää *Taillasher Egg* (Taillasher Eggs) [QC815,1 Break a Few Eggs]
 [G 51.1,42.5 Durotar]Puhu: *Cook Torka* [QT815 Break a Few Eggs]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Hunter, aloitus: Orc/Troll. Quest-data: QuestieDB.]
-[GA Orc,Troll,Hunter]
-[N9-13 Durotar (Hunter)]
-[NX12-14 Durotar, Mulgore, Barrens (Hunter)]
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QA806 Dark Storms] [QA99048 A Missing Hand]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QA837 Encroachment]
-[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
-[G 51.9,41.1 Durotar][V Myy roinat] ja [R korjaa varusteet] (*Wuark*)
-[G 51.5,41.6 Durotar][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Grosk*)
 [G 58.6,45.6 Durotar]Puhu: *Heglan Shadeeye* [QT99048 A Missing Hand] [QA99049 Threat from Below]
 [G 58.9,44.4 Durotar]Kerää *Orcish Dagger* (Abandoned Dagger); Kerää *Broken Bone Trident* (Weapon Piece); Kerää *Banner Scrap* (Strange Debris) [QC99049,1 Threat from Below] [QC99049,3 Threat from Below] [QC99049,2 Threat from Below]
-[G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT99049 Threat from Below] [QA99051 Threat from Below]
-[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 51.9,43.5 Durotar][T Hunter-trainer (taso 10)] (*Thotar*): Aspect of the Hawk, Serpent String r2, Parry, Great Stamina, Natural Armor, Track Beasts
-[G 47.4,49.0 Durotar]Tapa *Razormane Quilboar*; Tapa *Razormane Scout* [QC837,1 Encroachment] [QC837,2 Encroachment]
+[O][A First Aid50][G 54.2,41.9 Durotar]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Rawrk*) [LE First Aid 150]
 [O][A Blacksmithing50][G 52.0,40.7 Durotar]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Dwukk*) [LE Blacksmithing 150]
 [O][A Engineering50][G 52.2,40.8 Durotar]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Mukdrak*) [LE Engineering 150]
+[G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT99049 Threat from Below] [QA99051 Threat from Below]
 [G 51.9,43.5 Durotar]Puhu: *Thotar* [QA6062 Taming the Beast]
+[G 47.4,49.0 Durotar]Tapa *Razormane Quilboar* [QC837,1 Encroachment]
+[G 51.9,41.1 Durotar][V Myy roinat] ja [R korjaa varusteet] (*Wuark*)
+[G 51.5,41.6 Durotar][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Grosk*)
+[G 47.3,49.1 Durotar]Tapa *Razormane Scout* [QC837,2 Encroachment]
 [G 43.4,45.7 Durotar]Tapa *Dire Mottled Boar* [QC6062,1 Taming the Beast]
 [G 51.9,43.5 Durotar]Puhu: *Thotar* [QT6062 Taming the Beast] [QA6083 Taming the Beast]
+[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 43.2,39.2 Durotar]Tapa *Razormane Dustrunner*; Tapa *Razormane Battleguard* [QC837,3 Encroachment] [QC837,4 Encroachment]
 [G 43.1,30.2 Durotar]Puhu: *Misha Tor'kren* [QA816 Lost But Not Forgotten]
 [G 46.4,22.9 Durotar]Puhu: *Rezlak* [QA834 Winds in the Desert]
@@ -129,13 +130,11 @@ Guidelime.registerGuide([[
 [G 52.0,21.9 Durotar]Tapa *Dustwind Storm Witch*; Tapa *Dustwind Savage* [QC835,2 Securing the Lines] [QC835,1 Securing the Lines]
 [G 46.4,22.9 Durotar]Puhu: *Rezlak* [QT835 Securing the Lines]
 [G 58.6,25.8 Durotar]Kerää *Naga Spinefin* (Spitelash Scout, Spitelash Attendant) [QC99051,1 Threat from Below]
-[O][A First Aid50][G 54.2,41.9 Durotar]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Rawrk*) [LE First Aid 150]
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT806 Dark Storms] [QT99051 Threat from Below] [QA828 Margoz]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT837 Encroachment]
-[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 56.4,20.0 Durotar]Puhu: *Margoz* [QT828 Margoz] [QA827 Skull Rock]
-[G 52.9,9.3 Durotar]Kerää *Searing Collar* (Burning Blade Fanatic, Burning Blade Apprentice, Burning Blade Cultist) [QC827,1 Skull Rock]
 [G 51.9,43.5 Durotar][T Hunter-trainer (taso 12)] (*Thotar*): Wing Clip, Mend Pet, Great Stamina r2, Natural Armor r2
+[G 52.9,9.3 Durotar]Kerää *Searing Collar* (Burning Blade Fanatic, Burning Blade Apprentice, Burning Blade Cultist) [QC827,1 Skull Rock]
 [G 56.4,20.0 Durotar]Puhu: *Margoz* [QT827 Skull Rock]
 [G 35.5,56.8 Durotar]Kerää *Kron's Amulet* (Dreadmaw Crocolisk, Corrupted Dreadmaw Crocolisk) [QC816,1 Lost But Not Forgotten]
 [O][A Alchemy50][G 55.4,74.0 Durotar]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Miao'zan*) [LE Alchemy 150]
@@ -148,12 +147,13 @@ Guidelime.registerGuide([[
 [G 66.7,84.7 Durotar]Kerää *Forgotten Loa Idol* (Forgotten Loa Idol); Tapa *Voodoo Troll*; Tapa *Hexed Troll*; Kerää *Zalazane's Head* (Zalazane) [QC97225,1 Forgotten Loa Idols] [QC826,2 Zalazane] [QC826,1 Zalazane] [QC826,3 Zalazane]
 [G 67.4,87.8 Durotar]Kerää *Minshina's Skull* (Imprisoned Darkspear) [QC808,1 Minshina's Skull]
 [G 56.0,74.7 Durotar]Puhu: *Master Gadrin* [QT808 Minshina's Skull] [QT826 Zalazane] [QT97225 Forgotten Loa Idols]
-[G 51.5,41.6 Durotar][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Grosk*)
 [G 51.9,43.5 Durotar]Puhu: *Thotar* [QT6083 Taming the Beast] [QA6082 Taming the Beast]
+[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
 [G 43.1,30.2 Durotar]Puhu: *Misha Tor'kren* [QT816 Lost But Not Forgotten]
 [G 41.1,45.1 Durotar]Tapa *Armored Scorpid* [QC6082,1 Taming the Beast]
-[G 51.9,43.5 Durotar]Puhu: *Thotar* [QT6082 Taming the Beast] [QA6081 Training the Beast]
-[G 51.9,41.1 Durotar][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wuark*)
+[G 51.9,43.5 Durotar]Puhu: *Thotar* [QT6082 Taming the Beast]
+[G 51.5,41.6 Durotar][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Grosk*)
+[G 51.9,43.5 Durotar]Puhu: *Thotar* [QA6081 Training the Beast]
 [OC]Matkusta: *Orgrimmar*. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [O][A Alchemy1][G 55.8,32.9 Orgrimmar]Ammattitehtävä: palauta *Whuut* [QT97899 Camping 101: Alchemy] (jos tavoite valmis)
 [O][A Enchanting1][G 53.5,38.5 Orgrimmar]Ammattitehtävä: palauta *Jhag* [QT97901 Camping 101: Enchanting] (jos tavoite valmis)
@@ -204,6 +204,7 @@ Guidelime.registerGuide([[
 [GA Tauren,Hunter]
 [N6-11 Mulgore (Hunter)]
 [NX11-13 Mulgore (Hunter)]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA763 Rites of the Earthmother] [QA96659 The Adventurer]
 [G 39.2,81.2 Mulgore]Puhu: *Antur Fallow* [QA1656 A Task Unfinished]
 [G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)

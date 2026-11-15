@@ -35,6 +35,7 @@ Guidelime.registerGuide([[
 [GA Tauren,Druid]
 [N6-11 Mulgore (Druid)]
 [NX11-13 Mulgore, Moonglade (Druid)]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QA763 Rites of the Earthmother] [QA96659 The Adventurer]
 [G 39.2,81.2 Mulgore]Puhu: *Antur Fallow* [QA1656 A Task Unfinished]
 [G 45.3,62.2 Mulgore][V Myy roinat] ja [R korjaa varusteet] (*Harant Ironbrace*)
