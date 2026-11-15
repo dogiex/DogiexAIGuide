@@ -104,7 +104,7 @@ def _shown_steps(body,me):
     out=[]
     for st in re.split(r'\nstep',body)[1:]:
         head,_,rest=st.partition('\n'); m=re.search(r'<<\s*(.*)',head)
-        if m and not tag_ok(m.group(1).strip(),me): continue
+        if m and not tag_ok(m.group(1).split('--')[0].strip(),me): continue
         out.append(rest)
     return out
 FPSEEN=set()   # Alliance: ilmaisen reitin .fp-rivit (nimet), kerätään _turnins_inc:ssä
@@ -129,7 +129,7 @@ def _turnins_inc(body,me,depth=0):
                 steps=re.split(r'\nstep',BASE[nm]); keep=[]; on=a is None
                 for st in steps[1:]:
                     head,_,rest2=st.partition('\n'); cm=re.search(r'<<\s*(.*)',head)
-                    if cm and not tag_ok(cm.group(1).strip(),me): continue
+                    if cm and not tag_ok(cm.group(1).split('--')[0].strip(),me): continue
                     lab=re.search(r'#label\s+(\S+)',rest2)
                     if not on and lab and lab.group(1)==a: on=True
                     if on: keep.append(st)
