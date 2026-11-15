@@ -1,5 +1,5 @@
 #!/bin/bash
-# Alliance-testiajo (Guidelime): kaikki luokat ja aloitukset -> parts_alliance/, lokit logs_alliance/
+# Alliance-testiajo (Guidelime ja RestedXP 21-60): kaikki luokat ja aloitukset -> parts_alliance/, lokit logs_alliance/
 # Rotu/luokkayhdistelmät: käyttäjän vahvistus pelin hahmonluonnista 14.11.2026 (kaikki luokat)
 cd /home/claude/work7
 export WOW_FACTION=Alliance
@@ -14,6 +14,7 @@ run_class() {
     [ -n "$rs" ] && WOW_CLASS=$c WOW_RACES=$rs python3 sim7.py glstart $z > logs_alliance/${c}_gls_$z.log 2>&1
   done
   WOW_CLASS=$c WOW_RACES=$races python3 sim7.py glmain > logs_alliance/${c}_glm.log 2>&1
+  WOW_CLASS=$c WOW_RACES=$races python3 sim7.py rxp > logs_alliance/${c}_rxp.log 2>&1
   echo "done $c"
 }
 export -f run_class; export R_DEF="$(declare -p R S)"

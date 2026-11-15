@@ -9,13 +9,18 @@ _tr=json.load(open(R+'/QuestieDB/data/Forever/conversion.json'))['geometry']['tr
 BND={t['ui_map_id']:t['target_bounds'] for t in _tr}
 KAL={1411,1412,1413,1438,1439,1440,1441,1442,1443,1444,1445,1446,1447,1448,1449,1450,1451,1452,1454,1456,1457}
 zones=set(RXPMAP.values())|{'Zephras Isle'}
-fpn=re.findall(r'\["name"\] = "([^"]+)"', open(R+'/RXPGuides/DB/forever/flightData.lua').read().split('["Alliance"]')[0])
+import os
+_fd=open(R+'/RXPGuides/DB/forever/flightData.lua').read().split('["Alliance"]')
+fpn=re.findall(r'\["name"\] = "([^"]+)"', _fd[1] if os.environ.get('WOW_FACTION')=='Alliance' else _fd[0])   # Alliance-testiaddonille Alliancen lentopaikat
+# valinnaiset argumentit: GUIDELIME-KANSIO [RXP-KANSIO ILMAISEN-POHJAN-TIEDOSTO] (oletus out7 ja Free_1-22_RestedXP.lua)
+RXPDIR=sys.argv[2] if len(sys.argv)>2 else 'out7/RXPGuides_DogiexAIGuide'
+FREEF=sys.argv[3] if len(sys.argv)>3 else 'Free_1-22_RestedXP.lua'
 errs=[]; allnames=set(); nexts=[]
-free=open('out7/RXPGuides_DogiexAIGuide/Free_1-22_RestedXP.lua',encoding='utf-8').read()
+free=open(RXPDIR+'/'+FREEF,encoding='utf-8').read()
 allnames|=set(x.strip() for x in re.findall(r'^#name (.*)$',free,re.M))
 for m in re.findall(r'^#next (.*)$',free,re.M): nexts.append(('free',m))
 tot=0
-for f in sorted(glob.glob('out7/RXPGuides_DogiexAIGuide/Guide_*.lua')):
+for f in sorted(glob.glob(RXPDIR+'/Guide_*.lua')):
     t=open(f,encoding='utf-8').read()
     for g in re.findall(r'RegisterGuide\(\[\[\n(.*?)\n\]\]\)',t,re.S):
         allnames.add(re.search(r'#name (.*)',g).group(1).strip())

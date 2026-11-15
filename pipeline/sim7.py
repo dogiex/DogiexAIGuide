@@ -76,7 +76,51 @@ def free_blocks_all():
     return out
 BASE={}
 for f in ('Horde-01-12_Durotar.lua','Horde-01-14_Undead.lua','Horde-1-12_Mulgore.lua','Horde-12-22_Barrens.lua'): BASE.update(blocks_of(f))
+if ALLY:
+    # Alliance: RestedXP:n ilmainen pohja (Guides/forever/dungeon), päättyy lukuun 20-21 Darkshore/Ashenvale (#next osoittaa maksulliseen osaan)
+    FREE_FILES=[('dungeon/Alliance-1-10_NightElf.lua',None),('dungeon/Alliance-1-13_Human.lua',None),('dungeon/Alliance-1-14_DwarfGnome.lua',None),
+     ('dungeon/RestedXP-Skyborne.lua',('1-9 Zephras Isle','9-13 Zephras Isle')),('dungeon/Alliance-11-20.lua',None)]   # dungeon-versio: 9-13 -> 13-15 Westfall kaikille luokille
+    REMAP={}
+    BASE={}
+    for f in ('Alliance-1-10_NightElf.lua','Alliance-1-13_Human.lua','Alliance-1-14_DwarfGnome.lua','Alliance-11-20.lua','RestedXP-Skyborne.lua'): BASE.update(blocks_of(f))
+def _shown_steps(body,me):
+    out=[]
+    for st in re.split(r'\nstep',body)[1:]:
+        head,_,rest=st.partition('\n'); m=re.search(r'<<\s*(.*)',head)
+        if m and not tag_ok(m.group(1).strip(),me): continue
+        out.append(rest)
+    return out
+FPSEEN=set()   # Alliance: ilmaisen reitin .fp-rivit (nimet), kerätään _turnins_inc:ssä
+def _turnins_inc(body,me,depth=0):
+    """Alliance: .turnin-rivit näkyvistä askelista + #include-viittaukset (myös osittaiset Nimi@Alku-Loppu, RestedXP GuideWindow.lua IncludeGuide)"""
+    done=[]
+    for rest in _shown_steps(body,me):
+        for l in rest.split('\n'):
+            mm=re.match(r'\s*\.turnin (\d+)(.*)',l)
+            if mm:
+                c2=re.search(r'<<\s*(.*)$',mm.group(2))
+                if c2 and not tag_ok(c2.group(1).strip(),me): continue
+                done.append(int(mm.group(1)))
+            mf=re.match(r'\s*\.fp ([^>\n]+?)\s*(>>.*)?$',l)
+            if mf: FPSEEN.add(mf.group(1).strip())
+            mi=re.match(r'\s*#include RestedXP Forever Guide \((?:A|H)\)\\(.*)',l)
+            if mi and depth<3:
+                nm=mi.group(1).split('--')[0].strip(); a=z=None
+                m2=re.match(r'(.*?)@([^@\-]+)-?([^@\-]*)$',nm)
+                if m2: nm,a,z=m2.group(1).strip(),m2.group(2).strip(),(m2.group(3).strip() or None)
+                if nm not in BASE: continue
+                steps=re.split(r'\nstep',BASE[nm]); keep=[]; on=a is None
+                for st in steps[1:]:
+                    head,_,rest2=st.partition('\n'); cm=re.search(r'<<\s*(.*)',head)
+                    if cm and not tag_ok(cm.group(1).strip(),me): continue
+                    lab=re.search(r'#label\s+(\S+)',rest2)
+                    if not on and lab and lab.group(1)==a: on=True
+                    if on: keep.append(st)
+                    if on and z and lab and lab.group(1)==z: break
+                done+=_turnins_inc('\nstep'.join(['']+keep),me,depth+1)
+    return done
 def free_done_rc(race,cls):
+    if ALLY: return free_done_rc_a(race,cls)
     me={race,cls,'Horde'}; B=free_blocks_all()
     start={'Orc':'1-6 Durotar','Troll':'1-6 Durotar','Undead':'1-6 Tirisfal Glades','Tauren':'1-6 Mulgore','Skyborne':'1-9 Zephras Isle'}[race]
     cur=start; done=[]; seen=set(); path=[]
@@ -104,6 +148,33 @@ def free_done_rc(race,cls):
             if nxt: break
         cur=nxt
     return set(done),path
+def free_done_rc_a(race,cls):
+    me={race,cls,'Alliance'}; B=free_blocks_all(); FPSEEN.clear()
+    cur={'Human':'1-6 Northshire','Dwarf':'1-5 Coldridge Valley','Gnome':'1-5 Coldridge Valley','NightElf':'1-6 Shadowglen','Skyborne':'1-9 Zephras Isle'}[race]
+    done=[]; seen=set(); path=[]
+    while cur and cur not in seen:
+        seen.add(cur); path.append(cur); b=B[cur]
+        done+=_turnins_inc(b,me)
+        nxt=None
+        for m in re.finditer(r'^#next (.*)$',b,re.M):
+            line=m.group(1); cond=None
+            if '<<' in line: line,cond=line.split('<<',1)
+            if cond and not tag_ok(cond.strip(),me): continue
+            for cand in line.split(';'):
+                c_=cand.strip()
+                if c_ not in B: continue
+                hm=re.search(r'^<<\s*(.*)$',B[c_],re.M)   # ehdokasluvun oma ehto (esim. 11-12 Elwynn << Alliance !Hunter)
+                if hm and not tag_ok(hm.group(1).strip(),me): continue
+                nxt=c_; break
+            if nxt: break
+        cur=nxt
+    return set(done),path
+def free_fps_a(race,cls):
+    """Alliance: ilmaisen reitin lentoreitit (FP-NPC:t gen.FP:stä nimen mukaan)"""
+    free_done_rc_a(race,cls)
+    byname={v:k for k,v in FP.items()}
+    alias={'Westfall':'Sentinel Hill','Redridge Mountains':'Lakeshire','Darkshore':'Auberdine','Loch Modan':'Thelsamar','Wetlands':'Menethil Harbor','Ashenvale':'Astranaar','Duskwood':'Darkshire'}   # RestedXP .fp käyttää osin alueen nimeä
+    return {byname[alias.get(x,x)] for x in FPSEEN if alias.get(x,x) in byname}
 # ---------- modes ----------
 if mode=='glstart':
     zone=sys.argv[2]; races,vis=STARTS[zone]
@@ -133,7 +204,10 @@ elif mode=='rxp':
         d,p=free_done_rc(r,CT); sets.append(d); paths[r]=p
     base=set.intersection(*sets)
     anyst=set.union(*sets)   # raportointiin, ks. glmain
-    s,vis2,ch=route(main_visits(),22,base,KNOWN_FP,BOUNDS)
+    if ALLY:   # Alliance: ilmainen pohja päättyy tasolle 21; lentoreitit ilmaisen reitin .fp-riveistä (kaikille roduille yhteiset)
+        kfp=set.intersection(*[free_fps_a(r,CT) for r in RACENAMES])
+        s,vis2,ch=route(main_visits(),21,base,kfp,BOUNDS)
+    else: s,vis2,ch=route(main_visits(),22,base,KNOWN_FP,BOUNDS)
     e=check_ir(ch,base,'RXP')
     for c in ch: c['title']='%s %s'%(CT,c['title'])
     json.dump(dict(errs=e,titles=[c['title'] for c in ch],rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),
