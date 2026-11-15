@@ -163,28 +163,33 @@ step << Troll/Undead
     .turnin 1882 >>Palauta: The Balnir Farmstead
     .target Anastasia Hartwell
 step
-    .goto 1458/0,266.39,1567.11
-    .fp Undercity >>Hae flight path: Undercity
-    .target Michael Garrett
+    .goto 1458/0,260.82,1634.90
+    .vendor >>Myy roinat ja korjaa varusteet (Lauren Newcomb)
+    .target Lauren Newcomb
 step
-    .goto 1458/0,311.00,1527.81
-    >>Puhu: |cRXP_FRIENDLY_Alessandro Luca|r
-    .accept 97891 >>Ota: Prompt Potion Runner
-    .target Alessandro Luca
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)
+    .target Innkeeper Norman
 step
-    .goto 1458/0,358.01,1529.09
-    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
-    .accept 1013 >>Ota: The Book of Ur
-    .target Keeper Bel'dugur
+    .goto 1458/0,169.01,1666.71
+    >>Puhu: |cRXP_FRIENDLY_Owen Thadd|r
+    .accept 97286 >>Ota: Research Access
+    .target Owen Thadd
+    .isQuestTurnedIn 79096
 step
-    .goto 1458/0,426.12,1403.63
-    >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
-    .turnin 97891 >>Palauta: Prompt Potion Runner
-    .target Doctor Martin Felben
+    .goto 1458/0,190.31,1688.54
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Lucille Castleton)
+    .target Lucille Castleton
 step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
+    .goto 1458/0,169.01,1666.71
+    >>Suorita questin tavoite
+    .isQuestTurnedIn 79096
+step
+    .goto 1458/0,169.01,1666.71
+    >>Puhu: |cRXP_FRIENDLY_Owen Thadd|r
+    .turnin 97286 >>Palauta: Research Access
+    .target Owen Thadd
+    .isQuestTurnedIn 79096
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
@@ -196,18 +201,6 @@ step
     .goto 1424/0,-857.81,2.77
     .fp Tarren Mill >>Hae flight path: Tarren Mill
     .target Zarise
-step
-    .goto 1424/0,-867.09,-158.51
-    .vendor >>Myy roinat ja korjaa varusteet (Ott)
-    .target Ott
-step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)
-    .target Innkeeper Shay
-step
-    .goto 1424/0,-942.29,-5.97
-    .home >>Aseta Hearthstone tähän (Innkeeper Shay)
-    .target Innkeeper Shay
 step
     .goto 1424/0,-898.13,-7.47
     >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
@@ -228,6 +221,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Krusk|r
     .accept 498 >>Ota: The Rescue
     .target Krusk
+step
+    .goto 1424/0,-935.25,-24.75
+    .vendor >>Myy harmaat roinat (Kayren Soothallow)
+    .target Kayren Soothallow
 step
     .goto 1424/0,-1342.93,-485.33
     >>Käytä / kerää: |cRXP_PICK_Locked ball and chain|r
@@ -280,9 +277,6 @@ step
     .mob Forest Moss Creeper
     .mob Elder Moss Creeper
 step
-    .hs >>Hearthstone: Innkeeper Shay
-    .cooldown item,6948,>0
-step
     .goto 1424/0,-926.93,-35.20
     >>Puhu: |cRXP_FRIENDLY_High Executor Darthalia|r
     .turnin 527 >>Palauta: Battle of Hillsbrad
@@ -305,10 +299,6 @@ step
     .turnin 499 >>Palauta: Elixir of Suffering
     .target Umpi
 step
-    .goto 1424/0,-926.61,-6.19
-    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
-    .target Christoph Jeffcoat
-step
     .goto 1424/0,-1467.73,-528.00
     >>Kerää |cRXP_LOOT_Hillsbrad Human Skull|r (|cRXP_ENEMY_Syndicate Watchman|r, |cRXP_ENEMY_Hillsbrad Miner|r, |cRXP_ENEMY_Syndicate Shadow Mage|r)
     .complete 546,1
@@ -320,6 +310,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Deathguard Samsa|r
     .turnin 546 >>Palauta: Souvenirs of Death
     .target Deathguard Samsa
+step
+    .goto 1424/0,-926.61,-6.19
+    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
+    .target Christoph Jeffcoat
 step
     .goto 1424/0,-2.13,-549.33
     >>Tapa |cRXP_ENEMY_Hillsbrad Peasant|r
@@ -355,11 +349,6 @@ step
 step
     +|cRXP_WARN_Dungeon: Shadowfang Keep|r (suositus taso 24+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Silverpine Forest) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1424/0,-857.81,2.77
-    .fly Undercity >>Lennä: Undercity
-    .target Zarise
-    .zoneskip Undercity
-step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1593.60,552.27
@@ -371,6 +360,19 @@ step
     >>Puhu: |cRXP_FRIENDLY_High Executor Hadrec|r
     .accept 1098 >>Ota: Deathstalkers in Shadowfang
     .target High Executor Hadrec
+step
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,266.39,1567.11
+    .fp Undercity >>Hae flight path: Undercity
+    .target Michael Garrett
+step
+    .goto 1458/0,358.01,1529.09
+    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
+    .accept 1013 >>Ota: The Book of Ur
+    .target Keeper Bel'dugur
+step
+    .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1568.40,-231.73
     >>|cRXP_WARN_Mene dungeoniin: Shadowfang Keep|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -385,14 +387,18 @@ step
     .turnin 1098 >>Palauta: Deathstalkers in Shadowfang
     .target Deathstalker Vincent
 step
+    .goto 1421/0,1630.14,508.87
+    .vendor >>Myy roinat ja korjaa varusteet (Sebastian Meloche)
+    .target Sebastian Meloche
+step
+    .goto 1421/0,1636.44,510.83
+    .vendor >>Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)
+    .target Innkeeper Bates
+step
     .goto 1421/0,1593.60,552.27
     >>Puhu: |cRXP_FRIENDLY_Dalar Dawnweaver|r
     .turnin 1014 >>Palauta: Arugal Must Die
     .target Dalar Dawnweaver
-step
-    .goto 1421/0,1576.80,571.59
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Alexandre Lefevre)
-    .target Alexandre Lefevre
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
 step
@@ -445,18 +451,6 @@ step
     .target Doras
     .zoneskip Ashenvale
 step
-    .goto 1440/1,-2540.81,2354.75
-    .vendor >>Myy roinat ja korjaa varusteet (Burkrum)
-    .target Burkrum
-step
-    .goto 1440/1,-2566.76,2341.68
-    .vendor >>Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)
-    .target Innkeeper Kaylisk
-step
-    .goto 1440/1,-2566.76,2341.68
-    .home >>Aseta Hearthstone tähän (Innkeeper Kaylisk)
-    .target Innkeeper Kaylisk
-step
     .goto 1440/1,-2555.80,2309.01
     >>Puhu: |cRXP_FRIENDLY_Senani Thunderheart|r
     .turnin 235 >>Palauta: The Ashenvale Hunt
@@ -471,6 +465,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mastok Wrilehiss|r
     .accept 25 >>Ota: Stonetalon Standstill
     .target Mastok Wrilehiss
+step
+    .goto 1440/1,-2540.81,2354.75
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Burkrum)
+    .target Burkrum
 step
     .goto 1440/1,-2400.10,2055.32
     >>Puhu: |cRXP_FRIENDLY_Kuray'bin|r
@@ -923,8 +921,10 @@ step << Troll/Undead
     .accept 1944 >>Ota: Waters of Xavian
     .target Deino
 step
-    .hs >>Hearthstone: Innkeeper Kaylisk
-    .cooldown item,6948,>0
+    .goto 1454/1,-4313.46,1676.24
+    .fly Splintertree Post >>Lennä: Splintertree Post
+    .target Doras
+    .zoneskip Ashenvale
 step
     .goto 1440/1,-2699.97,3077.76
     >>Kerää |cRXP_LOOT_Xavian Water Sample|r (|cRXP_PICK_Xavian Waterfall|r)

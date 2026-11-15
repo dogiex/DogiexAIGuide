@@ -224,32 +224,7 @@ step
     .vendor >>Myy harmaat roinat (Xan'tish)
     .target Xan'tish
 step
-    .zone Undercity >>Matkusta: Undercity. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,266.39,1567.11
-    .fp Undercity >>Hae flight path: Undercity
-    .target Michael Garrett
-step
-    .goto 1458/0,358.01,1529.09
-    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
-    .accept 1013 >>Ota: The Book of Ur
-    .target Keeper Bel'dugur
-step
-    .goto 1458/0,311.00,1527.81
-    >>Puhu: |cRXP_FRIENDLY_Alessandro Luca|r
-    .accept 97891 >>Ota: Prompt Potion Runner
-    .target Alessandro Luca
-step
-    .goto 1458/0,426.12,1403.63
-    >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
-    .turnin 97891 >>Palauta: Prompt Potion Runner
-    .target Doctor Martin Felben
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
-step
-    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
+    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
     .goto 1424/0,401.07,-611.20
     >>Puhu: |cRXP_FRIENDLY_Deathstalker Lesh|r
@@ -418,11 +393,6 @@ step
 step
     +|cRXP_WARN_Dungeon: Shadowfang Keep|r (suositus taso 24+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Silverpine Forest) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1424/0,-857.81,2.77
-    .fly Undercity >>Lennä: Undercity
-    .target Zarise
-    .zoneskip Undercity
-step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1593.60,552.27
@@ -434,6 +404,23 @@ step
     >>Puhu: |cRXP_FRIENDLY_High Executor Hadrec|r
     .accept 1098 >>Ota: Deathstalkers in Shadowfang
     .target High Executor Hadrec
+step
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,266.39,1567.11
+    .fp Undercity >>Hae flight path: Undercity
+    .target Michael Garrett
+step
+    .goto 1458/0,416.82,1756.97
+    .trainer >>Priest-trainer (taso 24): Holy Fire r2, Power Word, Power Word Shield r4, Mana Burn
+    .target Father Lazarus
+step
+    .goto 1458/0,358.01,1529.09
+    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
+    .accept 1013 >>Ota: The Book of Ur
+    .target Keeper Bel'dugur
+step
+    .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1568.40,-231.73
     >>|cRXP_WARN_Mene dungeoniin: Shadowfang Keep|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -458,10 +445,6 @@ step
     .target Alexandre Lefevre
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,416.82,1756.97
-    .trainer >>Priest-trainer (taso 24): Holy Fire r2, Power Word, Power Word Shield r4, Mana Burn
-    .target Father Lazarus
 step
     .goto 1458/0,358.01,1529.09
     >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r

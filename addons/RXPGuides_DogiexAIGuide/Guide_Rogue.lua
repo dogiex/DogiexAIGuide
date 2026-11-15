@@ -362,31 +362,7 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Kareth)
     .target Kareth
 step
-    .zone Undercity >>Matkusta: Undercity. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,358.01,1529.09
-    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
-    .accept 1013 >>Ota: The Book of Ur
-    .target Keeper Bel'dugur
-step
-    .goto 1458/0,311.00,1527.81
-    >>Puhu: |cRXP_FRIENDLY_Alessandro Luca|r
-    .accept 97891 >>Ota: Prompt Potion Runner
-    .target Alessandro Luca
-step
-    .goto 1458/0,426.12,1403.63
-    >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
-    .turnin 97891 >>Palauta: Prompt Potion Runner
-    .target Doctor Martin Felben
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
-step
-    .goto 1458/0,266.39,1567.11
-    .fly Tarren Mill >>Lennä: Tarren Mill
-    .target Michael Garrett
-    .zoneskip Hillsbrad Foothills
+    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
     .goto 1424/0,401.07,-611.20
     >>Puhu: |cRXP_FRIENDLY_Deathstalker Lesh|r
@@ -479,14 +455,6 @@ step
     .accept 546 >>Ota: Souvenirs of Death
     .target Deathguard Samsa
 step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Shay
-step
-    .goto 1424/0,-942.29,-5.97
-    .home >>Aseta Hearthstone tähän (Innkeeper Shay)
-    .target Innkeeper Shay
-step
     .goto 1424/0,-898.13,-7.47
     >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
     .turnin 496 >>Palauta: Elixir of Suffering
@@ -505,6 +473,10 @@ step
     .mob Hillsbrad Miner
     .mob Syndicate Shadow Mage
 step
+    .goto 1424/0,-942.29,-5.97
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Shay
+step
     .goto 1424/0,-920.53,-20.27
     >>Puhu: |cRXP_FRIENDLY_Deathguard Samsa|r
     .turnin 546 >>Palauta: Souvenirs of Death
@@ -518,9 +490,6 @@ step
     >>Tapa |cRXP_ENEMY_Hillsbrad Peasant|r
     .complete 528,1
     .mob Hillsbrad Peasant
-step
-    .hs >>Hearthstone: Innkeeper Shay
-    .cooldown item,6948,>0
 step
     .goto 1424/0,-926.93,-35.20
     >>Puhu: |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -582,6 +551,19 @@ step
     .accept 1098 >>Ota: Deathstalkers in Shadowfang
     .target High Executor Hadrec
 step
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,68.66,1416.62
+    .trainer >>Rogue-trainer (taso 24): Eviscerate r4, Crippling Poison r1, Detect Traps, Rupture, Heavy Wool Bandage
+    .target Carolyn Ward
+step
+    .goto 1458/0,358.01,1529.09
+    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
+    .accept 1013 >>Ota: The Book of Ur
+    .target Keeper Bel'dugur
+step
+    .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
+step
     .goto 1421/0,1568.40,-231.73
     >>|cRXP_WARN_Mene dungeoniin: Shadowfang Keep|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa ruokaa ja myrkyt aseisiin
@@ -605,10 +587,6 @@ step
     .target Alexandre Lefevre
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,68.66,1416.62
-    .trainer >>Rogue-trainer (taso 24): Eviscerate r4, Crippling Poison r1, Detect Traps, Rupture, Heavy Wool Bandage
-    .target Carolyn Ward
 step
     .goto 1458/0,358.01,1529.09
     >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
@@ -690,14 +668,6 @@ step
     .mob Bleakheart Shadowstalker
     .mob Xavian Felsworn
     .mob Felmusk Shadowstalker
-step
-    .goto 1440/1,-2566.76,2341.68
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Kaylisk
-step
-    .goto 1440/1,-2566.76,2341.68
-    .home >>Aseta Hearthstone tähän (Innkeeper Kaylisk)
-    .target Innkeeper Kaylisk
 step
     .goto 1440/1,-2515.43,2309.01
     >>Puhu: |cRXP_FRIENDLY_Pixel|r
@@ -816,6 +786,14 @@ step
     .complete 6621,1
     .mob Chief Murgut
 step
+    .goto 1440/1,-2540.81,2354.75
+    .vendor >>Myy roinat ja korjaa varusteet (Burkrum)
+    .target Burkrum
+step
+    .goto 1440/1,-2566.76,2341.68
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Kaylisk
+step
     .goto 1440/1,-2550.03,2366.67
     >>Puhu: |cRXP_FRIENDLY_Mastok Wrilehiss|r
     .turnin 25 >>Palauta: Stonetalon Standstill
@@ -825,10 +803,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Yama Snowhoof|r
     .turnin 6482 >>Palauta: Freedom to Ruul
     .target Yama Snowhoof
-step
-    .goto 1440/1,-2540.81,2354.75
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Burkrum)
-    .target Burkrum
 step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
@@ -1136,18 +1110,6 @@ step
     .complete 6461,2
     .mob Deepmoss Venomspitter
 step
-    .goto 1442/1,1030.75,992.22
-    .vendor >>Myy roinat ja korjaa varusteet (Borand)
-    .target Borand
-step
-    .goto 1442/1,927.72,893.56
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Jayka
-step
-    .goto 1442/1,927.72,893.56
-    .home >>Aseta Hearthstone tähän (Innkeeper Jayka)
-    .target Innkeeper Jayka
-step
     .goto 1442/1,931.13,826.15
     >>Puhu: |cRXP_FRIENDLY_Tsunaman|r
     .accept 6393 >>Ota: Elemental War
@@ -1198,6 +1160,18 @@ step
     .mob Bloodfury Slayer
     .mob Rogue Flame Spirit
     .mob Burning Destroyer
+step
+    .goto 1442/1,1030.75,992.22
+    .vendor >>Myy roinat ja korjaa varusteet (Borand)
+    .target Borand
+step
+    .goto 1442/1,927.72,893.56
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Jayka
+step
+    .goto 1442/1,927.72,893.56
+    .home >>Aseta Hearthstone tähän (Innkeeper Jayka)
+    .target Innkeeper Jayka
 step
     .goto 1442/1,940.90,832.67
     >>Puhu: |cRXP_FRIENDLY_Mor'rogal|r
@@ -1363,14 +1337,6 @@ step
     .turnin 1094 >>Palauta: Further Instructions
     .target Sputtervalve
 step
-    .goto 1413/1,-3664.82,-1050.14
-    .vendor >>Osta ruokaa, noin 20
-    .target Innkeeper Wiley
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .home >>Aseta Hearthstone tähän (Innkeeper Wiley)
-    .target Innkeeper Wiley
-step
     .goto 1413/1,-3690.15,-1022.44
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .accept 891 >>Ota: The Guns of Northwatch
@@ -1418,6 +1384,18 @@ step
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .turnin 898 >>Palauta: Free From the Hold
     .target Captain Thalo'thas Brightsun
+step
+    .goto 1413/1,-1949.24,-2374.36
+    .vendor >>Myy roinat ja korjaa varusteet (Sanuye Runetotem)
+    .target Sanuye Runetotem
+step
+    .goto 1413/1,-1995.86,-2376.39
+    .vendor >>Osta ruokaa, noin 20
+    .target Innkeeper Byula
+step
+    .goto 1413/1,-1995.86,-2376.39
+    .home >>Aseta Hearthstone tähän (Innkeeper Byula)
+    .target Innkeeper Byula
 step
     .goto 1413/1,-1947.22,-2285.86
     >>Puhu: |cRXP_FRIENDLY_Tatternack Steelforge|r
@@ -1595,6 +1573,16 @@ step
     .fp Freewind Post >>Hae flight path: Freewind Post
     .target Nyse
 step
+    .goto 1441/1,-2408.93,-5401.07
+    >>Puhu: |cRXP_FRIENDLY_Elu|r
+    .accept 4767 >>Ota: Wind Rider
+    .target Elu
+step
+    .goto 1441/1,-2395.73,-5442.13
+    >>Puhu: |cRXP_FRIENDLY_Hagar Lightninghoof|r
+    .accept 4821 >>Ota: Alien Egg
+    .target Hagar Lightninghoof
+step
     .goto 1441/1,-2408.49,-5453.28
     .vendor >>Myy roinat ja korjaa varusteet (Starn)
     .target Starn
@@ -1606,16 +1594,6 @@ step
     .goto 1441/1,-2460.41,-5477.92
     .home >>Aseta Hearthstone tähän (Innkeeper Abeqwa)
     .target Innkeeper Abeqwa
-step
-    .goto 1441/1,-2408.93,-5401.07
-    >>Puhu: |cRXP_FRIENDLY_Elu|r
-    .accept 4767 >>Ota: Wind Rider
-    .target Elu
-step
-    .goto 1441/1,-2395.73,-5442.13
-    >>Puhu: |cRXP_FRIENDLY_Hagar Lightninghoof|r
-    .accept 4821 >>Ota: Alien Egg
-    .target Hagar Lightninghoof
 step
     .goto 1441/1,-2444.13,-5453.87
     >>Puhu: |cRXP_FRIENDLY_Cliffwatcher Longhorn|r

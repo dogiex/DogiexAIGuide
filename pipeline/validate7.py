@@ -1,7 +1,7 @@
 import re, json, glob, sys
 sys.path.insert(0,'/home/claude/work7')
 from plan import *
-funcs=set("accept turnin complete goto fp xp trainer zone target mob fly hs home vendor cooldown zoneskip skill isOnQuest".split())
+funcs=set("accept turnin complete goto fp xp trainer zone target mob fly hs home vendor cooldown zoneskip skill isOnQuest isQuestTurnedIn".split())
 SKN={"firstaid","cooking","fishing","mining","herbalism","skinning","alchemy","blacksmithing","enchanting","engineering","leatherworking","tailoring"}
 GSK={"FIRSTAID","COOKING","FISHING","MINING","HERBALISM","SKINNING","ALCHEMY","BLACKSMITHING","ENCHANTING","ENGINEERING","LEATHERWORKING","TAILORING"}
 GRC={"ORC","TROLL","UNDEAD","TAUREN","SKYBORNE","HUMAN","DWARF","NIGHTELF","GNOME","WARRIOR","PALADIN","HUNTER","ROGUE","PRIEST","SHAMAN","MAGE","WARLOCK","DRUID","HORDE","ALLIANCE"}   # rodut: Guidelime Data/Data.lua D.races
@@ -56,6 +56,7 @@ for f in sorted(glob.glob(RXPDIR+'/Guide_*.lua')):
             elif cmd in('mob','target') and ',' in args: errs.append('comma-list '+l)
             elif cmd=='skill' and not (re.fullmatch(r'([a-z]+),<?\d+,1(,1)?',args) and args.split(',')[0] in SKN): errs.append('skill '+l)
             elif cmd=='isOnQuest' and not (args.isdigit() and int(args) in Q): errs.append('isOnQuest '+l)
+            elif cmd=='isQuestTurnedIn' and not all(x.isdigit() and int(x) in Q for x in args.split(',')): errs.append('isQuestTurnedIn '+l)
 for f,m in nexts:
     line=m.split('<<')[0]
     cands=[c.strip() for c in line.split(';')]

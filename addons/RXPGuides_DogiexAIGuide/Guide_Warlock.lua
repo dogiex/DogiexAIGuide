@@ -205,57 +205,7 @@ step << Orc
     .turnin 1504 >>Palauta: The Binding
     .target Gan'rul Bloodeye
 step
-    .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Undercityn ulkopuolelle Tirisfal Gladesiin
-step
-    .goto 1420/0,308.08,2246.30
-    .vendor >>Myy roinat ja korjaa varusteet (Eliza Callen)
-    .target Eliza Callen
-step
-    .goto 1420/0,244.36,2269.49
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Renee
-step
-    .goto 1420/0,249.78,2249.91
-    >>Puhu: |cRXP_FRIENDLY_Ageron Kargal|r
-    .accept 1478 >>Ota: Halgar's Summons
-    .target Ageron Kargal
-step
-    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,56.76,1711.52
-    >>Puhu: |cRXP_FRIENDLY_Carendin Halgar|r
-    .turnin 1478 >>Palauta: Halgar's Summons
-    .target Carendin Halgar
-step << Undead
-    .goto 1458/0,56.76,1711.52
-    >>Puhu: |cRXP_FRIENDLY_Carendin Halgar|r
-    .accept 1473 >>Ota: Creature of the Void
-    .target Carendin Halgar
-step
-    .goto 1458/0,266.39,1567.11
-    .fp Undercity >>Hae flight path: Undercity
-    .target Michael Garrett
-step
-    .goto 1458/0,311.00,1527.81
-    >>Puhu: |cRXP_FRIENDLY_Alessandro Luca|r
-    .accept 97891 >>Ota: Prompt Potion Runner
-    .target Alessandro Luca
-step
-    .goto 1458/0,358.01,1529.09
-    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
-    .accept 1013 >>Ota: The Book of Ur
-    .target Keeper Bel'dugur
-step
-    .goto 1458/0,426.12,1403.63
-    >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
-    .turnin 97891 >>Palauta: Prompt Potion Runner
-    .target Doctor Martin Felben
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
-step
-    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
+    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
     .goto 1424/0,401.07,-611.20
     >>Puhu: |cRXP_FRIENDLY_Deathstalker Lesh|r
@@ -265,6 +215,18 @@ step
     .goto 1424/0,-857.81,2.77
     .fp Tarren Mill >>Hae flight path: Tarren Mill
     .target Zarise
+step
+    .goto 1424/0,-867.09,-158.51
+    .vendor >>Myy roinat ja korjaa varusteet (Ott)
+    .target Ott
+step
+    .goto 1424/0,-942.29,-5.97
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Shay
+step
+    .goto 1424/0,-942.29,-5.97
+    .home >>Aseta Hearthstone tähän (Innkeeper Shay)
+    .target Innkeeper Shay
 step
     .goto 1424/0,-898.13,-7.47
     >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
@@ -285,10 +247,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Krusk|r
     .accept 498 >>Ota: The Rescue
     .target Krusk
-step
-    .goto 1424/0,-935.25,-24.75
-    .vendor >>Myy harmaat roinat (Kayren Soothallow)
-    .target Kayren Soothallow
 step
     .goto 1424/0,-1342.93,-485.33
     >>Käytä / kerää: |cRXP_PICK_Locked ball and chain|r
@@ -341,6 +299,9 @@ step
     .mob Forest Moss Creeper
     .mob Elder Moss Creeper
 step
+    .hs >>Hearthstone: Innkeeper Shay
+    .cooldown item,6948,>0
+step
     .goto 1424/0,-926.93,-35.20
     >>Puhu: |cRXP_FRIENDLY_High Executor Darthalia|r
     .turnin 527 >>Palauta: Battle of Hillsbrad
@@ -363,6 +324,10 @@ step
     .turnin 499 >>Palauta: Elixir of Suffering
     .target Umpi
 step
+    .goto 1424/0,-926.61,-6.19
+    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
+    .target Christoph Jeffcoat
+step
     .goto 1424/0,-1467.73,-528.00
     >>Kerää |cRXP_LOOT_Hillsbrad Human Skull|r (|cRXP_ENEMY_Syndicate Watchman|r, |cRXP_ENEMY_Hillsbrad Miner|r, |cRXP_ENEMY_Syndicate Shadow Mage|r)
     .complete 546,1
@@ -374,10 +339,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Deathguard Samsa|r
     .turnin 546 >>Palauta: Souvenirs of Death
     .target Deathguard Samsa
-step
-    .goto 1424/0,-926.61,-6.19
-    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
-    .target Christoph Jeffcoat
 step
     .goto 1424/0,-2.13,-549.33
     >>Tapa |cRXP_ENEMY_Hillsbrad Peasant|r
@@ -413,11 +374,6 @@ step
 step
     +|cRXP_WARN_Dungeon: Shadowfang Keep|r (suositus taso 24+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Silverpine Forest) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1424/0,-857.81,2.77
-    .fly Undercity >>Lennä: Undercity
-    .target Zarise
-    .zoneskip Undercity
-step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1593.60,552.27
@@ -425,18 +381,23 @@ step
     .accept 1014 >>Ota: Arugal Must Die
     .target Dalar Dawnweaver
 step
-    .goto 1421/0,1630.14,508.87
-    .vendor >>Myy roinat ja korjaa varusteet (Sebastian Meloche)
-    .target Sebastian Meloche
-step
-    .goto 1421/0,1636.44,510.83
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Bates
-step
     .goto 1421/0,1627.20,521.47
     >>Puhu: |cRXP_FRIENDLY_High Executor Hadrec|r
     .accept 1098 >>Ota: Deathstalkers in Shadowfang
     .target High Executor Hadrec
+step
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,266.39,1567.11
+    .fp Undercity >>Hae flight path: Undercity
+    .target Michael Garrett
+step
+    .goto 1458/0,358.01,1529.09
+    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
+    .accept 1013 >>Ota: The Book of Ur
+    .target Keeper Bel'dugur
+step
+    .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1568.40,-231.73
     >>|cRXP_WARN_Mene dungeoniin: Shadowfang Keep|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -455,6 +416,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Dalar Dawnweaver|r
     .turnin 1014 >>Palauta: Arugal Must Die
     .target Dalar Dawnweaver
+step
+    .goto 1421/0,1576.80,571.59
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Alexandre Lefevre)
+    .target Alexandre Lefevre
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
 step
@@ -542,6 +507,18 @@ step
     .target Doras
     .zoneskip Ashenvale
 step
+    .goto 1440/1,-2540.81,2354.75
+    .vendor >>Myy roinat ja korjaa varusteet (Burkrum)
+    .target Burkrum
+step
+    .goto 1440/1,-2566.76,2341.68
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Kaylisk
+step
+    .goto 1440/1,-2566.76,2341.68
+    .home >>Aseta Hearthstone tähän (Innkeeper Kaylisk)
+    .target Innkeeper Kaylisk
+step
     .goto 1440/1,-2555.80,2309.01
     >>Puhu: |cRXP_FRIENDLY_Senani Thunderheart|r
     .turnin 235 >>Palauta: The Ashenvale Hunt
@@ -556,10 +533,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mastok Wrilehiss|r
     .accept 25 >>Ota: Stonetalon Standstill
     .target Mastok Wrilehiss
-step
-    .goto 1440/1,-2540.81,2354.75
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Burkrum)
-    .target Burkrum
 step
     .goto 1440/1,-2400.10,2055.32
     >>Puhu: |cRXP_FRIENDLY_Kuray'bin|r
@@ -9034,10 +9007,6 @@ step
     .accept 5901 >>Ota: A Plague Upon Thee
     .target Mickey Levine
 step
-    .goto 1420/0,724.25,1801.05
-    >>Kerää |cRXP_LOOT_Egalin's Grimoire|r (|cRXP_PICK_Perrine's Chest|r)
-    .complete 1473,1
-step
     .goto 1420/0,1632.52,1837.20
     >>Puhu: |cRXP_FRIENDLY_Venya Marthand|r
     .accept 1470 >>Ota: Piercing the Veil
@@ -9052,27 +9021,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Venya Marthand|r
     .turnin 1470 >>Palauta: Piercing the Veil
     .target Venya Marthand
-step
-    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step << Undead
-    .goto 1458/0,56.76,1711.52
-    >>Puhu: |cRXP_FRIENDLY_Carendin Halgar|r
-    .turnin 1473 >>Palauta: Creature of the Void
-    .accept 1471 >>Ota: The Binding
-    .target Carendin Halgar
-step
-    .goto 1458/0,95.72,1681.11
-    .vendor >>Myy harmaat roinat (Lizbeth Cromwell)
-    .target Lizbeth Cromwell
-step
-    .goto 1458/0,56.76,1711.52
-    >>Using the Runes of Summoning, summon and subdue a voidwalker, then return the Runes of Summoning to Carendin Halgar in the Magic Quarter of the Undercity.
-    .complete 1471,1
-step << Undead
-    .goto 1458/0,56.76,1711.52
-    >>Puhu: |cRXP_FRIENDLY_Carendin Halgar|r
-    .turnin 1471 >>Palauta: The Binding
-    .target Carendin Halgar
 step
     .zone Durotar >>Matkusta: Durotar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmarin portista ulos Durotariin
 step

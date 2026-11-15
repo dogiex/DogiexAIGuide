@@ -368,6 +368,12 @@ def trav_text(st):
     elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     return zn,tx
 # ---------------- RXP ----------------
+RXP_COND={}   # sim7.py rxp-tila: quest -> esiquestit (ilmaisen osan ehdollinen palautus), lisätään askeleelle .isQuestTurnedIn
+def _cond_line(qids):
+    cs={RXP_COND[x] for x in qids if x in RXP_COND}
+    if not cs: return []
+    if len(cs)>1 or any(x not in RXP_COND for x in qids): raise ValueError('ehdollinen quest samassa askeleessa muiden kanssa: %s'%sorted(qids))
+    return ['    .isQuestTurnedIn %s'%','.join(map(str,cs.pop()))]
 def rxp_steps(c):
     L=[]
     def goto(area,p):
@@ -413,6 +419,7 @@ def rxp_steps(c):
                 L.append('    >>%s%s: |cRXP_%s_%s|r'%('Dungeonin sisällä - ' if ins else '','Puhu' if kind=='npc' else 'Klikkaa','FRIENDLY' if kind=='npc' else 'PICK',nm))
             for k_,qid in st['seq']: L.append(('    .turnin %d >>Palauta: %s' if k_=='turnin' else '    .accept %d >>Ota: %s')%(qid,clean(q(qid,'name'))))
             if kind=='npc' and ',' not in nm: L.append('    .target %s'%nm)
+            L+=_cond_line([qid for _,qid in st['seq']])
         elif t=='obj':
             texts,mobs=obj_texts(st['items']); ins=st['loc'][0] in DUNG
             L+=['step',eg(st['loc'])]
@@ -430,6 +437,7 @@ def rxp_steps(c):
             for qid,o_ in st['items']:
                 if o_['idx']>0: L.append('    .complete %d,%d'%(qid,o_['idx']))
             if mobs and not ins: L+=['    .mob '+x for x in mobs]
+            L+=_cond_line(sorted({qid for qid,_ in st['items']}))
         elif t=='ptrain':
             rx,gl,dn,_=PF.PROFS[st['prof']]; nm=clean(n(st['npc'],'name'))
             if st['kind']=='book':

@@ -55,6 +55,23 @@ def class_miss(s,d0):
                 r.append('plan ok (mob lvl %s, ql %s, rl %s) - ei ajoitettu'%(max(hi) if hi else '-',q(x,'questLevel'),q(x,'requiredLevel')))
         out.append((x,q(x,'name'),q(x,'requiredLevel'),'; '.join(r)))
     return out
+def cond_prereqs(s,base):
+    """Reitin questit, joiden esiquesti täyttyy vain ilmaisen osan ehdollisella palautuksella (FREE_COND): {quest: (esiquestit)}.
+    Ketjun jatkot perivät saman ehdon. RestedXP ohittaa askeleen, jos .isQuestTurnedIn-questia ei ole palautettu."""
+    cb=FREE_COND&base; out={}
+    for x in sorted(s.done-base):
+        ps=aslist(q(x,'preQuestSingle') or []); pg=aslist(q(x,'preQuestGroup') or [])
+        if ps and all(p not in base or p in cb for p in ps) and any(p in cb for p in ps): out[x]=tuple(sorted(p for p in ps if p in cb))
+        elif any(p in cb for p in pg): out[x]=tuple(sorted(p for p in pg if p in cb))
+    ch=True
+    while ch:
+        ch=False
+        for x in sorted(s.done-base):
+            if x in out: continue
+            ps=aslist(q(x,'preQuestSingle') or [])+aslist(q(x,'preQuestGroup') or [])
+            inh=[out[p] for p in ps if p in out]
+            if inh: out[x]=inh[0]; ch=True
+    return out
 # ---------- free RestedXP route walk (for RXP baseline) ----------
 FREE_FILES=[('dungeon/Horde-01-12_Durotar.lua',None),('dungeon/Horde-01-14_Undead.lua',None),('dungeon/Horde-1-12_Mulgore.lua',None),
  ('RestedXP-Skyborne.lua',('1-9 Zephras Isle','9-13 Zephras Isle')),('dungeon/Horde-12-22_Barrens.lua',None)]
@@ -119,6 +136,7 @@ def _turnins_inc(body,me,depth=0):
                     if on and z and lab and lab.group(1)==z: break
                 done+=_turnins_inc('\nstep'.join(['']+keep),me,depth+1)
     return done
+FREE_COND=set()   # Horde: ilmaisen osan palautukset, joiden askeleella on .itemcount-ehto (esim. 79096 vain, jos kirja löytyi)
 def free_done_rc(race,cls):
     if ALLY: return free_done_rc_a(race,cls)
     me={race,cls,'Horde'}; B=free_blocks_all()
@@ -126,17 +144,18 @@ def free_done_rc(race,cls):
     cur=start; done=[]; seen=set(); path=[]
     while cur and cur not in seen:
         seen.add(cur); path.append(cur); b=B[cur]
-        inc=re.search(r'#include RestedXP Forever Guide \(H\)\\\\(.*)',b)
+        inc=re.search(r'#include RestedXP Forever Guide \(H\)\\(.*)',b)
         body=b+('\n'+BASE[inc.group(1).strip()] if inc and inc.group(1).strip() in BASE else '')
         for st in re.split(r'\nstep',body)[1:]:
             head,_,rest=st.partition('\n'); m=re.search(r'<<\s*(.*)',head)
-            if m and not tag_ok(m.group(1).strip(),me): continue
+            if m and not tag_ok(m.group(1).split('--')[0].strip(),me): continue
             for l in rest.split('\n'):
                 mm=re.match(r'\s*\.turnin (\d+)(.*)',l)
                 if mm:
                     c2=re.search(r'<<\s*(.*)$',mm.group(2))
                     if c2 and not tag_ok(c2.group(1).strip(),me): continue
                     done.append(int(mm.group(1)))
+                    if re.search(r'^\s*\.itemcount ',rest,re.M): FREE_COND.add(int(mm.group(1)))   # RestedXP näyttää palautuksen vain, jos esine on laukussa
         nxt=None
         for m in re.finditer(r'^#next (.*)$',b,re.M):
             line=m.group(1); cond=None
@@ -208,6 +227,7 @@ elif mode=='rxp':
         kfp=set.intersection(*[free_fps_a(r,CT) for r in RACENAMES])
         s,vis2,ch=route(main_visits(),21,base,kfp,BOUNDS)
     else: s,vis2,ch=route(main_visits(),22,base,KNOWN_FP,BOUNDS)
+    if not ALLY: RXP_COND.update(cond_prereqs(s,base))
     e=check_ir(ch,base,'RXP')
     for c in ch: c['title']='%s %s'%(CT,c['title'])
     json.dump(dict(errs=e,titles=[c['title'] for c in ch],rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),

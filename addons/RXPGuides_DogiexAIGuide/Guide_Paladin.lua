@@ -15,158 +15,9 @@ RXPGuides.RegisterGuide([[
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
 step
-    .goto 1458/0,266.39,1567.11
-    .fp Undercity >>Hae flight path: Undercity
-    .target Michael Garrett
-step
     .goto 1458/0,417.30,1781.87
     .trainer >>Paladin-trainer (taso 22): Holy Light R4, Blessing of Might r3, Seal of the Crusader r3
     .target Garen Largo
-step
-    .goto 1458/0,171.31,1524.93
-    .trainer >>|cRXP_WARN_Ammatti: First Aid 50+|r. Opettele Journeyman First Aid (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Mary Edras|r
-    .skill firstaid,<50,1
-    .skill firstaid,150,1,1
-    .target Mary Edras
-step
-    .goto 1458/0,277.04,1590.47
-    .trainer >>|cRXP_WARN_Ammatti: Cooking 50+|r. Opettele Journeyman Cooking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Eunice Burch|r
-    .skill cooking,<50,1
-    .skill cooking,150,1,1
-    .target Eunice Burch
-step
-    .goto 1458/0,98.98,1677.85
-    .trainer >>|cRXP_WARN_Ammatti: Fishing 50+|r. Opettele Journeyman Fishing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Armand Cromwell|r
-    .skill fishing,<50,1
-    .skill fishing,150,1,1
-    .target Armand Cromwell
-step
-    .goto 1458/0,335.65,1638.23
-    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
-    .skill mining,<50,1
-    .skill mining,150,1,1
-    .target Brom Killian
-step
-    .goto 1458/0,335.65,1638.23
-    .trainer >>|cRXP_WARN_Ammatti: Mining 125+|r. Opettele Expert Mining (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
-    .skill mining,<125,1
-    .skill mining,225,1,1
-    .target Brom Killian
-step
-    .goto 1458/0,355.13,1560.77
-    .trainer >>|cRXP_WARN_Ammatti: Herbalism 50+|r. Opettele Journeyman Herbalism (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
-    .skill herbalism,<50,1
-    .skill herbalism,150,1,1
-    .target Martha Alliestar
-step
-    .goto 1458/0,355.13,1560.77
-    .trainer >>|cRXP_WARN_Ammatti: Herbalism 125+|r. Opettele Expert Herbalism (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
-    .skill herbalism,<125,1
-    .skill herbalism,225,1,1
-    .target Martha Alliestar
-step
-    .goto 1458/0,200.10,1499.13
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 50+|r. Opettele Journeyman Skinning (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
-    .skill skinning,<50,1
-    .skill skinning,150,1,1
-    .target Killian Hagey
-step
-    .goto 1458/0,200.10,1499.13
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
-    .skill skinning,<125,1
-    .skill skinning,225,1,1
-    .target Killian Hagey
-step
-    .goto 1458/0,384.58,1400.68
-    .trainer >>|cRXP_WARN_Ammatti: Alchemy 50+|r. Opettele Journeyman Alchemy (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Doctor Marsh|r
-    .skill alchemy,<50,1
-    .skill alchemy,150,1,1
-    .target Doctor Marsh
-step
-    .goto 1458/0,384.58,1400.68
-    .trainer >>|cRXP_WARN_Ammatti: Alchemy 125+|r. Opettele Expert Alchemy (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Doctor Marsh|r
-    .skill alchemy,<125,1
-    .skill alchemy,225,1,1
-    .target Doctor Marsh
-step
-    .goto 1458/0,285.48,1681.88
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_James Van Brunt|r
-    .skill blacksmithing,<50,1
-    .skill blacksmithing,150,1,1
-    .target James Van Brunt
-step
-    .goto 1458/0,285.48,1681.88
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_James Van Brunt|r
-    .skill blacksmithing,<125,1
-    .skill blacksmithing,225,1,1
-    .target James Van Brunt
-step
-    .goto 1458/0,273.20,1491.64
-    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Malcomb Wynn|r
-    .skill enchanting,<50,1
-    .skill enchanting,150,1,1
-    .target Malcomb Wynn
-step
-    .goto 1458/0,273.87,1482.36
-    .trainer >>|cRXP_WARN_Ammatti: Enchanting 125+|r. Opettele Expert Enchanting (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Lavinia Crowe|r
-    .skill enchanting,<125,1
-    .skill enchanting,225,1,1
-    .target Lavinia Crowe
-step
-    .goto 1458/0,150.40,1409.84
-    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Graham Van Talen|r
-    .skill engineering,<50,1
-    .skill engineering,150,1,1
-    .target Graham Van Talen
-step
-    .goto 1458/0,142.92,1404.08
-    .trainer >>|cRXP_WARN_Ammatti: Engineering 125+|r. Opettele Expert Engineering (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Franklin Lloyd|r
-    .skill engineering,<125,1
-    .skill engineering,225,1,1
-    .target Franklin Lloyd
-step
-    .goto 1458/0,199.90,1510.40
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
-    .skill leatherworking,<50,1
-    .skill leatherworking,150,1,1
-    .target Arthur Moore
-step
-    .goto 1458/0,199.90,1510.40
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
-    .skill leatherworking,<125,1
-    .skill leatherworking,225,1,1
-    .target Arthur Moore
-step
-    .goto 1458/0,201.25,1682.33
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Rhiannon Davis|r
-    .skill tailoring,<50,1
-    .skill tailoring,150,1,1
-    .target Rhiannon Davis
-step
-    .goto 1458/0,201.25,1682.33
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Rhiannon Davis|r
-    .skill tailoring,<125,1
-    .skill tailoring,225,1,1
-    .target Rhiannon Davis
-step
-    .goto 1458/0,358.01,1529.09
-    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
-    .accept 1013 >>Ota: The Book of Ur
-    .target Keeper Bel'dugur
-step
-    .goto 1458/0,311.00,1527.81
-    >>Puhu: |cRXP_FRIENDLY_Alessandro Luca|r
-    .accept 97891 >>Ota: Prompt Potion Runner
-    .target Alessandro Luca
-step
-    .goto 1458/0,426.12,1403.63
-    >>Puhu: |cRXP_FRIENDLY_Doctor Martin Felben|r
-    .turnin 97891 >>Palauta: Prompt Potion Runner
-    .target Doctor Martin Felben
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Zeppeliini Orgrimmarin edustalta Undercityyn ja lento Tarren Milliin. Jos FP puuttuu: juokse Silverpinen läpi etelään, Tarren Mill on Hillsbradin koillisosassa
 step
@@ -178,6 +29,30 @@ step
     .goto 1424/0,-857.81,2.77
     .fp Tarren Mill >>Hae flight path: Tarren Mill
     .target Zarise
+step
+    .goto 1424/0,-905.49,-9.39
+    .trainer >>|cRXP_WARN_Ammatti: Alchemy 50+|r. Opettele Journeyman Alchemy (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Serge Hinott|r
+    .skill alchemy,<50,1
+    .skill alchemy,150,1,1
+    .target Serge Hinott
+step
+    .goto 1424/0,-905.49,-9.39
+    .trainer >>|cRXP_WARN_Ammatti: Alchemy 125+|r. Opettele Expert Alchemy (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Serge Hinott|r
+    .skill alchemy,<125,1
+    .skill alchemy,225,1,1
+    .target Serge Hinott
+step
+    .goto 1424/0,-973.33,-43.52
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Daryl Stack|r
+    .skill tailoring,<50,1
+    .skill tailoring,150,1,1
+    .target Daryl Stack
+step
+    .goto 1424/0,-973.33,-43.52
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Daryl Stack|r
+    .skill tailoring,<125,1
+    .skill tailoring,225,1,1
+    .target Daryl Stack
 step
     .goto 1424/0,-867.09,-158.51
     .vendor >>Myy roinat ja korjaa varusteet (Ott)
@@ -355,7 +230,7 @@ step
     .vendor >>Myy harmaat roinat (Wik'Tar)
     .target Wik'Tar
 step
-    .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercityn ulkopuolelle Tirisfal Gladesiin
+    .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Undercityn ulkopuolelle Tirisfal Gladesiin
 step
     .goto 1420/0,2034.69,2490.91
     >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
@@ -363,6 +238,12 @@ step
     .target Danitha Morr
 step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
+step
+    .goto 1421/0,1635.60,516.43
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Guillaume Sorouy|r
+    .skill blacksmithing,<50,1
+    .skill blacksmithing,150,1,1
+    .target Guillaume Sorouy
 step
     .goto 1421/0,1627.20,515.87
     >>Puhu: |cRXP_FRIENDLY_Trevan Rol|r
@@ -448,6 +329,119 @@ step
     .accept 1014 >>Ota: Arugal Must Die
     .target Dalar Dawnweaver
 step
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,266.39,1567.11
+    .fp Undercity >>Hae flight path: Undercity
+    .target Michael Garrett
+step
+    .goto 1458/0,417.30,1781.87
+    .trainer >>Paladin-trainer (taso 24): Blessing of Wisdom r2, Hammer of Justice r2, Blessing of Pretection r2, Turn Undead
+    .target Garen Largo
+step
+    .goto 1458/0,171.31,1524.93
+    .trainer >>|cRXP_WARN_Ammatti: First Aid 50+|r. Opettele Journeyman First Aid (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Mary Edras|r
+    .skill firstaid,<50,1
+    .skill firstaid,150,1,1
+    .target Mary Edras
+step
+    .goto 1458/0,277.04,1590.47
+    .trainer >>|cRXP_WARN_Ammatti: Cooking 50+|r. Opettele Journeyman Cooking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Eunice Burch|r
+    .skill cooking,<50,1
+    .skill cooking,150,1,1
+    .target Eunice Burch
+step
+    .goto 1458/0,98.98,1677.85
+    .trainer >>|cRXP_WARN_Ammatti: Fishing 50+|r. Opettele Journeyman Fishing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Armand Cromwell|r
+    .skill fishing,<50,1
+    .skill fishing,150,1,1
+    .target Armand Cromwell
+step
+    .goto 1458/0,335.65,1638.23
+    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
+    .skill mining,<50,1
+    .skill mining,150,1,1
+    .target Brom Killian
+step
+    .goto 1458/0,335.65,1638.23
+    .trainer >>|cRXP_WARN_Ammatti: Mining 125+|r. Opettele Expert Mining (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
+    .skill mining,<125,1
+    .skill mining,225,1,1
+    .target Brom Killian
+step
+    .goto 1458/0,355.13,1560.77
+    .trainer >>|cRXP_WARN_Ammatti: Herbalism 50+|r. Opettele Journeyman Herbalism (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
+    .skill herbalism,<50,1
+    .skill herbalism,150,1,1
+    .target Martha Alliestar
+step
+    .goto 1458/0,355.13,1560.77
+    .trainer >>|cRXP_WARN_Ammatti: Herbalism 125+|r. Opettele Expert Herbalism (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
+    .skill herbalism,<125,1
+    .skill herbalism,225,1,1
+    .target Martha Alliestar
+step
+    .goto 1458/0,200.10,1499.13
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 50+|r. Opettele Journeyman Skinning (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
+    .skill skinning,<50,1
+    .skill skinning,150,1,1
+    .target Killian Hagey
+step
+    .goto 1458/0,200.10,1499.13
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
+    .skill skinning,<125,1
+    .skill skinning,225,1,1
+    .target Killian Hagey
+step
+    .goto 1458/0,285.48,1681.88
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_James Van Brunt|r
+    .skill blacksmithing,<125,1
+    .skill blacksmithing,225,1,1
+    .target James Van Brunt
+step
+    .goto 1458/0,273.20,1491.64
+    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Malcomb Wynn|r
+    .skill enchanting,<50,1
+    .skill enchanting,150,1,1
+    .target Malcomb Wynn
+step
+    .goto 1458/0,273.87,1482.36
+    .trainer >>|cRXP_WARN_Ammatti: Enchanting 125+|r. Opettele Expert Enchanting (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Lavinia Crowe|r
+    .skill enchanting,<125,1
+    .skill enchanting,225,1,1
+    .target Lavinia Crowe
+step
+    .goto 1458/0,150.40,1409.84
+    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Graham Van Talen|r
+    .skill engineering,<50,1
+    .skill engineering,150,1,1
+    .target Graham Van Talen
+step
+    .goto 1458/0,142.92,1404.08
+    .trainer >>|cRXP_WARN_Ammatti: Engineering 125+|r. Opettele Expert Engineering (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Franklin Lloyd|r
+    .skill engineering,<125,1
+    .skill engineering,225,1,1
+    .target Franklin Lloyd
+step
+    .goto 1458/0,199.90,1510.40
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
+    .skill leatherworking,<50,1
+    .skill leatherworking,150,1,1
+    .target Arthur Moore
+step
+    .goto 1458/0,199.90,1510.40
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
+    .skill leatherworking,<125,1
+    .skill leatherworking,225,1,1
+    .target Arthur Moore
+step
+    .goto 1458/0,358.01,1529.09
+    >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
+    .accept 1013 >>Ota: The Book of Ur
+    .target Keeper Bel'dugur
+step
+    .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
+step
     .goto 1421/0,1568.40,-231.73
     >>|cRXP_WARN_Mene dungeoniin: Shadowfang Keep|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Varaa vettä
@@ -471,10 +465,6 @@ step
     .target Alexandre Lefevre
 step
     .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,417.30,1781.87
-    .trainer >>Paladin-trainer (taso 24): Blessing of Wisdom r2, Hammer of Justice r2, Blessing of Pretection r2, Turn Undead
-    .target Garen Largo
 step
     .goto 1458/0,358.01,1529.09
     >>Puhu: |cRXP_FRIENDLY_Keeper Bel'dugur|r
@@ -799,60 +789,6 @@ step
     .skill leatherworking,<10,1
     .target Veren Tallstrider
 step
-    .goto 1456/1,206.78,-997.38
-    .trainer >>|cRXP_WARN_Ammatti: First Aid 50+|r. Opettele Journeyman First Aid (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Pand Stonebinder|r
-    .skill firstaid,<50,1
-    .skill firstaid,150,1,1
-    .target Pand Stonebinder
-step
-    .goto 1456/1,-12.72,-1219.56
-    .trainer >>|cRXP_WARN_Ammatti: Cooking 50+|r. Opettele Journeyman Cooking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Aska Mistrunner|r
-    .skill cooking,<50,1
-    .skill cooking,150,1,1
-    .target Aska Mistrunner
-step
-    .goto 1456/1,-69.19,-1172.73
-    .trainer >>|cRXP_WARN_Ammatti: Fishing 50+|r. Opettele Journeyman Fishing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Kah Mistrunner|r
-    .skill fishing,<50,1
-    .skill fishing,150,1,1
-    .target Kah Mistrunner
-step
-    .goto 1456/1,157.93,-1252.89
-    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Brek Stonehoof|r
-    .skill mining,<50,1
-    .skill mining,150,1,1
-    .target Brek Stonehoof
-step
-    .goto 1456/1,157.93,-1252.89
-    .trainer >>|cRXP_WARN_Ammatti: Mining 125+|r. Opettele Expert Mining (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brek Stonehoof|r
-    .skill mining,<125,1
-    .skill mining,225,1,1
-    .target Brek Stonehoof
-step
-    .goto 1456/1,-4.69,-1131.19
-    .trainer >>|cRXP_WARN_Ammatti: Herbalism 50+|r. Opettele Journeyman Herbalism (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Komin Winterhoof|r
-    .skill herbalism,<50,1
-    .skill herbalism,150,1,1
-    .target Komin Winterhoof
-step
-    .goto 1456/1,-4.69,-1131.19
-    .trainer >>|cRXP_WARN_Ammatti: Herbalism 125+|r. Opettele Expert Herbalism (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Komin Winterhoof|r
-    .skill herbalism,<125,1
-    .skill herbalism,225,1,1
-    .target Komin Winterhoof
-step
-    .goto 1456/1,52.82,-1150.25
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 50+|r. Opettele Journeyman Skinning (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Mooranta|r
-    .skill skinning,<50,1
-    .skill skinning,150,1,1
-    .target Mooranta
-step
-    .goto 1456/1,52.82,-1150.25
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Mooranta|r
-    .skill skinning,<125,1
-    .skill skinning,225,1,1
-    .target Mooranta
-step
     .goto 1456/1,29.44,-1089.58
     .trainer >>|cRXP_WARN_Ammatti: Alchemy 50+|r. Opettele Journeyman Alchemy (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Kray|r
     .skill alchemy,<50,1
@@ -864,42 +800,6 @@ step
     .skill alchemy,<125,1
     .skill alchemy,225,1,1
     .target Bena Winterhoof
-step
-    .goto 1456/1,105.64,-1233.33
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Karn Stonehoof|r
-    .skill blacksmithing,<50,1
-    .skill blacksmithing,150,1,1
-    .target Karn Stonehoof
-step
-    .goto 1456/1,105.64,-1233.33
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Karn Stonehoof|r
-    .skill blacksmithing,<125,1
-    .skill blacksmithing,225,1,1
-    .target Karn Stonehoof
-step
-    .goto 1456/1,47.92,-1110.87
-    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Teg Dawnstrider|r
-    .skill enchanting,<50,1
-    .skill enchanting,150,1,1
-    .target Teg Dawnstrider
-step
-    .goto 1456/1,47.92,-1110.87
-    .trainer >>|cRXP_WARN_Ammatti: Enchanting 125+|r. Opettele Expert Enchanting (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Teg Dawnstrider|r
-    .skill enchanting,<125,1
-    .skill enchanting,225,1,1
-    .target Teg Dawnstrider
-step
-    .goto 1456/1,74.95,-1146.49
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Tarn|r
-    .skill leatherworking,<50,1
-    .skill leatherworking,150,1,1
-    .target Tarn
-step
-    .goto 1456/1,74.95,-1146.49
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Tarn|r
-    .skill leatherworking,<125,1
-    .skill leatherworking,225,1,1
-    .target Tarn
 step
     .goto 1456/1,51.99,-1165.56
     .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Tepa|r
@@ -1124,6 +1024,18 @@ step
     >>Kerää |cRXP_LOOT_Gaea Seed|r (|cRXP_PICK_Gaea Seed|r)
     .complete 6301,1
 step
+    .goto 1442/1,844.21,1054.74
+    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Hgarth|r
+    .skill enchanting,<50,1
+    .skill enchanting,150,1,1
+    .target Hgarth
+step
+    .goto 1442/1,844.21,1054.74
+    .trainer >>|cRXP_WARN_Ammatti: Enchanting 125+|r. Opettele Expert Enchanting (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Hgarth|r
+    .skill enchanting,<125,1
+    .skill enchanting,225,1,1
+    .target Hgarth
+step
     .goto 1442/1,926.25,1015.02
     >>Puhu: |cRXP_FRIENDLY_Tammra Windfield|r
     .turnin 6301 >>Palauta: Cycle of Rebirth
@@ -1206,6 +1118,18 @@ step
     .turnin 6523 >>Palauta: Protect Kaya
     .target Makaba Flathoof
 step
+    .goto 1413/1,-2575.48,-340.73
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Traugh|r
+    .skill blacksmithing,<50,1
+    .skill blacksmithing,150,1,1
+    .target Traugh
+step
+    .goto 1413/1,-2575.48,-340.73
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Traugh|r
+    .skill blacksmithing,<125,1
+    .skill blacksmithing,225,1,1
+    .target Traugh
+step
     .goto 1413/1,-2555.22,-387.35
     >>Puhu: |cRXP_FRIENDLY_Korran|r
     .accept 868 >>Ota: Egg Hunt
@@ -1281,6 +1205,18 @@ step
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .turnin 898 >>Palauta: Free From the Hold
     .target Captain Thalo'thas Brightsun
+step
+    .goto 1413/1,-1920.87,-2404.77
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Krulmoo Fullmoon|r
+    .skill leatherworking,<50,1
+    .skill leatherworking,150,1,1
+    .target Krulmoo Fullmoon
+step
+    .goto 1413/1,-1920.87,-2404.77
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Krulmoo Fullmoon|r
+    .skill leatherworking,<125,1
+    .skill leatherworking,225,1,1
+    .target Krulmoo Fullmoon
 step
     .goto 1413/1,-1949.24,-2374.36
     .vendor >>Myy roinat ja korjaa varusteet (Sanuye Runetotem)
@@ -1766,18 +1702,6 @@ step
     .skill alchemy,225,1,1
     .target Bena Winterhoof
 step
-    .goto 1456/1,105.12,-1244.26
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Thrag Stonehoof|r
-    .skill blacksmithing,<50,1
-    .skill blacksmithing,150,1,1
-    .target Thrag Stonehoof
-step
-    .goto 1456/1,105.64,-1233.33
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Karn Stonehoof|r
-    .skill blacksmithing,<125,1
-    .skill blacksmithing,225,1,1
-    .target Karn Stonehoof
-step
     .goto 1456/1,51.05,-1117.90
     .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Mot Dawnstrider|r
     .skill enchanting,<50,1
@@ -1789,18 +1713,6 @@ step
     .skill enchanting,<125,1
     .skill enchanting,225,1,1
     .target Teg Dawnstrider
-step
-    .goto 1456/1,77.67,-1152.34
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Mak|r
-    .skill leatherworking,<50,1
-    .skill leatherworking,150,1,1
-    .target Mak
-step
-    .goto 1456/1,83.51,-1146.22
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Una|r
-    .skill leatherworking,<125,1
-    .skill leatherworking,225,1,1
-    .target Una
 step
     .goto 1456/1,51.99,-1165.56
     .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Tepa|r
@@ -1905,6 +1817,22 @@ step
     .goto 1456/1,-125.24,-1412.93
     >>Puhu: |cRXP_FRIENDLY_Melor Stonehoof|r
     .turnin 1130 >>Palauta: Melor Sends Word
+    .target Melor Stonehoof
+step
+    .goto 1456/1,105.12,-1244.26
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Thrag Stonehoof|r
+    .skill blacksmithing,<50,1
+    .skill blacksmithing,150,1,1
+    .target Thrag Stonehoof
+step
+    .goto 1456/1,105.64,-1233.33
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 125+|r. Opettele Expert Blacksmithing (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Karn Stonehoof|r
+    .skill blacksmithing,<125,1
+    .skill blacksmithing,225,1,1
+    .target Karn Stonehoof
+step
+    .goto 1456/1,-125.24,-1412.93
+    >>Puhu: |cRXP_FRIENDLY_Melor Stonehoof|r
     .accept 1131 >>Ota: Steelsnap
     .target Melor Stonehoof
 step
@@ -2306,6 +2234,12 @@ step
     >>Tavoite: Bring two Patterned Bronze Bracers, two Bronze Greatswords, and two Sharp Claws to Orokk Omosh in Orgrimmar.
     .skill blacksmithing,<140,1
     .target Orokk Omosh
+step
+    .goto 1454/1,-4561.58,1860.89
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Karolek|r
+    .skill leatherworking,<125,1
+    .skill leatherworking,225,1,1
+    .target Karolek
 step
     .goto 1454/1,-4482.89,1775.30
     >>Puhu: |cRXP_FRIENDLY_Borstan|r
@@ -2870,12 +2804,6 @@ step
     .fp Grom'gol >>Hae flight path: Grom'gol
     .target Thysta
 step
-    .goto 1434/0,195.42,-12398.20
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brawn|r
-    .skill leatherworking,<125,1
-    .skill leatherworking,225,1,1
-    .target Brawn
-step
     .goto 1434/0,166.07,-12398.20
     >>Puhu: |cRXP_FRIENDLY_Commander Aggro'gosh|r
     .accept 568 >>Ota: The Defense of Grom'gol
@@ -3061,6 +2989,12 @@ step
     .turnin 194 >>Palauta: Raptor Mastery
     .accept 195 >>Ota: Raptor Mastery
     .target Hemet Nesingwary
+step
+    .goto 1434/0,195.42,-12398.20
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brawn|r
+    .skill leatherworking,<125,1
+    .skill leatherworking,225,1,1
+    .target Brawn
 step
     .goto 1434/0,203.72,-12410.12
     .vendor >>Myy roinat ja korjaa varusteet (Hragran)
@@ -3692,12 +3626,6 @@ step
     .skill blacksmithing,225,1,1
     .target James Van Brunt
 step
-    .goto 1458/0,199.90,1510.40
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
-    .skill leatherworking,<125,1
-    .skill leatherworking,225,1,1
-    .target Arthur Moore
-step
     .goto 1458/0,201.25,1682.33
     .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Rhiannon Davis|r
     .skill tailoring,<125,1
@@ -3826,6 +3754,12 @@ step
     .target Braug Dimspirit
 step
     .zone Undercity >>Matkusta: Undercity. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
+step
+    .goto 1458/0,199.90,1510.40
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 125+|r. Opettele Expert Leatherworking (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Arthur Moore|r
+    .skill leatherworking,<125,1
+    .skill leatherworking,225,1,1
+    .target Arthur Moore
 step
     .goto 1458/0,318.67,1459.32
     >>Puhu: |cRXP_FRIENDLY_Parqual Fintallas|r
@@ -4252,6 +4186,12 @@ step
     .skill herbalism,<200,1
     .skill herbalism,300,1,1
     .target Martha Alliestar
+step
+    .goto 1458/0,200.10,1499.13
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
+    .skill skinning,<125,1
+    .skill skinning,225,1,1
+    .target Killian Hagey
 step
     .goto 1458/0,200.10,1499.13
     .trainer >>|cRXP_WARN_Ammatti: Skinning 200+|r. Opettele Artisan Skinning (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Killian Hagey|r
@@ -5161,10 +5101,22 @@ step
     .target Garen Largo
 step
     .goto 1458/0,335.65,1638.23
+    .trainer >>|cRXP_WARN_Ammatti: Mining 125+|r. Opettele Expert Mining (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
+    .skill mining,<125,1
+    .skill mining,225,1,1
+    .target Brom Killian
+step
+    .goto 1458/0,335.65,1638.23
     .trainer >>|cRXP_WARN_Ammatti: Mining 200+|r. Opettele Artisan Mining (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Brom Killian|r
     .skill mining,<200,1
     .skill mining,300,1,1
     .target Brom Killian
+step
+    .goto 1458/0,355.13,1560.77
+    .trainer >>|cRXP_WARN_Ammatti: Herbalism 125+|r. Opettele Expert Herbalism (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
+    .skill herbalism,<125,1
+    .skill herbalism,225,1,1
+    .target Martha Alliestar
 step
     .goto 1458/0,355.13,1560.77
     .trainer >>|cRXP_WARN_Ammatti: Herbalism 200+|r. Opettele Artisan Herbalism (max 300) ja uudet reseptit: |cRXP_FRIENDLY_Martha Alliestar|r
@@ -7858,6 +7810,11 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Blizrik Buckshot)
     .target Blizrik Buckshot
 step
+    .goto 1446/1,-4841.75,-6979.00
+    >>Puhu: |cRXP_FRIENDLY_Yorba Screwspigot|r
+    .accept 4324 >>Ota: Yuka Screwspigot
+    .target Yorba Screwspigot
+step
     .goto 1446/1,-3779.15,-7045.24
     .fly Marshal's Refuge >>Lennä: Marshal's Refuge
     .target Bulkrek Ragefist
@@ -8490,11 +8447,6 @@ step
     .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
     .target Innkeeper Gryshka
 step
-    .goto 1454/1,-4348.24,1658.37
-    >>Puhu: |cRXP_FRIENDLY_Cenarion Emissary Blackhoof|r
-    .accept 8276 >>Ota: Taking Back Silithus
-    .target Cenarion Emissary Blackhoof
-step
     .goto 1454/1,-4376.29,1627.50
     >>Puhu: |cRXP_FRIENDLY_Karus|r
     .turnin 4511 >>Palauta: Calm Before the Storm
@@ -8589,11 +8541,6 @@ step
     .turnin 4294 >>Palauta: ... and a Batch of Ooze
     .target Chemist Fuely
 step
-    .goto 1458/0,316.76,1290.33
-    >>Puhu: |cRXP_FRIENDLY_Lady Sylvanas Windrunner|r
-    .accept 5961 >>Ota: The Champion of the Banshee Queen
-    .target Lady Sylvanas Windrunner
-step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
     .goto 1420/0,-721.75,1761.89
@@ -8601,188 +8548,6 @@ step
     .turnin 5095 >>Palauta: A Call to Arms: The Plaguelands!
     .accept 5096 >>Ota: Scarlet Diversions
     .target High Executor Derrington
-step
-    .goto 1420/0,-730.79,1659.46
-    >>Puhu: |cRXP_FRIENDLY_Mickey Levine|r
-    .accept 5901 >>Ota: A Plague Upon Thee
-    .target Mickey Levine
-step
-    .goto 1420/0,313.05,2249.91
-    >>Puhu: |cRXP_FRIENDLY_Shari Stilwell|r
-    .accept 91282 >>Ota: A Second Home
-    .target Shari Stilwell
-step
-    .goto 1420/0,1632.52,1843.22
-    >>Puhu: |cRXP_FRIENDLY_Aramis Hammerhand|r
-    .accept 91209 >>Ota: Continue Your Training
-    .target Aramis Hammerhand
-step
-    .goto 1420/0,2043.73,2475.85
-    >>Puhu: |cRXP_FRIENDLY_Breton Samuels|r
-    .turnin 91282 >>Palauta: A Second Home
-    .accept 91285 >>Ota: Murlocs at the Gates
-    .target Breton Samuels
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
-    .accept 94427 >>Ota: A Lesson in Divinity
-    .target Danitha Morr
-step
-    .goto 1420/0,2274.18,2135.44
-    >>Tapa |cRXP_ENEMY_Vile Fin Seer|r
-    >>Tapa |cRXP_ENEMY_Vile Fin Attacker|r
-    .complete 91285,2
-    .complete 91285,1
-    .mob Vile Fin Seer
-    .mob Vile Fin Attacker
-step
-    .goto 1420/0,2043.73,2475.85
-    >>Puhu: |cRXP_FRIENDLY_Breton Samuels|r
-    .turnin 91285 >>Palauta: Murlocs at the Gates
-    .accept 91294 >>Ota: Touring the Grounds
-    .target Breton Samuels
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Tapa |cRXP_ENEMY_Danitha Morr (elite, ryhmä)|r
-    >>Tapa |cRXP_ENEMY_Jorin Croge|r
-    >>Puhu: |cRXP_FRIENDLY_Hilda the Breaker|r
-    .complete 91294,4
-    .complete 91294,2
-    .complete 91294,1
-    .mob Jorin Croge
-step
-    .goto 1420/0,1885.57,2319.20
-    >>Tapa |cRXP_ENEMY_Ander Solliden|r
-    .complete 91294,3
-    .mob Ander Solliden
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
-    .turnin 91294 >>Palauta: Touring the Grounds
-    .accept 91317 >>Ota: The Tarnished
-    .target Danitha Morr
-step
-    .goto 1420/0,2007.58,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Jorin Croge|r
-    .accept 91316 >>Ota: Making Repairs
-    .target Jorin Croge
-step
-    .goto 1420/0,2378.11,1936.61
-    >>Tapa |cRXP_ENEMY_Tarnished Zealot|r
-    >>Tapa |cRXP_ENEMY_Tarnished Drudge|r
-    >>Kerää |cRXP_LOOT_Rudolph Gelhardt's Head|r (|cRXP_ENEMY_Rudolph Gelhardt|r)
-    .complete 91317,3
-    .complete 91317,2
-    .complete 91317,1
-    .mob Tarnished Zealot
-    .mob Tarnished Drudge
-    .mob Rudolph Gelhardt
-step
-    .goto 1420/0,2581.46,1855.27
-    >>Kerää |cRXP_LOOT_Sturdy Lumber|r (|cRXP_PICK_Lumber Pile|r)
-    .complete 91316,1
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
-    .turnin 91317 >>Palauta: The Tarnished
-    .accept 95803 >>Ota: A Token of Good Faith
-    .target Danitha Morr
-step
-    .goto 1420/0,2007.58,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Jorin Croge|r
-    .turnin 91316 >>Palauta: Making Repairs
-    .target Jorin Croge
-step
-    .goto 1420/0,308.08,2246.30
-    .vendor >>Myy roinat ja korjaa varusteet (Eliza Callen)
-    .target Eliza Callen
-step
-    .goto 1420/0,244.36,2269.49
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Renee
-step
-    .goto 1420/0,244.36,2269.49
-    .home >>Aseta Hearthstone tähän (Innkeeper Renee)
-    .target Innkeeper Renee
-step
-    .goto 1420/0,313.05,2249.91
-    >>Puhu: |cRXP_FRIENDLY_Shari Stilwell|r
-    .complete 91209,1
-step
-    .goto 1420/0,313.05,2249.91
-    >>Puhu: |cRXP_FRIENDLY_Shari Stilwell|r
-    .turnin 91209 >>Palauta: Continue Your Training
-    .target Shari Stilwell
-step
-    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,244.80,1637.91
-    >>Puhu: |cRXP_FRIENDLY_Tanis Alderwood|r
-    .turnin 94427 >>Palauta: A Lesson in Divinity
-    .accept 94434 >>Ota: A Lesson in Divinity
-    .target Tanis Alderwood
-step
-    .goto 1458/0,316.76,1290.33
-    >>Puhu: |cRXP_FRIENDLY_Lady Sylvanas Windrunner|r
-    .turnin 95803 >>Palauta: A Token of Good Faith
-    .target Lady Sylvanas Windrunner
-step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
-step
-    .hs >>Hearthstone: Innkeeper Renee
-    .cooldown item,6948,>0
-step
-    .goto 1420/0,-129.79,3060.27
-    >>Kerää |cRXP_LOOT_Linen Cloth|r (|cRXP_PICK_Battered Chest|r)
-    .complete 94434,1
-step
-    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,244.80,1637.91
-    >>Puhu: |cRXP_FRIENDLY_Tanis Alderwood|r
-    .turnin 94434 >>Palauta: A Lesson in Divinity
-    .accept 94435 >>Ota: A Lesson in Divinity
-    .target Tanis Alderwood
-step
-    .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
-    .turnin 94435 >>Palauta: A Lesson in Divinity
-    .accept 94436 >>Ota: A Lesson in Divinity
-    .target Danitha Morr
-step
-    .goto 1420/0,2043.73,2496.94
-    >>Puhu: |cRXP_FRIENDLY_Deathguard Billmuth|r
-    .turnin 94436 >>Palauta: A Lesson in Divinity
-    .accept 94438 >>Ota: A Lesson in Divinity
-    .target Deathguard Billmuth
-step
-    .goto 1420/0,-884.42,2400.54
-    >>Puhu: |cRXP_FRIENDLY_Deathguard Falgan|r
-    .turnin 94438 >>Palauta: A Lesson in Divinity
-    .accept 94440 >>Ota: A Lesson in Divinity
-    .target Deathguard Falgan
-step
-    .goto 1420/0,2378.11,1936.61
-    >>Kerää |cRXP_LOOT_Scarlet Crusade Attack Plans|r (|cRXP_ENEMY_Tarnished Zealot|r, |cRXP_ENEMY_Scarlet Zealot|r, |cRXP_ENEMY_Scarlet Friar|r)
-    .complete 94440,1
-    .mob Tarnished Zealot
-    .mob Scarlet Zealot
-    .mob Scarlet Friar
-step
-    .goto 1420/0,2043.73,2496.94
-    >>Puhu: |cRXP_FRIENDLY_Deathguard Billmuth|r
-    .turnin 94440 >>Palauta: A Lesson in Divinity
-    .accept 94441 >>Ota: A Lesson in Divinity
-    .target Deathguard Billmuth
-step
-    .goto 1420/0,2034.69,2490.91
-    >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
-    .turnin 94441 >>Palauta: A Lesson in Divinity
-    .target Danitha Morr
 step
     .xp 52 >>Tavoitetaso 52 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -8925,36 +8690,38 @@ step
 step
     .xp 52 >>Tavoitetaso 52 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .hs >>Hearthstone: Innkeeper Renee
-    .cooldown item,6948,>0
+    .zone Undercity >>Matkusta: Undercity. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
 step
-    .goto 1420/0,312.14,2251.12
+    .goto 1458/0,417.30,1781.87
     .trainer >>Paladin-trainer (taso 56): Retribution Aura r5
-    .target Shari Stilwell
+    .target Garen Largo
 step
     .zone Burning Steppes >>Matkusta: Burning Steppes. Searing Gorgesta Blackrock Mountainin läpi etelään Burning Steppesiin. Flame Crest on idässä
-step
-    .goto 1428/0,-1116.12,-7595.40
-    >>Puhu: |cRXP_FRIENDLY_Franclorn Forgewright|r
-    .accept 3801 >>Ota: Dark Iron Legacy
-    .turnin 3801 >>Palauta: Dark Iron Legacy
-    .accept 3802 >>Ota: Dark Iron Legacy
-    .target Franclorn Forgewright
 step
     .goto 1428/0,-2190.84,-7504.04
     .fp Flame Crest >>Hae flight path: Flame Crest
     .target Vahgruk
 step
-    .goto 1428/0,-2176.48,-7499.75
-    >>Puhu: |cRXP_FRIENDLY_Tinkee Steamboil|r
-    .accept 4726 >>Ota: Broodling Essence
-    .target Tinkee Steamboil
+    .goto 1428/0,-2202.85,-7458.76
+    >>Puhu: |cRXP_FRIENDLY_Yuka Screwspigot|r
+    .turnin 4324 >>Palauta: Yuka Screwspigot
+    .accept 4136 >>Ota: Ribbly Screwspigot
+    .target Yuka Screwspigot
 step
     .goto 1428/0,-2176.48,-7497.80
     >>Puhu: |cRXP_FRIENDLY_Maxwort Uberglint|r
     .accept 4123 >>Ota: The Heart of the Mountain
     .accept 4296 >>Ota: Tablet of the Seven
     .target Maxwort Uberglint
+step
+    .goto 1428/0,-2176.48,-7499.75
+    >>Puhu: |cRXP_FRIENDLY_Tinkee Steamboil|r
+    .accept 4726 >>Ota: Broodling Essence
+    .target Tinkee Steamboil
+step
+    .goto 1428/0,-2201.67,-7459.73
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Yuka Screwspigot)
+    .target Yuka Screwspigot
 step
     .goto 1428/0,-1851.35,-7827.70
     >>Kerää |cRXP_LOOT_Tablet Transcript|r (|cRXP_PICK_Tablet of the Seven|r)
@@ -8965,10 +8732,6 @@ step
     .turnin 4296 >>Palauta: Tablet of the Seven
     .target Maxwort Uberglint
 step
-    .goto 1428/0,-2201.67,-7459.73
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Yuka Screwspigot)
-    .target Yuka Screwspigot
-step
     .goto 1428/0,-2858.98,-7663.72
     >>Kerää |cRXP_LOOT_Broodling Essence|r (|cRXP_PICK_Broodling Essence|r)
     .complete 4726,1
@@ -8978,6 +8741,13 @@ step
     .turnin 4726 >>Palauta: Broodling Essence
     .accept 4808 >>Ota: Felnok Steelspring
     .target Tinkee Steamboil
+step
+    .goto 1428/0,-1116.12,-7595.40
+    >>Puhu: |cRXP_FRIENDLY_Franclorn Forgewright|r
+    .accept 3801 >>Ota: Dark Iron Legacy
+    .turnin 3801 >>Palauta: Dark Iron Legacy
+    .accept 3802 >>Ota: Dark Iron Legacy
+    .target Franclorn Forgewright
 step
     .goto 1428/0,-2190.84,-7504.04
     .fly Thorium Point >>Lennä: Thorium Point
@@ -9066,41 +8836,14 @@ step
     .accept 4063 >>Ota: The Rise of the Machines
     .target Lotwil Veriatus
 step
-    .zone Tanaris >>Matkusta: Tanaris. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Freewind Postista Shimmering Flatsin eteläpäähän ja siitä Tanarisiin. Gadgetzan on pohjoisessa
-step
-    .goto 1446/1,-4841.75,-6979.00
-    >>Puhu: |cRXP_FRIENDLY_Yorba Screwspigot|r
-    .accept 4324 >>Ota: Yuka Screwspigot
-    .target Yorba Screwspigot
-step
-    .goto 1446/1,-3779.15,-7045.24
-    .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Bulkrek Ragefist
-    .zoneskip Thunder Bluff
-step
-    .zone Mulgore >>Matkusta: Mulgore. Thunder Bluffista alas Mulgoreen
+    .zone Mulgore >>Matkusta: Mulgore. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Thunder Bluffista alas Mulgoreen
 step
     .goto 1412/1,423.68,-660.40
     >>Puhu: |cRXP_FRIENDLY_Alaana Stormwalker|r
     .accept 97197 >>Ota: Fragment of the Firelands
     .target Alaana Stormwalker
 step
-    .zone Burning Steppes >>Matkusta: Burning Steppes. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Searing Gorgesta Blackrock Mountainin läpi etelään Burning Steppesiin. Flame Crest on idässä
-step
-    .goto 1428/0,-2202.85,-7458.76
-    >>Puhu: |cRXP_FRIENDLY_Yuka Screwspigot|r
-    .turnin 4324 >>Palauta: Yuka Screwspigot
-    .accept 4136 >>Ota: Ribbly Screwspigot
-    .target Yuka Screwspigot
-step
-    .goto 1428/0,-2201.67,-7459.73
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Yuka Screwspigot)
-    .target Yuka Screwspigot
-step
-    .goto 1428/0,-2190.84,-7504.04
-    .fly Thorium Point >>Lennä: Thorium Point
-    .target Vahgruk
-    .zoneskip Searing Gorge
+    .zone Searing Gorge >>Matkusta: Searing Gorge. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Kargathista länteen solan kautta Searing Gorgeen. Thorium Point on pohjoisessa
 step
     .goto 1427/0,-1099.39,-7368.84
     >>|cRXP_WARN_Mene dungeoniin: Blackrock Depths|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -9677,16 +9420,12 @@ step
     .target Tal
     .zoneskip Orgrimmar
 step
-    .goto 1454/1,-4170.11,1918.42
-    >>Puhu: |cRXP_FRIENDLY_Mokvar|r
-    .accept 84162 >>Ota: An Earnest Proposition
-    .target Mokvar
+    .goto 1454/1,-4348.24,1658.37
+    >>Puhu: |cRXP_FRIENDLY_Cenarion Emissary Blackhoof|r
+    .accept 8276 >>Ota: Taking Back Silithus
+    .target Cenarion Emissary Blackhoof
 step
     .zone Undercity >>Matkusta: Undercity. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
-step
-    .goto 1458/0,417.30,1781.87
-    .trainer >>Paladin-trainer (taso 58): Flash of Light r6, Seal of Widom r3
-    .target Garen Largo
 step
     .goto 1458/0,203.55,1601.42
     >>Puhu: |cRXP_FRIENDLY_Royal Overseer Bauhaus|r
@@ -9694,15 +9433,24 @@ step
     .accept 5049 >>Ota: The Jeremiah Blues
     .target Royal Overseer Bauhaus
 step
+    .goto 1458/0,417.30,1781.87
+    .trainer >>Paladin-trainer (taso 58): Flash of Light r6, Seal of Widom r3
+    .target Garen Largo
+step
     .goto 1458/0,224.66,1595.02
     >>Puhu: |cRXP_FRIENDLY_Jeremiah Payson|r
     .turnin 5049 >>Palauta: The Jeremiah Blues
     .accept 5050 >>Ota: Good Luck Charm
     .target Jeremiah Payson
 step
-    .goto 1458/0,224.66,1595.28
-    .vendor >>Myy harmaat roinat (Jeremiah Payson)
-    .target Jeremiah Payson
+    .goto 1458/0,316.76,1290.33
+    >>Puhu: |cRXP_FRIENDLY_Lady Sylvanas Windrunner|r
+    .accept 5961 >>Ota: The Champion of the Banshee Queen
+    .target Lady Sylvanas Windrunner
+step
+    .goto 1458/0,314.16,1251.28
+    .vendor >>Myy harmaat roinat (Horde Warbringer)
+    .target Horde Warbringer
 step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
@@ -9722,6 +9470,11 @@ step
     .turnin 5228 >>Palauta: The Scourge Cauldrons
     .accept 5229 >>Ota: Target: Felstone Field
     .target Shadow Priestess Vandis
+step
+    .goto 1420/0,-730.79,1659.46
+    >>Puhu: |cRXP_FRIENDLY_Mickey Levine|r
+    .accept 5901 >>Ota: A Plague Upon Thee
+    .target Mickey Levine
 step
     .xp 55 >>Tavoitetaso 55 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -9847,6 +9600,11 @@ step
     >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
     .accept 5211 >>Ota: Defenders of Darrowshire
     .target Carlin Redpath
+step
+    .goto 1423/0,-5340.84,2261.20
+    >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
+    .accept 5529 >>Ota: Plagued Hatchlings
+    .target Betina Bigglezink
 step
     .goto 1423/0,-4923.54,3373.47
     >>Kerää |cRXP_LOOT_Hameya's Key|r (|cRXP_ENEMY_Infiltrator Hameya|r)
@@ -9984,6 +9742,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Prospector Ironboot|r
     .accept 5065 >>Ota: The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
+step
+    .goto 1446/1,-3779.15,-7045.24
+    .fly Orgrimmar >>Lennä: Orgrimmar
+    .target Bulkrek Ragefist
+    .zoneskip Orgrimmar
+step
+    .goto 1454/1,-4170.11,1918.42
+    >>Puhu: |cRXP_FRIENDLY_Mokvar|r
+    .accept 84162 >>Ota: An Earnest Proposition
+    .target Mokvar
 step
     .zone Silithus >>Matkusta: Silithus. Un'Goro Craterin luoteiskulmasta Silithusiin. Cenarion Hold on keskellä
 step
@@ -10286,25 +10054,6 @@ step
     .turnin 8281 >>Palauta: Stepping Up Security
     .target Windcaller Proudhorn
 step
-    .goto 1451/1,795.83,-6803.88
-    >>Puhu: |cRXP_FRIENDLY_Windcaller Kaldon|r
-    .accept 8800 >>Ota: Cenarion Battlegear
-    .target Windcaller Kaldon
-step
-    .goto 1451/1,844.60,-6838.72
-    >>Puhu: |cRXP_FRIENDLY_Huum Wildmane|r
-    .accept 8320 >>Ota: Twilight Geolords
-    .target Huum Wildmane
-step
-    .goto 1451/1,754.03,-6861.95
-    >>Puhu: |cRXP_FRIENDLY_Vargus|r
-    .turnin 8800 >>Palauta: Cenarion Battlegear
-    .target Vargus
-step
-    .goto 1451/1,752.99,-6861.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
-    .target Vargus
-step
     .goto 1451/1,767.97,-7572.76
     >>Puhu: |cRXP_FRIENDLY_General Kirika|r
     .turnin 9416 >>Palauta: Report to General Kirika
@@ -10325,6 +10074,21 @@ step
     .complete 8278,1
     .mob Stonelash Flayer
 step
+    .goto 1451/1,844.60,-6838.72
+    >>Puhu: |cRXP_FRIENDLY_Huum Wildmane|r
+    .accept 8320 >>Ota: Twilight Geolords
+    .target Huum Wildmane
+step
+    .goto 1451/1,795.83,-6803.88
+    >>Puhu: |cRXP_FRIENDLY_Windcaller Kaldon|r
+    .accept 8800 >>Ota: Cenarion Battlegear
+    .target Windcaller Kaldon
+step
+    .goto 1451/1,740.10,-6854.98
+    >>Puhu: |cRXP_FRIENDLY_Beetix Ficklespragg|r
+    .turnin 8278 >>Palauta: Noggle's Last Hope
+    .target Beetix Ficklespragg
+step
     .goto 1451/1,730.00,-6867.99
     .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
     .target Calandrath
@@ -10333,15 +10097,19 @@ step
     .home >>Aseta Hearthstone tähän (Calandrath)
     .target Calandrath
 step
-    .goto 1451/1,740.10,-6854.98
-    >>Puhu: |cRXP_FRIENDLY_Beetix Ficklespragg|r
-    .turnin 8278 >>Palauta: Noggle's Last Hope
-    .target Beetix Ficklespragg
-step
     .goto 1451/1,740.10,-6852.66
     >>Puhu: |cRXP_FRIENDLY_Noggle Ficklespragg|r
     .accept 8282 >>Ota: Noggle's Lost Satchel
     .target Noggle Ficklespragg
+step
+    .goto 1451/1,754.03,-6861.95
+    >>Puhu: |cRXP_FRIENDLY_Vargus|r
+    .turnin 8800 >>Palauta: Cenarion Battlegear
+    .target Vargus
+step
+    .goto 1451/1,752.99,-6861.02
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
+    .target Vargus
 step
     .goto 1451/1,1617.90,-6764.39
     >>Tapa |cRXP_ENEMY_Twilight Geolord|r
@@ -10402,10 +10170,6 @@ step
     .turnin 8282 >>Palauta: Noggle's Lost Satchel
     .target Noggle Ficklespragg
 step
-    .goto 1451/1,752.99,-6861.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
-    .target Vargus
-step
     .goto 1451/1,1617.90,-6808.52
     >>Kerää |cRXP_LOOT_Twilight Lexicon - Chapter 1|r (|cRXP_ENEMY_Twilight Keeper Mayna|r)
     .complete 8279,1
@@ -10422,6 +10186,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Commander Mar'alith|r
     .turnin 8287 >>Palauta: A Terrible Purpose
     .target Commander Mar'alith
+step
+    .goto 1451/1,800.01,-6802.25
+    .vendor >>Myy harmaat roinat (Mishta)
+    .target Mishta
 step
     .goto 1451/1,1165.07,-6992.03
     >>Kerää |cRXP_LOOT_Encrypted Twilight Text|r (|cRXP_ENEMY_Twilight Avenger|r, |cRXP_ENEMY_Twilight Geolord|r, |cRXP_ENEMY_Twilight Stonecaller|r)
@@ -10495,7 +10263,6 @@ step
     .goto 1423/0,-5340.84,2261.20
     >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
     .accept 5212 >>Ota: The Flesh Does Not Lie
-    .accept 5529 >>Ota: Plagued Hatchlings
     .target Betina Bigglezink
 step
     .goto 1423/0,-5336.54,2255.47
