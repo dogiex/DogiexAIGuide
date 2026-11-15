@@ -1,30 +1,36 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v1.10)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v2.0)
 
 ASENNUS
-1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanhat kansiot RXPGuides_OmaReitti (ja aiemmat versiot).
+1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanha kansio RXPGuides_DogiexAIGuide ennen uuden
+   kopioimista (v2.0:sta alkaen tiedostoa Free_1-22_RestedXP.lua ei enää ole). Poista myös vanhat RXPGuides_OmaReitti-kansiot.
    RestedXP Guides: https://www.curseforge.com/wow/addons/restedxp-guide (Forever-versio, ilmainen)
 2. Kopioi kansio "RXPGuides_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
 3. Käynnistä peli. Oikea hiirennappi RestedXP-ikkunaan -> ryhmä "Dogiex's AI Guide: Horde 1-60 (Forever)" ->
-   rotusi aloitusluku: Orc/Troll "1-6 Durotar", Undead "1-6 Tirisfal Glades", Tauren "1-6 Mulgore",
-   Skyborne "1-9 Zephras Isle". Luvut vaihtuvat automaattisesti 60:een asti.
-   Jos sinulla on jo hahmo kesken, valitse tasoasi vastaava luku (esim. "Warlock 30-34 ...").
+   aloitusalueesi luku, esim. "1-6 Durotar (Warlock)", "1-6 Tirisfal (Warlock)", "1-6 Mulgore (Druid)" tai
+   "1-... Zephras Isle (Druid)". Uudella hahmolla oikea aloitus valitaan yleensä itsestään. Luvut vaihtuvat
+   automaattisesti 60:een asti. Näet vain oman luokkasi luvut.
+   Jos sinulla on jo hahmo kesken, valitse tasoasi vastaava luku (esim. "30-34 ... (Warlock)").
+   v2.0 vaihtoi lukujen nimet, joten kesken oleva edistyminen ei siirry: valitse luku uudelleen.
 
 SISÄLTÖ
-- 1-22: RestedXP:n ilmaiset aloitukset kaikille Horde-roduille (tiedosto Free_1-22_RestedXP.lua),
-  mukana Ragefire Chasm, Ruins of Lordaeron ja Wailing Caverns.
-- 22-60: oma reitti jokaiselle luokalle (Guide_<Luokka>.lua). Addon lataa vain oman luokkasi reitin.
-  Mukana dungeonit, luokan class-questit, trainer joka parillisella tasolla, lennot, hearthstone,
+- Kokonaan oma reitti 1-60 (sama reitti kuin Guidelime-oppaassa): aloitus jokaiselle aloitusalueelle (Durotar,
+  Tirisfal, Mulgore, Zephras Isle) ja sen jälkeen luokan reitti 12-60. Kaikki tekstit suomeksi.
+- Reitti on optimoitu ylimääräisen juoksemisen välttämiseksi: tavoitteet tehdään reitin varrella, trainerilla
+  käydään kun reitti kulkee ohi, hearthstone ja deathskip vievät takaisin kylään, ja questit, joiden juoksu
+  maksaa enemmän kuin ne antavat XP:tä, jätetään pois.
+- Mukana dungeonit ja kaikki niiden questit, luokan class-questit, trainer-käynnit, lennot, hearthstone,
   myynti ja korjaus sekä luokan mukaiset ostokset (vesi/ruoka, Hunterille ammukset).
+- DEATHSKIP (tasot 1-15): "kuole ja herää Spirit Healerilla" säästää juoksun takaisin kylään. Askel näkyy vain
+  softcore-pelaajille; hardcorella RestedXP piilottaa sen. Jos et halua kuolla, ohita askel ja kävele.
 - Rotukohtaiset questit näkyvät vain sille rodulle. Jo tehdyt questit ohittuvat itsestään.
 - Opas ei sisällä talentti- tai spec-suosituksia.
-- AMMATIT (22-60): kaikki 12 ammattia. Askeleet näkyvät vain, jos olet opetellut ammatin:
+- AMMATIT (1-60): kaikki 12 ammattia. Askeleet näkyvät vain, jos olet opetellut ammatin:
   * Trainer-käynti, kun reitti kulkee kaupungin tai kylän läpi, jossa on ammattisi trainer, ja taitosi
     on rajalla (Journeyman 50+, Expert 125+, Artisan 200+). Askel ohittuu itsestään, jos taito on alle
     rajan tai olet jo opetellut seuraavan tason. Ei erillisiä sivureissuja.
   * First Aid, Cooking ja Fishing Expert opitaan kirjasta: opas näyttää myyjän, kun reitti kulkee ohi.
   * Ammattitehtävät: otto näkyy vain, jos taitosi riittää. Palautus näkyy vain, jos tehtävä on lokissa.
     Materiaalit kerätään/craftataan itse; jos tavoite ei ole valmis palautuskohdassa, ohita askel.
-  * 1-22 (ilmainen RestedXP-osa) käyttää RestedXP:n omia ammattiaskeleita.
 
 HYVÄ TIETÄÄ
 - Jumiin jäävä askel: oikea hiirennappi -> ohita. Jos et tee jotain dungeonia, ohita sen askeleet.
@@ -33,6 +39,5 @@ HYVÄ TIETÄÄ
 - Reittiä ei ole pelitestattu. Quest-data: QuestieDB (Forever), yhteisön ylläpitämä.
 
 LISENSSI
-Free_1-22_RestedXP.lua on RestedXP Guides -addonin sisältöä (https://github.com/RestedXP/RXPGuides),
-lisenssi CC BY-NC-SA 4.0. Muutettu: ryhmän nimi, Alliance-linkit pois ja #next-linkit omiin lukuihin.
-Kansiota saa jakaa vain samalla lisenssillä, ei kaupallisesti.
+CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/). Kansiota saa jakaa ja muokata samalla
+lisenssillä, ei kaupallisesti. v2.0:sta alkaen opas ei sisällä RestedXP:n oppaiden sisältöä.

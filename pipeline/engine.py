@@ -92,8 +92,22 @@ def obj_location(ob, zones):
                 if kind=='npc' and z not in DUNG: lv.append(n(i,'minLevel') or 0)
         if pts:
             c,cnt=cluster(pts)
-            return (z,c,cnt,[k for k,_ in names.most_common(3)], (sum(lv)/len(lv) if lv else None))
+            return (z,c,cnt,[k for k,_ in names.most_common(3)], (sum(lv)/len(lv) if lv else None), dense_spots(pts,cnt,c))
     return None
+def dense_spots(pts,cnt,c,r=6.0):
+    """v2.0: kohdat, joissa tavoitteen saa tehtyä (spawn, jonka ympärillä r:n säteellä vähintään max(3, puolet tiheimmästä) spawnia).
+    Reitti tekee tavoitteen lähimmässä tällaisessa kohdassa tiheimmän kohdan (cluster) sijaan."""
+    need=max(3,(cnt+1)//2); out=[c]
+    for p in pts:
+        if sum(1 for s_ in pts if (s_[0]-p[0])**2+(s_[1]-p[1])**2<=r*r)>=need:
+            pp=(round(p[0],1),round(p[1],1))
+            if all((pp[0]-o_[0])**2+(pp[1]-o_[1])**2>4 for o_ in out): out.append(pp)
+    return tuple(out[:60])
+def near_spot(loc,zone,pos,box=None):
+    """tavoitteen kohta lähimpänä nykyistä sijaintia (sama alue); muuten tiheimmän kohdan sijainti"""
+    if len(loc)<6 or zone!=loc[0] or pos is None: return loc[1]
+    c=[p for p in loc[5] if not box or (box[0]<=p[0]<=box[1] and box[2]<=p[1]<=box[3])] or [loc[1]]
+    return min(c,key=lambda p:(p[0]-pos[0])**2+(p[1]-pos[1])**2)
 
 def ent_loc(kind,i,zones):
     sp=spawns_of('npc' if kind=='npc' else 'obj',i)
@@ -254,7 +268,9 @@ class Sim:
                     if p['fin'][2] in zones: c.append((s.dist(p['fin'][2:]),0,'turnin',qid,None))
                 else:
                     for o_ in rem:
-                        if o_['loc'][0] in zones: c.append((s.dist(o_['loc'])+6,1,'obj',qid,o_))
+                        if o_['loc'][0] in zones:
+                            sp=near_spot(o_['loc'],s.zone,s.pos,v.get('box'))
+                            c.append((s.dist((o_['loc'][0],sp))+6,1,'obj',qid,o_))
             seen=set()
             for z in zones:
                 for qid in s.byzone.get(z,()):
@@ -276,6 +292,8 @@ class Sim:
                 s.emit(type='turnin',q=qid,ent=(fi[0],fi[1]),loc=(fi[2],fi[3]),level=s.L)
             else:
                 x['done']=True; loc=x['loc']
+                sp=near_spot(loc,s.zone,s.pos,v.get('box'))
+                if sp!=loc[1]: loc=x['loc']=(loc[0],sp)+tuple(loc[2:])
                 s.zone,s.pos=loc[0],loc[1]
                 ml=loc[4]
                 # puhu-tavoite (ystävällinen NPC, jolla NPC-toiminto) ei anna tappo-XP:tä; sama tunnistus kuin r3out.py:n 'talk'

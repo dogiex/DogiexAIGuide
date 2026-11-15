@@ -1,10 +1,9 @@
 ## Interface: 16001
 ## Title: RestedXP: Dogiex's AI Guide: Alliance 1-60 (Forever) [pilotti]
 ## Notes: Alliance-pilotti (WoW Forever)
-## Version: 0.6
+## Version: 0.7
 ## Dependencies: RXPGuides
 
-Free_1-21_RestedXP.lua
 Guide_Warrior.lua
 Guide_Paladin.lua
 Guide_Hunter.lua

@@ -159,7 +159,7 @@ def cont(area):
 class Sim3(Sim):
     def __init__(s,visits,level,done,skip=()):
         super().__init__(visits,level=level,done=done,kill_factor=KF,mindelta=8,window=6)
-        s.skip=set(skip); s.normal=set(s.elig); s.nobread=set()
+        s.skip=set(skip); s.normal=set(s.elig); s.nobread=set(); s.nodefer=set(NODEFER)
         extra=(set(QD)|set().union(*ANC.values())|CLASSQ)-s.normal
         for i in extra:
             s.elig.append(i)
@@ -276,11 +276,28 @@ class Sim3(Sim):
             for ob in p['obs']:
                 if ob['loc'][4] and ob['loc'][4]>s.L+3.5: return None
         return p
+    def defer_ok(s,vi,v,qid,p):
+        """v2.0 (ehdotus B2): dungeon-käynnin palautus kaukana olevalle NPC:lle tehdään myöhemmällä normaalilla käynnillä,
+        jos sellainen kulkee palauttajan alueella eikä questilla ole jatkoa, joka pitäisi tehdä samalla dungeon-käynnillä."""
+        z=p['fin'][2]; d=v['block']
+        if qid in s.nodefer or z==d or z==DUNG[d][2]: return False
+        near=set()
+        for w in s.visits[max(0,vi-1):vi+2]:
+            if not w.get('block') and not w.get('cblock'): near|=set(w['zones'])
+        if z in near: return False
+        if any(qid in (aslist(q(y,'preQuestSingle') or [])+aslist(q(y,'preQuestGroup') or [])) and y not in s.done for y in v['only']): return False
+        if any(qid in BREAD.get(y,()) and y not in s.done for y in v['only']): return False   # ohjausquest: pääquest otetaan vasta sen palautuksen jälkeen
+        return any(not w.get('block') and not w.get('cblock') and z in w['zones'] for w in s.visits[vi+1:])
     def run_visit(s,vi,v):
         if not v.get('block') and not v.get('cblock'): return super().run_visit(vi,v)
         d=v.get('block'); only=v['only']
         par,ppos=(DUNG[d][2],DUNG[d][3]) if d else (None,None)
         L0=s.L+s.xp/xp_to_level(s.L) if s.L<60 else 60
+        if v.get('cblock') and v.get('tmin') and not v.get('min'):
+            # v2.0: class-ketjun kierros voi osua hieman ennen ketjun tasoa, kun reitin XP-ajoitus muuttuu (esim. siirretyt palautukset):
+            # tavoitetaso ketjun ensimmäiseen otettavaan questiin, ettei ketju jää pois
+            rl=[q(x,'requiredLevel') or 1 for x in only if x not in s.done and x not in s.log and s.prereq_ok(x)]
+            if rl and s.L<min(rl)<=v['tmin']: v['min']=min(rl)
         s.emit(type='visit',vi=vi,v=v,level=round(L0,2))
         mn=v.get('min')
         if mn and s.L<mn:
@@ -296,9 +313,11 @@ class Sim3(Sim):
             for qid,p in s.log.items():
                 if qid not in only: continue
                 rem=[o_ for o_ in p['obs'] if not o_['done']]
-                if not rem: c.append(('turnin',qid,None,p['fin'][2],p['fin'][3]))
+                if not rem:
+                    if d and s.defer_ok(vi,v,qid,p): continue   # v2.0: palautus myöhemmällä käynnillä, ei erillistä reissua
+                    c.append(('turnin',qid,None,p['fin'][2],p['fin'][3]))
                 else:
-                    for o_ in rem: c.append(('obj',qid,o_,o_['loc'][0],o_['loc'][1]))
+                    for o_ in rem: c.append(('obj',qid,o_,o_['loc'][0],near_spot(o_['loc'],s.zone,s.pos)))
             for qid in only:
                 p=s.can_accept(qid,vi)
                 if p: c.append(('accept',qid,p,p['start'][2],p['start'][3]))
@@ -323,6 +342,7 @@ class Sim3(Sim):
                 pl=s.log.pop(qid); s.done.add(qid); s.gain(quest_xp(qid,s.L),'q')
                 s.emit(type='turnin',q=qid,ent=(pl['fin'][0],pl['fin'][1]),loc=(z,p),level=s.L)
             else:
+                if z!=d and len(obj['loc'])>=6 and p!=obj['loc'][1]: obj['loc']=(z,p)+tuple(obj['loc'][2:])
                 obj['done']=True; s.emit(type='obj',q=qid,o=obj,loc=(z,p),level=s.L)
         if entered and s.L<60: s.gain(0.45*xp_to_level(s.L),'k')
         L1=s.L+s.xp/xp_to_level(s.L) if s.L<60 else 60
@@ -353,8 +373,10 @@ if ALLY:
      V('Westfall','WESTFALL',maxq=17),V('Stormwind','SW',maxq=18),V('Redridge','REDRIDGE',maxq=18),B('VC',18),
      V('Darkshore','DARKSHORE',maxq=19),V('Redridge','REDRIDGE',maxq=21),B('ROL',19),V('Wetlands','WETLANDS',maxq=22),
      V('Darkshore','DARKSHORE',maxq=22),V('Ashenvale','ASHENVALE',maxq=23),V('Duskwood','DUSKWOOD',maxq=24),V('Stormwind','SW',maxq=25)]
+PRUNE_SKIP=set()   # v2.0 (ehdotus C): aika–XP-suhteeltaan heikot questit, r3out.py route()
+NODEFER=set()   # v2.0: dungeon-questit, joiden siirretty palautus jäi tekemättä (myöhempi käynti karsiutui) -> palautus dungeon-käynnillä
 def pruned(vis,level,done):
-    vis=list(vis); skip=set()
+    vis=list(vis); skip=set(PRUNE_SKIP)
     for _ in range(16):
         s=Sim3(vis,level,done,skip).run()
         cnt=collections.Counter(); cur=None
@@ -363,7 +385,9 @@ def pruned(vis,level,done):
             elif st['type'] in('accept','turnin','obj'): cnt[cur]+=1
         keep=[v for i,v in enumerate(vis) if v.get('block') or v.get('cblock') or v.get('lvl6') or cnt[i]>=2]   # lvl6: aloitusalueen tasokäynti (ehdotus #4)
         left=set(s.log)-skip-CLASSQ
+        ldq={x for x in left if x in QD and x not in NODEFER}   # siirretty dungeon-palautus jäi tekemättä: ei pois reitiltä, vaan palautus heti
         if len(keep)==len(vis) and not left: return s,vis
+        if ldq: NODEFER.update(ldq); left-=ldq
         skip|=left; vis=keep
     return s,vis
 def CB(name,mn,only): return dict(name=name,zones=list(ALLOUT),cblock=True,only=set(only),min=None,tmin=mn)

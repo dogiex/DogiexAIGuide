@@ -11,7 +11,6 @@ run_class() {
     [ -n "$rs" ] && WOW_CLASS=$c WOW_RACES=$rs python3 sim7.py glstart $z > logs/${c}_gls_$z.log 2>&1
   done
   WOW_CLASS=$c WOW_RACES=$races python3 sim7.py glmain > logs/${c}_glm.log 2>&1
-  WOW_CLASS=$c WOW_RACES=$races python3 sim7.py rxp > logs/${c}_rxp.log 2>&1
   echo "done $c"
 }
 export -f run_class; mkdir -p logs parts

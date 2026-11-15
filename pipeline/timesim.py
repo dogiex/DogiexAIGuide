@@ -4,6 +4,9 @@ Tilat:
   python3 timesim.py vertaa RACE CLASS [TASO]
       RestedXP:n ilmainen reitti (Guides/forever, rodun aloitus) vs. oma Guidelime-opas
       (addons/Guidelime_DogiexAIGuide/Guide_<Class>.lua tai out7/), oletustaso 10.
+  python3 timesim.py oppaat VANHA_RXP_KANSIO UUSI_RXP_KANSIO [TASO] [Horde|Alliance]
+      kahden RestedXP-addonkansion vertailu kaikilla rotu-luokkayhdistelmillä (rodun #defaultfor-aloitus ja
+      #next-ketju), oletustaso 60, 18 s/tappo. Esim. julkaistu addons/ vs. uusi out7/.
   python3 timesim.py aloitukset KANSIO [KANSIO2 ...]
       sim7.py glstart -JSONien vertailu (esim. nykyinen putki vs. kokeiluversio):
       aika tasolle 10 ja pienimpään yhteiseen lopputasoon, trainer-käynnit.
@@ -11,7 +14,7 @@ Tilat:
 Aikamalli (wow-leveling-route-skillin aika-arvio):
   juoksu = etäisyys jaardeina x 1,2 / 7 yd/s, tappo 18 s (nopea) tai 28 s (lepo mukaan),
   NPC-käynti 8 s, vendor/trainer/flight path 30 s, keräys 6 s, escort/tapahtuma 90 s,
-  hearthstone 15 s, .deathskip 40 s, lento 90 s, mantereen vaihto 180 s.
+  hearthstone 15 s, .deathskip 40 s, lento 90 s (.fly / [F]), mantereen vaihto 180 s.
   Tavoitteet: tapot questin määrän mukaan, pudotukset määrä / 0,5 (yksittäinen esine 1 tappo).
   XP: engine.py (mob_xp, quest_xp) ja data.py (xp_to_level, Foreverin quest-XP).
   Tavoitteiden määrät: RestedXP-oppaiden kommentit (.complete q,i --Nimi (N)), muuten questin tehtäväteksti.
@@ -85,7 +88,7 @@ class Run:
         s.add(part, s.kt); s.kills += 1; s.last_moblvl = lv; s.gain(mob_xp(s.L, lv), 'k')
     def grind_until(s, level, extra=0):
         while s.reached is None and (s.L < level or (s.L == level and s.xp < extra)):
-            s.kill(max(1, min(s.last_moblvl, s.L + 1)), 'grindaus')
+            s.kill(max(1, s.L - 2, min(s.last_moblvl, s.L + 1)), 'grindaus')   # vähintään taso-2: harmaa mob (0 XP) jumitti silmukan
     def accept(s, qid): s.log.add(qid)
     def turnin(s, qid):
         if qid in s.done: return
@@ -178,6 +181,7 @@ def run_rxp(r, steps):
                 r.add('kauppa', T_SHOP); buy = False; continue
             m = re.match(r'\.xp\s+(\d+)(?:\+(\d+))?\s*>>', l)
             if m: r.grind_until(int(m.group(1)), int(m.group(2) or 0)); continue
+            if l.startswith('.fly'): r.add('muu', T_FLY); r.pos = None; continue   # lento (ennen v2.0 laskettiin suorana juoksuna)
             if l.startswith('.hs'): r.add('muu', T_HS); r.pos = home; continue
             if l.startswith('.deathskip'): r.add('muu', T_DEATH); r.pos = None; continue
             if l.startswith(('.use', '.cast')): r.add('keräys', T_OBJ)
@@ -189,6 +193,7 @@ def run_gl(r, lines, grind=True):
     home = None
     for line in lines:
         if r.reached is not None: break
+        if 'Deathskip' in line: r.add('muu', T_DEATH); r.pos = None; continue   # v2.0: herätään hautausmaalla kohteen vieressä
         if line.startswith(('[O]', '[OC]', '[N', '[D', '[GA')): continue
         g = re.search(r'\[G ([\d.]+),([\d.]+) ([^\]]+)\]', line)
         if g: r.move(world_zone(g.group(3), float(g.group(1)), float(g.group(2))))
@@ -240,6 +245,52 @@ def vertaa(race, cls, target):
         print('%s %s -> taso %g, %s (%d s/tappo)' % (race, cls, target, nm, kt))
         print('  RestedXP  ', fmt(a)); print('  Guidelime ', fmt(b))
 
+HORDE_RC = {'Warrior': 'Orc,Troll,Undead,Tauren,Skyborne', 'Paladin': 'Undead', 'Hunter': 'Orc,Troll,Tauren,Skyborne',
+            'Rogue': 'Orc,Troll,Undead,Skyborne', 'Priest': 'Troll,Undead', 'Shaman': 'Orc,Troll,Tauren,Skyborne',
+            'Mage': 'Orc,Troll,Undead', 'Warlock': 'Orc,Troll,Undead', 'Druid': 'Tauren,Skyborne'}
+ALLY_RC = {'Warrior': 'Human,Dwarf,NightElf,Gnome,Skyborne', 'Paladin': 'Human,Dwarf', 'Hunter': 'Human,Dwarf,NightElf,Skyborne',
+           'Rogue': 'Human,Dwarf,NightElf,Gnome,Skyborne', 'Priest': 'Human,Dwarf,NightElf,Gnome', 'Shaman': 'Dwarf',
+           'Mage': 'Human,Gnome,Skyborne', 'Warlock': 'Human,Gnome', 'Druid': 'NightElf,Skyborne'}
+def rxp_guide_src(folder, cls, race, faction='Horde'):
+    """RestedXP-addonin luokan oppaat yhdeksi tekstiksi rodun lukupolun mukaan (#defaultfor-aloitus + #next-ketju)"""
+    tok = {race, cls, faction, 'softcore'}
+    t = ''
+    for f in sorted(glob.glob(os.path.join(folder, '*.lua'))):
+        t += open(f, encoding='utf-8').read() + '\n'
+    G = {}; start = None
+    for g in re.findall(r'RegisterGuide\(\[\[\n(.*?)\n?\]\]\)', t, re.S):
+        fm = re.search(r'^<<\s*(.*)$', g, re.M)
+        if fm and not cond_ok(fm.group(1), tok): continue
+        nm = re.search(r'^#name (.*)$', g, re.M).group(1).strip()
+        G[nm] = g
+        df = re.search(r'^#defaultfor (.*)$', g, re.M)
+        if df and race in re.split(r'[/,\s]+', df.group(1)) and start is None: start = nm
+    out = []; nm = start; seen = set()
+    while nm and nm in G and nm not in seen:
+        seen.add(nm); out.append(G[nm])
+        m = re.search(r'^#next (.*)$', G[nm], re.M); nm = m.group(1).strip() if m else None
+    return '\n'.join(out), tok, len(out)
+def oppaat(a_dir, b_dir, target, faction='Horde'):
+    """kahden RestedXP-addonin vertailu kaikilla rotu-luokkayhdistelmillä (18 s/tappo)"""
+    rc = HORDE_RC if faction == 'Horde' else ALLY_RC
+    tot = [0.0, 0.0, 0.0, 0.0]; nn = 0
+    only = os.environ.get('TS_CLS')   # esim. TS_CLS=Warlock,Hunter (kokeiluajot)
+    for cls, races in rc.items():
+        if only and cls not in only.split(','): continue
+        for race in races.split(','):
+            if not glob.glob(os.path.join(b_dir, 'Guide_%s.lua' % cls)): continue
+            res = []
+            for d in (a_dir, b_dir):
+                src, tok, nch = rxp_guide_src(d, cls, race, faction)
+                r = Run(18, target); run_rxp(r, rxp_steps(src, tok)); res.append((r, nch))
+            (a, na), (b, nb) = res
+            ta = a.reached if a.reached is not None else float('inf'); tb = b.reached if b.reached is not None else float('inf')
+            print('%-9s %-8s L%g: %5.0f -> %5.0f min (%+.0f), juoksu %4.0f -> %4.0f, palautuksia %d -> %d, lukuja %d -> %d' % (
+                race, cls, target, ta / 60, tb / 60, (tb - ta) / 60, a.parts['juoksu'] / 60, b.parts['juoksu'] / 60, a.turnins, b.turnins, na, nb))
+            tot[0] += ta / 60; tot[1] += tb / 60; tot[2] += a.parts['juoksu'] / 60; tot[3] += b.parts['juoksu'] / 60; nn += 1
+    print('KESKIARVO L%g (%d yhdistelmää): %.0f -> %.0f min (%+.1f %%), juoksu %.0f -> %.0f min' % (
+        target, nn, tot[0] / nn, tot[1] / nn, 100 * (tot[1] - tot[0]) / tot[0], tot[2] / nn, tot[3] / nn))
+
 def aloitukset(dirs):
     rows = []
     for f in sorted(glob.glob(os.path.join(dirs[0], '*_glstart_*.json'))):
@@ -267,6 +318,9 @@ def aloitukset(dirs):
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'vertaa':
         vertaa(sys.argv[2], sys.argv[3], float(sys.argv[4]) if len(sys.argv) > 4 else 10)
+    elif len(sys.argv) >= 4 and sys.argv[1] == 'oppaat':
+        oppaat(os.path.join(ORIG, sys.argv[2]), os.path.join(ORIG, sys.argv[3]), float(sys.argv[4]) if len(sys.argv) > 4 else 60,
+               sys.argv[5] if len(sys.argv) > 5 else 'Horde')
     elif len(sys.argv) >= 3 and sys.argv[1] == 'aloitukset':
         aloitukset([os.path.join(ORIG, d) for d in sys.argv[2:]])
     else:

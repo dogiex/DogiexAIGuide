@@ -90,8 +90,8 @@ Selkeät kriteerit tarkoittavat, että voit itse todeta onko asia hoidettu. "Lai
 
 - RestedXP-syntaksin auktoriteetti on RXPGuides-addonin lähdekoodi (GuideLoader.lua: oppaan lukija ja `<<`-ehdot; functions.lua: kaikki `.komennot`) sekä viralliset Forever-oppaat kansiossa `Guides/forever/`. Jos muistinvarainen tieto, skilli tai wiki on ristiriidassa niiden kanssa, koodi voittaa ja ristiriita kirjataan.
 - Jokainen oppaassa käytetty komento tarkistetaan addonin komentolistaa vasten. Tuntematon komento kaataa askeleen virheeseen "Invalid function call".
-- Kirjaa, minkä RXPGuides-version mukaan opas ja 1–22-pohja on tehty (PELIN-PERUSTIEDOT.md).
-- Kun RestedXP päivittyy: lue CHANGELOG.md, vertaa uusia Forever-oppaita omaan 1–22-kopioon ja ehdota muutokset käyttäjälle. Älä päivitä pohjaa hiljaa. Lisenssi CC BY-NC-SA 4.0: merkitse alkuperä ja muutokset.
+- Kirjaa, minkä RXPGuides-version mukaan opas on tehty (PELIN-PERUSTIEDOT.md).
+- RestedXP-opas on v2.0:sta alkaen kokonaan oma reitti (käyttäjän päätös 15.11.2026), eikä siinä ole RestedXP:n oppaiden sisältöä. Kun RestedXP päivittyy: lue CHANGELOG.md ja tarkista, muuttuiko oppaan käyttämien komentojen tai otsakkeiden (`#defaultfor`, `#next`, `#softcore`, `.deathskip` ym.) toiminta. Virallisia oppaita saa käyttää vertailuun ja oppimiseen (esim. timesim.py `vertaa`), mutta niiden sisältöä ei kopioida.
 
 ## 9. Ammatit oppaassa (RestedXP:n ilmaisen oppaan malli)
 

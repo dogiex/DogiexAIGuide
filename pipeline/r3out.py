@@ -61,6 +61,10 @@ for _i in N:
             if _z not in DUNG: TRN[_z].append((_i,tuple(_p[0])))
 NEAR={Z['ELWYNN']:Z['SW'],Z['DUNMOROGH']:Z['IF'],Z['DARN']:Z['TELDRASSIL'],Z['ALTERAC']:Z['HILLSBRAD'],Z['SWAMP']:Z['BLASTED'],Z['BADLANDS']:Z['LOCH'],Z['NEEDLES']:Z['TANARIS']} if ALLY else {Z['DUROTAR']:Z['ORG'],Z['MULGORE']:Z['TB'],Z['TIRISFAL']:Z['UC'],Z['ALTERAC']:Z['HILLSBRAD'],Z['BLASTED']:Z['SWAMP'],Z['SILVERPINE']:Z['UC'],Z['WPL']:Z['UC'],Z['WETLANDS']:Z['ARATHI']}
 def D(a,b): return math.hypot(a[0]-b[0],a[1]-b[1])
+SPIRIT=collections.defaultdict(list)   # v2.0: Spirit Healerit (hautausmaat) .deathskip-askeleille, QuestieDB NPC 6491
+for _z,_pts in spawns_of('npc',6491).items():
+    if _z not in DUNG: SPIRIT[_z]+=[tuple(_p) for _p in _pts]
+DS_MAXL=15   # deathskip vain tasoille 1-15 (resurrection sickness enintään 5 min), kuten RestedXP:n ilmainen opas (#softcore, .xp >15,1)
 def fms_in(zone): return [(i,name,tuple(spawns_of('npc',i)[zone][0])) for i,name in FP.items() if zone in spawns_of('npc',i)]
 SBOX=[None]   # aloitusalueen laatikko lähdön jälkeen: sen trainereille ei tehdä erillisiä sivureissuja (ehdotus #4)
 def _insbox(z,p):
@@ -113,7 +117,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         return lv
     def deadline(i,lv):
         first=lv[0]; hi=any(lvl_info(x)[1] for x in lv)
-        lim=first+(1 if hi else 2)
+        lim=first+(2 if hi else 3)   # v2.0: trainer reitin varrelta, enintään 2 (tärkeät loitsut) tai 3 tasoa myöhässä (ennen 1/2)
         for j in range(i,N_):
             if LV[j] is not None and LV[j]>=lim: return j
         return N_
@@ -247,10 +251,16 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if ez!=cur: flush(); travel(ez,ep)
         else:
             b=S['bind']
-            if b and b[0]==ez and pos and D(pos,ep)>35 and D(b[1],ep)<10 and S['cnt']-S['hs']>=25:
+            # v2.0: hearthstone takaisin sidontapaikkaan, kun matka on pitkä (ennen: yli 35 % alueen leveydestä ja kohde 10 %:n päässä)
+            if b and b[0]==ez and pos and DY(ez,pos,ep)>700 and DY(ez,b[1],ep)<200 and S['cnt']-S['hs']>=25:
                 flush(); add(dict(t='hs',name=b[3])); S['hs']=S['cnt']; pos=b[1]
+            elif pos and not indung and not S['block'] and t in('accept','turnin') and level<=DS_MAXL and SPIRIT.get(ez):
+                # v2.0: deathskip (käyttäjän päätös 15.11.2026): kuole ja herää lähimmällä hautausmaalla, jos se on kohteen vieressä
+                g=min(SPIRIT[ez],key=lambda p_:DY(ez,p_,pos))
+                if DY(ez,g,ep)<250 and DY(ez,pos,ep)-DY(ez,g,ep)>=600 and S['cnt']-S.get('ds',-99)>=8:
+                    flush(); add(dict(t='death',area=ez,pos=g)); S['ds']=S['cnt']; pos=g
         for i,name,p in fms_in(ez):
-            if i not in have and D(p,ep)<=(30 if S['arrived'] else 12):
+            if i not in have and (D(p,ep)<=(30 if S['arrived'] else 12) or (S['arrived'] and ez in CITY)):   # v2.0: kaupungin lentopaikka aina heti ensimmäisellä käynnillä
                 flush(); have.add(i); add(dict(t='fp',area=ez,pos=p,npc=i,name=name))
         S['arrived']=False
         if not indung:
@@ -293,8 +303,138 @@ def title(c):
     t='%d-%d %s'%(c['lo'],c['hi'],', '.join(zs[:3]))
     if c['dungeons']: t+=' + '+'/'.join(DSH.get(x,x) for x in c['dungeons'][:4])
     return t
+def _wy(loc):
+    z=loc[0]
+    if z in DUNG: z,p=DUNG[z][2],DUNG[z][3]
+    else: p=loc[1]
+    if z not in TB_: return None
+    _,m,x,y=wc(z,p); return (m,x,y)
+def _dy(a,b):
+    if a is None or b is None: return 0.0
+    if a[0]!=b[0]: return 1e5
+    return math.hypot(a[1]-b[1],a[2]-b[2])
+def reorder_visits(steps):
+    """v2.0 (ehdotus A): normaalin aluekäynnin tavoite- ja palautusaskelten järjestys paikallishaulla (or-opt) lyhyemmäksi.
+    Questien järjestysehdot säilyvät: ota ennen tavoitteita, tavoitteet ennen palautusta, esiquestin palautus ennen jatkon ottoa.
+    Ota-askeleet pysyvät paikallaan (tasovaatimus ja questiloki). Tasot jaetaan uudelleen alkuperäisessä järjestyksessä."""
+    out=[]; i=0; n_=len(steps)
+    while i<n_:
+        st=steps[i]; out.append(st); i+=1
+        if st['type']!='visit' or st['v'].get('block') or st['v'].get('cblock'): continue
+        j=i
+        while j<n_ and steps[j]['type']!='visit': j+=1
+        seg=steps[i:j]; i=j
+        if len(seg)<4: out+=seg; continue
+        prev=next((_wy(x['loc']) for x in reversed(out) if x['type']!='visit'),None)
+        nxt=next((_wy(x['loc']) for x in steps[j:] if x['type']!='visit'),None)
+        P=[_wy(x['loc']) for x in seg]
+        def cost(order):
+            t=0.0; c=prev
+            for k in order:
+                if P[k] is not None: t+=_dy(c,P[k]); c=P[k]
+            return t+_dy(c,nxt)
+        def ok(order):
+            pos={}
+            for idx,k in enumerate(order):
+                x=seg[k]; pos.setdefault((x['type'],x['q']),[]).append(idx)
+            for (ty,qq),ps in pos.items():
+                if ty=='accept':
+                    a=ps[0]
+                    if any(p_<a for p_ in pos.get(('obj',qq),[])+pos.get(('turnin',qq),[])): return False
+                    for pre in list(aslist(q(qq,'preQuestSingle') or []))+[p_ for p_ in aslist(q(qq,'preQuestGroup') or []) if p_>0]:
+                        if ('turnin',pre) in pos and pos[('turnin',pre)][0]>a: return False
+                elif ty=='obj':
+                    if ('turnin',qq) in pos and max(ps)>pos[('turnin',qq)][0]: return False
+            return True
+        order=list(range(len(seg))); best=cost(order)
+        for _ in range(20):
+            imp=False
+            for k in [k for k in order if seg[k]['type']!='accept']:
+                a=order.index(k); rest=order[:a]+order[a+1:]
+                for b in range(len(rest)+1):
+                    if b==a: continue
+                    cand=rest[:b]+[k]+rest[b:]
+                    c_=cost(cand)
+                    if c_<best-1 and ok(cand): order,best,imp=cand,c_,True; break
+            if not imp: break
+        lv=[x['level'] for x in seg]
+        new=[dict(seg[k]) for k in order]
+        for x,l_ in zip(new,lv): x['level']=l_
+        out+=new
+    return out
+PRUNE_K=2.0   # v2.0 (ehdotus C, käyttäjän päätös 15.11.2026): quest pois, jos sen lisäaika > 2 x saman XP:n grindausaika
+def _cnt(qid,idx):
+    nums=[int(x) for x in re.findall(r'\b(\d+)\b',' '.join(aslist(q(qid,'objectivesText')) or [])) if int(x)<50]
+    if len(nums)>=idx: return nums[idx-1]
+    return nums[0] if len(nums)==1 else 1
+def prune_candidates(steps):
+    """Normaalien käyntien questit, joiden tekeminen maksaa aikaa (oma lisäjuoksu + tapot + NPC) enemmän kuin PRUNE_K kertaa saman XP:n
+    grindaus oman tason mobeilla (18 s/tappo, timesim.py:n aikamalli). Suojattu: class-questit, dungeon-questit ja niiden esiquestit,
+    aloitusalueen rajatut käynnit sekä questit, joista jokin suojattu tai säilyvä quest riippuu."""
+    SP=7.0/1.2; BOAT=180*SP
+    def dd(a,b):
+        if a is None or b is None: return 0.0
+        return BOAT if a[0]!=b[0] else math.hypot(a[1]-b[1],a[2]-b[2])
+    seq=[]; vt=None; boxq=set(); blockq=set()
+    for st in steps:
+        if st['type']=='visit': vt=st['v']; continue
+        if vt.get('box') or vt.get('lvl6'): boxq.add(st['q'])
+        if vt.get('block') or vt.get('cblock'): blockq.add(st['q'])
+        seq.append((st,_wy(st['loc'])))
+    def tour(skipq):
+        t=0.0; c=None
+        for st,p in seq:
+            if st['q'] in skipq or p is None: continue
+            t+=dd(c,p); c=p
+        return t
+    base=tour(set())
+    allq={st['q'] for st,_ in seq}
+    prot=set(CLASSQ)|set(QD)|set().union(*ANC.values())|boxq|blockq
+    ch=True
+    while ch:   # suojattujen esiquestit
+        ch=False
+        for x in list(prot&allq):
+            for p_ in list(aslist(q(x,'preQuestSingle') or []))+[p_ for p_ in aslist(q(x,'preQuestGroup') or []) if p_>0]:
+                if p_ in allq and p_ not in prot: prot.add(p_); ch=True
+    lvl={}
+    for st,_ in seq:
+        if st['type']=='turnin': lvl[st['q']]=st['level']
+    bad=set()
+    for x in sorted(allq-prot):
+        if x not in lvl: continue
+        run=(base-tour({x}))/SP
+        kills=0.0
+        for idx,ob in enumerate(objectives(x),1):
+            src=obj_sources(ob); npcs=[i for k,i in src if k=='npc']
+            if ob['type']=='monster' and npcs and not friendly(npcs[0]): kills+=_cnt(x,idx)
+            elif ob['type']=='item' and npcs and not [i for k,i in src if k=='obj']:
+                c_=_cnt(x,idx); kills+=c_ if c_==1 else math.ceil(c_/0.5)
+        L=max(1,int(lvl[x])); rate=mob_xp(L,max(1,L-1))/18.0   # XP/s grindaamalla (timesim: mob taso L-2...L+1)
+        if not rate: continue
+        g=(quest_xp(x,L)+kills*mob_xp(L,max(1,L-1)))/rate   # saman XP:n (palkkio + tavoitteiden tapot) grindausaika
+        if run+kills*18+16>PRUNE_K*g: bad.add(x)
+    ch=True
+    while ch:   # säilyvän questin esiquest säilyy
+        ch=False
+        for x in list(allq-bad):
+            for p_ in list(aslist(q(x,'preQuestSingle') or []))+[p_ for p_ in aslist(q(x,'preQuestGroup') or []) if p_>0]:
+                if p_ in bad: bad.discard(p_); ch=True
+    return bad
 def route(vis,level,done,known_fp,bounds,maxchain=99,final=True):
-    s,vis=with_class_blocks(vis,level,done,maxchain)
+    PRUNE_SKIP.clear(); NODEFER.clear()
+    s,vis0=with_class_blocks(vis,level,done,maxchain)
+    s.steps=reorder_visits(s.steps)
+    prot_done=lambda s_:s_.done&(set(QD)|CLASSQ)
+    for _ in range(2 if PRUNE_K else 0):
+        bad=prune_candidates(s.steps)-PRUNE_SKIP
+        if not bad: break
+        old=(s,vis0,set(PRUNE_SKIP))
+        PRUNE_SKIP.update(bad)
+        s,vis0=with_class_blocks(vis,level,done,maxchain)
+        s.steps=reorder_visits(s.steps)
+        if prot_done(old[0])-prot_done(s):   # karsinta ei saa poistaa yhtään dungeon- tai class-questia (esim. tason muutoksen kautta)
+            s,vis0,ps=old; PRUNE_SKIP.clear(); PRUNE_SKIP.update(ps); break
+    vis=vis0
     ch=to_ir(s.steps,known_fp,bounds,level,done)
     acc=set(); tin=set()
     for c in ch:
@@ -384,12 +524,6 @@ def trav_text(st):
     elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     return zn,tx
 # ---------------- RXP ----------------
-RXP_COND={}   # sim7.py rxp-tila: quest -> esiquestit (ilmaisen osan ehdollinen palautus), lisätään askeleelle .isQuestTurnedIn
-def _cond_line(qids):
-    cs={RXP_COND[x] for x in qids if x in RXP_COND}
-    if not cs: return []
-    if len(cs)>1 or any(x not in RXP_COND for x in qids): raise ValueError('ehdollinen quest samassa askeleessa muiden kanssa: %s'%sorted(qids))
-    return ['    .isQuestTurnedIn %s'%','.join(map(str,cs.pop()))]
 def rxp_steps(c):
     L=[]
     def goto(area,p):
@@ -411,6 +545,8 @@ def rxp_steps(c):
             L+=['step',goto(st['area'],st['pos']),'    .fly %s >>Lennä: %s'%(st['to'],st['to']),'    .target %s'%n(st['npc'],'name'),'    .zoneskip %s'%zname(st['toarea'])]
         elif t=='hs':
             L+=['step','    .hs >>Hearthstone: %s'%clean(st['name']),'    .cooldown item,6948,>0']
+        elif t=='death':
+            L+=['step','    #softcore','    .deathskip >>Deathskip: kuole ja herää |cRXP_FRIENDLY_Spirit Healer|r:llä (%s). Säästää juoksun takaisin. Hardcore: ohita ja kävele'%zname(st['area'])]
         elif t=='home':
             L+=['step',goto(st['area'],st['pos']),'    .home >>Aseta Hearthstone tähän (%s)'%clean(n(st['npc'],'name')),'    .target %s'%n(st['npc'],'name')]
         elif t=='vendor':
@@ -435,7 +571,6 @@ def rxp_steps(c):
                 L.append('    >>%s%s: |cRXP_%s_%s|r'%('Dungeonin sisällä - ' if ins else '','Puhu' if kind=='npc' else 'Klikkaa','FRIENDLY' if kind=='npc' else 'PICK',nm))
             for k_,qid in st['seq']: L.append(('    .turnin %d >>Palauta: %s' if k_=='turnin' else '    .accept %d >>Ota: %s')%(qid,clean(q(qid,'name'))))
             if kind=='npc' and ',' not in nm: L.append('    .target %s'%nm)
-            L+=_cond_line([qid for _,qid in st['seq']])
         elif t=='obj':
             texts,mobs=obj_texts(st['items']); ins=st['loc'][0] in DUNG
             L+=['step',eg(st['loc'])]
@@ -453,7 +588,6 @@ def rxp_steps(c):
             for qid,o_ in st['items']:
                 if o_['idx']>0: L.append('    .complete %d,%d'%(qid,o_['idx']))
             if mobs and not ins: L+=['    .mob '+x for x in mobs]
-            L+=_cond_line(sorted({qid for qid,_ in st['items']}))
         elif t=='ptrain':
             rx,gl,dn,_=PF.PROFS[st['prof']]; nm=clean(n(st['npc'],'name'))
             if st['kind']=='book':
@@ -498,6 +632,7 @@ def gl_steps(c):
             zn,tx=trav_text(st); L.append('[OC]Matkusta: *%s*. %s'%(gc(zn),gc(tx)))
         elif t=='fly': L.append('%sLennä (*%s*): [F %s]'%(G(st['area'],st['pos']),gc(n(st['npc'],'name')),gc(st['to'])))
         elif t=='hs': L.append('[H Hearthstone: %s] (jos cooldownilla, juokse tai lennä)'%gc(st['name']))
+        elif t=='death': L.append('[OC]Deathskip: kuole ja herää *Spirit Healer*illa (%s). Säästää juoksun takaisin. Hardcore: ohita ja kävele.'%gc(zname(st['area'])))
         elif t=='home': L.append('%s[S Aseta Hearthstone tähän] (*%s*)'%(G(st['area'],st['pos']),gc(n(st['npc'],'name'))))
         elif t=='vendor': L.append('%s[V Myy roinat] ja [R korjaa varusteet] (*%s*)'%(G(st['area'],st['pos']),gc(n(st['npc'],'name'))))
         elif t=='sell': L.append('%s[V Myy harmaat roinat]%s (*%s*)'%(G(st['area'],st['pos']),' ja [R korjaa varusteet]' if st['repair'] else '',gc(n(st['npc'],'name'))))

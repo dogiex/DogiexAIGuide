@@ -1,7 +1,7 @@
 import re, json, glob, sys
 sys.path.insert(0,'/home/claude/work7')
 from plan import *
-funcs=set("accept turnin complete goto fp xp trainer zone target mob fly hs home vendor cooldown zoneskip skill isOnQuest isQuestTurnedIn".split())
+funcs=set("accept turnin complete goto fp xp trainer zone target mob fly hs home vendor cooldown zoneskip skill isOnQuest isQuestTurnedIn deathskip".split())
 SKN={"firstaid","cooking","fishing","mining","herbalism","skinning","alchemy","blacksmithing","enchanting","engineering","leatherworking","tailoring"}
 GSK={"FIRSTAID","COOKING","FISHING","MINING","HERBALISM","SKINNING","ALCHEMY","BLACKSMITHING","ENCHANTING","ENGINEERING","LEATHERWORKING","TAILORING"}
 GRC={"ORC","TROLL","UNDEAD","TAUREN","SKYBORNE","HUMAN","DWARF","NIGHTELF","GNOME","WARRIOR","PALADIN","HUNTER","ROGUE","PRIEST","SHAMAN","MAGE","WARLOCK","DRUID","HORDE","ALLIANCE"}   # rodut: Guidelime Data/Data.lua D.races
@@ -12,11 +12,11 @@ zones=set(RXPMAP.values())|{'Zephras Isle'}
 import os
 _fd=open(R+'/RXPGuides/DB/forever/flightData.lua').read().split('["Alliance"]')
 fpn=re.findall(r'\["name"\] = "([^"]+)"', _fd[1] if os.environ.get('WOW_FACTION')=='Alliance' else _fd[0])   # Alliance-testiaddonille Alliancen lentopaikat
-# valinnaiset argumentit: GUIDELIME-KANSIO [RXP-KANSIO ILMAISEN-POHJAN-TIEDOSTO] (oletus out7 ja Free_1-22_RestedXP.lua)
+# valinnaiset argumentit: GUIDELIME-KANSIO [RXP-KANSIO] (oletus out7). v2.0: RestedXP-opas on kokonaan oma, ei ilmaisen pohjan tiedostoa
 RXPDIR=sys.argv[2] if len(sys.argv)>2 else 'out7/RXPGuides_DogiexAIGuide'
-FREEF=sys.argv[3] if len(sys.argv)>3 else 'Free_1-22_RestedXP.lua'
+FREEF=sys.argv[3] if len(sys.argv)>3 else None
 errs=[]; allnames=set(); nexts=[]
-free=open(RXPDIR+'/'+FREEF,encoding='utf-8').read()
+free=open(RXPDIR+'/'+FREEF,encoding='utf-8').read() if FREEF and os.path.exists(RXPDIR+'/'+FREEF) else ''
 allnames|=set(x.strip() for x in re.findall(r'^#name (.*)$',free,re.M))
 for m in re.findall(r'^#next (.*)$',free,re.M): nexts.append(('free',m))
 tot=0
@@ -32,6 +32,7 @@ for f in sorted(glob.glob(RXPDIR+'/Guide_*.lua')):
                 tot+=1
                 if not re.fullmatch(r'step( << [A-Za-z/]+)?',l): errs.append('step '+l)
                 continue
+            if l=='#softcore': continue   # .deathskip-askel (v2.0)
             if l.startswith('+') or l.startswith('>>'):
                 if '<<' in l or '>>' in l[2:]: errs.append('text '+l[:80])
                 continue
