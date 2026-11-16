@@ -1,4 +1,4 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v2.1)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v2.2)
 Varavaihtoehto, jos RestedXP ei toimi.
 
 ASENNUS
@@ -14,7 +14,8 @@ SISÄLTÖ
 - Kokonaan oma reitti: aloitus jokaiselle aloitusalueelle (Durotar, Tirisfal, Mulgore, Zephras Isle)
   ja sen jälkeen luokan oma reitti 12-60.
 - Reitti on optimoitu ylimääräisen juoksemisen välttämiseksi (v2.0): tavoitteet reitin varrella, trainer kun
-  reitti kulkee ohi, hearthstone ja deathskip takaisin kylään, ja tehottomat questit jätetään pois.
+  reitti kulkee ohi, hearthstone ja deathskip takaisin kylään, lennot aina kun haettu lentopaikka säästää
+  aikaa (myös alueen sisällä), ja tehottomat questit jätetään pois.
 - Dungeonit ja kaikki niiden questit, class-questit, trainer-käynnit, lennot [F], hearthstone [S]/[H],
   myynti [V], korjaus [R] ja luokan mukaiset ostokset.
 - Deathskip (tasot 1-15): "kuole ja herää Spirit Healerilla" -rivi säästää juoksun takaisin kylään.

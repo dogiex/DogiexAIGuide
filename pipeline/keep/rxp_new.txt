@@ -1,4 +1,4 @@
-Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v2.1)
+Dogiex's AI Guide: Horde 1-60 (Forever) - kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v2.2)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanha kansio RXPGuides_DogiexAIGuide ennen uuden
@@ -16,7 +16,8 @@ SISÄLTÖ
 - Kokonaan oma reitti 1-60 (sama reitti kuin Guidelime-oppaassa): aloitus jokaiselle aloitusalueelle (Durotar,
   Tirisfal, Mulgore, Zephras Isle) ja sen jälkeen luokan reitti 12-60. Kaikki tekstit suomeksi.
 - Reitti on optimoitu ylimääräisen juoksemisen välttämiseksi: tavoitteet tehdään reitin varrella, trainerilla
-  käydään kun reitti kulkee ohi, hearthstone ja deathskip vievät takaisin kylään, ja questit, joiden juoksu
+  käydään kun reitti kulkee ohi, hearthstone ja deathskip vievät takaisin kylään, haetuilla lentopaikoilla
+  lennetään aina kun se säästää aikaa (myös saman alueen kylien välillä), ja questit, joiden juoksu
   maksaa enemmän kuin ne antavat XP:tä, jätetään pois.
 - Mukana dungeonit ja kaikki niiden questit, luokan class-questit, trainer-käynnit, lennot, hearthstone,
   myynti ja korjaus sekä luokan mukaiset ostokset (vesi/ruoka, Hunterille ammukset).

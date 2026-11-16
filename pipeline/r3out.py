@@ -64,6 +64,7 @@ def D(a,b): return math.hypot(a[0]-b[0],a[1]-b[1])
 SPIRIT=collections.defaultdict(list)   # v2.0: Spirit Healerit (hautausmaat) .deathskip-askeleille, QuestieDB NPC 6491
 for _z,_pts in spawns_of('npc',6491).items():
     if _z not in DUNG: SPIRIT[_z]+=[tuple(_p) for _p in _pts]
+WS=7/1.2; FLY_MIN=120   # kävelynopeus (yd/s, timesim) ja lennon vähimmäissäästö (s)
 DS_MAXL=15   # deathskip vain tasoille 1-15 (resurrection sickness enintään 5 min), kuten RestedXP:n ilmainen opas (#softcore, .xp >15,1)
 def fms_in(zone): return [(i,name,tuple(spawns_of('npc',i)[zone][0])) for i,name in FP.items() if zone in spawns_of('npc',i)]
 SBOX=[None]   # aloitusalueen laatikko lähdön jälkeen: sen trainereille ei tehdä erillisiä sivureissuja (ehdotus #4)
@@ -179,6 +180,27 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if S['pend']:
             add(S['pend']); S['pend']=None
         if S['pobj']: add(S['pobj']); S['pobj']=None
+    def W(z,p):
+        if z in DUNG: z,p=DUNG[z][2],DUNG[z][3]
+        if z not in TB_ or p is None: return None
+        _,m,x,y=wc(z,p); return (m,x,y)
+    def fly_alt(z0,p0,z1,p1):
+        """v2.1: haetuista lentopaikoista lähin lähtöpisteeseen ja lähin kohteeseen (sama manner). Palauttaa (a,b), jos lento
+        säästää vähintään FLY_MIN s kävelyyn verrattuna (kävely 7/1.2 yd/s, lento 30 s + 1,3 x suora matka / 25 yd/s)."""
+        P0=W(z0,p0); P1=W(z1,p1)
+        if not P0 or not P1 or P0[0]!=P1[0]: return None
+        K=[i for i in have if i in FPK and FPK[i][2][0]==P0[0]]
+        if len(K)<2: return None
+        dd=lambda A,B:math.hypot(A[1]-B[1],A[2]-B[2])
+        a=min(K,key=lambda i:dd(FPK[i][2],P0)); b=min(K,key=lambda i:dd(FPK[i][2],P1))
+        if a==b: return None
+        walk=dd(P0,P1)/WS; alt=(dd(P0,FPK[a][2])+dd(FPK[b][2],P1))/WS+30+1.3*dd(FPK[a][2],FPK[b][2])/25.0
+        return (a,b) if walk-alt>=FLY_MIN else None
+    def add_fly(a,b,ez):
+        nonlocal pos
+        add(dict(t='fly',area=FPK[a][0],pos=FPK[a][1],npc=a,to=FP[b],toarea=FPK[b][0]))
+        if FPK[b][0]!=ez: add(dict(t='zone',area=ez,xc=False,fpknown=False)); pos=None
+        else: pos=FPK[b][1]
     def travel(ez,ep):
         nonlocal cur,pos
         b=S['bind']
@@ -190,12 +212,26 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
             if cur and not src and NEAR.get(cur): sa=NEAR[cur]; src=[f for f in fms_in(sa) if f[0] in have]
             da=ez; dst=[f for f in fms_in(ez) if f[0] in have]
             if not dst and NEAR.get(ez) and NEAR[ez]!=cur: da=NEAR[ez]; dst=[f for f in fms_in(da) if f[0] in have]
+            lp=S.get('lp'); alt=fly_alt(lp[0],lp[1],ez,ep) if lp else None
             if src and dst and cont(sa)==cont(da) and src[0][0]!=dst[0][0] and sa!=da:
                 a=min(src,key=lambda f:D(f[2],pos) if (pos and sa==cur) else 0); bb=min(dst,key=lambda f:D(f[2],ep) if da==ez else 0)
                 add(dict(t='fly',area=sa,pos=a[2],npc=a[0],to=bb[1],toarea=da)); pos=bb[2]
                 if da!=ez: add(dict(t='zone',area=ez,xc=False,fpknown=False)); pos=None
+            elif alt:
+                # v2.1: kohde- tai lähtöalueella ei haettua lentopaikkaa: lennä haetuista lähimpään kohdetta ja kävele sieltä
+                add_fly(alt[0],alt[1],ez)
             else:
-                add(dict(t='zone',area=ez,xc=bool(cur and cont(cur)!=cont(ez)),fpknown=bool(dst))); pos=None
+                xc=bool(cur and cont(cur)!=cont(ez)); arr=None
+                if xc:
+                    # v2.1: mantereen vaihdon jälkeen lento satamasta / zeppeliinitornista perille (ennen vain teksti "lennä perille")
+                    P1=W(ez,ep); cand=[i for i in ARRIVE.get(cont(ez),()) if i in have and i in FPK]
+                    for a in sorted(cand,key=lambda i:math.hypot(FPK[i][2][1]-P1[1],FPK[i][2][2]-P1[2]) if P1 else 0):
+                        al=fly_alt(FPK[a][0],FPK[a][1],ez,ep)
+                        if al and al[0]==a: arr=al; break
+                if arr:
+                    add(dict(t='zone',area=FPK[arr[0]][0],xc=True,fpknown=True)); add_fly(arr[0],arr[1],ez)
+                else:
+                    add(dict(t='zone',area=ez,xc=xc,fpknown=bool(dst))); pos=None
         cur=ez; S['arrived']=True
     for idx,st in enumerate(simsteps):
         t=st['type']
@@ -248,12 +284,16 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                             c_,z_,i_,p_=b
                             if z_!=cur: travel(z_,p_)
                             emit_train(i_,z_,p_,lvp,False); pos=p_; lvp=[]
+        if pos is not None and cur: S['lp']=(cur,pos)
         if ez!=cur: flush(); travel(ez,ep)
         else:
-            b=S['bind']
+            b=S['bind']; alt=None
             # v2.0: hearthstone takaisin sidontapaikkaan, kun matka on pitkä (ennen: yli 35 % alueen leveydestä ja kohde 10 %:n päässä)
             if b and b[0]==ez and pos and DY(ez,pos,ep)>700 and DY(ez,b[1],ep)<200 and S['cnt']-S['hs']>=25:
                 flush(); add(dict(t='hs',name=b[3])); S['hs']=S['cnt']; pos=b[1]
+            elif pos and not indung and DY(ez,pos,ep)>1500 and (alt:=fly_alt(ez,pos,ez,ep)):
+                # v2.1: saman alueen sisällä lento haettujen lentopaikkojen välillä (ennen aina kävely)
+                flush(); add_fly(alt[0],alt[1],ez)
             elif pos and not indung and not S['block'] and t in('accept','turnin') and level<=DS_MAXL and SPIRIT.get(ez):
                 # v2.0: deathskip (käyttäjän päätös 15.11.2026): kuole ja herää lähimmällä hautausmaalla, jos se on kohteen vieressä
                 g=min(SPIRIT[ez],key=lambda p_:DY(ez,p_,pos))
@@ -516,13 +556,26 @@ def spell_txt(sp):
 def wc(area,p):
     t=TB_[area]; b=t['target_bounds']
     return t['ui_map_id'],t['map_id'],b['left']-p[0]/100.0*(b['left']-b['right']),b['top']-p[1]/100.0*(b['top']-b['bottom'])
+FPK={}   # v2.1: lentopaikat (id -> alue, sijainti, maailmankoordinaatit) lentoa varten
+for _i in FP:
+    for _z,_pts in spawns_of('npc',_i).items():
+        if _z in TB_:
+            _u,_m,_x,_y=wc(_z,tuple(_pts[0])); FPK[_i]=(_z,tuple(_pts[0]),(_m,_x,_y)); break
+_FPN={v:k for k,v in FP.items()}
+ARRIVE={}   # v2.1: mantereen vaihdon saapumislentopaikat (zeppeliini/laiva) mantereittain
+for _nm in (['Auberdine','Theramore','Menethil Harbor'] if ALLY else ['Orgrimmar','Undercity',"Grom'gol"]):
+    if _nm in _FPN and _FPN[_nm] in FPK: ARRIVE.setdefault(FPK[_FPN[_nm]][2][0],[]).append(_FPN[_nm])
 def trav_text(st):
     zn=zname(st['area']); tx=TRAVEL.get(ZKEY.get(st['area']),'')
     if st['area']==493 and CLASSNAME=='DRUID':
         return zn,'Käytä loitsua Teleport: Moonglade (paluu hearthstonella tai lentäen)'
     if st.get('xc') and ALLY: tx="Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
+    elif not ALLY and ZKEY.get(st['area']) in TRAVEL_SAME: tx=TRAVEL_SAME[ZKEY.get(st['area'])]   # v2.1: samalla mantereella ei zeppeliiniä
     return zn,tx
+TRAVEL_SAME=dict(STV="Duskwoodista etelään Stranglethorn Valeen (Grom'gol Base Camp on länsirannikolla), tai lennä Grom'goliin / Booty Bayhin, jos lentopaikka on haettu",
+    HILLSBRAD="Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa",
+    UC="Undercity: Tirisfal Gladesin kautta, tai lennä Undercityyn Tarren Millistä / Hammerfallista")
 # ---------------- RXP ----------------
 def rxp_steps(c):
     L=[]

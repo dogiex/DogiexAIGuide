@@ -14,7 +14,8 @@ Tilat:
 Aikamalli (wow-leveling-route-skillin aika-arvio):
   juoksu = etäisyys jaardeina x 1,2 / 7 yd/s, tappo 18 s (nopea) tai 28 s (lepo mukaan),
   NPC-käynti 8 s, vendor/trainer/flight path 30 s, keräys 6 s, escort/tapahtuma 90 s,
-  hearthstone 15 s, .deathskip 40 s, lento 90 s (.fly / [F]), mantereen vaihto 180 s.
+  hearthstone 15 s, .deathskip 40 s, lento 90 s (.fly / [F]; v2.1: sijainti lennon jälkeen kohdelentopaikalla),
+  mantereen vaihto 180 s (v2.1: saapuminen kohdetta lähimpään satamaan / zeppeliinitorniin, ennen sijainti tuntematon).
   Tavoitteet: tapot questin määrän mukaan, pudotukset määrä / 0,5 (yksittäinen esine 1 tappo).
   XP: engine.py (mob_xp, quest_xp) ja data.py (xp_to_level, Foreverin quest-XP).
   Tavoitteiden määrät: RestedXP-oppaiden kommentit (.complete q,i --Nimi (N)), muuten questin tehtäväteksti.
@@ -29,7 +30,11 @@ sys.path.insert(0, W7); os.chdir(W7)
 os.environ.setdefault('WOW_CLASS', 'WARLOCK'); os.environ.setdefault('WOW_RACES', 'Orc')
 from engine import mob_xp, quest_xp, objectives, obj_sources, xp_to_level, q, n, N, aslist, lst
 import elig
-from r3out import wc, TB_
+from r3out import wc, TB_, FPK, FP, ARRIVE
+FPPOS = {FP[i]: v[2] for i, v in FPK.items()}   # v2.1: lennon jälkeen sijainti on kohdelentopaikalla (ennen tuntematon)
+def fly_pos(name):
+    p = FPPOS.get(name.strip())
+    return (p[0], p[1], p[2]) if p else None
 from data import zname
 
 REF = '/home/claude/ref/RXPGuides/Guides'
@@ -81,7 +86,10 @@ class Run:
         if s.lvl() >= s.target: s.reached = s.t
     def move(s, p):
         if p is None: return
-        if s.pos is not None and s.pos[0] != p[0]: s.add('muu', T_BOAT); s.pos = None
+        if s.pos is not None and s.pos[0] != p[0]:
+            # mantereen vaihto: v2.1:stä alkaen saavutaan satamaan / zeppeliinitorniin (lähin kohteeseen), josta kävellään tai lennetään
+            s.add('muu', T_BOAT); arr = [FPK[i][2] for i in ARRIVE.get(p[0], ()) if i in FPK]
+            s.pos = min(arr, key=lambda a: math.dist(a[1:], p[1:])) if arr else None
         if s.pos is not None: s.add('juoksu', math.dist(s.pos[1:], p[1:]) * WIND / SPEED)
         s.pos = p
     def kill(s, lv, part='tapot'):
@@ -181,7 +189,8 @@ def run_rxp(r, steps):
                 r.add('kauppa', T_SHOP); buy = False; continue
             m = re.match(r'\.xp\s+(\d+)(?:\+(\d+))?\s*>>', l)
             if m: r.grind_until(int(m.group(1)), int(m.group(2) or 0)); continue
-            if l.startswith('.fly'): r.add('muu', T_FLY); r.pos = None; continue   # lento (ennen v2.0 laskettiin suorana juoksuna)
+            if l.startswith('.fly'):   # lento (ennen v2.0 laskettiin suorana juoksuna)
+                m_ = re.match(r'\.fly (.+?)\s*>>', l); r.add('muu', T_FLY); r.pos = fly_pos(m_.group(1)) if m_ else None; continue
             if l.startswith('.hs'): r.add('muu', T_HS); r.pos = home; continue
             if l.startswith('.deathskip'): r.add('muu', T_DEATH); r.pos = None; continue
             if l.startswith(('.use', '.cast')): r.add('keräys', T_OBJ)
@@ -200,7 +209,8 @@ def run_gl(r, lines, grind=True):
         if line.startswith('[H'): r.add('muu', T_HS); r.pos = home
         m = re.match(r'\[XP(\d+)', line)
         if m: r.grind_until(int(m.group(1)))   # tavoitetaso: grindaa (viimeisimmän mobin tasoisia)
-        if '[F ' in line: r.add('muu', T_FLY); r.pos = None
+        if '[F ' in line:
+            m_ = re.search(r'\[F ([^\]]+)\]', line); r.add('muu', T_FLY); r.pos = fly_pos(m_.group(1)) if m_ else None
         if '[S ' in line: home = r.pos
         npc = False
         for kind, qid, idx in re.findall(r'\[Q([ATC])(\d+)(?:,(\d+))?', line):
