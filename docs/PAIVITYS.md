@@ -2,7 +2,7 @@
 
 Päivittäinen ajastettu tehtävä noudattaa tätä tiedostoa. Tehtävän oma ohje sisältää vain käynnistyksen ja turvallisuussäännöt; ne menevät tämän tiedoston ja muiden repon ohjeiden edelle.
 
-Tavoite: päivitä opas "Dogiex's AI Guide: 1-60 (Forever)" (julkaistu Horde-osa; Alliance on testiversio pilot/-kansiossa) uusimpaan QuestieDB-dataan, käsittele avoimet issuet ja vie uusi versio repoon. Raportoi suomeksi.
+Tavoite: päivitä opas "Dogiex's AI Guide: 1-60 (Forever)" (Horde ja Alliance, v3.0:sta alkaen samoissa addoneissa) uusimpaan QuestieDB-dataan, käsittele avoimet issuet ja vie uusi versio repoon. Raportoi suomeksi.
 
 ## Pohjatiedot
 - Noudata `docs/OHJEET.md`:tä. Tärkeimmät: tarkkuus ennen nopeutta, kerro oletukset, vain tarvittavat muutokset, kerro mitä muutit ja mikä oli vanha toiminta, mainitse muut löydetyt virheet korjaamatta niitä hiljaa, anna varmuusprosentti ja sen perusteet.
@@ -18,10 +18,10 @@ Tavoite: päivitä opas "Dogiex's AI Guide: 1-60 (Forever)" (julkaistu Horde-osa
    - Jos jokin issue johtaa korjaukseen, jatka vaiheesta 5, vaikka QuestieDB ei muuttunut (vaihe 4 jää pois).
 3. Issuet: käsittele avoimet issuet `docs/ISSUET.md`:n mukaan.
 4. Jos QuestieDB muuttui: lue `/tmp/dbdiff.json` ja `/tmp/qdb_log.txt` (mitkä oppaan questit muuttuivat, onko puuttuneisiin class-questeihin tullut dataa).
-5. Rakenna opas uudelleen `pipeline/README.md`:n vaiheiden 3-6 mukaan: `runall.sh` (noin 8 min, aja etualalla riittävällä aikakatkaisulla), `compare.py state.json`, `assemble7.py`, LUEMINUT-kopiointi, `validate7.py` (0 virhettä) ja Lua-latauskoe jokaiselle yhdeksälle luokalle (RestedXP- ja Guidelime-oppaita yhtä monta per luokka). `runall.sh` vie v2.0:sta alkaen noin 40 min.
+5. Rakenna opas uudelleen `pipeline/README.md`:n vaiheiden 3-6 mukaan: `runall.sh` ja `runall_ally.sh` (molemmat factionit, yhteensä noin 75 min; aja taustalla ja odota valmistumista lyhyin tarkistuksin, koska yksittäisen komennon aikaraja on 10 min), `compare.py state.json`, `assemble7.py`, LUEMINUT-kopiointi, `validate7.py` (0 virhettä) ja `luatest.py` ("kaikki ok").
 6. Tarkista tulos:
    - jokainen luokka pääsee tasolle 60
-   - poistuneille questeille on syy (QuestieDB poisti tai blacklistasi questin, se muuttui toisen rodun questiksi, tai issue-korjaus poisti sen perustellusti). Myös reittisiirtymä hyväksytään (uudet tai muuttuneet questit vievät ajan ja reitti järjestyy uudelleen), kun luokan osan questien kokonaismäärä ei laske eikä class- tai dungeon-kattavuus heikkene; nimeä nämä questit raportissa ja `RELEASE_NOTES.md`:ssä erikseen (käyttäjän päätös 14.11.2026). v2.0:sta alkaen putki karsii aika–XP-suhteeltaan heikot questit (pipeline/README.md, Reitin optimointi), joten questien määrä voi laskea muutamalla, kun data muuttaa reittiä: hyväksy lasku, jos poistuneet questit ovat normaaleja questeja (ei class-, dungeon- eikä ammattiquesteja), kattavuus ei heikkene ja `timesim.py oppaat addons/RXPGuides_DogiexAIGuide out7/RXPGuides_DogiexAIGuide` ei näytä keskimääräisen ajan kasvua yli 0,5 %; nimeä ne raportissa
+   - poistuneille questeille on syy (QuestieDB poisti tai blacklistasi questin, se muuttui toisen rodun questiksi, tai issue-korjaus poisti sen perustellusti). Myös reittisiirtymä hyväksytään (uudet tai muuttuneet questit vievät ajan ja reitti järjestyy uudelleen), kun luokan osan questien kokonaismäärä ei laske eikä class- tai dungeon-kattavuus heikkene; nimeä nämä questit raportissa ja `RELEASE_NOTES.md`:ssä erikseen (käyttäjän päätös 14.11.2026). v2.0:sta alkaen putki karsii aika–XP-suhteeltaan heikot questit (pipeline/README.md, Reitin optimointi), joten questien määrä voi laskea muutamalla, kun data muuttaa reittiä: hyväksy lasku, jos poistuneet questit ovat normaaleja questeja (ei class-, dungeon- eikä ammattiquesteja), kattavuus ei heikkene ja `timesim.py oppaat addons/RXPGuides_DogiexAIGuide out7/RXPGuides_DogiexAIGuide` ei näytä keskimääräisen ajan kasvua yli 0,5 % (Alliance: sama komento lisäargumentilla `60 Alliance` ja ympäristömuuttujilla `WOW_FACTION=Alliance WOW_RACES=Human`); nimeä ne raportissa
    - class- ja dungeon-questien kattavuus ei heikkene (`compare.py`:n `kattavuus_heikkeni` on `{}`; muuten jokaiselle riville peruste datasta)
    - issue-korjaus muutti vain sen, mitä issue koski (`compare.py`).
 

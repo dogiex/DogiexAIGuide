@@ -1,176 +1,8 @@
--- Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Guidelime-opas.
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "HUNTER" then return end
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
-[GA Human,Hunter]
-[N1-6 Elwynn Forest (Hunter)]
-[NX6-10 Elwynn Forest (Hunter)]
-[G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QA33 Wolves Across the Border]
-[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA783 A Threat Within]
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT783 A Threat Within] [QA7 Kobold Camp Cleanup]
-[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA18 Brotherhood of Thieves]
-[G 53.2,45.6 Elwynn Forest]Kerää *Red Burlap Bandana* (Defias Thug) [QC18,1 Brotherhood of Thieves]
-[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QT18 Brotherhood of Thieves] [QA3903 Milly Osworth]
-[G 51.3,36.5 Elwynn Forest]Tapa *Kobold Vermin* [QC7,1 Kobold Camp Cleanup]
-[G 50.7,39.4 Elwynn Forest]Puhu: *Milly Osworth* [QT3903 Milly Osworth] [QA3904 Milly's Harvest]
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT7 Kobold Camp Cleanup]
-[G 51.2,40.8 Elwynn Forest][T Hunter-trainer (taso 4)] (*Tordrin Sternblade*): Arcane Shot, Serpent Sting
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QA15 Investigate Echo Ridge] [QA92479 A Scribbled Letter]
-[G 51.5,38.0 Elwynn Forest]Tapa *Kobold Worker* [QC15,1 Investigate Echo Ridge]
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT15 Investigate Echo Ridge] [QA21 Skirmish at Echo Ridge]
-[G 54.0,48.9 Elwynn Forest]Kerää *Milly's Harvest* (Milly's Harvest) [QC3904,1 Milly's Harvest]
-[G 51.2,40.8 Elwynn Forest]Puhu: *Tordrin Sternblade* [QT92479 A Scribbled Letter]
-[G 50.7,39.4 Elwynn Forest]Puhu: *Milly Osworth* [QT3904 Milly's Harvest] [QA3905 Grape Manifest]
-[G 47.8,31.6 Elwynn Forest]Tapa *Kobold Laborer* [QC21,1 Skirmish at Echo Ridge]
-[G 48.1,39.8 Elwynn Forest]Kerää *Tough Wolf Meat* (Young Wolf, Timber Wolf) [QC33,1 Wolves Across the Border]
-[G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QT33 Wolves Across the Border]
-[G 49.5,41.6 Elwynn Forest]Puhu: *Brother Neals* [QT3905 Grape Manifest]
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT21 Skirmish at Echo Ridge]
-[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
-[G 51.2,40.8 Elwynn Forest][T Hunter-trainer (taso 6)] (*Tordrin Sternblade*): Hunter's Mark
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
-[GA Human,Hunter]
-[N6-10 Elwynn Forest (Hunter)]
-[NX10-12 Elwynn Forest (Hunter)]
-[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QA54 Report to Goldshire] [QA96627 The Adventurer]
-[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA6 Bounty on Garrick Padfoot]
-[G 45.6,47.7 Elwynn Forest]Puhu: *Falkhaan Isenstrider* [QA2158 Rest and Relaxation]
-[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Helene Peltskinner* [QA91751 Rough Wolf Pelts] Tavoite: Skin wolves around Elwynn Forest to obtain 7 Rough Wolf Pelts, then deliver them to Helene Peltskinner near Goldshire.
-[G 42.0,66.4 Elwynn Forest][V Myy roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
-[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
-[G 43.8,65.8 Elwynn Forest][S Aseta Hearthstone tähän] (*Innkeeper Farley*)
-[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QA99127 A Net Disaster]
-[G 47.6,62.3 Elwynn Forest]Puhu: *Lee Brown* [QA99143 Bottles and Baubles]
-[G 46.9,65.9 Elwynn Forest]Kerää *Half-Eaten Fish* (Fishing Trap) [QC99127,1 A Net Disaster]
-[G 44.9,63.4 Elwynn Forest]Puhu: *Sam Sarsaparilla* [QT96627 The Adventurer] [QA95998 The Great Outdoors]
-[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QA60 Kobold Candles]
-[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT54 Report to Goldshire] [QA62 The Fargodeep Mine]
-[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QA47 Gold Dust Exchange]
-[G 42.0,66.4 Elwynn Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
-[G 44.9,63.2 Elwynn Forest]Käytä / kerää: *Basic Campfire* [QC95998,1 The Great Outdoors] [QC95998,2 The Great Outdoors]
-[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99127 A Net Disaster] [QA99128 Slimy Menace]
-[G 50.5,62.3 Elwynn Forest]Tapa *Murloc Streamrunner*; Tapa *Murloc* [QC99128,2 Slimy Menace] [QC99128,1 Slimy Menace]
-[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä: palauta *Helene Peltskinner* [QT91751 Rough Wolf Pelts] (jos tavoite valmis)
-[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99128 Slimy Menace] [QA99129 A Man About a Murloc]
-[O][A Blacksmithing1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Blacksmithing 1+): puhu *Sam Sarsaparilla* [QA97916 Camping 101: Blacksmithing] Tavoite: Speak with Smith Argus in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A First Aid1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (First Aid 1+): puhu *Sam Sarsaparilla* [QA97919 Camping 101: First Aid] Tavoite: Speak with Michelle Belle in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Leatherworking1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Leatherworking 1+): puhu *Sam Sarsaparilla* [QA97922 Camping 101: Leatherworking] Tavoite: Speak with Adele Fielder in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Tailoring1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Tailoring 1+): puhu *Sam Sarsaparilla* [QA97925 Camping 101: Tailoring] Tavoite: Speak with Eldrin in the Eastvale Logging Camp in Elwynn Forest to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Fishing1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Fishing 1+): puhu *Sam Sarsaparilla* [QA97920 Camping 101: Fishing] Tavoite: Speak with Lee Brown near Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Skinning1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Sam Sarsaparilla* [QA97924 Camping 101: Skinning] Tavoite: Speak with Helene Peltskinner in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[G 44.9,63.4 Elwynn Forest]Puhu: *Sam Sarsaparilla* [QT95998 The Great Outdoors] [QA96626 Camping 101: Cooking]
-[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QT99129 A Man About a Murloc] [QA99130 An Enticing Offer]
-[G 44.4,66.0 Elwynn Forest]Puhu: *Tomas* [QC96626,1 Camping 101: Cooking]
-[G 44.4,66.0 Elwynn Forest]Puhu: *Tomas* [QT96626 Camping 101: Cooking]
-[G 42.6,73.2 Elwynn Forest]Kerää *Vial of Animal Blood* (Young Forest Bear, Stonetusk Boar) [QC99130,1 An Enticing Offer]
-[G 40.0,78.6 Elwynn Forest]Kerää *Gold Dust* (Kobold Miner, Kobold Tunneler, Kobold Geomancer); Kerää *Large Candle* (Kobold Miner, Kobold Tunneler, Kobold Geomancer) [QC47,1 Gold Dust Exchange] [QC60,1 Kobold Candles]
-[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QA85 Lost Necklace]
-[G 43.1,85.7 Elwynn Forest]Puhu: *Billy Maclure* [QT85 Lost Necklace] [QA86 Pie for Billy]
-[G 43.1,89.6 Elwynn Forest]Puhu: *Maybell Maclure* [QA106 Young Lovers]
-[G 41.0,88.3 Elwynn Forest]Kerää *Chunk of Boar Meat* (Rockhide Boar, Stonetusk Boar, Longsnout) [QC86,1 Pie for Billy]
-[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QT86 Pie for Billy] [QA84 Back to Billy]
-[G 31.9,84.4 Elwynn Forest]Kerää *Duskweed Petal* (Overgrown Duskweed) [QC99130,2 An Enticing Offer]
-[G 29.8,86.0 Elwynn Forest]Puhu: *Tommy Joe Stonefield* [QT106 Young Lovers] [QA111 Speak with Gramma]
-[G 34.9,83.9 Elwynn Forest]Puhu: *Gramma Stonefield* [QT111 Speak with Gramma] [QA107 Note to William]
-[G 40.6,82.3 Elwynn Forest]Scout through the Fargodeep Mine [QC62,1 The Fargodeep Mine]
-[G 43.1,85.7 Elwynn Forest]Puhu: *Billy Maclure* [QT84 Back to Billy] [QA87 Goldtooth]
-[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 8)] (*Josephine Carson*): Concussive Shot, Raptor Strike r2, Aspect of the Monkey
-[G 41.7,78.0 Elwynn Forest]Kerää *Bernice's Necklace* (Goldtooth) [QC87,1 Goldtooth]
-[O][A Blacksmithing1][G 41.7,65.5 Elwynn Forest]Ammattitehtävä: palauta *Smith Argus* [QT97916 Camping 101: Blacksmithing] (jos tavoite valmis)
-[O][A First Aid1][G 43.4,65.5 Elwynn Forest]Ammattitehtävä: palauta *Michelle Belle* [QT97919 Camping 101: First Aid] (jos tavoite valmis)
-[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QT47 Gold Dust Exchange] [QT99130 An Enticing Offer] [QA99131 Baited for Success]
-[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä: palauta *Helene Peltskinner* [QT97924 Camping 101: Skinning] (jos tavoite valmis)
-[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT60 Kobold Candles]
-[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
-[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT107 Note to William] [QA112 Collecting Kelp]
-[O][A Leatherworking1][G 46.4,62.0 Elwynn Forest]Ammattitehtävä: palauta *Adele Fielder* [QT97922 Camping 101: Leatherworking] (jos tavoite valmis)
-[G 43.8,65.8 Elwynn Forest]Puhu: *Innkeeper Farley* [QT2158 Rest and Relaxation]
-[G 43.8,65.8 Elwynn Forest][V Myy harmaat roinat] (*Innkeeper Farley*)
-[O][A Fishing1][G 47.6,62.3 Elwynn Forest]Ammattitehtävä: palauta *Lee Brown* [QT97920 Camping 101: Fishing] (jos tavoite valmis)
-[G 49.8,66.4 Elwynn Forest]Kerää *Crystal Kelp Frond* (Murloc, Murloc Streamrunner) [QC112,1 Collecting Kelp]
-[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT112 Collecting Kelp] [QA114 The Escape]
-[G 56.2,66.9 Elwynn Forest]Kerää *Shiny Junk* (Junk Pile) [QC99143,1 Bottles and Baubles]
-[O][A Enchanting1][G 64.9,70.7 Elwynn Forest]Ammattitehtävä (Enchanting 1+): puhu *Kitta Firewind* [QA91753 An Enchanting Lesson] Tavoite: Kitta Firewind in the Tower of Azora wants you to collect 3 Luminous Residue.  Luminous Residue can be obtained by disenchanting Crude Wax Effigies dropped by Kobold...
-[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QA91723 Delicate Instruments]
-[G 63.5,58.3 Elwynn Forest]Tapa *Kobold Geomancer* [QC91723,1 Delicate Instruments]
-[G 57.5,48.2 Elwynn Forest]Kerää *Garrick's Head* (Garrick Padfoot) [QC6,1 Bounty on Garrick Padfoot]
-[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QT6 Bounty on Garrick Padfoot]
-[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99131 Baited for Success]
-[G 47.6,62.3 Elwynn Forest]Puhu: *Lee Brown* [QT99143 Bottles and Baubles]
-[G 43.1,89.6 Elwynn Forest]Puhu: *Maybell Maclure* [QT114 The Escape]
-[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QT87 Goldtooth]
-[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QA94792 Taming the Beast]
-[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 10)] (*Josephine Carson*): Aspect of the Hawk, Serpent String r2, Parry, Great Stamina, Natural Armor, Track Beasts
-[G 47.3,75.8 Elwynn Forest]Tapa *Rockhide Boar* [QC94792,1 Taming the Beast]
-[O][A Blacksmithing50][G 41.7,65.5 Elwynn Forest]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Smith Argus*) [LE Blacksmithing 150]
-[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94792 Taming the Beast] [QA94863 Taming the Beast]
-[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT62 The Fargodeep Mine]
-[G 42.0,66.4 Elwynn Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
-[G 58.4,62.1 Elwynn Forest]Tapa *Gray Forest Wolf* [QC94863,1 Taming the Beast]
-[O][A Enchanting50][G 64.9,70.7 Elwynn Forest]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Kitta Firewind*) [LE Enchanting 150]
-[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QT91723 Delicate Instruments]
-[H Hearthstone: Innkeeper Farley] (jos cooldownilla, juokse tai lennä)
-[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94863 Taming the Beast] [QA94864 Taming the Beast]
-[G 44.2,77.0 Elwynn Forest]Tapa *Young Forest Bear* [QC94864,1 Taming the Beast]
-[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94864 Taming the Beast] [QA94793 Training the Beast]
-[G 41.8,66.4 Elwynn Forest]Puhu: *Isaac Chan* [QT94793 Training the Beast]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
-[GA Human,Hunter]
-[N10-12 Elwynn Forest (Hunter)]
-[NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
-[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QA76 The Jasperlode Mine]
-[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QA40 A Fishy Peril]
-[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT40 A Fishy Peril] [QA35 Further Concerns]
-[G 34.7,84.5 Elwynn Forest]Puhu: *Ma Stonefield* [QA88 Princess Must Die!]
-[O][A Enchanting1][G 64.9,70.7 Elwynn Forest]Ammattitehtävä: palauta *Kitta Firewind* [QT91753 An Enchanting Lesson] (jos tavoite valmis)
-[G 63.2,72.6 Elwynn Forest]Puhu: *Blixie Fitzwink* [QA91725 Stolen Enchanting Supplies]
-[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QA91724 Delicate Instruments]
-[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT35 Further Concerns] [QA37 Find the Lost Guards] [QA52 Protect the Frontier]
-[O][A Tailoring1][G 79.2,69.0 Elwynn Forest]Ammattitehtävä: palauta *Eldrin* [QT97925 Camping 101: Tailoring] (jos tavoite valmis)
-[O][A Tailoring50][G 79.2,69.0 Elwynn Forest]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Eldrin*) [LE Tailoring 150]
-[G 76.5,71.9 Elwynn Forest]Puhu: *Ormin Pelford* [QA91733 Downstream]
-[G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QA83 Red Linen Goods]
-[G 81.4,66.1 Elwynn Forest]Puhu: *Supervisor Raelen* [QA5545 A Bundle of Trouble]
-[G 79.3,63.4 Elwynn Forest]Kerää *Bundle of Wood* (Bundle of Wood) [QC5545,1 A Bundle of Trouble]
-[G 72.7,60.3 Elwynn Forest]Klikkaa: *A half-eaten body* [QT37 Find the Lost Guards] [QA45 Discover Rolf's Fate]
-[G 71.8,60.4 Elwynn Forest]Tapa *Young Forest Bear* [QC52,2 Protect the Frontier]
-[G 79.8,55.5 Elwynn Forest]Klikkaa: *Rolf's corpse* [QT45 Discover Rolf's Fate] [QA71 Report to Thomas]
-[G 77.2,51.7 Elwynn Forest]Kerää *Red Linen Bandana* (Defias Bandit, Defias Rogue Wizard, Defias Dockworker); Tapa *Defias Rogue Wizard* [QC83,1 Red Linen Goods] [QC91724,1 Delicate Instruments]
-[G 81.9,60.7 Elwynn Forest]Tapa *Prowler* [QC52,1 Protect the Frontier]
-[G 81.4,66.1 Elwynn Forest]Puhu: *Supervisor Raelen* [QT5545 A Bundle of Trouble]
-[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT52 Protect the Frontier] [QT71 Report to Thomas] [QA39 Deliver Thomas' Report]
-[G 74.3,76.4 Elwynn Forest]Kerää *Waterlogged Saw* (Waterlogged Saw) [QC91733,2 Downstream]
-[G 76.7,82.5 Elwynn Forest]Kerää *Waterlogged Axe* (Waterlogged Axe); Kerää *Waterlogged Toolbox* (Waterlogged Toolbox) [QC91733,1 Downstream] [QC91733,3 Downstream]
-[G 69.7,79.2 Elwynn Forest]Kerää *Brass Collar* (Princess) [QC88,1 Princess Must Die!]
-[G 67.8,45.2 Elwynn Forest]Kerää *Stolen Enchanting Supplies* (Stolen Enchanting Supplies) [QC91725,1 Stolen Enchanting Supplies]
-[G 61.9,53.2 Elwynn Forest]Scout through the Jasperlode Mine [QC76,1 The Jasperlode Mine]
-[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 12)] (*Josephine Carson*): Wing Clip, Mend Pet, Great Stamina r2, Natural Armor r2
-[H Hearthstone: Innkeeper Farley] (jos cooldownilla, juokse tai lennä)
-[G 42.0,66.4 Elwynn Forest][V Myy roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
-[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
-[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT39 Deliver Thomas' Report] [QT76 The Jasperlode Mine] [QA59 Cloth and Leather Armor] [QA239 Westbrook Garrison Needs Help!]
-[G 24.2,74.5 Elwynn Forest]Puhu: *Deputy Rainer* [QT239 Westbrook Garrison Needs Help!] [QA11 Riverpaw Gnoll Bounty]
-[G 27.3,82.4 Elwynn Forest]Kerää *Painted Gnoll Armband* (Riverpaw Outrunner, Riverpaw Runt) [QC11,1 Riverpaw Gnoll Bounty]
-[G 24.2,74.5 Elwynn Forest]Puhu: *Deputy Rainer* [QT11 Riverpaw Gnoll Bounty]
-[G 34.7,84.5 Elwynn Forest]Puhu: *Ma Stonefield* [QT88 Princess Must Die!]
-[G 63.2,72.6 Elwynn Forest]Puhu: *Blixie Fitzwink* [QT91725 Stolen Enchanting Supplies]
-[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QT91724 Delicate Instruments]
-[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QA46 Bounty on Murlocs]
-[G 76.5,71.9 Elwynn Forest]Puhu: *Ormin Pelford* [QT91733 Downstream]
-[G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QT83 Red Linen Goods] [QT59 Cloth and Leather Armor]
-[G 78.5,60.2 Elwynn Forest]Kerää *Torn Murloc Fin* (Murloc Forager, Murloc Lurker) [QC46,1 Bounty on Murlocs]
-[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT46 Bounty on Murlocs]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
@@ -368,6 +200,174 @@ Guidelime.registerGuide([[
 [G 30.2,72.7 Loch Modan]Tapa *Stonesplinter Trogg*; Kerää *Trogg Stone Tooth* (Stonesplinter Seer, Stonesplinter Trogg, Stonesplinter Scout) [QC224,1 In Defense of the King's Lands] [QC267,1 The Trogg Threat]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QT267 The Trogg Threat]
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[GA Human,Hunter]
+[N1-6 Elwynn Forest (Hunter)]
+[NX6-10 Elwynn Forest (Hunter)]
+[G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QA33 Wolves Across the Border]
+[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA783 A Threat Within]
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT783 A Threat Within] [QA7 Kobold Camp Cleanup]
+[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA18 Brotherhood of Thieves]
+[G 53.2,45.6 Elwynn Forest]Kerää *Red Burlap Bandana* (Defias Thug) [QC18,1 Brotherhood of Thieves]
+[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QT18 Brotherhood of Thieves] [QA3903 Milly Osworth]
+[G 51.3,36.5 Elwynn Forest]Tapa *Kobold Vermin* [QC7,1 Kobold Camp Cleanup]
+[G 50.7,39.4 Elwynn Forest]Puhu: *Milly Osworth* [QT3903 Milly Osworth] [QA3904 Milly's Harvest]
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT7 Kobold Camp Cleanup]
+[G 51.2,40.8 Elwynn Forest][T Hunter-trainer (taso 4)] (*Tordrin Sternblade*): Arcane Shot, Serpent Sting
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QA15 Investigate Echo Ridge] [QA92479 A Scribbled Letter]
+[G 51.5,38.0 Elwynn Forest]Tapa *Kobold Worker* [QC15,1 Investigate Echo Ridge]
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT15 Investigate Echo Ridge] [QA21 Skirmish at Echo Ridge]
+[G 54.0,48.9 Elwynn Forest]Kerää *Milly's Harvest* (Milly's Harvest) [QC3904,1 Milly's Harvest]
+[G 51.2,40.8 Elwynn Forest]Puhu: *Tordrin Sternblade* [QT92479 A Scribbled Letter]
+[G 50.7,39.4 Elwynn Forest]Puhu: *Milly Osworth* [QT3904 Milly's Harvest] [QA3905 Grape Manifest]
+[G 47.8,31.6 Elwynn Forest]Tapa *Kobold Laborer* [QC21,1 Skirmish at Echo Ridge]
+[G 48.1,39.8 Elwynn Forest]Kerää *Tough Wolf Meat* (Young Wolf, Timber Wolf) [QC33,1 Wolves Across the Border]
+[G 48.9,40.2 Elwynn Forest]Puhu: *Eagan Peltskinner* [QT33 Wolves Across the Border]
+[G 49.5,41.6 Elwynn Forest]Puhu: *Brother Neals* [QT3905 Grape Manifest]
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT21 Skirmish at Echo Ridge]
+[XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
+[G 51.2,40.8 Elwynn Forest][T Hunter-trainer (taso 6)] (*Tordrin Sternblade*): Hunter's Mark
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[GA Human,Hunter]
+[N6-10 Elwynn Forest (Hunter)]
+[NX10-12 Elwynn Forest (Hunter)]
+[G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QA54 Report to Goldshire] [QA96627 The Adventurer]
+[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QA6 Bounty on Garrick Padfoot]
+[G 45.6,47.7 Elwynn Forest]Puhu: *Falkhaan Isenstrider* [QA2158 Rest and Relaxation]
+[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Helene Peltskinner* [QA91751 Rough Wolf Pelts] Tavoite: Skin wolves around Elwynn Forest to obtain 7 Rough Wolf Pelts, then deliver them to Helene Peltskinner near Goldshire.
+[G 42.0,66.4 Elwynn Forest][V Myy roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
+[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
+[G 43.8,65.8 Elwynn Forest][S Aseta Hearthstone tähän] (*Innkeeper Farley*)
+[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QA99127 A Net Disaster]
+[G 47.6,62.3 Elwynn Forest]Puhu: *Lee Brown* [QA99143 Bottles and Baubles]
+[G 46.9,65.9 Elwynn Forest]Kerää *Half-Eaten Fish* (Fishing Trap) [QC99127,1 A Net Disaster]
+[G 44.9,63.4 Elwynn Forest]Puhu: *Sam Sarsaparilla* [QT96627 The Adventurer] [QA95998 The Great Outdoors]
+[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QA60 Kobold Candles]
+[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT54 Report to Goldshire] [QA62 The Fargodeep Mine]
+[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QA47 Gold Dust Exchange]
+[G 42.0,66.4 Elwynn Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
+[G 44.9,63.2 Elwynn Forest]Käytä / kerää: *Basic Campfire* [QC95998,1 The Great Outdoors] [QC95998,2 The Great Outdoors]
+[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99127 A Net Disaster] [QA99128 Slimy Menace]
+[G 50.5,62.3 Elwynn Forest]Tapa *Murloc Streamrunner*; Tapa *Murloc* [QC99128,2 Slimy Menace] [QC99128,1 Slimy Menace]
+[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä: palauta *Helene Peltskinner* [QT91751 Rough Wolf Pelts] (jos tavoite valmis)
+[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99128 Slimy Menace] [QA99129 A Man About a Murloc]
+[O][A Blacksmithing1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Blacksmithing 1+): puhu *Sam Sarsaparilla* [QA97916 Camping 101: Blacksmithing] Tavoite: Speak with Smith Argus in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A First Aid1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (First Aid 1+): puhu *Sam Sarsaparilla* [QA97919 Camping 101: First Aid] Tavoite: Speak with Michelle Belle in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Leatherworking1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Leatherworking 1+): puhu *Sam Sarsaparilla* [QA97922 Camping 101: Leatherworking] Tavoite: Speak with Adele Fielder in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Tailoring1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Tailoring 1+): puhu *Sam Sarsaparilla* [QA97925 Camping 101: Tailoring] Tavoite: Speak with Eldrin in the Eastvale Logging Camp in Elwynn Forest to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Fishing1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Fishing 1+): puhu *Sam Sarsaparilla* [QA97920 Camping 101: Fishing] Tavoite: Speak with Lee Brown near Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Skinning1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Sam Sarsaparilla* [QA97924 Camping 101: Skinning] Tavoite: Speak with Helene Peltskinner in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[G 44.9,63.4 Elwynn Forest]Puhu: *Sam Sarsaparilla* [QT95998 The Great Outdoors] [QA96626 Camping 101: Cooking]
+[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QT99129 A Man About a Murloc] [QA99130 An Enticing Offer]
+[G 44.4,66.0 Elwynn Forest]Puhu: *Tomas* [QC96626,1 Camping 101: Cooking]
+[G 44.4,66.0 Elwynn Forest]Puhu: *Tomas* [QT96626 Camping 101: Cooking]
+[G 42.6,73.2 Elwynn Forest]Kerää *Vial of Animal Blood* (Young Forest Bear, Stonetusk Boar) [QC99130,1 An Enticing Offer]
+[G 40.0,78.6 Elwynn Forest]Kerää *Gold Dust* (Kobold Miner, Kobold Tunneler, Kobold Geomancer); Kerää *Large Candle* (Kobold Miner, Kobold Tunneler, Kobold Geomancer) [QC47,1 Gold Dust Exchange] [QC60,1 Kobold Candles]
+[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QA85 Lost Necklace]
+[G 43.1,85.7 Elwynn Forest]Puhu: *Billy Maclure* [QT85 Lost Necklace] [QA86 Pie for Billy]
+[G 43.1,89.6 Elwynn Forest]Puhu: *Maybell Maclure* [QA106 Young Lovers]
+[G 41.0,88.3 Elwynn Forest]Kerää *Chunk of Boar Meat* (Rockhide Boar, Stonetusk Boar, Longsnout) [QC86,1 Pie for Billy]
+[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QT86 Pie for Billy] [QA84 Back to Billy]
+[G 31.9,84.4 Elwynn Forest]Kerää *Duskweed Petal* (Overgrown Duskweed) [QC99130,2 An Enticing Offer]
+[G 29.8,86.0 Elwynn Forest]Puhu: *Tommy Joe Stonefield* [QT106 Young Lovers] [QA111 Speak with Gramma]
+[G 34.9,83.9 Elwynn Forest]Puhu: *Gramma Stonefield* [QT111 Speak with Gramma] [QA107 Note to William]
+[G 40.6,82.3 Elwynn Forest]Scout through the Fargodeep Mine [QC62,1 The Fargodeep Mine]
+[G 43.1,85.7 Elwynn Forest]Puhu: *Billy Maclure* [QT84 Back to Billy] [QA87 Goldtooth]
+[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 8)] (*Josephine Carson*): Concussive Shot, Raptor Strike r2, Aspect of the Monkey
+[G 41.7,78.0 Elwynn Forest]Kerää *Bernice's Necklace* (Goldtooth) [QC87,1 Goldtooth]
+[O][A Blacksmithing1][G 41.7,65.5 Elwynn Forest]Ammattitehtävä: palauta *Smith Argus* [QT97916 Camping 101: Blacksmithing] (jos tavoite valmis)
+[O][A First Aid1][G 43.4,65.5 Elwynn Forest]Ammattitehtävä: palauta *Michelle Belle* [QT97919 Camping 101: First Aid] (jos tavoite valmis)
+[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QT47 Gold Dust Exchange] [QT99130 An Enticing Offer] [QA99131 Baited for Success]
+[O][A Skinning1][G 46.2,62.2 Elwynn Forest]Ammattitehtävä: palauta *Helene Peltskinner* [QT97924 Camping 101: Skinning] (jos tavoite valmis)
+[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT60 Kobold Candles]
+[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
+[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT107 Note to William] [QA112 Collecting Kelp]
+[O][A Leatherworking1][G 46.4,62.0 Elwynn Forest]Ammattitehtävä: palauta *Adele Fielder* [QT97922 Camping 101: Leatherworking] (jos tavoite valmis)
+[G 43.8,65.8 Elwynn Forest]Puhu: *Innkeeper Farley* [QT2158 Rest and Relaxation]
+[G 43.8,65.8 Elwynn Forest][V Myy harmaat roinat] (*Innkeeper Farley*)
+[O][A Fishing1][G 47.6,62.3 Elwynn Forest]Ammattitehtävä: palauta *Lee Brown* [QT97920 Camping 101: Fishing] (jos tavoite valmis)
+[G 49.8,66.4 Elwynn Forest]Kerää *Crystal Kelp Frond* (Murloc, Murloc Streamrunner) [QC112,1 Collecting Kelp]
+[G 43.3,65.7 Elwynn Forest]Puhu: *William Pestle* [QT112 Collecting Kelp] [QA114 The Escape]
+[G 56.2,66.9 Elwynn Forest]Kerää *Shiny Junk* (Junk Pile) [QC99143,1 Bottles and Baubles]
+[O][A Enchanting1][G 64.9,70.7 Elwynn Forest]Ammattitehtävä (Enchanting 1+): puhu *Kitta Firewind* [QA91753 An Enchanting Lesson] Tavoite: Kitta Firewind in the Tower of Azora wants you to collect 3 Luminous Residue.  Luminous Residue can be obtained by disenchanting Crude Wax Effigies dropped by Kobold...
+[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QA91723 Delicate Instruments]
+[G 63.5,58.3 Elwynn Forest]Tapa *Kobold Geomancer* [QC91723,1 Delicate Instruments]
+[G 57.5,48.2 Elwynn Forest]Kerää *Garrick's Head* (Garrick Padfoot) [QC6,1 Bounty on Garrick Padfoot]
+[G 48.2,42.9 Elwynn Forest]Puhu: *Deputy Willem* [QT6 Bounty on Garrick Padfoot]
+[G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99131 Baited for Success]
+[G 47.6,62.3 Elwynn Forest]Puhu: *Lee Brown* [QT99143 Bottles and Baubles]
+[G 43.1,89.6 Elwynn Forest]Puhu: *Maybell Maclure* [QT114 The Escape]
+[G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QT87 Goldtooth]
+[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QA94792 Taming the Beast]
+[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 10)] (*Josephine Carson*): Aspect of the Hawk, Serpent String r2, Parry, Great Stamina, Natural Armor, Track Beasts
+[G 47.3,75.8 Elwynn Forest]Tapa *Rockhide Boar* [QC94792,1 Taming the Beast]
+[O][A Blacksmithing50][G 41.7,65.5 Elwynn Forest]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Smith Argus*) [LE Blacksmithing 150]
+[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94792 Taming the Beast] [QA94863 Taming the Beast]
+[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT62 The Fargodeep Mine]
+[G 42.0,66.4 Elwynn Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
+[G 58.4,62.1 Elwynn Forest]Tapa *Gray Forest Wolf* [QC94863,1 Taming the Beast]
+[O][A Enchanting50][G 64.9,70.7 Elwynn Forest]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Kitta Firewind*) [LE Enchanting 150]
+[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QT91723 Delicate Instruments]
+[H Hearthstone: Innkeeper Farley] (jos cooldownilla, juokse tai lennä)
+[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94863 Taming the Beast] [QA94864 Taming the Beast]
+[G 44.2,77.0 Elwynn Forest]Tapa *Young Forest Bear* [QC94864,1 Taming the Beast]
+[G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94864 Taming the Beast] [QA94793 Training the Beast]
+[G 41.8,66.4 Elwynn Forest]Puhu: *Isaac Chan* [QT94793 Training the Beast]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[GA Human,Hunter]
+[N10-12 Elwynn Forest (Hunter)]
+[NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
+[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QA76 The Jasperlode Mine]
+[G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QA40 A Fishy Peril]
+[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT40 A Fishy Peril] [QA35 Further Concerns]
+[G 34.7,84.5 Elwynn Forest]Puhu: *Ma Stonefield* [QA88 Princess Must Die!]
+[O][A Enchanting1][G 64.9,70.7 Elwynn Forest]Ammattitehtävä: palauta *Kitta Firewind* [QT91753 An Enchanting Lesson] (jos tavoite valmis)
+[G 63.2,72.6 Elwynn Forest]Puhu: *Blixie Fitzwink* [QA91725 Stolen Enchanting Supplies]
+[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QA91724 Delicate Instruments]
+[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT35 Further Concerns] [QA37 Find the Lost Guards] [QA52 Protect the Frontier]
+[O][A Tailoring1][G 79.2,69.0 Elwynn Forest]Ammattitehtävä: palauta *Eldrin* [QT97925 Camping 101: Tailoring] (jos tavoite valmis)
+[O][A Tailoring50][G 79.2,69.0 Elwynn Forest]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Eldrin*) [LE Tailoring 150]
+[G 76.5,71.9 Elwynn Forest]Puhu: *Ormin Pelford* [QA91733 Downstream]
+[G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QA83 Red Linen Goods]
+[G 81.4,66.1 Elwynn Forest]Puhu: *Supervisor Raelen* [QA5545 A Bundle of Trouble]
+[G 79.3,63.4 Elwynn Forest]Kerää *Bundle of Wood* (Bundle of Wood) [QC5545,1 A Bundle of Trouble]
+[G 72.7,60.3 Elwynn Forest]Klikkaa: *A half-eaten body* [QT37 Find the Lost Guards] [QA45 Discover Rolf's Fate]
+[G 71.8,60.4 Elwynn Forest]Tapa *Young Forest Bear* [QC52,2 Protect the Frontier]
+[G 79.8,55.5 Elwynn Forest]Klikkaa: *Rolf's corpse* [QT45 Discover Rolf's Fate] [QA71 Report to Thomas]
+[G 77.2,51.7 Elwynn Forest]Kerää *Red Linen Bandana* (Defias Bandit, Defias Rogue Wizard, Defias Dockworker); Tapa *Defias Rogue Wizard* [QC83,1 Red Linen Goods] [QC91724,1 Delicate Instruments]
+[G 81.9,60.7 Elwynn Forest]Tapa *Prowler* [QC52,1 Protect the Frontier]
+[G 81.4,66.1 Elwynn Forest]Puhu: *Supervisor Raelen* [QT5545 A Bundle of Trouble]
+[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT52 Protect the Frontier] [QT71 Report to Thomas] [QA39 Deliver Thomas' Report]
+[G 74.3,76.4 Elwynn Forest]Kerää *Waterlogged Saw* (Waterlogged Saw) [QC91733,2 Downstream]
+[G 76.7,82.5 Elwynn Forest]Kerää *Waterlogged Axe* (Waterlogged Axe); Kerää *Waterlogged Toolbox* (Waterlogged Toolbox) [QC91733,1 Downstream] [QC91733,3 Downstream]
+[G 69.7,79.2 Elwynn Forest]Kerää *Brass Collar* (Princess) [QC88,1 Princess Must Die!]
+[G 67.8,45.2 Elwynn Forest]Kerää *Stolen Enchanting Supplies* (Stolen Enchanting Supplies) [QC91725,1 Stolen Enchanting Supplies]
+[G 61.9,53.2 Elwynn Forest]Scout through the Jasperlode Mine [QC76,1 The Jasperlode Mine]
+[G 41.1,66.2 Elwynn Forest][T Hunter-trainer (taso 12)] (*Josephine Carson*): Wing Clip, Mend Pet, Great Stamina r2, Natural Armor r2
+[H Hearthstone: Innkeeper Farley] (jos cooldownilla, juokse tai lennä)
+[G 42.0,66.4 Elwynn Forest][V Myy roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
+[G 43.8,65.8 Elwynn Forest][V Osta ammuksia (quiver täyteen), vettä (Ice Cold Milk) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Farley*)
+[G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT39 Deliver Thomas' Report] [QT76 The Jasperlode Mine] [QA59 Cloth and Leather Armor] [QA239 Westbrook Garrison Needs Help!]
+[G 24.2,74.5 Elwynn Forest]Puhu: *Deputy Rainer* [QT239 Westbrook Garrison Needs Help!] [QA11 Riverpaw Gnoll Bounty]
+[G 27.3,82.4 Elwynn Forest]Kerää *Painted Gnoll Armband* (Riverpaw Outrunner, Riverpaw Runt) [QC11,1 Riverpaw Gnoll Bounty]
+[G 24.2,74.5 Elwynn Forest]Puhu: *Deputy Rainer* [QT11 Riverpaw Gnoll Bounty]
+[G 34.7,84.5 Elwynn Forest]Puhu: *Ma Stonefield* [QT88 Princess Must Die!]
+[G 63.2,72.6 Elwynn Forest]Puhu: *Blixie Fitzwink* [QT91725 Stolen Enchanting Supplies]
+[G 65.1,69.8 Elwynn Forest]Puhu: *Hamish Bergwort* [QT91724 Delicate Instruments]
+[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QA46 Bounty on Murlocs]
+[G 76.5,71.9 Elwynn Forest]Puhu: *Ormin Pelford* [QT91733 Downstream]
+[G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QT83 Red Linen Goods] [QT59 Cloth and Leather Armor]
+[G 78.5,60.2 Elwynn Forest]Kerää *Torn Murloc Fin* (Murloc Forager, Murloc Lurker) [QC46,1 Bounty on Murlocs]
+[G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT46 Bounty on Murlocs]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
@@ -1039,7 +1039,9 @@ Guidelime.registerGuide([[
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N22-26 Darkshore, Redridge, Wetlands + RoL (Hunter)]
 [NX26-31 Duskwood, Redridge, Wetlands (Hunter)]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
+[OC]Matkusta: *Teldrassil*. Auberdinen laiturilta laiva Rut'theran Villageen (Teldrassil)
+[G 58.4,94.0 Teldrassil][P Rut'theran Village]Hae flight path (*Vesprystus*)
+[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
 [G 39.7,5.4 Darnassus][T Hunter-trainer (taso 22)] (*Jeen'ra Nightrunner*): Hunters Mark r2, Arcane Res r1, Track Humanoids, Track Undead, Eyes of the Beast
 [OC]Matkusta: *Redridge Mountains*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Elwynnin itäpäästä Three Corners -risteyksen kautta koilliseen Redridge Mountainsiin. Lakeshire on järven länsirannalla
 [G 28.4,49.0 Redridge Mountains]Puhu: *Marshal Marris* [QA20 Blackrock Menace] [QA98387 Blackrock Blockade]
@@ -1265,7 +1267,7 @@ Guidelime.registerGuide([[
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT268 Return to Sven] [QA323 Proving Your Worth]
 [G 13.8,34.5 Duskwood]Tapa *Skeletal Warder*; Tapa *Skeletal Healer*; Tapa *Skeletal Raider* [QC323,3 Proving Your Worth] [QC323,2 Proving Your Worth] [QC323,1 Proving Your Worth]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT323 Proving Your Worth]
-[G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Lakeshire]
+[G 56.5,52.6 Westfall]Lennä (*Thor*): [F Lakeshire]
 [G 16.8,46.3 Redridge Mountains]Puhu: *Martie Jainrose* [QA34 An Unwelcome Guest]
 [G 21.2,46.6 Redridge Mountains]Puhu: *Guard Berton* [QA386 What Comes Around...]
 [G 21.7,46.4 Redridge Mountains]Klikkaa: *Wanted: Lieutenant Fangore* [QA180 WANTED: Lieutenant Fangore]
@@ -1417,8 +1419,8 @@ Guidelime.registerGuide([[
 [G 46.0,35.7 The Barrens]Puhu: *Ebru* [QT1487 Deviate Eradication]
 [G 62.4,37.6 The Barrens]Puhu: *Mebok Mizzyrix* [QT1491 Smart Drinks]
 [OC]*Dungeon: Blackfathom Deeps* (suositus taso 24+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
-[G 63.1,37.2 The Barrens]Lennä (*Bragok*): [F Auberdine]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
+[G 63.1,37.2 The Barrens]Lennä (*Bragok*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
 [O][A Leatherworking90][G 64.4,22.2 Darnassus]Ammattitehtävä (Leatherworking 90+): puhu *Lotherias* [QA1582 Moonglow Vest] Tavoite: Bring 1 Embossed Leather Gloves, 5 Embossed Leather Boots and 5 Embossed Leather Cloaks to Lotherias in Darnassus.
 [O][A Cooking50][G 49.0,21.2 Darnassus]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Alegorn*) [LE Cooking 150]
 [O][A Skinning50][G 64.1,22.3 Darnassus]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Eladriel*) [LE Skinning 150]
@@ -1429,7 +1431,8 @@ Guidelime.registerGuide([[
 [O][A Tailoring125][G 63.4,22.4 Darnassus]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Me'lynn*) [LE Tailoring 225]
 [G 55.4,25.0 Darnassus]Puhu: *Dawnwatcher Shaedlass* [QA1198 In Search of Thaelrid]
 [G 55.2,24.0 Darnassus]Puhu: *Argent Guard Manados* [QA1199 Twilight Falls]
-[OC]Matkusta: *Darkshore*. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
+[OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
+[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Auberdine]
 [O][A Mining125][G 38.2,41.0 Darkshore]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 225]
 [G 38.3,43.0 Darkshore]Puhu: *Gershala Nightwhisper* [QA1275 Researching the Corruption]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
@@ -1574,7 +1577,7 @@ Guidelime.registerGuide([[
 [G 89.5,45.9 Feralas][P Thalanaar]Hae flight path (*Thyssiana*)
 [G 89.6,46.6 Feralas]Puhu: *Falfindel Waywarder* [QT1100 Lonebrow's Journal] [QA1101 The Crone of the Kraul]
 [G 89.3,45.9 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Rendow*)
-[G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Ratchet]
+[OC]Matkusta: *The Barrens*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 42.9,90.2 The Barrens]*Mene dungeoniin: Razorfen Kraul*. Korjaa ja osta vettä ennen sisäänmenoa (Täytä ammukset ja lemmikin ruoka). Kerää *Razorflank's Medallion* (Charlga Razorflank) [QC1101,1 The Crone of the Kraul]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
@@ -1622,7 +1625,9 @@ Guidelime.registerGuide([[
 [G 45.3,52.2 Dun Morogh][V Myy roinat] ja [R korjaa varusteet] (*Grawn Thromwyn*)
 [G 47.4,52.5 Dun Morogh][V Osta ammuksia (quiver täyteen), vettä (Moonberry Juice) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Belm*)
 [G 45.9,49.4 Dun Morogh]Puhu: *Ozzie Togglevolt* [QT2927 The Day After] [QA2926 Gnogaine]
-[OC]Matkusta: *Darnassus*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore). Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
+[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
 [O][A Leatherworking90][G 64.4,22.2 Darnassus]Ammattitehtävä: palauta *Lotherias* [QT1582 Moonglow Vest] (jos tavoite valmis)
 [O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
 [O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
@@ -1766,9 +1771,10 @@ Guidelime.registerGuide([[
 [G 40.4,52.1 Stranglethorn Vale]Kerää *Singing Crystal Shard* (Ironjaw Basilisk, Cold Eye Basilisk, Crystal Spine Basilisk) [QC605,1 Singing Blue Shards]
 [G 51.0,35.2 Stranglethorn Vale]Puhu: *Gnaz Blunderflame* [QA97420 Reduce, Reuse, Reconcile]
 [G 44.9,23.6 Stranglethorn Vale]Kerää *Tumbled Crystal* (Venture Co. Geologist) [QC213,1 Hostile Takeover]
-[G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Stormwind]
+[G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Stormwind]
 [G 67.3,36.2 Stormwind City][T Hunter-trainer (taso 38)] (*Einris Brightspear*): Aspect of the Hawk r4
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Booty Bay]
+[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
+[OC]Matkusta: *Stranglethorn Vale*. Lennä Booty Bayhin tai juokse Duskwoodista etelään Stranglethorn Valeen (Rebel Camp pohjoisessa)
 [G 42.6,18.8 Stranglethorn Vale]Kerää *Drum of Crude Oil* (Venture Co. Mechanic) [QC97420,1 Reduce, Reuse, Reconcile]
 [G 35.7,10.5 Stranglethorn Vale]Puhu: *Barnil Stonepot* [QA583 Welcome to the Jungle]
 [G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT5762 Hemet Nesingwary] [QT583 Welcome to the Jungle] [QA194 Raptor Mastery]
@@ -1906,7 +1912,7 @@ Guidelime.registerGuide([[
 [G 38.8,52.4 Wetlands]Puhu: *Prospector Whelgar* [QT95810 Lost Relic Carry] [QA98824 Prehistoric Prism]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QT95646 Horrors in the Highland]
 [XP33 Tavoitetaso 33: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Refuge Pointe]
+[OC]Matkusta: *Arathi Highlands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 83.5,35.5 Arathi Highlands]Kerää *Lesser Bloodstone Ore* (Lesser Bloodstone Deposit) [QC627,1 Favor for Krazek]
 [G 32.8,81.5 Arathi Highlands]Puhu: *First Mate Nilzlix* [QA662 Deep Sea Salvage]
 [G 34.0,80.8 Arathi Highlands]Puhu: *Captain Steelgut* [QA664 Drowned Sorrows]
@@ -2270,6 +2276,7 @@ Guidelime.registerGuide([[
 [G 66.0,45.6 Feralas]Puhu: *Jer'kai Moonweaver* [QA2970 Doling Justice]
 [G 66.4,38.8 Feralas]Tapa *Grimtotem Naturalist* [QC2970,1 Doling Justice]
 [G 44.8,43.4 Feralas]Puhu: *Zorbin Fandazzle* [QA7003 Zapped Giants] [QA7721 Fuel for the Zapping]
+[G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
 [G 30.2,43.2 Feralas][P Feathermoon]Hae flight path (*Fyldren Moonfeather*)
 [O][A Alchemy200][G 32.6,43.8 Feralas]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Kylanna Windwhisper*) [LE Alchemy 300]
 [G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QA2982 The High Wilderness]
@@ -2285,6 +2292,7 @@ Guidelime.registerGuide([[
 [G 28.7,51.6 Feralas]Kerää *Hatecrest Naga Scale* (Hatecrest Sorceress, Hatecrest Serpent Guard, Hatecrest Screamer) [QC2869,1 Against the Hatecrest]
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT2869 Against the Hatecrest] [QA2870 Against Lord Shalzaru]
 [G 28.5,70.5 Feralas]Kerää *Mysterious Relic* (Lord Shalzaru) [QC2870,1 Against Lord Shalzaru]
+[OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 45.4,65.0 Feralas]Klikkaa: *Wrecked Row Boat* [QT4125 The Missing Courier] [QA4127 Boat Wreckage]
 [G 51.8,60.5 Feralas]Kerää *Thick Yeti Hide* (Feral Scar Yeti, Hulking Feral Scar, Enraged Feral Scar) [QC2821,1 The Mark of Quality]
 [G 60.0,63.3 Feralas]Tapa *Gordunni Shaman* [QC2982,2 The High Wilderness]
@@ -2299,6 +2307,7 @@ Guidelime.registerGuide([[
 [G 42.4,22.0 Feralas]Puhu: *Rockbiter* [QT2845 Wandering Shay]
 [G 42.1,38.6 Feralas]Kerää *Water Elemental Core* (Sea Spray, Sea Elemental) [QC7721,1 Fuel for the Zapping]
 [G 44.8,43.4 Feralas]Puhu: *Zorbin Fandazzle* [QT7721 Fuel for the Zapping] [QT7003 Zapped Giants]
+[G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
 [G 30.8,43.1 Feralas][V Myy roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 31.0,43.5 Feralas][V Osta ammuksia (quiver täyteen), vettä (Morning Glory Dew) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Shyria*)
 [G 31.0,43.5 Feralas][S Aseta Hearthstone tähän] (*Innkeeper Shyria*)
@@ -2310,15 +2319,18 @@ Guidelime.registerGuide([[
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2849 Wild Leather Vest] Tavoite: Bring 2 Turtle Scale Breastplates, 2 Turtle Scale Gloves, and a Wildvine to Pratt McGrubben in Feathermoon Stronghold.
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2850 Wild Leather Helmet] Tavoite: Bring 2 Nightscape Tunics, 2 Nightscape Headbands, and a Wildvine to Pratt McGrubben in Feathermoon Stronghold.
 [G 30.6,42.7 Feralas]Puhu: *Pratt McGrubben* [QT2821 The Mark of Quality] [QA7733 Improved Quality]
+[OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 52.4,29.7 Feralas]Kerää *Rage Scar Yeti Hide* (Rage Scar Yeti, Elder Rage Scar, Ferocious Rage Scar) [QC7733,1 Improved Quality]
 [H Hearthstone: Innkeeper Shyria] (jos cooldownilla, juokse tai lennä)
 [G 30.6,42.7 Feralas]Puhu: *Pratt McGrubben* [QT7733 Improved Quality]
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT2870 Against Lord Shalzaru] [QA2871 Delivering the Relic]
 [G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QT2982 The High Wilderness]
+[OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 60.8,49.8 Feralas]Puhu: *Screecher Spirit* [QC3520,1 Screecher Spirits]
 [G 73.3,56.3 Feralas]Klikkaa: *Large Leather Backpacks* [QT4131 The Woodpaw Gnolls] [QA4135 The Writhing Deep]
 [G 72.1,63.7 Feralas]Klikkaa: *Zukk'ash Pod* [QT4135 The Writhing Deep] [QA4265 Freed from the Hive]
 [G 72.1,63.8 Feralas]Free Raschal. [QC4265,1 Freed from the Hive]
+[G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
 [G 31.9,45.1 Feralas]Puhu: *Ginro Hearthkindle* [QT4265 Freed from the Hive] [QA4266 A Hero's Welcome]
 [G 30.3,46.2 Feralas]Puhu: *Shandris Feathermoon* [QT4266 A Hero's Welcome]
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2848 Wild Leather Shoulders] (jos tavoite valmis)
@@ -2376,7 +2388,7 @@ Guidelime.registerGuide([[
 [G 50.5,14.2 Blasted Lands]Puhu: *Bloodmage Drazial* [QT2581 Snickerfang Jowls] [QT2583 A Boar's Vitality] [QT2585 The Decisive Striker]
 [G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Stormwind]
 [G 67.3,36.2 Stormwind City][T Hunter-trainer (taso 48)] (*Einris Brightspear*): Summon Hawk r2, Summon Hawk r3, Aspect of the Hawk r5, Mend Pet r5, Arcaneshot r6, Great Stamina r8, Natural Armor r8
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Nethergarde Keep]
+[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Lakeshire]
 [OC]Matkusta: *Swamp of Sorrows*. Duskwoodista Deadwind Passin läpi itään Swamp of Sorrowsiin, tai lennä Nethergarde Keepiin ja juokse pohjoiseen
 [G 15.8,40.8 Swamp of Sorrows]Kerää *Khadgar's Essays on Dimensional Convergence* (Tangled Horror, Swampwalker, Swampwalker Elder) [QC1364,1 Mazen's Behest]
 [G 26.7,59.8 Swamp of Sorrows]Puhu: *Watcher Biggs* [QA1425 Deliver the Shipment]
@@ -2500,13 +2512,14 @@ Guidelime.registerGuide([[
 [G 61.9,26.8 Azshara]Tapa *Legashi Satyr*; Tapa *Legashi Hellcaller*; Tapa *Legashi Rogue* [QC86746,1 The Legashi Threat] [QC86746,3 The Legashi Threat] [QC86746,2 The Legashi Threat]
 [G 53.5,21.8 Azshara]Puhu: *Kim'jael* [QT5534 Kim'jael's "Missing" Equipment]
 [G 42.0,38.9 Azshara]Puhu: *Ekkal* [QT86746 The Legashi Threat]
-[G 11.9,77.6 Azshara]Lennä (*Jarrodenus*): [F Auberdine]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
+[G 11.9,77.6 Azshara]Lennä (*Jarrodenus*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
 [G 42.2,7.3 Darnassus][T Hunter-trainer (taso 50)] (*Dorion*): Serpent Sting r7, Viper r2, Growl r6, Fire Res r2, Fr r3, Fr r4, Shadow Res r2, Sr r3
 [O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
 [O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
 [G 42.2,7.3 Darnassus]Puhu: *Dorion* [QA8151 The Hunter's Charm]
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talrendis Point]
+[OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
+[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Talrendis Point]
 [G 42.4,42.6 Azshara]Puhu: *Ogtinc* [QT8151 The Hunter's Charm] [QA8153 Courser Antlers]
 [G 50.3,30.6 Azshara]Kerää *Perfect Courser Antler* (Mosshoof Courser) [QC8153,1 Courser Antlers]
 [G 42.4,42.6 Azshara]Puhu: *Ogtinc* [QT8153 Courser Antlers] [QA8231 Wavethrashing]
@@ -2542,10 +2555,10 @@ Guidelime.registerGuide([[
 [G 62.2,39.6 Desolace]Puhu: *Willow* [QT7028 Twisted Evils]
 [G 63.8,10.7 Desolace]Puhu: *Keeper Marandis* [QT7065 Corruption of Earth and Seed]
 [G 68.5,8.9 Desolace]Puhu: *Talendria* [QT7041 Vyletongue Corruption]
-[G 64.7,10.5 Desolace]Lennä (*Baritanas Skyriver*): [F Auberdine]
+[G 64.7,10.5 Desolace]Lennä (*Baritanas Skyriver*): [F Rut'theran Village]
 [OC]Matkusta: *Moonglade*. Felwoodin pohjoispäästä Timbermaw Holdin kautta Moongladeen
 [G 36.2,41.8 Moonglade]Puhu: *Keeper Remulos* [QT7066 Seed of Life]
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Theramore]
 [G 66.4,49.3 Dustwallow Marsh]Puhu: *Archmage Tervosh* [QT7070 Shadowshard Fragments]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Nethergarde Keep]
@@ -2557,9 +2570,10 @@ Guidelime.registerGuide([[
 [G 61.1,30.4 Blasted Lands]Kerää *Redstone Basilisk Scale* (Redstone Crystalhide, Redstone Basilisk) [QC87295,1 Deflective Surface]
 [G 63.5,17.0 Blasted Lands]Puhu: *Bernie Heisten* [QT87295 Deflective Surface]
 [OC]*Dungeon: Sunken Temple* (suositus taso 50+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Swamp of Sorrows) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
-[G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Aerie Peak]
+[G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Refuge Pointe]
+[OC]Matkusta: *The Hinterlands*. Lennä Aerie Peakiin. Ensimmäisellä kerralla: Hillsbradin koillisnurkasta polkua Hinterlandsiin, Aerie Peak on länsiosassa
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QA1446 Jammal'an the Prophet]
-[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Stormwind]
+[G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Stormwind]
 [O][A Mining200][G 59.2,37.8 Stormwind City]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 300]
 [O][A Herbalism200][G 54.3,84.1 Stormwind City]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 300]
 [O][A Skinning200][G 72.1,62.2 Stormwind City]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 300]
@@ -2578,6 +2592,7 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Feathermoon]
 [G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QA3445 The Sunken Temple]
+[OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 53.3,48.6 Feralas]Kerää *Ironfur Liver* (Ironfur Bear, Grizzled Ironfur Bear, Ironfur Patriarch) [QC1452,2 Rhapsody's Kalimdor Kocktail]
 [G 56.3,54.9 Feralas]Kerää *Groddoc Liver* (Groddoc Thunderer, Groddoc Ape) [QC1452,3 Rhapsody's Kalimdor Kocktail]
 [G 30.2,43.2 Feralas]Lennä (*Fyldren Moonfeather*): [F Gadgetzan]
@@ -2601,7 +2616,7 @@ Guidelime.registerGuide([[
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Aerie Peak]
 [G 26.9,48.6 The Hinterlands]Puhu: *Rhapsody Shindigger* [QT1452 Rhapsody's Kalimdor Kocktail] [QA1469 Rhapsody's Tale]
 [G 57.6,86.8 The Hinterlands]Kerää *Ancient Egg* (Ancient Egg) [QC4787,1 The Ancient Egg]
-[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Stormwind]
+[G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Stormwind]
 [G 69.5,40.4 Stormwind City]Puhu: *Brohann Caskbelly* [QT1469 Rhapsody's Tale] [QA1475 Into The Temple of Atal'Hakkar]
 [G 63.3,37.7 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kaita Deepforge*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Nethergarde Keep]
@@ -2620,7 +2635,8 @@ Guidelime.registerGuide([[
 [G 69.9,53.5 Swamp of Sorrows]Dungeonin sisällä - Klikkaa: *Essence Font* [QT3373 The Essence of Eranikus]
 [G 69.9,53.5 Swamp of Sorrows]Dungeonin sisällä - Klikkaa: *Altar of Hakkar* [QT3446 Into the Depths]
 [G 69.9,53.5 Swamp of Sorrows]Dungeonin sisällä - Klikkaa: *Idol of Hakkar* [QT3447 Secret of the Circle]
-[G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Aerie Peak]
+[G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Refuge Pointe]
+[OC]Matkusta: *The Hinterlands*. Lennä Aerie Peakiin. Ensimmäisellä kerralla: Hillsbradin koillisnurkasta polkua Hinterlandsiin, Aerie Peak on länsiosassa
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1446 Jammal'an the Prophet]
 [XP50 Tavoitetaso 50: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
@@ -2678,7 +2694,7 @@ Guidelime.registerGuide([[
 [G 68.1,12.6 Un'Goro Crater]Kerää *U'cha's Pelt* (U'cha) [QC4301,1 The Mighty U'cha]
 [G 67.7,16.8 Un'Goro Crater]Puhu: *A-Me 01* [QT4243 Chasing A-Me 01]
 [G 71.6,76.0 Un'Goro Crater]Puhu: *Torwa Pathfinder* [QT4301 The Mighty U'cha]
-[G 45.2,5.8 Un'Goro Crater]Lennä (*Gryfe*): [F Gadgetzan]
+[OC]Matkusta: *Tanaris*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 51.5,28.8 Tanaris][V Myy roinat] ja [R korjaa varusteet] (*Krinkle Goodsteel*)
 [G 52.5,27.9 Tanaris][V Osta ammuksia (quiver täyteen), vettä (Morning Glory Dew) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Fizzgrimble*)
 [G 51.6,26.8 Tanaris]Puhu: *Tran'rek* [QT4504 Super Sticky]
@@ -2725,7 +2741,8 @@ Guidelime.registerGuide([[
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N54-57 Felwood, WPL, Searing Gorge + BRD (Hunter)]
 [NX57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
+[G 62.5,24.2 Felwood]Lennä (*Mishellena*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
 [O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
 [O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
 [G 41.8,85.6 Darnassus]Puhu: *Gracina Spiritmight* [QT162 Rise of the Silithid]
@@ -3120,11 +3137,13 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Thalanaar]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QA7441 Pusillin and the Elder Azj'Tordin]
+[G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2851 Wild Leather Boots] (jos tavoite valmis)
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2852 Wild Leather Leggings] (jos tavoite valmis)
 [O][A Alchemy200][G 32.6,43.8 Feralas]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Kylanna Windwhisper*) [LE Alchemy 300]
 [G 31.6,43.5 Feralas]Puhu: *Scholar Runethorn* [QA7482 Elven Legends]
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT7494 Feathermoon Stronghold] [QA7488 Lethtendris's Web]
+[OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Puhu: *Knot Thimblejack* [QA5518 The Gordok Ogre Suit] [QA5525 Free Knot!]
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Puhu: *Shen'dralar Ancient* [QA7461 The Madness Within]
 [G 59.2,45.1 Feralas]Dungeonissa: looti *The Greatest Race of Hunters* aloittaa questin [QA7503 The Greatest Race of Hunters]
@@ -3134,6 +3153,7 @@ Guidelime.registerGuide([[
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Puhu: *Lorekeeper Mykos* [QT7503 The Greatest Race of Hunters]
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Klikkaa: *Treasure of the Shen'dralar* [QT7877 The Treasure of the Shen'dralar]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QT7441 Pusillin and the Elder Azj'Tordin]
+[G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
 [G 30.8,43.1 Feralas][V Myy roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 31.0,43.5 Feralas][V Osta ammuksia (quiver täyteen), vettä (Morning Glory Dew) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Shyria*)
 [G 31.6,43.5 Feralas]Puhu: *Scholar Runethorn* [QT7482 Elven Legends]
@@ -3166,7 +3186,7 @@ Guidelime.registerGuide([[
 [G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA5281 The Restless Souls]
 [G 11.4,26.6 Eastern Plaguelands]Puhu: *Egan* [QT5281 The Restless Souls] [QA5282 The Restless Souls]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QA5742 Redemption]
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Ironforge]
+[G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Ironforge]
 [G 43.5,52.6 Ironforge]Puhu: *Deliana* [QA8906 An Earnest Proposition]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Everlook]
@@ -3191,9 +3211,9 @@ Guidelime.registerGuide([[
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5212 The Flesh Does Not Lie] [QA5213 The Active Agent]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5251 The Archivist]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5845 Of Lost Honor] [QA5846 Of Love and Family]
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Chillwind Camp]
+[OC]Matkusta: *Western Plaguelands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 65.8,75.4 Western Plaguelands]Puhu: *Artist Renfray* [QT5846 Of Love and Family] [QA5848 Of Love and Family]
-[G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Ironforge]
+[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Ironforge]
 [G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8906 An Earnest Proposition] [QA8922 A Supernatural Device]
 [G 43.4,52.1 Ironforge][V Myy harmaat roinat] (*Deliana*)
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen

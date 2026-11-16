@@ -1,5 +1,6 @@
 from r3base import *
 import prof as PF
+import sys
 OUT='/home/claude/work/out6'
 GROUP='Oma reitti 1-60 (Horde)'
 BOUNDS=[26,30,34,38,42,46,50,54,57,99]
@@ -196,11 +197,66 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if a==b: return None
         walk=dd(P0,P1)/WS; alt=(dd(P0,FPK[a][2])+dd(FPK[b][2],P1))/WS+30+1.3*dd(FPK[a][2],FPK[b][2])/25.0
         return (a,b) if walk-alt>=FLY_MIN else None
+    def fly_cost(z0,p0,a,b,z1,p1):
+        """v3.0: lennon a->b kokonaisaika (kävely lentomestarille + lento + kävely kohteeseen), s; None jos ei laskettavissa"""
+        P0=W(z0,p0); P1=W(z1,p1)
+        if not P0 or not P1 or a not in FPK or b not in FPK: return None
+        dd=lambda A,B:math.hypot(A[1]-B[1],A[2]-B[2])
+        return (dd(P0,FPK[a][2])+dd(FPK[b][2],P1))/WS+30+1.3*dd(FPK[a][2],FPK[b][2])/25.0
     def add_fly(a,b,ez):
         nonlocal pos
         add(dict(t='fly',area=FPK[a][0],pos=FPK[a][1],npc=a,to=FP[b],toarea=FPK[b][0]))
         if FPK[b][0]!=ez: add(dict(t='zone',area=ez,xc=False,fpknown=False)); pos=None
         else: pos=FPK[b][1]
+    def feather_travel(ez,p0,p1):
+        """v3.0 (Alliance): Feathermoon Stronghold on saarella (Sardor Isle). Saarelle tai saarelta joko laiva (Forgotten Coastin
+        laituri 43,43) tai lento Feathermooniin / Feathermoonista, kumpi on nopeampi. Ennen reitti mallinsi matkan kävelynä meren yli."""
+        nonlocal pos
+        FM=_FPN.get('Feathermoon')
+        if FM not in FPK: return False
+        flush()   # odottava askel ennen siirtymää (muuten järjestys vaihtuu)
+        isl=FPK[FM][1]; to_isle=isle(ez,p1)
+        boat=(DY(ez,p0,FDOCK)/WS+150+DY(ez,isl,p1)/WS) if to_isle else (DY(ez,p0,isl)/WS+150+DY(ez,FDOCK,p1)/WS)
+        best=None
+        if FM in have:
+            ref=W(ez,p0) if to_isle else W(ez,p1)
+            K=[i for i in have if i in FPK and i!=FM and ref and FPK[i][2][0]==ref[0]]
+            if K:
+                o=min(K,key=lambda i:math.hypot(FPK[i][2][1]-ref[1],FPK[i][2][2]-ref[2]))
+                ab=(o,FM) if to_isle else (FM,o)
+                c=fly_cost(ez,p0,ab[0],ab[1],ez,p1)
+                if c is not None and c<boat: best=ab
+        if best: add_fly(best[0],best[1],ez); return True
+        if to_isle: add(dict(t='boat',area=ez,pos=FDOCK,text="Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)")); pos=isl
+        else: add(dict(t='note',text="Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)")); pos=FDOCK
+        return True
+    def teld_travel(ez,ep):
+        """v3.0 (Alliance): Teldrassil/Darnassus <-> muu Kalimdor. Rut'theranin lentopaikka haettu: lento Rut'theraniin ja portaali
+        Darnassukseen, tai portaali alas ja lento Rut'theranista kohdetta lähimpään haettuun lentopaikkaan. Ennen tätä reitti
+        mallinsi meren yli kävelyksi, ja pelaaja ohjattiin laivalle tai kävelemään, vaikka lento oli haettu. Palauttaa True, jos käsitelty."""
+        nonlocal pos
+        lp=S.get('lp')
+        if ALLY and cur and RUT in FPK and RUT not in have and ez in TELD and cur not in TELD and cont(cur)==cont(ez):
+            # ensimmäinen matka: laiva Auberdinesta, Rut'theranin lentopaikka haetaan laiturilla (seuraavat matkat lentäen)
+            add(dict(t='zone',area=FPK[RUT][0],xc=False,fpknown=False,frm=cur))
+            have.add(RUT); add(dict(t='fp',area=FPK[RUT][0],pos=FPK[RUT][1],npc=RUT,name=FP[RUT])); pos=FPK[RUT][1]
+            if ez!=FPK[RUT][0]: add(dict(t='zone',area=ez,xc=False,fpknown=False,frm=FPK[RUT][0],portal=True)); pos=None
+            return True
+        if not (ALLY and cur and lp and RUT in have and RUT in FPK and (ez in TELD)!=(cur in TELD) and cont(cur)==cont(ez)): return False
+        def near(P):
+            K=[i for i in have if i in FPK and FPK[i][2][0]==P[0]]
+            return min(K,key=lambda i:math.hypot(FPK[i][2][1]-P[1],FPK[i][2][2]-P[2])) if K else None
+        if ez in TELD:
+            P0=W(lp[0],lp[1]); a=near(P0) if P0 else None
+            if not a or a==RUT: return False
+            add(dict(t='fly',area=FPK[a][0],pos=FPK[a][1],npc=a,to=FP[RUT],toarea=FPK[RUT][0])); pos=FPK[RUT][1]
+            if ez!=FPK[RUT][0]: add(dict(t='zone',area=ez,xc=False,fpknown=False,frm=FPK[RUT][0],portal=True)); pos=None
+            return True
+        P1=W(ez,ep); b=near(P1) if P1 else None
+        if not b or b==RUT: return False
+        if cur!=FPK[RUT][0]: add(dict(t='zone',area=FPK[RUT][0],xc=False,fpknown=False,frm=cur,portal=True))
+        add_fly(RUT,b,ez)
+        return True
     def travel(ez,ep):
         nonlocal cur,pos
         b=S['bind']
@@ -208,12 +264,28 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if b and b[0]==ez and S['cnt']-S['hs']>=25 and D(b[1],ep)<45:
             add(dict(t='hs',name=b[3])); S['hs']=S['cnt']; pos=b[1]
         else:
+            if teld_travel(ez,ep): cur=ez; S['arrived']=True; return
             sa=cur; src=[f for f in fms_in(cur) if f[0] in have] if cur else []
             if cur and not src and NEAR.get(cur): sa=NEAR[cur]; src=[f for f in fms_in(sa) if f[0] in have]
             da=ez; dst=[f for f in fms_in(ez) if f[0] in have]
             if not dst and NEAR.get(ez) and NEAR[ez]!=cur: da=NEAR[ez]; dst=[f for f in fms_in(da) if f[0] in have]
             lp=S.get('lp'); alt=fly_alt(lp[0],lp[1],ez,ep) if lp else None
-            if src and dst and cont(sa)==cont(da) and src[0][0]!=dst[0][0] and sa!=da:
+            ok_ex=src and dst and cont(sa)==cont(da) and src[0][0]!=dst[0][0] and sa!=da
+            if ok_ex and alt and lp:
+                # v3.0: alueiden lentopaikkojen välinen lento vain, jos se ei ole selvästi huonompi kuin lähimpien haettujen välinen
+                # (esim. Razorfen Kraul: Ratchet -> kävely vs. Thalanaar vieressä)
+                a=min(src,key=lambda f:D(f[2],pos) if (pos and sa==cur) else 0); bb=min(dst,key=lambda f:D(f[2],ep) if da==ez else 0)
+                ce=fly_cost(lp[0],lp[1],a[0],bb[0],ez,ep); ca=fly_cost(lp[0],lp[1],alt[0],alt[1],ez,ep)
+                if ce is not None and ca is not None and ca<ce-30: ok_ex=False
+            walkd=False
+            if ok_ex and lp:
+                # v3.0: suora kävely, jos se on yli 30 s nopeampi kuin alueiden lentopaikkojen välinen lento (esim. Thalanaarista
+                # Razorfen Krauliin 950 jaardia; ennen lento Ratchetiin ja 4100 jaardia takaisin)
+                a=min(src,key=lambda f:D(f[2],pos) if (pos and sa==cur) else 0); bb=min(dst,key=lambda f:D(f[2],ep) if da==ez else 0)
+                ce=fly_cost(lp[0],lp[1],a[0],bb[0],ez,ep); P0=W(lp[0],lp[1]); P1=W(ez,ep)
+                if ce is not None and P0 and P1 and P0[0]==P1[0] and not isle(lp[0],lp[1]) and frozenset((lp[0],ez)) in WALK_ADJ \
+                   and WALK_F*math.hypot(P0[1]-P1[1],P0[2]-P1[2])/WS<ce-30: ok_ex=False; walkd=True
+            if ok_ex:
                 a=min(src,key=lambda f:D(f[2],pos) if (pos and sa==cur) else 0); bb=min(dst,key=lambda f:D(f[2],ep) if da==ez else 0)
                 add(dict(t='fly',area=sa,pos=a[2],npc=a[0],to=bb[1],toarea=da)); pos=bb[2]
                 if da!=ez: add(dict(t='zone',area=ez,xc=False,fpknown=False)); pos=None
@@ -231,7 +303,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 if arr:
                     add(dict(t='zone',area=FPK[arr[0]][0],xc=True,fpknown=True)); add_fly(arr[0],arr[1],ez)
                 else:
-                    add(dict(t='zone',area=ez,xc=xc,fpknown=bool(dst))); pos=None
+                    add(dict(t='zone',area=ez,xc=xc,fpknown=bool(dst),frm=cur,walk=walkd)); pos=None
         cur=ez; S['arrived']=True
     for idx,st in enumerate(simsteps):
         t=st['type']
@@ -291,8 +363,12 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
             # v2.0: hearthstone takaisin sidontapaikkaan, kun matka on pitkä (ennen: yli 35 % alueen leveydestä ja kohde 10 %:n päässä)
             if b and b[0]==ez and pos and DY(ez,pos,ep)>700 and DY(ez,b[1],ep)<200 and S['cnt']-S['hs']>=25:
                 flush(); add(dict(t='hs',name=b[3])); S['hs']=S['cnt']; pos=b[1]
-            elif pos and not indung and DY(ez,pos,ep)>1500 and (alt:=fly_alt(ez,pos,ez,ep)):
+            elif pos and ALLY and isle(ez,pos)!=isle(ez,ep) and feather_travel(ez,pos,ep):
+                pass   # v3.0: Feathermoon (saari)
+            elif pos and DY(ez,pos,ep)>1500 and (alt:=fly_alt(ez,pos,ez,ep)):
                 # v2.1: saman alueen sisällä lento haettujen lentopaikkojen välillä (ennen aina kävely)
+                # v3.0: myös matka saman alueen dungeonin sisäänkäynnille (ennen ehto 'not indung' esti, esim. Ratchet -> Razorfen Kraul);
+                # dungeonin sisällä kaikki askeleet ovat sisäänkäynnin kohdalla, joten etäisyys on 0 eikä lentoa synny
                 flush(); add_fly(alt[0],alt[1],ez)
             elif pos and not indung and not S['block'] and t in('accept','turnin') and level<=DS_MAXL and SPIRIT.get(ez):
                 # v2.0: deathskip (käyttäjän päätös 15.11.2026): kuole ja herää lähimmällä hautausmaalla, jos se on kohteen vieressä
@@ -572,7 +648,34 @@ def trav_text(st):
     if st.get('xc') and ALLY: tx="Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     elif not ALLY and ZKEY.get(st['area']) in TRAVEL_SAME: tx=TRAVEL_SAME[ZKEY.get(st['area'])]   # v2.1: samalla mantereella ei zeppeliiniä
+    elif st.get('walk'):
+        tx='Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)'   # v3.0
+    elif ALLY and st.get('portal'):
+        tx="Rut'theran Villagen portaalista Darnassukseen" if st['area']==Z['DARN'] else "Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)"   # v3.0
+    elif ALLY and st.get('frm') in TELD and st['area'] not in TELD and cont(st['area'])==cont(st['frm']):
+        tx="Rut'theran Villagen laiturilta laiva Auberdineen (Darkshore)"+('. '+tx if st['area']!=Z['DARKSHORE'] else '. Auberdine on länsirannikolla')   # v3.0
+    elif ALLY and st['area'] in TELD and st.get('frm') and st['frm'] not in TELD and cont(st['area'])==cont(st['frm']):
+        tx="Auberdinen laiturilta laiva Rut'theran Villageen"+(' ja portaalista Darnassukseen' if st['area']==Z['DARN'] else ' (Teldrassil)')   # v3.0
     return zn,tx
+TELD={Z['TELDRASSIL'],Z['DARN']} if ALLY else set()   # v3.0: Teldrassil ja Darnassus (laiva Rut'theran - Auberdine)
+RUT=_FPN.get("Rut'theran Village") if ALLY else None   # v3.0: Rut'theranin lentomestari
+# v3.0: suora kävely alueelta toiselle vain näiden kävelykelpoisten rajojen yli (suora viiva ei tunne vuoria ja järviä;
+# esim. Western Plaguelands - Arathi, Desolace - Mulgore ja Badlands - Burning Steppes eivät ole suoraan kuljettavissa), matka x WALK_F
+WALK_F=1.3
+WALK_ADJ={frozenset((Z[a],Z[b])) for a,b in [
+    ('DUROTAR','BARRENS'),('BARRENS','ASHENVALE'),('BARRENS','STONETALON'),('BARRENS','MULGORE'),('BARRENS','DUSTWALLOW'),('BARRENS','NEEDLES'),
+    ('ASHENVALE','DARKSHORE'),('ASHENVALE','STONETALON'),('ASHENVALE','AZSHARA'),('ASHENVALE','FELWOOD'),('STONETALON','DESOLACE'),
+    ('DESOLACE','FERALAS'),('FERALAS','NEEDLES'),('FERALAS','BARRENS'),   # Feralas - Barrens: Thousand Needlesin ja Great Liftin kautta (Thalanaar - Razorfen Kraul)
+   ('NEEDLES','TANARIS'),('TANARIS','UNGORO'),('UNGORO','SILITHUS'),
+    ('FELWOOD','WINTER'),('FELWOOD','MOONGLADE'),('WINTER','MOONGLADE'),
+    ('TIRISFAL','SILVERPINE'),('TIRISFAL','WPL'),('SILVERPINE','HILLSBRAD'),('HILLSBRAD','ALTERAC'),('HILLSBRAD','ARATHI'),('HILLSBRAD','HINTER'),
+    ('WPL','EPL'),('ARATHI','WETLANDS'),('WETLANDS','LOCH'),('DUNMOROGH','LOCH'),('LOCH','BADLANDS'),('SEARING','STEPPES'),('STEPPES','REDRIDGE'),
+    ('REDRIDGE','ELWYNN'),('REDRIDGE','DUSKWOOD'),('ELWYNN','WESTFALL'),('ELWYNN','DUSKWOOD'),('WESTFALL','DUSKWOOD'),('DUSKWOOD','STV'),
+    ('DUSKWOOD','SWAMP'),('SWAMP','BLASTED')] if a in Z and b in Z}
+FDOCK=(43.0,43.0)   # v3.0: Forgotten Coastin laituri (laiva Feathermooniin), Feralas
+def isle(z,p):
+    """v3.0: Sardor Isle (Feathermoon Stronghold), Feralasin länsirannikon saari: reitin saaripisteet x 26-33, mantere x >= 38"""
+    return bool(ALLY and p and z==Z['FERALAS'] and p[0]<36 and 30<p[1]<80)
 TRAVEL_SAME=dict(STV="Duskwoodista etelään Stranglethorn Valeen (Grom'gol Base Camp on länsirannikolla), tai lennä Grom'goliin / Booty Bayhin, jos lentopaikka on haettu",
     HILLSBRAD="Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa",
     UC="Undercity: Tirisfal Gladesin kautta, tai lennä Undercityyn Tarren Millistä / Hammerfallista")
@@ -666,6 +769,8 @@ def rxp_steps(c):
             L.append('    .target %s'%nm)
         elif t=='note':
             L+=['step','    +'+st['text']]
+        elif t=='boat':
+            L+=['step',goto(st['area'],st['pos']),'    >>'+st['text']]
     return [x for x in L if x]
 # ---------------- Guidelime ----------------
 def gc(t): return clean(t).replace('[','(').replace(']',')').replace('*','').replace(chr(92),'/')
@@ -731,4 +836,5 @@ def gl_steps(c):
             else:
                 L.append('[O][A %s]%sAmmattitehtävä: palauta *%s* [QT%d %s] (jos tavoite valmis)'%(ap,G(st['area'],st['pos']),nm,st['q'],qn))
         elif t=='note': L.append('[OC]'+gc(st['text']))
+        elif t=='boat': L.append('%s%s'%(G(st['area'],st['pos']),gc(st['text'])))
     return L

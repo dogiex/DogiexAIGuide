@@ -2,8 +2,10 @@
 
 Levutusopas World of Warcraft: Foreveriin RestedXP- ja Guidelime-addoneille.
 
-- **Horde**: valmis, kaikki rodut (Orc, Troll, Undead, Tauren, Skyborne) ja kaikki yhdeksän luokkaa
-- **Alliance**: kehitteillä, testiversio kansiossa `pilot/` (ei vielä julkaisuissa)
+- **Horde**: kaikki rodut (Orc, Troll, Undead, Tauren, Skyborne) ja kaikki yhdeksän luokkaa
+- **Alliance** (v3.0:sta alkaen): kaikki rodut (Human, Dwarf, Night Elf, Gnome, Skyborne) ja kaikki yhdeksän luokkaa
+
+Molempien factionien oppaat ovat samoissa addoneissa; peli näyttää vain oman factionisi ja luokkasi oppaat.
 
 Kaksi versiota:
 
@@ -30,7 +32,7 @@ Opas on lisäosa: tarvitset ensin itse addonin. Oppaan versio on testattu (latau
   - Lataa `QuestieDB-Forever.zip`: https://github.com/Questie/QuestieDB/releases/latest
 
 ## Asennus
-Lataa uusin julkaisu (Releases) ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`. Tarkemmat ohjeet ovat kunkin kansion `LUEMINUT.txt`-tiedostossa.
+Lataa uusin julkaisu (Releases) ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`. Tarkemmat ohjeet ovat kunkin kansion `LUEMINUT.txt`-tiedostossa. Jos käytit Alliance-testiversiota, poista kansiot `RXPGuides_DogiexAIGuide_Alliance` ja `Guidelime_DogiexAIGuide_Alliance`.
 
 ## Sisältö
 - Tasot 1-60, dungeonit ja kaikki niiden questit pääreitillä, luokan class-questit, trainer-käynnit, lennot, hearthstone, deathskip (tasot 1-15), myynti, korjaus ja ostokset.

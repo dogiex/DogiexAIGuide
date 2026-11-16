@@ -1,4 +1,4 @@
-Dogiex's AI Guide: 1-60 (Forever) - Horde, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v2.3)
+Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v3.0)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanha kansio RXPGuides_DogiexAIGuide ennen uuden
@@ -6,15 +6,17 @@ ASENNUS
    RestedXP Guides: https://www.curseforge.com/wow/addons/restedxp-guide (Forever-versio, ilmainen)
 2. Kopioi kansio "RXPGuides_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
 3. Käynnistä peli. Oikea hiirennappi RestedXP-ikkunaan -> ryhmä "Dogiex's AI Guide: 1-60 (Forever)" (v2.3:sta alkaen; aiemmin "...: Horde 1-60 (Forever)") ->
-   aloitusalueesi luku, esim. "1-6 Durotar (Warlock)", "1-6 Tirisfal (Warlock)", "1-6 Mulgore (Druid)" tai
+   aloitusalueesi luku, esim. "1-6 Durotar (Warlock)", "1-6 Elwynn Forest (Warrior)", "1-6 Teldrassil (Druid)" tai
    "1-... Zephras Isle (Druid)". Uudella hahmolla oikea aloitus valitaan yleensä itsestään. Luvut vaihtuvat
-   automaattisesti 60:een asti. Näet vain oman luokkasi luvut.
+   automaattisesti 60:een asti. Näet vain oman factionisi ja luokkasi luvut.
    Jos sinulla on jo hahmo kesken, valitse tasoasi vastaava luku (esim. "30-34 ... (Warlock)").
    v2.3 vaihtoi ryhmän nimen (ei enää "Horde"), joten RestedXP ei muista valittua lukua: valitse luku uudelleen kerran.
+   Alliance-testiversion (pilot, 0.x) käyttäjät: poista kansio RXPGuides_DogiexAIGuide_Alliance ja valitse luku uudelleen.
 
 SISÄLTÖ
-- Kokonaan oma reitti 1-60 (sama reitti kuin Guidelime-oppaassa): aloitus jokaiselle aloitusalueelle (Durotar,
-  Tirisfal, Mulgore, Zephras Isle) ja sen jälkeen luokan reitti 12-60. Kaikki tekstit suomeksi.
+- Kokonaan oma reitti 1-60 (sama reitti kuin Guidelime-oppaassa): aloitus jokaiselle aloitusalueelle (Horde:
+  Durotar, Tirisfal, Mulgore, Zephras Isle; Alliance: Northshire, Coldridge Valley, Shadowglen, Zephras Isle) ja
+  sen jälkeen luokan reitti 12-60. Kaikki tekstit suomeksi.
 - Reitti on optimoitu ylimääräisen juoksemisen välttämiseksi: tavoitteet tehdään reitin varrella, trainerilla
   käydään kun reitti kulkee ohi, hearthstone ja deathskip vievät takaisin kylään, haetuilla lentopaikoilla
   lennetään aina kun se säästää aikaa (myös saman alueen kylien välillä), ja questit, joiden juoksu

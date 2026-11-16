@@ -288,7 +288,7 @@ def oppaat(a_dir, b_dir, target, faction='Horde'):
     for cls, races in rc.items():
         if only and cls not in only.split(','): continue
         for race in races.split(','):
-            if not glob.glob(os.path.join(b_dir, 'Guide_%s.lua' % cls)): continue
+            if not glob.glob(os.path.join(b_dir, ('Guide_Alliance_%s.lua' if faction == 'Alliance' else 'Guide_%s.lua') % cls)) and not glob.glob(os.path.join(b_dir, 'Guide_%s.lua' % cls)): continue   # v3.0: Alliance-tiedostot Guide_Alliance_*.lua (vanha pilotti Guide_*.lua)
             res = []
             for d in (a_dir, b_dir):
                 src, tok, nch = rxp_guide_src(d, cls, race, faction)

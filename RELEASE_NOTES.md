@@ -1,9 +1,36 @@
+Dogiex's AI Guide: 1-60 (Forever) v3.0
+
+Alliance julkaistu: opas kattaa nyt molemmat factionit, kaikki rodut ja kaikki yhdeksän luokkaa.
+- Alliance: Human, Dwarf, Night Elf, Gnome, Skyborne. Aloitukset Elwynn Forest (Northshire), Dun Morogh (Coldridge Valley), Teldrassil (Shadowglen) ja Zephras Isle.
+- Samat addonit ja sama ryhmä kuin Hordella ("Dogiex's AI Guide: 1-60 (Forever)"). Peli näyttää vain oman factionisi ja luokkasi oppaat.
+- Alliance-testiversio (pilot, 0.x) loppuu. Jos käytit sitä, poista kansiot `RXPGuides_DogiexAIGuide_Alliance` ja `Guidelime_DogiexAIGuide_Alliance` ja valitse luku uudelleen.
+
+Lentoreitit (molemmat factionit):
+- Teldrassil ja Darnassus (Alliance): ensimmäisellä kerralla laiva Auberdinesta ja Rut'theranin lentopaikka laiturilta, sen jälkeen lento Rut'theraniin ja portaali Darnassukseen, ja takaisin portaali alas ja lento Rut'theranista. Ennen opas ohjasi laivalle tai kävelemään, vaikka lento oli haettu.
+- Feathermoon Stronghold (Alliance): saarelle laiva Forgotten Coastin laiturilta tai lento, kumpi on nopeampi. Ennen reitti käveli meren yli.
+- Lennon valinta: jos lähimpien haettujen lentopaikkojen välinen lento on selvästi nopeampi kuin alueiden "omien" lentopaikkojen välinen, valitaan se (esim. Alliancella Stonetalon - Feralas -reitit, Hordella useita Kalimdorin ja itäisten kuningaskuntien siirtymiä).
+- Suora kävely, kun kohde on lähellä: ennen opas saattoi lentää naapurialueen kylään ja kävellä pitkän matkan takaisin (esim. Thalanaarista Razorfen Krauliin lento Ratchetiin ja noin 4100 jaardia kävelyä, nyt noin 950 jaardia suoraan).
+
+Simuloitu vaikutus (timesim.py, 18 s/tappo, tasolle 60): Horde keskimäärin 5658 -> 5557 min (-1,8 %, kaikki 28 rotu/luokka-yhdistelmää nopeampia), Alliance (verrattuna testiversioon 0.9) 5975 -> 5901 min (-1,2 %, kaikki 28 nopeampia). Haettujen lentopaikkojen ohi kävely (yli 2 min säästävät osuudet, kaikki yhdistelmät yhteensä): Horde 187 -> 120 min, Alliance 430 -> 193 min. Questit ennallaan kummallakin factionilla.
+
+Muuta:
+- Guidelime-tiedostot tarkistavat nyt myös factionin. Ennen Guidelime-oppaat tarkistivat vain luokan, ja Guidelimen rotuehto ([GA]) olisi näyttänyt Horden oppaat Alliance-Skybornelle (Skyborne on molemmilla factioneilla).
+- v2.3:n julkaisutiedote väitti, että Guidelimen edistyminen säilyy. Se oli väärin: Guidelime ei muista valittua opasta v2.3:n jälkeen. Valitse opas kerran uudelleen (/lime); tehdyt questit tunnistetaan itsestään. v3.0 ei muuta Horden ryhmä- tai lukunimiä, joten v2.3:sta päivittäessä valinta säilyy.
+
+Quest-data ennallaan: QuestieDB (Forever) c071853 (1.1.1). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v3.0.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v3.0.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v2.3
 
 Uusi nimi: "Dogiex's AI Guide: 1-60 (Forever)" (ennen "Dogiex's AI Guide: Horde 1-60 (Forever)"), koska opas on tulossa myös Alliancelle. Julkaistu osa on edelleen Horde (kaikki rodut ja luokat); Alliance on kehitteillä.
 
 - RestedXP: ryhmän nimi pelissä vaihtui. RestedXP ei siksi muista valittua lukua: valitse kerran oikea luku ryhmästä "Dogiex's AI Guide: 1-60 (Forever)" (oikea hiirennappi RestedXP-ikkunaan). Lukujen nimet ovat ennallaan.
-- Guidelime: vain addonin nimi muuttui, edistyminen säilyy.
+- Guidelime: vain addonin nimi muuttui, edistyminen säilyy. (Korjaus v3.0:ssa: tämä oli väärin. Guidelimen opas tunnistetaan ryhmän ja nimen yhdistelmästä, joten Guidelime ei muista valittua opasta v2.3:n jälkeen. Valitse opas kerran uudelleen; tehdyt questit tunnistetaan itsestään.)
 - Reitti, questit ja quest-data ennallaan (QuestieDB c071853).
 
 Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.

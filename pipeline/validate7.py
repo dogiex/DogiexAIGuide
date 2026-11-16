@@ -11,7 +11,9 @@ KAL={1411,1412,1413,1438,1439,1440,1441,1442,1443,1444,1445,1446,1447,1448,1449,
 zones=set(RXPMAP.values())|{'Zephras Isle'}
 import os
 _fd=open(R+'/RXPGuides/DB/forever/flightData.lua').read().split('["Alliance"]')
-fpn=re.findall(r'\["name"\] = "([^"]+)"', _fd[1] if os.environ.get('WOW_FACTION')=='Alliance' else _fd[0])   # Alliance-testiaddonille Alliancen lentopaikat
+FPN={'Horde':re.findall(r'\["name"\] = "([^"]+)"',_fd[0]),'Alliance':re.findall(r'\["name"\] = "([^"]+)"',_fd[1])}
+# v3.0: molemmat factionit samassa addonissa; lentopaikat valitaan tiedostokohtaisesti (Guide_Alliance_*.lua = Alliance)
+def fac_of(f): return 'Alliance' if os.path.basename(f).startswith('Guide_Alliance_') else os.environ.get('WOW_FACTION','Horde')
 # valinnaiset argumentit: GUIDELIME-KANSIO [RXP-KANSIO] (oletus out7). v2.0: RestedXP-opas on kokonaan oma, ei ilmaisen pohjan tiedostoa
 RXPDIR=sys.argv[2] if len(sys.argv)>2 else 'out7/RXPGuides_DogiexAIGuide'
 FREEF=sys.argv[3] if len(sys.argv)>3 else None
@@ -21,7 +23,7 @@ allnames|=set(x.strip() for x in re.findall(r'^#name (.*)$',free,re.M))
 for m in re.findall(r'^#next (.*)$',free,re.M): nexts.append(('free',m))
 tot=0
 for f in sorted(glob.glob(RXPDIR+'/Guide_*.lua')):
-    t=open(f,encoding='utf-8').read()
+    t=open(f,encoding='utf-8').read(); fpn=FPN[fac_of(f)]
     for g in re.findall(r'RegisterGuide\(\[\[\n(.*?)\n\]\]\)',t,re.S):
         allnames.add(re.search(r'#name (.*)',g).group(1).strip())
         for m in re.findall(r'^#next (.*)$',g,re.M): nexts.append((f,m))
@@ -66,7 +68,7 @@ print('RXP steps',tot,'chapters',len(allnames),'errors',len(errs)); print(errs[:
 # Guidelime
 codes=['QA','QC','QT','XP','GA','NX','OC','LE','O','G','N','D','A','P','T','F','H','S','V','R']
 e2=[]; gn=0; ln=0
-GLDIR=sys.argv[1] if len(sys.argv)>1 else 'out7/Guidelime_DogiexAIGuide'   # esim. pilot/Guidelime_DogiexAIGuide_Alliance
+GLDIR=sys.argv[1] if len(sys.argv)>1 else 'out7/Guidelime_DogiexAIGuide'   # v3.0: Horde- ja Alliance-tiedostot samassa kansiossa
 for f in sorted(glob.glob(GLDIR+'/Guide_*.lua')):
     t=open(f,encoding='utf-8').read(); gg=re.findall(r'registerGuide\(\[\[\n(.*?)\n\]\], "([^"]+)"\)',t,re.S)
     names=[re.search(r'^\[N(.*)\]$',g,re.M).group(1) for g,_ in gg]

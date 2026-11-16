@@ -4427,9 +4427,9 @@ step
     .turnin 863 >>Palauta: The Escape
     .target Sputtervalve
 step
-    .goto 1413/1,-3769.19,-898.12
+    .goto 1413/1,-2595.75,-437.35
     .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Bragok
+    .target Devrak
     .zoneskip Thunder Bluff
 step
     .goto 1456/1,-80.78,-1457.95
@@ -6027,9 +6027,11 @@ step
     .target Je'neu Sancrea
 step
     .goto 1440/1,994.16,3373.73
-    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
+    .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Andruk
-    .zoneskip Stonetalon Mountains
+    .zoneskip Thunder Bluff
+step
+    .zone Stonetalon Mountains >>Matkusta: Stonetalon Mountains. Lennä Sun Rock Retreatiin (Stonetalon Mountains)
 step
     .goto 1442/1,-392.25,-271.20
     >>Puhu: |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r
@@ -6114,10 +6116,7 @@ RXPGuides.RegisterGuide([[
 #next 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Warrior)
 
 step
-    .goto 1442/1,1042.47,968.13
-    .fly Crossroads >>Lennä: Crossroads
-    .target Tharm
-    .zoneskip The Barrens
+    .zone The Barrens >>Matkusta: The Barrens. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1413/1,-944.02,-265.74
     >>Puhu: |cRXP_FRIENDLY_Makaba Flathoof|r
@@ -8994,19 +8993,13 @@ step
     .accept 1154 >>Ota: Test of Lore
     .target Braug Dimspirit
 step
-    .goto 1442/1,1042.47,968.13
-    .fly Splintertree Post >>Lennä: Splintertree Post
-    .target Tharm
-    .zoneskip Ashenvale
+    .zone Ashenvale >>Matkusta: Ashenvale. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1440/1,-2659.60,1813.17
     >>Kerää |cRXP_LOOT_Legacy of the Aspects|r (|cRXP_PICK_The Legacy of the Aspects|r)
     .complete 1154,1
 step
-    .goto 1440/1,-2520.05,2305.55
-    .fly Sun Rock Retreat >>Lennä: Sun Rock Retreat
-    .target Vhulgra
-    .zoneskip Stonetalon Mountains
+    .zone Stonetalon Mountains >>Matkusta: Stonetalon Mountains. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1442/1,-602.23,1428.56
     >>Puhu: |cRXP_FRIENDLY_Braug Dimspirit|r
@@ -9445,18 +9438,20 @@ step
     .target Torm Ragetotem
 step
     .goto 1456/1,26.10,-1196.73
-    .fly Camp Taurajo >>Lennä: Camp Taurajo
+    .fly Freewind Post >>Lennä: Freewind Post
     .target Tal
-    .zoneskip The Barrens
+    .zoneskip Thousand Needles
+step
+    .zone The Barrens >>Matkusta: The Barrens. Lennä Camp Taurajoon tai Crossroadsiin (The Barrens)
 step
     .goto 1413/1,-2342.42,-4799.18
     >>Puhu: |cRXP_FRIENDLY_Myriam Moonsinger|r
     .accept 6626 >>Ota: A Host of Evil
     .target Myriam Moonsinger
 step
-    .goto 1413/1,-1881.35,-2383.82
+    .goto 1441/1,-2419.49,-5407.23
     .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Omusa Thunderhorn
+    .target Nyse
     .zoneskip Thunder Bluff
 step
     .zone Mulgore >>Matkusta: Mulgore. Thunder Bluffista alas Mulgoreen
@@ -9467,9 +9462,11 @@ step
     .target Sutara Plainstalker
 step
     .goto 1456/1,26.10,-1196.73
-    .fly Camp Taurajo >>Lennä: Camp Taurajo
+    .fly Freewind Post >>Lennä: Freewind Post
     .target Tal
-    .zoneskip The Barrens
+    .zoneskip Thousand Needles
+step
+    .zone The Barrens >>Matkusta: The Barrens. Lennä Camp Taurajoon tai Crossroadsiin (The Barrens)
 step
     .goto 1413/1,-2342.42,-4731.62
     >>Dungeonin sisällä - Puhu: |cRXP_FRIENDLY_Belnistrasz|r
@@ -9510,9 +9507,9 @@ step
     >>Protect Belnistrasz while he performs the ritual to shut down the idol
     .complete 3525,1
 step
-    .goto 1413/1,-1881.35,-2383.82
+    .goto 1441/1,-2419.49,-5407.23
     .fly Thunder Bluff >>Lennä: Thunder Bluff
-    .target Omusa Thunderhorn
+    .target Nyse
     .zoneskip Thunder Bluff
 step
     .zone Mulgore >>Matkusta: Mulgore. Thunder Bluffista alas Mulgoreen
@@ -11998,10 +11995,7 @@ step
 step
     +|cRXP_WARN_Dungeon: Zul'Farrak|r (suositus taso 46+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Tanaris) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1446/1,-3779.15,-7045.24
-    .fly Freewind Post >>Lennä: Freewind Post
-    .target Bulkrek Ragefist
-    .zoneskip Thousand Needles
+    .zone Thousand Needles >>Matkusta: Thousand Needles. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1441/1,-3869.73,-6228.27
     >>Puhu: |cRXP_FRIENDLY_Wizzle Brassbolts|r
@@ -12054,20 +12048,14 @@ step
     .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
     .target Christoph Jeffcoat
 step
-    .goto 1424/0,-857.81,2.77
-    .fly Revantusk Village >>Lennä: Revantusk Village
-    .target Zarise
-    .zoneskip The Hinterlands
+    .zone The Hinterlands >>Matkusta: The Hinterlands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1425/0,-2857.05,-350.53
     >>Kerää |cRXP_LOOT_Undamaged Venom Sac|r (|cRXP_ENEMY_Witherbark Broodguard|r)
     .complete 2934,1
     .mob Witherbark Broodguard
 step
-    .goto 1425/0,-4720.45,-631.84
-    .fly Tarren Mill >>Lennä: Tarren Mill
-    .target Gorkas
-    .zoneskip Hillsbrad Foothills
+    .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa
 step
     .goto 1424/0,-898.13,-7.47
     >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
@@ -12091,9 +12079,9 @@ step
     .complete 2936,1
 step
     .goto 1446/1,-3779.15,-7045.24
-    .fly Orgrimmar >>Lennä: Orgrimmar
+    .fly Ratchet >>Lennä: Ratchet
     .target Bulkrek Ragefist
-    .zoneskip Orgrimmar
+    .zoneskip The Barrens
 step
     .zone Durotar >>Matkusta: Durotar. Orgrimmarin portista ulos Durotariin
 step
@@ -12102,9 +12090,9 @@ step
     .turnin 2936 >>Palauta: The Spider God
     .target Master Gadrin
 step
-    .goto 1454/1,-4313.46,1676.24
+    .goto 1413/1,-3769.19,-898.12
     .fly Gadgetzan >>Lennä: Gadgetzan
-    .target Doras
+    .target Bragok
     .zoneskip Tanaris
 step
     .goto 1446/1,-2889.05,-6799.60
@@ -12151,10 +12139,7 @@ step
     .turnin 3527 >>Palauta: The Prophecy of Mosh'aru
     .target Yeh'kinya
 step
-    .goto 1446/1,-3779.15,-7045.24
-    .fly Freewind Post >>Lennä: Freewind Post
-    .target Bulkrek Ragefist
-    .zoneskip Thousand Needles
+    .zone Thousand Needles >>Matkusta: Thousand Needles. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1441/1,-3869.73,-6228.27
     >>Puhu: |cRXP_FRIENDLY_Wizzle Brassbolts|r
@@ -12484,9 +12469,11 @@ step
     .target Gruul Darkblade
 step
     .goto 1447/1,-4390.64,3663.89
-    .fly Shadowprey Village >>Lennä: Shadowprey Village
+    .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Kroum
-    .zoneskip Desolace
+    .zoneskip Thunder Bluff
+step
+    .zone Desolace >>Matkusta: Desolace. Sun Rock Retreatista etelään Charred Valen läpi Desolaceen. Shadowprey Village on lounaisrannikolla
 step
     .goto 1443/1,1436.92,-735.09
     >>Puhu: |cRXP_FRIENDLY_Willow|r
@@ -12701,9 +12688,11 @@ step
     .target Greshka
 step
     .goto 1435/0,-3279.65,-10459.28
-    .fly Revantusk Village >>Lennä: Revantusk Village
+    .fly Hammerfall >>Lennä: Hammerfall
     .target Breyk
-    .zoneskip The Hinterlands
+    .zoneskip Arathi Highlands
+step
+    .zone The Hinterlands >>Matkusta: The Hinterlands. Hillsbradin koillisnurkasta (Durnholde Keepin ohi) polkua Hinterlandsiin. Revantusk Village on itärannikolla
 step
     .goto 1425/0,-2876.30,-463.47
     >>Puhu: |cRXP_FRIENDLY_Atal'ai Exile|r
@@ -12712,9 +12701,9 @@ step
     .accept 1446 >>Ota: Jammal'an the Prophet
     .target Atal'ai Exile
 step
-    .goto 1425/0,-4720.45,-631.84
+    .goto 1417/0,-3495.39,-918.13
     .fly Stonard >>Lennä: Stonard
-    .target Gorkas
+    .target Urda
     .zoneskip Swamp of Sorrows
 step
     .goto 1435/0,-3321.62,-10458.82
@@ -12893,9 +12882,11 @@ step
     .target Fallen Hero of the Horde
 step
     .goto 1435/0,-3279.65,-10459.28
-    .fly Revantusk Village >>Lennä: Revantusk Village
+    .fly Hammerfall >>Lennä: Hammerfall
     .target Breyk
-    .zoneskip The Hinterlands
+    .zoneskip Arathi Highlands
+step
+    .zone The Hinterlands >>Matkusta: The Hinterlands. Hillsbradin koillisnurkasta (Durnholde Keepin ohi) polkua Hinterlandsiin. Revantusk Village on itärannikolla
 step
     .goto 1425/0,-2876.30,-463.47
     >>Puhu: |cRXP_FRIENDLY_Atal'ai Exile|r
@@ -13309,10 +13300,7 @@ step
     .accept 4507 >>Ota: Pawn Captures Queen
     .target Alchemist Pestlezugg
 step
-    .goto 1446/1,-3779.15,-7045.24
-    .fly Marshal's Refuge >>Lennä: Marshal's Refuge
-    .target Bulkrek Ragefist
-    .zoneskip Un'Goro Crater
+    .zone Un'Goro Crater >>Matkusta: Un'Goro Crater. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1449/1,-2115.87,-7841.33
     >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
@@ -13940,10 +13928,7 @@ step
     .accept 3802 >>Ota: Dark Iron Legacy
     .target Franclorn Forgewright
 step
-    .goto 1428/0,-2190.84,-7504.04
-    .fly Thorium Point >>Lennä: Thorium Point
-    .target Vahgruk
-    .zoneskip Searing Gorge
+    .zone Searing Gorge >>Matkusta: Searing Gorge. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1427/0,-1039.15,-7508.66
     >>Puhu: |cRXP_FRIENDLY_Lothos Riftwaker|r
@@ -15516,10 +15501,7 @@ step
     .accept 5382 >>Ota: Doctor Theolen Krastinov, the Butcher
     .target Eva Sarkhoff
 step
-    .goto 1458/0,266.39,1567.11
-    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
-    .target Michael Garrett
-    .zoneskip Eastern Plaguelands
+    .zone Eastern Plaguelands >>Matkusta: Eastern Plaguelands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1423/0,-5340.84,2261.20
     >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
@@ -15734,12 +15716,7 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Craftsman Wilhelm)
     .target Craftsman Wilhelm
 step
-    .goto 1423/0,-5290.51,2328.57
-    .fly Undercity >>Lennä: Undercity
-    .target Georgia
-    .zoneskip Undercity
-step
-    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Undercitystä itään Tirisfalin läpi Bulwarkiin ja Western Plaguelandsiin
+    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1422/0,-2580.43,1268.27
     >>|cRXP_WARN_Mene dungeoniin: Scholomance|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -15791,10 +15768,7 @@ step
     .accept 5462 >>Ota: The Dying, Ras Frostwhisper
     .target Magistrate Marduke
 step
-    .goto 1458/0,266.39,1567.11
-    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
-    .target Michael Garrett
-    .zoneskip Eastern Plaguelands
+    .zone Eastern Plaguelands >>Matkusta: Eastern Plaguelands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1423/0,-5349.45,2307.07
     >>Puhu: |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
@@ -15988,12 +15962,7 @@ step
     .accept 5846 >>Ota: Of Love and Family
     .target Tirion Fordring
 step
-    .goto 1423/0,-5290.51,2328.57
-    .fly Undercity >>Lennä: Undercity
-    .target Georgia
-    .zoneskip Undercity
-step
-    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Undercitystä itään Tirisfalin läpi Bulwarkiin ja Western Plaguelandsiin
+    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1422/0,-2412.73,1205.20
     >>Puhu: |cRXP_FRIENDLY_Artist Renfray|r

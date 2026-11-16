@@ -1,4 +1,4 @@
-Dogiex's AI Guide: 1-60 (Forever) - Horde, kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v2.3)
+Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v3.0)
 Varavaihtoehto, jos RestedXP ei toimi.
 
 ASENNUS
@@ -8,11 +8,12 @@ ASENNUS
    QuestieDB (erillinen, pakollinen Questielle): https://github.com/Questie/QuestieDB/releases/latest (QuestieDB-Forever.zip)
 2. Kopioi kansio "Guidelime_DogiexAIGuide" tänne: World of Warcraft\_forever_\Interface\AddOns\
 3. Käynnistä peli. /lime -> oppaat -> "Dogiex's AI Guide: 1-60 (Forever)" -> aloitusalueesi luku
-   (esim. "1-6 Durotar (Warlock)"). Näet vain oman luokkasi oppaat.
+   (esim. "1-6 Durotar (Warlock)" tai "1-6 Elwynn Forest (Warrior)"). Näet vain oman factionisi ja luokkasi oppaat.
+   Alliance-testiversion (pilot, 0.x) käyttäjät: poista kansio Guidelime_DogiexAIGuide_Alliance.
 
 SISÄLTÖ
-- Kokonaan oma reitti: aloitus jokaiselle aloitusalueelle (Durotar, Tirisfal, Mulgore, Zephras Isle)
-  ja sen jälkeen luokan oma reitti 12-60.
+- Kokonaan oma reitti: aloitus jokaiselle aloitusalueelle (Horde: Durotar, Tirisfal, Mulgore, Zephras Isle;
+  Alliance: Northshire, Coldridge Valley, Shadowglen, Zephras Isle) ja sen jälkeen luokan oma reitti 12-60.
 - Reitti on optimoitu ylimääräisen juoksemisen välttämiseksi (v2.0): tavoitteet reitin varrella, trainer kun
   reitti kulkee ohi, hearthstone ja deathskip takaisin kylään, lennot aina kun haettu lentopaikka säästää
   aikaa (myös alueen sisällä), ja tehottomat questit jätetään pois.

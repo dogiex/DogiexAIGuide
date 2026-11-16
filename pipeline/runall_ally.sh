@@ -1,5 +1,5 @@
 #!/bin/bash
-# Alliance-testiajo (Guidelime ja RestedXP, kokonaan oma reitti v2.0:sta alkaen): kaikki luokat ja aloitukset -> parts_alliance/, lokit logs_alliance/
+# Alliance (julkaistu v3.0:sta alkaen, Guidelime ja RestedXP, kokonaan oma reitti): kaikki luokat ja aloitukset -> parts_alliance/, lokit logs_alliance/. Kokoaminen: assemble7.py (yhdessä Horden kanssa)
 # Rotu/luokkayhdistelmät: käyttäjän vahvistus pelin hahmonluonnista 14.11.2026 (kaikki luokat)
 cd /home/claude/work7
 export WOW_FACTION=Alliance

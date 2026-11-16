@@ -2,10 +2,13 @@
 # Tulostaa muuttuneet questit, tasoa 60 alle jäävät sekä heikentyneen dungeon- (dq) ja class-ketjukattavuuden (chains).
 # --cov-init tallentaa vain kattavuuden vertailupohjaksi (kun state.json:ssa ei vielä ole sitä)
 import json,glob,re,os,sys
-st=json.load(open(sys.argv[1])); P='/home/claude/work7/parts'
+st=json.load(open(sys.argv[1]))
+# v3.0: Horde parts/ (avaimet LUOKKA_...) ja Alliance parts_alliance/ (avaimet A_LUOKKA_...)
+PS=[('/home/claude/work7/parts',''),('/home/claude/work7/parts_alliance','A_')]
 new={}; fin={}; miss={}; cov={}
-for f in sorted(glob.glob(P+'/*.json')):
-    d=json.load(open(f)); k=os.path.basename(f)[:-5]
+for P,pre in PS:
+  for f in sorted(glob.glob(P+'/*.json')):
+    d=json.load(open(f)); k=pre+os.path.basename(f)[:-5]
     new[k]=sorted(set(map(int,re.findall(r'(?:\.turnin |\[QT)(\d+)',json.dumps(d)))))
     if 'final' in d: fin[k]=d['final']
     if 'miss' in d: miss[k]=[m[0] for m in d['miss']]
