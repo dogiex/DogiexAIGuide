@@ -1,11 +1,11 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Guidelime-opas (pilotti).
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "HUNTER" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Hunter]
 [N1-6 Elwynn Forest (Hunter)]
 [NX6-10 Elwynn Forest (Hunter)]
@@ -32,10 +32,10 @@ Guidelime.registerGuide([[
 [G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT21 Skirmish at Echo Ridge]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 51.2,40.8 Elwynn Forest][T Hunter-trainer (taso 6)] (*Tordrin Sternblade*): Hunter's Mark
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Hunter]
 [N6-10 Elwynn Forest (Hunter)]
 [NX10-12 Elwynn Forest (Hunter)]
@@ -121,10 +121,10 @@ Guidelime.registerGuide([[
 [G 44.2,77.0 Elwynn Forest]Tapa *Young Forest Bear* [QC94864,1 Taming the Beast]
 [G 41.1,66.2 Elwynn Forest]Puhu: *Josephine Carson* [QT94864 Taming the Beast] [QA94793 Training the Beast]
 [G 41.8,66.4 Elwynn Forest]Puhu: *Isaac Chan* [QT94793 Training the Beast]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Hunter]
 [N10-12 Elwynn Forest (Hunter)]
 [NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
@@ -170,10 +170,10 @@ Guidelime.registerGuide([[
 [G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QT83 Red Linen Goods] [QT59 Cloth and Leather Armor]
 [G 78.5,60.2 Elwynn Forest]Kerää *Torn Murloc Fin* (Murloc Forager, Murloc Lurker) [QC46,1 Bounty on Murlocs]
 [G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT46 Bounty on Murlocs]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Hunter]
 [N1-6 Dun Morogh (Hunter)]
 [NX6-10 Dun Morogh (Hunter)]
@@ -199,10 +199,10 @@ Guidelime.registerGuide([[
 [G 28.6,67.6 Dun Morogh]Puhu: *Felix Whindlebolt* [QT3361 A Refugee's Quandary]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 29.2,67.5 Dun Morogh][T Hunter-trainer (taso 6)] (*Thorgas Grimson*): Hunter's Mark
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Hunter]
 [N6-10 Dun Morogh (Hunter)]
 [NX10-14 Dun Morogh, Loch Modan (Hunter)]
@@ -289,10 +289,10 @@ Guidelime.registerGuide([[
 [O][A Mining50][G 50.0,50.3 Dun Morogh]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Yarr Hammerstone*) [LE Mining 150]
 [O][A Engineering50][G 50.2,50.4 Dun Morogh]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Bronk Guzzlegear*) [LE Engineering 150]
 [G 49.4,48.4 Dun Morogh]Puhu: *Pilot Bellowfiz* [QT320 Return to Bellowfiz]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Hunter]
 [N10-14 Dun Morogh, Loch Modan (Hunter)]
 [NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
@@ -368,10 +368,10 @@ Guidelime.registerGuide([[
 [G 30.2,72.7 Loch Modan]Tapa *Stonesplinter Trogg*; Kerää *Trogg Stone Tooth* (Stonesplinter Seer, Stonesplinter Trogg, Stonesplinter Scout) [QC224,1 In Defense of the King's Lands] [QC267,1 The Trogg Threat]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QT267 The Trogg Threat]
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Hunter]
 [N1-6 Teldrassil (Hunter)]
 [NX6-10 Teldrassil (Hunter)]
@@ -393,10 +393,10 @@ Guidelime.registerGuide([[
 [G 57.8,45.2 Teldrassil]Puhu: *Tarindrella* [QT459 The Woodland Protector] [QT97977 Nature's Call]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 58.7,40.5 Teldrassil][T Hunter-trainer (taso 6)] (*Ayanna Everstride*): Hunter's Mark
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Hunter]
 [N6-10 Teldrassil (Hunter)]
 [NX10-13 Teldrassil (Hunter)]
@@ -488,10 +488,10 @@ Guidelime.registerGuide([[
 [G 55.6,59.8 Teldrassil]Puhu: *Innkeeper Keldamyr* [QT2159 Dolanaar Delivery]
 [G 49.8,61.4 Teldrassil]Kerää *Gnarlpine Fang* (Gnarlpine Defender, Gnarlpine Shaman, Gnarlpine Warrior) [QC490,1 Bounty: Gnarlpine Furbolg]
 [G 40.5,50.7 Teldrassil]Puhu: *Sentinel Shayla Nightbreeze* [QT490 Bounty: Gnarlpine Furbolg]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Hunter]
 [N10-13 Teldrassil (Hunter)]
 [NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
@@ -551,10 +551,10 @@ Guidelime.registerGuide([[
 [G 56.1,61.7 Teldrassil]Puhu: *Corithras Moonrage* [QT7383 Crown of the Earth]
 [G 56.3,59.5 Teldrassil][V Myy harmaat roinat] ja [R korjaa varusteet] (*Shalomon*)
 [G 60.9,68.5 Teldrassil]Puhu: *Denalan* [QT930 The Glowing Fruit] [QT931 The Shimmering Frond]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, aloitus: Skyborne. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, aloitus: Skyborne. Quest-data: QuestieDB.]
 [GA Skyborne,Hunter]
 [N1-13 Zephras Isle (Hunter)]
 [NX12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
@@ -667,10 +667,10 @@ Guidelime.registerGuide([[
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92693 Standing Our Ground] [QA92703 Deliver the News]
 [G 62.1,73.3 Zephras Isle]Puhu: *Alvarion Windfield* [QT92703 Deliver the News]
 [G 62.2,72.6 Zephras Isle][V Myy harmaat roinat] (*Donaal Downbreeze*)
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N12-15 Dun Morogh, Teldrassil, Westfall (Hunter)]
 [NX15-18 Westfall, Loch Modan + HoT (Hunter)]
@@ -744,10 +744,10 @@ Guidelime.registerGuide([[
 [O][A Alchemy1][G 42.8,72.8 Westfall]Ammattitehtävä (Alchemy 1+): puhu *Odd Child* [QA92109 My First Alchemy Set] Tavoite: Bring 5 Empty Vials, 5 Silverleaf, and 5 Peacebloom to the young, aspiring alchemist inside the barn of Moonbrook in Westfall.
 [G 43.1,68.8 Westfall]Kerää *Suspicious Industrial Supplies* (Suspicious Crate) [QC92747,1 Moonbrook Espionage]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92747 Moonbrook Espionage]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N15-18 Westfall, Loch Modan + HoT (Hunter)]
 [NX18-22 Westfall, Redridge, Darkshore + VC (Hunter)]
@@ -839,10 +839,10 @@ Guidelime.registerGuide([[
 [G 57.7,53.9 Westfall][V Myy roinat] ja [R korjaa varusteet] (*William MacGregor*)
 [G 52.9,53.7 Westfall][V Osta ammuksia (quiver täyteen), vettä (Melon Juice) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Heather*)
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT14 The People's Militia]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N18-22 Westfall, Redridge, Darkshore + VC (Hunter)]
 [NX22-26 Darkshore, Redridge, Wetlands + RoL (Hunter)]
@@ -1032,10 +1032,10 @@ Guidelime.registerGuide([[
 [G 44.2,36.3 Darkshore]Puhu: *Asterion* [QT957 Bashal'Aran]
 [G 37.0,44.1 Darkshore][V Osta ammuksia (quiver täyteen), vettä (Melon Juice) ja ruokaa itsellesi ja lemmikille] (*Innkeeper Shaussiy*)
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted] [QT98042 It's All Fun and Games Until...]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N22-26 Darkshore, Redridge, Wetlands + RoL (Hunter)]
 [NX26-31 Duskwood, Redridge, Wetlands (Hunter)]
@@ -1187,10 +1187,10 @@ Guidelime.registerGuide([[
 [G 24.2,43.3 Duskwood]Kerää *Rot Blossom* (Skeletal Horror, Skeletal Fiend) [QC156,1 Gather Rot Blossoms]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT156 Gather Rot Blossoms] [QA159 Juice Delivery]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT159 Juice Delivery]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N26-31 Duskwood, Redridge, Wetlands (Hunter)]
 [NX31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Hunter)]
@@ -1394,10 +1394,10 @@ Guidelime.registerGuide([[
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Hunter)]
 [NX34-40 Hillsbrad, Arathi, Ashenvale + RFK/Gnomer (Hunter)]
@@ -1550,10 +1550,10 @@ Guidelime.registerGuide([[
 [G 61.1,43.8 Alterac Mountains]Kerää *Alterac Signet Ring* (Syndicate Sentry, Syndicate Spy, Syndicate Assassin) [QC512,1 Noble Deaths]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N34-40 Hillsbrad, Arathi, Ashenvale + RFK/Gnomer (Hunter)]
 [NX40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Hunter)]
@@ -1868,10 +1868,10 @@ Guidelime.registerGuide([[
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT604 The Bloodsail Buccaneers]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QT617 Akiris by the Bundle] [QA623 Akiris by the Bundle]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Hunter)]
 [NX42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Hunter)]
@@ -1955,10 +1955,10 @@ Guidelime.registerGuide([[
 [G 67.8,42.5 Ironforge][V Myy harmaat roinat] (*Gearcutter Cogspinner*)
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Raleigh the Devout* [QT1053 In the Name of the Light]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Hunter)]
 [NX46-50 Tanaris, Feralas, Hinterlands + ZF (Hunter)]
@@ -2253,10 +2253,10 @@ Guidelime.registerGuide([[
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT10 The Scrimshank Redemption] [QA110 Insect Part Analysis]
 [G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT110 Insect Part Analysis] [QA113 Insect Part Analysis]
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT113 Insect Part Analysis]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N46-50 Tanaris, Feralas, Hinterlands + ZF (Hunter)]
 [NX50-54 Dustwallow, Azshara, Swamp + Mara/ST (Hunter)]
@@ -2457,10 +2457,10 @@ Guidelime.registerGuide([[
 [G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QT2770 Gahz'rilla]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Theramore]
 [G 46.1,57.1 Dustwallow Marsh]Puhu: *Tabetha* [QT2846 Tiara of the Deep]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N50-54 Dustwallow, Azshara, Swamp + Mara/ST (Hunter)]
 [NX54-57 Felwood, WPL, Searing Gorge + BRD (Hunter)]
@@ -2718,10 +2718,10 @@ Guidelime.registerGuide([[
 [G 51.4,81.5 Felwood]Puhu: *Eridan Bluewind* [QT4906 Further Corruption]
 [G 51.2,82.1 Felwood]Puhu: *Greta Mosshoof* [QT5157 Collection of the Corrupt Water]
 [G 40.3,58.9 Felwood]Kerää *Filled Tainted Ooze Jar* (Tainted Ooze) [QC4512,2 A Little Slime Goes a Long Way]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N54-57 Felwood, WPL, Searing Gorge + BRD (Hunter)]
 [NX57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)]
@@ -2897,10 +2897,10 @@ Guidelime.registerGuide([[
 [G 44.0,60.9 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,2 Set Them Ablaze!]
 [G 50.1,54.7 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,3 Set Them Ablaze!]
 [G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3463 Set Them Ablaze!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Skyborne,Hunter]
 [N57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)]
 [XP53 Tavoitetaso 53: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -3243,4 +3243,4 @@ Guidelime.registerGuide([[
 [G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8977 Return to Deliana]
 [G 43.4,52.1 Ironforge][V Myy harmaat roinat] (*Deliana*)
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 1-6 Dun Morogh, Durotar (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 6-10 Dun Morogh (Shaman)
 
@@ -189,7 +189,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 6-10 Dun Morogh (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 10-14 Dun Morogh, Loch Modan, Barrens (Shaman)
 
@@ -588,7 +588,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 10-14 Dun Morogh, Loch Modan, Barrens (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 12-15 Westfall (Shaman)
 
@@ -973,7 +973,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 12-15 Westfall (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Loch Modan + HoT (Shaman)
 
 step
@@ -1227,7 +1227,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 15-18 Westfall, Loch Modan + HoT (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Darkshore + VC (Shaman)
 
 step
@@ -1624,7 +1624,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 18-22 Westfall, Redridge, Darkshore + VC (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Loch Modan, Wetlands + RoL (Shaman)
 
 step
@@ -2591,7 +2591,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 22-26 Darkshore, Loch Modan, Wetlands + RoL (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Shaman)
 
 step
@@ -3538,7 +3538,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 26-31 Duskwood, Redridge, Wetlands (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)
 
 step
@@ -4709,7 +4709,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Hillsbrad, Arathi, Swamp + RFK/Gnomer (Shaman)
 
 step
@@ -5549,7 +5549,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 34-39 Hillsbrad, Arathi, Swamp + RFK/Gnomer (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Shaman)
 
 step
@@ -6973,7 +6973,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 STV, Swamp, Badlands + RFD/Ulda (Shaman)
 
 step
@@ -7876,7 +7876,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 42-46 STV, Swamp, Badlands + RFD/Ulda (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Feralas, Hinterlands, STV + ZF (Shaman)
 
 step
@@ -9274,7 +9274,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 46-50 Feralas, Hinterlands, STV + ZF (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Azshara, Blasted Lands, Tanaris + Mara/ST (Shaman)
 
 step
@@ -10129,7 +10129,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 50-54 Azshara, Blasted Lands, Tanaris + Mara/ST (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Felwood, WPL, Searing Gorge + BRD (Shaman)
 
 step
@@ -11207,7 +11207,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 54-57 Felwood, WPL, Searing Gorge + BRD (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Shaman)
 
 step
@@ -12438,7 +12438,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Shaman
 #name 57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Shaman)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla

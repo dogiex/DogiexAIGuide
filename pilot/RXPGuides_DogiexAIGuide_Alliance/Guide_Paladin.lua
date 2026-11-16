@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Paladin, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Paladin, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 1-6 Elwynn Forest (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Paladin)
 
@@ -136,7 +136,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 6-10 Elwynn Forest (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest, Durotar (Paladin)
 
@@ -546,7 +546,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 10-12 Elwynn Forest, Durotar (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Westfall (Paladin)
 
@@ -977,7 +977,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 1-6 Dun Morogh (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 6-10 Dun Morogh (Paladin)
 
@@ -1108,7 +1108,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 6-10 Dun Morogh (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 10-14 Dun Morogh, Durotar, Loch Modan (Paladin)
 
@@ -1502,7 +1502,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 10-14 Dun Morogh, Durotar, Loch Modan (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 12-15 Westfall (Paladin)
 
@@ -2047,7 +2047,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 12-15 Westfall (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Durotar, Dun Morogh + HoT (Paladin)
 
 step
@@ -2313,7 +2313,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 15-18 Westfall, Durotar, Dun Morogh + HoT (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Dun Morogh + VC (Paladin)
 
 step
@@ -3052,7 +3052,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 18-22 Westfall, Redridge, Dun Morogh + VC (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Dustwallow, Redridge + RoL (Paladin)
 
 step
@@ -4130,7 +4130,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 22-26 Darkshore, Dustwallow, Redridge + RoL (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Ashenvale (Paladin)
 
 step
@@ -4926,7 +4926,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 26-31 Duskwood, Redridge, Ashenvale (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Dustwallow, Barrens + WC/BFD/Stocks (Paladin)
 
 step
@@ -6053,7 +6053,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 31-34 Ashenvale, Dustwallow, Barrens + WC/BFD/Stocks (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Paladin)
 
 step
@@ -6839,7 +6839,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 38-42 Desolace, Wetlands, Dun Morogh + Exc. Site/Dalaran/SM (Paladin)
 
 step
@@ -7820,7 +7820,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 38-42 Desolace, Wetlands, Dun Morogh + Exc. Site/Dalaran/SM (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Paladin)
 
 step
@@ -8985,7 +8985,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Tanaris, Feralas, Dustwallow + ZF (Paladin)
 
 step
@@ -10444,7 +10444,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 46-50 Tanaris, Feralas, Dustwallow + ZF (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Dustwallow, Azshara, WPL + Mara/ST (Paladin)
 
 step
@@ -11533,7 +11533,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 50-54 Dustwallow, Azshara, WPL + Mara/ST (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Felwood, WPL, Searing Gorge + BRD (Paladin)
 
 step
@@ -12870,7 +12870,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 54-57 Felwood, WPL, Searing Gorge + BRD (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Searing Gorge, Winterspring, Dustwallow + LBRS/DM/Scholo/Strat (Paladin)
 
 step
@@ -13850,7 +13850,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Paladin
 #name 57-60 Searing Gorge, Winterspring, Dustwallow + LBRS/DM/Scholo/Strat (Paladin)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 54 >>Tavoitetaso 54 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

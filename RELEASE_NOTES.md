@@ -1,3 +1,17 @@
+Dogiex's AI Guide: 1-60 (Forever) v2.3
+
+Uusi nimi: "Dogiex's AI Guide: 1-60 (Forever)" (ennen "Dogiex's AI Guide: Horde 1-60 (Forever)"), koska opas on tulossa myös Alliancelle. Julkaistu osa on edelleen Horde (kaikki rodut ja luokat); Alliance on kehitteillä.
+
+- RestedXP: ryhmän nimi pelissä vaihtui. RestedXP ei siksi muista valittua lukua: valitse kerran oikea luku ryhmästä "Dogiex's AI Guide: 1-60 (Forever)" (oikea hiirennappi RestedXP-ikkunaan). Lukujen nimet ovat ennallaan.
+- Guidelime: vain addonin nimi muuttui, edistyminen säilyy.
+- Reitti, questit ja quest-data ennallaan (QuestieDB c071853).
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v2.3.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v2.3.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: Horde 1-60 (Forever) v2.2
 
 Quest-data ennallaan: QuestieDB (Forever) c071853 (1.1.1). Questit ennallaan (sama reitti kuin v2.1), vain siirtymät muuttuivat.

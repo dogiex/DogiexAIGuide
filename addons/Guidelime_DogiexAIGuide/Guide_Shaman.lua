@@ -1,10 +1,10 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Guidelime-opas.
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Guidelime-opas.
 if not Guidelime or not Guidelime.registerGuide then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "SHAMAN" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
 [GA Orc,Troll,Shaman]
 [N1-6 Durotar (Shaman)]
 [NX6-10 Durotar (Shaman)]
@@ -35,10 +35,10 @@ Guidelime.registerGuide([[
 [G 42.7,67.2 Durotar]Puhu: *Galgar* [QT4402 Galgar's Cactus Apple Surprise]
 [G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion]
 [G 42.4,69.2 Durotar]Puhu: *Canaga Earthcaller* [QT1516 Call of Earth]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
 [GA Orc,Troll,Shaman]
 [N6-10 Durotar (Shaman)]
 [NX10-13 Durotar, Barrens (Shaman)]
@@ -108,10 +108,10 @@ Guidelime.registerGuide([[
 [O][A Engineering50][G 52.2,40.8 Durotar]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Mukdrak*) [LE Engineering 150]
 [G 52.0,43.5 Durotar]Puhu: *Gar'Thok* [QT825 From The Wreckage....]
 [G 52.2,43.1 Durotar]Puhu: *Orgnil Soulscar* [QT823 Report to Orgnil]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Orc/Troll. Quest-data: QuestieDB.]
 [GA Orc,Troll,Shaman]
 [N10-13 Durotar, Barrens (Shaman)]
 [NX12-14 Barrens, Durotar (Shaman)]
@@ -171,10 +171,10 @@ Guidelime.registerGuide([[
 [G 39.0,58.2 Durotar]Klikkaa: *Brazier of the Dormant Flame* [QT1526 Call of Fire] [QA1527 Call of Fire]
 [OC]Matkusta: *The Barrens*. Lennä Camp Taurajoon tai Crossroadsiin (The Barrens)
 [G 56.0,19.9 The Barrens]Puhu: *Kranal Fiss* [QT1527 Call of Fire]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
 [GA Tauren,Shaman]
 [N1-6 Mulgore (Shaman)]
 [NX6-11 Mulgore (Shaman)]
@@ -204,10 +204,10 @@ Guidelime.registerGuide([[
 [G 44.4,76.8 Mulgore]Puhu: *Seer Ravenfeather* [QT1521 Call of Earth]
 [G 44.2,77.0 Mulgore]Puhu: *Brave Windfeather* [QT3376 Break Sharptusk!]
 [G 43.9,76.7 Mulgore]Puhu: *Chief Hawkwind* [QT757 Rite of Strength]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
 [GA Tauren,Shaman]
 [N6-11 Mulgore (Shaman)]
 [NX11-13 Mulgore, Barrens, Durotar (Shaman)]
@@ -285,10 +285,10 @@ Guidelime.registerGuide([[
 [G 47.5,63.6 Mulgore]Puhu: *Mull Thunderhorn* [QT758 Thunderhorn Cleansing]
 [G 48.4,63.7 Mulgore]Puhu: *Krang Stonehoof* [QT99108 Sparring Match]
 [G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QT751 The Ravaged Caravan]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Tauren. Quest-data: QuestieDB.]
 [GA Tauren,Shaman]
 [N11-13 Mulgore, Barrens, Durotar (Shaman)]
 [NX12-14 Barrens, Durotar (Shaman)]
@@ -347,10 +347,10 @@ Guidelime.registerGuide([[
 [G 54.8,64.3 Mulgore]Puhu: *Morin Cloudstalker* [QT764 The Venture Co.] [QT765 Supervisor Fizsprocket]
 [G 57.0,34.5 Mulgore]Puhu: *Lorekeeper Raintotem* [QT833 A Sacred Burial]
 [G 58.3,30.7 Mulgore]Puhu: *Ancestral Spirit* [QT773 Rite of Wisdom]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman, aloitus: Skyborne. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman, aloitus: Skyborne. Quest-data: QuestieDB.]
 [GA Skyborne,Shaman]
 [N1-13 Zephras Isle, Barrens (Shaman)]
 [NX12-14 Barrens, Durotar (Shaman)]
@@ -485,10 +485,10 @@ Guidelime.registerGuide([[
 [G 51.5,30.3 The Barrens][P Crossroads]Hae flight path (*Devrak*)
 [G 63.1,37.2 The Barrens][P Ratchet]Hae flight path (*Bragok*)
 [G 56.0,19.9 The Barrens]Puhu: *Kranal Fiss* [QT1522 Call of Fire]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N12-14 Barrens, Durotar (Shaman)]
 [NX14-18 Barrens, Stonetalon + RFC/WC (Shaman)]
@@ -564,10 +564,10 @@ Guidelime.registerGuide([[
 [G 52.2,31.0 The Barrens]Puhu: *Sergra Darkthorn* [QT844 Plainstrider Menace] [QA845 The Zhevra]
 [G 54.0,33.0 The Barrens]Kerää *Zhevra Hooves* (Zhevra Runner, Zhevra Charger, Zhevra Courser) [QC845,1 The Zhevra]
 [G 52.2,31.0 The Barrens]Puhu: *Sergra Darkthorn* [QT845 The Zhevra]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N14-18 Barrens, Stonetalon + RFC/WC (Shaman)]
 [NX18-22 Barrens, Durotar, Hillsbrad (Shaman)]
@@ -699,10 +699,10 @@ Guidelime.registerGuide([[
 [G 46.0,35.7 The Barrens]Puhu: *Nalpak* [QT1486 Deviate Hides]
 [G 46.0,35.7 The Barrens]Puhu: *Ebru* [QT1487 Deviate Eradication]
 [G 62.4,37.6 The Barrens]Puhu: *Mebok Mizzyrix* [QT1491 Smart Drinks]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N18-22 Barrens, Durotar, Hillsbrad (Shaman)]
 [NX22-27 Barrens, Ashenvale, Alterac + RoL (Shaman)]
@@ -811,10 +811,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [G 45.1,63.9 Orgrimmar]Lennä (*Doras*): [F Ratchet]
 [G 65.8,43.8 The Barrens]Puhu: *Islen Waterseer* [QT96 Call of Water]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N22-27 Barrens, Ashenvale, Alterac + RoL (Shaman)]
 [NX27-30 Hillsbrad, Swamp, Ashenvale + SFK/BFD (Shaman)]
@@ -1022,10 +1022,10 @@ Guidelime.registerGuide([[
 [G 31.2,56.0 Hillsbrad Foothills]Tapa *Foreman Bonds*; Tapa *Hillsbrad Miner* [QC539,1 Battle of Hillsbrad] [QC539,2 Battle of Hillsbrad]
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT539 Battle of Hillsbrad]
 [G 62.1,19.7 Hillsbrad Foothills]Puhu: *Deathguard Samsa* [QT546 Souvenirs of Death]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N27-30 Hillsbrad, Swamp, Ashenvale + SFK/BFD (Shaman)]
 [NX30-34 Stonetalon, Barrens, 1K Needles + RFK (Shaman)]
@@ -1098,10 +1098,10 @@ Guidelime.registerGuide([[
 [G 37.1,19.9 Stonetalon Mountains]Kerää *Stonetalon Sap* (Sap Beast) [QC1058,1 Jin'Zil's Forest Magic]
 [G 46.6,27.1 Stonetalon Mountains]Kerää *Courser Eye* (Antlered Courser, Great Courser) [QC1058,3 Jin'Zil's Forest Magic]
 [G 74.5,97.9 Stonetalon Mountains]Puhu: *Witch Doctor Jin'Zil* [QT1058 Jin'Zil's Forest Magic]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N30-34 Stonetalon, Barrens, 1K Needles + RFK (Shaman)]
 [NX34-39 Arathi, 1K Needles, Desolace + Exc. Site (Shaman)]
@@ -1305,10 +1305,10 @@ Guidelime.registerGuide([[
 [G 74.8,34.6 Arathi Highlands][V Myy harmaat roinat] (*Tunkk*)
 [G 77.5,34.9 Arathi Highlands]Kerää *Mote of Myzrael* (Drywhisker Kobold, Drywhisker Digger, Drywhisker Surveyor) [QC642,1 The Princess Trapped]
 [G 84.3,30.9 Arathi Highlands]Klikkaa: *Iridescent Shards* [QT642 The Princess Trapped]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N34-39 Arathi, 1K Needles, Desolace + Exc. Site (Shaman)]
 [NX39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Shaman)]
@@ -1540,10 +1540,10 @@ Guidelime.registerGuide([[
 [G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QT587 Up to Snuff]
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT209 Skullsplitter Tusks]
 [G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT600 Venture Company Mining]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Shaman)]
 [NX42-46 Dustwallow, STV, Swamp + RFD/SM (Shaman)]
@@ -1729,10 +1729,10 @@ Guidelime.registerGuide([[
 [G 36.4,30.9 Dustwallow Marsh]Puhu: *Krak* [QT98192 Skin Careful, Skin Sharp]
 [G 37.4,31.4 Dustwallow Marsh]Puhu: *Tharg* [QT1168 Army of the Black Dragon]
 [G 37.1,33.1 Dustwallow Marsh]Puhu: *Draz'Zilb* [QT1171 The Brood of Onyxia]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N42-46 Dustwallow, STV, Swamp + RFD/SM (Shaman)]
 [NX46-50 STV, Tanaris, Feralas + Ulda (Shaman)]
@@ -1932,10 +1932,10 @@ Guidelime.registerGuide([[
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA2872 Stoley's Debt]
 [G 29.3,88.3 Stranglethorn Vale]Tapa *Captain Keelhaul*; Tapa *Fleet Master Firallon*; Tapa *Captain Stillwater* [QC608,2 The Bloodsail Buccaneers] [QC608,3 The Bloodsail Buccaneers] [QC608,1 The Bloodsail Buccaneers]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT608 The Bloodsail Buccaneers]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N46-50 STV, Tanaris, Feralas + Ulda (Shaman)]
 [NX50-54 Blasted Lands, Searing Gorge, Alterac + ZF/Mara/ST (Shaman)]
@@ -2176,10 +2176,10 @@ Guidelime.registerGuide([[
 [G 54.6,36.8 Blasted Lands]Kerää *Blasted Boar Lung* (Helboar, Ashmane Boar) [QC2581,2 Snickerfang Jowls] [QC2583,1 A Boar's Vitality] [QC2585,3 The Decisive Striker]
 [G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT2603 Vulture's Vigor] [QT2601 The Basilisk's Bite]
 [G 50.5,14.2 Blasted Lands]Puhu: *Bloodmage Drazial* [QT2581 Snickerfang Jowls] [QT2583 A Boar's Vitality] [QT2585 The Decisive Striker]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N50-54 Blasted Lands, Searing Gorge, Alterac + ZF/Mara/ST (Shaman)]
 [NX54-57 Hinterlands, Tanaris, Un'Goro + BRD (Shaman)]
@@ -2423,10 +2423,10 @@ Guidelime.registerGuide([[
 [G 48.6,55.3 Swamp of Sorrows][V Myy harmaat roinat] (*Greshka*)
 [G 46.1,54.8 Swamp of Sorrows]Lennä (*Breyk*): [F Revantusk Village]
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1446 Jammal'an the Prophet]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N54-57 Hinterlands, Tanaris, Un'Goro + BRD (Shaman)]
 [NX57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Shaman)]
@@ -2718,10 +2718,10 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Tapa *General Angerforge* [QC4132,1 Operation: Death to Angerforge]
 [G 34.8,30.9 Searing Gorge]Lennä (*Grisha*): [F Kargath]
 [G 5.8,47.5 Badlands]Puhu: *Warlord Goretooth* [QT4132 Operation: Death to Angerforge]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Shaman. Quest-data: QuestieDB.]
 [GA Orc,Troll,Tauren,Skyborne,Shaman]
 [N57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Shaman)]
 [XP54 Tavoitetaso 54: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -3081,4 +3081,4 @@ Guidelime.registerGuide([[
 [G 35.0,38.3 Orgrimmar]Puhu: *Mokvar* [QT8978 Return to Mokvar]
 [G 34.9,38.0 Orgrimmar][V Myy harmaat roinat] (*Mokvar*)
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

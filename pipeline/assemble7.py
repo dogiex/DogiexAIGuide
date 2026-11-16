@@ -6,7 +6,7 @@ CLS=os.environ['ASM_CLS'].split(',') if os.environ.get('ASM_CLS') else ['WARRIOR
 CT={'WARRIOR':'Warrior','PALADIN':'Paladin','HUNTER':'Hunter','ROGUE':'Rogue','PRIEST':'Priest','SHAMAN':'Shaman','MAGE':'Mage','WARLOCK':'Warlock','DRUID':'Druid'}
 RACES={'WARRIOR':'Orc,Troll,Undead,Tauren,Skyborne','PALADIN':'Undead','HUNTER':'Orc,Troll,Tauren,Skyborne','ROGUE':'Orc,Troll,Undead,Skyborne','PRIEST':'Troll,Undead','SHAMAN':'Orc,Troll,Tauren,Skyborne','MAGE':'Orc,Troll,Undead','WARLOCK':'Orc,Troll,Undead','DRUID':'Tauren,Skyborne'}
 SRACE={'DUROTAR':['Orc','Troll'],'TIRISFAL':['Undead'],'MULGORE':['Tauren'],'ZEPHRAS':['Skyborne']}
-GROUP="Dogiex's AI Guide: Horde 1-60 (Forever)"
+GROUP="Dogiex's AI Guide: 1-60 (Forever)"   # v2.3: ryhmän nimi ilman factionia (käyttäjän päätös 16.11.2026, vaihtoehto A)
 def guard(c): return 'local _, _cls = UnitClass("player")\nif _cls ~= "%s" then return end'%c
 def _mobsplit(x):
     m=re.match(r'^(\s*)\.mob (.+)$',x)
@@ -29,7 +29,7 @@ hdr=['if not RXPGuides or not RXPGuides.RegisterGuide then return end','if UnitF
 files=[]
 for c in CLS:
     m=parts[c]['glm']; mnames=[gname(t,lo,hi) for t,lo,hi in zip(m['titles'],m['lo'],m['hi'])]
-    L=['-- Dogiex\'s AI Guide: Horde 1-60 (Forever) - %s, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).'%CT[c]]+hdr[:2]+[guard(c),'']
+    L=['-- Dogiex\'s AI Guide: 1-60 (Forever) - Horde %s, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).'%CT[c]]+hdr[:2]+[guard(c),'']
     for z,st in parts[c]['gls'].items():
         rs=[r for r in SRACE[z] if r in RACES[c].split(',')]
         names=[gname(t,lo,hi) for t,lo,hi in zip(st['titles'],st['lo'],st['hi'])]
@@ -40,22 +40,22 @@ for c in CLS:
         H=['#forever','<< Horde %s'%CT[c],'#name '+nm,'#version 1','#group '+GROUP]+(['#next '+mnames[i+1]] if i+1<len(mnames) else [])
         g='\n'.join(H+['']+fixs(steps)); rx_ok(g); L.append('RXPGuides.RegisterGuide([[\n'+g+'\n]])\n')
     fn='Guide_%s.lua'%CT[c]; open(d+'/'+fn,'w',encoding='utf-8').write('\n'.join(L)); files.append(fn)
-open(d+'/RXPGuides_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: RestedXP: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.2\n## Dependencies: RXPGuides\n\n'+'\n'.join(files)+'\n')
+open(d+'/RXPGuides_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: RestedXP: Dogiex\'s AI Guide: 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.3\n## Dependencies: RXPGuides\n\n'+'\n'.join(files)+'\n')
 # ================= Guidelime =================
 d=OUT+'/Guidelime_DogiexAIGuide'; os.makedirs(d); files=[]
 for c in CLS:
-    L=['-- Dogiex\'s AI Guide: Horde 1-60 (Forever) - %s. Guidelime-opas.'%CT[c],'if not Guidelime or not Guidelime.registerGuide then return end',guard(c),'']
+    L=['-- Dogiex\'s AI Guide: 1-60 (Forever) - Horde %s. Guidelime-opas.'%CT[c],'if not Guidelime or not Guidelime.registerGuide then return end',guard(c),'']
     m=parts[c]['glm']; mnames=[gname(t,lo,hi) for t,lo,hi in zip(m['titles'],m['lo'],m['hi'])]
     for z,s in parts[c]['gls'].items():
         rs=[r for r in SRACE[z] if r in RACES[c].split(',')]
         names=[gname(t,lo,hi) for t,lo,hi in zip(s['titles'],s['lo'],s['hi'])]
         for i,(nm,steps) in enumerate(zip(names,s['gl'])):
             nx=names[i+1] if i+1<len(names) else mnames[0]
-            G=['[D Dogiex\'s AI Guide: Horde 1-60 (Forever) - %s, aloitus: %s. Quest-data: QuestieDB.]'%(CT[c],'/'.join(rs)),'[GA %s,%s]'%(','.join(rs),CT[c]),'[N%s]'%nm,'[NX%s]'%nx]+fixs(steps)
+            G=['[D Dogiex\'s AI Guide: 1-60 (Forever) - Horde %s, aloitus: %s. Quest-data: QuestieDB.]'%(CT[c],'/'.join(rs)),'[GA %s,%s]'%(','.join(rs),CT[c]),'[N%s]'%nm,'[NX%s]'%nx]+fixs(steps)
             g='\n'.join(G); rx_ok(g); L.append('Guidelime.registerGuide([[\n'+g+'\n]], "%s")\n'%GROUP)
     for i,(nm,steps) in enumerate(zip(mnames,m['gl'])):
-        G=['[D Dogiex\'s AI Guide: Horde 1-60 (Forever) - %s. Quest-data: QuestieDB.]'%CT[c],'[GA %s,%s]'%(RACES[c],CT[c]),'[N%s]'%nm]+(['[NX%s]'%mnames[i+1]] if i+1<len(mnames) else [])+fixs(steps)
+        G=['[D Dogiex\'s AI Guide: 1-60 (Forever) - Horde %s. Quest-data: QuestieDB.]'%CT[c],'[GA %s,%s]'%(RACES[c],CT[c]),'[N%s]'%nm]+(['[NX%s]'%mnames[i+1]] if i+1<len(mnames) else [])+fixs(steps)
         g='\n'.join(G); rx_ok(g); L.append('Guidelime.registerGuide([[\n'+g+'\n]], "%s")\n'%GROUP)
     fn='Guide_%s.lua'%CT[c]; open(d+'/'+fn,'w',encoding='utf-8').write('\n'.join(L)); files.append(fn)
-open(d+'/Guidelime_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: Guidelime: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.2\n## Dependencies: Guidelime\n\n'+'\n'.join(files)+'\n')
+open(d+'/Guidelime_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: Guidelime: Dogiex\'s AI Guide: 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.3\n## Dependencies: Guidelime\n\n'+'\n'.join(files)+'\n')
 print('ok')

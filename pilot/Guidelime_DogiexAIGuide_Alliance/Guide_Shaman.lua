@@ -1,11 +1,11 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Guidelime-opas (pilotti).
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "SHAMAN" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N1-6 Dun Morogh, Durotar (Shaman)]
 [NX6-10 Dun Morogh (Shaman)]
@@ -41,10 +41,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Dun Morogh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforgen portista ulos Dun Moroghiin
 [G 28.8,66.2 Dun Morogh][T Shaman-trainer (taso 6)] (*Teo Hammerstorm*): Earthbind Totem, Healing Wave r2
 [G 28.8,66.2 Dun Morogh]Puhu: *Teo Hammerstorm* [QT94375 Call of Earth]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N6-10 Dun Morogh (Shaman)]
 [NX10-14 Dun Morogh, Loch Modan, Barrens (Shaman)]
@@ -120,10 +120,10 @@ Guidelime.registerGuide([[
 [G 50.4,49.1 Dun Morogh]Puhu: *Beldin Steelgrill* [QT400 Tools for Steelgrill]
 [G 50.1,49.4 Dun Morogh][V Myy harmaat roinat] (*Loslor Rudge*)
 [G 87.9,44.8 Dun Morogh]Puhu: *Bruegs Kindleborn* [QT94449 Call of Fire] [QA94465 Call of Fire]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman, aloitus: Dwarf. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N10-14 Dun Morogh, Loch Modan, Barrens (Shaman)]
 [NX12-15 Westfall (Shaman)]
@@ -201,10 +201,10 @@ Guidelime.registerGuide([[
 [G 30.2,72.7 Loch Modan]Tapa *Stonesplinter Trogg*; Kerää *Trogg Stone Tooth* (Stonesplinter Seer, Stonesplinter Trogg, Stonesplinter Scout) [QC224,1 In Defense of the King's Lands] [QC267,1 The Trogg Threat]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QT267 The Trogg Threat]
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N12-15 Westfall (Shaman)]
 [NX15-18 Westfall, Loch Modan + HoT (Shaman)]
@@ -253,10 +253,10 @@ Guidelime.registerGuide([[
 [O][A Alchemy1][G 42.8,72.8 Westfall]Ammattitehtävä (Alchemy 1+): puhu *Odd Child* [QA92109 My First Alchemy Set] Tavoite: Bring 5 Empty Vials, 5 Silverleaf, and 5 Peacebloom to the young, aspiring alchemist inside the barn of Moonbrook in Westfall.
 [G 43.1,68.8 Westfall]Kerää *Suspicious Industrial Supplies* (Suspicious Crate) [QC92747,1 Moonbrook Espionage]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92747 Moonbrook Espionage]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N15-18 Westfall, Loch Modan + HoT (Shaman)]
 [NX18-22 Westfall, Redridge, Darkshore + VC (Shaman)]
@@ -332,10 +332,10 @@ Guidelime.registerGuide([[
 [G 57.7,53.9 Westfall][V Myy roinat] ja [R korjaa varusteet] (*William MacGregor*)
 [G 52.9,53.7 Westfall][V Osta vettä (Melon Juice) ja ruokaa, noin 20+20] (*Innkeeper Heather*)
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT14 The People's Militia]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N18-22 Westfall, Redridge, Darkshore + VC (Shaman)]
 [NX22-26 Darkshore, Loch Modan, Wetlands + RoL (Shaman)]
@@ -522,10 +522,10 @@ Guidelime.registerGuide([[
 [G 52.5,33.4 Darkshore]Kerää *Talisman of Corruption* (Xabraxxis' Demon Bag) [QC4763,1 The Blackwood Corrupted]
 [G 44.2,36.3 Darkshore]Puhu: *Asterion* [QT957 Bashal'Aran]
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N22-26 Darkshore, Loch Modan, Wetlands + RoL (Shaman)]
 [NX26-31 Duskwood, Redridge, Wetlands (Shaman)]
@@ -712,10 +712,10 @@ Guidelime.registerGuide([[
 [G 24.2,43.3 Duskwood]Kerää *Rot Blossom* (Skeletal Horror, Skeletal Fiend) [QC156,1 Gather Rot Blossoms]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT156 Gather Rot Blossoms] [QA159 Juice Delivery]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT159 Juice Delivery]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N26-31 Duskwood, Redridge, Wetlands (Shaman)]
 [NX31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)]
@@ -932,10 +932,10 @@ Guidelime.registerGuide([[
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N31-34 Ashenvale, Arathi, Barrens + WC/BFD/Stocks (Shaman)]
 [NX34-39 Hillsbrad, Arathi, Swamp + RFK/Gnomer (Shaman)]
@@ -1103,10 +1103,10 @@ Guidelime.registerGuide([[
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
 [G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QT500 Crushridge Bounty]
 [G 52.4,56.0 Hillsbrad Foothills]Puhu: *Darren Malvew* [QT564 Costly Menace]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N34-39 Hillsbrad, Arathi, Swamp + RFK/Gnomer (Shaman)]
 [NX39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Shaman)]
@@ -1386,10 +1386,10 @@ Guidelime.registerGuide([[
 [G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT601 Water Elementals] [QA602 Magical Analysis]
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley]
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT577 Some Assembly Required]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Shaman)]
 [NX42-46 STV, Swamp, Badlands + RFD/Ulda (Shaman)]
@@ -1571,10 +1571,10 @@ Guidelime.registerGuide([[
 [G 27.6,76.7 Stranglethorn Vale]Puhu: *Fin Fizracket* [QT348 Stranglethorn Fever]
 [G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Jutak*)
 [G 36.2,43.6 Stranglethorn Vale]Kerää *Chilled Basilisk Haunch* (Cold Eye Basilisk) [QC212,1 A Meal Served Cold]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N42-46 STV, Swamp, Badlands + RFD/Ulda (Shaman)]
 [NX46-50 Feralas, Hinterlands, STV + ZF (Shaman)]
@@ -1846,10 +1846,10 @@ Guidelime.registerGuide([[
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2851 Wild Leather Boots] Tavoite: Bring 2 Nightscape Pants, 2 Nightscape Boots, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2852 Wild Leather Leggings] Tavoite: Bring 2 Turtle Scale Helms, 2 Turtle Scale Bracers, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
 [G 30.1,45.1 Feralas]Puhu: *Vestia Moonspear* [QT2871 Delivering the Relic]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N46-50 Feralas, Hinterlands, STV + ZF (Shaman)]
 [NX50-54 Azshara, Blasted Lands, Tanaris + Mara/ST (Shaman)]
@@ -2015,10 +2015,10 @@ Guidelime.registerGuide([[
 [G 17.6,59.1 Azshara]Kerää *Wild Honey* (Honey Wasp) [QC89013,1 Gettin' Buzzed]
 [G 12.6,77.4 Azshara]Puhu: *Berdun Cliffbrew* [QT89013 Gettin' Buzzed]
 [G 11.8,78.4 Azshara]Puhu: *Commander Truesong* [QT88809 Preserving Eldarath]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N50-54 Azshara, Blasted Lands, Tanaris + Mara/ST (Shaman)]
 [NX54-57 Felwood, WPL, Searing Gorge + BRD (Shaman)]
@@ -2227,10 +2227,10 @@ Guidelime.registerGuide([[
 [G 39.1,22.4 Felwood]Tapa *Xavaric*; Tapa *Jadefire Betrayer*; Tapa *Jadefire Hellcaller*; Tapa *Jadefire Trickster* [QC4906,4 Further Corruption] [QC4906,2 Further Corruption] [QC4906,1 Further Corruption] [QC4906,3 Further Corruption]
 [G 51.4,81.5 Felwood]Puhu: *Eridan Bluewind* [QT4906 Further Corruption]
 [G 51.2,82.1 Felwood]Puhu: *Greta Mosshoof* [QT5157 Collection of the Corrupt Water]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N54-57 Felwood, WPL, Searing Gorge + BRD (Shaman)]
 [NX57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Shaman)]
@@ -2464,10 +2464,10 @@ Guidelime.registerGuide([[
 [G 39.0,42.8 Winterspring]Tapa *Winterfall Pathfinder* [QC5082,1 Threat of the Winterfall]
 [G 31.3,45.2 Winterspring]Puhu: *Donova Snowden* [QT5082 Threat of the Winterfall]
 [G 27.7,34.5 Winterspring]Puhu: *Salfa* [QT8464 Winterfall Activity]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Shaman. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Shaman. Quest-data: QuestieDB.]
 [GA Dwarf,Shaman]
 [N57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Shaman)]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
@@ -2714,4 +2714,4 @@ Guidelime.registerGuide([[
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Kerää *Head of Baron Rivendare* (Baron Rivendare) [QC5263,1 Above and Beyond]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

@@ -1,11 +1,11 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Guidelime-opas (pilotti).
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "MAGE" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Mage]
 [N1-6 Elwynn Forest (Mage)]
 [NX6-10 Elwynn Forest (Mage)]
@@ -31,10 +31,10 @@ Guidelime.registerGuide([[
 [G 48.9,41.6 Elwynn Forest]Puhu: *Marshal McBride* [QT21 Skirmish at Echo Ridge]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 49.7,39.4 Elwynn Forest][T Mage-trainer (taso 6)] (*Khelden Bremen*): Fire Blast, Fireball r2
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Mage]
 [N6-10 Elwynn Forest (Mage)]
 [NX10-12 Elwynn Forest (Mage)]
@@ -113,10 +113,10 @@ Guidelime.registerGuide([[
 [O][A Blacksmithing50][G 41.7,65.5 Elwynn Forest]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Smith Argus*) [LE Blacksmithing 150]
 [G 43.2,66.2 Elwynn Forest]Puhu: *Zaldimar Wefhellt* [QA1860 Speak with Jennea]
 [G 42.1,65.9 Elwynn Forest]Puhu: *Marshal Dughan* [QT62 The Fargodeep Mine]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Mage]
 [N10-12 Elwynn Forest (Mage)]
 [NX12-15 Elwynn Forest, Westfall (Mage)]
@@ -185,10 +185,10 @@ Guidelime.registerGuide([[
 [G 49.6,85.8 Stormwind City][T Mage-trainer (taso 12)] (*Jennea Cannon*): Conjure Food, Conjure Food r2, Fireball r3, Slow Fall, Dampen Magic
 [G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QT1861 Mirror Lake]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Mage]
 [N1-6 Dun Morogh (Mage)]
 [NX6-10 Dun Morogh (Mage)]
@@ -214,10 +214,10 @@ Guidelime.registerGuide([[
 [G 28.6,67.6 Dun Morogh]Puhu: *Felix Whindlebolt* [QT3361 A Refugee's Quandary]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 28.7,66.4 Dun Morogh][T Mage-trainer (taso 6)] (*Marryk Nurribit*): Fire Blast, Fireball r2
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Mage]
 [N6-10 Dun Morogh (Mage)]
 [NX10-14 Dun Morogh, Loch Modan (Mage)]
@@ -296,10 +296,10 @@ Guidelime.registerGuide([[
 [O][A Mining50][G 50.0,50.3 Dun Morogh]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Yarr Hammerstone*) [LE Mining 150]
 [O][A Engineering50][G 50.2,50.4 Dun Morogh]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Bronk Guzzlegear*) [LE Engineering 150]
 [G 49.4,48.4 Dun Morogh]Puhu: *Pilot Bellowfiz* [QT320 Return to Bellowfiz]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Mage]
 [N10-14 Dun Morogh, Loch Modan (Mage)]
 [NX12-15 Elwynn Forest, Westfall (Mage)]
@@ -379,10 +379,10 @@ Guidelime.registerGuide([[
 [G 27.2,8.6 Ironforge][T Mage-trainer (taso 14)] (*Dink*): Arcane Explosion, Arcane Intellect, Fire Blast r2, Frostbolt r3
 [H Hearthstone: Innkeeper Hearthstove] (jos cooldownilla, juokse tai lennä)
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, aloitus: Skyborne. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, aloitus: Skyborne. Quest-data: QuestieDB.]
 [GA Skyborne,Mage]
 [N1-12 Zephras Isle, Elwynn Forest (Mage)]
 [NX12-15 Elwynn Forest, Westfall (Mage)]
@@ -509,10 +509,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
 [G 49.6,85.8 Stormwind City]Puhu: *Jennea Cannon* [QT1861 Mirror Lake]
 [G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N12-15 Elwynn Forest, Westfall (Mage)]
 [NX15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)]
@@ -580,10 +580,10 @@ Guidelime.registerGuide([[
 [G 54.0,53.0 Westfall]Puhu: *Scout Galiaan* [QT153 Red Leather Bandanas]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT13 The People's Militia]
 [G 56.4,47.6 Westfall]Puhu: *Captain Danuvin* [QT102 Patrolling Westfall]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)]
 [NX18-22 Westfall, Redridge, Darkshore + VC (Mage)]
@@ -674,10 +674,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Ironforge*. Ironforge: lento, tai Deeprun Tram Stormwindista
 [G 27.6,47.8 Ironforge]*Mene dungeoniin: The Hall of Thanes*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Durgen Dirgehammer's Head* (Durgen Dirgehammer) [QC96393,1 Old Ironforge Incursion]
 [G 39.1,56.2 Ironforge]Puhu: *King Magni Bronzebeard* [QT96393 Old Ironforge Incursion]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N18-22 Westfall, Redridge, Darkshore + VC (Mage)]
 [NX22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)]
@@ -878,10 +878,10 @@ Guidelime.registerGuide([[
 [G 44.2,36.3 Darkshore]Puhu: *Asterion* [QT957 Bashal'Aran]
 [G 37.0,44.1 Darkshore][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Shaussiy*)
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted] [QT98042 It's All Fun and Games Until...]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)]
 [NX26-31 Duskwood, Redridge, Wetlands (Mage)]
@@ -1035,10 +1035,10 @@ Guidelime.registerGuide([[
 [G 24.2,43.3 Duskwood]Kerää *Rot Blossom* (Skeletal Horror, Skeletal Fiend) [QC156,1 Gather Rot Blossoms]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT156 Gather Rot Blossoms] [QA159 Juice Delivery]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT159 Juice Delivery]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N26-31 Duskwood, Redridge, Wetlands (Mage)]
 [NX31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)]
@@ -1256,10 +1256,10 @@ Guidelime.registerGuide([[
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)]
 [NX34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Mage)]
@@ -1439,10 +1439,10 @@ Guidelime.registerGuide([[
 [G 61.1,43.8 Alterac Mountains]Kerää *Alterac Signet Ring* (Syndicate Sentry, Syndicate Spy, Syndicate Assassin) [QC512,1 Noble Deaths]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Mage)]
 [NX38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)]
@@ -1639,10 +1639,10 @@ Guidelime.registerGuide([[
 [G 30.0,8.7 Desolace]Klikkaa: *Rackmore's Chest* [QT6161 Claim Rackmore's Treasure!]
 [G 28.2,6.7 Desolace]Kerää *Book of the Ancients* (Lord Kragaru) [QC6027,1 Book of the Ancients]
 [G 38.9,27.2 Desolace]Puhu: *Azore Aldamort* [QT6027 Book of the Ancients]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)]
 [NX42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)]
@@ -1863,10 +1863,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 51.2,58.9 Hillsbrad Foothills][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Anderson*)
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Raleigh the Devout* [QT1053 In the Name of the Light]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)]
 [NX46-50 Tanaris, Feralas, Hinterlands + ZF (Mage)]
@@ -2171,10 +2171,10 @@ Guidelime.registerGuide([[
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT10 The Scrimshank Redemption] [QA110 Insect Part Analysis]
 [G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT110 Insect Part Analysis] [QA113 Insect Part Analysis]
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT113 Insect Part Analysis]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N46-50 Tanaris, Feralas, Hinterlands + ZF (Mage)]
 [NX50-54 Dustwallow, Azshara, Tirisfal Glades + Mara/ST (Mage)]
@@ -2379,10 +2379,10 @@ Guidelime.registerGuide([[
 [G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QT2770 Gahz'rilla]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Theramore]
 [G 46.1,57.1 Dustwallow Marsh]Puhu: *Tabetha* [QT2846 Tiara of the Deep]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N50-54 Dustwallow, Azshara, Tirisfal Glades + Mara/ST (Mage)]
 [NX54-57 Tanaris, Felwood, WPL + BRD (Mage)]
@@ -2620,10 +2620,10 @@ Guidelime.registerGuide([[
 [G 51.5,28.8 Tanaris][V Myy roinat] ja [R korjaa varusteet] (*Krinkle Goodsteel*)
 [G 52.5,27.9 Tanaris][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Fizzgrimble*)
 [G 51.6,26.8 Tanaris]Puhu: *Tran'rek* [QT4504 Super Sticky]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N54-57 Tanaris, Felwood, WPL + BRD (Mage)]
 [NX57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Mage)]
@@ -2834,10 +2834,10 @@ Guidelime.registerGuide([[
 [G 44.0,60.9 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,2 Set Them Ablaze!]
 [G 50.1,54.7 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,3 Set Them Ablaze!]
 [G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3463 Set Them Ablaze!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Mage)]
 [XP53 Tavoitetaso 53: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -3183,4 +3183,4 @@ Guidelime.registerGuide([[
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Head of Baron Rivendare* (Baron Rivendare) [QC5263,1 Above and Beyond]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

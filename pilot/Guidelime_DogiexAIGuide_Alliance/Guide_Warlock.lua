@@ -1,11 +1,11 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Guidelime-opas (pilotti).
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "WARLOCK" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Warlock]
 [N1-6 Elwynn Forest (Warlock)]
 [NX6-10 Elwynn Forest (Warlock)]
@@ -35,10 +35,10 @@ Guidelime.registerGuide([[
 [G 49.9,42.6 Elwynn Forest]Puhu: *Drusilla La Salle* [QT1598 The Stolen Tome]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 49.9,42.6 Elwynn Forest][T Warlock-trainer (taso 6)] (*Drusilla La Salle*): Life Tap, Shadow Bolt r2. Osta myös uudet demonin grimoiret
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Warlock]
 [N6-10 Elwynn Forest (Warlock)]
 [NX10-12 Elwynn Forest (Warlock)]
@@ -117,10 +117,10 @@ Guidelime.registerGuide([[
 [O][A Blacksmithing50][G 41.7,65.5 Elwynn Forest]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Smith Argus*) [LE Blacksmithing 150]
 [O][A Leatherworking50][G 46.4,62.0 Elwynn Forest]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Adele Fielder*) [LE Leatherworking 150]
 [G 44.5,66.3 Elwynn Forest]Puhu: *Remen Marcot* [QA1685 Gakin's Summons]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Warlock]
 [N10-12 Elwynn Forest (Warlock)]
 [NX12-15 Westfall (Warlock)]
@@ -189,10 +189,10 @@ Guidelime.registerGuide([[
 [G 39.5,84.5 Stormwind City][V Myy harmaat roinat] (*Spackle Thornberry*)
 [G 39.2,85.2 Stormwind City]Using the Bloodstone Choker, summon and subdue a voidwalker, then return the Bloodstone Choker to Gakin the Darkbinder in Stormwind. [QC1689,1 The Binding]
 [G 39.2,85.2 Stormwind City]Puhu: *Gakin the Darkbinder* [QT1689 The Binding]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Warlock]
 [N1-6 Dun Morogh (Warlock)]
 [NX6-10 Dun Morogh (Warlock)]
@@ -220,10 +220,10 @@ Guidelime.registerGuide([[
 [G 28.6,66.1 Dun Morogh]Puhu: *Alamar Grimm* [QT1599 Beginnings]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 28.6,66.1 Dun Morogh][T Warlock-trainer (taso 6)] (*Alamar Grimm*): Life Tap, Shadow Bolt r2. Osta myös uudet demonin grimoiret
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Warlock]
 [N6-10 Dun Morogh (Warlock)]
 [NX10-14 Dun Morogh, Elwynn Forest, Loch Modan (Warlock)]
@@ -297,10 +297,10 @@ Guidelime.registerGuide([[
 [O][A Blacksmithing50][G 45.3,51.9 Dun Morogh]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Tognus Flintfire*) [LE Blacksmithing 150]
 [G 46.7,53.8 Dun Morogh]Puhu: *Senir Whitebeard* [QT98323 Secure the Mountain]
 [G 40.7,65.1 Dun Morogh]Puhu: *Hegnar Rumbleshot* [QT5541 Ammo for Rumbleshot]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, aloitus: Gnome. Quest-data: QuestieDB.]
 [GA Gnome,Warlock]
 [N10-14 Dun Morogh, Elwynn Forest, Loch Modan (Warlock)]
 [NX12-15 Westfall (Warlock)]
@@ -376,10 +376,10 @@ Guidelime.registerGuide([[
 [G 39.2,85.0 Stormwind City][T Warlock-trainer (taso 14)] (*Demisette Cloyce*): Corruption r2, Drain Life. Osta myös uudet demonin grimoiret
 [H Hearthstone: Innkeeper Hearthstove] (jos cooldownilla, juokse tai lennä)
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N12-15 Westfall (Warlock)]
 [NX15-18 Westfall, Loch Modan + HoT (Warlock)]
@@ -430,10 +430,10 @@ Guidelime.registerGuide([[
 [O][A Alchemy1][G 42.8,72.8 Westfall]Ammattitehtävä (Alchemy 1+): puhu *Odd Child* [QA92109 My First Alchemy Set] Tavoite: Bring 5 Empty Vials, 5 Silverleaf, and 5 Peacebloom to the young, aspiring alchemist inside the barn of Moonbrook in Westfall.
 [G 43.1,68.8 Westfall]Kerää *Suspicious Industrial Supplies* (Suspicious Crate) [QC92747,1 Moonbrook Espionage]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92747 Moonbrook Espionage]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N15-18 Westfall, Loch Modan + HoT (Warlock)]
 [NX18-22 Westfall, Redridge, Barrens + VC (Warlock)]
@@ -529,10 +529,10 @@ Guidelime.registerGuide([[
 [G 39.0,54.8 Westfall]Kerää *Flask of Oil* (Harvest Watcher, Harvest Golem, Rusty Harvest Golem) [QC103,1 Keeper of the Flame]
 [G 30.0,86.0 Westfall]Puhu: *Captain Grayson* [QT103 Keeper of the Flame]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT14 The People's Militia]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N18-22 Westfall, Redridge, Barrens + VC (Warlock)]
 [NX22-26 Darkshore, Dun Morogh, Redridge + RoL (Warlock)]
@@ -744,10 +744,10 @@ Guidelime.registerGuide([[
 [G 43.5,76.3 Darkshore]Puhu: *Onu* [QT950 Return to Onu]
 [G 52.5,33.4 Darkshore]Kerää *Talisman of Corruption* (Xabraxxis' Demon Bag) [QC4763,1 The Blackwood Corrupted]
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted] [QT98042 It's All Fun and Games Until...]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N22-26 Darkshore, Dun Morogh, Redridge + RoL (Warlock)]
 [NX26-31 Duskwood, Redridge, Wetlands (Warlock)]
@@ -905,10 +905,10 @@ Guidelime.registerGuide([[
 [G 24.2,43.3 Duskwood]Kerää *Rot Blossom* (Skeletal Horror, Skeletal Fiend) [QC156,1 Gather Rot Blossoms]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT156 Gather Rot Blossoms] [QA159 Juice Delivery]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT159 Juice Delivery]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N26-31 Duskwood, Redridge, Wetlands (Warlock)]
 [NX31-34 Ashenvale, Barrens, Hillsbrad + WC/BFD/Stocks (Warlock)]
@@ -1108,10 +1108,10 @@ Guidelime.registerGuide([[
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N31-34 Ashenvale, Barrens, Hillsbrad + WC/BFD/Stocks (Warlock)]
 [NX34-39 Hillsbrad, Barrens, Desolace + RFK/Gnomer (Warlock)]
@@ -1304,10 +1304,10 @@ Guidelime.registerGuide([[
 [G 61.1,43.8 Alterac Mountains]Kerää *Alterac Signet Ring* (Syndicate Sentry, Syndicate Spy, Syndicate Assassin) [QC512,1 Noble Deaths]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N34-39 Hillsbrad, Barrens, Desolace + RFK/Gnomer (Warlock)]
 [NX39-42 STV, Barrens, Alterac + Exc. Site/Dalaran/SM (Warlock)]
@@ -1588,10 +1588,10 @@ Guidelime.registerGuide([[
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT577 Some Assembly Required]
 [G 28.1,77.6 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Qixdi Goodstitch*)
 [G 51.0,35.2 Stranglethorn Vale]Puhu: *Gnaz Blunderflame* [QT97420 Reduce, Reuse, Reconcile]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N39-42 STV, Barrens, Alterac + Exc. Site/Dalaran/SM (Warlock)]
 [NX42-46 Dustwallow, Dun Morogh, STV + RFD/Ulda (Warlock)]
@@ -1750,10 +1750,10 @@ Guidelime.registerGuide([[
 [G 68.2,48.6 Dustwallow Marsh]Puhu: *Captain Garran Vimes* [QT1285 Daelin's Men] [QT1320 The Black Shield]
 [G 56.2,20.8 Dustwallow Marsh]Kerää *Mirefin Head* (Mirefin Warrior, Mirefin Murloc, Mirefin Coastrunner) [QC1177,1 Hungry!]
 [G 35.1,38.3 Dustwallow Marsh]Puhu: *Mudcrush Durtfeet* [QT1177 Hungry!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N42-46 Dustwallow, Dun Morogh, STV + RFD/Ulda (Warlock)]
 [NX46-50 Tanaris, Dun Morogh, Feralas + ZF (Warlock)]
@@ -1993,10 +1993,10 @@ Guidelime.registerGuide([[
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT10 The Scrimshank Redemption] [QA110 Insect Part Analysis]
 [G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT110 Insect Part Analysis] [QA113 Insect Part Analysis]
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT113 Insect Part Analysis] [QA162 Rise of the Silithid]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N46-50 Tanaris, Dun Morogh, Feralas + ZF (Warlock)]
 [NX50-54 Azshara, Felwood, Blasted Lands + Mara/ST (Warlock)]
@@ -2179,10 +2179,10 @@ Guidelime.registerGuide([[
 [G 12.6,77.4 Azshara]Puhu: *Berdun Cliffbrew* [QT89013 Gettin' Buzzed]
 [G 11.8,78.4 Azshara]Puhu: *Commander Truesong* [QT88809 Preserving Eldarath]
 [XP50 Tavoitetaso 50: jos olet alle, toista edellinen dungeon tai grindaa]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N50-54 Azshara, Felwood, Blasted Lands + Mara/ST (Warlock)]
 [NX54-57 WPL, Searing Gorge, Burning Steppes + BRD (Warlock)]
@@ -2440,10 +2440,10 @@ Guidelime.registerGuide([[
 [G 67.4,15.7 Darnassus]Puhu: *Innkeeper Saelienne* [QA3763 Assisting Arch Druid Staghelm]
 [G 34.8,9.3 Darnassus]Puhu: *Arch Druid Fandral Staghelm* [QT1047 The New Frontier] [QT3763 Assisting Arch Druid Staghelm] [QA6761 The New Frontier]
 [G 35.4,8.4 Darnassus]Puhu: *Mathrengyl Bearwalker* [QT92345 Beneath Nordrassil] [QT6761 The New Frontier]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N54-57 WPL, Searing Gorge, Burning Steppes + BRD (Warlock)]
 [NX57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Warlock)]
@@ -2672,10 +2672,10 @@ Guidelime.registerGuide([[
 [G 52.1,30.4 Winterspring]Puhu: *Jaron Stoneshaper* [QT4864 Enraged Wildkin]
 [G 31.3,45.2 Winterspring]Puhu: *Donova Snowden* [QT4842 Strange Sources] [QT5082 Threat of the Winterfall]
 [G 27.7,34.5 Winterspring]Puhu: *Salfa* [QT8464 Winterfall Activity]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock. Quest-data: QuestieDB.]
 [GA Human,Gnome,Warlock]
 [N57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Warlock)]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
@@ -2982,4 +2982,4 @@ Guidelime.registerGuide([[
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Tee Healthstone ja Soulstone, varaa 5+ Soul Shardia). Kerää *Head of Baron Rivendare* (Baron Rivendare) [QC5263,1 Above and Beyond]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

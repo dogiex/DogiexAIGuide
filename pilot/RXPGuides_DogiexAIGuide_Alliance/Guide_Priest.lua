@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 1-6 Elwynn Forest (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Priest)
 
@@ -168,7 +168,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 6-10 Elwynn Forest (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest (Priest)
 
@@ -577,7 +577,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 10-12 Elwynn Forest (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Dun Morogh, Westfall (Priest)
 
@@ -925,7 +925,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 1-6 Dun Morogh (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 6-10 Dun Morogh (Priest)
 
@@ -1085,7 +1085,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 6-10 Dun Morogh (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 10-13 Dun Morogh, Loch Modan (Priest)
 
@@ -1458,7 +1458,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 10-13 Dun Morogh, Loch Modan (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 12-15 Dun Morogh, Westfall (Priest)
 
@@ -1829,7 +1829,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 1-6 Teldrassil (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 6-10 Teldrassil (Priest)
 
@@ -1932,7 +1932,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 6-10 Teldrassil (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 10-12 Teldrassil (Priest)
 
@@ -2375,7 +2375,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 10-12 Teldrassil (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 12-15 Dun Morogh, Westfall (Priest)
 
@@ -2682,7 +2682,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 12-15 Dun Morogh, Westfall (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Loch Modan + HoT (Priest)
 
 step
@@ -3090,7 +3090,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 15-18 Westfall, Loch Modan + HoT (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Dun Morogh + VC (Priest)
 
 step
@@ -3527,7 +3527,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 18-22 Westfall, Redridge, Dun Morogh + VC (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Redridge, Wetlands + RoL (Priest)
 
 step
@@ -4707,7 +4707,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 22-26 Darkshore, Redridge, Wetlands + RoL (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Priest)
 
 step
@@ -5513,7 +5513,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 26-31 Duskwood, Redridge, Wetlands (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Priest)
 
 step
@@ -6572,7 +6572,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-40 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Priest)
 
 step
@@ -7323,7 +7323,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 34-40 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Priest)
 
 step
@@ -8949,7 +8949,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Priest)
 
 step
@@ -9352,7 +9352,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Tanaris, Feralas, Hinterlands + ZF (Priest)
 
 step
@@ -10842,7 +10842,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 46-50 Tanaris, Feralas, Hinterlands + ZF (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Dustwallow, Azshara, Blasted Lands + Mara/ST (Priest)
 
 step
@@ -11878,7 +11878,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 50-54 Dustwallow, Azshara, Blasted Lands + Mara/ST (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Felwood, WPL, Searing Gorge + BRD (Priest)
 
 step
@@ -13226,7 +13226,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 54-57 Felwood, WPL, Searing Gorge + BRD (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Searing Gorge, Winterspring, EPL + LBRS/DM/Scholo/Strat (Priest)
 
 step
@@ -14162,7 +14162,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Priest
 #name 57-60 Searing Gorge, Winterspring, EPL + LBRS/DM/Scholo/Strat (Priest)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 54 >>Tavoitetaso 54 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

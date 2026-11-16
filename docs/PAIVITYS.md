@@ -2,7 +2,7 @@
 
 Päivittäinen ajastettu tehtävä noudattaa tätä tiedostoa. Tehtävän oma ohje sisältää vain käynnistyksen ja turvallisuussäännöt; ne menevät tämän tiedoston ja muiden repon ohjeiden edelle.
 
-Tavoite: päivitä opas "Dogiex's AI Guide: Horde 1-60 (Forever)" uusimpaan QuestieDB-dataan, käsittele avoimet issuet ja vie uusi versio repoon. Raportoi suomeksi.
+Tavoite: päivitä opas "Dogiex's AI Guide: 1-60 (Forever)" (julkaistu Horde-osa; Alliance on testiversio pilot/-kansiossa) uusimpaan QuestieDB-dataan, käsittele avoimet issuet ja vie uusi versio repoon. Raportoi suomeksi.
 
 ## Pohjatiedot
 - Noudata `docs/OHJEET.md`:tä. Tärkeimmät: tarkkuus ennen nopeutta, kerro oletukset, vain tarvittavat muutokset, kerro mitä muutit ja mikä oli vanha toiminta, mainitse muut löydetyt virheet korjaamatta niitä hiljaa, anna varmuusprosentti ja sen perusteet.

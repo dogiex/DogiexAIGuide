@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Paladin, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Paladin, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Horde" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 1-7 Tirisfal Glades (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 7-12 Tirisfal Glades (Paladin)
 
@@ -186,7 +186,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 7-12 Tirisfal Glades (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 12-16 Durotar, Silverpine Forest (Paladin)
 
@@ -671,7 +671,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 12-16 Durotar, Silverpine Forest (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 12-14 Barrens (Paladin)
 
@@ -1257,7 +1257,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 12-14 Barrens (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 14-18 Barrens, Stonetalon + RFC/WC (Paladin)
 
 step
@@ -1528,7 +1528,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 14-18 Barrens, Stonetalon + RFC/WC (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Barrens, Silverpine Forest (Paladin)
 
 step
@@ -2206,7 +2206,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 18-22 Barrens, Silverpine Forest (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-27 Silverpine Forest, Ashenvale, Barrens + RoL (Paladin)
 
 step
@@ -2656,7 +2656,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 22-27 Silverpine Forest, Ashenvale, Barrens + RoL (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Paladin)
 
 step
@@ -3712,7 +3712,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 30-34 Stonetalon, Barrens, 1K Needles + RFK (Paladin)
 
 step
@@ -4074,7 +4074,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 30-34 Stonetalon, Barrens, 1K Needles + RFK (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Paladin)
 
 step
@@ -5073,7 +5073,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Paladin)
 
 step
@@ -6240,7 +6240,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Paladin)
 
 step
@@ -7176,7 +7176,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Badlands, Tanaris, Feralas (Paladin)
 
 step
@@ -8403,7 +8403,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 46-50 Badlands, Tanaris, Feralas (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Blasted Lands, Searing Gorge, Tanaris + ZF/Mara/ST (Paladin)
 
 step
@@ -9544,7 +9544,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 50-54 Blasted Lands, Searing Gorge, Tanaris + ZF/Mara/ST (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Paladin)
 
 step
@@ -10638,7 +10638,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Paladin)
 
 step
@@ -12134,7 +12134,7 @@ RXPGuides.RegisterGuide([[
 << Horde Paladin
 #name 57-60 Badlands, Winterspring, WPL + LBRS/DM/Scholo/Strat (Paladin)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 54 >>Tavoitetaso 54 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

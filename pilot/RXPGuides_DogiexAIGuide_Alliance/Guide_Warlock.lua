@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Warlock, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Warlock, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 1-6 Elwynn Forest (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Warlock)
 
@@ -150,7 +150,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 6-10 Elwynn Forest (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest (Warlock)
 
@@ -582,7 +582,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 10-12 Elwynn Forest (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Westfall (Warlock)
 
@@ -935,7 +935,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 1-6 Dun Morogh (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 6-10 Dun Morogh (Warlock)
 
@@ -1077,7 +1077,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 6-10 Dun Morogh (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 10-14 Dun Morogh, Elwynn Forest, Loch Modan (Warlock)
 
@@ -1467,7 +1467,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 10-14 Dun Morogh, Elwynn Forest, Loch Modan (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 12-15 Westfall (Warlock)
 
@@ -1849,7 +1849,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 12-15 Westfall (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Loch Modan + HoT (Warlock)
 
 step
@@ -2114,7 +2114,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 15-18 Westfall, Loch Modan + HoT (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Barrens + VC (Warlock)
 
 step
@@ -2609,7 +2609,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 18-22 Westfall, Redridge, Barrens + VC (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Dun Morogh, Redridge + RoL (Warlock)
 
 step
@@ -3696,7 +3696,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 22-26 Darkshore, Dun Morogh, Redridge + RoL (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Warlock)
 
 step
@@ -4498,7 +4498,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 26-31 Duskwood, Redridge, Wetlands (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Barrens, Hillsbrad + WC/BFD/Stocks (Warlock)
 
 step
@@ -5566,7 +5566,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 31-34 Ashenvale, Barrens, Hillsbrad + WC/BFD/Stocks (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Hillsbrad, Barrens, Desolace + RFK/Gnomer (Warlock)
 
 step
@@ -6526,7 +6526,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 34-39 Hillsbrad, Barrens, Desolace + RFK/Gnomer (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Barrens, Alterac + Exc. Site/Dalaran/SM (Warlock)
 
 step
@@ -7953,7 +7953,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 39-42 STV, Barrens, Alterac + Exc. Site/Dalaran/SM (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Dustwallow, Dun Morogh, STV + RFD/Ulda (Warlock)
 
 step
@@ -8726,7 +8726,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 42-46 Dustwallow, Dun Morogh, STV + RFD/Ulda (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Tanaris, Dun Morogh, Feralas + ZF (Warlock)
 
 step
@@ -9961,7 +9961,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 46-50 Tanaris, Dun Morogh, Feralas + ZF (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Azshara, Felwood, Blasted Lands + Mara/ST (Warlock)
 
 step
@@ -10909,7 +10909,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 50-54 Azshara, Felwood, Blasted Lands + Mara/ST (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 WPL, Searing Gorge, Burning Steppes + BRD (Warlock)
 
 step
@@ -12231,7 +12231,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 54-57 WPL, Searing Gorge, Burning Steppes + BRD (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Warlock)
 
 step
@@ -13407,7 +13407,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 57-60 Winterspring, WPL, EPL + LBRS/DM/Scholo/Strat (Warlock)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla

@@ -1,6 +1,11 @@
-# Dogiex's AI Guide: Horde 1-60 (Forever)
+# Dogiex's AI Guide: 1-60 (Forever)
 
-Levutusopas World of Warcraft: Foreveriin kaikille Horde-roduille (Orc, Troll, Undead, Tauren, Skyborne) ja kaikille yhdeksälle luokalle. Kaksi versiota:
+Levutusopas World of Warcraft: Foreveriin RestedXP- ja Guidelime-addoneille.
+
+- **Horde**: valmis, kaikki rodut (Orc, Troll, Undead, Tauren, Skyborne) ja kaikki yhdeksän luokkaa
+- **Alliance**: kehitteillä, testiversio kansiossa `pilot/` (ei vielä julkaisuissa)
+
+Kaksi versiota:
 
 - **RestedXP Guides** (ilmainen addon): `addons/RXPGuides_DogiexAIGuide`
 - **Guidelime** (varavaihtoehto, vaatii Questien): `addons/Guidelime_DogiexAIGuide`

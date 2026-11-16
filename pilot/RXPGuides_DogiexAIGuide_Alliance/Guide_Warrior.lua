@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Warrior, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Warrior, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 1-6 Elwynn Forest (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Warrior)
 
@@ -142,7 +142,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 6-10 Elwynn Forest (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest, Dun Morogh, Darkshore (Warrior)
 
@@ -568,7 +568,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 10-12 Elwynn Forest, Dun Morogh, Darkshore (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Westfall (Warrior)
 
@@ -1042,7 +1042,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 1-6 Dun Morogh (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 6-10 Dun Morogh (Warrior)
 
@@ -1171,7 +1171,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 6-10 Dun Morogh (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 10-14 Dun Morogh, Elwynn Forest, Darkshore (Warrior)
 
@@ -1594,7 +1594,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 10-14 Dun Morogh, Elwynn Forest, Darkshore (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf/Gnome
 #next 12-15 Westfall (Warrior)
 
@@ -2163,7 +2163,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 1-6 Teldrassil (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 6-10 Teldrassil (Warrior)
 
@@ -2268,7 +2268,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 6-10 Teldrassil (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 10-13 Teldrassil, Darkshore, Elwynn Forest (Warrior)
 
@@ -2737,7 +2737,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 10-13 Teldrassil, Darkshore, Elwynn Forest (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 12-15 Westfall (Warrior)
 
@@ -3204,7 +3204,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 1-12 Zephras Isle (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-13 Zephras Isle, Teldrassil, Darkshore (Warrior)
 
@@ -3757,7 +3757,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 12-13 Zephras Isle, Teldrassil, Darkshore (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-15 Westfall (Warrior)
 
@@ -3991,7 +3991,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 12-15 Westfall (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Loch Modan + HoT (Warrior)
 
 step
@@ -4256,7 +4256,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 15-18 Westfall, Loch Modan + HoT (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Darkshore + VC (Warrior)
 
 step
@@ -4750,7 +4750,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 18-22 Westfall, Redridge, Darkshore + VC (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Redridge, Wetlands + RoL (Warrior)
 
 step
@@ -5858,7 +5858,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 22-26 Darkshore, Redridge, Wetlands + RoL (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Warrior)
 
 step
@@ -6656,7 +6656,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 26-31 Duskwood, Redridge, Wetlands (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Barrens, Alterac + WC/BFD/Stocks (Warrior)
 
 step
@@ -7722,7 +7722,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 31-34 Ashenvale, Barrens, Alterac + WC/BFD/Stocks (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Hillsbrad, Duskwood, Wetlands + RFK/Gnomer (Warrior)
 
 step
@@ -8678,7 +8678,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 34-39 Hillsbrad, Duskwood, Wetlands + RFK/Gnomer (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Warrior)
 
 step
@@ -10197,7 +10197,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 39-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 STV, Dustwallow, Swamp + RFD/Ulda (Warrior)
 
 step
@@ -11138,7 +11138,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 42-46 STV, Dustwallow, Swamp + RFD/Ulda (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Feralas, Hinterlands, STV + ZF (Warrior)
 
 step
@@ -12543,7 +12543,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 46-50 Feralas, Hinterlands, STV + ZF (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Azshara, Swamp, Blasted Lands + Mara/ST (Warrior)
 
 step
@@ -13416,7 +13416,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 50-54 Azshara, Swamp, Blasted Lands + Mara/ST (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Felwood, WPL, Searing Gorge + BRD (Warrior)
 
 step
@@ -14565,7 +14565,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 54-57 Felwood, WPL, Searing Gorge + BRD (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Winterspring, EPL, Blasted Lands + LBRS/DM/Scholo/Strat (Warrior)
 
 step
@@ -15729,7 +15729,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warrior
 #name 57-60 Winterspring, EPL, Blasted Lands + LBRS/DM/Scholo/Strat (Warrior)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla

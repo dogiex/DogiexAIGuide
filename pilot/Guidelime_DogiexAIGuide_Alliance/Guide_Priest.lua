@@ -1,11 +1,11 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Guidelime-opas (pilotti).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Guidelime-opas (pilotti).
 if not Guidelime or not Guidelime.registerGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "PRIEST" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Priest]
 [N1-6 Elwynn Forest (Priest)]
 [NX6-10 Elwynn Forest (Priest)]
@@ -38,10 +38,10 @@ Guidelime.registerGuide([[
 [G 43.3,65.7 Elwynn Forest]Puhu: *Priestess Josetta* [QT5624 Garments of the Light]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 49.8,39.5 Elwynn Forest][T Priest-trainer (taso 6)] (*Priestess Anetta*): Smite r2, Power Word Shield
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Priest]
 [N6-10 Elwynn Forest (Priest)]
 [NX10-12 Elwynn Forest (Priest)]
@@ -116,10 +116,10 @@ Guidelime.registerGuide([[
 [O][A Leatherworking50][G 46.4,62.0 Elwynn Forest]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Adele Fielder*) [LE Leatherworking 150]
 [G 47.6,62.3 Elwynn Forest]Puhu: *Lee Brown* [QT99143 Bottles and Baubles]
 [G 47.5,62.2 Elwynn Forest]Puhu: *Jason Mathers* [QT99131 Baited for Success]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Human. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Human. Quest-data: QuestieDB.]
 [GA Human,Priest]
 [N10-12 Elwynn Forest (Priest)]
 [NX12-15 Dun Morogh, Westfall (Priest)]
@@ -187,10 +187,10 @@ Guidelime.registerGuide([[
 [G 79.5,68.8 Elwynn Forest]Puhu: *Sara Timberlain* [QT83 Red Linen Goods] [QT59 Cloth and Leather Armor]
 [G 78.5,60.2 Elwynn Forest]Kerää *Torn Murloc Fin* (Murloc Forager, Murloc Lurker) [QC46,1 Bounty on Murlocs]
 [G 74.0,72.2 Elwynn Forest]Puhu: *Guard Thomas* [QT46 Bounty on Murlocs]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
 [GA Dwarf,Gnome,Priest]
 [N1-6 Dun Morogh (Priest)]
 [NX6-10 Dun Morogh (Priest)]
@@ -222,10 +222,10 @@ Guidelime.registerGuide([[
 [G 47.3,52.2 Dun Morogh]Puhu: *Maxan Anvol* [QT5625 Garments of the Light]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 28.6,66.4 Dun Morogh][T Priest-trainer (taso 6)] (*Branstock Khalder*): Smite r2, Power Word Shield
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
 [GA Dwarf,Gnome,Priest]
 [N6-10 Dun Morogh (Priest)]
 [NX10-13 Dun Morogh, Loch Modan (Priest)]
@@ -296,10 +296,10 @@ Guidelime.registerGuide([[
 [G 30.2,45.5 Dun Morogh]Puhu: *Marleth Barleybrew* [QT311 Return to Marleth]
 [OC]Deathskip: kuole ja herää *Spirit Healer*illa (Dun Morogh). Säästää juoksun takaisin. Hardcore: ohita ja kävele.
 [G 28.7,67.5 Dun Morogh]Puhu: *Grund Drokda* [QT97277 Grund and Gozwin]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: Dwarf/Gnome. Quest-data: QuestieDB.]
 [GA Dwarf,Gnome,Priest]
 [N10-13 Dun Morogh, Loch Modan (Priest)]
 [NX12-15 Dun Morogh, Westfall (Priest)]
@@ -370,10 +370,10 @@ Guidelime.registerGuide([[
 [G 29.6,72.9 Loch Modan]Tapa *Stonesplinter Scout*; Tapa *Stonesplinter Trogg*; Kerää *Trogg Stone Tooth* (Stonesplinter Seer, Stonesplinter Trogg, Stonesplinter Scout) [QC224,2 In Defense of the King's Lands] [QC224,1 In Defense of the King's Lands] [QC267,1 The Trogg Threat]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QT267 The Trogg Threat]
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QT224 In Defense of the King's Lands]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Priest]
 [N1-6 Teldrassil (Priest)]
 [NX6-10 Teldrassil (Priest)]
@@ -394,10 +394,10 @@ Guidelime.registerGuide([[
 [G 59.2,40.4 Teldrassil]Puhu: *Shanda* [QT3119 Hallowed Sigil]
 [XP6 Tavoitetaso 6: jos olet alle, grindaa aloitusalueella ennen lähtöä]
 [G 59.2,40.4 Teldrassil][T Priest-trainer (taso 6)] (*Shanda*): Smite r2, Power Word Shield
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Priest]
 [N6-10 Teldrassil (Priest)]
 [NX10-12 Teldrassil (Priest)]
@@ -479,10 +479,10 @@ Guidelime.registerGuide([[
 [G 49.8,61.4 Teldrassil]Kerää *Gnarlpine Fang* (Gnarlpine Defender, Gnarlpine Shaman, Gnarlpine Warrior) [QC490,1 Bounty: Gnarlpine Furbolg]
 [O][A Leatherworking50][G 41.9,49.4 Teldrassil]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Nadyia Maneweaver*) [LE Leatherworking 150]
 [G 40.5,50.7 Teldrassil]Puhu: *Sentinel Shayla Nightbreeze* [QT490 Bounty: Gnarlpine Furbolg]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest, aloitus: NightElf. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest, aloitus: NightElf. Quest-data: QuestieDB.]
 [GA NightElf,Priest]
 [N10-12 Teldrassil (Priest)]
 [NX12-15 Dun Morogh, Westfall (Priest)]
@@ -545,10 +545,10 @@ Guidelime.registerGuide([[
 [G 56.1,61.7 Teldrassil]Puhu: *Corithras Moonrage* [QT7383 Crown of the Earth]
 [G 56.3,59.5 Teldrassil][V Myy harmaat roinat] ja [R korjaa varusteet] (*Shalomon*)
 [G 60.9,68.5 Teldrassil]Puhu: *Denalan* [QT930 The Glowing Fruit] [QT931 The Shimmering Frond]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N12-15 Dun Morogh, Westfall (Priest)]
 [NX15-18 Westfall, Loch Modan + HoT (Priest)]
@@ -628,10 +628,10 @@ Guidelime.registerGuide([[
 [O][A Alchemy1][G 42.8,72.8 Westfall]Ammattitehtävä (Alchemy 1+): puhu *Odd Child* [QA92109 My First Alchemy Set] Tavoite: Bring 5 Empty Vials, 5 Silverleaf, and 5 Peacebloom to the young, aspiring alchemist inside the barn of Moonbrook in Westfall.
 [G 43.1,68.8 Westfall]Kerää *Suspicious Industrial Supplies* (Suspicious Crate) [QC92747,1 Moonbrook Espionage]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92747 Moonbrook Espionage]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N15-18 Westfall, Loch Modan + HoT (Priest)]
 [NX18-22 Westfall, Redridge, Dun Morogh + VC (Priest)]
@@ -716,10 +716,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Ironforge*. Ironforge: lento, tai Deeprun Tram Stormwindista
 [G 27.6,47.8 Ironforge]*Mene dungeoniin: The Hall of Thanes*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä, olet todennäköisesti healer). Kerää *Durgen Dirgehammer's Head* (Durgen Dirgehammer) [QC96393,1 Old Ironforge Incursion]
 [G 39.1,56.2 Ironforge]Puhu: *King Magni Bronzebeard* [QT96393 Old Ironforge Incursion]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N18-22 Westfall, Redridge, Dun Morogh + VC (Priest)]
 [NX22-26 Darkshore, Redridge, Wetlands + RoL (Priest)]
@@ -947,10 +947,10 @@ Guidelime.registerGuide([[
 [G 44.2,36.3 Darkshore]Puhu: *Asterion* [QT957 Bashal'Aran]
 [O][A Mining125][G 38.2,41.0 Darkshore]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 225]
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted] [QT98042 It's All Fun and Games Until...]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N22-26 Darkshore, Redridge, Wetlands + RoL (Priest)]
 [NX26-31 Duskwood, Redridge, Wetlands (Priest)]
@@ -1110,10 +1110,10 @@ Guidelime.registerGuide([[
 [G 24.2,43.3 Duskwood]Kerää *Rot Blossom* (Skeletal Horror, Skeletal Fiend) [QC156,1 Gather Rot Blossoms]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT156 Gather Rot Blossoms] [QA159 Juice Delivery]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT159 Juice Delivery]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N26-31 Duskwood, Redridge, Wetlands (Priest)]
 [NX31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Priest)]
@@ -1312,10 +1312,10 @@ Guidelime.registerGuide([[
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Priest)]
 [NX34-40 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Priest)]
@@ -1466,10 +1466,10 @@ Guidelime.registerGuide([[
 [G 61.1,43.8 Alterac Mountains]Kerää *Alterac Signet Ring* (Syndicate Sentry, Syndicate Spy, Syndicate Assassin) [QC512,1 Noble Deaths]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N34-40 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Priest)]
 [NX40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Priest)]
@@ -1782,10 +1782,10 @@ Guidelime.registerGuide([[
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT604 The Bloodsail Buccaneers]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QT617 Akiris by the Bundle] [QA623 Akiris by the Bundle]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Priest)]
 [NX42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Priest)]
@@ -1868,10 +1868,10 @@ Guidelime.registerGuide([[
 [G 67.8,42.5 Ironforge][V Myy harmaat roinat] (*Gearcutter Cogspinner*)
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Raleigh the Devout* [QT1053 In the Name of the Light]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Priest)]
 [NX46-50 Tanaris, Feralas, Hinterlands + ZF (Priest)]
@@ -2163,10 +2163,10 @@ Guidelime.registerGuide([[
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT10 The Scrimshank Redemption] [QA110 Insect Part Analysis]
 [G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT110 Insect Part Analysis] [QA113 Insect Part Analysis]
 [G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT113 Insect Part Analysis]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N46-50 Tanaris, Feralas, Hinterlands + ZF (Priest)]
 [NX50-54 Dustwallow, Azshara, Blasted Lands + Mara/ST (Priest)]
@@ -2368,10 +2368,10 @@ Guidelime.registerGuide([[
 [G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QT2770 Gahz'rilla]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Theramore]
 [G 46.1,57.1 Dustwallow Marsh]Puhu: *Tabetha* [QT2846 Tiara of the Deep]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N50-54 Dustwallow, Azshara, Blasted Lands + Mara/ST (Priest)]
 [NX54-57 Felwood, WPL, Searing Gorge + BRD (Priest)]
@@ -2630,10 +2630,10 @@ Guidelime.registerGuide([[
 [G 51.4,81.5 Felwood]Puhu: *Eridan Bluewind* [QT4906 Further Corruption]
 [G 51.2,82.1 Felwood]Puhu: *Greta Mosshoof* [QT5157 Collection of the Corrupt Water]
 [G 40.3,58.9 Felwood]Kerää *Filled Tainted Ooze Jar* (Tainted Ooze) [QC4512,2 A Little Slime Goes a Long Way]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N54-57 Felwood, WPL, Searing Gorge + BRD (Priest)]
 [NX57-60 Searing Gorge, Winterspring, EPL + LBRS/DM/Scholo/Strat (Priest)]
@@ -2813,10 +2813,10 @@ Guidelime.registerGuide([[
 [G 44.0,60.9 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,2 Set Them Ablaze!]
 [G 50.1,54.7 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,3 Set Them Ablaze!]
 [G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3463 Set Them Ablaze!]
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Alliance 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Priest. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Priest]
 [N57-60 Searing Gorge, Winterspring, EPL + LBRS/DM/Scholo/Strat (Priest)]
 [XP54 Tavoitetaso 54: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -3152,4 +3152,4 @@ Guidelime.registerGuide([[
 [G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8977 Return to Deliana]
 [G 43.4,52.1 Ironforge][V Myy harmaat roinat] (*Deliana*)
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Alliance 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Mage, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 1-6 Elwynn Forest (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Mage)
 
@@ -132,7 +132,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 6-10 Elwynn Forest (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest (Mage)
 
@@ -562,7 +562,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 10-12 Elwynn Forest (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Elwynn Forest, Westfall (Mage)
 
@@ -912,7 +912,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 1-6 Dun Morogh (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 6-10 Dun Morogh (Mage)
 
@@ -1041,7 +1041,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 6-10 Dun Morogh (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 10-14 Dun Morogh, Loch Modan (Mage)
 
@@ -1464,7 +1464,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 10-14 Dun Morogh, Loch Modan (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Gnome
 #next 12-15 Elwynn Forest, Westfall (Mage)
 
@@ -1873,7 +1873,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 1-12 Zephras Isle, Elwynn Forest (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-15 Elwynn Forest, Westfall (Mage)
 
@@ -2531,7 +2531,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 12-15 Elwynn Forest, Westfall (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)
 
 step
@@ -2889,7 +2889,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 15-18 Westfall, Elwynn Forest, Loch Modan + HoT (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Darkshore + VC (Mage)
 
 step
@@ -3348,7 +3348,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 18-22 Westfall, Redridge, Darkshore + VC (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)
 
 step
@@ -4400,7 +4400,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 22-26 Darkshore, Elwynn Forest, Redridge + RoL (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Mage)
 
 step
@@ -5187,7 +5187,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 26-31 Duskwood, Redridge, Wetlands (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)
 
 step
@@ -6350,7 +6350,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 31-34 Ashenvale, Dustwallow, 1K Needles + WC/BFD/Stocks (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Mage)
 
 step
@@ -7224,7 +7224,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 34-38 Hillsbrad, Arathi, 1K Needles + RFK/Gnomer (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)
 
 step
@@ -8214,7 +8214,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 38-42 Desolace, Elwynn Forest, Dustwallow + Exc. Site/Dalaran/SM (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)
 
 step
@@ -9347,7 +9347,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Tanaris, Feralas, Hinterlands + ZF (Mage)
 
 step
@@ -10893,7 +10893,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 46-50 Tanaris, Feralas, Hinterlands + ZF (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Dustwallow, Azshara, Tirisfal Glades + Mara/ST (Mage)
 
 step
@@ -11956,7 +11956,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 50-54 Dustwallow, Azshara, Tirisfal Glades + Mara/ST (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Tanaris, Felwood, WPL + BRD (Mage)
 
 step
@@ -13140,7 +13140,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 54-57 Tanaris, Felwood, WPL + BRD (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Mage)
 
 step
@@ -14267,7 +14267,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Mage)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 53 >>Tavoitetaso 53 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

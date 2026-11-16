@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Horde" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 1-6 Durotar (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Troll
 #next 6-12 Durotar (Priest)
 
@@ -153,7 +153,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 6-12 Durotar (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Troll
 #next 12-14 Barrens (Priest)
 
@@ -879,7 +879,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 1-6 Tirisfal Glades (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 6-10 Tirisfal Glades (Priest)
 
@@ -1036,7 +1036,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 6-10 Tirisfal Glades (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 10-15 Silverpine Forest (Priest)
 
@@ -1442,7 +1442,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 10-15 Silverpine Forest (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 12-14 Barrens (Priest)
 
@@ -1978,7 +1978,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 12-14 Barrens (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 14-18 Barrens, Stonetalon + RFC/WC (Priest)
 
 step
@@ -2371,7 +2371,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 14-18 Barrens, Stonetalon + RFC/WC (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Barrens (Priest)
 
 step
@@ -3049,7 +3049,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 18-22 Barrens (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-27 Ashenvale, Barrens, Stonetalon + RoL (Priest)
 
 step
@@ -3521,7 +3521,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 22-27 Ashenvale, Barrens, Stonetalon + RoL (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Priest)
 
 step
@@ -4479,7 +4479,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 30-34 Barrens, 1K Needles, Hillsbrad + RFK (Priest)
 
 step
@@ -5037,7 +5037,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 30-34 Barrens, 1K Needles, Hillsbrad + RFK (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Priest)
 
 step
@@ -5815,7 +5815,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Priest)
 
 step
@@ -6970,7 +6970,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Priest)
 
 step
@@ -7906,7 +7906,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Badlands, Tanaris, Feralas (Priest)
 
 step
@@ -9110,7 +9110,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 46-50 Badlands, Tanaris, Feralas (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Priest)
 
 step
@@ -10256,7 +10256,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Priest)
 
 step
@@ -11435,7 +11435,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Priest)
 
 step
@@ -12960,7 +12960,7 @@ RXPGuides.RegisterGuide([[
 << Horde Priest
 #name 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Priest)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 53 >>Tavoitetaso 53 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

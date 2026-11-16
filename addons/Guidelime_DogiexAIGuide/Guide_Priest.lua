@@ -1,10 +1,10 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Guidelime-opas.
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Guidelime-opas.
 if not Guidelime or not Guidelime.registerGuide then return end
 local _, _cls = UnitClass("player")
 if _cls ~= "PRIEST" then return end
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Troll. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, aloitus: Troll. Quest-data: QuestieDB.]
 [GA Troll,Priest]
 [N1-6 Durotar (Priest)]
 [NX6-12 Durotar (Priest)]
@@ -33,10 +33,10 @@ Guidelime.registerGuide([[
 [G 42.7,53.0 Durotar]Kerää *Burning Blade Medallion* (Yarrog Baneshadow) [QC794,1 Burning Blade Medallion]
 [G 42.4,68.8 Durotar][T Priest-trainer (taso 6)] (*Ken'jai*): Smite r2, Power Word Shield
 [G 42.9,69.2 Durotar]Puhu: *Zureetha Fargaze* [QT794 Burning Blade Medallion]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Troll. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, aloitus: Troll. Quest-data: QuestieDB.]
 [GA Troll,Priest]
 [N6-12 Durotar (Priest)]
 [NX12-14 Barrens (Priest)]
@@ -167,10 +167,10 @@ Guidelime.registerGuide([[
 [O][A Tailoring50][G 62.9,49.2 Orgrimmar]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Snang*) [LE Tailoring 150]
 [G 35.6,87.8 Orgrimmar]Puhu: *Ur'kyo* [QT5654 Hex of Weakness]
 [G 33.8,79.8 Orgrimmar][V Myy harmaat roinat] (*Xan'tish*)
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Undead. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Priest]
 [N1-6 Tirisfal Glades (Priest)]
 [NX6-10 Tirisfal Glades (Priest)]
@@ -199,10 +199,10 @@ Guidelime.registerGuide([[
 [G 36.6,68.5 Tirisfal Glades]Kerää *Scarlet Crusade Documents* (Meven Korgal) [QC382,1 The Red Messenger]
 [G 32.1,66.0 Tirisfal Glades]Puhu: *Executor Arren* [QT382 The Red Messenger]
 [G 31.1,66.0 Tirisfal Glades]Puhu: *Dark Cleric Duesten* [QT3097 Hallowed Scroll]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Undead. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Priest]
 [N6-10 Tirisfal Glades (Priest)]
 [NX10-15 Silverpine Forest (Priest)]
@@ -278,10 +278,10 @@ Guidelime.registerGuide([[
 [O][A Enchanting50][G 61.8,51.6 Tirisfal Glades]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Vance Undergloom*) [LE Enchanting 150]
 [G 60.9,52.0 Tirisfal Glades]Puhu: *Deathguard Burgess* [QT374 Proof of Demise]
 [G 60.2,52.7 Tirisfal Glades]Puhu: *Shari Stilwell* [QT99144 Seeking Refuge]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest, aloitus: Undead. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest, aloitus: Undead. Quest-data: QuestieDB.]
 [GA Undead,Priest]
 [N10-15 Silverpine Forest (Priest)]
 [NX12-14 Barrens (Priest)]
@@ -382,10 +382,10 @@ Guidelime.registerGuide([[
 [G 53.5,13.4 Silverpine Forest]Puhu: *Rane Yorick* [QA425 Ivar the Foul]
 [G 51.5,13.9 Silverpine Forest]Kerää *Ivar's Head* (Ivar the Foul) [QC425,1 Ivar the Foul]
 [G 53.5,13.4 Silverpine Forest]Puhu: *Rane Yorick* [QT425 Ivar the Foul]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N12-14 Barrens (Priest)]
 [NX14-18 Barrens, Stonetalon + RFC/WC (Priest)]
@@ -464,10 +464,10 @@ Guidelime.registerGuide([[
 [G 52.2,31.0 The Barrens]Puhu: *Sergra Darkthorn* [QA845 The Zhevra]
 [G 54.0,33.0 The Barrens]Kerää *Zhevra Hooves* (Zhevra Runner, Zhevra Charger, Zhevra Courser) [QC845,1 The Zhevra]
 [G 52.2,31.0 The Barrens]Puhu: *Sergra Darkthorn* [QT845 The Zhevra]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N14-18 Barrens, Stonetalon + RFC/WC (Priest)]
 [NX18-22 Barrens (Priest)]
@@ -599,10 +599,10 @@ Guidelime.registerGuide([[
 [G 46.0,35.7 The Barrens]Puhu: *Nalpak* [QT1486 Deviate Hides]
 [G 46.0,35.7 The Barrens]Puhu: *Ebru* [QT1487 Deviate Eradication]
 [G 62.4,37.6 The Barrens]Puhu: *Mebok Mizzyrix* [QT1491 Smart Drinks]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N18-22 Barrens (Priest)]
 [NX22-27 Ashenvale, Barrens, Stonetalon + RoL (Priest)]
@@ -693,10 +693,10 @@ Guidelime.registerGuide([[
 [G 22.6,12.8 Thunder Bluff][V Myy harmaat roinat] (*Rune Broker*)
 [G 70.1,29.5 Thunder Bluff]Puhu: *Rahauro* [QT5723 Testing an Enemy's Strength] [QT5724 Returning the Lost Satchel]
 [G 75.7,31.6 Thunder Bluff]Puhu: *Nara Wildmane* [QT914 Leaders of the Fang]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N22-27 Ashenvale, Barrens, Stonetalon + RoL (Priest)]
 [NX27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Priest)]
@@ -876,10 +876,10 @@ Guidelime.registerGuide([[
 [G 63.6,53.1 Hillsbrad Foothills]Puhu: *Deathstalker Masoj* [QT98094 Scout Support]
 [G 31.2,56.0 Hillsbrad Foothills]Tapa *Foreman Bonds*; Tapa *Hillsbrad Miner* [QC539,1 Battle of Hillsbrad] [QC539,2 Battle of Hillsbrad]
 [G 62.3,20.4 Hillsbrad Foothills]Puhu: *High Executor Darthalia* [QT539 Battle of Hillsbrad]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Priest)]
 [NX30-34 Barrens, 1K Needles, Hillsbrad + RFK (Priest)]
@@ -989,10 +989,10 @@ Guidelime.registerGuide([[
 [G 51.4,30.2 The Barrens][V Myy harmaat roinat] (*Hula'mahi*)
 [G 51.5,30.3 The Barrens]Lennä (*Devrak*): [F Camp Taurajo]
 [G 45.9,77.0 The Barrens]Puhu: *Gann Stonespire* [QT849 Revenge of Gann]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N30-34 Barrens, 1K Needles, Hillsbrad + RFK (Priest)]
 [NX34-39 Arathi, 1K Needles, Desolace + Exc. Site (Priest)]
@@ -1147,10 +1147,10 @@ Guidelime.registerGuide([[
 [G 74.8,34.6 Arathi Highlands][V Myy harmaat roinat] (*Tunkk*)
 [G 77.5,34.9 Arathi Highlands]Kerää *Mote of Myzrael* (Drywhisker Kobold, Drywhisker Digger, Drywhisker Surveyor) [QC642,1 The Princess Trapped]
 [G 84.3,30.9 Arathi Highlands]Klikkaa: *Iridescent Shards* [QT642 The Princess Trapped]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N34-39 Arathi, 1K Needles, Desolace + Exc. Site (Priest)]
 [NX39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Priest)]
@@ -1374,10 +1374,10 @@ Guidelime.registerGuide([[
 [O][A Alchemy125][G 28.0,78.0 Stranglethorn Vale]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Jaxin Chong*) [LE Alchemy 225]
 [G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QT587 Up to Snuff]
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT209 Skullsplitter Tusks]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Priest)]
 [NX42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Priest)]
@@ -1562,10 +1562,10 @@ Guidelime.registerGuide([[
 [G 36.4,30.9 Dustwallow Marsh]Puhu: *Krak* [QT98192 Skin Careful, Skin Sharp]
 [G 37.4,31.4 Dustwallow Marsh]Puhu: *Tharg* [QT1168 Army of the Black Dragon]
 [G 37.1,33.1 Dustwallow Marsh]Puhu: *Draz'Zilb* [QT1171 The Brood of Onyxia]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Priest)]
 [NX46-50 Badlands, Tanaris, Feralas (Priest)]
@@ -1804,10 +1804,10 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Stranglethorn Vale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 [G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Kargath]
 [G 2.4,46.1 Badlands]Puhu: *Jarkal Mossmeld* [QT2341 Necklace Recovery, Take 3]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N46-50 Badlands, Tanaris, Feralas (Priest)]
 [NX50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Priest)]
@@ -2015,10 +2015,10 @@ Guidelime.registerGuide([[
 [G 54.6,36.8 Blasted Lands]Kerää *Blasted Boar Lung* (Helboar, Ashmane Boar) [QC2581,2 Snickerfang Jowls] [QC2583,1 A Boar's Vitality] [QC2585,3 The Decisive Striker]
 [G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT2603 Vulture's Vigor] [QT2601 The Basilisk's Bite]
 [G 50.5,14.2 Blasted Lands]Puhu: *Bloodmage Drazial* [QT2581 Snickerfang Jowls] [QT2583 A Boar's Vitality] [QT2585 The Decisive Striker]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Priest)]
 [NX54-57 Hinterlands, Tanaris, Un'Goro + BRD (Priest)]
@@ -2255,10 +2255,10 @@ Guidelime.registerGuide([[
 [G 48.6,55.3 Swamp of Sorrows][V Myy harmaat roinat] (*Greshka*)
 [G 46.1,54.8 Swamp of Sorrows]Lennä (*Breyk*): [F Revantusk Village]
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1446 Jammal'an the Prophet]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N54-57 Hinterlands, Tanaris, Un'Goro + BRD (Priest)]
 [NX57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Priest)]
@@ -2553,10 +2553,10 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä, olet todennäköisesti healer). Tapa *General Angerforge* [QC4132,1 Operation: Death to Angerforge]
 [G 34.8,30.9 Searing Gorge]Lennä (*Grisha*): [F Kargath]
 [G 5.8,47.5 Badlands]Puhu: *Warlord Goretooth* [QT4132 Operation: Death to Angerforge]
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
-[D Dogiex's AI Guide: Horde 1-60 (Forever) - Priest. Quest-data: QuestieDB.]
+[D Dogiex's AI Guide: 1-60 (Forever) - Horde Priest. Quest-data: QuestieDB.]
 [GA Troll,Undead,Priest]
 [N57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Priest)]
 [XP53 Tavoitetaso 53: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -2905,4 +2905,4 @@ Guidelime.registerGuide([[
 [G 35.0,38.3 Orgrimmar]Puhu: *Mokvar* [QT8978 Return to Mokvar]
 [G 34.9,38.0 Orgrimmar][V Myy harmaat roinat] (*Mokvar*)
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
-]], "Dogiex's AI Guide: Horde 1-60 (Forever)")
+]], "Dogiex's AI Guide: 1-60 (Forever)")

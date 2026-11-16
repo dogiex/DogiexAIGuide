@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Rogue, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Rogue, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Horde" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 1-6 Durotar (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Orc/Troll
 #next 6-13 Durotar, Barrens (Rogue)
 
@@ -147,7 +147,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 6-13 Durotar, Barrens (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Orc/Troll
 #next 12-14 Silverpine Forest, Barrens (Rogue)
 
@@ -890,7 +890,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 1-6 Tirisfal Glades (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 6-10 Tirisfal Glades (Rogue)
 
@@ -1043,7 +1043,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 6-10 Tirisfal Glades (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 10-15 Silverpine Forest (Rogue)
 
@@ -1432,7 +1432,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 10-15 Silverpine Forest (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Undead
 #next 12-14 Silverpine Forest, Barrens (Rogue)
 
@@ -2019,7 +2019,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 1-12 Zephras Isle (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-14 Silverpine Forest, Barrens (Rogue)
 
@@ -2553,7 +2553,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 12-14 Silverpine Forest, Barrens (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 14-18 Barrens, Silverpine Forest, Durotar + RFC (Rogue)
 
 step
@@ -2972,7 +2972,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 14-18 Barrens, Silverpine Forest, Durotar + RFC (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Stonetalon, Silverpine Forest + WC (Rogue)
 
 step
@@ -3676,7 +3676,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 18-22 Stonetalon, Silverpine Forest + WC (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-27 Silverpine Forest, Ashenvale, Barrens + RoL (Rogue)
 
 step
@@ -4176,7 +4176,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 22-27 Silverpine Forest, Ashenvale, Barrens + RoL (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Rogue)
 
 step
@@ -5261,7 +5261,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 27-30 Hillsbrad, Ashenvale, Stonetalon + SFK/BFD (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 30-34 Stonetalon, Barrens, 1K Needles + RFK (Rogue)
 
 step
@@ -5610,7 +5610,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 30-34 Stonetalon, Barrens, 1K Needles + RFK (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Rogue)
 
 step
@@ -6598,7 +6598,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Rogue)
 
 step
@@ -7742,7 +7742,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Rogue)
 
 step
@@ -8704,7 +8704,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Badlands, Tanaris, Feralas (Rogue)
 
 step
@@ -9912,7 +9912,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 46-50 Badlands, Tanaris, Feralas (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Blasted Lands, Searing Gorge, Alterac + ZF/Mara/ST (Rogue)
 
 step
@@ -11066,7 +11066,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 50-54 Blasted Lands, Searing Gorge, Alterac + ZF/Mara/ST (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Rogue)
 
 step
@@ -12248,7 +12248,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Rogue)
 
 step
@@ -13765,7 +13765,7 @@ RXPGuides.RegisterGuide([[
 << Horde Rogue
 #name 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Rogue)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 53 >>Tavoitetaso 53 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

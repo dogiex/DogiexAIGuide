@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Horde 1-60 (Forever) - Hunter, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Horde Hunter, tasot 1-60. Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Horde" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 1-6 Durotar (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Orc/Troll
 #next 6-13 Durotar (Hunter)
 
@@ -155,7 +155,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 6-13 Durotar (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Orc/Troll
 #next 12-14 Durotar, Mulgore, Barrens (Hunter)
 
@@ -897,7 +897,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 1-6 Mulgore (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Tauren
 #next 6-11 Mulgore (Hunter)
 
@@ -1025,7 +1025,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 6-11 Mulgore (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Tauren
 #next 11-13 Mulgore (Hunter)
 
@@ -1477,7 +1477,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 11-13 Mulgore (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Tauren
 #next 12-14 Durotar, Mulgore, Barrens (Hunter)
 
@@ -1747,7 +1747,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 1-13 Zephras Isle (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-14 Durotar, Mulgore, Barrens (Hunter)
 
@@ -2336,7 +2336,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 12-14 Durotar, Mulgore, Barrens (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 14-18 Barrens, Stonetalon + RFC/WC (Hunter)
 
 step
@@ -2735,7 +2735,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 14-18 Barrens, Stonetalon + RFC/WC (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Barrens (Hunter)
 
 step
@@ -3398,7 +3398,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 18-22 Barrens (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-27 Ashenvale, Barrens, Stonetalon + RoL (Hunter)
 
 step
@@ -3838,7 +3838,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 22-27 Ashenvale, Barrens, Stonetalon + RoL (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 27-30 Hillsbrad, Swamp, Ashenvale + SFK/BFD (Hunter)
 
 step
@@ -4823,7 +4823,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 27-30 Hillsbrad, Swamp, Ashenvale + SFK/BFD (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 30-34 Barrens, 1K Needles, Hillsbrad + RFK (Hunter)
 
 step
@@ -5380,7 +5380,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 30-34 Barrens, 1K Needles, Hillsbrad + RFK (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Hunter)
 
 step
@@ -6158,7 +6158,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 34-39 Arathi, 1K Needles, Desolace + Exc. Site (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Hunter)
 
 step
@@ -7322,7 +7322,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Hunter)
 
 step
@@ -8269,7 +8269,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 42-46 Dustwallow, Desolace, STV + RFD/SM/Ulda (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Badlands, Tanaris, Feralas (Hunter)
 
 step
@@ -9474,7 +9474,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 46-50 Badlands, Tanaris, Feralas (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Hunter)
 
 step
@@ -10664,7 +10664,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 50-54 Blasted Lands, Searing Gorge, Azshara + ZF/Mara/ST (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Hunter)
 
 step
@@ -11849,7 +11849,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 54-57 Hinterlands, Tanaris, Un'Goro + BRD (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)
 
 step
@@ -13337,7 +13337,7 @@ RXPGuides.RegisterGuide([[
 << Horde Hunter
 #name 57-60 Badlands, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)
 #version 1
-#group Dogiex's AI Guide: Horde 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 53 >>Tavoitetaso 53 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa

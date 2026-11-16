@@ -1,4 +1,4 @@
--- Dogiex's AI Guide: Alliance 1-60 (Forever) - Hunter, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
+-- Dogiex's AI Guide: 1-60 (Forever) - Alliance Hunter, tasot 1-60 (pilotti). Oma reitti, quest-data: QuestieDB (Forever).
 if not RXPGuides or not RXPGuides.RegisterGuide then return end
 if UnitFactionGroup("player") ~= "Alliance" then return end
 local _, _cls = UnitClass("player")
@@ -9,7 +9,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 1-6 Elwynn Forest (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 6-10 Elwynn Forest (Hunter)
 
@@ -136,7 +136,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 6-10 Elwynn Forest (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 10-12 Elwynn Forest (Hunter)
 
@@ -595,7 +595,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 10-12 Elwynn Forest (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
 #next 12-15 Dun Morogh, Teldrassil, Westfall (Hunter)
 
@@ -827,7 +827,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 1-6 Dun Morogh (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 6-10 Dun Morogh (Hunter)
 
@@ -956,7 +956,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 6-10 Dun Morogh (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 10-14 Dun Morogh, Loch Modan (Hunter)
 
@@ -1422,7 +1422,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 10-14 Dun Morogh, Loch Modan (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
 #next 12-15 Dun Morogh, Teldrassil, Westfall (Hunter)
 
@@ -1816,7 +1816,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 1-6 Teldrassil (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 6-10 Teldrassil (Hunter)
 
@@ -1921,7 +1921,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 6-10 Teldrassil (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 10-13 Teldrassil (Hunter)
 
@@ -2424,7 +2424,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 10-13 Teldrassil (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor NightElf
 #next 12-15 Dun Morogh, Teldrassil, Westfall (Hunter)
 
@@ -2715,7 +2715,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 1-13 Zephras Isle (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Skyborne
 #next 12-15 Dun Morogh, Teldrassil, Westfall (Hunter)
 
@@ -3304,7 +3304,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 12-15 Dun Morogh, Teldrassil, Westfall (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 15-18 Westfall, Loch Modan + HoT (Hunter)
 
 step
@@ -3689,7 +3689,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 15-18 Westfall, Loch Modan + HoT (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 18-22 Westfall, Redridge, Darkshore + VC (Hunter)
 
 step
@@ -4171,7 +4171,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 18-22 Westfall, Redridge, Darkshore + VC (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 22-26 Darkshore, Redridge, Wetlands + RoL (Hunter)
 
 step
@@ -5164,7 +5164,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 22-26 Darkshore, Redridge, Wetlands + RoL (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 26-31 Duskwood, Redridge, Wetlands (Hunter)
 
 step
@@ -5939,7 +5939,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 26-31 Duskwood, Redridge, Wetlands (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Hunter)
 
 step
@@ -7028,7 +7028,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 31-34 Ashenvale, Barrens, Stonetalon + WC/BFD/Stocks (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 34-40 Hillsbrad, Arathi, Ashenvale + RFK/Gnomer (Hunter)
 
 step
@@ -7795,7 +7795,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 34-40 Hillsbrad, Arathi, Ashenvale + RFK/Gnomer (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Hunter)
 
 step
@@ -9433,7 +9433,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 40-42 STV, Alterac, Hillsbrad + Exc. Site/Dalaran/SM (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Hunter)
 
 step
@@ -9840,7 +9840,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 42-46 Hillsbrad, Dustwallow, STV + RFD/Ulda (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 46-50 Tanaris, Feralas, Hinterlands + ZF (Hunter)
 
 step
@@ -11346,7 +11346,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 46-50 Tanaris, Feralas, Hinterlands + ZF (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 50-54 Dustwallow, Azshara, Swamp + Mara/ST (Hunter)
 
 step
@@ -12381,7 +12381,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 50-54 Dustwallow, Azshara, Swamp + Mara/ST (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 54-57 Felwood, WPL, Searing Gorge + BRD (Hunter)
 
 step
@@ -13723,7 +13723,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 54-57 Felwood, WPL, Searing Gorge + BRD (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 #next 57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)
 
 step
@@ -14639,7 +14639,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 57-60 Searing Gorge, Un'Goro, Winterspring + LBRS/DM/Scholo/Strat (Hunter)
 #version 1
-#group Dogiex's AI Guide: Alliance 1-60 (Forever)
+#group Dogiex's AI Guide: 1-60 (Forever)
 
 step
     .xp 53 >>Tavoitetaso 53 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
