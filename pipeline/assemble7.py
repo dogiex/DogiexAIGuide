@@ -40,7 +40,7 @@ for c in CLS:
         H=['#forever','<< Horde %s'%CT[c],'#name '+nm,'#version 1','#group '+GROUP]+(['#next '+mnames[i+1]] if i+1<len(mnames) else [])
         g='\n'.join(H+['']+fixs(steps)); rx_ok(g); L.append('RXPGuides.RegisterGuide([[\n'+g+'\n]])\n')
     fn='Guide_%s.lua'%CT[c]; open(d+'/'+fn,'w',encoding='utf-8').write('\n'.join(L)); files.append(fn)
-open(d+'/RXPGuides_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: RestedXP: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.0\n## Dependencies: RXPGuides\n\n'+'\n'.join(files)+'\n')
+open(d+'/RXPGuides_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: RestedXP: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.1\n## Dependencies: RXPGuides\n\n'+'\n'.join(files)+'\n')
 # ================= Guidelime =================
 d=OUT+'/Guidelime_DogiexAIGuide'; os.makedirs(d); files=[]
 for c in CLS:
@@ -57,5 +57,5 @@ for c in CLS:
         G=['[D Dogiex\'s AI Guide: Horde 1-60 (Forever) - %s. Quest-data: QuestieDB.]'%CT[c],'[GA %s,%s]'%(RACES[c],CT[c]),'[N%s]'%nm]+(['[NX%s]'%mnames[i+1]] if i+1<len(mnames) else [])+fixs(steps)
         g='\n'.join(G); rx_ok(g); L.append('Guidelime.registerGuide([[\n'+g+'\n]], "%s")\n'%GROUP)
     fn='Guide_%s.lua'%CT[c]; open(d+'/'+fn,'w',encoding='utf-8').write('\n'.join(L)); files.append(fn)
-open(d+'/Guidelime_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: Guidelime: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.0\n## Dependencies: Guidelime\n\n'+'\n'.join(files)+'\n')
+open(d+'/Guidelime_DogiexAIGuide.toc','w',encoding='utf-8').write('## Interface: 16001\n## Title: Guidelime: Dogiex\'s AI Guide: Horde 1-60 (Forever)\n## Notes: Levutusreitti kaikille Horde-roduille ja -luokille (WoW Forever)\n## Version: 2.1\n## Dependencies: Guidelime\n\n'+'\n'.join(files)+'\n')
 print('ok')
