@@ -227,17 +227,22 @@ step
     .accept 317 >>Ota: Stocking Jetsteam
     .target Pilot Bellowfiz
 step
-    .goto 1426/0,-359.99,-5472.78
-    >>Kerää |cRXP_LOOT_Wendigo Mane|r (|cRXP_ENEMY_Wendigo|r, |cRXP_ENEMY_Wendigo Shaman|r, |cRXP_ENEMY_Elder Wendigo|r)
+    .goto 1426/0,-300.89,-5413.68
+    >>Kerää |cRXP_LOOT_Wendigo Mane|r (|cRXP_ENEMY_Wendigo|r, |cRXP_ENEMY_Elder Wendigo|r, |cRXP_ENEMY_Wendigo Shaman|r)
     >>Kerää |cRXP_LOOT_Chunk of Boar Meat|r (|cRXP_ENEMY_Elder Crag Boar|r, |cRXP_ENEMY_Crag Boar|r, |cRXP_ENEMY_Large Crag Boar|r)
-    >>Kerää |cRXP_LOOT_Thick Bear Fur|r (|cRXP_ENEMY_Ice Claw Bear|r, |cRXP_ENEMY_Young Black Bear|r, |cRXP_ENEMY_Black Bear|r)
     .complete 313,1
     .complete 317,1
-    .complete 317,2
     .mob Wendigo
-    .mob Wendigo Shaman
     .mob Elder Wendigo
+    .mob Wendigo Shaman
     .mob Elder Crag Boar
+step
+    .goto 1426/0,-566.84,-5515.47
+    >>Kerää |cRXP_LOOT_Thick Bear Fur|r (|cRXP_ENEMY_Ice Claw Bear|r, |cRXP_ENEMY_Young Black Bear|r, |cRXP_ENEMY_Black Bear|r)
+    .complete 317,2
+    .mob Ice Claw Bear
+    .mob Young Black Bear
+    .mob Black Bear
 step
     .goto 1426/0,-630.87,-5466.22
     >>Puhu: |cRXP_FRIENDLY_Pilot Bellowfiz|r
@@ -262,7 +267,7 @@ step
     .accept 99162 >>Ota: Treacherous Cold
     .target Father Gavin
 step
-    .goto 1426/0,-1074.12,-5384.13
+    .goto 1426/0,-980.54,-5321.75
     >>Tapa |cRXP_ENEMY_Minor Ice Elemental|r
     .complete 99160,1
     .mob Minor Ice Elemental
@@ -350,6 +355,22 @@ step
     .goto 1426/0,-369.84,-5751.87
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Gretchen|r
     .turnin 98319 >>Palauta: Secure the Mountain
+    .target Mountaineer Gretchen
+step
+    .goto 1426/0,-428.45,-5590.65
+    .vendor >>Myy roinat ja korjaa varusteet (Grawn Thromwyn)
+    .target Grawn Thromwyn
+step
+    .goto 1426/0,-531.38,-5601.49
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Belm
+step
+    .goto 1426/0,-531.38,-5601.49
+    .home >>Aseta Hearthstone tähän (Innkeeper Belm)
+    .target Innkeeper Belm
+step
+    .goto 1426/0,-369.84,-5751.87
+    >>Puhu: |cRXP_FRIENDLY_Mountaineer Gretchen|r
     .accept 98323 >>Ota: Secure the Mountain
     .target Mountaineer Gretchen
 step
@@ -427,6 +448,9 @@ step
     .accept 320 >>Ota: Return to Bellowfiz
     .target Rejold Barleybrew
 step
+    .hs >>Hearthstone: Innkeeper Belm
+    .cooldown item,6948,>0
+step
     .goto 1426/0,-430.91,-5582.45
     >>|cRXP_WARN_Ammattitehtävä (Blacksmithing)|r: palauta jos tavoite on valmis, muuten ohita
     .turnin 96044 >>Palauta: Camping 101: Blacksmithing
@@ -438,18 +462,6 @@ step
     .turnin 96047 >>Palauta: Camping 101: First Aid
     .isOnQuest 96047
     .target Thamner Pol
-step
-    .goto 1426/0,-428.45,-5590.65
-    .vendor >>Myy roinat ja korjaa varusteet (Grawn Thromwyn)
-    .target Grawn Thromwyn
-step
-    .goto 1426/0,-531.38,-5601.49
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Belm
-step
-    .goto 1426/0,-531.38,-5601.49
-    .home >>Aseta Hearthstone tähän (Innkeeper Belm)
-    .target Innkeeper Belm
 step
     .goto 1426/0,-428.94,-5581.13
     >>Puhu: |cRXP_FRIENDLY_Tognus Flintfire|r
@@ -477,6 +489,10 @@ step
     .accept 5637 >>Ota: Desperate Prayer
     .accept 94824 >>Ota: Confounding Flash
     .target Maxan Anvol
+step
+    .goto 1426/0,-522.02,-5597.55
+    .vendor >>Myy harmaat roinat (Kreg Bilmn)
+    .target Kreg Bilmn
 step
     .goto 1426/0,-660.91,-5528.93
     >>|cRXP_WARN_Ammattitehtävä (Mining)|r: palauta jos tavoite on valmis, muuten ohita
@@ -634,8 +650,7 @@ step
     .vendor >>Myy harmaat roinat (Brother Cassius)
     .target Brother Cassius
 step
-    .hs >>Hearthstone: Innkeeper Belm
-    .cooldown item,6948,>0
+    +Matkusta: Dun Morogh. Ironforgen portista ulos Dun Moroghiin
 step
     .goto 1426/0,-497.89,-5643.52
     >>Puhu: |cRXP_FRIENDLY_Senir Whitebeard|r
@@ -675,6 +690,14 @@ step
     .complete 287,1
     .complete 287,2
     .mob Frostmane Headhunter
+step
+    .goto 1426/0,-428.45,-5590.65
+    .vendor >>Myy roinat ja korjaa varusteet (Grawn Thromwyn)
+    .target Grawn Thromwyn
+step
+    .goto 1426/0,-531.38,-5601.49
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Belm
 step
     .goto 1426/0,-94.04,-5646.80
     >>Kerää |cRXP_LOOT_MacGrann's Dried Meats|r (|cRXP_PICK_MacGrann's Meat Locker|r)
@@ -733,7 +756,7 @@ step
     .accept 432 >>Ota: Those Blasted Troggs!
     .target Foreman Stonebrow
 step
-    .goto 1426/0,-1719.29,-5653.37
+    .goto 1426/0,-1719.29,-5650.08
     >>Kerää |cRXP_LOOT_Pristine Leopard Pelt|r (|cRXP_ENEMY_Elder Snow Leopard|r)
     >>Tapa |cRXP_ENEMY_Rockjaw Bonesnapper|r
     >>Tapa |cRXP_ENEMY_Rockjaw Skullthumper|r
@@ -795,18 +818,6 @@ step
     .fp Thelsamar >>Hae flight path: Thelsamar
     .target Thorgrum Borrelson
 step
-    .goto 1432/0,-2932.13,-5343.64
-    .vendor >>Myy roinat ja korjaa varusteet (Morhan Coppertongue)
-    .target Morhan Coppertongue
-step
-    .goto 1432/0,-2973.79,-5377.86
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Hearthstove
-step
-    .goto 1432/0,-2973.79,-5377.86
-    .home >>Aseta Hearthstone tähän (Innkeeper Hearthstove)
-    .target Innkeeper Hearthstove
-step
     .goto 1432/0,-2892.97,-5401.77
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Kadrell|r
     .turnin 414 >>Palauta: Stout to Kadrell
@@ -832,6 +843,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Thorgrum Borrelson|r
     .turnin 6387 >>Palauta: Honor Students
     .target Thorgrum Borrelson
+step
+    .goto 1432/0,-2932.13,-5343.64
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Morhan Coppertongue)
+    .target Morhan Coppertongue
 step
     .goto 1432/0,-2851.59,-5447.76
     >>Kerää |cRXP_LOOT_Spider Ichor|r (|cRXP_ENEMY_Forest Lurker|r, |cRXP_ENEMY_Cliff Lurker|r, |cRXP_ENEMY_Wood Lurker|r)
@@ -870,6 +885,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Vidra Hearthstove|r
     .turnin 418 >>Palauta: Thelsamar Blood Sausages
     .target Vidra Hearthstove
+step
+    .goto 1432/0,-2973.79,-5377.86
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Hearthstove
 step
     .goto 1432/0,-2892.97,-5401.77
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Kadrell|r
@@ -3275,7 +3294,7 @@ step
     .accept 385 >>Ota: Crocolisk Hunting
     .target Marek Ironheart
 step
-    .goto 1432/0,-3811.49,-5488.23
+    .goto 1432/0,-3839.07,-5445.92
     >>Kerää |cRXP_LOOT_Crocolisk Meat|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     >>Kerää |cRXP_LOOT_Crocolisk Skin|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     .complete 385,1
@@ -3800,15 +3819,13 @@ step
     .turnin 125 >>Palauta: The Lost Tools
     .target Foreman Oslow
 step
-    .goto 1433/0,-2627.73,-9193.26
+    .goto 1433/0,-2651.61,-9191.81
     >>Kerää |cRXP_LOOT_Crisp Spider Meat|r (|cRXP_ENEMY_Greater Tarantula|r, |cRXP_ENEMY_Tarantula|r)
+    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
     .complete 92,3
+    .complete 92,2
     .mob Greater Tarantula
     .mob Tarantula
-step
-    .goto 1433/0,-2708.05,-9136.79
-    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
-    .complete 92,2
     .mob Dire Condor
 step
     .goto 1433/0,-2147.98,-9216.43
@@ -4043,9 +4060,10 @@ step
     .target Dungar Longdrink
     .zoneskip Westfall
 step
-    .goto 1436/0,996.82,-10658.60
-    .vendor >>Myy roinat ja korjaa varusteet (William MacGregor)
-    .target William MacGregor
+    .goto 1436/0,1179.17,-10636.67
+    >>Puhu: |cRXP_FRIENDLY_Alba Fairmoon|r
+    .turnin 92752 >>Palauta: Explosive Consultation
+    .target Alba Fairmoon
 step
     .goto 1436/0,1166.57,-10653.23
     .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
@@ -4053,9 +4071,12 @@ step
 step
     .goto 1436/0,1179.17,-10636.67
     >>Puhu: |cRXP_FRIENDLY_Alba Fairmoon|r
-    .turnin 92752 >>Palauta: Explosive Consultation
     .accept 92753 >>Ota: Destruction in Deadmines
     .target Alba Fairmoon
+step
+    .goto 1436/0,1188.62,-10632.70
+    .vendor >>Myy harmaat roinat (Christopher Hewen)
+    .target Christopher Hewen
 step
     .goto 1436/0,1529.17,-11073.00
     >>|cRXP_WARN_Mene dungeoniin: The Deadmines|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -4788,7 +4809,7 @@ step
     .accept 98386 >>Ota: Alther's Mill
     .target Foreman Oslow
 step
-    .goto 1433/0,-2627.73,-9193.26
+    .goto 1433/0,-2651.61,-9191.81
     >>Tapa |cRXP_ENEMY_Greater Tarantula|r
     >>Käytä / kerää: |cRXP_PICK_Tarantula Egg|r
     .complete 98386,1
@@ -5055,20 +5076,20 @@ step
     .accept 993 >>Ota: A Lost Master
     .target Terenthis
 step
-    .goto 1439/1,-1007.98,7359.57
-    >>Tapa |cRXP_ENEMY_Stormscale Warrior|r
-    >>Tapa |cRXP_ENEMY_Stormscale Myrmidon|r
-    >>Tapa |cRXP_ENEMY_Stormscale Sorceress|r
+    .goto 1439/1,-772.18,7350.83
     >>Kerää |cRXP_LOOT_Mathystra Relic|r (|cRXP_PICK_Mathystra Relic|r)
-    .complete 98013,3
-    .complete 98013,1
-    .complete 98013,2
+    >>Tapa |cRXP_ENEMY_Stormscale Myrmidon|r
+    >>Tapa |cRXP_ENEMY_Stormscale Warrior|r
+    >>Tapa |cRXP_ENEMY_Stormscale Sorceress|r
     .complete 951,1
-    .mob Stormscale Warrior
+    .complete 98013,1
+    .complete 98013,3
+    .complete 98013,2
     .mob Stormscale Myrmidon
+    .mob Stormscale Warrior
     .mob Stormscale Sorceress
 step
-    .goto 1439/1,-280.93,7599.73
+    .goto 1439/1,-307.13,7665.23
     >>Kerää |cRXP_LOOT_Rod of Deep Dominion|r (|cRXP_ENEMY_Stormscale Beastmistress|r)
     .complete 87760,1
     .mob Stormscale Beastmistress
@@ -8191,12 +8212,12 @@ step
     .turnin 5821 >>Palauta: Bodyguard for Hire
     .target Smeed Scrabblescrew
 step
-    .goto 1443/1,1275.07,-1715.41
-    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Guardian|r)
+    .goto 1443/1,1189.65,-1745.39
+    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Windchaser|r)
     .complete 1387,1
     .mob Magram Guardian
     .mob Magram Necromancer
-    .mob Gelkis Guardian
+    .mob Gelkis Windchaser
 step
     .goto 1443/1,1347.01,-2084.15
     >>Tapa |cRXP_ENEMY_Undead Ravager|r
@@ -8903,7 +8924,7 @@ step
     .accept 617 >>Ota: Akiris by the Bundle
     .target Privateer Bloads
 step
-    .goto 1434/0,746.76,-12500.30
+    .goto 1434/0,689.33,-12517.32
     >>Kerää |cRXP_LOOT_Akiris Reed|r (|cRXP_ENEMY_Brinescale Skirmisher|r, |cRXP_ENEMY_Naga Explorer|r)
     .complete 617,1
     .mob Brinescale Skirmisher
@@ -8970,9 +8991,9 @@ RXPGuides.RegisterGuide([[
 step
     .xp 32 >>Tavoitetaso 32 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .goto 1434/0,509.38,-14429.57
-    .vendor >>Myy harmaat roinat (Jenna)
-    .target Jenna
+    .goto 1434/0,468.54,-14467.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
+    .target Jutak
 step
     .goto 1434/0,464.08,-14478.07
     .fly Southshore >>Lennä: Southshore
@@ -9242,7 +9263,7 @@ step
 step
     .zone Alterac Mountains >>Matkusta: Alterac Mountains. Southshoresta pohjoiseen Alterac Mountainsiin
 step
-    .goto 1416/0,252.45,230.11
+    .goto 1416/0,219.41,310.19
     .vendor >>Myy roinat ja korjaa varusteet (Anthony Durain)
     .target Anthony Durain
 step
@@ -12061,7 +12082,7 @@ step
     .accept 88809 >>Ota: Preserving Eldarath
     .target Commander Truesong
 step
-    .goto 1447/1,-4169.55,3343.35
+    .goto 1447/1,-4154.34,3309.54
     >>Kerää |cRXP_LOOT_Wild Honey|r (|cRXP_ENEMY_Honey Wasp|r)
     .complete 89013,1
     .mob Honey Wasp
@@ -13130,7 +13151,7 @@ step
     .mob Jaedenar Adept
     .mob Jaedenar Guardian
 step
-    .goto 1448/1,-773.33,5320.17
+    .goto 1448/1,-773.33,5316.33
     >>Klikkaa: |cRXP_PICK_Statue of Malorne|r
     .accept 86611 >>Ota: Stag Lord's Bauble
 step
@@ -15688,7 +15709,7 @@ step
     .accept 8922 >>Ota: A Supernatural Device
     .target Deliana
 step
-    .goto 1455/0,-1056.88,-4844.12
+    .goto 1455/0,-1057.04,-4844.28
     .vendor >>Myy harmaat roinat (Deliana)
     .target Deliana
 step
@@ -15900,7 +15921,7 @@ step
     .turnin 8977 >>Palauta: Return to Deliana
     .target Deliana
 step
-    .goto 1455/0,-1056.88,-4844.12
+    .goto 1455/0,-1057.04,-4844.28
     .vendor >>Myy harmaat roinat (Deliana)
     .target Deliana
 step

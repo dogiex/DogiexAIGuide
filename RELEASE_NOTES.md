@@ -1,3 +1,36 @@
+Dogiex's AI Guide: 1-60 (Forever) v3.1
+
+Quest-data päivitetty: QuestieDB (Forever) c071853 -> e1652ce (1.1.2, 4 committia: quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data ja käännökset).
+
+Tärkeimmät muutokset (molemmat oppaat, molemmat factionit):
+- QuestieDB tarkensi monien NPC:iden ja mobien sijainteja, joten tavoitteiden koordinaatit siirtyivät hieman kaikilla luokilla.
+- Challenge of the Desert Wolf: tavoitteen (Old Totem) sijainti tarkentui.
+
+Reittisiirtymät (uudet sijainnit muuttavat alueiden käyntien järjestystä; kaikki normaaleja questeja, ei class-, dungeon- eikä ammattiquesteja):
+- Horde, Tirisfal-aloitus (Paladin, Priest, Rogue, Warlock, Warrior): pois At War With The Scarlet Crusade (Captain Melrache, Tirisfalin pohjoisosa). Ketjun edellinen osa tehdään yhä.
+- Druid: pois Draenethyst Crystals, Neeka Bloodscar, Taking the Bait Back ja Lost in Transit (Swamp of Sorrows); uutena Bone Collector (Desolace).
+- Paladin (Horde): pois Highway Robbery, On the Lam ja Carved Centaur Totems (Desolace); uutena Draenethyst Crystals, Taking the Bait Back (Swamp of Sorrows) ja Bone Collector.
+- Rogue (Horde): uutena Bone Collector.
+- Alliance Shaman: pois The Fall of Ameth'Aran (Darkshore).
+- Alliance Warlock: pois The New Frontier (2 osaa), Kim'jael Indeed!, Kim'jael's "Missing" Equipment, The Legashi Threat, Beneath Nordrassil ja Shroud of the Winter Wilds (2 osaa); Assisting Arch Druid Staghelm vaihtui toiseen versioon (antaja eri kaupungissa).
+- Muut luokat: vain koordinaattitarkennuksia.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ei heikentynyt.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 rotu/luokka-yhdistelmää kummallakin): Horde 5557 -> 5559 min (+0,0 %), Alliance 5900 -> 5899 min (-0,0 %). Undead-aloitukset hieman nopeampia (-3...-18 min), Alliance Warlock -4...-5 min.
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit e1652ce (1.1.2). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v3.1.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v3.1.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+Lukujen nimet ovat ennallaan muutamaa poikkeusta lukuun ottamatta, joten edistyminen säilyy. Nimi muuttui (reitti siirtyi), ja jos olet juuri näissä luvuissa, valitse luku kerran uudelleen: Horde Priest ja Warlock "10-14 Silverpine Forest" (ennen 10-15), Horde Paladin "42-46 Dustwallow, STV, Swamp + RFD/SM/Ulda", Alliance Hunter "10-12 Teldrassil" (ennen 10-13) ja Alliance Warlock "57-60 WPL, EPL, Burning Steppes + LBRS/DM/Scholo/Strat".
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v3.0
 
 Alliance julkaistu: opas kattaa nyt molemmat factionit, kaikki rodut ja kaikki yhdeksän luokkaa.

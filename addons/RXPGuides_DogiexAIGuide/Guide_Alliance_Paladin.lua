@@ -267,17 +267,22 @@ step
     .accept 317 >>Ota: Stocking Jetsteam
     .target Pilot Bellowfiz
 step
-    .goto 1426/0,-359.99,-5472.78
-    >>Kerää |cRXP_LOOT_Wendigo Mane|r (|cRXP_ENEMY_Wendigo|r, |cRXP_ENEMY_Wendigo Shaman|r, |cRXP_ENEMY_Elder Wendigo|r)
+    .goto 1426/0,-300.89,-5413.68
+    >>Kerää |cRXP_LOOT_Wendigo Mane|r (|cRXP_ENEMY_Wendigo|r, |cRXP_ENEMY_Elder Wendigo|r, |cRXP_ENEMY_Wendigo Shaman|r)
     >>Kerää |cRXP_LOOT_Chunk of Boar Meat|r (|cRXP_ENEMY_Elder Crag Boar|r, |cRXP_ENEMY_Crag Boar|r, |cRXP_ENEMY_Large Crag Boar|r)
-    >>Kerää |cRXP_LOOT_Thick Bear Fur|r (|cRXP_ENEMY_Ice Claw Bear|r, |cRXP_ENEMY_Young Black Bear|r, |cRXP_ENEMY_Black Bear|r)
     .complete 313,1
     .complete 317,1
-    .complete 317,2
     .mob Wendigo
-    .mob Wendigo Shaman
     .mob Elder Wendigo
+    .mob Wendigo Shaman
     .mob Elder Crag Boar
+step
+    .goto 1426/0,-566.84,-5515.47
+    >>Kerää |cRXP_LOOT_Thick Bear Fur|r (|cRXP_ENEMY_Ice Claw Bear|r, |cRXP_ENEMY_Young Black Bear|r, |cRXP_ENEMY_Black Bear|r)
+    .complete 317,2
+    .mob Ice Claw Bear
+    .mob Young Black Bear
+    .mob Black Bear
 step
     .goto 1426/0,-630.87,-5466.22
     >>Puhu: |cRXP_FRIENDLY_Pilot Bellowfiz|r
@@ -306,7 +311,7 @@ step
     .accept 99162 >>Ota: Treacherous Cold
     .target Father Gavin
 step
-    .goto 1426/0,-1074.12,-5384.13
+    .goto 1426/0,-980.54,-5321.75
     >>Tapa |cRXP_ENEMY_Minor Ice Elemental|r
     .complete 99160,1
     .mob Minor Ice Elemental
@@ -650,7 +655,7 @@ step
     .accept 432 >>Ota: Those Blasted Troggs!
     .target Foreman Stonebrow
 step
-    .goto 1426/0,-1719.29,-5653.37
+    .goto 1426/0,-1719.29,-5650.08
     >>Kerää |cRXP_LOOT_Pristine Leopard Pelt|r (|cRXP_ENEMY_Elder Snow Leopard|r)
     >>Tapa |cRXP_ENEMY_Rockjaw Bonesnapper|r
     >>Tapa |cRXP_ENEMY_Rockjaw Skullthumper|r
@@ -2816,7 +2821,7 @@ step
     .accept 385 >>Ota: Crocolisk Hunting
     .target Marek Ironheart
 step
-    .goto 1432/0,-3811.49,-5488.23
+    .goto 1432/0,-3839.07,-5445.92
     >>Kerää |cRXP_LOOT_Crocolisk Meat|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     >>Kerää |cRXP_LOOT_Crocolisk Skin|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     .complete 385,1
@@ -3319,15 +3324,13 @@ step
     .turnin 125 >>Palauta: The Lost Tools
     .target Foreman Oslow
 step
-    .goto 1433/0,-2627.73,-9193.26
+    .goto 1433/0,-2651.61,-9191.81
     >>Kerää |cRXP_LOOT_Crisp Spider Meat|r (|cRXP_ENEMY_Greater Tarantula|r, |cRXP_ENEMY_Tarantula|r)
+    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
     .complete 92,3
+    .complete 92,2
     .mob Greater Tarantula
     .mob Tarantula
-step
-    .goto 1433/0,-2708.05,-9136.79
-    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
-    .complete 92,2
     .mob Dire Condor
 step
     .goto 1433/0,-2147.98,-9216.43
@@ -3727,6 +3730,11 @@ step
     .accept 963 >>Ota: For Love Eternal
     .target Cerellean Whiteclaw
 step
+    .goto 1439/1,400.27,6438.20
+    >>Puhu: |cRXP_FRIENDLY_Tharnariun Treetender|r
+    .accept 2118 >>Ota: Plagued Lands
+    .target Tharnariun Treetender
+step
     .goto 1439/1,436.29,6542.56
     .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Kurdram Stonehammer|r
     .skill mining,<50,1
@@ -3744,11 +3752,6 @@ step
     .skill engineering,<50,1
     .skill engineering,150,1,1
     .target Jenna Lemkenilli
-step
-    .goto 1439/1,400.27,6438.20
-    >>Puhu: |cRXP_FRIENDLY_Tharnariun Treetender|r
-    .accept 2118 >>Ota: Plagued Lands
-    .target Tharnariun Treetender
 step
     .goto 1439/1,387.17,6433.83
     >>Puhu: |cRXP_FRIENDLY_Sentinel Elissa Starbreeze|r
@@ -4209,7 +4212,7 @@ step
     .accept 98386 >>Ota: Alther's Mill
     .target Foreman Oslow
 step
-    .goto 1433/0,-2627.73,-9193.26
+    .goto 1433/0,-2651.61,-9191.81
     >>Tapa |cRXP_ENEMY_Greater Tarantula|r
     >>Käytä / kerää: |cRXP_PICK_Tarantula Egg|r
     .complete 98386,1
@@ -4460,20 +4463,20 @@ step
     .accept 993 >>Ota: A Lost Master
     .target Terenthis
 step
-    .goto 1439/1,-1007.98,7359.57
-    >>Tapa |cRXP_ENEMY_Stormscale Warrior|r
-    >>Tapa |cRXP_ENEMY_Stormscale Myrmidon|r
-    >>Tapa |cRXP_ENEMY_Stormscale Sorceress|r
+    .goto 1439/1,-772.18,7350.83
     >>Kerää |cRXP_LOOT_Mathystra Relic|r (|cRXP_PICK_Mathystra Relic|r)
-    .complete 98013,3
-    .complete 98013,1
-    .complete 98013,2
+    >>Tapa |cRXP_ENEMY_Stormscale Myrmidon|r
+    >>Tapa |cRXP_ENEMY_Stormscale Warrior|r
+    >>Tapa |cRXP_ENEMY_Stormscale Sorceress|r
     .complete 951,1
-    .mob Stormscale Warrior
+    .complete 98013,1
+    .complete 98013,3
+    .complete 98013,2
     .mob Stormscale Myrmidon
+    .mob Stormscale Warrior
     .mob Stormscale Sorceress
 step
-    .goto 1439/1,-280.93,7599.73
+    .goto 1439/1,-307.13,7665.23
     >>Kerää |cRXP_LOOT_Rod of Deep Dominion|r (|cRXP_ENEMY_Stormscale Beastmistress|r)
     .complete 87760,1
     .mob Stormscale Beastmistress
@@ -5350,7 +5353,7 @@ step
     .target Caylais Moonfeather
     .zoneskip Ashenvale
 step
-    .goto 1440/1,-2872.97,1513.35
+    .goto 1440/1,-2872.97,1509.51
     >>Kerää |cRXP_LOOT_Mote of Mannoroth|r (|cRXP_ENEMY_Searing Infernal|r, |cRXP_ENEMY_Mannoroc Lasher|r, |cRXP_ENEMY_Felguard|r)
     .complete 78092,1
     .mob Searing Infernal
@@ -7785,13 +7788,13 @@ step
     .target Bibbly F'utzbuckle
 step
     .goto 1443/1,1144.70,-1679.44
-    >>Kerää |cRXP_LOOT_Carved Centaur Totem|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Gelkis Guardian|r, |cRXP_ENEMY_Gelkis Windchaser|r)
-    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Guardian|r)
+    >>Kerää |cRXP_LOOT_Carved Centaur Totem|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Gelkis Windchaser|r, |cRXP_ENEMY_Gelkis Stamper|r)
+    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Windchaser|r)
     .complete 93224,1
     .complete 1387,1
     .mob Magram Guardian
-    .mob Gelkis Guardian
     .mob Gelkis Windchaser
+    .mob Gelkis Stamper
     .mob Magram Necromancer
 step
     .goto 1443/1,1347.01,-2084.15
@@ -8517,7 +8520,7 @@ step
     .complete 577,1
     .mob Snapjaw Crocolisk
 step
-    .goto 1434/0,497.90,-12406.71
+    .goto 1434/0,485.13,-12368.42
     >>Kerää |cRXP_LOOT_Akiris Reed|r (|cRXP_ENEMY_Brinescale Skirmisher|r, |cRXP_ENEMY_Naga Explorer|r)
     .complete 617,1
     .mob Brinescale Skirmisher
@@ -10918,7 +10921,7 @@ step
     .target Shellei Brondir
     .zoneskip Stormwind City
 step
-    .goto 1453/0,878.49,-8564.57
+    .goto 1453/0,876.76,-8564.57
     >>Puhu: |cRXP_FRIENDLY_Aeonas the Vindicated|r
     .accept 81762 >>Ota: Some Good News
     .target Aeonas the Vindicated
@@ -11711,7 +11714,7 @@ step
     .accept 88809 >>Ota: Preserving Eldarath
     .target Commander Truesong
 step
-    .goto 1447/1,-4169.55,3343.35
+    .goto 1447/1,-4154.34,3309.54
     >>Kerää |cRXP_LOOT_Wild Honey|r (|cRXP_ENEMY_Honey Wasp|r)
     .complete 89013,1
     .mob Honey Wasp
@@ -12769,7 +12772,7 @@ step
     .mob Jaedenar Adept
     .mob Jaedenar Guardian
 step
-    .goto 1448/1,-773.33,5320.17
+    .goto 1448/1,-773.33,5316.33
     >>Klikkaa: |cRXP_PICK_Statue of Malorne|r
     .accept 86611 >>Ota: Stag Lord's Bauble
 step
@@ -14557,17 +14560,26 @@ step
     .accept 8278 >>Ota: Noggle's Last Hope
     .target Beetix Ficklespragg
 step
+    .goto 1451/1,1081.47,-6982.74
+    >>Kerää |cRXP_LOOT_Encrypted Twilight Text|r (|cRXP_ENEMY_Twilight Avenger|r, |cRXP_ENEMY_Twilight Geolord|r, |cRXP_ENEMY_Twilight Stonecaller|r)
+    .complete 8318,1
+    .mob Twilight Avenger
+    .mob Twilight Geolord
+    .mob Twilight Stonecaller
+step
+    .goto 1451/1,1318.33,-6896.79
+    >>Tapa |cRXP_ENEMY_Dredge Crusher|r
+    .complete 8281,1
+    .mob Dredge Crusher
+step
     .goto 1451/1,1617.90,-6327.68
     >>Kerää |cRXP_LOOT_Twilight Tablet Fragment|r (|cRXP_PICK_Twilight Tablet Fragment|r)
     .complete 8284,1
 step
     .goto 1451/1,1377.55,-6882.85
     >>Kerää |cRXP_LOOT_Stonelash Pincer Stinger|r (|cRXP_ENEMY_Stonelash Pincer|r)
-    >>Tapa |cRXP_ENEMY_Dredge Crusher|r
     .complete 8278,2
-    .complete 8281,1
     .mob Stonelash Pincer
-    .mob Dredge Crusher
 step
     .goto 1451/1,1377.55,-7145.34
     >>Puhu: |cRXP_FRIENDLY_Marshal Bluewall|r
@@ -14627,23 +14639,6 @@ step
     .complete 8279,1
     .mob Twilight Keeper Mayna
 step
-    .goto 1451/1,1112.82,-6938.60
-    >>Kerää |cRXP_LOOT_Twilight Lexicon - Chapter 3|r (|cRXP_ENEMY_Twilight Keeper Havunth|r)
-    >>Kerää |cRXP_LOOT_Encrypted Twilight Text|r (|cRXP_ENEMY_Twilight Avenger|r, |cRXP_ENEMY_Twilight Geolord|r, |cRXP_ENEMY_Twilight Stonecaller|r)
-    .complete 8279,3
-    .complete 8318,1
-    .mob Twilight Keeper Havunth
-    .mob Twilight Avenger
-    .mob Twilight Geolord
-    .mob Twilight Stonecaller
-step
-    .goto 1451/1,196.70,-7579.73
-    >>Puhu: |cRXP_FRIENDLY_Hermit Ortell|r
-    .turnin 8279 >>Palauta: The Twilight Lexicon
-    .accept 8287 >>Ota: A Terrible Purpose
-    .accept 8323 >>Ota: True Believers
-    .target Hermit Ortell
-step
     .goto 1451/1,730.00,-6867.99
     .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
     .target Calandrath
@@ -14667,20 +14662,48 @@ step
     .accept 8800 >>Ota: Cenarion Battlegear
     .target Windcaller Kaldon
 step
-    .goto 1451/1,1130.23,-6999.00
+    .goto 1451/1,1112.82,-6938.60
+    >>Kerää |cRXP_LOOT_Twilight Lexicon - Chapter 3|r (|cRXP_ENEMY_Twilight Keeper Havunth|r)
     >>Tapa |cRXP_ENEMY_Twilight Geolord|r
-    >>Kerää |cRXP_LOOT_Encrypted Twilight Text|r (|cRXP_ENEMY_Twilight Avenger|r, |cRXP_ENEMY_Twilight Geolord|r, |cRXP_ENEMY_Twilight Stonecaller|r)
+    .complete 8279,3
     .complete 8320,1
-    .complete 8323,1
+    .mob Twilight Keeper Havunth
     .mob Twilight Geolord
-    .mob Twilight Avenger
-    .mob Twilight Stonecaller
 step
     .goto 1451/1,844.60,-6838.72
     >>Puhu: |cRXP_FRIENDLY_Huum Wildmane|r
     .turnin 8320 >>Palauta: Twilight Geolords
     .accept 8321 >>Ota: Vyral the Vile
     .target Huum Wildmane
+step
+    .goto 1451/1,15.57,-6320.71
+    >>Kerää |cRXP_LOOT_Vyral's Signet Ring|r (|cRXP_ENEMY_Vyral the Vile|r)
+    .complete 8321,1
+    .mob Vyral the Vile
+step
+    .goto 1451/1,196.70,-7579.73
+    >>Puhu: |cRXP_FRIENDLY_Hermit Ortell|r
+    .turnin 8279 >>Palauta: The Twilight Lexicon
+    .accept 8287 >>Ota: A Terrible Purpose
+    .accept 8323 >>Ota: True Believers
+    .target Hermit Ortell
+step
+    .goto 1451/1,1112.82,-6938.60
+    >>Kerää |cRXP_LOOT_Encrypted Twilight Text|r (|cRXP_ENEMY_Twilight Avenger|r, |cRXP_ENEMY_Twilight Geolord|r, |cRXP_ENEMY_Twilight Stonecaller|r)
+    .complete 8323,1
+    .mob Twilight Avenger
+    .mob Twilight Geolord
+    .mob Twilight Stonecaller
+step
+    .goto 1451/1,844.60,-6838.72
+    >>Puhu: |cRXP_FRIENDLY_Huum Wildmane|r
+    .turnin 8321 >>Palauta: Vyral the Vile
+    .target Huum Wildmane
+step
+    .goto 1451/1,823.70,-6752.77
+    >>Puhu: |cRXP_FRIENDLY_Commander Mar'alith|r
+    .turnin 8287 >>Palauta: A Terrible Purpose
+    .target Commander Mar'alith
 step
     .goto 1451/1,754.03,-6861.95
     >>Puhu: |cRXP_FRIENDLY_Vargus|r
@@ -14692,27 +14715,9 @@ step
     .turnin 8282 >>Palauta: Noggle's Lost Satchel
     .target Noggle Ficklespragg
 step
-    .goto 1451/1,15.57,-6320.71
-    >>Kerää |cRXP_LOOT_Vyral's Signet Ring|r (|cRXP_ENEMY_Vyral the Vile|r)
-    .complete 8321,1
-    .mob Vyral the Vile
-step
-    .hs >>Hearthstone: Calandrath
-    .cooldown item,6948,>0
-step
-    .goto 1451/1,823.70,-6752.77
-    >>Puhu: |cRXP_FRIENDLY_Commander Mar'alith|r
-    .turnin 8287 >>Palauta: A Terrible Purpose
-    .target Commander Mar'alith
-step
-    .goto 1451/1,844.60,-6838.72
-    >>Puhu: |cRXP_FRIENDLY_Huum Wildmane|r
-    .turnin 8321 >>Palauta: Vyral the Vile
-    .target Huum Wildmane
-step
-    .goto 1451/1,842.16,-6817.81
-    .vendor >>Myy harmaat roinat (Khur Hornstriker)
-    .target Khur Hornstriker
+    .goto 1451/1,752.99,-6861.02
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
+    .target Vargus
 step
     .goto 1451/1,196.70,-7579.73
     >>Puhu: |cRXP_FRIENDLY_Hermit Ortell|r
@@ -14847,11 +14852,6 @@ step
     .target Bibilfaz Featherwhistle
     .zoneskip Eastern Plaguelands
 step
-    .goto 1423/0,-5340.84,2261.20
-    >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
-    .accept 5212 >>Ota: The Flesh Does Not Lie
-    .target Betina Bigglezink
-step
     .goto 1423/0,-5321.05,2261.20
     .vendor >>Myy roinat ja korjaa varusteet (Craftsman Wilhelm)
     .target Craftsman Wilhelm
@@ -14862,6 +14862,7 @@ step
 step
     .goto 1423/0,-5340.84,2261.20
     >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
+    .accept 5212 >>Ota: The Flesh Does Not Lie
     .accept 5529 >>Ota: Plagued Hatchlings
     .target Betina Bigglezink
 step
@@ -15417,7 +15418,7 @@ step
     .accept 8922 >>Ota: A Supernatural Device
     .target Deliana
 step
-    .goto 1455/0,-1056.88,-4844.12
+    .goto 1455/0,-1057.04,-4844.28
     .vendor >>Myy harmaat roinat (Deliana)
     .target Deliana
 step
@@ -15634,7 +15635,7 @@ step
     .accept 8933 >>Ota: Just Compensation
     .target Deliana
 step
-    .goto 1455/0,-1056.88,-4844.12
+    .goto 1455/0,-1057.04,-4844.28
     .vendor >>Myy harmaat roinat (Deliana)
     .target Deliana
 step
