@@ -5,7 +5,12 @@ OUT='/home/claude/work/out6'
 GROUP='Oma reitti 1-60 (Horde)'
 BOUNDS=[26,30,34,38,42,46,50,54,57,99]
 INN=collections.defaultdict(list); REP=collections.defaultdict(list); VEND=collections.defaultdict(list)
+# v3.2: ei myyjiksi tapahtuma- ja erikois-NPC:itä, joita ei välttämättä ole paikalla (Lunar Festival Vendor, Darkmoon Fairen Flik,
+# Children's Weekin Orphan Matron Nightingale), battleground-questien Horde Warbringer / Alliance Brigadier General, Season of
+# Discoveryn Rune Broker ja alaotsikoton Kor'kron Elite (Orgrimmar)
+NOVEND={15898,14860,14450,15350,15351,233428,233335,230566}
 for i in N:
+    if i in NOVEND: continue
     fl=n(i,'npcFlags') or 0
     if (fl&4 or fl&16384) and friendly(i):
         for z,pts in spawns_of('npc',i).items():
@@ -81,6 +86,7 @@ def near_trainer(ez,ep):
 def _wc_ok(z): return z in TB_
 def effz(loc):
     z=loc[0]; return (DUNG[z][2],DUNG[z][3]) if z in DUNG else (z,loc[1])
+SELL_TI=8; REP_MINL=10; SUP_LV=2   # v3.2: myynti palautusten välein, korjaus tasolta, ruoka/vesi tasojen välein
 def water(l): return 'Ice Cold Milk' if l<15 else 'Melon Juice' if l<25 else 'Sweet Nectar' if l<35 else 'Moonberry Juice' if l<45 else 'Morning Glory Dew'
 def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
     SBOX[0]=None
@@ -148,7 +154,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
     def newchap(l):
         nonlocal chap
         chap=dict(lo=int(l),steps=[],zones=[zname(cur)] if cur and zname(cur) else [],dungeons=[]); chapters.append(chap)
-    def add(st): chap['steps'].append(st)
+    def add(st): st.setdefault('_lv',S.get('lv')); chap['steps'].append(st)
     def DY(z,p1,p2):
         if z not in TB_: return math.hypot(p1[0]-p2[0],p1[1]-p2[1])*30
         _,_,x1,y1=wc(z,p1); _,_,x2,y2=wc(z,p2); return math.hypot(x1-x2,y1-y2)
@@ -181,6 +187,98 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if S['pend']:
             add(S['pend']); S['pend']=None
         if S['pobj']: add(S['pobj']); S['pobj']=None
+    def find_vendor(z,p,repair):
+        vs=[v for v in VEND.get(z,[]) if (v[2] or not repair) and DY(z,v[1],p)<=(400 if z in CITY else 150)]
+        return min(vs,key=lambda v:DY(z,v[1],p)) if vs else None
+    def find_inn(z,p):
+        hs=[h for h in INN.get(z,[]) if DY(z,h[1],p)<=(400 if z in CITY else 150)]
+        return min(hs,key=lambda h:DY(z,h[1],p)) if hs else None
+    def vendor_pass():
+        """v3.2 (käyttäjän päätös 17.11.2026): vendorikäynnit harvemmin.
+        - Myynti vasta questireissun jälkeen: vähintään SELL_TI palautusta edellisestä myynnistä, ja vasta kylän viimeisellä
+          vendorikohdalla ennen seuraavaa matkaa (lento, alueen vaihto, hearthstone, deathskip, laiva, dungeon).
+        - Korjaus vain class-trainer-käynnillä (lähin korjaava myyjä samalta pysähdykseltä) ja ennen dungeonia (viimeinen
+          vendorikohta edellisen korjauksen jälkeen), tasolta REP_MINL alkaen.
+        - Ruoka ja vesi samalla myyntikäynnillä, enintään SUP_LV tason välein (majatalo samalta pysähdykseltä).
+        Korjaus- ja myyntikäynti nollaa palautuslaskurin. Ennen v3.2:ta myytiin jokaisessa kylässä, jossa palautettiin quest,
+        korjattiin aina, kun myyjä osasi korjata, ja ostettiin ruokaa 30 askeleen välein."""
+        VT=('vendor','sell','supplies'); TRAV=('fly','zone','hs','death','boat','dnote')
+        F=[(ci,k) for ci,c in enumerate(chapters) for k in range(len(c['steps']))]
+        G_=lambda x:chapters[F[x][0]]['steps'][F[x][1]]
+        cum=[0]; stay=[]; sid=0
+        for x in range(len(F)):
+            st=G_(x)
+            if st['t'] in TRAV: sid+=1
+            stay.append(sid)
+            cum.append(cum[-1]+(sum(1 for k_,_ in st['seq'] if k_=='turnin') if st['t']=='npc' else 0))
+        groups=[]; x=0
+        while x<len(F):
+            if G_(x)['t'] in VT:
+                g=[]; y=x
+                while y<len(F) and G_(y)['t'] in VT+('home',):
+                    if G_(y)['t'] in VT: g.append(y)
+                    y+=1
+                f=G_(g[0]); groups.append(dict(idx=g,at=g[0],area=f['area'],pos=f['pos'],lv=f.get('_lv') or 1,stay=stay[g[0]],rep=False,ins=False)); x=y
+            else: x+=1
+        for a,b in zip(groups,groups[1:]): a['last']=a['stay']!=b['stay']
+        if groups: groups[-1]['last']=True
+        # korjauskohdat aikajärjestyksessä
+        ev=sorted([(x,'tr') for x in range(len(F)) if G_(x)['t']=='trainer' and (G_(x).get('_lv') or G_(x)['level'])>=REP_MINL]+
+                  [(x,'dg') for x in range(len(F)) if G_(x)['t']=='dnote' and (G_(x).get('level') or 1)>=REP_MINL])
+        last_rep=-1; extra=[]
+        for x,k in ev:
+            if k=='tr':
+                tr=G_(x); same=[g for g in groups if g['stay']==stay[x]]
+                if same:
+                    g=same[-1]; g['rep']=True; last_rep=max(x,g['at'])
+                else:
+                    v=find_vendor(tr['area'],tr['pos'],True)
+                    if v: extra.append(dict(idx=[],at=x,after=True,area=tr['area'],pos=v[1],lv=tr['level'],rep=True,ins=True,npc=v[0],last=True)); last_rep=x
+            else:
+                cand=[g for g in groups if g['at']<x and g['at']>last_rep]
+                if cand: cand[-1]['rep']=True; last_rep=x
+        allg=sorted(groups+extra,key=lambda g:(g['at'],g['ins']))
+        last_ti=0; last_sup=-99; out={}
+        for gi,g in enumerate(allg):
+            if not (g['rep'] or (g['last'] and cum[g['at']]-last_ti>=SELL_TI)): continue
+            # pelkkä myynti jää pois, jos korjauskäynti tulee pian (enintään 3 palautusta myöhemmin): myydään siellä
+            if not g['rep'] and any(h['rep'] and cum[h['at']]-cum[g['at']]<=3 for h in allg[gi+1:gi+4]): continue
+            last_ti=cum[g['at']]
+            sts=[G_(y) for y in g['idx']]
+            sellv=None
+            if g['rep']:
+                r=[s_ for s_ in sts if s_['t']=='vendor' or (s_['t']=='sell' and s_['repair'])]
+                if r: sellv=(r[0]['npc'],r[0]['pos'])
+                elif g['ins']: sellv=(g['npc'],g['pos'])
+                else:
+                    v=find_vendor(g['area'],g['pos'],True)
+                    if v: sellv=(v[0],v[1])
+            rep=bool(sellv)
+            if not sellv:
+                r=[s_ for s_ in sts if s_['t'] in ('vendor','sell')]
+                if r: sellv=(r[0]['npc'],r[0]['pos'])
+            sup=None
+            if g['lv']-last_sup>=SUP_LV:
+                si=[s_ for s_ in sts if s_['t']=='supplies']
+                h=(si[0]['npc'],si[0]['pos']) if si else find_inn(g['area'],g['pos'])
+                if h: sup=h; last_sup=g['lv']
+            new=[]
+            if sellv and not (sup and sellv[0]==sup[0] and not rep): new.append(dict(t='sell',area=g['area'],pos=sellv[1],npc=sellv[0],repair=rep))
+            if sup: new.append(dict(t='supplies',area=g['area'],pos=sup[1],npc=sup[0],level=g['lv'],repair=not new))
+            if not new:
+                si=[s_ for s_ in sts if s_['t']=='supplies']
+                if si: new.append(dict(t='sell',area=g['area'],pos=si[0]['pos'],npc=si[0]['npc'],repair=False))
+            out[(g['at'],g['ins'])]=new
+        drop={y for g in groups for y in g['idx']}
+        for c in chapters: c['_new']=[]
+        for x in range(len(F)):
+            c=chapters[F[x][0]]; st=G_(x)
+            if (x,False) in out: c['_new']+=out[(x,False)]
+            if x not in drop: c['_new'].append(st)
+            if (x,True) in out: c['_new']+=out[(x,True)]
+        for c in chapters:
+            c['steps']=c.pop('_new')
+            for st in c['steps']: st.pop('_lv',None)
     def W(z,p):
         if z in DUNG: z,p=DUNG[z][2],DUNG[z][3]
         if z not in TB_ or p is None: return None
@@ -332,7 +430,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 SBOX[0]=(z0,bx)
             elif v.get('min'): add(dict(t='xp',level=v['min']))
             continue
-        level=st['level']; ez,ep=effz(st['loc']); indung=st['loc'][0] in DUNG
+        level=st['level']; S['lv']=level; ez,ep=effz(st['loc']); indung=st['loc'][0] in DUNG
         sp_=S['sellpend']
         if sp_ and (ez!=sp_['area'] or DY(ez,ep,S['lastp'][1] if S['lastp'] else sp_['at'])>(400 if ez in CITY else 150) or st['type']=='obj'):
             flush(); sell_now()
@@ -408,6 +506,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
             S['pobj']['items'].append((st['q'],st['o']))
         pos=ep
     flush(); sell_now()
+    vendor_pass()
     chapters[0]['tlog']=S['tlog']; chapters[0]['have']=sorted(have)
     return chapters
 def short(z):

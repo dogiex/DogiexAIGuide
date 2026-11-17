@@ -1,3 +1,29 @@
+Dogiex's AI Guide: 1-60 (Forever) v3.2
+
+Vendorikäynnit harvemmin (molemmat oppaat, molemmat factionit, kaikki luokat):
+- Roinat myydään vasta questireissun jälkeen: kun edellisestä myynnistä on palautettu vähintään 8 questia, ja vasta kylän viimeisellä pysähdyksellä ennen lentoa tai seuraavalle alueelle lähtöä. Ennen myytiin lähes joka kylässä, myös heti lennon jälkeen, vaikka edellisestä myynnistä oli palautettu vain yksi quest.
+- Varusteet korjataan class-trainer-käynnillä (lähimmällä korjaavalla myyjällä) ja ennen dungeonia, tasolta 10 alkaen.
+- Ruoka ja vesi ostetaan samalla myyntikäynnillä, enintään kahden tason välein.
+- Myyjistä poistettu tapahtuma- ja erikois-NPC:t, joita ei välttämättä ole paikalla (esim. Lunar Festival Vendor, Horde Warbringer, Alliance Brigadier General).
+- Vendorikäyntejä on nyt noin 78 per reitti (ennen noin 191), ja käyntien välissä palautetaan tyypillisesti 10 questia (ennen 3).
+
+Reitti, questit ja lukujen nimet ovat ennallaan, joten edistyminen säilyy.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 rotu/luokka-yhdistelmää kummallakin): Horde 5559 -> 5486 min (-1,3 %), Alliance 5899 -> 5824 min (-1,3 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit e1652ce (1.1.2). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v3.2.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v3.2.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v3.1
 
 Quest-data päivitetty: QuestieDB (Forever) c071853 -> e1652ce (1.1.2, 4 committia: quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data ja käännökset).

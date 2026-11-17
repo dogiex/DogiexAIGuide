@@ -236,14 +236,6 @@ step
     >>Escort Bareth Dawnstone out of Crusader's Outpost
     .complete 99144,1
 step
-    .goto 1420/0,308.08,2246.30
-    .vendor >>Myy roinat ja korjaa varusteet (Eliza Callen)
-    .target Eliza Callen
-step
-    .goto 1420/0,244.36,2269.49
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Renee
-step
     .goto 1420/0,244.36,2269.49
     .home >>Aseta Hearthstone tähän (Innkeeper Renee)
     .target Innkeeper Renee
@@ -281,10 +273,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Magistrate Sevren|r
     .accept 358 >>Ota: Graverobbers
     .target Magistrate Sevren
-step
-    .goto 1420/0,242.55,2330.35
-    .vendor >>Myy harmaat roinat (Selina Weston)
-    .target Selina Weston
 step
     .goto 1420/0,529.95,2289.07
     >>Kerää |cRXP_LOOT_Putrid Claw|r (|cRXP_ENEMY_Rotting Dead|r, |cRXP_ENEMY_Ravaged Corpse|r)
@@ -496,9 +484,9 @@ step
     .turnin 426 >>Palauta: The Mills Overrun
     .target Deathguard Dillinger
 step
-    .goto 1420/0,397.09,2310.16
-    .vendor >>Myy harmaat roinat (Hamlin Atkins)
-    .target Hamlin Atkins
+    .goto 1420/0,308.08,2246.30
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Eliza Callen)
+    .target Eliza Callen
 step
     .goto 1420/0,1307.17,2126.40
     >>Puhu: |cRXP_FRIENDLY_Calvin Montague|r
@@ -619,7 +607,7 @@ step
     .target Vance Undergloom
 step
     .goto 1420/0,308.08,2246.30
-    .vendor >>Myy roinat ja korjaa varusteet (Eliza Callen)
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Eliza Callen)
     .target Eliza Callen
 step
     .goto 1420/0,244.36,2269.49
@@ -766,10 +754,6 @@ step
     .turnin 405 >>Palauta: The Prodigal Lich
     .target Bethor Iceshard
 step
-    .goto 1458/0,79.02,1776.62
-    .vendor >>Myy harmaat roinat (Hannah Akeley)
-    .target Hannah Akeley
-step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
     .goto 1420/0,245.26,2261.96
@@ -914,19 +898,11 @@ step
     .turnin 354 >>Palauta: Deaths in the Family
     .target Coleman Farthing
 step
-    .goto 1420/0,244.36,2269.49
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Renee
-step
     .goto 1420/0,245.26,2261.96
     >>Puhu: |cRXP_FRIENDLY_Coleman Farthing|r
     .turnin 362 >>Palauta: The Haunted Mills
     .accept 355 >>Ota: Speak with Sevren
     .target Coleman Farthing
-step
-    .goto 1420/0,244.36,2269.49
-    .vendor >>Myy harmaat roinat (Innkeeper Renee)
-    .target Innkeeper Renee
 step
     .goto 1420/0,312.14,2251.12
     .trainer >>Paladin-trainer (taso 14): Blessing of Wisdom, Holy Light R3, Seal of the Crusader r1, Seal of the Crusader r2
@@ -1029,9 +1005,13 @@ step
     .turnin 492 >>Palauta: A New Plague
     .target Captured Mountaineer
 step
-    .goto 1420/0,240.75,2271.00
-    .vendor >>Myy harmaat roinat (Penny Hawkins)
-    .target Penny Hawkins
+    .goto 1420/0,308.08,2246.30
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Eliza Callen)
+    .target Eliza Callen
+step
+    .goto 1420/0,244.36,2269.49
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Renee
 step
     .zone Durotar >>Matkusta: Durotar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Orgrimmarin portista ulos Durotariin
 step
@@ -1046,10 +1026,6 @@ step
     .turnin 94434 >>Palauta: A Lesson in Divinity
     .accept 94435 >>Ota: A Lesson in Divinity
     .target Tanis Alderwood
-step
-    .goto 1458/0,260.82,1634.90
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Lauren Newcomb)
-    .target Lauren Newcomb
 step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
@@ -1111,18 +1087,10 @@ step
     .turnin 6321 >>Palauta: Supplying the Sepulcher
     .target Karos Razok
 step
-    .goto 1421/0,1559.58,566.27
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Nadia Vernon)
-    .target Nadia Vernon
-step
     .goto 1421/0,1358.40,532.67
     >>Tapa |cRXP_ENEMY_Moonrage Whitescalp|r
     .complete 421,1
     .mob Moonrage Whitescalp
-step
-    .goto 1421/0,1636.44,510.83
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Bates
 step
     .goto 1421/0,1636.44,510.83
     .home >>Aseta Hearthstone tähän (Innkeeper Bates)
@@ -1228,6 +1196,14 @@ step
     .trainer >>Paladin-trainer (taso 16): Retribution Aura
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
+step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1203.00,1291.47
@@ -1253,6 +1229,14 @@ step
     .trainer >>Paladin-trainer (taso 12): Judgement, Blessing of Might, Holy Light R2, Parry, Divine Protection, Hammer of Justice, Purify, Lay On Hands, Blessing of Protection ...
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
+step
     .zone The Barrens >>Matkusta: The Barrens. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Lennä Camp Taurajoon tai Crossroadsiin (The Barrens)
 step
     .goto 1413/1,-2595.75,-437.35
@@ -1272,14 +1256,6 @@ step
     .skill tailoring,<50,1
     .skill tailoring,150,1,1
     .target Kil'hala
-step
-    .goto 1413/1,-2568.39,-356.95
-    .vendor >>Myy roinat ja korjaa varusteet (Nargal Deatheye)
-    .target Nargal Deatheye
-step
-    .goto 1413/1,-2645.40,-406.94
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Boorand Plainswind
 step
     .goto 1413/1,-2645.40,-406.94
     .home >>Aseta Hearthstone tähän (Innkeeper Boorand Plainswind)
@@ -1385,10 +1361,6 @@ step
     .accept 890 >>Ota: The Missing Shipment
     .target Gazlowe
 step
-    .goto 1413/1,-3724.60,-837.99
-    .vendor >>Myy harmaat roinat (Gagsprocket)
-    .target Gagsprocket
-step
     .goto 1413/1,-3801.62,-988.66
     >>Puhu: |cRXP_FRIENDLY_Wharfmaster Dizzywig|r
     .turnin 1492 >>Palauta: Wharfmaster Dizzywig
@@ -1396,18 +1368,10 @@ step
     .accept 892 >>Ota: The Missing Shipment
     .target Wharfmaster Dizzywig
 step
-    .goto 1413/1,-3737.78,-971.09
-    .vendor >>Myy harmaat roinat (Kilxx)
-    .target Kilxx
-step
     .goto 1413/1,-3730.68,-833.26
     >>Puhu: |cRXP_FRIENDLY_Gazlowe|r
     .turnin 892 >>Palauta: The Missing Shipment
     .target Gazlowe
-step
-    .goto 1413/1,-3724.60,-837.99
-    .vendor >>Myy harmaat roinat (Gagsprocket)
-    .target Gagsprocket
 step
     .goto 1413/1,-3355.75,-130.61
     >>Kerää |cRXP_LOOT_Crossroads' Supply Crates|r (|cRXP_PICK_Crossroads' Supply Crates|r)
@@ -1522,6 +1486,14 @@ step
     .trainer >>Paladin-trainer (taso 14): Blessing of Wisdom, Holy Light R3, Seal of the Crusader r1, Seal of the Crusader r2
     .target Alodan the Hopeful
 step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
+step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -1626,14 +1598,6 @@ step
     .turnin 97275 >>Palauta: Whuut's the Rush
     .target Whuut
 step
-    .goto 1454/1,-4465.64,1593.55
-    .vendor >>Myy roinat ja korjaa varusteet (Sana)
-    .target Sana
-step
-    .goto 1454/1,-4439.41,1633.96
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Gryshka
-step
     .goto 1454/1,-4461.85,1598.51
     >>Puhu: |cRXP_FRIENDLY_Thatog|r
     .accept 97246 >>Ota: Meal Appeal
@@ -1655,9 +1619,9 @@ step
     .accept 97326 >>Ota: Rocks to Rests
     .target Thra
 step
-    .goto 1454/1,-4259.46,1971.18
-    .vendor >>Myy harmaat roinat (Lunar Festival Vendor)
-    .target Lunar Festival Vendor
+    .goto 1454/1,-4300.27,1820.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Katis)
+    .target Katis
 step
     .goto 1454/1,-4236.03,2009.15
     >>Kerää |cRXP_LOOT_Smooth Boulder|r (|cRXP_PICK_Smooth Boulder|r)
@@ -1669,10 +1633,6 @@ step
     .target Thra
 step
     +|cRXP_WARN_Dungeon: Ragefire Chasm|r (suositus taso 14+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Orgrimmar) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
-step
-    .goto 1454/1,-4259.46,1971.18
-    .vendor >>Myy harmaat roinat (Lunar Festival Vendor)
-    .target Lunar Festival Vendor
 step
     .goto 1454/1,-4313.46,1676.24
     .fly Camp Taurajo >>Lennä: Camp Taurajo
@@ -1775,10 +1735,6 @@ step
     .turnin 5761 >>Palauta: Slaying the Beast
     .target Neeru Fireblade
 step
-    .goto 1454/1,-4320.89,1750.42
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Kareth)
-    .target Kareth
-step
     .hs >>Hearthstone: Innkeeper Boorand Plainswind
     .cooldown item,6948,>0
 step
@@ -1843,10 +1799,6 @@ step
     .accept 881 >>Ota: Echeyakee
     .target Sergra Darkthorn
 step
-    .goto 1413/1,-2671.75,-540.04
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Halija Whitestrider)
-    .target Halija Whitestrider
-step
     .goto 1413/1,-3697.24,-929.20
     >>|cRXP_WARN_Ammattitehtävä (Herbalism)|r: palauta jos tavoite on valmis, muuten ohita
     .turnin 866 >>Palauta: Root Samples
@@ -1884,10 +1836,6 @@ step
     .complete 880,1
     .mob Oasis Snapjaw
     .mob Oasis Snapjaw Hatchling
-step
-    .goto 1413/1,-2645.40,-406.94
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Boorand Plainswind
 step
     .goto 1413/1,-2585.62,-421.13
     >>Puhu: |cRXP_FRIENDLY_Apothecary Helbrim|r
@@ -1940,8 +1888,12 @@ step
     .target Sputtervalve
 step
     .goto 1413/1,-3684.07,-919.74
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ironzar)
+    .vendor >>Myy harmaat roinat (Ironzar)
     .target Ironzar
+step
+    .goto 1413/1,-3664.82,-1050.14
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Wiley
 step
     .goto 1413/1,-3598.95,-1380.52
     >>Kerää |cRXP_LOOT_Handful of Complicated Parts|r (|cRXP_PICK_Pile of Complicated Parts|r)
@@ -1989,10 +1941,6 @@ step
     .turnin 905 >>Palauta: The Angry Scytheclaws
     .target Sergra Darkthorn
 step
-    .goto 1413/1,-2671.75,-540.04
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Halija Whitestrider)
-    .target Halija Whitestrider
-step
     .goto 1413/1,-2342.42,855.80
     >>Puhu: |cRXP_FRIENDLY_Wenikee Boltbucket|r
     .turnin 3921 >>Palauta: Wenikee Boltbucket
@@ -2036,6 +1984,10 @@ step
     .goto 1456/1,251.66,-952.29
     .trainer >>Paladin-trainer (taso 16): Retribution Aura
     .target Alodan the Hopeful
+step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
 step
     .zone Stonetalon Mountains >>Matkusta: Stonetalon Mountains. Lennä Sun Rock Retreatiin (Stonetalon Mountains)
 step
@@ -2091,9 +2043,13 @@ step
     .accept 914 >>Ota: Leaders of the Fang
     .target Nara Wildmane
 step
-    .goto 1456/1,-225.02,-1087.91
-    .vendor >>Myy harmaat roinat (Bashana Runetotem)
-    .target Bashana Runetotem
+    .goto 1456/1,-63.14,-1247.11
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hogor Thunderhoof)
+    .target Hogor Thunderhoof
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
 step
     .goto 1456/1,26.10,-1196.73
     .fly Ratchet >>Lennä: Ratchet
@@ -2122,10 +2078,6 @@ step
     .turnin 865 >>Palauta: Raptor Horns
     .accept 1491 >>Ota: Smart Drinks
     .target Mebok Mizzyrix
-step
-    .goto 1413/1,-3684.07,-919.74
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ironzar)
-    .target Ironzar
 step
     .goto 1413/1,-2190.42,-644.09
     >>Kerää |cRXP_LOOT_Serpentbloom|r (|cRXP_PICK_Serpentbloom|r)
@@ -2160,14 +2112,6 @@ step
     .skill leatherworking,<50,1
     .skill leatherworking,150,1,1
     .target Waldor
-step
-    .goto 1413/1,-2568.39,-356.95
-    .vendor >>Myy roinat ja korjaa varusteet (Nargal Deatheye)
-    .target Nargal Deatheye
-step
-    .goto 1413/1,-2645.40,-406.94
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Boorand Plainswind
 step
     .goto 1413/1,-2038.42,-799.48
     >>Puhu: |cRXP_FRIENDLY_Nalpak|r
@@ -2208,10 +2152,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
     .accept 891 >>Ota: The Guns of Northwatch
     .target Captain Thalo'thas Brightsun
-step
-    .goto 1413/1,-3675.96,-985.28
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vexspindle)
-    .target Vexspindle
 step
     .goto 1413/1,-2646.42,-522.48
     >>Puhu: |cRXP_FRIENDLY_Mankrik|r
@@ -2340,10 +2280,6 @@ step
     .accept 1060 >>Ota: Letter to Jin'Zil
     .target Darsok Swiftdagger
 step
-    .goto 1413/1,-2584.60,-427.89
-    .vendor >>Myy harmaat roinat (Hula'mahi)
-    .target Hula'mahi
-step
     .goto 1413/1,-3761.08,-900.83
     >>Puhu: |cRXP_FRIENDLY_Sputtervalve|r
     .turnin 863 >>Palauta: The Escape
@@ -2353,10 +2289,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Wharfmaster Dizzywig|r
     .turnin 896 >>Palauta: Miner's Fortune
     .target Wharfmaster Dizzywig
-step
-    .goto 1413/1,-3737.78,-971.09
-    .vendor >>Myy harmaat roinat (Kilxx)
-    .target Kilxx
 step
     .goto 1413/1,-3781.35,-2211.54
     >>Tapa |cRXP_ENEMY_Cannoneer Smythe|r
@@ -2381,14 +2313,6 @@ step
     .mob Theramore Marine
     .mob Theramore Preserver
     .mob Cannoneer Whessan
-step
-    .goto 1413/1,-1949.24,-2374.36
-    .vendor >>Myy roinat ja korjaa varusteet (Sanuye Runetotem)
-    .target Sanuye Runetotem
-step
-    .goto 1413/1,-1995.86,-2376.39
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Byula
 step
     .goto 1413/1,-1995.86,-2376.39
     .home >>Aseta Hearthstone tähän (Innkeeper Byula)
@@ -2419,10 +2343,6 @@ step
     .accept 882 >>Ota: Ishamuhale
     .target Jorn Skyseer
 step
-    .goto 1413/1,-1949.24,-2374.36
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sanuye Runetotem)
-    .target Sanuye Runetotem
-step
     .goto 1413/1,-2372.82,-1785.89
     >>Puhu: |cRXP_FRIENDLY_Beaten Corpse|r
     .complete 4921,1
@@ -2438,10 +2358,6 @@ step
     .turnin 4921 >>Palauta: Lost in Battle
     .accept 95774 >>Ota: Her Name Is Olgra
     .target Mankrik
-step
-    .goto 1413/1,-2671.75,-540.04
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Halija Whitestrider)
-    .target Halija Whitestrider
 step
     .goto 1413/1,-1967.48,-306.28
     >>Puhu: |cRXP_FRIENDLY_Regthar Deathgate|r
@@ -2505,10 +2421,6 @@ step
     .turnin 891 >>Palauta: The Guns of Northwatch
     .target Captain Thalo'thas Brightsun
 step
-    .goto 1413/1,-3675.96,-985.28
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vexspindle)
-    .target Vexspindle
-step
     .goto 1413/1,-3769.19,-898.12
     .fly Camp Taurajo >>Lennä: Camp Taurajo
     .target Bragok
@@ -2519,10 +2431,6 @@ step
     .turnin 882 >>Palauta: Ishamuhale
     .accept 907 >>Ota: Enraged Thunder Lizards
     .target Jorn Skyseer
-step
-    .goto 1413/1,-1949.24,-2374.36
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sanuye Runetotem)
-    .target Sanuye Runetotem
 step
     .goto 1413/1,-1734.42,-2475.03
     >>Kerää |cRXP_LOOT_Thunder Lizard Blood|r (|cRXP_ENEMY_Stormsnout|r, |cRXP_ENEMY_Thunderhead|r, |cRXP_ENEMY_Stormhide|r)
@@ -2555,6 +2463,10 @@ step
     .trainer >>Paladin-trainer (taso 20): Consecration, Flash of Light, Exorcism, Devotion Aura R3
     .target Hilda the Breaker
 step
+    .goto 1420/0,2077.17,2460.18
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Angus Hammerhand)
+    .target Angus Hammerhand
+step
     .goto 1420/0,2034.69,2490.91
     >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
     .accept 91858 >>Ota: Diplomatic Incident
@@ -2573,10 +2485,6 @@ step
     .turnin 91859 >>Palauta: A Curious Pair
     .accept 91860 >>Ota: A Grim Fate
     .target Deathguard Baldren
-step
-    .goto 1421/0,1559.58,566.27
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Nadia Vernon)
-    .target Nadia Vernon
 step
     .goto 1421/0,720.00,711.87
     >>Käytä / kerää: |cRXP_PICK_Charred Remains|r
@@ -2613,10 +2521,6 @@ step
     .goto 1421/0,690.60,835.07
     >>Escort Lumina Windsinger to safety
     .complete 96204,2
-step
-    .goto 1421/0,1636.44,510.83
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Bates
 step
     .goto 1421/0,1627.20,518.67
     >>Puhu: |cRXP_FRIENDLY_Lumina Windsinger|r
@@ -2745,9 +2649,13 @@ step
     .turnin 962 >>Palauta: Serpentbloom
     .target Apothecary Zamah
 step
-    .goto 1456/1,280.78,-939.07
-    .vendor >>Myy harmaat roinat (Rune Broker)
-    .target Rune Broker
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
 step
     .goto 1456/1,-215.00,-1055.27
     >>Puhu: |cRXP_FRIENDLY_Rahauro|r
@@ -2761,10 +2669,6 @@ step
     .target Nara Wildmane
 step
     +|cRXP_WARN_Dungeon: Ruins of Lordaeron|r (suositus taso 19+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Undercity) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
-step
-    .goto 1456/1,-225.02,-1087.91
-    .vendor >>Myy harmaat roinat (Bashana Runetotem)
-    .target Bashana Runetotem
 step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercitystä lounaaseen Silverpine Forestiin
 step
@@ -2825,10 +2729,6 @@ step
     .accept 92421 >>Ota: Light's Justice
     .target Morbin Lightbane
 step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
-step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
     .goto 1420/0,73.55,2023.97
@@ -2847,10 +2747,6 @@ step
     .turnin 450 >>Palauta: A Recipe For Death
     .accept 451 >>Ota: A Recipe For Death
     .target Apothecary Renferrel
-step
-    .goto 1421/0,1630.14,508.87
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sebastian Meloche)
-    .target Sebastian Meloche
 step
     .goto 1421/0,1030.80,1036.67
     >>Kerää |cRXP_LOOT_Hardened Tumor|r (|cRXP_ENEMY_Vile Fin Lakestalker|r, |cRXP_ENEMY_Vile Fin Shredder|r, |cRXP_ENEMY_Vile Fin Tidecaller|r)
@@ -2888,10 +2784,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Theodore Griffs|r
     .accept 95216 >>Ota: The New Plague
     .target Theodore Griffs
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
 step
     .goto 1458/0,178.51,1805.17
     >>Dungeonissa: looti |cRXP_LOOT_Crest of Lordaeron|r aloittaa questin
@@ -2941,10 +2833,6 @@ step
     .accept 97291 >>Ota: Unending Torment
     .target Master Apothecary Faranell
 step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
-step
     .goto 1458/0,355.13,1561.73
     >>Kerää |cRXP_LOOT_Blisterweed|r (|cRXP_PICK_Blisterweed|r)
     .complete 97291,2
@@ -2954,19 +2842,11 @@ step
     .turnin 92421 >>Palauta: Light's Justice
     .target Morbin Lightbane
 step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
+    .goto 1458/0,377.10,1399.98
+    .vendor >>Myy harmaat roinat (Algernon)
+    .target Algernon
 step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
-step
-    .goto 1421/0,1630.14,508.87
-    .vendor >>Myy roinat ja korjaa varusteet (Sebastian Meloche)
-    .target Sebastian Meloche
-step
-    .goto 1421/0,1636.44,510.83
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Bates
 step
     .goto 1421/0,1581.00,462.67
     >>Puhu: |cRXP_FRIENDLY_Tabitha Heartweaver|r
@@ -3002,10 +2882,6 @@ step
     .turnin 97291 >>Palauta: Unending Torment
     .accept 97292 >>Ota: Unending Torment
     .target Master Apothecary Faranell
-step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
 step
     .goto 1458/0,431.88,1481.72
     >>Käytä / kerää: |cRXP_PICK_Othmar's Head|r
@@ -3050,10 +2926,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
     .accept 6442 >>Ota: Naga at the Zoram Strand
     .target Marukai
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,1054.13,3481.35
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
@@ -3157,10 +3029,6 @@ step
     .accept 5052 >>Ota: Blood Shards of Agamaggan
     .target Mangletooth
 step
-    .goto 1413/1,-1910.74,-2402.06
-    .vendor >>Myy harmaat roinat (Gahroot)
-    .target Gahroot
-step
     .goto 1413/1,-1724.28,-2150.73
     >>Kerää |cRXP_LOOT_Blood Shard|r (|cRXP_ENEMY_Bristleback Hunter|r, |cRXP_ENEMY_Oasis Snapjaw|r, |cRXP_PICK_Copper Vein|r)
     .complete 5052,1
@@ -3185,7 +3053,7 @@ step
     .target Mangletooth
 step
     .goto 1413/1,-1995.86,-2376.39
-    .vendor >>Osta vettä (Melon Juice) ja ruokaa, noin 20+20
+    .vendor >>Myy roinat. Osta vettä (Melon Juice) ja ruokaa, noin 20+20
     .target Innkeeper Byula
 step
     .goto 1413/1,-1947.22,-2285.86
@@ -3326,10 +3194,6 @@ step
     .turnin 6393 >>Palauta: Elemental War
     .target Tsunaman
 step
-    .goto 1442/1,927.72,893.56
-    .vendor >>Myy harmaat roinat (Innkeeper Jayka)
-    .target Innkeeper Jayka
-step
     .goto 1442/1,-231.10,-176.77
     >>Puhu: |cRXP_FRIENDLY_Xen'Zilla|r
     .turnin 6461 >>Palauta: Blood Feeders
@@ -3441,9 +3305,9 @@ step
     .accept 1013 >>Ota: The Book of Ur
     .target Keeper Bel'dugur
 step
-    .goto 1458/0,348.13,1564.81
-    .vendor >>Myy harmaat roinat (Katrina Alliestar)
-    .target Katrina Alliestar
+    .goto 1458/0,348.41,1629.84
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Abigail Sawyer)
+    .target Abigail Sawyer
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa
 step
@@ -3500,14 +3364,6 @@ step
     >>Käytä / kerää: |cRXP_PICK_Locked ball and chain|r
     .complete 498,2
 step
-    .goto 1424/0,-867.09,-158.51
-    .vendor >>Myy roinat ja korjaa varusteet (Ott)
-    .target Ott
-step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Shay
-step
     .goto 1424/0,-942.29,-5.97
     .home >>Aseta Hearthstone tähän (Innkeeper Shay)
     .target Innkeeper Shay
@@ -3531,10 +3387,6 @@ step
     .turnin 501 >>Palauta: Elixir of Pain
     .accept 502 >>Ota: Elixir of Pain
     .target Apothecary Lydon
-step
-    .goto 1424/0,-926.61,-6.19
-    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
-    .target Christoph Jeffcoat
 step
     .goto 1424/0,4.27,-338.13
     >>Tapa |cRXP_ENEMY_Hillsbrad Farmer|r
@@ -3633,6 +3485,10 @@ step
     .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
     .target Christoph Jeffcoat
 step
+    .goto 1424/0,-942.29,-5.97
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Shay
+step
     .goto 1424/0,39.47,-547.20
     >>Tapa |cRXP_ENEMY_Blacksmith Verringtan|r
     >>Tapa |cRXP_ENEMY_Hillsbrad Apprentice Blacksmith|r
@@ -3711,6 +3567,10 @@ step
     .trainer >>Paladin-trainer (taso 26): Flash of Light r2, Retribution Aura r2
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
     .zone Silverpine Forest >>Matkusta: Silverpine Forest. Undercitystä lounaaseen Silverpine Forestiin
 step
     .goto 1421/0,1635.60,516.43
@@ -3742,14 +3602,6 @@ step
     .turnin 1098 >>Palauta: Deathstalkers in Shadowfang
     .target Deathstalker Vincent
 step
-    .goto 1421/0,1630.14,508.87
-    .vendor >>Myy roinat ja korjaa varusteet (Sebastian Meloche)
-    .target Sebastian Meloche
-step
-    .goto 1421/0,1636.44,510.83
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Bates
-step
     .goto 1421/0,1593.60,552.27
     >>Puhu: |cRXP_FRIENDLY_Dalar Dawnweaver|r
     .turnin 1014 >>Palauta: Arugal Must Die
@@ -3760,6 +3612,10 @@ step
     .goto 1458/0,417.01,1782.06
     .trainer >>Paladin-trainer (taso 28): Exorcism r2, Concerntration Aura
     .target Garen Largo
+step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -3783,10 +3639,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mitsuwa|r
     .accept 6462 >>Ota: Troll Charm
     .target Mitsuwa
-step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
 step
     .goto 1440/1,-47.30,3047.01
     >>Tapa |cRXP_ENEMY_Thistlefur Shaman|r
@@ -3922,10 +3774,6 @@ step
 step
     +|cRXP_WARN_Dungeon: Blackfathom Deeps|r (suositus taso 25+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ashenvale) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1440/1,1024.72,3362.20
-    .vendor >>Myy harmaat roinat (Wik'Tar)
-    .target Wik'Tar
-step
     .goto 1440/1,863.83,4127.10
     >>Dungeonin sisällä - Puhu: |cRXP_FRIENDLY_Argent Guard Thaelrid|r
     .accept 6561 >>Ota: Blackfathom Villainy
@@ -3977,14 +3825,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r
     .accept 1058 >>Ota: Jin'Zil's Forest Magic
     .target Witch Doctor Jin'Zil
-step
-    .goto 1442/1,1030.75,992.22
-    .vendor >>Myy roinat ja korjaa varusteet (Borand)
-    .target Borand
-step
-    .goto 1442/1,927.72,893.56
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Jayka
 step
     .goto 1442/1,927.72,893.56
     .home >>Aseta Hearthstone tähän (Innkeeper Jayka)
@@ -4073,6 +3913,14 @@ step
     .trainer >>Paladin-trainer (taso 30): Consecration r2, Holy Light r5, Devotion Aura r4, Lay of Hands r2, Seal of Command r2
     .target Alodan the Hopeful
 step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
+step
     .goto 1456/1,26.10,-1196.73
     .fly Crossroads >>Lennä: Crossroads
     .target Tal
@@ -4115,10 +3963,6 @@ step
     .turnin 1069 >>Palauta: Deepmoss Spider Eggs
     .accept 1221 >>Ota: Blueleaf Tubers
     .target Mebok Mizzyrix
-step
-    .goto 1413/1,-3684.07,-919.74
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ironzar)
-    .target Ironzar
 step
     .goto 1413/1,-3690.15,-927.85
     >>Kerää |cRXP_LOOT_Crate With Holes|r (|cRXP_PICK_Crate with Holes|r)
@@ -4221,10 +4065,6 @@ step
     .accept 906 >>Ota: Betrayal from Within
     .target Mangletooth
 step
-    .goto 1413/1,-1910.74,-2402.06
-    .vendor >>Myy harmaat roinat (Gahroot)
-    .target Gahroot
-step
     .goto 1413/1,-1881.35,-2383.82
     .fly Crossroads >>Lennä: Crossroads
     .target Omusa Thunderhorn
@@ -4235,18 +4075,10 @@ step
     .turnin 906 >>Palauta: Betrayal from Within
     .target Thork
 step
-    .goto 1413/1,-2584.60,-427.89
-    .vendor >>Myy harmaat roinat (Hula'mahi)
-    .target Hula'mahi
-step
     .goto 1413/1,-3761.08,-900.83
     >>Puhu: |cRXP_FRIENDLY_Sputtervalve|r
     .turnin 1094 >>Palauta: Further Instructions
     .target Sputtervalve
-step
-    .goto 1413/1,-3684.07,-919.74
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ironzar)
-    .target Ironzar
 step
     .goto 1413/1,-4044.82,-1353.49
     >>Puhu: |cRXP_FRIENDLY_Mahren Skyseer|r
@@ -4254,12 +4086,8 @@ step
     .target Mahren Skyseer
 step
     .goto 1413/1,-3675.96,-985.28
-    .vendor >>Myy roinat ja korjaa varusteet (Vexspindle)
+    .vendor >>Myy harmaat roinat (Vexspindle)
     .target Vexspindle
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Wiley
 step
     .goto 1413/1,-4044.82,-1353.49
     >>Puhu: |cRXP_FRIENDLY_Mahren Skyseer|r
@@ -4342,10 +4170,6 @@ step
     .goto 1441/1,-2466.13,-5477.33
     >>Puhu: |cRXP_FRIENDLY_Jandia|r
     .accept 98070 >>Ota: Stop the Screeching
-    .target Jandia
-step
-    .goto 1441/1,-2466.57,-5477.63
-    .vendor >>Myy harmaat roinat (Jandia)
     .target Jandia
 step
     .goto 1441/1,-2914.93,-5445.07
@@ -4433,10 +4257,6 @@ step
     .target Thalia Amberhide
 step
     .goto 1441/1,-2460.41,-5477.92
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Abeqwa
-step
-    .goto 1441/1,-2460.41,-5477.92
     .home >>Aseta Hearthstone tähän (Innkeeper Abeqwa)
     .target Innkeeper Abeqwa
 step
@@ -4445,9 +4265,9 @@ step
     .turnin 98070 >>Palauta: Stop the Screeching
     .target Jandia
 step
-    .goto 1441/1,-2466.57,-5477.63
-    .vendor >>Myy harmaat roinat (Jandia)
-    .target Jandia
+    .goto 1441/1,-2408.49,-5453.28
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Starn)
+    .target Starn
 step
     .goto 1441/1,-3856.53,-6234.13
     >>Puhu: |cRXP_FRIENDLY_Kravel Koalbeard|r
@@ -4685,10 +4505,6 @@ step
     .turnin 1221 >>Palauta: Blueleaf Tubers
     .target Mebok Mizzyrix
 step
-    .goto 1413/1,-3684.07,-919.74
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ironzar)
-    .target Ironzar
-step
     .goto 1441/1,-2419.49,-5407.23
     .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Nyse
@@ -4721,9 +4537,13 @@ step
 step
     .xp 28 >>Tavoitetaso 28 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .goto 1456/1,-219.80,-1043.65
-    .vendor >>Myy harmaat roinat (Lunar Festival Vendor)
-    .target Lunar Festival Vendor
+    .goto 1456/1,-63.14,-1247.11
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hogor Thunderhoof)
+    .target Hogor Thunderhoof
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
 step
     .zone Undercity >>Matkusta: Undercity. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Undercity: zeppeliini Orgrimmarin edustalta tai lento Tarren Millistä / Hammerfallista
 step
@@ -4764,14 +4584,6 @@ step
     .complete 552,1
     .mob Cave Yeti
     .mob Ferocious Yeti
-step
-    .goto 1424/0,-867.09,-158.51
-    .vendor >>Myy roinat ja korjaa varusteet (Ott)
-    .target Ott
-step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Shay
 step
     .goto 1424/0,-942.29,-5.97
     .home >>Aseta Hearthstone tähän (Innkeeper Shay)
@@ -4886,10 +4698,6 @@ step
 step
     .xp 30 >>Tavoitetaso 30 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .goto 1424/0,-914.13,-47.57
-    .vendor >>Myy harmaat roinat (Mallen Swain)
-    .target Mallen Swain
-step
     .zone Arathi Highlands >>Matkusta: Arathi Highlands. Tarren Millistä tietä itään Arathi Highlandsiin. Hammerfall on koillisnurkassa
 step
     .goto 1417/0,-3495.39,-918.13
@@ -4922,10 +4730,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Doctor Gregory Victor|r
     .accept 97539 >>Ota: Silky Sutures
     .target Doctor Gregory Victor
-step
-    .goto 1417/0,-3483.51,-1008.13
-    .vendor >>Myy harmaat roinat (Jun'ha)
-    .target Jun'ha
 step
     .goto 1417/0,-3379.47,-992.53
     >>Kerää |cRXP_LOOT_Highland Raptor Eye|r (|cRXP_ENEMY_Highland Strider|r, |cRXP_ENEMY_Highland Thrasher|r)
@@ -4989,7 +4793,7 @@ step
     .target Drum Fel
 step
     .goto 1417/0,-3524.91,-912.37
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
+    .vendor >>Myy roinat. Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
     .target Innkeeper Adegwa
 step
     .goto 1417/0,-3524.91,-912.37
@@ -5038,9 +4842,9 @@ step
     .turnin 847 >>Palauta: Guile of the Raptor
     .target Tor'gan
 step
-    .goto 1417/0,-3560.91,-963.49
-    .vendor >>Myy harmaat roinat (Tunkk)
-    .target Tunkk
+    .goto 1417/0,-3477.39,-933.73
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Mu'uta)
+    .target Mu'uta
 step
     .goto 1417/0,-3656.67,-970.93
     >>Kerää |cRXP_LOOT_Mote of Myzrael|r (|cRXP_ENEMY_Drywhisker Kobold|r, |cRXP_ENEMY_Drywhisker Digger|r, |cRXP_ENEMY_Drywhisker Surveyor|r)
@@ -5073,6 +4877,10 @@ step
     .goto 1458/0,417.01,1782.06
     .trainer >>Paladin-trainer (taso 34): Divine Shield, Flash of Light r3, Blessing of Wisdom r3
     .target Garen Largo
+step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -5150,10 +4958,6 @@ step
     .accept 98823 >>Ota: Earthen Echo
     .target Bashana Runetotem
 step
-    .goto 1456/1,-225.02,-1087.91
-    .vendor >>Myy harmaat roinat (Bashana Runetotem)
-    .target Bashana Runetotem
-step
     .goto 1456/1,26.10,-1196.73
     .fly Orgrimmar >>Lennä: Orgrimmar
     .target Tal
@@ -5162,10 +4966,6 @@ step
     .goto 1454/1,-4482.89,1775.30
     >>Puhu: |cRXP_FRIENDLY_Borstan|r
     .turnin 95697 >>Palauta: Changing Tastes
-    .target Borstan
-step
-    .goto 1454/1,-4482.89,1775.11
-    .vendor >>Myy harmaat roinat (Borstan)
     .target Borstan
 step
     .goto 1454/1,-4313.46,1676.24
@@ -5244,10 +5044,6 @@ step
     .accept 1431 >>Ota: Alliance Relations
     .target Craven Drok
 step
-    .goto 1454/1,-4370.68,1836.10
-    .vendor >>Myy harmaat roinat (Rune Broker)
-    .target Rune Broker
-step
     .goto 1454/1,-3997.59,1781.85
     >>Puhu: |cRXP_FRIENDLY_Keldran|r
     .turnin 1431 >>Palauta: Alliance Relations
@@ -5255,10 +5051,6 @@ step
     .target Keldran
 step
     .xp 30 >>Tavoitetaso 30 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
-step
-    .goto 1454/1,-4097.74,1580.08
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ukra'nor)
-    .target Ukra'nor
 step
     .goto 1454/1,-4313.46,1676.24
     .fly Freewind Post >>Lennä: Freewind Post
@@ -5464,7 +5256,7 @@ step
     .target Malux
 step
     .goto 1443/1,3073.41,-1677.04
-    .vendor >>Myy roinat ja korjaa varusteet (Hae'Wilani)
+    .vendor >>Myy harmaat roinat (Hae'Wilani)
     .target Hae'Wilani
 step
     .goto 1443/1,3150.29,-1592.80
@@ -5605,10 +5397,6 @@ step
     .accept 5581 >>Ota: Portals of the Legion
     .target Taiga Wisemane
 step
-    .goto 1443/1,3073.41,-1677.04
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hae'Wilani)
-    .target Hae'Wilani
-step
     .goto 1443/1,3217.27,-1706.42
     >>Puhu: |cRXP_FRIENDLY_Mai'Lahii|r
     .turnin 6142 >>Palauta: Clam Bait
@@ -5618,10 +5406,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Drulzegar Skraghook|r
     .turnin 6143 >>Palauta: Other Fish to Fry
     .target Drulzegar Skraghook
-step
-    .goto 1443/1,3195.25,-1694.72
-    .vendor >>Myy harmaat roinat (Lah'Mawhani)
-    .target Lah'Mawhani
 step
     .goto 1443/1,2012.39,-1826.33
     >>Tapa |cRXP_ENEMY_Demon Portal Guardian|r
@@ -5635,10 +5419,6 @@ step
 step
     .xp 32 >>Tavoitetaso 32 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .goto 1443/1,3073.41,-1677.04
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hae'Wilani)
-    .target Hae'Wilani
-step
     .goto 1443/1,3262.23,-1770.27
     .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Thalon
@@ -5647,6 +5427,10 @@ step
     .goto 1456/1,251.66,-952.29
     .trainer >>Paladin-trainer (taso 36): Exorcism r3, Retribution Aura r3
     .target Alodan the Hopeful
+step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol). Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
@@ -5695,10 +5479,6 @@ step
     .target Krazek
 step
     .goto 1434/0,495.34,-14457.65
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Skindle
-step
-    .goto 1434/0,495.34,-14457.65
     .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
     .target Innkeeper Skindle
 step
@@ -5706,10 +5486,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Drizzlik|r
     .accept 575 >>Ota: Supply and Demand
     .target Drizzlik
-step
-    .goto 1434/0,424.51,-14468.28
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Qixdi Goodstitch)
-    .target Qixdi Goodstitch
 step
     .goto 1434/0,459.61,-14465.73
     >>Puhu: |cRXP_FRIENDLY_Scooty|r
@@ -5761,10 +5537,6 @@ step
     .turnin 568 >>Palauta: The Defense of Grom'gol
     .accept 569 >>Ota: The Defense of Grom'gol
     .target Commander Aggro'gosh
-step
-    .goto 1434/0,203.72,-12410.12
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hragran)
-    .target Hragran
 step
     .goto 1434/0,-152.99,-12470.52
     >>Tapa |cRXP_ENEMY_Mosh'Ogg Witch Doctor|r
@@ -5918,12 +5690,8 @@ step
     .mob Sin'Dall
 step
     .goto 1434/0,203.72,-12410.12
-    .vendor >>Myy roinat ja korjaa varusteet (Hragran)
+    .vendor >>Myy harmaat roinat (Hragran)
     .target Hragran
-step
-    .goto 1434/0,211.38,-12434.36
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Thulbek
 step
     .goto 1434/0,211.38,-12434.36
     .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
@@ -6068,10 +5836,6 @@ step
     .turnin 213 >>Palauta: Hostile Takeover
     .target Kebok
 step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
     .goto 1434/0,536.18,-14299.82
     >>Puhu: |cRXP_FRIENDLY_Wharfmaster Lozgil|r
     .turnin 97328 >>Palauta: Anything of Value
@@ -6114,17 +5878,9 @@ step
     .accept 2932 >>Ota: Grim Message
     .target Nimboya
 step
-    .goto 1434/0,211.38,-12434.36
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Thulbek
-step
     .goto 1434/0,166.07,-12342.90
     >>Klikkaa: |cRXP_PICK_Bubbling Cauldron|r
     .turnin 585 >>Palauta: Speaking with Nezzliok
-step
-    .goto 1434/0,155.86,-12357.79
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vharr)
-    .target Vharr
 step
     .goto 1434/0,-255.09,-12381.19
     >>Kerää |cRXP_LOOT_Snapjaw Crocolisk Skin|r (|cRXP_ENEMY_Snapjaw Crocolisk|r)
@@ -6171,6 +5927,10 @@ step
     .goto 1434/0,468.54,-14467.86
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
     .target Jutak
+step
+    .goto 1434/0,495.34,-14457.65
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Skindle
 step
     .goto 1434/0,-842.17,-13053.35
     >>Kerää |cRXP_LOOT_Skullsplitter Tusk|r (|cRXP_ENEMY_Skullsplitter Warrior|r, |cRXP_ENEMY_Skullsplitter Axe Thrower|r, |cRXP_ENEMY_Skullsplitter Mystic|r)
@@ -6233,6 +5993,10 @@ step
     .goto 1458/0,417.01,1782.06
     .trainer >>Paladin-trainer (taso 38): Blessing of Protection r3, Holy Light r6, Seal of Wisdom
     .target Garen Largo
+step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -6374,10 +6138,6 @@ step
 step
     .xp 33 >>Tavoitetaso 33 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
     .goto 1434/0,506.19,-14448.71
     .fly Tarren Mill >>Lennä: Tarren Mill
     .target Gringer
@@ -6428,10 +6188,6 @@ step
     .accept 507 >>Ota: Lord Aliden Perenolde
     .target Krusk
 step
-    .goto 1424/0,-935.25,-24.75
-    .vendor >>Myy harmaat roinat (Kayren Soothallow)
-    .target Kayren Soothallow
-step
     .zone Alterac Mountains >>Matkusta: Alterac Mountains. Tarren Millistä pohjoiseen Alterac Mountainsiin
 step
     .goto 1416/0,-317.07,1227.47
@@ -6453,7 +6209,7 @@ step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa
 step
     .goto 1424/0,-942.29,-5.97
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .vendor >>Myy harmaat roinat (Innkeeper Shay)
     .target Innkeeper Shay
 step
     .goto 1424/0,-955.73,-41.60
@@ -6516,6 +6272,10 @@ step
     .goto 1420/0,2041.02,2414.09
     .trainer >>Paladin-trainer (taso 40): Summon Warhorse (alliance), Consecration r3, Hammer of Justice r3, Devotion Aura r5, Seal of Command r3
     .target Hilda the Breaker
+step
+    .goto 1420/0,2077.17,2460.18
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Angus Hammerhand)
+    .target Angus Hammerhand
 step
     .goto 1420/0,2034.69,2490.91
     >>Puhu: |cRXP_FRIENDLY_Danitha Morr|r
@@ -6694,7 +6454,7 @@ step
     .accept 1150 >>Ota: Test of Endurance
     .target Dorn Plainstalker
 step
-    .goto 1441/1,-1590.53,-5597.60
+    .goto 1441/1,-1590.53,-5594.67
     >>Kerää |cRXP_LOOT_Grenka's Claw|r (|cRXP_ENEMY_Grenka Bloodscreech|r)
     .complete 1150,1
     .mob Grenka Bloodscreech
@@ -6734,10 +6494,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Varimathras|r
     .turnin 1048 >>Palauta: Into The Scarlet Monastery
     .target Varimathras
-step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -6804,6 +6560,10 @@ step
     .vendor >>Myy harmaat roinat (Boyle)
     .target Boyle
 step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
+step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
     .goto 1420/0,-699.15,2819.27
@@ -6836,14 +6596,6 @@ step
     .turnin 1013 >>Palauta: The Book of Ur
     .target Keeper Bel'dugur
 step
-    .goto 1458/0,260.82,1634.90
-    .vendor >>Myy roinat ja korjaa varusteet (Lauren Newcomb)
-    .target Lauren Newcomb
-step
-    .goto 1458/0,223.31,1635.41
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Norman
-step
     .goto 1458/0,163.26,1664.79
     >>Puhu: |cRXP_FRIENDLY_Andrew Brownell|r
     .accept 3341 >>Ota: Bring the End
@@ -6867,10 +6619,6 @@ step
     .turnin 1131 >>Palauta: Steelsnap
     .accept 1136 >>Ota: Frostmaw
     .target Melor Stonehoof
-step
-    .goto 1456/1,-86.62,-1381.62
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
 step
     .goto 1456/1,26.10,-1196.73
     .fly Orgrimmar >>Lennä: Orgrimmar
@@ -6914,10 +6662,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Keldran|r
     .turnin 1436 >>Palauta: Alliance Relations
     .target Keldran
-step
-    .goto 1454/1,-4097.74,1580.08
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ukra'nor)
-    .target Ukra'nor
 step
     .goto 1454/1,-4746.58,2036.28
     >>Puhu: |cRXP_FRIENDLY_Nogg|r
@@ -7157,10 +6901,6 @@ RXPGuides.RegisterGuide([[
 step
     +|cRXP_WARN_Dungeon: Razorfen Downs|r (suositus taso 38+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (The Barrens) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1445/1,-2873.92,-3146.33
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Zulrg)
-    .target Zulrg
-step
     .goto 1445/1,-2841.90,-3149.13
     .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Shardi
@@ -7169,6 +6909,10 @@ step
     .goto 1456/1,251.66,-952.29
     .trainer >>Paladin-trainer (taso 42): Cleanse, Blessing of Might r5, Flash of Light r4, Seal of the Crusader r5
     .target Alodan the Hopeful
+step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
 step
     .goto 1456/1,26.10,-1196.73
     .fly Freewind Post >>Lennä: Freewind Post
@@ -7319,10 +7063,6 @@ step
     .accept 6521 >>Ota: An Unholy Alliance
     .target Varimathras
 step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
-step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -7356,14 +7096,6 @@ step
     .skill fishing,<125,1
     .skill fishing,225,1,1
     .target Old Man Heming
-step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
-    .goto 1434/0,495.34,-14457.65
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Skindle
 step
     .goto 1434/0,495.34,-14457.65
     .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
@@ -7456,10 +7188,6 @@ step
     .accept 586 >>Ota: Speaking with Gan'zulah
     .accept 1261 >>Ota: Marg Speaks
 step
-    .goto 1434/0,155.86,-12357.79
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vharr)
-    .target Vharr
-step
     .goto 1434/0,-650.73,-12853.40
     >>Tapa |cRXP_ENEMY_Skullsplitter Hunter|r
     >>Tapa |cRXP_ENEMY_Skullsplitter Headhunter|r
@@ -7529,10 +7257,6 @@ step
     .turnin 348 >>Palauta: Stranglethorn Fever
     .target Fin Fizracket
 step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
     .goto 1434/0,536.18,-13721.25
     >>Tapa |cRXP_ENEMY_Naga Explorer|r
     .complete 573,1
@@ -7551,8 +7275,12 @@ step
     .xp 38 >>Tavoitetaso 38 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
     .goto 1434/0,155.86,-12357.79
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vharr)
+    .vendor >>Myy harmaat roinat (Vharr)
     .target Vharr
+step
+    .goto 1434/0,211.38,-12434.36
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Thulbek
 step
     .zone Swamp of Sorrows >>Matkusta: Swamp of Sorrows. Lennä Stonardiin. Ensimmäisellä kerralla: Grom'golista pohjoiseen Duskwoodiin, Deadwind Passin läpi itään Swamp of Sorrowsiin
 step
@@ -7564,14 +7292,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Dar|r
     .accept 698 >>Ota: Lack of Surplus
     .target Dar
-step
-    .goto 1435/0,-3265.66,-10406.98
-    .vendor >>Myy roinat ja korjaa varusteet (Gharash)
-    .target Gharash
-step
-    .goto 1435/0,-3258.77,-10487.26
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Karakul
 step
     .goto 1435/0,-3258.77,-10487.26
     .home >>Aseta Hearthstone tähän (Innkeeper Karakul)
@@ -7754,12 +7474,8 @@ step
     .target Gorrik
 step
     .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy roinat ja korjaa varusteet (Sranda)
+    .vendor >>Myy harmaat roinat (Sranda)
     .target Sranda
-step
-    .goto 1418/0,-2149.31,-6650.09
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Shul'kar
 step
     .goto 1418/0,-2149.31,-6650.09
     .home >>Aseta Hearthstone tähän (Innkeeper Shul'kar)
@@ -7894,6 +7610,10 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
     .target Sranda
 step
+    .goto 1418/0,-2149.31,-6650.09
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Shul'kar
+step
     .goto 1418/0,-3357.74,-7164.84
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     .turnin 709 >>Palauta: Solution to Doom
@@ -8010,14 +7730,6 @@ step
     .accept 2342 >>Ota: Reclaimed Treasures
     .target Patrick Garrett
 step
-    .goto 1458/0,260.82,1634.90
-    .vendor >>Myy roinat ja korjaa varusteet (Lauren Newcomb)
-    .target Lauren Newcomb
-step
-    .goto 1458/0,223.31,1635.41
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Norman
-step
     .goto 1458/0,163.26,1664.79
     >>Puhu: |cRXP_FRIENDLY_Andrew Brownell|r
     .turnin 3341 >>Palauta: Bring the End
@@ -8039,9 +7751,9 @@ step
     .turnin 6521 >>Palauta: An Unholy Alliance
     .target Varimathras
 step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
+    .goto 1458/0,198.37,1505.28
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gillian Moore)
+    .target Gillian Moore
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -8066,10 +7778,6 @@ step
     .turnin 1136 >>Palauta: Frostmaw
     .accept 1205 >>Ota: Deadmire
     .target Melor Stonehoof
-step
-    .goto 1456/1,-86.62,-1381.62
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
 step
     .goto 1456/1,26.10,-1196.73
     .fly Orgrimmar >>Lennä: Orgrimmar
@@ -8137,10 +7845,6 @@ step
     .target Belgrom Rockmaul
 step
     .xp 40 >>Tavoitetaso 40 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
-step
-    .goto 1454/1,-4708.15,1878.66
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Kiro)
-    .target Kiro
 step
     .goto 1454/1,-4313.46,1676.24
     .fly Brackenwall Village >>Lennä: Brackenwall Village
@@ -8224,10 +7928,6 @@ step
 step
     +|cRXP_WARN_Dungeon: Uldaman|r (suositus taso 42+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Badlands) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
     .hs >>Hearthstone: Innkeeper Shul'kar
     .cooldown item,6948,>0
 step
@@ -8275,10 +7975,6 @@ step
     .accept 2284 >>Ota: Necklace Recovery, Take 2
     .target Dran Droffers
 step
-    .goto 1454/1,-4562.56,1855.84
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Handor)
-    .target Handor
-step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
     .goto 1434/0,144.37,-12417.35
@@ -8305,10 +8001,6 @@ step
     .turnin 2338 >>Palauta: Translating the Journal
     .accept 2339 >>Ota: Find the Gems and Power Source
     .target Jarkal Mossmeld
-step
-    .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
-    .target Sranda
 step
     .goto 1418/0,-3188.59,-6090.24
     >>|cRXP_WARN_Mene dungeoniin: Uldaman|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -8337,6 +8029,10 @@ step
     .trainer >>Paladin-trainer (taso 46): Retribution Aura r4, Holy Light r7, Seal of Wisdom r2
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4515.15,1931.51
@@ -8344,10 +8040,6 @@ step
     .turnin 2340 >>Palauta: Deliver the Gems
     .accept 2341 >>Ota: Necklace Recovery, Take 3
     .target Dran Droffers
-step
-    .goto 1454/1,-4562.56,1855.84
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Handor)
-    .target Handor
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
@@ -8372,10 +8064,6 @@ RXPGuides.RegisterGuide([[
 
 step
     .xp 42 >>Tavoitetaso 42 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
-step
-    .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
-    .target Sranda
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -8416,10 +8104,6 @@ step
     .target Spigot Operator Luglunket
 step
     .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Fizzgrimble
-step
-    .goto 1446/1,-3841.94,-7158.86
     .home >>Aseta Hearthstone tähän (Innkeeper Fizzgrimble)
     .target Innkeeper Fizzgrimble
 step
@@ -8432,10 +8116,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Andi Lynn|r
     .accept 5863 >>Ota: The Dunemaul Compound
     .target Andi Lynn
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Myy harmaat roinat (Innkeeper Fizzgrimble)
-    .target Innkeeper Fizzgrimble
 step
     .goto 1446/1,-3682.55,-7140.00
     >>Puhu: |cRXP_FRIENDLY_Senior Surveyor Fizzledowser|r
@@ -8529,10 +8209,6 @@ step
     .accept 1691 >>Ota: More Wastewander Justice
     .target Chief Engineer Bilgewhizzle
 step
-    .goto 1446/1,-3850.22,-7168.06
-    .vendor >>Myy harmaat roinat (Dirge Quikcleave)
-    .target Dirge Quikcleave
-step
     .goto 1446/1,-4275.95,-7549.40
     >>Tapa |cRXP_ENEMY_Wastewander Assassin|r
     >>Kerää |cRXP_LOOT_Caliph Scorpidsting's Head|r (|cRXP_ENEMY_Caliph Scorpidsting|r)
@@ -8618,14 +8294,6 @@ step
     .turnin 82 >>Palauta: Noxious Lair Investigation
     .target Alchemist Pestlezugg
 step
-    .goto 1446/1,-3769.49,-7200.26
-    .vendor >>Myy roinat ja korjaa varusteet (Krinkle Goodsteel)
-    .target Krinkle Goodsteel
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Fizzgrimble
-step
     .goto 1446/1,-3682.55,-7140.00
     >>Puhu: |cRXP_FRIENDLY_Senior Surveyor Fizzledowser|r
     .accept 10 >>Ota: The Scrimshank Redemption
@@ -8637,7 +8305,7 @@ step
     .target Andi Lynn
 step
     .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Myy harmaat roinat (Innkeeper Fizzgrimble)
+    .vendor >>Myy roinat. Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
     .target Innkeeper Fizzgrimble
 step
     .goto 1446/1,-4814.15,-7057.20
@@ -8800,10 +8468,6 @@ step
     .accept 2973 >>Ota: A New Cloak's Sheen
     .target Krueg Skullsplitter
 step
-    .goto 1444/1,155.50,-4371.97
-    .vendor >>Myy harmaat roinat (Bronk)
-    .target Bronk
-step
     .goto 1444/1,618.37,-4748.20
     >>Kerää |cRXP_LOOT_Woodpaw Gnoll Mane|r (|cRXP_ENEMY_Woodpaw Mystic|r, |cRXP_ENEMY_Woodpaw Reaver|r, |cRXP_ENEMY_Woodpaw Trapper|r)
     >>Kerää |cRXP_LOOT_Iridescent Sprite Darter Wing|r (|cRXP_ENEMY_Sprite Darter|r, |cRXP_ENEMY_Captured Sprite Darter|r)
@@ -8891,10 +8555,6 @@ step
     .target Hadoken Swiftstrider
 step
     .goto 1444/1,243.07,-4460.01
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Greul
-step
-    .goto 1444/1,243.07,-4460.01
     .home >>Aseta Hearthstone tähän (Innkeeper Greul)
     .target Innkeeper Greul
 step
@@ -8915,7 +8575,7 @@ step
     .target Hadoken Swiftstrider
 step
     .goto 1444/1,249.32,-4339.54
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
+    .vendor >>Myy harmaat roinat (Worb Strongstitch)
     .target Worb Strongstitch
 step
     .goto 1444/1,465.47,-4956.70
@@ -9147,10 +8807,6 @@ step
     .turnin 2976 >>Palauta: A Grim Discovery
     .target Belgrom Rockmaul
 step
-    .goto 1454/1,-4708.15,1878.66
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Kiro)
-    .target Kiro
-step
     .goto 1454/1,-4220.60,1468.48
     >>Puhu: |cRXP_FRIENDLY_Deino|r
     .accept 2861 >>Ota: Tabetha's Task
@@ -9176,10 +8832,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Sage Truthseeker|r
     .turnin 2280 >>Palauta: The Platinum Discs
     .target Sage Truthseeker
-step
-    .goto 1456/1,101.05,-1237.23
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Taur Stonehoof)
-    .target Taur Stonehoof
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
@@ -9215,10 +8867,6 @@ step
     .accept 4293 >>Ota: A Sample of Slime...
     .target Chemist Fuely
 step
-    .goto 1458/0,377.10,1399.98
-    .vendor >>Myy harmaat roinat (Algernon)
-    .target Algernon
-step
     .goto 1458/0,413.65,1407.47
     >>Kerää |cRXP_LOOT_Corrupted Felwood Sample|r (|cRXP_PICK_Testing Equipment|r)
     .complete 4293,1
@@ -9233,6 +8881,10 @@ step
     .goto 1458/0,377.10,1399.98
     .vendor >>Myy harmaat roinat (Algernon)
     .target Algernon
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone The Hinterlands >>Matkusta: The Hinterlands. Hillsbradin koillisnurkasta (Durnholde Keepin ohi) polkua Hinterlandsiin. Revantusk Village on itärannikolla
 step
@@ -9282,14 +8934,6 @@ step
     .goto 1425/0,-4720.45,-631.84
     .fp Revantusk Village >>Hae flight path: Revantusk Village
     .target Gorkas
-step
-    .goto 1425/0,-4548.35,-590.00
-    .vendor >>Myy roinat ja korjaa varusteet (Smith Slagtree)
-    .target Smith Slagtree
-step
-    .goto 1425/0,-4583.39,-622.09
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Lard
 step
     .goto 1425/0,-4583.39,-622.09
     .home >>Aseta Hearthstone tähän (Lard)
@@ -9421,10 +9065,6 @@ step
     .accept 2864 >>Ota: Tran'rek
     .target Krazek
 step
-    .goto 1434/0,468.54,-14467.86
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
-    .target Jutak
-step
     .goto 1434/0,506.19,-14448.71
     .fly Grom'gol >>Lennä: Grom'gol
     .target Gringer
@@ -9434,10 +9074,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Nimboya|r
     .turnin 2932 >>Palauta: Grim Message
     .target Nimboya
-step
-    .goto 1434/0,155.86,-12357.79
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vharr)
-    .target Vharr
 step
     .goto 1434/0,144.37,-12417.35
     .fly Stonard >>Lennä: Stonard
@@ -9531,6 +9167,10 @@ step
     .trainer >>Paladin-trainer (taso 50): Divine Shield r2, Holy Wrath, Flash of Light r5, Lay of Hands r3, Devotion Aura r6, Consecration r4, Seal of Command r4
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
     .goto 1458/0,266.39,1567.11
     .fly Kargath >>Lennä: Kargath
     .target Michael Garrett
@@ -9602,10 +9242,6 @@ step
     .turnin 7724 >>Palauta: Fiery Menace!
     .target Hansel Heavyhands
 step
-    .goto 1427/0,-1188.64,-6524.09
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Master Smith Burninate)
-    .target Master Smith Burninate
-step
     .goto 1427/0,-1063.69,-6895.81
     >>Kerää |cRXP_LOOT_Lookout's Spyglass|r (|cRXP_ENEMY_Dark Iron Lookout|r)
     .complete 7728,2
@@ -9663,10 +9299,6 @@ step
     .accept 3504 >>Ota: Betrayed
     .target Belgrom Rockmaul
 step
-    .goto 1454/1,-4708.15,1878.66
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Kiro)
-    .target Kiro
-step
     .goto 1454/1,-4230.42,1466.61
     >>Puhu: |cRXP_FRIENDLY_Uthel'nay|r
     .accept 7068 >>Ota: Shadowshard Fragments
@@ -9680,12 +9312,8 @@ step
     .zoneskip Tanaris
 step
     .goto 1446/1,-3769.49,-7200.26
-    .vendor >>Myy roinat ja korjaa varusteet (Krinkle Goodsteel)
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Krinkle Goodsteel)
     .target Krinkle Goodsteel
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Fizzgrimble
 step
     .goto 1446/1,-3744.65,-7112.40
     >>Puhu: |cRXP_FRIENDLY_Sprinkle|r
@@ -9779,10 +9407,6 @@ step
     .accept 2934 >>Ota: Undamaged Venom Sac
     .target Apothecary Lydon
 step
-    .goto 1424/0,-926.61,-6.19
-    .vendor >>Myy harmaat roinat (Christoph Jeffcoat)
-    .target Christoph Jeffcoat
-step
     .zone The Hinterlands >>Matkusta: The Hinterlands. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 step
     .goto 1425/0,-2857.05,-350.53
@@ -9874,7 +9498,7 @@ step
     .target Trenton Lighthammer
 step
     .goto 1446/1,-3769.49,-7200.26
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Krinkle Goodsteel)
+    .vendor >>Myy harmaat roinat (Krinkle Goodsteel)
     .target Krinkle Goodsteel
 step
     .goto 1446/1,-4841.75,-6905.40
@@ -9928,10 +9552,6 @@ step
     .accept 3128 >>Ota: Natural Materials
     .accept 3380 >>Ota: The Sunken Temple
     .target Witch Doctor Uzer'i
-step
-    .goto 1444/1,249.32,-4339.54
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
-    .target Worb Strongstitch
 step
     .goto 1444/1,562.77,-4525.80
     >>Kerää |cRXP_LOOT_Encrusted Minerals|r (|cRXP_ENEMY_Sprite Darter|r, |cRXP_ENEMY_Captured Sprite Darter|r, |cRXP_ENEMY_Zapped Cliff Giant|r)
@@ -9995,10 +9615,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Kurll|r
     .accept 91488 >>Ota: Home on the Range
     .target Kurll
-step
-    .goto 1447/1,-4403.82,3614.19
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gruul Darkblade)
-    .target Gruul Darkblade
 step
     .goto 1447/1,-4316.60,3509.03
     >>Kerää |cRXP_LOOT_Mosshoof Hide|r (|cRXP_ENEMY_Mosshoof Courser|r, |cRXP_ENEMY_Mosshoof Runner|r, |cRXP_ENEMY_Mosshoof Stag|r)
@@ -10188,6 +9804,14 @@ step
     .trainer >>Paladin-trainer (taso 52): Blessing of Might r6, Hammer of Wrath r2, Exorcism r5, Seal of the Crusader r6, Greater Blessing of Might
     .target Alodan the Hopeful
 step
+    .goto 1456/1,71.40,-1152.76
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grod)
+    .target Grod
+step
+    .goto 1456/1,38.52,-1300.27
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Pala
+step
     .goto 1456/1,26.10,-1196.73
     .fly Shadowprey Village >>Lennä: Shadowprey Village
     .target Tal
@@ -10197,14 +9821,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Willow|r
     .accept 7028 >>Ota: Twisted Evils
     .target Willow
-step
-    .goto 1443/1,3073.41,-1677.04
-    .vendor >>Myy roinat ja korjaa varusteet (Hae'Wilani)
-    .target Hae'Wilani
-step
-    .goto 1443/1,3150.29,-1592.80
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Sikewa
 step
     .goto 1443/1,2799.16,-1460.59
     >>Puhu: |cRXP_FRIENDLY_Cavindra|r
@@ -10294,9 +9910,9 @@ step
     .turnin 7029 >>Palauta: Vyletongue Corruption
     .target Vark Battlescar
 step
-    .goto 1443/1,3195.25,-1694.72
-    .vendor >>Myy harmaat roinat (Lah'Mawhani)
-    .target Lah'Mawhani
+    .goto 1443/1,3073.41,-1677.04
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hae'Wilani)
+    .target Hae'Wilani
 step
     .goto 1443/1,3023.95,-1877.30
     >>Puhu: |cRXP_FRIENDLY_Selendra|r
@@ -10470,22 +10086,10 @@ step
     .accept 4147 >>Ota: Marvon's Workshop
     .target Larion
 step
-    .goto 1449/1,-1098.37,-6144.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gibbert)
-    .target Gibbert
-step
     .goto 1449/1,-1140.18,-6110.47
     .fly Ratchet >>Lennä: Ratchet
     .target Gryfe
     .zoneskip The Barrens
-step
-    .goto 1413/1,-3675.96,-985.28
-    .vendor >>Myy roinat ja korjaa varusteet (Vexspindle)
-    .target Vexspindle
-step
-    .goto 1413/1,-3664.82,-1050.14
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Wiley
 step
     .goto 1413/1,-3710.42,-1002.17
     >>Puhu: |cRXP_FRIENDLY_Liv Rizzlefix|r
@@ -10575,10 +10179,6 @@ step
     .turnin 1445 >>Palauta: The Temple of Atal'Hakkar
     .target Fel'zerul
 step
-    .goto 1435/0,-3337.22,-10466.00
-    .vendor >>Myy harmaat roinat (Greshka)
-    .target Greshka
-step
     .goto 1435/0,-3279.65,-10459.28
     .fly Hammerfall >>Lennä: Hammerfall
     .target Breyk
@@ -10609,6 +10209,14 @@ step
     .goto 1458/0,417.01,1782.06
     .trainer >>Paladin-trainer (taso 54): Hammer of Justice r4, Holy Light r8, Blessing of Wisdom r5, Greater Blessing of Wisdom
     .target Garen Largo
+step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -10645,10 +10253,6 @@ step
     .accept 1000 >>Ota: The New Frontier
     .accept 5095 >>Ota: A Call to Arms: The Plaguelands!
     .target Bluff Runner Windstrider
-step
-    .goto 1456/1,47.40,-1243.77
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Elki)
-    .target Elki
 step
     .goto 1456/1,-303.72,-1049.01
     >>Puhu: |cRXP_FRIENDLY_Arch Druid Hamuul Runetotem|r
@@ -10689,10 +10293,6 @@ step
     .target Uthel'nay
 step
     .xp 50 >>Tavoitetaso 50 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
-step
-    .goto 1454/1,-4154.96,1527.04
-    .vendor >>Myy harmaat roinat (Xan'tish)
-    .target Xan'tish
 step
     .goto 1454/1,-4313.46,1676.24
     .fly Gadgetzan >>Lennä: Gadgetzan
@@ -10768,10 +10368,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Larion|r
     .turnin 4146 >>Palauta: Zapper Fuel
     .target Larion
-step
-    .goto 1449/1,-1098.37,-6144.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gibbert)
-    .target Gibbert
 step
     .goto 1449/1,-1016.97,-6033.27
     >>Puhu: |cRXP_FRIENDLY_J.D. Collie|r
@@ -10936,7 +10532,7 @@ step
     .target J.D. Collie
 step
     .goto 1449/1,-1098.37,-6144.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gibbert)
+    .vendor >>Myy harmaat roinat (Gibbert)
     .target Gibbert
 step
     .goto 1449/1,-1557.17,-6275.00
@@ -11000,14 +10596,6 @@ step
     .fly Gadgetzan >>Lennä: Gadgetzan
     .target Gryfe
     .zoneskip Tanaris
-step
-    .goto 1446/1,-3769.49,-7200.26
-    .vendor >>Myy roinat ja korjaa varusteet (Krinkle Goodsteel)
-    .target Krinkle Goodsteel
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Fizzgrimble
 step
     .goto 1446/1,-3730.85,-7117.00
     >>Puhu: |cRXP_FRIENDLY_Alchemist Pestlezugg|r
@@ -11138,7 +10726,7 @@ step
     .target Winna Hazzard
 step
     .goto 1448/1,-359.91,5095.53
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Altsoba Ragetotem)
+    .vendor >>Myy harmaat roinat (Altsoba Ragetotem)
     .target Altsoba Ragetotem
 step
     .goto 1448/1,-330.58,5128.50
@@ -11251,7 +10839,7 @@ step
     .target Jediga
 step
     .goto 1447/1,-4403.82,3614.19
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gruul Darkblade)
+    .vendor >>Myy harmaat roinat (Gruul Darkblade)
     .target Gruul Darkblade
 step
     .goto 1447/1,-6294.23,4283.34
@@ -11290,22 +10878,10 @@ step
     .accept 4511 >>Ota: Calm Before the Storm
     .target Zilzibin Drumlore
 step
-    .goto 1454/1,-4465.64,1593.55
-    .vendor >>Myy roinat ja korjaa varusteet (Sana)
-    .target Sana
-step
-    .goto 1454/1,-4439.41,1633.96
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Gryshka
-step
     .goto 1454/1,-4376.29,1627.50
     >>Puhu: |cRXP_FRIENDLY_Karus|r
     .turnin 4511 >>Palauta: Calm Before the Storm
     .target Karus
-step
-    .goto 1454/1,-4347.68,1634.24
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Urtharo)
-    .target Urtharo
 step
     .goto 1454/1,-4313.46,1676.24
     .fly Thunder Bluff >>Lennä: Thunder Bluff
@@ -11325,10 +10901,6 @@ step
     .goto 1456/1,-225.44,-1087.97
     >>Puhu: |cRXP_FRIENDLY_Bashana Runetotem|r
     .turnin 3782 >>Palauta: Morrowgrain Research
-    .target Bashana Runetotem
-step
-    .goto 1456/1,-225.02,-1087.91
-    .vendor >>Myy harmaat roinat (Bashana Runetotem)
     .target Bashana Runetotem
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
@@ -11380,6 +10952,10 @@ step
     .goto 1458/0,190.31,1688.54
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Lucille Castleton)
     .target Lucille Castleton
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
@@ -11611,14 +11187,6 @@ step
     .target Grisha
     .zoneskip Badlands
 step
-    .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy roinat ja korjaa varusteet (Sranda)
-    .target Sranda
-step
-    .goto 1418/0,-2149.31,-6650.09
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Shul'kar
-step
     .goto 1418/0,-2161.25,-6690.56
     >>Puhu: |cRXP_FRIENDLY_Thunderheart|r
     .accept 3906 >>Ota: Disharmony of Flame
@@ -11805,7 +11373,7 @@ step
     .accept 4082 >>Ota: KILL ON SIGHT: High Ranking Dark Iron Officials
 step
     .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
+    .vendor >>Myy harmaat roinat (Sranda)
     .target Sranda
 step
     .goto 1418/0,-2723.43,-6634.17
@@ -11833,10 +11401,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Maxwort Uberglint|r
     .turnin 4123 >>Palauta: The Heart of the Mountain
     .target Maxwort Uberglint
-step
-    .goto 1428/0,-2201.67,-7459.73
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Yuka Screwspigot)
-    .target Yuka Screwspigot
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -11915,12 +11479,8 @@ step
     .zoneskip Badlands
 step
     .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy roinat ja korjaa varusteet (Sranda)
+    .vendor >>Myy harmaat roinat (Sranda)
     .target Sranda
-step
-    .goto 1418/0,-2149.31,-6650.09
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Shul'kar
 step
     .goto 1418/0,-2161.25,-6690.56
     >>Puhu: |cRXP_FRIENDLY_Thunderheart|r
@@ -11971,10 +11531,6 @@ step
     .turnin 4002 >>Palauta: The Eastern Kingdom
     .accept 4003 >>Ota: The Royal Rescue
     .target Thrall
-step
-    .goto 1454/1,-4168.71,1914.68
-    .vendor >>Myy harmaat roinat (Kor'kron Elite)
-    .target Kor'kron Elite
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
@@ -12057,7 +11613,7 @@ step
     .target Warlord Goretooth
 step
     .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
+    .vendor >>Myy harmaat roinat (Sranda)
     .target Sranda
 step
     .goto 1418/0,-2178.42,-6632.18
@@ -12148,10 +11704,6 @@ step
     .target Gregor Greystone
 step
     .goto 1452/1,-4673.23,6695.38
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Vizzie
-step
-    .goto 1452/1,-4673.23,6695.38
     .home >>Aseta Hearthstone tähän (Innkeeper Vizzie)
     .target Innkeeper Vizzie
 step
@@ -12159,10 +11711,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Gregor Greystone|r
     .accept 6030 >>Ota: Duke Nicholas Zverenhoff
     .target Gregor Greystone
-step
-    .goto 1452/1,-4673.23,6695.38
-    .vendor >>Myy harmaat roinat (Innkeeper Vizzie)
-    .target Innkeeper Vizzie
 step
     .goto 1452/1,-4952.97,6658.93
     >>Kerää |cRXP_LOOT_Thick Yeti Fur|r (|cRXP_ENEMY_Ice Thistle Yeti|r, |cRXP_ENEMY_Rogue Ice Thistle|r)
@@ -12273,10 +11821,6 @@ step
     .accept 84162 >>Ota: An Earnest Proposition
     .target Mokvar
 step
-    .goto 1454/1,-4170.25,1917.86
-    .vendor >>Myy harmaat roinat (Mokvar)
-    .target Mokvar
-step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 step
     .goto 1434/0,144.37,-12417.35
@@ -12305,9 +11849,13 @@ step
     .accept 5961 >>Ota: The Champion of the Banshee Queen
     .target Lady Sylvanas Windrunner
 step
-    .goto 1458/0,314.16,1251.28
-    .vendor >>Myy harmaat roinat (Horde Warbringer)
-    .target Horde Warbringer
+    .goto 1458/0,198.37,1505.28
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gillian Moore)
+    .target Gillian Moore
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone Tirisfal Glades >>Matkusta: Tirisfal Glades. Undercityn ulkopuolelle Tirisfal Gladesiin
 step
@@ -12401,14 +11949,6 @@ step
     .goto 1423/0,-5290.51,2328.57
     .fp Light's Hope Chapel >>Hae flight path: Light's Hope Chapel
     .target Georgia
-step
-    .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy roinat ja korjaa varusteet (Craftsman Wilhelm)
-    .target Craftsman Wilhelm
-step
-    .goto 1423/0,-5345.15,2300.76
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Jessica Chambers
 step
     .goto 1423/0,-5345.15,2300.76
     .home >>Aseta Hearthstone tähän (Jessica Chambers)
@@ -12512,10 +12052,6 @@ step
     .turnin 6021 >>Palauta: Zaeldarr the Outcast
     .target Caretaker Alen
 step
-    .goto 1423/0,-5264.70,2151.69
-    .vendor >>Myy harmaat roinat (Caretaker Alen)
-    .target Caretaker Alen
-step
     .goto 1423/0,-5290.51,2328.57
     .fly Flame Crest >>Lennä: Flame Crest
     .target Georgia
@@ -12573,10 +12109,6 @@ step
     .accept 98325 >>Ota: Blood and Thunder
     .turnin 98325 >>Palauta: Blood and Thunder
     .target Warlord Goretooth
-step
-    .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
-    .target Sranda
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -12733,12 +12265,8 @@ step
     .zoneskip Badlands
 step
     .goto 1418/0,-2151.55,-6673.15
-    .vendor >>Myy roinat ja korjaa varusteet (Sranda)
+    .vendor >>Myy harmaat roinat (Sranda)
     .target Sranda
-step
-    .goto 1418/0,-2149.31,-6650.09
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Shul'kar
 step
     .goto 1418/0,-2228.42,-6680.61
     >>Puhu: |cRXP_FRIENDLY_Galamav the Marksman|r
@@ -12766,10 +12294,6 @@ step
     .turnin 4862 >>Palauta: En-Ay-Es-Tee-Why
     .target Kibler
 step
-    .goto 1428/0,-2201.67,-7459.73
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Yuka Screwspigot)
-    .target Yuka Screwspigot
-step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -12781,10 +12305,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Malyfous Darkhammer|r
     .turnin 5047 >>Palauta: Pip Quickwit, At Your Service!
     .target Malyfous Darkhammer
-step
-    .goto 1452/1,-4633.47,6706.27
-    .vendor >>Myy harmaat roinat (Xizzer Fizzbolt)
-    .target Xizzer Fizzbolt
 step
     .goto 1452/1,-4186.17,6109.87
     >>Puhu: |cRXP_FRIENDLY_Haleh|r
@@ -12833,6 +12353,14 @@ step
     .trainer >>Paladin-trainer (taso 60): Consecration r5, Blessing of Might r7, Exorcism r6, Holy Light r9, Holy Wrath r2, Devotion Aura r7, Blessing of Wisdom r6, Hammer of Wrath r3, Seal of Command r5
     .target Garen Largo
 step
+    .goto 1458/0,308.89,1667.86
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Benijah Fenner)
+    .target Benijah Fenner
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
+step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -12856,10 +12384,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Beetix Ficklespragg|r
     .accept 8277 >>Ota: Deadly Desert Venom
     .target Beetix Ficklespragg
-step
-    .goto 1451/1,752.99,-6861.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
-    .target Vargus
 step
     .goto 1451/1,653.02,-6713.28
     >>Tapa |cRXP_ENEMY_Dredge Striker|r
@@ -12972,10 +12496,6 @@ step
     .target Windcaller Proudhorn
 step
     .goto 1451/1,730.00,-6867.99
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Calandrath
-step
-    .goto 1451/1,730.00,-6867.99
     .home >>Aseta Hearthstone tähän (Calandrath)
     .target Calandrath
 step
@@ -13001,7 +12521,7 @@ step
     .target Vargus
 step
     .goto 1451/1,752.99,-6861.02
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Vargus)
+    .vendor >>Myy harmaat roinat (Vargus)
     .target Vargus
 step
     .goto 1451/1,196.70,-7579.73
@@ -13176,10 +12696,6 @@ step
     .accept 7481 >>Ota: Elven Legends
     .target Sage Korolusk
 step
-    .goto 1444/1,249.32,-4339.54
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
-    .target Worb Strongstitch
-step
     .goto 1444/1,1327.27,-4456.30
     >>Dungeonin sisällä - Puhu: |cRXP_FRIENDLY_Knot Thimblejack|r
     .accept 5518 >>Ota: The Gordok Ogre Suit
@@ -13258,10 +12774,6 @@ step
     >>Dungeonin sisällä - Klikkaa: |cRXP_PICK_Treasure of the Shen'dralar|r
     .turnin 7877 >>Palauta: The Treasure of the Shen'dralar
 step
-    .goto 1444/1,243.07,-4460.01
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Greul
-step
     .goto 1444/1,270.87,-4405.33
     >>Puhu: |cRXP_FRIENDLY_Sage Korolusk|r
     .turnin 7481 >>Palauta: Elven Legends
@@ -13272,9 +12784,9 @@ step
     .turnin 7489 >>Palauta: Lethtendris's Web
     .target Talo Thornhoof
 step
-    .goto 1444/1,155.50,-4371.97
-    .vendor >>Myy harmaat roinat (Bronk)
-    .target Bronk
+    .goto 1444/1,249.32,-4339.54
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
+    .target Worb Strongstitch
 step
     .goto 1444/1,97.12,-4099.53
     >>Puhu: |cRXP_FRIENDLY_Azj'Tordin|r
@@ -13507,12 +13019,8 @@ step
     .complete 5845,1
 step
     .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy roinat ja korjaa varusteet (Craftsman Wilhelm)
+    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
     .target Craftsman Wilhelm
-step
-    .goto 1423/0,-5345.15,2300.76
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Jessica Chambers
 step
     .goto 1423/0,-5306.43,2304.20
     >>Puhu: |cRXP_FRIENDLY_Smokey LaRue|r
@@ -13609,7 +13117,7 @@ step
     .target Duke Nicholas Zverenhoff
 step
     .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Craftsman Wilhelm)
+    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
     .target Craftsman Wilhelm
 step
     +Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
