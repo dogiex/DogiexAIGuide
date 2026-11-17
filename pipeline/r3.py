@@ -160,7 +160,7 @@ class Sim3(Sim):
     def __init__(s,visits,level,done,skip=()):
         super().__init__(visits,level=level,done=done,kill_factor=KF,mindelta=8,window=6)
         s.skip=set(skip); s.normal=set(s.elig); s.nobread=set(); s.nodefer=set(NODEFER)
-        extra=(set(QD)|set().union(*ANC.values())|CLASSQ)-s.normal
+        extra=(set(QD)|set().union(*ANC.values())|CLASSQ|(ELITEQ if QCHAIN else set()))-s.normal
         for i in extra:
             s.elig.append(i)
             if item_start(i) and i in QD: s.byzone[QD[i]].append(i)
@@ -217,7 +217,7 @@ class Sim3(Sim):
                     if not d and qid in CLASSQ and iid in I and it(iid,'class')!=12:
                         obs.append(dict(idx=idx,ob=dict(type='event',ids=[],text='Hanki Auction Housesta tai ammatilla: %s'%it(iid,'name')),loc=(fi[2],fi[3],1,[],None),done=False)); continue
                     if not d: return None
-                if not d and qid in CLASSQ and ob['type'] in('monster','item','killcredit'):
+                if not d and (qid in CLASSQ or qid in ELITEQ) and ob['type'] in('monster','item','killcredit'):
                     el=obj_location_any(ob,zones)
                     if el:
                         obs.append(dict(idx=idx,ob=dict(ob,elite=True),loc=el,done=False)); continue
@@ -239,7 +239,9 @@ class Sim3(Sim):
         return dict(start=st,fin=fi,obs=obs,far=True)
     def can_accept(s,qid,vi):
         v=s.visits[vi]; only=v.get('only')
-        if qid in s.done or qid in s.log or qid in s.skip: return None
+        if qid in s.done or qid in s.log: return None
+        # v4.0: ketjukierros saa ottaa jatkon, joka jäi normaalilla käynnillä kesken (pruned() 'left'), mutta ei karsittua
+        if qid in s.skip and not (v.get('chainb') and qid in only and qid not in PRUNE_SKIP): return None
         if qid in ITEMNEXT and not any(p in s.done for p in ITEMNEXT[qid]): return None   # aloitusesine saadaan vasta edeltäjän palautuksesta
         d=QD.get(qid)
         if only is None and d is None and qid in CLASSQ:
@@ -422,4 +424,96 @@ def with_class_blocks(vis,level,done,maxchain=99):
                     seen_.add((TURNED_AT[p],frozenset(qs))); ins.append((TURNED_AT[p],CB(q(x,'name'),mn,qs)))
         ins.append((k,CB(name,mn,qs)))
     for k,b in sorted(ins,key=lambda t:-t[0]): out.insert(k+1,b)
-    return pruned(out,level,done)
+    if not QCHAIN: return pruned(out,level,done)
+    return with_chain_blocks(out,level,done)
+# ---------- questiketjut (v4.0, käyttäjän päätös 17.11.2026) ----------
+# Ketjun aloittavia questeja suositaan, ja kun ketjun quest on palautettu, sen jatko tehdään loppuun: heti, tai myöhemmin
+# (seuraavalla käynnillä samalla alueella tai omalla ketjukierroksella), jos taso ei vielä riitä. Koskee normaaleja questeja;
+# class- ja dungeon-questeilla on omat sääntönsä. QCHAIN=0 palauttaa vanhan toiminnan (vertailuajot).
+QCHAIN=os.environ.get('QCHAIN','1')=='1'
+CSUCC=collections.defaultdict(set)
+def elig_e(x):
+    """v4.0: ketjun elite-quest (ryhmäquest) kelpaa kuten normaali quest, vain Elite-tagi sallitaan (käyttäjän päätös 17.11.2026)"""
+    if x not in Q or TAGS.get(x)!='Elite': return False
+    t=TAGS.pop(x)
+    try: return eligible(x)
+    finally: TAGS[x]=t
+def _chain_node(x): return x in Q and (eligible(x) or elig_e(x)) and x not in QD and x not in CLASSQ
+for _x in Q:
+    if not _chain_node(_x): continue
+    for _p in list(aslist(q(_x,'preQuestSingle') or []))+[p for p in aslist(q(_x,'preQuestGroup') or []) if p>0]:
+        if _chain_node(_p): CSUCC[_p].add(_x)
+    _nx=q(_x,'nextQuestInChain')
+    if _nx and _nx!=_x and _chain_node(_nx): CSUCC[_x].add(_nx)
+    _bc=q(_x,'breadcrumbForQuestId')
+    if _bc and _chain_node(_bc): CSUCC[_x].add(_bc)
+CSUCC=dict(CSUCC)
+CPRED=collections.defaultdict(set)
+for _p,_xs in CSUCC.items():
+    for _x in _xs: CPRED[_x].add(_p)
+CPRED=dict(CPRED)
+# ketjujen elite-questit ja niistä riippuvat jatkot (oppaassa valinnaisina askelina)
+ELITEQ={x for x in Q if elig_e(x) and x not in QD and x not in CLASSQ and (x in CSUCC or x in CPRED)}
+DEPQ=set(ELITEQ); DEP_ON={}
+_ch=True
+while _ch:
+    _ch=False
+    for _x,_ps in CPRED.items():
+        if _x in DEPQ: continue
+        ps=set(aslist(q(_x,'preQuestSingle') or [])); pg={p for p in aslist(q(_x,'preQuestGroup') or []) if p>0}
+        dep={p for p in pg if p in DEPQ}|({p for p in ps} if ps and ps<=DEPQ else set())
+        if q(_x,'breadcrumbForQuestId') in DEPQ or not dep: continue
+        DEPQ.add(_x); DEP_ON[_x]=dep; _ch=True
+def chain_desc(x):
+    out={x}; st=[x]
+    while st:
+        for y in CSUCC.get(st.pop(),()):
+            if y not in out: out.add(y); st.append(y)
+    return out
+CHAIN_FAIL={}   # ketjukatkot, joita ei saatu korjattua: (edeltäjä, jatko) -> syy (raportointiin)
+def chain_breaks(s):
+    """palautettu ketjuquest, jonka jatko olisi saatavilla (esiquestit ja poissulkevat versiot kunnossa), mutta jäi tekemättä"""
+    out=[]; L,xp,lg=s.L,s.xp,s.log; s.L=60; s.log={}
+    try:
+        for p in sorted(s.done):
+            for x in sorted(CSUCC.get(p,())):
+                if x in s.done or x in PRUNE_SKIP or x in lg: continue
+                if s.prereq_ok(x): out.append((p,x))
+    finally: s.L,s.xp,s.log=L,xp,lg
+    return out
+def with_chain_blocks(vis,level,done,rounds=4):
+    s,v2=pruned(vis,level,done)
+    tried=collections.Counter()
+    for _ in range(rounds):
+        br=[(p,x) for p,x in chain_breaks(s) if x not in done]
+        if not br: break
+        lv=[r_[3] for r_ in s.report]
+        TURNED_AT={}; cur=-1
+        for st in s.steps:
+            if st['type']=='visit': cur=st['vi']
+            elif st['type']=='turnin': TURNED_AT.setdefault(st['q'],cur)
+        ins=collections.defaultdict(set)
+        for p,x in br:
+            if tried[(p,x)]>=3: CHAIN_FAIL[(p,x)]='ei mahtunut reitille'; continue
+            if not s.plan3(x,list(ALLOUT),None): CHAIN_FAIL[(p,x)]='ei reititettävissä (data)'; continue
+            need=max(q(x,'requiredLevel') or 1,(q(x,'questLevel') or 1)-3)+tried[(p,x)]
+            k0=TURNED_AT.get(p,-1)
+            zs=set()
+            for k_,y in starters(x):
+                if k_!='item': zs|=set(spawns_of('npc' if k_=='npc' else 'obj',y))
+            lvl_at=lambda j: lv[j] if 0<=j<len(lv) else level
+            cand=[j for j in range(max(k0,0),len(v2)) if lvl_at(j)>=need]
+            if not cand: CHAIN_FAIL[(p,x)]='taso ei riitä reitin aikana'; continue
+            # myöhemmin samalla alueella kulkeva normaali käynti; muuten heti, kun taso riittää
+            j=next((j for j in cand if not v2[j].get('block') and not v2[j].get('cblock') and set(v2[j]['zones'])&zs and j-cand[0]<=40),cand[0])
+            tried[(p,x)]+=1
+            ins[j]|={y for y in chain_desc(x) if y not in s.done and y not in PRUNE_SKIP}
+        if not ins: break
+        out=list(v2)
+        for j in sorted(ins,reverse=True):
+            nm=q(min(ins[j]),'name')
+            out.insert(j+1,dict(name='Ketju: %s'%nm,zones=list(ALLOUT),cblock=True,chainb=True,only=set(ins[j]),min=None,tmin=None))
+        s,v2=pruned(out,level,done)
+    for p,x in chain_breaks(s):
+        if x not in done: CHAIN_FAIL.setdefault((p,x),'jäi tekemättä')
+    return s,v2

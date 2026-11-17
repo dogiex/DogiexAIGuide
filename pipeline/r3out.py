@@ -532,14 +532,28 @@ def reorder_visits(steps):
     """v2.0 (ehdotus A): normaalin aluekäynnin tavoite- ja palautusaskelten järjestys paikallishaulla (or-opt) lyhyemmäksi.
     Questien järjestysehdot säilyvät: ota ennen tavoitteita, tavoitteet ennen palautusta, esiquestin palautus ennen jatkon ottoa.
     Ota-askeleet pysyvät paikallaan (tasovaatimus ja questiloki). Tasot jaetaan uudelleen alkuperäisessä järjestyksessä."""
-    out=[]; i=0; n_=len(steps)
+    out=[]; i=0; n_=len(steps); LOG=set()
+    def track(xs):
+        for x in xs:
+            if x['type']=='accept': LOG.add(x['q'])
+            elif x['type']=='turnin': LOG.discard(x['q'])
     while i<n_:
         st=steps[i]; out.append(st); i+=1
-        if st['type']!='visit' or st['v'].get('block') or st['v'].get('cblock'): continue
+        if st['type']!='visit' or st['v'].get('block') or st['v'].get('cblock'): track([st]); continue
         j=i
         while j<n_ and steps[j]['type']!='visit': j+=1
         seg=steps[i:j]; i=j
-        if len(seg)<4: out+=seg; continue
+        if len(seg)<4: out+=seg; track(seg); continue
+        # v4.0: järjestys ei saa kasvattaa questilokia yli 40:n (palautusten siirto myöhemmäksi; Alliance Stranglethorn)
+        def logmax(order):
+            n0=len(LOG); m=n0
+            for k in order:
+                ty=seg[k]['type']
+                if ty=='accept': n0+=1
+                elif ty=='turnin': n0-=1
+                m=max(m,n0)
+            return m
+        LIM=max(40,logmax(list(range(len(seg)))))
         prev=next((_wy(x['loc']) for x in reversed(out) if x['type']!='visit'),None)
         nxt=next((_wy(x['loc']) for x in steps[j:] if x['type']!='visit'),None)
         P=[_wy(x['loc']) for x in seg]
@@ -560,7 +574,7 @@ def reorder_visits(steps):
                         if ('turnin',pre) in pos and pos[('turnin',pre)][0]>a: return False
                 elif ty=='obj':
                     if ('turnin',qq) in pos and max(ps)>pos[('turnin',qq)][0]: return False
-            return True
+            return logmax(order)<=LIM
         order=list(range(len(seg))); best=cost(order)
         for _ in range(20):
             imp=False
@@ -575,8 +589,9 @@ def reorder_visits(steps):
         lv=[x['level'] for x in seg]
         new=[dict(seg[k]) for k in order]
         for x,l_ in zip(new,lv): x['level']=l_
-        out+=new
+        out+=new; track(new)
     return out
+PRUNE_KC=float(os.environ.get('PRUNE_KC','3.0'))   # v4.0 (käyttäjän valinta B 17.11.2026): ketju (aloittaja + jatkot) kannattaa, jos lisäaika <= 3 x saman XP:n grindausaika
 PRUNE_K=2.0   # v2.0 (ehdotus C, käyttäjän päätös 15.11.2026): quest pois, jos sen lisäaika > 2 x saman XP:n grindausaika
 def _cnt(qid,idx):
     nums=[int(x) for x in re.findall(r'\b(\d+)\b',' '.join(aslist(q(qid,'objectivesText')) or [])) if int(x)<50]
@@ -594,7 +609,7 @@ def prune_candidates(steps):
     for st in steps:
         if st['type']=='visit': vt=st['v']; continue
         if vt.get('box') or vt.get('lvl6'): boxq.add(st['q'])
-        if vt.get('block') or vt.get('cblock'): blockq.add(st['q'])
+        if vt.get('block') or (vt.get('cblock') and not vt.get('chainb')): blockq.add(st['q'])   # v4.0: ketjukierrokset arvioidaan ketjuna (alla)
         seq.append((st,_wy(st['loc'])))
     def tour(skipq):
         t=0.0; c=None
@@ -614,8 +629,40 @@ def prune_candidates(steps):
     lvl={}
     for st,_ in seq:
         if st['type']=='turnin': lvl[st['q']]=st['level']
+    def unit_cost(us):
+        run=(base-tour(us))/SP; kills=0.0; xp=0.0; npc=0
+        for x in us:
+            if x not in lvl: continue
+            L=max(1,int(lvl[x])); npc+=16
+            k_=0.0
+            for idx,ob in enumerate(objectives(x),1):
+                src=obj_sources(ob); npcs=[i for k,i in src if k=='npc']
+                if ob['type']=='monster' and npcs and not friendly(npcs[0]): k_+=_cnt(x,idx)
+                elif ob['type']=='item' and npcs and not [i for k,i in src if k=='obj']:
+                    c_=_cnt(x,idx); k_+=c_ if c_==1 else math.ceil(c_/0.5)
+            kills+=k_; xp+=(quest_xp(x,L)+k_*mob_xp(L,max(1,L-1)))/(mob_xp(L,max(1,L-1))/18.0 or 1)
+        return run+kills*18+npc, xp
     bad=set()
-    for x in sorted(allq-prot):
+    if QCHAIN:
+        # v4.0: ketju arvioidaan kokonaisuutena (aloittaja saa jatkojen XP:n hyväkseen). Hyvä ketju suojataan kokonaan;
+        # heikko ketju jätetään kokonaan pois, ettei ketjua aloiteta jättämättä sitä kesken.
+        par={x:x for x in allq}
+        def f_(x):
+            while par[x]!=x: par[x]=par[par[x]]; x=par[x]
+            return x
+        for x in allq:
+            for y in CSUCC.get(x,()):
+                if y in allq: par[f_(x)]=f_(y)
+        comp=collections.defaultdict(set)
+        for x in allq: comp[f_(x)].add(x)
+        for c_ in comp.values():
+            # jo aloitettu ketju (edeltäjä tehty ennen tätä reitin osaa tai suojattu quest) tehdään loppuun
+            if c_&prot or any(p_ in ROUTE_DONE0 for x in c_ for p_ in CPRED.get(x,())): prot|=c_; continue
+            if len(c_)<2: continue
+            cost,g=unit_cost(c_)
+            if cost<=PRUNE_KC*g: prot|=c_
+            else: bad|=c_-prot
+    for x in sorted(allq-prot-bad):
         if x not in lvl: continue
         run=(base-tour({x}))/SP
         kills=0.0
@@ -635,8 +682,9 @@ def prune_candidates(steps):
             for p_ in list(aslist(q(x,'preQuestSingle') or []))+[p_ for p_ in aslist(q(x,'preQuestGroup') or []) if p_>0]:
                 if p_ in bad: bad.discard(p_); ch=True
     return bad
+ROUTE_DONE0=set()
 def route(vis,level,done,known_fp,bounds,maxchain=99,final=True):
-    PRUNE_SKIP.clear(); NODEFER.clear()
+    PRUNE_SKIP.clear(); NODEFER.clear(); ROUTE_DONE0.clear(); ROUTE_DONE0.update(done)
     s,vis0=with_class_blocks(vis,level,done,maxchain)
     s.steps=reorder_visits(s.steps)
     prot_done=lambda s_:s_.done&(set(QD)|CLASSQ)
@@ -647,7 +695,10 @@ def route(vis,level,done,known_fp,bounds,maxchain=99,final=True):
         PRUNE_SKIP.update(bad)
         s,vis0=with_class_blocks(vis,level,done,maxchain)
         s.steps=reorder_visits(s.steps)
-        if prot_done(old[0])-prot_done(s):   # karsinta ei saa poistaa yhtään dungeon- tai class-questia (esim. tason muutoksen kautta)
+        # v4.0: vaihtoehtoinen versio (exclusiveTo, esim. sama class-quest Orgrimmarissa tai Undercityssä) korvaa menetetyn
+        lost={x for x in prot_done(old[0])-prot_done(s) if not any(y in s.done for y in aslist(q(x,'exclusiveTo') or []))}
+        if os.environ.get('PRUNE_LOG'): print('PRUNE iter bad=%d lost=%s'%(len(bad),sorted(lost)),file=sys.stderr)
+        if lost:   # karsinta ei saa poistaa yhtään dungeon- tai class-questia (esim. tason muutoksen kautta)
             s,vis0,ps=old; PRUNE_SKIP.clear(); PRUNE_SKIP.update(ps); break
     vis=vis0
     ch=to_ir(s.steps,known_fp,bounds,level,done)
@@ -778,9 +829,41 @@ def isle(z,p):
 TRAVEL_SAME=dict(STV="Duskwoodista etelään Stranglethorn Valeen (Grom'gol Base Camp on länsirannikolla), tai lennä Grom'goliin / Booty Bayhin, jos lentopaikka on haettu",
     HILLSBRAD="Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa",
     UC="Undercity: Tirisfal Gladesin kautta, tai lennä Undercityyn Tarren Millistä / Hammerfallista")
+# ---------------- v4.0: elite-ketjujen valinnaiset askeleet ----------------
+ELITE_TXT='Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi'
+def _dep_key(k,x):
+    if x not in DEPQ: return ('norm',)
+    if k=='turnin': return ('on',)
+    return ('done',tuple(sorted(DEP_ON[x]))) if x in DEP_ON else ('elite',)
+def split_dep(steps):
+    """npc- ja tavoiteaskeleet jaetaan niin, että elite-questit ja niistä riippuvat jatkot (DEPQ) ovat omissa askelissaan.
+    Palautus ja seuraavan questin otto eri askeliin: .isOnQuest ohittaisi askeleen heti palautuksen jälkeen."""
+    out=[]
+    for st in steps:
+        if st['t']=='npc' and any(x in DEPQ for _,x in st['seq']):
+            run=[]; key=None
+            for kx in st['seq']:
+                k_=_dep_key(*kx)
+                if run and k_!=key: out.append(dict(st,seq=run,dep=key[0]!='norm')); run=[]
+                run.append(kx); key=k_
+            out.append(dict(st,seq=run,dep=key[0]!='norm'))
+        elif st['t']=='obj' and any(x in DEPQ for x,_ in st['items']):
+            a=[i for i in st['items'] if i[0] not in DEPQ]; b=[i for i in st['items'] if i[0] in DEPQ]
+            if a: out.append(dict(st,items=a))
+            out.append(dict(st,items=b,dep=True))
+        else: out.append(st)
+    return out
+def dep_cond(st):
+    """RestedXP-ehto valinnaiselle askeleelle (Guidelimessä [O])"""
+    if st['t']=='obj': return '    .isOnQuest %s'%','.join(str(x) for x in sorted({x for x,_ in st['items']}))
+    tin=[x for k,x in st['seq'] if k=='turnin']
+    if tin: return '    .isOnQuest %s'%','.join(str(x) for x in tin)
+    pre=sorted({p for k,x in st['seq'] for p in DEP_ON.get(x,())})
+    return '    .isQuestTurnedIn %s'%','.join(str(x) for x in pre) if pre else None
 # ---------------- RXP ----------------
 def rxp_steps(c):
     L=[]
+    c=dict(c,steps=split_dep(c['steps']))
     def goto(area,p):
         if area not in TB_: return '    .goto %d,%.2f,%.2f'%(A2U[area][0],p[0],p[1])
         return '    .goto %d/%d,%.2f,%.2f'%wc(area,p)
@@ -824,6 +907,7 @@ def rxp_steps(c):
             else:
                 nm=clean(ent_name(kind,eid))
                 L.append('    >>%s%s: |cRXP_%s_%s|r'%('Dungeonin sisällä - ' if ins else '','Puhu' if kind=='npc' else 'Klikkaa','FRIENDLY' if kind=='npc' else 'PICK',nm))
+            if st.get('dep'): L+=['    >>|cRXP_WARN_%s|r'%ELITE_TXT,dep_cond(st)]
             for k_,qid in st['seq']: L.append(('    .turnin %d >>Palauta: %s' if k_=='turnin' else '    .accept %d >>Ota: %s')%(qid,clean(q(qid,'name'))))
             if kind=='npc' and ',' not in nm: L.append('    .target %s'%nm)
         elif t=='obj':
@@ -840,6 +924,7 @@ def rxp_steps(c):
                     L.append('    >>Kerää |cRXP_LOOT_%s|r'%tx[1]+(' (%s)'%src if src else ''))
                 elif tx[0]=='use': L.append('    >>Käytä / kerää: '+', '.join('|cRXP_PICK_%s|r'%x for x in tx[1]))
                 else: L.append('    >>'+tx[1])
+            if st.get('dep'): L+=['    >>|cRXP_WARN_%s|r'%ELITE_TXT,dep_cond(st)]
             for qid,o_ in st['items']:
                 if o_['idx']>0: L.append('    .complete %d,%d'%(qid,o_['idx']))
             if mobs and not ins: L+=['    .mob '+x for x in mobs]
@@ -875,6 +960,7 @@ def rxp_steps(c):
 def gc(t): return clean(t).replace('[','(').replace(']',')').replace('*','').replace(chr(92),'/')
 def gl_steps(c):
     L=[]
+    c=dict(c,steps=split_dep(c['steps']))
     def G(area,p): return '[G %.1f,%.1f %s]'%(p[0],p[1],zname(area))
     def eg(loc):
         z=loc[0]; return G(DUNG[z][2],DUNG[z][3]) if z in DUNG else G(*loc)
@@ -906,6 +992,7 @@ def gl_steps(c):
             elif kind=='item': s+='Dungeonissa: looti *%s* aloittaa questin '%gc(it(eid,'name') if eid in I else 'quest-esine')
             else: s+=('Dungeonin sisällä - ' if ins else '')+('Puhu: *%s* ' if kind=='npc' else 'Klikkaa: *%s* ')%gc(ent_name(kind,eid))
             s+=' '.join(('[QT%d %s]' if k_=='turnin' else '[QA%d %s]')%(qid,gc(q(qid,'name'))) for k_,qid in st['seq'])
+            if st.get('dep'): s='[O]'+s+' *%s*'%gc(ELITE_TXT)
             L.append(s)
         elif t=='obj':
             texts,mobs=obj_texts(st['items']); ins=st['loc'][0] in DUNG
@@ -919,6 +1006,7 @@ def gl_steps(c):
                 elif tx[0]=='use': parts.append('Käytä / kerää: '+', '.join('*%s*'%gc(x) for x in tx[1]))
                 else: parts.append(gc(tx[1]))
             s+='; '.join(parts)+' '+' '.join('[QC%d,%d %s]'%(qid,o_['idx'],gc(q(qid,'name'))) for qid,o_ in st['items'] if o_['idx']>0)
+            if st.get('dep'): s='[O]'+s.rstrip()+' *%s*'%gc(ELITE_TXT)
             L.append(s.rstrip())
         elif t=='ptrain':
             rx,gl,dn,_=PF.PROFS[st['prof']]; nm=gc(n(st['npc'],'name'))

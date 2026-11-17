@@ -1,3 +1,35 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.0
+
+Questiketjut (molemmat oppaat, molemmat factionit, kaikki luokat):
+- Ketjun aloittavia questeja suositaan: ketju arvioidaan kokonaisuutena, joten aloittaja saa jatkojen XP:n hyväkseen. Ketju on reitillä, jos sen lisäaika on enintään 3 kertaa saman XP:n grindausaika (yksittäisillä questeilla raja on edelleen 2 kertaa).
+- Aloitettu ketju tehdään loppuun: heti, tai myöhemmin samalla alueella kulkevalla käynnillä tai omalla ketjukierroksella, kun taso riittää. Ketju, jota ei kannata tehdä loppuun, jätetään kokonaan aloittamatta (esim. Load Lightening, The Spirits of Stonetalon, Are We There, Yeti?).
+- Ketjujen elite-questit (ryhmäquestit) ovat mukana vapaaehtoisina askelina. Voit ohittaa ne tai pyytää kavereita avuksi; jos et ota elite-questia, sen palautus- ja jatkoaskeleet ohittuvat itsestään (RestedXP) tai ovat valinnaisia rivejä (Guidelime).
+- Jatkot, joista QuestieDB:n datassa puuttuu sijainti tai lähde, eivät vielä ole oppaassa. Ne tulevat mukaan automaattisesti, kun data korjautuu.
+
+Vaikutus (simuloitu, keskiarvo rotua kohti):
+- Horde: valmiiksi tehtyjä ketjuja 105 -> 139, kesken jääviä 79 -> 46, palautettuja questeja 837 -> 915.
+- Alliance: valmiiksi tehtyjä ketjuja 119 -> 162, kesken jääviä 84 -> 44, palautettuja questeja 910 -> 1033.
+- Aika tasolle 60 kasvaa (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5486 -> 5996 min (+9,3 %), Alliance 5824 -> 6316 min (+8,4 %). Elite-questien ohittaminen lyhentää Horden aikaa noin 85 min.
+- Loput kesken jäävät ketjut: jatkon data puuttuu QuestieDB:stä, jatko vaatii muita questeja (esim. Stranglethornin Chapter I-IV), tai jatko on dungeon- tai class-quest omine sääntöineen.
+
+Muut korjaukset:
+- Karsinta ei enää peru itseään, kun class-questin vaihtoehtoinen versio (esim. Orb of Orahil Orgrimmarissa tai Undercityssä) vaihtuu toiseen.
+- Questiloki pysyy enintään 40:ssä myös Alliancen Stranglethornissa (askelten järjestys ei siirrä palautuksia niin, että loki täyttyy).
+
+Lukujen nimet muuttuvat osin, joten edistyminen voi alkaa luvun alusta.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ei heikkene (Blackrock Depths parani yhdellä questilla osalla luokista).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Quest-data: QuestieDB (Forever), commit e1652ce (1.1.2). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.0.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.0.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v3.2
 
 Vendorikäynnit harvemmin (molemmat oppaat, molemmat factionit, kaikki luokat):

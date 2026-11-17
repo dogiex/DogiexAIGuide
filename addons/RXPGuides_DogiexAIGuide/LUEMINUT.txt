@@ -1,4 +1,4 @@
-Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v3.2)
+Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v4.0)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanha kansio RXPGuides_DogiexAIGuide ennen uuden
@@ -38,7 +38,10 @@ SISÄLTÖ
 HYVÄ TIETÄÄ
 - Jumiin jäävä askel: oikea hiirennappi -> ohita. Jos et tee jotain dungeonia, ohita sen askeleet.
 - Class-questien "Hanki Auction Housesta tai ammatilla" -askeleet vaativat ostettavan/craftattavan esineen.
-- "(elite, ryhmä)" = class-questin kohde on elite, ryhmä voi olla tarpeen.
+- "(elite, ryhmä)" = questin kohde on elite, ryhmä voi olla tarpeen.
+- Questiketjut (v4.0): aloitettu ketju tehdään loppuun, tarvittaessa myöhemmin, kun taso riittää.
+  Ketjujen elite-questit ovat vapaaehtoisia: voit ohittaa ne tai pyytää kavereita avuksi. Jos et ota
+  elite-questia, sen palautus- ja jatkoaskeleet ohittuvat itsestään.
 - Reittiä ei ole pelitestattu. Quest-data: QuestieDB (Forever), yhteisön ylläpitämä.
 
 LISENSSI

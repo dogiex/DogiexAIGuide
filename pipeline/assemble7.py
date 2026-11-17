@@ -6,7 +6,7 @@ ASM_P / ASM_PA / ASM_OUT / ASM_CLS: kokeiluajot (ASM_FACTIONS=Horde tai Alliance
 import json, os, re, shutil, glob, sys
 sys.path.insert(0,'/home/claude/work7')
 os.environ.setdefault('WOW_CLASS','WARLOCK')
-VERSION='3.2'
+VERSION='4.0'
 OUT=os.environ.get('ASM_OUT','/home/claude/work7/out7')
 ALLCLS=['WARRIOR','PALADIN','HUNTER','ROGUE','PRIEST','SHAMAN','MAGE','WARLOCK','DRUID']
 CLS=os.environ['ASM_CLS'].split(',') if os.environ.get('ASM_CLS') else ALLCLS

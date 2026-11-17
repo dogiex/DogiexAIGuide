@@ -58,7 +58,7 @@ for f in sorted(glob.glob(RXPDIR+'/Guide_*.lua')):
             elif cmd=='complete' and not re.fullmatch(r'\d+,\d+',args): errs.append('complete '+l)
             elif cmd in('mob','target') and ',' in args: errs.append('comma-list '+l)
             elif cmd=='skill' and not (re.fullmatch(r'([a-z]+),<?\d+,1(,1)?',args) and args.split(',')[0] in SKN): errs.append('skill '+l)
-            elif cmd=='isOnQuest' and not (args.isdigit() and int(args) in Q): errs.append('isOnQuest '+l)
+            elif cmd=='isOnQuest' and not all(x.isdigit() and int(x) in Q for x in args.split(',')): errs.append('isOnQuest '+l)   # v4.0: useita ID:itä (RXPGuides functions.lua isOnQuest: mikä tahansa riittää)
             elif cmd=='isQuestTurnedIn' and not all(x.isdigit() and int(x) in Q for x in args.split(',')): errs.append('isQuestTurnedIn '+l)
 for f,m in nexts:
     line=m.split('<<')[0]

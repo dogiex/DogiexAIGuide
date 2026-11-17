@@ -37,6 +37,8 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **RestedXP:n dungeon-asetukset** eivät piilota oppaan dungeon-askeleita (opas ei käytä `.dungeon`-merkintöjä). Jos et tee dungeonia, ohita sen askeleet käsin.
 
 ## Reitti
-- **Osa questeista jätetään tarkoituksella pois** (v2.0): normaali quest, jonka juoksu ja tapot vievät yli kaksi kertaa niin kauan kuin saman XP:n grindaaminen, ei ole reitillä. Class- ja dungeon-questit ovat aina mukana.
+- **Questiketjut** (v4.0): aloitettu ketju tehdään loppuun, mutta osa ketjuista jää kesken, koska jatkon tiedot puuttuvat QuestieDB:stä (sijainti tai esineen lähde) tai jatko vaatii muita questeja. Nämä tulevat oppaaseen, kun data korjautuu.
+- **Ketjujen elite-questit** (v4.0) ovat vapaaehtoisia ryhmäquesteja. Jos ohitat sellaisen, RestedXP ohittaa sen palautus- ja jatkoaskeleet itsestään; Guidelimessä ne ovat valinnaisia rivejä.
+- **Osa questeista jätetään tarkoituksella pois** (v2.0): normaali quest, jonka juoksu ja tapot vievät yli kaksi kertaa niin kauan kuin saman XP:n grindaaminen, ei ole reitillä. Ketjut (v4.0) arvioidaan kokonaisuutena raja-arvolla kolme kertaa, ja liian kallis ketju jätetään kokonaan aloittamatta. Class- ja dungeon-questit ovat aina mukana.
 - **Teldrassil ja Darnassus** (Alliance): ensimmäisellä kerralla laiva Auberdinesta ja Rut'theranin lentopaikka laiturilta, sen jälkeen lento Rut'theraniin ja portaali Darnassukseen. Opas olettaa, että Auberdinen ja Rut'theranin välinen lento on käytössä.
 - **Deathskip** (tasot 1-15) olettaa, että kuoltuasi heräät lähimmällä hautausmaalla. Hautausmaan valinta pelissä voi poiketa arviosta; jos heräät muualla, kävele kohteeseen.

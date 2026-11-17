@@ -1,4 +1,4 @@
-Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v3.2)
+Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - Guidelime-opas, WoW Forever (v4.0)
 Varavaihtoehto, jos RestedXP ei toimi.
 
 ASENNUS
@@ -25,4 +25,6 @@ SISÄLTÖ
   (Journeyman 50+, Expert 125+, Artisan 200+), sekä ammattitehtävät. Rivit ovat valinnaisia [O] ja näkyvät
   vain, jos taitosi riittää. Trainer-rivi kuittautuu itsestään, kun olet opetellut seuraavan tason.
   Guidelime ei osaa piilottaa palautusriviä, jos et ottanut tehtävää: ohita se käsin.
+- Questiketjut (v4.0): aloitettu ketju tehdään loppuun, tarvittaessa myöhemmin. Ketjujen elite-questit ovat
+  valinnaisia rivejä (O): voit ohittaa ne tai pyytää kavereita avuksi.
 - Jos et tee jotain dungeonia, ohita sen rivit käsin. Ei pelitestattu.

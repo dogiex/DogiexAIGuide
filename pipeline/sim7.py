@@ -69,7 +69,7 @@ if mode=='glstart':
     if ch and ch[0]['steps'] and ch[0]['steps'][0]['t']=='zone': ch[0]['steps']=ch[0]['steps'][1:]
     gl=[gl_steps(c) for c in ch]
     json.dump(dict(done=sorted(s.done),level=s.L,errs=e,races=races,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],
-        gl=gl,rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,()),fps=ch[0].get('have',[]),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
+        gl=gl,rxp=[rxp_steps(c) for c in ch],chains=chains_cov(s,()),chainfail=[[a,b,r] for (a,b),r in sorted(CHAIN_FAIL.items())],fps=ch[0].get('have',[]),turnins=sum(1 for x in s.steps if x['type']=='turnin')),open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,zone),'w'))
 elif mode=='glmain':
     starts=[z for z,(rs,_) in STARTS.items() if set(rs)&set(RACENAMES)]
     dsets=[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z)))['done']) for z in starts]
@@ -79,7 +79,23 @@ elif mode=='glmain':
     kfp=set.intersection(*[set(json.load(open('%s/%s_glstart_%s.json'%(OUTD,CLASSNAME,z))).get('fps',[])) for z in starts]) if ALLY else set()
     s,vis2,ch=route(pre_main()+main_visits(),12,base,kfp,[14,18,22]+BOUNDS)
     e=check_ir(ch,base,'GLM')
+    if os.environ.get('STEPDUMP'): json.dump([dict(t=st['type'],q=st.get('q'),loc=st.get('loc'),lv=st.get('level'),v=(dict(name=st['v']['name'],chainb=bool(st['v'].get('chainb')),cblock=bool(st['v'].get('cblock')),block=st['v'].get('block')) if st['type']=='visit' else None)) for st in s.steps],open(os.environ['STEPDUMP'],'w'),default=list)
+    # v4.0-analyysi: ketjukierrosten (chainb) juoksu ja palautukset
+    CL=[]; prev=None; cur=None
+    for st in s.steps:
+        if st['type']=='visit': cur=st['v'] if st['v'].get('chainb') else None; 
+        if cur is not None and st['type']=='visit': CL.append(dict(name=cur['name'],lvl=st['level'],q=sorted(cur['only']),yd=0.0,tin=[],zones=[])); continue
+        if st['type']=='visit': continue
+        w=__import__("r3out")._wy(st["loc"])
+        if cur is not None and w is not None:
+            CL[-1]['yd']+=(180*7/1.2*1.0 if prev and prev[0]!=w[0] else (math.hypot(w[1]-prev[1],w[2]-prev[2]) if prev else 0))
+            if st['type']=='turnin': CL[-1]['tin'].append(st['q'])
+            z=st['loc'][0]
+            if z not in CL[-1]['zones']: CL[-1]['zones'].append(z)
+        if cur is None and w is not None and CL and CL[-1].get('back') is None and prev:
+            CL[-1]['back']=(180*7/1.2 if prev[0]!=w[0] else math.hypot(w[1]-prev[1],w[2]-prev[2]))
+        if w is not None: prev=w
     for c in ch: c['title']=tagname(c)
     json.dump(dict(errs=e,titles=[c['title'] for c in ch],lo=[c['lo'] for c in ch],hi=[c['hi'] for c in ch],gl=[gl_steps(c) for c in ch],rxp=[rxp_steps(c) for c in ch],
-        chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),tlog=ch[0].get('tlog'),final=s.L,turnins=sum(1 for x in s.steps if x['type']=='turnin'),miss=class_miss(s,anyst)),open('%s/%s_glmain.json'%(OUTD,CLASSNAME),'w'))   # miss: puuttuvat class-questit (dbdiff.py; v1.x:ssä rxp-osasta)
+        chains=chains_cov(s,anyst),dq=dq_cov(s,anyst),tlog=ch[0].get('tlog'),final=s.L,turnins=sum(1 for x in s.steps if x['type']=='turnin'),miss=class_miss(s,anyst),chainlog=CL,done=sorted(s.done),chainfail=[[a,b,r] for (a,b),r in sorted(CHAIN_FAIL.items())]),open('%s/%s_glmain.json'%(OUTD,CLASSNAME),'w'))   # miss: puuttuvat class-questit (dbdiff.py; v1.x:ssä rxp-osasta)
 if mode: print('ok',CLASSNAME,mode,sys.argv[2:] if len(sys.argv)>2 else '')
