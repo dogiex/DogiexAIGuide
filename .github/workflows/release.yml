@@ -20,6 +20,20 @@ jobs:
           VER=$(grep -m1 '^## Version:' addons/RXPGuides_DogiexAIGuide/RXPGuides_DogiexAIGuide.toc | awk '{print $3}' | tr -d '\r')
           [ -n "$VER" ] || { echo "Versio puuttuu TOC-tiedostosta"; exit 1; }
           echo "tag=v$VER" >> "$GITHUB_OUTPUT"
+      # Testiportti (17.11.2026): jos jompikumpi tarkistus epäonnistuu, julkaisua ei luoda.
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Lua-latauskoe
+        run: |
+          pip install -q lupa
+          python3 pipeline/luatest.py addons/RXPGuides_DogiexAIGuide addons/Guidelime_DogiexAIGuide
+      - name: Versiot täsmäävät
+        run: |
+          R=$(grep -m1 '^## Version:' addons/RXPGuides_DogiexAIGuide/RXPGuides_DogiexAIGuide.toc | awk '{print $3}' | tr -d '\r')
+          G=$(grep -m1 '^## Version:' addons/Guidelime_DogiexAIGuide/Guidelime_DogiexAIGuide.toc | awk '{print $3}' | tr -d '\r')
+          N=$(head -1 RELEASE_NOTES.md | tr -d '\r' | grep -o 'v[0-9.]*$')
+          [ "$R" = "$G" ] && [ "v$R" = "$N" ] || { echo "Versiot eivät täsmää: RXP $R, Guidelime $G, RELEASE_NOTES $N"; exit 1; }
+          echo "Versiot täsmäävät: v$R"
       - name: Luo julkaisu, jos sitä ei vielä ole
         env:
           GH_TOKEN: ${{ github.token }}
