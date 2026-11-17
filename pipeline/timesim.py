@@ -14,8 +14,8 @@ Tilat:
 Aikamalli (wow-leveling-route-skillin aika-arvio):
   juoksu = etäisyys jaardeina x 1,2 / 7 yd/s, tappo 18 s (nopea) tai 28 s (lepo mukaan),
   NPC-käynti 8 s, vendor/trainer/flight path 30 s, keräys 6 s, escort/tapahtuma 90 s,
-  hearthstone 15 s, .deathskip 40 s, lento 90 s (.fly / [F]; v2.1: sijainti lennon jälkeen kohdelentopaikalla),
-  mantereen vaihto 180 s (v2.1: saapuminen kohdetta lähimpään satamaan / zeppeliinitorniin, ennen sijainti tuntematon).
+  hearthstone 15 s, .deathskip 40 s, lento 90 s (.fly / [F]; v2.2: sijainti lennon jälkeen kohdelentopaikalla),
+  mantereen vaihto 180 s (v2.2: saapuminen kohdetta lähimpään satamaan / zeppeliinitorniin, ennen sijainti tuntematon).
   Tavoitteet: tapot questin määrän mukaan, pudotukset määrä / 0,5 (yksittäinen esine 1 tappo).
   XP: engine.py (mob_xp, quest_xp) ja data.py (xp_to_level, Foreverin quest-XP).
   Tavoitteiden määrät: RestedXP-oppaiden kommentit (.complete q,i --Nimi (N)), muuten questin tehtäväteksti.
@@ -31,7 +31,7 @@ os.environ.setdefault('WOW_CLASS', 'WARLOCK'); os.environ.setdefault('WOW_RACES'
 from engine import mob_xp, quest_xp, objectives, obj_sources, xp_to_level, q, n, N, aslist, lst
 import elig
 from r3out import wc, TB_, FPK, FP, ARRIVE
-FPPOS = {FP[i]: v[2] for i, v in FPK.items()}   # v2.1: lennon jälkeen sijainti on kohdelentopaikalla (ennen tuntematon)
+FPPOS = {FP[i]: v[2] for i, v in FPK.items()}   # v2.2: lennon jälkeen sijainti on kohdelentopaikalla (ennen tuntematon)
 def fly_pos(name):
     p = FPPOS.get(name.strip())
     return (p[0], p[1], p[2]) if p else None
@@ -87,7 +87,7 @@ class Run:
     def move(s, p):
         if p is None: return
         if s.pos is not None and s.pos[0] != p[0]:
-            # mantereen vaihto: v2.1:stä alkaen saavutaan satamaan / zeppeliinitorniin (lähin kohteeseen), josta kävellään tai lennetään
+            # mantereen vaihto: v2.2:sta alkaen saavutaan satamaan / zeppeliinitorniin (lähin kohteeseen), josta kävellään tai lennetään
             s.add('muu', T_BOAT); arr = [FPK[i][2] for i in ARRIVE.get(p[0], ()) if i in FPK]
             s.pos = min(arr, key=lambda a: math.dist(a[1:], p[1:])) if arr else None
         if s.pos is not None: s.add('juoksu', math.dist(s.pos[1:], p[1:]) * WIND / SPEED)

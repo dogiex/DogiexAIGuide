@@ -284,7 +284,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
         if z not in TB_ or p is None: return None
         _,m,x,y=wc(z,p); return (m,x,y)
     def fly_alt(z0,p0,z1,p1):
-        """v2.1: haetuista lentopaikoista lähin lähtöpisteeseen ja lähin kohteeseen (sama manner). Palauttaa (a,b), jos lento
+        """v2.2: haetuista lentopaikoista lähin lähtöpisteeseen ja lähin kohteeseen (sama manner). Palauttaa (a,b), jos lento
         säästää vähintään FLY_MIN s kävelyyn verrattuna (kävely 7/1.2 yd/s, lento 30 s + 1,3 x suora matka / 25 yd/s)."""
         P0=W(z0,p0); P1=W(z1,p1)
         if not P0 or not P1 or P0[0]!=P1[0]: return None
@@ -388,12 +388,12 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 add(dict(t='fly',area=sa,pos=a[2],npc=a[0],to=bb[1],toarea=da)); pos=bb[2]
                 if da!=ez: add(dict(t='zone',area=ez,xc=False,fpknown=False)); pos=None
             elif alt:
-                # v2.1: kohde- tai lähtöalueella ei haettua lentopaikkaa: lennä haetuista lähimpään kohdetta ja kävele sieltä
+                # v2.2: kohde- tai lähtöalueella ei haettua lentopaikkaa: lennä haetuista lähimpään kohdetta ja kävele sieltä
                 add_fly(alt[0],alt[1],ez)
             else:
                 xc=bool(cur and cont(cur)!=cont(ez)); arr=None
                 if xc:
-                    # v2.1: mantereen vaihdon jälkeen lento satamasta / zeppeliinitornista perille (ennen vain teksti "lennä perille")
+                    # v2.2: mantereen vaihdon jälkeen lento satamasta / zeppeliinitornista perille (ennen vain teksti "lennä perille")
                     P1=W(ez,ep); cand=[i for i in ARRIVE.get(cont(ez),()) if i in have and i in FPK]
                     for a in sorted(cand,key=lambda i:math.hypot(FPK[i][2][1]-P1[1],FPK[i][2][2]-P1[2]) if P1 else 0):
                         al=fly_alt(FPK[a][0],FPK[a][1],ez,ep)
@@ -464,7 +464,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
             elif pos and ALLY and isle(ez,pos)!=isle(ez,ep) and feather_travel(ez,pos,ep):
                 pass   # v3.0: Feathermoon (saari)
             elif pos and DY(ez,pos,ep)>1500 and (alt:=fly_alt(ez,pos,ez,ep)):
-                # v2.1: saman alueen sisällä lento haettujen lentopaikkojen välillä (ennen aina kävely)
+                # v2.2: saman alueen sisällä lento haettujen lentopaikkojen välillä (ennen aina kävely)
                 # v3.0: myös matka saman alueen dungeonin sisäänkäynnille (ennen ehto 'not indung' esti, esim. Ratchet -> Razorfen Kraul);
                 # dungeonin sisällä kaikki askeleet ovat sisäänkäynnin kohdalla, joten etäisyys on 0 eikä lentoa synny
                 flush(); add_fly(alt[0],alt[1],ez)
@@ -731,13 +731,13 @@ def spell_txt(sp):
 def wc(area,p):
     t=TB_[area]; b=t['target_bounds']
     return t['ui_map_id'],t['map_id'],b['left']-p[0]/100.0*(b['left']-b['right']),b['top']-p[1]/100.0*(b['top']-b['bottom'])
-FPK={}   # v2.1: lentopaikat (id -> alue, sijainti, maailmankoordinaatit) lentoa varten
+FPK={}   # v2.2: lentopaikat (id -> alue, sijainti, maailmankoordinaatit) lentoa varten
 for _i in FP:
     for _z,_pts in spawns_of('npc',_i).items():
         if _z in TB_:
             _u,_m,_x,_y=wc(_z,tuple(_pts[0])); FPK[_i]=(_z,tuple(_pts[0]),(_m,_x,_y)); break
 _FPN={v:k for k,v in FP.items()}
-ARRIVE={}   # v2.1: mantereen vaihdon saapumislentopaikat (zeppeliini/laiva) mantereittain
+ARRIVE={}   # v2.2: mantereen vaihdon saapumislentopaikat (zeppeliini/laiva) mantereittain
 for _nm in (['Auberdine','Theramore','Menethil Harbor'] if ALLY else ['Orgrimmar','Undercity',"Grom'gol"]):
     if _nm in _FPN and _FPN[_nm] in FPK: ARRIVE.setdefault(FPK[_FPN[_nm]][2][0],[]).append(_FPN[_nm])
 def trav_text(st):
@@ -746,7 +746,7 @@ def trav_text(st):
         return zn,'Käytä loitsua Teleport: Moonglade (paluu hearthstonella tai lentäen)'
     if st.get('xc') and ALLY: tx="Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
     elif st.get('xc'): tx="Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol)"+(' ja lennä perille' if st.get('fpknown') else '')+'. '+tx
-    elif not ALLY and ZKEY.get(st['area']) in TRAVEL_SAME: tx=TRAVEL_SAME[ZKEY.get(st['area'])]   # v2.1: samalla mantereella ei zeppeliiniä
+    elif not ALLY and ZKEY.get(st['area']) in TRAVEL_SAME: tx=TRAVEL_SAME[ZKEY.get(st['area'])]   # v2.2: samalla mantereella ei zeppeliiniä
     elif st.get('walk'):
         tx='Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)'   # v3.0
     elif ALLY and st.get('portal'):
