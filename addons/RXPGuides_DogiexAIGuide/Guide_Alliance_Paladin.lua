@@ -5830,7 +5830,7 @@ step
     .target Caylais Moonfeather
     .zoneskip Ashenvale
 step
-    .goto 1440/1,-2872.97,1513.35
+    .goto 1440/1,-2872.97,1509.51
     >>Kerää |cRXP_LOOT_Mote of Mannoroth|r (|cRXP_ENEMY_Searing Infernal|r, |cRXP_ENEMY_Mannoroc Lasher|r, |cRXP_ENEMY_Felguard|r)
     .complete 78092,1
     .mob Searing Infernal

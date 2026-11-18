@@ -1,3 +1,29 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.1
+
+Quest-datan päivitys (QuestieDB e1652ce -> 0f37b70, 1.1.2):
+- Viisi oppaan questia muuttui datassa: Earthen Arise, Allegiance to the Old Gods, King of the Foulweald, Vorsha the Lasher ja Baron Aquanis (Ashenvale). Esimerkiksi Vorsha the Lasher on nyt tappotavoite ("Tapa Vorsha the Lasher"), ja Murgut's Totem kerätään vain korista (ei Chief Murgutilta).
+- NPC-sijaintien tarkennuksia, joten osa koordinaateista muuttui.
+- Uudet Darkspear Islandsin questit (taso 40-60) eivät ole reitillä.
+- Questit ja lukujen nimet ennallaan, joten edistyminen säilyy. Horden Warriorilla, Warlockilla ja Paladinilla osa Ashenvalen ja Desolacen askelista vaihtoi järjestystä.
+
+Guidelime-korjaus:
+- Elite-questin palautus ja siitä riippuvan jatkon otto ovat nyt omilla valinnaisilla riveillään (kuten RestedXP-oppaassa jo v4.0:ssa), esim. Arugal's Folly. Ennen ne olivat samalla rivillä.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5995 -> 5996 min (+0,0 %), Alliance 6316 -> 6316 min.
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 0f37b70 (1.1.2). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.1.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.1.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.0
 
 Questiketjut (molemmat oppaat, molemmat factionit, kaikki luokat):

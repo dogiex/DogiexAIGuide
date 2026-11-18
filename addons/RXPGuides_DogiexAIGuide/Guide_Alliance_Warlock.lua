@@ -10243,7 +10243,7 @@ step
     .complete 611,1
     .mob Gazban
 step
-    .goto 1434/0,255.41,-12993.79
+    .goto 1434/0,255.41,-12998.04
     >>Kerää |cRXP_LOOT_Talon of Tethis|r (|cRXP_ENEMY_Tethis (elite, ryhmä)|r)
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 197

@@ -3609,10 +3609,11 @@ step
     .target Je'neu Sancrea
 step
     .goto 1440/1,1146.40,3612.04
-    >>Defeat Vorsha the Lasher
+    >>Tapa |cRXP_ENEMY_Vorsha the Lasher|r
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6641,1
     .complete 6442,1
+    .mob Vorsha the Lasher
     .mob Wrathtail Sorceress
     .mob Wrathtail Priestess
     .mob Wrathtail Myrmidon
@@ -4456,9 +4457,8 @@ step
     .target Karang Amakkar
 step
     .goto 1440/1,-1558.17,2232.14
-    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_ENEMY_Chief Murgut|r, |cRXP_PICK_Murgut's Totem Basket|r)
+    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_PICK_Murgut's Totem Basket|r)
     .complete 6621,1
-    .mob Chief Murgut
 step
     .goto 1440/1,-2400.10,2055.32
     >>Puhu: |cRXP_FRIENDLY_Kuray'bin|r
@@ -4985,7 +4985,7 @@ step
     .complete 1068,1
     .mob XT:4
 step
-    .goto 1442/1,96.08,1607.65
+    .goto 1442/1,144.92,1614.17
     >>Kerää |cRXP_LOOT_Gerenzo's Mechanical Arm|r (|cRXP_ENEMY_Gerenzo Wrenchwhistle|r)
     .complete 1096,1
     .mob Gerenzo Wrenchwhistle
@@ -8116,7 +8116,7 @@ step
     .accept 1150 >>Ota: Test of Endurance
     .target Dorn Plainstalker
 step
-    .goto 1441/1,-1590.53,-5594.67
+    .goto 1441/1,-1590.53,-5597.60
     >>Kerää |cRXP_LOOT_Grenka's Claw|r (|cRXP_ENEMY_Grenka Bloodscreech|r)
     .complete 1150,1
     .mob Grenka Bloodscreech
@@ -8996,7 +8996,7 @@ step
     .accept 592 >>Ota: Saving Yenniku
     .target Kin'weelay
 step
-    .goto 1434/0,255.41,-12993.79
+    .goto 1434/0,255.41,-12998.04
     >>Kerää |cRXP_LOOT_Talon of Tethis|r (|cRXP_ENEMY_Tethis (elite, ryhmä)|r)
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 197
@@ -10986,52 +10986,11 @@ step
     .turnin 2585 >>Palauta: The Decisive Striker
     .target Bloodmage Drazial
 step
-    .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
-step
-    .goto 1454/1,-4313.46,1676.24
-    .fly Gadgetzan >>Lennä: Gadgetzan
-    .target Doras
-    .zoneskip Tanaris
-step
-    .zone Un'Goro Crater >>Matkusta: Un'Goro Crater. Tanarisin lounaiskulmasta ramppia alas Un'Goro Crateriin
-step
-    .goto 1449/1,-2115.87,-7841.33
-    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
-    .accept 9052 >>Ota: Bloodpetal Poison
-    .target Torwa Pathfinder
-step
-    .goto 1449/1,-2038.17,-7641.53
-    >>Kerää |cRXP_LOOT_Bloodcap|r (|cRXP_PICK_Bloodpetal Sprout|r)
-    .complete 9052,2
-step
-    .goto 1449/1,-1372.17,-7826.53
-    >>Kerää |cRXP_LOOT_Gorishi Sting|r (|cRXP_ENEMY_Gorishi Wasp|r, |cRXP_ENEMY_Gorishi Stinger|r)
-    .complete 9052,1
-    .mob Gorishi Wasp
-    .mob Gorishi Stinger
-step
-    .goto 1449/1,-2115.87,-7841.33
-    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
-    .turnin 9052 >>Palauta: Bloodpetal Poison
-    .accept 9051 >>Ota: Toxic Test
-    .target Torwa Pathfinder
-step
-    .goto 1449/1,-746.87,-6519.20
-    >>Tapa |cRXP_ENEMY_Devilsaur (elite, ryhmä)|r, |cRXP_ENEMY_Ironhide Devilsaur (elite, ryhmä)|r, |cRXP_ENEMY_Tyrant Devilsaur (elite, ryhmä)|r
-    .complete 9051,1
-step
-    .goto 1449/1,-2115.87,-7841.33
-    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
-    .turnin 9051 >>Palauta: Toxic Test
-    .target Torwa Pathfinder
-step
     .xp 46 >>Tavoitetaso 46 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
-step
-    .goto 1434/0,144.37,-12417.35
+    .goto 1435/0,-3279.65,-10459.28
     .fly Kargath >>Lennä: Kargath
-    .target Thysta
+    .target Breyk
     .zoneskip Badlands
 step
     .zone Searing Gorge >>Matkusta: Searing Gorge. Kargathista länteen solan kautta Searing Gorgeen. Thorium Point on pohjoisessa
@@ -11177,6 +11136,38 @@ step
     >>Puhu: |cRXP_FRIENDLY_Krinkle Goodsteel|r
     .turnin 4450 >>Palauta: Ledger from Tanaris
     .target Krinkle Goodsteel
+step
+    .zone Un'Goro Crater >>Matkusta: Un'Goro Crater. Tanarisin lounaiskulmasta ramppia alas Un'Goro Crateriin
+step
+    .goto 1449/1,-2115.87,-7841.33
+    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
+    .accept 9052 >>Ota: Bloodpetal Poison
+    .target Torwa Pathfinder
+step
+    .goto 1449/1,-2038.17,-7641.53
+    >>Kerää |cRXP_LOOT_Bloodcap|r (|cRXP_PICK_Bloodpetal Sprout|r)
+    .complete 9052,2
+step
+    .goto 1449/1,-1372.17,-7826.53
+    >>Kerää |cRXP_LOOT_Gorishi Sting|r (|cRXP_ENEMY_Gorishi Wasp|r, |cRXP_ENEMY_Gorishi Stinger|r)
+    .complete 9052,1
+    .mob Gorishi Wasp
+    .mob Gorishi Stinger
+step
+    .goto 1449/1,-2115.87,-7841.33
+    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
+    .turnin 9052 >>Palauta: Bloodpetal Poison
+    .accept 9051 >>Ota: Toxic Test
+    .target Torwa Pathfinder
+step
+    .goto 1449/1,-746.87,-6519.20
+    >>Tapa |cRXP_ENEMY_Devilsaur (elite, ryhmä)|r, |cRXP_ENEMY_Ironhide Devilsaur (elite, ryhmä)|r, |cRXP_ENEMY_Tyrant Devilsaur (elite, ryhmä)|r
+    .complete 9051,1
+step
+    .goto 1449/1,-2115.87,-7841.33
+    >>Puhu: |cRXP_FRIENDLY_Torwa Pathfinder|r
+    .turnin 9051 >>Palauta: Toxic Test
+    .target Torwa Pathfinder
 step
     .goto 1446/1,-3779.15,-7045.24
     .fly Orgrimmar >>Lennä: Orgrimmar
@@ -11482,14 +11473,6 @@ step
     .skill leatherworking,300,1,1
     .target Hahrana Ironhide
 step
-    .goto 1444/1,233.34,-4484.56
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Cawind Trueaim)
-    .target Cawind Trueaim
-step
-    .goto 1444/1,243.07,-4460.01
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Greul
-step
     .goto 1444/1,270.87,-4377.53
     >>Puhu: |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 3122 >>Palauta: Return to Witch Doctor Uzer'i
@@ -11497,6 +11480,14 @@ step
     .accept 3128 >>Ota: Natural Materials
     .accept 3380 >>Ota: The Sunken Temple
     .target Witch Doctor Uzer'i
+step
+    .goto 1444/1,249.32,-4339.54
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
+    .target Worb Strongstitch
+step
+    .goto 1444/1,243.07,-4460.01
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Greul
 step
     .goto 1444/1,562.77,-4525.80
     >>Kerää |cRXP_LOOT_Encrusted Minerals|r (|cRXP_ENEMY_Sprite Darter|r, |cRXP_ENEMY_Captured Sprite Darter|r, |cRXP_ENEMY_Zapped Cliff Giant|r)

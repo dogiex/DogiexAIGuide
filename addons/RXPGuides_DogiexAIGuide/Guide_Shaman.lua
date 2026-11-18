@@ -4652,10 +4652,11 @@ step
     .target Marukai
 step
     .goto 1440/1,1146.40,3612.04
-    >>Defeat Vorsha the Lasher
+    >>Tapa |cRXP_ENEMY_Vorsha the Lasher|r
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6641,1
     .complete 6442,1
+    .mob Vorsha the Lasher
     .mob Wrathtail Sorceress
     .mob Wrathtail Priestess
     .mob Wrathtail Myrmidon
@@ -5495,10 +5496,6 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Gharash)
     .target Gharash
 step
-    .goto 1435/0,-3258.77,-10487.26
-    .vendor >>Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20
-    .target Innkeeper Karakul
-step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -5565,9 +5562,8 @@ step
     .target Karang Amakkar
 step
     .goto 1440/1,-1558.17,2232.14
-    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_ENEMY_Chief Murgut|r, |cRXP_PICK_Murgut's Totem Basket|r)
+    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_PICK_Murgut's Totem Basket|r)
     .complete 6621,1
-    .mob Chief Murgut
 step
     .goto 1440/1,-2566.76,2341.68
     .home >>Aseta Hearthstone tähän (Innkeeper Kaylisk)
@@ -6085,7 +6081,7 @@ step
     .complete 1068,1
     .mob XT:4
 step
-    .goto 1442/1,96.08,1607.65
+    .goto 1442/1,144.92,1614.17
     >>Kerää |cRXP_LOOT_Gerenzo's Mechanical Arm|r (|cRXP_ENEMY_Gerenzo Wrenchwhistle|r)
     .complete 1096,1
     .mob Gerenzo Wrenchwhistle
@@ -7954,6 +7950,16 @@ step
     .complete 190,1
     .mob Young Panther
 step
+    .goto 1434/0,-12.60,-11772.84
+    >>Tapa |cRXP_ENEMY_Stranglethorn Tiger|r
+    .complete 186,1
+    .mob Stranglethorn Tiger
+step
+    .goto 1434/0,-44.51,-11619.69
+    >>Puhu: |cRXP_FRIENDLY_Sir S. J. Erlgadin|r
+    .turnin 190 >>Palauta: Panther Mastery
+    .target Sir S. J. Erlgadin
+step
     .zone Swamp of Sorrows >>Matkusta: Swamp of Sorrows. Lennä Stonardiin. Ensimmäisellä kerralla: Grom'golista pohjoiseen Duskwoodiin, Deadwind Passin läpi itään Swamp of Sorrowsiin
 step
     .goto 1435/0,-3328.27,-10506.83
@@ -7966,14 +7972,8 @@ step
 step
     .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Duskwoodista etelään Stranglethorn Valeen (Grom'gol Base Camp on länsirannikolla), tai lennä Grom'goliin / Booty Bayhin, jos lentopaikka on haettu
 step
-    .goto 1434/0,-12.60,-11772.84
-    >>Tapa |cRXP_ENEMY_Stranglethorn Tiger|r
-    .complete 186,1
-    .mob Stranglethorn Tiger
-step
     .goto 1434/0,-44.51,-11619.69
     >>Puhu: |cRXP_FRIENDLY_Sir S. J. Erlgadin|r
-    .turnin 190 >>Palauta: Panther Mastery
     .accept 191 >>Ota: Panther Mastery
     .target Sir S. J. Erlgadin
 step
@@ -8056,17 +8056,13 @@ step
     .complete 568,1
     .mob Lashtail Raptor
 step
-    .goto 1434/0,166.07,-12398.20
-    >>Puhu: |cRXP_FRIENDLY_Commander Aggro'gosh|r
-    .turnin 568 >>Palauta: The Defense of Grom'gol
-    .target Commander Aggro'gosh
-step
     .goto 1434/0,211.38,-12434.36
     .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
     .target Innkeeper Thulbek
 step
     .goto 1434/0,166.07,-12398.20
     >>Puhu: |cRXP_FRIENDLY_Commander Aggro'gosh|r
+    .turnin 568 >>Palauta: The Defense of Grom'gol
     .accept 569 >>Ota: The Defense of Grom'gol
     .target Commander Aggro'gosh
 step
@@ -9212,7 +9208,7 @@ step
     .accept 1150 >>Ota: Test of Endurance
     .target Dorn Plainstalker
 step
-    .goto 1441/1,-1590.53,-5594.67
+    .goto 1441/1,-1590.53,-5597.60
     >>Kerää |cRXP_LOOT_Grenka's Claw|r (|cRXP_ENEMY_Grenka Bloodscreech|r)
     .complete 1150,1
     .mob Grenka Bloodscreech
@@ -10107,7 +10103,7 @@ step
     .accept 592 >>Ota: Saving Yenniku
     .target Kin'weelay
 step
-    .goto 1434/0,255.41,-12993.79
+    .goto 1434/0,255.41,-12998.04
     >>Kerää |cRXP_LOOT_Talon of Tethis|r (|cRXP_ENEMY_Tethis (elite, ryhmä)|r)
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 197

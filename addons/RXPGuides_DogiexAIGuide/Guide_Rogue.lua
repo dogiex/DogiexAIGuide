@@ -4871,10 +4871,11 @@ step
     .target Marukai
 step
     .goto 1440/1,1146.40,3612.04
-    >>Defeat Vorsha the Lasher
+    >>Tapa |cRXP_ENEMY_Vorsha the Lasher|r
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
     .complete 6641,1
     .complete 6442,1
+    .mob Vorsha the Lasher
     .mob Wrathtail Sorceress
     .mob Wrathtail Priestess
     .mob Wrathtail Myrmidon
@@ -5390,8 +5391,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
     .turnin 496 >>Palauta: Elixir of Suffering
     .accept 499 >>Ota: Elixir of Suffering
-    .turnin 501 >>Palauta: Elixir of Pain
-    .accept 502 >>Ota: Elixir of Pain
     .target Apothecary Lydon
 step
     .goto 1424/0,-901.33,-7.47
@@ -5402,6 +5401,12 @@ step
     .goto 1424/0,-936.53,-20.27
     >>Klikkaa: |cRXP_PICK_Dangerous!|r
     .accept 567 >>Ota: Dangerous!
+step
+    .goto 1424/0,-898.13,-7.47
+    >>Puhu: |cRXP_FRIENDLY_Apothecary Lydon|r
+    .turnin 501 >>Palauta: Elixir of Pain
+    .accept 502 >>Ota: Elixir of Pain
+    .target Apothecary Lydon
 step
     .goto 1424/0,-78.93,-436.27
     >>Tapa |cRXP_ENEMY_Farmer Getz|r
@@ -5772,9 +5777,8 @@ step
     .target Kuray'bin
 step
     .goto 1440/1,-1558.17,2232.14
-    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_ENEMY_Chief Murgut|r, |cRXP_PICK_Murgut's Totem Basket|r)
+    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_PICK_Murgut's Totem Basket|r)
     .complete 6621,1
-    .mob Chief Murgut
 step
     .goto 1440/1,1013.77,3346.82
     >>Puhu: |cRXP_FRIENDLY_Karang Amakkar|r
@@ -5956,7 +5960,7 @@ RXPGuides.RegisterGuide([[
 #name 30-34 Stonetalon, Ashenvale, Barrens + RFK (Rogue)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
-#next 34-39 Arathi, 1K Needles, Barrens + Exc. Site (Rogue)
+#next 34-39 Hillsbrad, Arathi, 1K Needles + Exc. Site (Rogue)
 
 step
     .goto 1442/1,940.90,923.84
@@ -6274,7 +6278,7 @@ step
     .complete 1068,1
     .mob XT:4
 step
-    .goto 1442/1,96.08,1607.65
+    .goto 1442/1,144.92,1614.17
     >>Kerää |cRXP_LOOT_Gerenzo's Mechanical Arm|r (|cRXP_ENEMY_Gerenzo Wrenchwhistle|r)
     .complete 1096,1
     .mob Gerenzo Wrenchwhistle
@@ -7080,6 +7084,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Magus Wordeen Voidglare|r
     .turnin 544 >>Palauta: Prison Break In
     .target Magus Wordeen Voidglare
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Horde Rogue
+#name 34-39 Hillsbrad, Arathi, 1K Needles + Exc. Site (Rogue)
+#version 1
+#group Dogiex's AI Guide: 1-60 (Forever)
+#next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Rogue)
+
 step
     .xp 30 >>Tavoitetaso 30 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -7232,16 +7246,6 @@ step
     .goto 1417/0,-3901.47,-874.93
     >>Klikkaa: |cRXP_PICK_Iridescent Shards|r
     .turnin 642 >>Palauta: The Princess Trapped
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Horde Rogue
-#name 34-39 Arathi, 1K Needles, Barrens + Exc. Site (Rogue)
-#version 1
-#group Dogiex's AI Guide: 1-60 (Forever)
-#next 39-42 STV, Hillsbrad, Alterac + Gnomer/Dalaran/SM (Rogue)
-
 step
     +|cRXP_WARN_Dungeon: Excavation Site|r (suositus taso 31+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Wetlands) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -9270,7 +9274,7 @@ step
     .accept 1150 >>Ota: Test of Endurance
     .target Dorn Plainstalker
 step
-    .goto 1441/1,-1590.53,-5594.67
+    .goto 1441/1,-1590.53,-5597.60
     >>Kerää |cRXP_LOOT_Grenka's Claw|r (|cRXP_ENEMY_Grenka Bloodscreech|r)
     .complete 1150,1
     .mob Grenka Bloodscreech
@@ -10230,7 +10234,7 @@ step
     .accept 592 >>Ota: Saving Yenniku
     .target Kin'weelay
 step
-    .goto 1434/0,255.41,-12993.79
+    .goto 1434/0,255.41,-12998.04
     >>Kerää |cRXP_LOOT_Talon of Tethis|r (|cRXP_ENEMY_Tethis (elite, ryhmä)|r)
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 197

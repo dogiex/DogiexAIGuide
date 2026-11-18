@@ -3340,12 +3340,13 @@ step
 step
     .goto 1440/1,1054.13,3481.35
     >>Kerää |cRXP_LOOT_Wrathtail Head|r (|cRXP_ENEMY_Wrathtail Sorceress|r, |cRXP_ENEMY_Wrathtail Priestess|r, |cRXP_ENEMY_Wrathtail Myrmidon|r)
-    >>Defeat Vorsha the Lasher
+    >>Tapa |cRXP_ENEMY_Vorsha the Lasher|r
     .complete 6442,1
     .complete 6641,1
     .mob Wrathtail Sorceress
     .mob Wrathtail Priestess
     .mob Wrathtail Myrmidon
+    .mob Vorsha the Lasher
 step
     .goto 1440/1,1025.30,3331.45
     >>Puhu: |cRXP_FRIENDLY_Marukai|r
@@ -4219,9 +4220,8 @@ step
     .target Karang Amakkar
 step
     .goto 1440/1,-1558.17,2232.14
-    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_ENEMY_Chief Murgut|r, |cRXP_PICK_Murgut's Totem Basket|r)
+    >>Kerää |cRXP_LOOT_Murgut's Totem|r (|cRXP_PICK_Murgut's Totem Basket|r)
     .complete 6621,1
-    .mob Chief Murgut
 step
     .goto 1440/1,-2566.76,2341.68
     .home >>Aseta Hearthstone tähän (Innkeeper Kaylisk)
@@ -4745,7 +4745,7 @@ step
     .complete 1068,1
     .mob XT:4
 step
-    .goto 1442/1,96.08,1607.65
+    .goto 1442/1,144.92,1614.17
     >>Kerää |cRXP_LOOT_Gerenzo's Mechanical Arm|r (|cRXP_ENEMY_Gerenzo Wrenchwhistle|r)
     .complete 1096,1
     .mob Gerenzo Wrenchwhistle
@@ -6177,15 +6177,83 @@ step
     .turnin 5943 >>Palauta: Gizelton Caravan
     .target Smeed Scrabblescrew
 step
-    .goto 1443/1,2084.32,-1400.63
-    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
-    .accept 6134 >>Ota: Ghost-o-plasm Round Up
-    .target Hornizz Brimbuzzle
+    .goto 1443/1,951.37,-980.92
+    >>Kerää |cRXP_LOOT_Khan Dez'hepah's Head|r (|cRXP_ENEMY_Khan Dez'hepah|r)
+    .complete 1365,1
+    .mob Khan Dez'hepah
+step
+    .goto 1443/1,1243.60,-672.14
+    >>Puhu: |cRXP_FRIENDLY_Cork Gizelton|r
+    .accept 5821 >>Ota: Bodyguard for Hire
+    .target Cork Gizelton
+step
+    .goto 1443/1,1432.43,-717.10
+    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
+    .accept 5501 >>Ota: Bone Collector
+    .target Bibbly F'utzbuckle
+step
+    .goto 1443/1,2484.45,-363.35
+    >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
+    .accept 5741 >>Ota: Sceptre of Light
+    .target Azore Aldamort
+step
+    .goto 1443/1,2610.34,-459.28
+    >>Klikkaa: |cRXP_PICK_Rackmore's Log|r
+    .accept 6161 >>Ota: Claim Rackmore's Treasure!
+step
+    .goto 1443/1,1747.14,-444.29
+    >>Kerää |cRXP_LOOT_Infused Burning Gem|r (|cRXP_ENEMY_Burning Blade Augur|r, |cRXP_ENEMY_Burning Blade Felsworn|r, |cRXP_ENEMY_Burning Blade Adept|r)
+    >>Kerää |cRXP_LOOT_Sceptre of Light|r (|cRXP_ENEMY_Burning Blade Seer|r)
+    .complete 1435,1
+    .complete 5741,1
+    .mob Burning Blade Augur
+    .mob Burning Blade Felsworn
+    .mob Burning Blade Adept
+    .mob Burning Blade Seer
+step
+    .goto 1443/1,2484.45,-363.35
+    >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
+    .turnin 5741 >>Palauta: Sceptre of Light
+    .accept 6027 >>Ota: Book of the Ancients
+    .target Azore Aldamort
 step
     .goto 1443/1,2704.75,-1151.80
     >>Puhu: |cRXP_FRIENDLY_Melizza Brimbuzzle|r
     .accept 6132 >>Ota: Get Me Out of Here!
     .target Melizza Brimbuzzle
+step
+    .goto 1443/1,2430.50,-1394.63
+    >>Melizza Brimbuzzle escorted to safety
+    .complete 6132,1
+step
+    .goto 1443/1,2084.32,-1400.63
+    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
+    .accept 6134 >>Ota: Ghost-o-plasm Round Up
+    .target Hornizz Brimbuzzle
+step
+    .goto 1443/1,1706.67,-1334.67
+    >>Puhu: |cRXP_FRIENDLY_Felgur Twocuts|r
+    .turnin 1365 >>Palauta: Khan Dez'hepah
+    .accept 1366 >>Ota: Centaur Bounty
+    .target Felgur Twocuts
+step
+    .goto 1443/1,1189.65,-1745.39
+    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Windchaser|r)
+    .complete 1366,1
+    .mob Magram Guardian
+    .mob Magram Necromancer
+    .mob Gelkis Windchaser
+step
+    .goto 1443/1,1347.01,-2294.01
+    >>Kerää |cRXP_LOOT_Ghost-o-plasm|r (|cRXP_ENEMY_Magrami Spectre|r)
+    .complete 6134,1
+    .mob Magrami Spectre
+step
+    .goto 1443/1,2084.32,-1400.63
+    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
+    .turnin 6134 >>Palauta: Ghost-o-plasm Round Up
+    .turnin 6132 >>Palauta: Get Me Out of Here!
+    .target Hornizz Brimbuzzle
 step
     .goto 1443/1,3262.23,-1770.27
     .fp Shadowprey Village >>Hae flight path: Shadowprey Village
@@ -6196,6 +6264,18 @@ step
     .skill cooking,<125,1
     .skill cooking,225,1,1
     .target Wulan
+step
+    .goto 1443/1,3073.41,-1677.04
+    .vendor >>Myy harmaat roinat (Hae'Wilani)
+    .target Hae'Wilani
+step
+    .goto 1443/1,3150.29,-1592.80
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Sikewa
+step
+    .goto 1443/1,3150.29,-1592.80
+    .home >>Aseta Hearthstone tähän (Innkeeper Sikewa)
+    .target Innkeeper Sikewa
 step
     .goto 1443/1,3073.41,-1592.50
     >>Puhu: |cRXP_FRIENDLY_Taiga Wisemane|r
@@ -6222,95 +6302,24 @@ step
     .accept 6142 >>Ota: Clam Bait
     .target Mai'Lahii
 step
-    .goto 1443/1,2430.50,-1394.63
-    >>Melizza Brimbuzzle escorted to safety
-    .complete 6132,1
-step
-    .goto 1443/1,1347.01,-2294.01
-    >>Kerää |cRXP_LOOT_Ghost-o-plasm|r (|cRXP_ENEMY_Magrami Spectre|r)
-    .complete 6134,1
-    .mob Magrami Spectre
-step
-    .goto 1443/1,2084.32,-1400.63
-    >>Puhu: |cRXP_FRIENDLY_Hornizz Brimbuzzle|r
-    .turnin 6134 >>Palauta: Ghost-o-plasm Round Up
-    .turnin 6132 >>Palauta: Get Me Out of Here!
-    .target Hornizz Brimbuzzle
-step
-    .goto 1443/1,1432.43,-717.10
-    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
-    .accept 5501 >>Ota: Bone Collector
-    .target Bibbly F'utzbuckle
-step
-    .goto 1443/1,1243.60,-672.14
-    >>Puhu: |cRXP_FRIENDLY_Cork Gizelton|r
-    .accept 5821 >>Ota: Bodyguard for Hire
-    .target Cork Gizelton
-step
-    .goto 1443/1,942.38,-801.05
-    >>Kerää |cRXP_LOOT_Khan Dez'hepah's Head|r (|cRXP_ENEMY_Khan Dez'hepah|r)
-    .complete 1365,1
-    .mob Khan Dez'hepah
-step
-    .goto 1443/1,1212.13,-1244.74
-    >>Escort Gizelton Caravan past Kolkar Centaur Village
-    .complete 5821,1
-step
-    .goto 1443/1,1706.67,-1334.67
-    >>Puhu: |cRXP_FRIENDLY_Felgur Twocuts|r
-    .turnin 1365 >>Palauta: Khan Dez'hepah
-    .accept 1366 >>Ota: Centaur Bounty
-    .target Felgur Twocuts
-step
-    .goto 1443/1,1742.64,-1220.75
-    >>Puhu: |cRXP_FRIENDLY_Nataka Longhorn|r
-    .turnin 5386 >>Palauta: Catch of the Day
-    .target Nataka Longhorn
-step
-    .goto 1443/1,2484.45,-363.35
-    >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
-    .accept 5741 >>Ota: Sceptre of Light
-    .target Azore Aldamort
-step
-    .goto 1443/1,2610.34,-459.28
-    >>Klikkaa: |cRXP_PICK_Rackmore's Log|r
-    .accept 6161 >>Ota: Claim Rackmore's Treasure!
-step
     .goto 1443/1,2664.29,-489.26
     >>Kerää |cRXP_LOOT_Rackmore's Silver Key|r (|cRXP_ENEMY_Drysnap Crawler|r, |cRXP_ENEMY_Drysnap Pincer|r)
-    >>Tapa |cRXP_ENEMY_Slitherblade Naga|r
     >>Kerää |cRXP_LOOT_Rackmore's Golden Key|r (|cRXP_ENEMY_Slitherblade Myrmidon|r, |cRXP_ENEMY_Slitherblade Naga|r, |cRXP_ENEMY_Slitherblade Sea Witch|r)
     .complete 6161,1
-    .complete 6143,2
     .complete 6161,2
     .mob Drysnap Crawler
     .mob Drysnap Pincer
-    .mob Slitherblade Naga
     .mob Slitherblade Myrmidon
+    .mob Slitherblade Naga
 step
-    .goto 1443/1,1760.62,-345.36
-    >>Kerää |cRXP_LOOT_Demon Box|r (|cRXP_ENEMY_Demon Spirit|r)
-    >>Kerää |cRXP_LOOT_Infused Burning Gem|r (|cRXP_ENEMY_Burning Blade Augur|r, |cRXP_ENEMY_Burning Blade Felsworn|r, |cRXP_ENEMY_Burning Blade Adept|r)
-    >>Kerää |cRXP_LOOT_Sceptre of Light|r (|cRXP_ENEMY_Burning Blade Seer|r)
-    .complete 5381,1
-    .complete 1435,1
-    .complete 5741,1
-    .mob Demon Spirit
-    .mob Burning Blade Augur
-    .mob Burning Blade Felsworn
-    .mob Burning Blade Adept
-step
-    .goto 1443/1,2484.45,-363.35
-    >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
-    .turnin 5741 >>Palauta: Sceptre of Light
-    .accept 6027 >>Ota: Book of the Ancients
-    .target Azore Aldamort
-step
-    .goto 1443/1,2655.30,-261.42
+    .goto 1443/1,2578.87,-279.41
+    >>Kerää |cRXP_LOOT_Soft-shelled Clam Meat|r (|cRXP_ENEMY_Enraged Reef Crawler|r, |cRXP_PICK_Giant Softshell Clam|r)
     >>Tapa |cRXP_ENEMY_Slitherblade Sorceress|r
     >>Tapa |cRXP_ENEMY_Slitherblade Myrmidon|r
+    .complete 6142,1
     .complete 6143,3
     .complete 6143,1
+    .mob Enraged Reef Crawler
     .mob Slitherblade Sorceress
     .mob Slitherblade Myrmidon
 step
@@ -6323,19 +6332,105 @@ step
     >>Klikkaa: |cRXP_PICK_Rackmore's Chest|r
     .turnin 6161 >>Palauta: Claim Rackmore's Treasure!
 step
+    .goto 1443/1,2484.45,-189.47
+    >>Tapa |cRXP_ENEMY_Slitherblade Naga|r
+    .complete 6143,2
+    .mob Slitherblade Naga
+step
     .goto 1443/1,2484.45,-363.35
     >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
     .turnin 6027 >>Palauta: Book of the Ancients
     .target Azore Aldamort
 step
-    .goto 1443/1,2713.74,-513.25
-    >>Kerää |cRXP_LOOT_Soft-shelled Clam Meat|r (|cRXP_ENEMY_Enraged Reef Crawler|r, |cRXP_PICK_Giant Softshell Clam|r)
-    .complete 6142,1
-    .mob Enraged Reef Crawler
+    .goto 1443/1,1760.62,-345.36
+    >>Kerää |cRXP_LOOT_Demon Box|r (|cRXP_ENEMY_Demon Spirit|r)
+    .complete 5381,1
+    .mob Demon Spirit
 step
-    .goto 1443/1,3150.29,-1592.80
-    .home >>Aseta Hearthstone tähän (Innkeeper Sikewa)
-    .target Innkeeper Sikewa
+    .goto 1443/1,987.34,-114.52
+    >>Tapa |cRXP_ENEMY_Hatefury Betrayer|r
+    >>Tapa |cRXP_ENEMY_Hatefury Hellcaller|r
+    >>Tapa |cRXP_ENEMY_Hatefury Rogue|r
+    >>Tapa |cRXP_ENEMY_Hatefury Felsworn|r
+    .complete 1434,3
+    .complete 1434,4
+    .complete 1434,1
+    .complete 1434,2
+    .mob Hatefury Betrayer
+    .mob Hatefury Hellcaller
+    .mob Hatefury Rogue
+    .mob Hatefury Felsworn
+step
+    .goto 1443/1,1886.51,-1148.80
+    >>Puhu: |cRXP_FRIENDLY_Maurin Bonesplitter|r
+    .turnin 1435 >>Palauta: The Burning of Spirits
+    .target Maurin Bonesplitter
+step
+    .goto 1443/1,1868.52,-1178.78
+    >>Puhu: |cRXP_FRIENDLY_Takata Steelblade|r
+    .turnin 1434 >>Palauta: Befouled by Satyr
+    .accept 1436 >>Ota: Alliance Relations
+    .target Takata Steelblade
+step
+    .goto 1443/1,2097.81,-1184.78
+    >>Klikkaa: |cRXP_PICK_Extinguished Campfire|r
+    .accept 79229 >>Ota: Highway Robbery
+step
+    .goto 1443/1,1855.04,-1259.73
+    >>Kerää |cRXP_LOOT_Kodo Bone|r (|cRXP_PICK_Kodo Bones|r)
+    .complete 5501,1
+step
+    .goto 1443/1,1706.67,-1334.67
+    >>Puhu: |cRXP_FRIENDLY_Felgur Twocuts|r
+    .turnin 1366 >>Palauta: Centaur Bounty
+    .target Felgur Twocuts
+step
+    .goto 1443/1,1702.18,-1337.67
+    >>Puhu: |cRXP_FRIENDLY_Gurda Wildmane|r
+    .accept 93225 >>Ota: Carved Centaur Totems
+    .target Gurda Wildmane
+step
+    .goto 1443/1,1742.64,-1220.75
+    >>Puhu: |cRXP_FRIENDLY_Nataka Longhorn|r
+    .turnin 5386 >>Palauta: Catch of the Day
+    .target Nataka Longhorn
+step
+    .goto 1443/1,1432.43,-717.10
+    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
+    .turnin 5501 >>Palauta: Bone Collector
+    .turnin 79229 >>Palauta: Highway Robbery
+    .accept 79235 >>Ota: On the Lam
+    .target Bibbly F'utzbuckle
+step
+    .goto 1443/1,1212.13,-1244.74
+    >>Escort Gizelton Caravan past Kolkar Centaur Village
+    .complete 5821,1
+step
+    .goto 1443/1,1144.70,-1679.44
+    >>Kerää |cRXP_LOOT_Carved Centaur Totem|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Gelkis Windchaser|r, |cRXP_ENEMY_Gelkis Stamper|r)
+    .complete 93225,1
+    .mob Magram Guardian
+    .mob Gelkis Windchaser
+    .mob Gelkis Stamper
+step
+    .goto 1443/1,1495.37,-1403.63
+    >>Puhu: |cRXP_FRIENDLY_Smeed Scrabblescrew|r
+    .turnin 5821 >>Palauta: Bodyguard for Hire
+    .target Smeed Scrabblescrew
+step
+    .goto 1443/1,1702.18,-1337.67
+    >>Puhu: |cRXP_FRIENDLY_Gurda Wildmane|r
+    .turnin 93225 >>Palauta: Carved Centaur Totems
+    .target Gurda Wildmane
+step
+    .hs >>Hearthstone: Innkeeper Sikewa
+    .cooldown item,6948,>0
+step
+    .goto 1443/1,3188.50,-1638.06
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Malux|r
+    .skill skinning,<125,1
+    .skill skinning,225,1,1
+    .target Malux
 step
     .goto 1443/1,3073.41,-1592.50
     >>Puhu: |cRXP_FRIENDLY_Taiga Wisemane|r
@@ -6353,97 +6448,10 @@ step
     .turnin 6143 >>Palauta: Other Fish to Fry
     .target Drulzegar Skraghook
 step
-    .goto 1443/1,3195.25,-1694.72
-    .vendor >>Myy harmaat roinat (Lah'Mawhani)
-    .target Lah'Mawhani
-step
-    .goto 1443/1,3150.29,-1592.80
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Sikewa
-step
-    .goto 1443/1,2097.81,-1184.78
-    >>Klikkaa: |cRXP_PICK_Extinguished Campfire|r
-    .accept 79229 >>Ota: Highway Robbery
-step
-    .goto 1443/1,1796.59,-1313.69
-    >>Kerää |cRXP_LOOT_Kodo Bone|r (|cRXP_PICK_Kodo Bones|r)
-    .complete 5501,1
-step
-    .goto 1443/1,1702.18,-1337.67
-    >>Puhu: |cRXP_FRIENDLY_Gurda Wildmane|r
-    .accept 93225 >>Ota: Carved Centaur Totems
-    .target Gurda Wildmane
-step
-    .goto 1443/1,1356.00,-1796.35
-    >>Kerää |cRXP_LOOT_Centaur Ear|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Magram Necromancer|r, |cRXP_ENEMY_Gelkis Windchaser|r)
-    >>Kerää |cRXP_LOOT_Carved Centaur Totem|r (|cRXP_ENEMY_Magram Guardian|r, |cRXP_ENEMY_Gelkis Windchaser|r, |cRXP_ENEMY_Gelkis Stamper|r)
-    .complete 1366,1
-    .complete 93225,1
-    .mob Magram Guardian
-    .mob Magram Necromancer
-    .mob Gelkis Windchaser
-    .mob Gelkis Stamper
-step
-    .goto 1443/1,1495.37,-1403.63
-    >>Puhu: |cRXP_FRIENDLY_Smeed Scrabblescrew|r
-    .turnin 5821 >>Palauta: Bodyguard for Hire
-    .target Smeed Scrabblescrew
-step
-    .goto 1443/1,1702.18,-1337.67
-    >>Puhu: |cRXP_FRIENDLY_Gurda Wildmane|r
-    .turnin 93225 >>Palauta: Carved Centaur Totems
-    .target Gurda Wildmane
-step
-    .goto 1443/1,1706.67,-1334.67
-    >>Puhu: |cRXP_FRIENDLY_Felgur Twocuts|r
-    .turnin 1366 >>Palauta: Centaur Bounty
-    .target Felgur Twocuts
-step
-    .goto 1443/1,1432.43,-717.10
-    >>Puhu: |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
-    .turnin 5501 >>Palauta: Bone Collector
-    .turnin 79229 >>Palauta: Highway Robbery
-    .accept 79235 >>Ota: On the Lam
-    .target Bibbly F'utzbuckle
-step
-    .goto 1443/1,888.43,-279.41
-    >>Tapa |cRXP_ENEMY_Hatefury Felsworn|r
-    >>Tapa |cRXP_ENEMY_Hatefury Hellcaller|r
-    >>Tapa |cRXP_ENEMY_Hatefury Rogue|r
-    >>Tapa |cRXP_ENEMY_Hatefury Betrayer|r
-    .complete 1434,2
-    .complete 1434,4
-    .complete 1434,1
-    .complete 1434,3
-    .mob Hatefury Felsworn
-    .mob Hatefury Hellcaller
-    .mob Hatefury Rogue
-    .mob Hatefury Betrayer
-step
-    .goto 1443/1,1886.51,-1148.80
-    >>Puhu: |cRXP_FRIENDLY_Maurin Bonesplitter|r
-    .turnin 1435 >>Palauta: The Burning of Spirits
-    .target Maurin Bonesplitter
-step
-    .goto 1443/1,1868.52,-1178.78
-    >>Puhu: |cRXP_FRIENDLY_Takata Steelblade|r
-    .turnin 1434 >>Palauta: Befouled by Satyr
-    .accept 1436 >>Ota: Alliance Relations
-    .target Takata Steelblade
-step
-    .goto 1443/1,1967.43,-1658.45
+    .goto 1443/1,2012.39,-1826.33
     >>Tapa |cRXP_ENEMY_Demon Portal Guardian|r
     .complete 5581,1
     .mob Demon Portal Guardian
-step
-    .hs >>Hearthstone: Innkeeper Sikewa
-    .cooldown item,6948,>0
-step
-    .goto 1443/1,3188.50,-1638.06
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 125+|r. Opettele Expert Skinning (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Malux|r
-    .skill skinning,<125,1
-    .skill skinning,225,1,1
-    .target Malux
 step
     .goto 1443/1,3073.41,-1592.50
     >>Puhu: |cRXP_FRIENDLY_Taiga Wisemane|r
@@ -6477,6 +6485,10 @@ step
     .skill alchemy,<125,1
     .skill alchemy,225,1,1
     .target Jaxin Chong
+step
+    .goto 1434/0,495.34,-14457.65
+    .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
+    .target Innkeeper Skindle
 step
     .goto 1434/0,459.61,-14465.73
     >>Puhu: |cRXP_FRIENDLY_Scooty|r
@@ -6565,21 +6577,17 @@ step
 step
     .goto 1434/0,-152.99,-12470.52
     >>Tapa |cRXP_ENEMY_Mosh'Ogg Witch Doctor|r
-    .complete 569,2
-    .mob Mosh'Ogg Witch Doctor
-step
-    .goto 1434/0,211.38,-12434.36
-    .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
-    .target Innkeeper Thulbek
-step
-    .goto 1434/0,-140.23,-12487.54
     >>Tapa |cRXP_ENEMY_Mosh'Ogg Brute|r
+    .complete 569,2
+    .complete 569,1
+    .mob Mosh'Ogg Witch Doctor
+    .mob Mosh'Ogg Brute
+step
+    .goto 1434/0,-89.18,-12687.49
     >>Kerää |cRXP_LOOT_Shadowmaw Claw|r (|cRXP_ENEMY_Shadowmaw Panther|r, |cRXP_ENEMY_Elder Shadowmaw Panther|r)
     >>Kerää |cRXP_LOOT_Pristine Tigress Fang|r (|cRXP_ENEMY_Stranglethorn Tigress|r)
-    .complete 569,1
     .complete 570,1
     .complete 570,2
-    .mob Mosh'Ogg Brute
     .mob Shadowmaw Panther
     .mob Elder Shadowmaw Panther
     .mob Stranglethorn Tigress
@@ -6718,8 +6726,17 @@ step
     .complete 192,1
     .mob Shadowmaw Panther
 step
-    .hs >>Hearthstone: Innkeeper Thulbek
-    .cooldown item,6948,>0
+    .goto 1434/0,203.72,-12410.12
+    .vendor >>Myy harmaat roinat (Hragran)
+    .target Hragran
+step
+    .goto 1434/0,211.38,-12434.36
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Thulbek
+step
+    .goto 1434/0,211.38,-12434.36
+    .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
+    .target Innkeeper Thulbek
 step
     .goto 1434/0,159.69,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Kin'weelay|r
@@ -6753,10 +6770,6 @@ step
     .goto 1434/0,172.45,-12410.97
     >>Puhu: |cRXP_FRIENDLY_Far Seer Mok'thardin|r
     .turnin 572 >>Palauta: Mok'thardin's Enchantment
-    .target Far Seer Mok'thardin
-step
-    .goto 1434/0,172.45,-12410.97
-    >>Puhu: |cRXP_FRIENDLY_Far Seer Mok'thardin|r
     .accept 571 >>Ota: Mok'thardin's Enchantment
     .target Far Seer Mok'thardin
 step
@@ -6784,6 +6797,9 @@ step
     >>Kerää |cRXP_LOOT_Shrunken Head|r (|cRXP_ENEMY_Bloodscalp Headhunter|r)
     .complete 582,1
     .mob Bloodscalp Headhunter
+step
+    .hs >>Hearthstone: Innkeeper Thulbek
+    .cooldown item,6948,>0
 step
     .goto 1434/0,166.07,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Nimboya|r
@@ -6895,6 +6911,10 @@ step
     .accept 587 >>Ota: Up to Snuff
     .target Deeg
 step
+    .goto 1434/0,495.34,-14457.65
+    .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
+    .target Innkeeper Skindle
+step
     .goto 1434/0,504.28,-14452.97
     >>Puhu: |cRXP_FRIENDLY_Krazek|r
     .turnin 201 >>Palauta: Investigate the Camp
@@ -6939,10 +6959,8 @@ step
     .turnin 571 >>Palauta: Mok'thardin's Enchantment
     .target Far Seer Mok'thardin
 step
-    .goto 1434/0,144.37,-12417.35
-    .fly Booty Bay >>Lennä: Booty Bay
-    .target Thysta
-    .zoneskip Stranglethorn Vale
+    .hs >>Hearthstone: Innkeeper Skindle
+    .cooldown item,6948,>0
 step
     .goto 1434/0,446.85,-14448.71
     >>Puhu: |cRXP_FRIENDLY_"Sea Wolf" MacKinley|r
@@ -6952,10 +6970,6 @@ step
     .goto 1434/0,468.54,-14467.86
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Jutak)
     .target Jutak
-step
-    .goto 1434/0,495.34,-14457.65
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Skindle
 step
     .goto 1434/0,504.28,-14733.74
     >>Kerää |cRXP_LOOT_Snuff|r (|cRXP_ENEMY_Bloodsail Sea Dog|r, |cRXP_ENEMY_Bloodsail Elder Magus|r, |cRXP_ENEMY_Bloodsail Warlock|r)
@@ -7208,6 +7222,14 @@ step
     .accept 96986 >>Ota: The Grave Knight
     .target Melisara
 step
+    .goto 1424/0,-867.09,-158.51
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Ott)
+    .target Ott
+step
+    .goto 1424/0,-942.29,-5.97
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Shay
+step
     .goto 1424/0,-936.53,-43.73
     >>Klikkaa: |cRXP_PICK_WANTED|r
     .accept 566 >>Ota: WANTED: Baron Vardus
@@ -7256,10 +7278,6 @@ step
     .mob Baron Vardus
 step
     .zone Hillsbrad Foothills >>Matkusta: Hillsbrad Foothills. Silverpinen läpi etelään Hillsbrad Foothillsiin, tai lennä Tarren Milliin, jos lentopaikka on haettu. Tarren Mill on Hillsbradin koillisosassa
-step
-    .goto 1424/0,-942.29,-5.97
-    .vendor >>Myy harmaat roinat (Innkeeper Shay)
-    .target Innkeeper Shay
 step
     .goto 1424/0,-955.73,-41.60
     >>Puhu: |cRXP_FRIENDLY_Krusk|r
@@ -7485,10 +7503,6 @@ step
     .turnin 678 >>Palauta: Call to Arms
     .target Drum Fel
 step
-    .goto 1417/0,-3524.91,-912.37
-    .home >>Aseta Hearthstone tähän (Innkeeper Adegwa)
-    .target Innkeeper Adegwa
-step
     .goto 1417/0,-3537.87,-946.93
     >>Puhu: |cRXP_FRIENDLY_Drum Fel|r
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
@@ -7512,14 +7526,6 @@ step
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .accept 673 >>Ota: Foul Magics
     .target Tor'gan
-step
-    .goto 1417/0,-3560.91,-963.49
-    .vendor >>Myy harmaat roinat (Tunkk)
-    .target Tunkk
-step
-    .goto 1417/0,-3524.91,-912.37
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Adegwa
 step
     .goto 1417/0,-2169.87,-1510.93
     >>Klikkaa: |cRXP_PICK_Stone of Inner Binding|r
@@ -7601,9 +7607,6 @@ step
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 640
     .complete 640,1
-step
-    .hs >>Hearthstone: Innkeeper Adegwa
-    .cooldown item,6948,>0
 step
     .goto 1417/0,-3555.87,-1004.53
     >>Puhu: |cRXP_FRIENDLY_Tor'gan|r
@@ -7780,7 +7783,7 @@ step
     .accept 1150 >>Ota: Test of Endurance
     .target Dorn Plainstalker
 step
-    .goto 1441/1,-1590.53,-5594.67
+    .goto 1441/1,-1590.53,-5597.60
     >>Kerää |cRXP_LOOT_Grenka's Claw|r (|cRXP_ENEMY_Grenka Bloodscreech|r)
     .complete 1150,1
     .mob Grenka Bloodscreech
@@ -7990,6 +7993,10 @@ step
     .goto 1458/0,198.37,1505.28
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Gillian Moore)
     .target Gillian Moore
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
@@ -8437,10 +8444,6 @@ step
     .vendor >>Myy harmaat roinat (Algernon)
     .target Algernon
 step
-    .goto 1458/0,223.31,1635.41
-    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
-    .target Innkeeper Norman
-step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step
     .goto 1454/1,-4313.46,1676.24
@@ -8462,22 +8465,14 @@ step
 step
     .xp 37 >>Tavoitetaso 37 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
-    .zone Stranglethorn Vale >>Matkusta: Stranglethorn Vale. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
-step
-    .goto 1434/0,144.37,-12417.35
-    .fly Booty Bay >>Lennä: Booty Bay
-    .target Thysta
-    .zoneskip Stranglethorn Vale
+    .hs >>Hearthstone: Innkeeper Skindle
+    .cooldown item,6948,>0
 step
     .goto 1434/0,471.09,-14451.26
     >>|cRXP_WARN_Ammatti: Fishing 125+|r. Osta ja lue kirja |cRXP_BUY_Expert Fishing - The Bass and You|r (Old Man Heming) avataksesi Expert Fishing (max 225)
     .skill fishing,<125,1
     .skill fishing,225,1,1
     .target Old Man Heming
-step
-    .goto 1434/0,495.34,-14457.65
-    .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
-    .target Innkeeper Skindle
 step
     .goto 1434/0,485.13,-14444.46
     >>Puhu: |cRXP_FRIENDLY_Fleet Master Seahorn|r
@@ -8676,6 +8671,10 @@ step
     .vendor >>Myy harmaat roinat (Vharr)
     .target Vharr
 step
+    .goto 1434/0,211.38,-12434.36
+    .vendor >>Osta vettä (Moonberry Juice) ja ruokaa, noin 20+20
+    .target Innkeeper Thulbek
+step
     .goto 1434/0,-57.27,-11628.20
     >>Puhu: |cRXP_FRIENDLY_Hemet Nesingwary|r
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
@@ -8705,7 +8704,7 @@ step
     .accept 592 >>Ota: Saving Yenniku
     .target Kin'weelay
 step
-    .goto 1434/0,255.41,-12993.79
+    .goto 1434/0,255.41,-12998.04
     >>Kerää |cRXP_LOOT_Talon of Tethis|r (|cRXP_ENEMY_Tethis (elite, ryhmä)|r)
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .isOnQuest 197
@@ -9039,10 +9038,6 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Sranda)
     .target Sranda
 step
-    .goto 1418/0,-2149.31,-6650.09
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Shul'kar
-step
     .goto 1418/0,-2723.43,-6634.17
     >>Puhu: |cRXP_FRIENDLY_Lotwil Veriatus|r
     .turnin 711 >>Palauta: Study of the Elements: Rock
@@ -9231,6 +9226,10 @@ step
     .goto 1458/0,190.31,1688.54
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Lucille Castleton)
     .target Lucille Castleton
+step
+    .goto 1458/0,223.31,1635.41
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Norman
 step
     .zone Orgrimmar >>Matkusta: Orgrimmar. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 step

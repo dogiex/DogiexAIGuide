@@ -895,7 +895,8 @@ Guidelime.registerGuide([[
 [A Orc][G 65.5,60.2 Tirisfal Glades]Puhu: *Deathguard Linnea* [QT356 Rear Guard Patrol] [QA99156 Rear Guard Patrol]
 [OC]Matkusta: *Silverpine Forest*. Undercitystä lounaaseen Silverpine Forestiin
 [O][G 43.0,73.2 Silverpine Forest]Kerää *Berard's Journal* (Berard's Bookshelf) [QC450,1 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 42.8,40.9 Silverpine Forest]Puhu: *Apothecary Renferrel* [QT450 A Recipe For Death] [QA451 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 42.8,40.9 Silverpine Forest]Puhu: *Apothecary Renferrel* [QT450 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 42.8,40.9 Silverpine Forest]Puhu: *Apothecary Renferrel* [QA451 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 57.6,22.5 Silverpine Forest]Kerää *Hardened Tumor* (Vile Fin Lakestalker, Vile Fin Shredder, Vile Fin Tidecaller) [QC451,3 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 70.0,33.6 Silverpine Forest]Kerää *Lake Skulker Moss* (Lake Skulker, Elder Lake Skulker) [QC451,1 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 77.6,29.1 Silverpine Forest]Kerää *Lake Creeper Moss* (Elder Lake Creeper, Lake Creeper) [QC451,2 A Recipe For Death] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -932,7 +933,7 @@ Guidelime.registerGuide([[
 [G 12.2,33.8 Ashenvale][P Zoram'gar Outpost]Hae flight path (*Andruk*)
 [G 12.1,34.6 Ashenvale]Puhu: *Muglash* [QA6641 Vorsha the Lasher]
 [G 11.7,34.9 Ashenvale]Puhu: *Marukai* [QA6442 Naga at the Zoram Strand]
-[G 9.6,27.6 Ashenvale]Defeat Vorsha the Lasher; Kerää *Wrathtail Head* (Wrathtail Sorceress, Wrathtail Priestess, Wrathtail Myrmidon) [QC6641,1 Vorsha the Lasher] [QC6442,1 Naga at the Zoram Strand]
+[G 9.6,27.6 Ashenvale]Tapa *Vorsha the Lasher*; Kerää *Wrathtail Head* (Wrathtail Sorceress, Wrathtail Priestess, Wrathtail Myrmidon) [QC6641,1 Vorsha the Lasher] [QC6442,1 Naga at the Zoram Strand]
 [G 12.2,34.2 Ashenvale]Puhu: *Warsong Runner* [QT6641 Vorsha the Lasher]
 [G 11.7,34.9 Ashenvale]Puhu: *Marukai* [QT6442 Naga at the Zoram Strand]
 [G 11.7,34.1 Ashenvale][V Myy harmaat roinat] (*Wik'Tar*)
@@ -1089,7 +1090,6 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Swamp of Sorrows*. Lennä Stonardiin. Ensimmäisellä kerralla: Grom'golista pohjoiseen Duskwoodiin, Deadwind Passin läpi itään Swamp of Sorrowsiin
 [G 48.2,57.9 Swamp of Sorrows][T Shaman-trainer (taso 28)] (*Haromm*): Flame Shock r3, Lesser Healing Wave r2, Stoneclaw Totem r3, Water Walking, Fire Resistance Totem
 [G 45.5,51.4 Swamp of Sorrows][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gharash*)
-[G 45.2,56.7 Swamp of Sorrows][V Osta vettä (Sweet Nectar) ja ruokaa, noin 20+20] (*Innkeeper Karakul*)
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [G 45.1,63.9 Orgrimmar]Lennä (*Doras*): [F Zoram'gar Outpost]
 [G 11.6,34.3 Ashenvale]Puhu: *Je'neu Sancrea* [QT6562 Trouble in the Deeps] [QA6563 The Essence of Aku'Mai] [QA6921 Amongst the Ruins]
@@ -1103,7 +1103,7 @@ Guidelime.registerGuide([[
 [G 11.6,34.3 Ashenvale]Puhu: *Je'neu Sancrea* [QT6563 The Essence of Aku'Mai]
 [G 11.7,34.9 Ashenvale]Puhu: *Mitsuwa* [QT6462 Troll Charm]
 [G 11.9,34.5 Ashenvale]Puhu: *Karang Amakkar* [QT216 Between a Rock and a Thistlefur] [QA6621 King of the Foulweald]
-[G 56.5,63.5 Ashenvale]Kerää *Murgut's Totem* (Chief Murgut, Murgut's Totem Basket) [QC6621,1 King of the Foulweald]
+[G 56.5,63.5 Ashenvale]Kerää *Murgut's Totem* (Murgut's Totem Basket) [QC6621,1 King of the Foulweald]
 [G 74.0,60.6 Ashenvale][S Aseta Hearthstone tähän] (*Innkeeper Kaylisk*)
 [G 71.1,68.1 Ashenvale]Puhu: *Kuray'bin* [QA6503 Ashenvale Outrunners]
 [G 73.1,61.5 Ashenvale]Puhu: *Pixel* [QA6441 Satyr Horns]
@@ -1205,7 +1205,7 @@ Guidelime.registerGuide([[
 [G 59.0,62.6 Stonetalon Mountains]Puhu: *Ziz Fizziks* [QT1095 Further Instructions] [QA1096 Gerenzo Wrenchwhistle]
 [G 64.1,56.6 Stonetalon Mountains]Tapa *XT:9* [QC1068,2 Shredding Machines]
 [G 67.2,46.7 Stonetalon Mountains]Tapa *XT:4* [QC1068,1 Shredding Machines]
-[G 64.5,40.2 Stonetalon Mountains]Kerää *Gerenzo's Mechanical Arm* (Gerenzo Wrenchwhistle) [QC1096,1 Gerenzo Wrenchwhistle]
+[G 63.5,40.0 Stonetalon Mountains]Kerää *Gerenzo's Mechanical Arm* (Gerenzo Wrenchwhistle) [QC1096,1 Gerenzo Wrenchwhistle]
 [G 59.0,62.6 Stonetalon Mountains]Puhu: *Ziz Fizziks* [QT1096 Gerenzo Wrenchwhistle]
 [G 75.6,83.6 Stonetalon Mountains]Tapa *Grimtotem Brute*; Tapa *Grundig Darkcloud* [QC6629,2 Kill Grundig Darkcloud] [QC6629,1 Kill Grundig Darkcloud]
 [OC]Matkusta: *The Barrens*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
@@ -1579,12 +1579,13 @@ Guidelime.registerGuide([[
 [G 33.8,12.4 Stranglethorn Vale]Tapa *Young Stranglethorn Tiger* [QC185,1 Tiger Mastery]
 [G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT185 Tiger Mastery] [QA186 Tiger Mastery]
 [G 37.3,8.2 Stranglethorn Vale]Tapa *Young Panther* [QC190,1 Panther Mastery]
+[G 35.0,14.2 Stranglethorn Vale]Tapa *Stranglethorn Tiger* [QC186,1 Tiger Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT190 Panther Mastery]
 [OC]Matkusta: *Swamp of Sorrows*. Lennä Stonardiin. Ensimmäisellä kerralla: Grom'golista pohjoiseen Duskwoodiin, Deadwind Passin läpi itään Swamp of Sorrowsiin
 [G 48.2,57.9 Swamp of Sorrows][T Shaman-trainer (taso 38)] (*Haromm*): Stoneclaw Totem r4, Strength of Earth Totem r3, Lightning Bolt r7, Disease Cleansing Totem
 [G 45.5,51.4 Swamp of Sorrows][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gharash*)
 [OC]Matkusta: *Stranglethorn Vale*. Duskwoodista etelään Stranglethorn Valeen (Grom'gol Base Camp on länsirannikolla), tai lennä Grom'goliin / Booty Bayhin, jos lentopaikka on haettu
-[G 35.0,14.2 Stranglethorn Vale]Tapa *Stranglethorn Tiger* [QC186,1 Tiger Mastery]
-[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT190 Panther Mastery] [QA191 Panther Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QA191 Panther Mastery]
 [G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT186 Tiger Mastery] [QA187 Tiger Mastery]
 [G 31.9,16.1 Stranglethorn Vale]Tapa *Elder Stranglethorn Tiger*; Tapa *Stranglethorn Raptor* [QC187,1 Tiger Mastery] [QC194,1 Raptor Mastery]
 [G 30.4,8.8 Stranglethorn Vale]Tapa *Panther* [QC191,1 Panther Mastery]
@@ -1599,9 +1600,8 @@ Guidelime.registerGuide([[
 [G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QA568 The Defense of Grom'gol]
 [G 32.1,29.2 Stranglethorn Vale]Puhu: *Far Seer Mok'thardin* [QA570 Mok'thardin's Enchantment]
 [G 36.0,27.1 Stranglethorn Vale]Tapa *Lashtail Raptor* [QC568,1 The Defense of Grom'gol]
-[G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QT568 The Defense of Grom'gol]
 [G 31.5,29.8 Stranglethorn Vale][S Aseta Hearthstone tähän] (*Innkeeper Thulbek*)
-[G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QA569 The Defense of Grom'gol]
+[G 32.2,28.9 Stranglethorn Vale]Puhu: *Commander Aggro'gosh* [QT568 The Defense of Grom'gol] [QA569 The Defense of Grom'gol]
 [G 36.2,35.7 Stranglethorn Vale]Tapa *Shadowmaw Panther*; Kerää *Shadowmaw Claw* (Shadowmaw Panther, Elder Shadowmaw Panther); Kerää *Pristine Tigress Fang* (Stranglethorn Tigress) [QC192,1 Panther Mastery] [QC570,1 Mok'thardin's Enchantment] [QC570,2 Mok'thardin's Enchantment]
 [G 32.1,29.2 Stranglethorn Vale]Puhu: *Far Seer Mok'thardin* [QT570 Mok'thardin's Enchantment] [QA572 Mok'thardin's Enchantment]
 [G 32.7,39.2 Stranglethorn Vale]Tapa *Jungle Stalker*; Kerää *Jungle Stalker Feather* (Jungle Stalker) [QC196,1 Raptor Mastery] [QC572,1 Mok'thardin's Enchantment]
@@ -1767,7 +1767,8 @@ Guidelime.registerGuide([[
 [O][G 74.2,33.9 Arathi Highlands]Puhu: *Drum Fel* [QA679 Call to Arms] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QA639 Sigil of Strom] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 74.7,36.3 Arathi Highlands]Puhu: *Tor'gan* [QA673 Foul Magics] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QT652 Breaking the Keystone] [QA688 Myzrael's Allies] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QT652 Breaking the Keystone] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QA688 Myzrael's Allies] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 29.5,63.6 Arathi Highlands]Kerää *Befouled Bloodstone Orb* (Marez Cowl (elite, ryhmä)); Kerää *Sigil of Strom* (Syndicate Prowler (elite, ryhmä), Syndicate Conjuror (elite, ryhmä), Syndicate Magus (elite, ryhmä)) [QC673,1 Foul Magics] [QC639,1 Sigil of Strom] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 20.0,67.4 Arathi Highlands]Tapa *Boulderfist Shaman (elite, ryhmä)*; Kerää *Or'Kalar's Head* (Or'Kalar (elite, ryhmä)); Tapa *Boulderfist Lord (elite, ryhmä)* [QC679,1 Call to Arms] [QC680,1 The Real Threat] [QC679,2 Call to Arms] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [H Hearthstone: Innkeeper Adegwa] (jos cooldownilla, juokse tai lennä)
@@ -1775,17 +1776,23 @@ Guidelime.registerGuide([[
 [O][G 74.5,35.6 Arathi Highlands]Puhu: *Zaruk* [QT688 Myzrael's Allies] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 74.5,35.6 Arathi Highlands]Puhu: *Zaruk* [QA687 Theldurin the Lost]
 [O][G 74.2,33.9 Arathi Highlands]Puhu: *Drum Fel* [QT679 Call to Arms] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT639 Sigil of Strom] [QA640 The Broken Sigil] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT639 Sigil of Strom] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QA640 The Broken Sigil] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 74.0,33.1 Arathi Highlands]Puhu: *Korin Fel* [QT680 The Real Threat] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 24.5,59.4 Arathi Highlands]Kerää *Sigil Fragment* (Stromgarde Troll Hunter (elite, ryhmä), Stromgarde Defender (elite, ryhmä), Stromgarde Vindicator (elite, ryhmä)) [QC640,1 The Broken Sigil] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 74.7,36.3 Arathi Highlands]Puhu: *Tor'gan* [QT640 The Broken Sigil] [QA641 Sigil of Thoradin] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT641 Sigil of Thoradin] [QA643 Sigil of Arathor] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 74.7,36.3 Arathi Highlands]Puhu: *Tor'gan* [QT640 The Broken Sigil] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 74.7,36.3 Arathi Highlands]Puhu: *Tor'gan* [QA641 Sigil of Thoradin] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT641 Sigil of Thoradin] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QA643 Sigil of Arathor] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 33.5,52.1 Arathi Highlands]Kerää *Sigil of Arathor* (Lieutenant Valorcall (elite, ryhmä)) [QC643,1 Sigil of Arathor] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 72.5,33.4 Arathi Highlands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Mu'uta*)
-[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT643 Sigil of Arathor] [QA644 Sigil of Trollbane] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT643 Sigil of Arathor] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QA644 Sigil of Trollbane] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 28.4,58.1 Arathi Highlands]Kerää *Sigil of Trollbane* (Prince Galen Trollbane (elite, ryhmä)) [QC644,1 Sigil of Trollbane] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT644 Sigil of Trollbane] [QA645 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 28.9,59.6 Arathi Highlands]Klikkaa: *Trollbane's Tomb* [QT645 Trol'kalar] [QA646 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT644 Sigil of Trollbane] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QA645 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 28.9,59.6 Arathi Highlands]Klikkaa: *Trollbane's Tomb* [QT645 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 28.9,59.6 Arathi Highlands]Klikkaa: *Trollbane's Tomb* [QA646 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 73.8,34.0 Arathi Highlands]Puhu: *Zengu* [QT646 Trol'kalar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Badlands*. Lennä Kargathiin. Ensimmäisellä kerralla juosten: Hammerfall - Thandol Span - Wetlands - Loch Modan - etelän solasta Badlandsiin, Kargath on länsireunassa
 [G 51.4,76.9 Badlands]Puhu: *Theldurin the Lost* [QT687 Theldurin the Lost] [QA692 The Lost Fragments]
@@ -1815,7 +1822,7 @@ Guidelime.registerGuide([[
 [G 54.0,41.5 Thousand Needles]Puhu: *Dorn Plainstalker* [QA1149 Test of Faith]
 [G 26.4,32.9 Thousand Needles]If you have faith, leap from the planks overlooking Thousand Needles. [QC1149,1 Test of Faith]
 [G 54.0,41.5 Thousand Needles]Puhu: *Dorn Plainstalker* [QT1149 Test of Faith] [QA1150 Test of Endurance]
-[G 26.3,55.5 Thousand Needles]Kerää *Grenka's Claw* (Grenka Bloodscreech) [QC1150,1 Test of Endurance]
+[G 26.3,55.6 Thousand Needles]Kerää *Grenka's Claw* (Grenka Bloodscreech) [QC1150,1 Test of Endurance]
 [G 54.0,41.5 Thousand Needles]Puhu: *Dorn Plainstalker* [QT1150 Test of Endurance] [QA1151 Test of Strength]
 [OC]Matkusta: *Stranglethorn Vale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 [G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Undercity]
@@ -1982,15 +1989,17 @@ Guidelime.registerGuide([[
 [G 32.4,27.9 Stranglethorn Vale][V Myy harmaat roinat] (*Vharr*)
 [O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QA197 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 52.9,27.6 Stranglethorn Vale]Kerää *Mind's Eye* (Mai'Zoth (elite, ryhmä)) [QC591,1 The Mind's Eye] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 32.3,27.7 Stranglethorn Vale]Puhu: *Kin'weelay* [QT591 The Mind's Eye] [QA592 Saving Yenniku] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 30.8,42.9 Stranglethorn Vale]Kerää *Talon of Tethis* (Tethis (elite, ryhmä)) [QC197,1 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 32.3,27.7 Stranglethorn Vale]Puhu: *Kin'weelay* [QT591 The Mind's Eye] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 32.3,27.7 Stranglethorn Vale]Puhu: *Kin'weelay* [QA592 Saving Yenniku] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 30.8,43.0 Stranglethorn Vale]Kerää *Talon of Tethis* (Tethis (elite, ryhmä)) [QC197,1 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.0,58.4 Stranglethorn Vale]Kerää *Filled Soul Gem* (Yenniku) [QC592,1 Saving Yenniku] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
 [O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 26.9,77.1 Stranglethorn Vale]Lennä (*Gringer*): [F Grom'gol]
 [O][G 32.2,27.7 Stranglethorn Vale]Puhu: *Nimboya* [QT592 Saving Yenniku] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT197 Raptor Mastery] [QA208 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT197 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QA208 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 50.4,28.5 Stranglethorn Vale]Kerää *Maury's Key* (Mosh'Ogg Mauler (elite, ryhmä), Mosh'Ogg Shaman (elite, ryhmä), Mosh'Ogg Lord (elite, ryhmä)) [QC613,1 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 38.2,35.6 Stranglethorn Vale]Kerää *Head of Bangalash* (King Bangalash (elite, ryhmä)) [QC208,1 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT208 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -2596,11 +2605,13 @@ Guidelime.registerGuide([[
 [O][A Alchemy200][G 48.5,55.9 Swamp of Sorrows]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Rogvar*) [LE Alchemy 300]
 [O][G 47.9,54.8 Swamp of Sorrows]Puhu: *Fel'zerul* [QA1424 Pool of Tears] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 64.4,49.4 Swamp of Sorrows]Kerää *Atal'ai Artifact* (Atal'ai Artifact) [QC1424,1 Pool of Tears] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 47.9,54.8 Swamp of Sorrows]Puhu: *Fel'zerul* [QT1424 Pool of Tears] [QA1429 The Atal'ai Exile] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 47.9,54.8 Swamp of Sorrows]Puhu: *Fel'zerul* [QT1424 Pool of Tears] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 47.9,54.8 Swamp of Sorrows]Puhu: *Fel'zerul* [QA1429 The Atal'ai Exile] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 45.5,51.4 Swamp of Sorrows][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gharash*)
 [G 46.1,54.8 Swamp of Sorrows]Lennä (*Breyk*): [F Hammerfall]
 [OC]Matkusta: *The Hinterlands*. Hillsbradin koillisnurkasta (Durnholde Keepin ohi) polkua Hinterlandsiin. Revantusk Village on itärannikolla
-[O][G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1429 The Atal'ai Exile] [QA1444 Return to Fel'Zerul] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1429 The Atal'ai Exile] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QA1444 Return to Fel'Zerul] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QA1446 Jammal'an the Prophet]
 [G 73.0,32.7 Arathi Highlands]Lennä (*Urda*): [F Stonard]
 [O][G 47.9,54.8 Swamp of Sorrows]Puhu: *Fel'zerul* [QT1444 Return to Fel'Zerul] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -2928,7 +2939,8 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Puhu: *Commander Gor'shak* [QC3982,1 What Is Going On?]
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Commander Gor'shak* [QT3982 What Is Going On?] [QA4001 What Is Going On?]
 [G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Puhu: *Kharan Mighthammer* [QC4001,1 What Is Going On?]
-[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3452 The Flame's Casing] [QA3453 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3452 The Flame's Casing] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QA3453 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 34.8,30.9 Searing Gorge]Lennä (*Grisha*): [F Kargath]
 [G 2.9,47.2 Badlands][V Myy harmaat roinat] (*Sranda*)
 [G 3.3,48.3 Badlands]Puhu: *Thunderheart* [QT3907 Disharmony of Fire]
@@ -2946,10 +2958,12 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Tapa *Emperor Dagran Thaurissan*; Kerää *Thorium Shackles* [QC4003,1 The Royal Rescue] [QC4121,1 Precarious Predicament]
 [O][G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa vettä ja Ankh-reagenssi). Puhu: *Kalaran Windblade* [QC3453,1 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Princess Moira Bronzebeard* [QT4003 The Royal Rescue] [QA4004 The Princess Saved?]
-[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3453 The Torch of Retribution] [QA3454 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3453 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QA3454 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.1,39.1 Searing Gorge]Klikkaa: *Torch of Retribution* [QT3454 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QA3462 Squire Maltrake] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3462 Squire Maltrake] [QA3463 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3462 Squire Maltrake] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QA3463 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 33.3,54.5 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,4 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 35.7,60.7 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,1 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 44.0,60.9 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,2 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -3021,23 +3035,29 @@ Guidelime.registerGuide([[
 [O][G 42.3,66.2 Western Plaguelands]Tapa *Andorhal Tower Two*; Tapa *Andorhal Tower Three* [QC5098,2 All Along the Watchtowers] [QC5098,3 All Along the Watchtowers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 46.6,71.0 Western Plaguelands]Tapa *Andorhal Tower Four* [QC5098,4 All Along the Watchtowers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
-[O][G 83.1,68.9 Tirisfal Glades]Puhu: *High Executor Derrington* [QT5098 All Along the Watchtowers] [QA105 Alas, Andorhal] [QA838 Scholomance] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT838 Scholomance] [QA964 Skeletal Fragments] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.1,68.9 Tirisfal Glades]Puhu: *High Executor Derrington* [QT5098 All Along the Watchtowers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.1,68.9 Tirisfal Glades]Puhu: *High Executor Derrington* [QA105 Alas, Andorhal] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.1,68.9 Tirisfal Glades]Puhu: *High Executor Derrington* [QA838 Scholomance] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT838 Scholomance] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QA964 Skeletal Fragments] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Western Plaguelands*. Undercitystä itään Tirisfalin läpi Bulwarkiin ja Western Plaguelandsiin
 [O][G 45.3,69.2 Western Plaguelands]Kerää *Araj's Phylactery Shard* (Araj's Phylactery); Kerää *Skeletal Fragments* (Skeletal Acolyte, Skeletal Flayer, Skeletal Executioner) [QC105,1 Alas, Andorhal] [QC964,1 Skeletal Fragments] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
 [O][G 83.1,68.9 Tirisfal Glades]Puhu: *High Executor Derrington* [QT105 Alas, Andorhal] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT964 Skeletal Fragments] [QA5514 Mold Rhymes With...] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT964 Skeletal Fragments] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QA5514 Mold Rhymes With...] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [G 45.1,63.9 Orgrimmar]Lennä (*Doras*): [F Gadgetzan]
 [G 51.5,28.8 Tanaris][V Myy harmaat roinat] (*Krinkle Goodsteel*)
-[O][G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QT5514 Mold Rhymes With...] [QA5802 Fire Plume Forged] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QT5514 Mold Rhymes With...] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QA5802 Fire Plume Forged] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 51.6,25.4 Tanaris]Lennä (*Bulkrek Ragefist*): [F Marshal's Refuge]
 [O][G 48.9,47.0 Un'Goro Crater]Kerää *Unfinished Skeleton Key* (Fire Plume Ridge Lava Lake) [QC5802,1 Fire Plume Forged] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Stranglethorn Vale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 [G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Undercity]
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
-[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT5802 Fire Plume Forged] [QA5804 Araj's Scarab] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QT5802 Fire Plume Forged] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 83.3,69.2 Tirisfal Glades]Puhu: *Apothecary Dithers* [QA5804 Araj's Scarab] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Western Plaguelands*. Undercitystä itään Tirisfalin läpi Bulwarkiin ja Western Plaguelandsiin
 [O][G 45.3,69.2 Western Plaguelands]Kerää *Araj's Scarab* (Araj's Phylactery) [QC5804,1 Araj's Scarab] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Tirisfal Glades*. Undercityn ulkopuolelle Tirisfal Gladesiin
@@ -3267,7 +3287,8 @@ Guidelime.registerGuide([[
 [O][G 19.2,66.5 Arathi Highlands]Kerää *Keepsake of Remembrance* (Keepsake of Remembrance) [QC5461,1 The Human, Ras Frostwhisper] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 73.0,32.7 Arathi Highlands]Lennä (*Urda*): [F Undercity]
 [OC]Matkusta: *Western Plaguelands*. Undercitystä itään Tirisfalin läpi Bulwarkiin ja Western Plaguelandsiin
-[O][G 70.6,74.1 Western Plaguelands]Puhu: *Magistrate Marduke* [QT5461 The Human, Ras Frostwhisper] [QA5462 The Dying, Ras Frostwhisper] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 70.6,74.1 Western Plaguelands]Puhu: *Magistrate Marduke* [QT5461 The Human, Ras Frostwhisper] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 70.6,74.1 Western Plaguelands]Puhu: *Magistrate Marduke* [QA5462 The Dying, Ras Frostwhisper] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Eastern Plaguelands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [O][G 71.9,48.3 Eastern Plaguelands]Puhu: *Leonid Barthalomew the Revered* [QT5462 The Dying, Ras Frostwhisper] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]*Dungeon: Stratholme* (suositus taso 58+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Eastern Plaguelands) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
@@ -3347,14 +3368,16 @@ Guidelime.registerGuide([[
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [G 45.1,63.9 Orgrimmar]Lennä (*Doras*): [F Gadgetzan]
-[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8928 A Shifty Merchant] [QA8978 Return to Mokvar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8928 A Shifty Merchant] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QA8978 Return to Mokvar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 51.6,25.4 Tanaris]Lennä (*Bulkrek Ragefist*): [F Orgrimmar]
 [O][G 35.0,38.3 Orgrimmar]Puhu: *Mokvar* [QT8978 Return to Mokvar] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Stranglethorn Vale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 [G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Light's Hope Chapel]
 [O][G 22.2,63.5 Eastern Plaguelands]Puhu: *Nathanos Blightcaller* [QA6144 The Call to Command] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 70.5,47.5 Eastern Plaguelands]Lennä (*Georgia*): [F Undercity]
-[O][G 56.2,92.2 Undercity]Puhu: *Varimathras* [QT6144 The Call to Command] [QA6145 The Crimson Courier] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 56.2,92.2 Undercity]Puhu: *Varimathras* [QT6144 The Call to Command] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 56.2,92.2 Undercity]Puhu: *Varimathras* [QA6145 The Crimson Courier] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 63.2,48.6 Undercity]Lennä (*Michael Garrett*): [F Light's Hope Chapel]
 [O][G 51.4,30.6 Eastern Plaguelands]Kerää *The Grand Crusader's Command* (Crimson Courier (elite, ryhmä)) [QC6145,1 The Crimson Courier] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 22.2,63.5 Eastern Plaguelands]Puhu: *Nathanos Blightcaller* [QT6145 The Crimson Courier] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
