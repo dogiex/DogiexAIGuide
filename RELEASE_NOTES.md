@@ -1,3 +1,39 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.2
+
+Quest-datan päivitys (QuestieDB 0f37b70 -> 4f628e8, 1.1.3; 18 committia):
+- Foreverin datapäivitys 18.11.: 148 uutta questia, noin 390 muuttunutta, NPC-, objekti- ja esinetietoja. Oppaan questeista muuttui 67.
+- Uusien questien rotu- ja luokkarajat tarkistettiin, joten osa questeista kuuluu nyt eri roduille tai luokille kuin ennen.
+
+Datan perusteella pois tai vaihtuneet:
+- Challenge of the Desert Wolf on nyt vain Shamanille (pois muilta luokilta).
+- Camping 101: Mining on nyt vain Night Elfille ja Gnomelle, Camping 101: Leatherworking vain Night Elfille (pois Northshire-aloituksista ja Shadowglenin Priestiltä ja Warriorilta).
+- The Art of the Armorsmith on nyt vain Warriorille ja Paladinille; muilla luokilla tilalla The Way of the Weaponsmith.
+- Terror of the Desert Skies ei ole enää Hunterin class-quest. Oi! on nyt vain Alliancelle. Wisdom of the Guardians on nyt vain Night Elfille ja Taurenille (pois Skyborne-Druidilta).
+- Zephras Islen Taming the Beast -ketju on datassa nyt vain Alliancen Skybornelle, joten Horden Skyborne-Hunterilla on ketjusta enää yksi quest (mahdollinen datavirhe, ks. Tunnetut ongelmat).
+
+Reittisiirtymät (data muutti reittiä ja alueiden järjestystä; class- ja dungeon-questit ennallaan):
+- Alliance Mage, Paladin, Rogue, Shaman ja Warlock: noin 75-90 questia vähemmän (esim. Mage 1020 -> 944). Pois jäi erityisesti Stormwindin, Ashenvalen, Tanariksen, Darkshoren ja Darnassuksen questeja (mm. The Missing Diplomat -ketju) sekä Magelta, Shamanilta ja Warlockilta Stranglethornin questeja; tilalle tuli Desolacen questeja (Mage, Shaman, Warlock) ja Roguelle Stranglethornin ja Tanariksen questeja.
+- Alliance Druid, Hunter ja Priest: noin 15 questia enemmän (mm. Winterspring, Stormwind). Alliance Warrior: 21 pois (lähinnä Tanaris), 19 uutta.
+- Horde Hunter, Mage, Paladin, Priest, Rogue ja Shaman: 3-22 questia vähemmän; pois lähinnä Thunder Bluffin, Barrensin, Dustwallow'n ja Silithuksen questeja (Shamanilla myös Thousand Needles), tilalle Orgrimmarin ja Stranglethornin questeja.
+- Horde Druid, Warlock ja Warrior: 21-63 questia enemmän (esim. Warrior 870 -> 933).
+- Ammattitehtävät, jotka jäivät pois reitin muutoksen vuoksi: A Yeti of Your Own (Engineering; esiquest-ketju Are We There, Yeti? ei ole enää reitillä) Horden Hunterilta, Magelta, Paladinilta, Priestiltä, Roguelta ja Shamanilta sekä Alliancen Magelta, Paladinilta, Roguelta, Shamanilta ja Warlockilta (Horde Warriorilla se on nyt mukana), sekä Master of the Wild Leather ja Wild Leather Leggings (Leatherworking) Alliancen Magelta, Paladinilta, Shamanilta ja Warlockilta.
+- Osa lukujen nimistä muuttui, joten RestedXP:n edistyminen voi nollautua muuttuneissa luvuissa.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5999 -> 5878 min (-2,0 %), Alliance 6318 -> 6171 min (-2,3 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 4f628e8 (1.1.3). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.2.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.2.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.1
 
 Quest-datan päivitys (QuestieDB e1652ce -> 0f37b70, 1.1.2):

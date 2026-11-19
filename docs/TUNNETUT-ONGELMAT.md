@@ -15,13 +15,14 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen.
 - **Call of Fire** (Skyborne Shaman, ohjausquest Zephras Islelle): QuestieDB-datassa ei ole questin antajaa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
+- **Taming the Beast** (Horden Skyborne Hunter, v4.2): QuestieDB merkitsee Zephras Islen pet-ketjun nyt vain Alliancen Skybornelle, joten oppaassa on ketjusta vain yksi quest. Korjautuu, jos data korjataan.
 
 ### Alliance (v3.0)
 - **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest.
 - **Rogue**: Ravenholdtin ketju (Syndicate Sabotage, What's the Big Idea?, Covert Extraction, A Way In, Master of Disguise) jää pois kuten Hordella, koska The Manor, Ravenholdt alkaa esineestä. SI:7 ja To Hulfdan! ovat vaihtoehtoisia ohjausquesteja.
 - **Mage**: Investigate the Blue Recluse -ketju (Manaweave Robe) ei ole reitillä, ja Research Access vaatii Season of Discovery -kirjastoquestit.
 - **Warlock**: You Have Served Us Well (esiquest ei reitillä) ja Seeking Strahad.
-- **Hunter**: Terror of the Desert Skies (esiquest ei reitillä). **Druid**: Torwa Pathfinder.
+- **Druid**: Torwa Pathfinder.
 
 ## Tarkoituksella pois jätetyt
 - **The Hunter's Path** (Hunter, Durotar): tämä vapaaehtoinen ohjausquest Sen'jinissä jää pois, koska Taming the Beast otetaan suoraan Razor Hillistä. Itse questiketju tehdään.
@@ -31,6 +32,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Ammatit
 - **Guidelime** näyttää ammattitehtävän palautusrivin, vaikka tehtävää ei olisi otettu.
 - **Artisan-tason** tehtävävaatimukset ja erikoistumiset (Gnome/Goblin Engineering, Armorsmith/Weaponsmith) ovat mukana vain tehtävinä, ilman tarkempaa opastusta. Ammattitehtävät yli taidon 250 puuttuvat.
+- Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi v4.2:sta alkaen **A Yeti of Your Own** (Engineering) puuttuu osalta luokista ja **Wild Leather** -tehtävät (Leatherworking) Alliancen Magelta, Paladinilta, Shamanilta ja Warlockilta.
 
 ## Dungeonit
 - **Ruins of Lordaeron** (Alliance): reitti kulkee Southshoresta Undercityyn, joten PvP-merkintä tulee päälle Undercityssä.

@@ -63,7 +63,7 @@ Guidelime.registerGuide([[
 [G 47.6,52.6 Dun Morogh][T Rogue-trainer (taso 8)] (*Hogral Bakkan*): Gouge, Eviscerate r2, Evasion, First Aid, Stealth
 [G 55.9,48.6 Dun Morogh]Kerää *Mostly Dry Firewood* (Fallen Log) [QC99159,1 Finding Warmth]
 [G 57.7,44.9 Dun Morogh]Puhu: *Father Gavin* [QT99159 Finding Warmth] [QA99160 Rime's Wrath] [QA99162 Treacherous Cold]
-[G 56.5,44.0 Dun Morogh]Tapa *Minor Ice Elemental* [QC99160,1 Rime's Wrath]
+[G 57.0,45.1 Dun Morogh]Tapa *Minor Ice Elemental* [QC99160,1 Rime's Wrath]
 [G 57.7,44.9 Dun Morogh]Puhu: *Father Gavin* [QT99160 Rime's Wrath] [QA99161 Rime's Wrath]
 [G 58.3,42.1 Dun Morogh]Kerää *Avala's Core* (Avala) [QC99161,1 Rime's Wrath]
 [G 52.1,44.0 Dun Morogh]Kerää *Coalbeard's Rifle* (Coalbeard's Rifle) [QC99162,3 Treacherous Cold]
@@ -160,7 +160,7 @@ Guidelime.registerGuide([[
 [G 70.6,55.3 Dun Morogh]Tapa *Rockjaw Bonesnapper*; Tapa *Rockjaw Skullthumper* [QC433,1 The Public Servant] [QC432,1 Those Blasted Troggs!]
 [G 69.1,56.3 Dun Morogh]Puhu: *Foreman Stonebrow* [QT432 Those Blasted Troggs!]
 [G 68.7,56.0 Dun Morogh]Puhu: *Senator Mehr Stonehallow* [QT433 The Public Servant]
-[G 71.5,54.0 Dun Morogh]Kerää *Pristine Leopard Pelt* (Elder Snow Leopard) [QC95212,1 Never Saddle on Quality]
+[G 71.5,54.1 Dun Morogh]Kerää *Pristine Leopard Pelt* (Elder Snow Leopard) [QC95212,1 Never Saddle on Quality]
 [G 86.3,48.8 Dun Morogh]Puhu: *Mountaineer Barleybrew* [QT413 Shimmer Stout] [QA414 Stout to Kadrell]
 [G 83.9,39.2 Dun Morogh]Puhu: *Pilot Hammerfoot* [QA419 The Lost Pilot]
 [G 79.7,36.2 Dun Morogh]Klikkaa: *A Dwarven Corpse* [QT419 The Lost Pilot] [QA417 A Pilot's Revenge]
@@ -268,10 +268,9 @@ Guidelime.registerGuide([[
 [O][A First Aid1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (First Aid 1+): puhu *Sam Sarsaparilla* [QA97919 Camping 101: First Aid] Tavoite: Speak with Michelle Belle in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Leatherworking1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Leatherworking 1+): puhu *Sam Sarsaparilla* [QA97922 Camping 101: Leatherworking] Tavoite: Speak with Adele Fielder in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Tailoring1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Tailoring 1+): puhu *Sam Sarsaparilla* [QA97925 Camping 101: Tailoring] Tavoite: Speak with Eldrin in the Eastvale Logging Camp in Elwynn Forest to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Skinning1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Sam Sarsaparilla* [QA97924 Camping 101: Skinning] Tavoite: Speak with Helene Peltskinner in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Engineering1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Engineering 1+): puhu *Sam Sarsaparilla* [QA97918 Camping 101: Engineering] Tavoite: Speak with Sprite Jumpsprocket in Stormwind to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Fishing1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Fishing 1+): puhu *Sam Sarsaparilla* [QA97920 Camping 101: Fishing] Tavoite: Speak with Lee Brown near Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Skinning1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Skinning 1+): puhu *Sam Sarsaparilla* [QA97924 Camping 101: Skinning] Tavoite: Speak with Helene Peltskinner in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Mining1][G 44.9,63.4 Elwynn Forest]Ammattitehtävä (Mining 1+): puhu *Sam Sarsaparilla* [QA97923 Camping 101: Mining] Tavoite: Speak with Gelman Stonehand in Stormwind to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [G 44.9,63.4 Elwynn Forest]Puhu: *Sam Sarsaparilla* [QT95998 The Great Outdoors] [QA96626 Camping 101: Cooking]
 [G 42.1,67.3 Elwynn Forest]Puhu: *Remy "Two Times"* [QT99129 A Man About a Murloc] [QA99130 An Enticing Offer]
 [G 44.4,66.0 Elwynn Forest]Puhu: *Tomas* [QC96626,1 Camping 101: Cooking]
@@ -283,8 +282,8 @@ Guidelime.registerGuide([[
 [G 43.1,89.6 Elwynn Forest]Puhu: *Maybell Maclure* [QA106 Young Lovers]
 [G 41.0,88.3 Elwynn Forest]Kerää *Chunk of Boar Meat* (Rockhide Boar, Stonetusk Boar, Longsnout) [QC86,1 Pie for Billy]
 [G 34.5,84.2 Elwynn Forest]Puhu: *"Auntie" Bernice Stonefield* [QT86 Pie for Billy] [QA84 Back to Billy]
-[G 31.9,84.4 Elwynn Forest]Kerää *Duskweed Petal* (Overgrown Duskweed) [QC99130,2 An Enticing Offer]
 [G 29.8,86.0 Elwynn Forest]Puhu: *Tommy Joe Stonefield* [QT106 Young Lovers] [QA111 Speak with Gramma]
+[G 34.1,85.7 Elwynn Forest]Kerää *Duskweed Petal* (Overgrown Duskweed) [QC99130,2 An Enticing Offer]
 [G 34.9,83.9 Elwynn Forest]Puhu: *Gramma Stonefield* [QT111 Speak with Gramma] [QA107 Note to William]
 [G 40.6,82.3 Elwynn Forest]Scout through the Fargodeep Mine [QC62,1 The Fargodeep Mine]
 [G 43.1,85.7 Elwynn Forest]Puhu: *Billy Maclure* [QT84 Back to Billy] [QA87 Goldtooth]
@@ -329,7 +328,6 @@ Guidelime.registerGuide([[
 [G 71.3,72.2 Stormwind City][P Stormwind]Hae flight path (*Dungar Longdrink*)
 [O][A Enchanting1][G 53.0,73.7 Stormwind City]Ammattitehtävä: palauta *Betty Quin* [QT97917 Camping 101: Enchanting] (jos tavoite valmis)
 [O][A Engineering1][G 61.9,30.6 Stormwind City]Ammattitehtävä: palauta *Sprite Jumpsprocket* [QT97918 Camping 101: Engineering] (jos tavoite valmis)
-[O][A Mining1][G 59.2,37.8 Stormwind City]Ammattitehtävä: palauta *Gelman Stonehand* [QT97923 Camping 101: Mining] (jos tavoite valmis)
 [O][A First Aid50][G 53.0,44.7 Stormwind City]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Shaina Fuller*) [LE First Aid 150]
 [O][A Cooking50][G 78.2,53.1 Stormwind City]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Stephen Ryback*) [LE Cooking 150]
 [O][A Fishing50][G 55.0,69.7 Stormwind City]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Arnold Leland*) [LE Fishing 150]
@@ -451,8 +449,8 @@ Guidelime.registerGuide([[
 [O][A Skinning1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Skinning 1+): puhu *Lyreena Duskblade* [QA97949 Camping 101: Skinning] Tavoite: Speak with Radnaal Maneweaver on the road to Darnassus from Dolanaar to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Tailoring1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Tailoring 1+): puhu *Lyreena Duskblade* [QA97950 Camping 101: Tailoring] Tavoite: Speak with Trianna in Darnassus to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Alchemy1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Alchemy 1+): puhu *Lyreena Duskblade* [QA97938 Camping 101: Alchemy] Tavoite: Speak with Cyndra Kindwhisper in Dolanaar to learn to craft a camping item for your profession once you have shown proficiency in your skill.
-[O][A Enchanting1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Enchanting 1+): puhu *Lyreena Duskblade* [QA97940 Camping 101: Enchanting] Tavoite: Speak with Alanna Raveneye in the Oracle Glade in Teldrassil to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [O][A Herbalism1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Herbalism 1+): puhu *Lyreena Duskblade* [QA97944 Camping 101: Herbalism] Tavoite: Speak with Malorne Bladeleaf in Dolanaar to learn to craft a camping item for your profession once you have shown proficiency in your skill.
+[O][A Enchanting1][G 57.6,56.6 Teldrassil]Ammattitehtävä (Enchanting 1+): puhu *Lyreena Duskblade* [QA97940 Camping 101: Enchanting] Tavoite: Speak with Alanna Raveneye in the Oracle Glade in Teldrassil to learn to craft a camping item for your profession once you have shown proficiency in your skill.
 [G 57.6,56.6 Teldrassil]Puhu: *Lyreena Duskblade* [QT96606 The Great Outdoors]
 [G 60.4,56.2 Teldrassil]Puhu: *Zenn Foulhoof* [QT488 Zenn's Bidding]
 [G 56.0,59.5 Teldrassil]Puhu: *Sentinel Kyra Starsong* [QA489 Seek Redemption!]
@@ -589,34 +587,34 @@ Guidelime.registerGuide([[
 [G 42.8,23.4 Zephras Isle]Puhu: *Ailee Farheart* [QA92460 Coming of Age]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92460 Coming of Age] [QA92461 Harmony in Balance]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QA92462 Infestation Investigation]
-[G 43.5,25.4 Zephras Isle]Tapa *Pesky Cirrusfly* [QC92462,1 Infestation Investigation]
+[G 43.8,26.1 Zephras Isle]Tapa *Pesky Cirrusfly* [QC92462,1 Infestation Investigation]
 [G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QT92462 Infestation Investigation] [QA92463 The Cirrusfly Queen]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QA92464 Elemental Unrest]
 [G 47.2,22.0 Zephras Isle]Puhu: *Yala Windwatcher* [QT92464 Elemental Unrest] [QA92465 Agitators]
-[G 47.0,22.7 Zephras Isle]Tapa *Roiling Winds*; Tapa *Juvenile Vuldren* [QC92465,2 Agitators] [QC92461,1 Harmony in Balance]
+[G 47.0,22.6 Zephras Isle]Tapa *Roiling Winds*; Tapa *Al'Aketh Convert* [QC92465,2 Agitators] [QC92465,1 Agitators]
+[G 47.2,22.0 Zephras Isle]Puhu: *Yala Windwatcher* [QT92465 Agitators] [QA92469 Return to Rorian]
+[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92469 Return to Rorian] [QA92471 Aetheen of the Gales]
+[G 42.8,23.7 Zephras Isle]Puhu: *Aetheen of the Gales* [QT92471 Aetheen of the Gales] [QA92470 Foul Matriarch]
+[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QA92473 Aggressive Encroachment]
+[G 38.3,30.2 Zephras Isle]Puhu: *Hanaa Nightwind* [QA92544 Al'Aketh Thugs]
+[G 38.9,30.1 Zephras Isle]Tapa *Al'Aketh Neophyte*; Kerää *Scrawny Ursera Claw* (Scrawny Ursera) [QC92544,2 Al'Aketh Thugs] [QC92473,1 Aggressive Encroachment]
+[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QT92473 Aggressive Encroachment]
+[G 42.0,26.6 Zephras Isle]Tapa *Juvenile Vuldren* [QC92461,1 Harmony in Balance]
 [G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92461 Harmony in Balance] [QA92483 At Home in the Shadows]
 [G 43.4,24.0 Zephras Isle]Puhu: *Dalia the Collector* [QA93552 Harvesting Windstones]
 [G 43.7,24.4 Zephras Isle]Puhu: *Akeri Duskblade* [QT92483 At Home in the Shadows]
 [G 43.3,24.9 Zephras Isle]Puhu: *Falorne Fallwind* [QA92597 Reading the Leylines]
-[G 43.8,24.1 Zephras Isle]Tapa *Al'Aketh Convert* [QC92465,1 Agitators]
-[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QA92471 Aetheen of the Gales]
-[G 42.8,23.7 Zephras Isle]Puhu: *Aetheen of the Gales* [QT92471 Aetheen of the Gales] [QA92470 Foul Matriarch]
-[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QA92473 Aggressive Encroachment]
-[G 47.2,22.0 Zephras Isle]Puhu: *Yala Windwatcher* [QT92465 Agitators] [QA92469 Return to Rorian]
-[G 42.0,23.5 Zephras Isle]Puhu: *Rorian the Dayseeker* [QT92469 Return to Rorian]
-[G 41.1,23.6 Zephras Isle]Kerää *Scrawny Ursera Claw* (Scrawny Ursera) [QC92473,1 Aggressive Encroachment]
-[G 42.4,25.2 Zephras Isle]Puhu: *Valreaa Valewind* [QT92473 Aggressive Encroachment]
-[G 38.3,30.2 Zephras Isle]Puhu: *Hanaa Nightwind* [QA92544 Al'Aketh Thugs]
-[G 38.2,30.7 Zephras Isle]Tapa *Al'Aketh Brute*; Tapa *Al'Aketh Neophyte*; Tapa *Ursera Scavenger*; Kerää *Windstone Cluster* (Raw Windstone) [QC92544,1 Al'Aketh Thugs] [QC92544,2 Al'Aketh Thugs] [QC92470,1 Foul Matriarch] [QC93552,1 Harvesting Windstones]
-[G 43.7,24.4 Zephras Isle][T Rogue-trainer (taso 6)] (*Akeri Duskblade*): Gouge, Sinister Strike r2, Stealth, First Aid, Blacksmithing
+[G 45.0,25.2 Zephras Isle]Kerää *Windstone Cluster* (Raw Windstone) [QC93552,1 Harvesting Windstones]
 [G 43.4,24.0 Zephras Isle]Puhu: *Dalia the Collector* [QT93552 Harvesting Windstones]
-[G 48.4,28.5 Zephras Isle]Tapa *Cirrusfly Queen* [QC92463,1 The Cirrusfly Queen]
-[G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QT92463 The Cirrusfly Queen]
-[G 46.3,17.9 Zephras Isle]Käytä / kerää: *Ley Line* [QC92597,1 Reading the Leylines]
-[G 43.3,24.9 Zephras Isle]Puhu: *Falorne Fallwind* [QT92597 Reading the Leylines]
+[G 41.2,26.1 Zephras Isle]Tapa *Ursera Scavenger* [QC92470,1 Foul Matriarch]
+[G 43.7,24.4 Zephras Isle][T Rogue-trainer (taso 6)] (*Akeri Duskblade*): Gouge, Sinister Strike r2, Stealth, First Aid, Blacksmithing
 [G 35.6,26.1 Zephras Isle]Kerää *Head of Urs'anah* (Urs'anah) [QC92470,2 Foul Matriarch]
 [G 42.8,23.7 Zephras Isle]Puhu: *Aetheen of the Gales* [QT92470 Foul Matriarch] [QA92472 The Next Step] [QA96638 The Adventurer]
-[G 36.0,33.5 Zephras Isle]Tapa *Malduko Cloudcrush* [QC92544,3 Al'Aketh Thugs]
+[G 46.3,17.9 Zephras Isle]Käytä / kerää: *Ley Line* [QC92597,1 Reading the Leylines]
+[G 43.3,24.9 Zephras Isle]Puhu: *Falorne Fallwind* [QT92597 Reading the Leylines]
+[G 48.4,28.5 Zephras Isle]Tapa *Cirrusfly Queen* [QC92463,1 The Cirrusfly Queen]
+[G 43.4,24.8 Zephras Isle]Puhu: *Elatrell Featherlight* [QT92463 The Cirrusfly Queen]
+[G 37.1,30.7 Zephras Isle]Tapa *Al'Aketh Brute*; Tapa *Malduko Cloudcrush* [QC92544,1 Al'Aketh Thugs] [QC92544,3 Al'Aketh Thugs]
 [G 38.3,30.2 Zephras Isle]Puhu: *Hanaa Nightwind* [QT92544 Al'Aketh Thugs]
 [G 43.8,24.1 Zephras Isle]Puhu: *Halaan Hawk-Eye* [QA94414 The Anchors of Zephras]
 [G 43.8,24.1 Zephras Isle]Tapa *Halaan Hawk-Eye* [QC94414,1 The Anchors of Zephras]
@@ -630,20 +628,20 @@ Guidelime.registerGuide([[
 [G 62.1,73.3 Zephras Isle]Puhu: *Alvarion Windfield* [QA92679 Blood Tithe]
 [G 62.1,73.3 Zephras Isle]Tapa *Alvarion Windfield* [QC92679,2 Blood Tithe]
 [G 59.9,72.5 Zephras Isle][T Rogue-trainer (taso 8)] (*Eltheen Nightbreeze*): Gouge, Eviscerate r2, Evasion, First Aid, Stealth
-[G 55.5,73.9 Zephras Isle]Kerää *Windsong Crawler Meat* (Windsong Crawler) [QC93317,1 Crab Season]
+[G 56.3,75.8 Zephras Isle]Kerää *Windsong Crawler Meat* (Windsong Crawler) [QC93317,1 Crab Season]
 [G 60.6,72.7 Zephras Isle]Puhu: *Nyalah Brightfire* [QT93317 Crab Season]
 [G 64.0,75.1 Zephras Isle]Puhu: *Lotheluum Starbreeze* [QA94484 Unnerving Silence]
 [G 66.0,74.3 Zephras Isle]Puhu: *Ealaane Nimbuswalker* [QA94896 Aid For The Refugees] [QA94897 The Fate of a Loved One]
 [G 56.8,61.1 Zephras Isle]Puhu: *Fendaal Windstone* [QA98512 Al'Aketh Assassins]
-[G 56.1,60.6 Zephras Isle]Tapa *Al'Aketh Assassin* [QC98512,1 Al'Aketh Assassins]
+[G 55.9,60.5 Zephras Isle]Tapa *Al'Aketh Assassin* [QC98512,1 Al'Aketh Assassins]
 [G 56.8,61.1 Zephras Isle]Puhu: *Fendaal Windstone* [QT98512 Al'Aketh Assassins]
 [G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94484 Unnerving Silence] [QA94486 Feathers for Binding] [QA94487 Unwanted and Unworthy]
-[G 62.2,38.7 Zephras Isle]Kerää *Bloody Heirloom* (Al'Aketh Stormchaser, Al'Aketh Footsoldier) [QC94487,1 Unwanted and Unworthy]
+[G 62.2,39.0 Zephras Isle]Kerää *Bloody Heirloom* (Al'Aketh Stormchaser, Al'Aketh Footsoldier) [QC94487,1 Unwanted and Unworthy]
 [G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94487 Unwanted and Unworthy] [QA94485 Tears of the Lady]
+[G 61.5,38.6 Zephras Isle]Kerää *Pristine Shriekling Feather* (Shadowgale Shriekling) [QC94486,1 Feathers for Binding]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94486 Feathers for Binding]
 [G 62.7,39.5 Zephras Isle]Kerää *Lady's Tear Moss* (Lady's Tear Moss) [QC94485,1 Tears of the Lady]
-[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94485 Tears of the Lady]
-[G 60.8,40.2 Zephras Isle]Kerää *Pristine Shriekling Feather* (Shadowgale Shriekling) [QC94486,1 Feathers for Binding]
-[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94486 Feathers for Binding] [QA94488 The Ties That Bind] [QA94489 The Wounds of Betrayal]
+[G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94485 Tears of the Lady] [QA94488 The Ties That Bind] [QA94489 The Wounds of Betrayal]
 [G 65.5,36.3 Zephras Isle]Kerää *Commander Haalien's Severed Head* (Commander Haalien) [QC94488,1 The Ties That Bind]
 [G 61.7,39.2 Zephras Isle]Puhu: *Elegael Thornpaw* [QT94488 The Ties That Bind]
 [G 63.8,35.9 Zephras Isle]Puhu: *Vayn Moongaze* [QA93165 Mercy Falls on Deaf Ears]
@@ -655,10 +653,10 @@ Guidelime.registerGuide([[
 [G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93159 The Strange Hermit] [QA93160 The Forest's Bounty] [QA93172 Free the Hollows]
 [G 55.7,39.2 Zephras Isle]Kerää *Zephyrseed* (Zephyrseed Cone) [QC93160,1 The Forest's Bounty]
 [G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93160 The Forest's Bounty]
-[G 56.8,35.0 Zephras Isle]Tapa *Wind Hollow* [QC93172,1 Free the Hollows]
+[G 56.8,35.1 Zephras Isle]Tapa *Wind Hollow* [QC93172,1 Free the Hollows]
 [G 54.0,38.9 Zephras Isle]Puhu: *Strange Hermit* [QT93172 Free the Hollows]
 [G 56.9,33.6 Zephras Isle]Kerää *Abandoned Belongings* (Abandoned Belongings); Kerää *Resaan's Heirloom* (Resaan Nimbuswalker) [QC94896,1 Aid For The Refugees] [QC94897,1 The Fate of a Loved One]
-[G 58.9,47.3 Zephras Isle]Kerää *Al'Aketh Cultist's Ear* (Al'Aketh Preacher, Al'Aketh Pillager, Al'Aketh Blademaster) [QC93165,1 Mercy Falls on Deaf Ears]
+[G 62.8,45.3 Zephras Isle]Kerää *Al'Aketh Cultist's Ear* (Al'Aketh Preacher, Al'Aketh Pillager, Al'Aketh Blademaster) [QC93165,1 Mercy Falls on Deaf Ears]
 [G 63.8,35.9 Zephras Isle]Puhu: *Vayn Moongaze* [QT93165 Mercy Falls on Deaf Ears]
 [G 62.2,72.6 Zephras Isle][S Aseta Hearthstone tähän] (*Donaal Downbreeze*)
 [G 66.0,74.3 Zephras Isle]Puhu: *Ealaane Nimbuswalker* [QT94896 Aid For The Refugees] [QT94897 The Fate of a Loved One]
@@ -666,13 +664,13 @@ Guidelime.registerGuide([[
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92679 Blood Tithe] [QA92682 Make Yourself Useful] [QA92683 Flutterfly Dust] [QA92684 Ornery Ornery Galestriders]
 [G 48.9,78.2 Zephras Isle]Puhu: *Malfunctioning Cyclone Construct* [QA92698 What Is My Purpose?]
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92698 What Is My Purpose?]
-[G 47.4,82.2 Zephras Isle]Kerää *Lowlands Galestrider Tenderloin* (Ornery Galestrider) [QC92684,1 Ornery Ornery Galestriders]
-[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92684 Ornery Ornery Galestriders]
 [G 47.3,81.3 Zephras Isle]Kerää *Ripe Stormapple* (Ripe Stormapple); Tapa *Hungry Bandit* [QC92682,1 Make Yourself Useful] [QC92682,2 Make Yourself Useful]
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92682 Make Yourself Useful]
+[G 47.3,82.7 Zephras Isle]Kerää *Lowlands Galestrider Tenderloin* (Ornery Galestrider) [QC92684,1 Ornery Ornery Galestriders]
+[G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92684 Ornery Ornery Galestriders]
 [G 48.9,82.0 Zephras Isle]Kerää *Flutterfly Dust* (Flutterfly Dust) [QC92683,1 Flutterfly Dust]
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92683 Flutterfly Dust] [QA92685 The Hills Have Eyes]
-[G 46.2,78.8 Zephras Isle]Kerää *Blood-Stained Bandit Mask* (Bandit Highwayman) [QC92685,1 The Hills Have Eyes]
+[G 45.4,78.7 Zephras Isle]Kerää *Blood-Stained Bandit Mask* (Bandit Highwayman) [QC92685,1 The Hills Have Eyes]
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92685 The Hills Have Eyes] [QA92693 Standing Our Ground]
 [G 46.7,82.0 Zephras Isle]Tapa *Aamelia Windfield*; Tapa *Ferauu the Bludgeon* [QC92693,1 Standing Our Ground] [QC92693,2 Standing Our Ground]
 [G 46.7,82.0 Zephras Isle]Puhu: *Aamelia Windfield* [QT92693 Standing Our Ground] [QA92703 Deliver the News]
@@ -703,16 +701,11 @@ Guidelime.registerGuide([[
 [G 56.5,52.6 Westfall][P Sentinel Hill]Hae flight path (*Thor*)
 [G 56.0,31.2 Westfall]Puhu: *Farmer Saldean* [QA9 The Killing Fields] [QA109 Report to Gryan Stoutmantle]
 [G 56.4,30.5 Westfall]Puhu: *Salma Saldean* [QA22 Goretusk Liver Pie]
-[G 59.9,19.4 Westfall]Puhu: *Verna Furlbrow* [QA36 Westfall Stew] [QA151 Poor Old Blanchy]
-[G 60.0,19.4 Westfall]Puhu: *Farmer Furlbrow* [QA64 The Forgotten Heirloom]
-[G 56.4,30.5 Westfall]Puhu: *Salma Saldean* [QT36 Westfall Stew] [QA38 Westfall Stew]
-[G 49.3,19.3 Westfall]Kerää *Furlbrow's Pocket Watch* (Furlbrow's Wardrobe); Kerää *Goretusk Liver* (Goretusk, Young Goretusk, Great Goretusk); Kerää *Goretusk Snout* (Goretusk, Young Goretusk) [QC64,1 The Forgotten Heirloom] [QC22,1 Goretusk Liver Pie] [QC38,3 Westfall Stew]
-[G 51.9,27.7 Westfall]Kerää *Stringy Vulture Meat* (Fleshripper, Young Fleshripper, Greater Fleshripper); Kerää *Okra* (Harvest Watcher, Harvest Golem, Rusty Harvest Golem) [QC38,1 Westfall Stew] [QC38,4 Westfall Stew]
+[G 52.2,32.4 Westfall]Tapa *Harvest Watcher* [QC9,1 The Killing Fields]
+[G 51.5,32.3 Westfall]Puhu: *Ozwin Ironsprocket* [QA92909 Harvesting the Harvesters]
 [G 52.9,53.7 Westfall][S Aseta Hearthstone tähän] (*Innkeeper Heather*)
-[A Human][G 57.0,47.2 Westfall]Puhu: *Quartermaster Lewis* [QA6181 A Swift Message]
-[G 56.4,47.6 Westfall]Puhu: *Captain Danuvin* [QA102 Patrolling Westfall]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT109 Report to Gryan Stoutmantle] [QA12 The People's Militia]
-[A Human][G 56.5,52.6 Westfall]Puhu: *Thor* [QT6181 A Swift Message] [QA6281 Continue to Stormwind]
+[G 56.4,47.6 Westfall]Puhu: *Captain Danuvin* [QA102 Patrolling Westfall]
 [G 54.0,53.0 Westfall]Puhu: *Scout Galiaan* [QA153 Red Leather Bandanas]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QA92742 Testing the Wells] [QA92744 Murloc Gills]
 [G 51.4,46.8 Westfall]Tapa *Defias Trapper*; Tapa *Defias Smuggler*; Kerää *Red Leather Bandana* (Defias Pillager, Defias Smuggler, Defias Looter) [QC12,1 The People's Militia] [QC12,2 The People's Militia] [QC153,1 Red Leather Bandanas]
@@ -722,22 +715,29 @@ Guidelime.registerGuide([[
 [G 57.3,70.5 Westfall]Kerää *Gnoll Paw* (Riverpaw Taskmaster, Riverpaw Mongrel, Riverpaw Bandit) [QC102,1 Patrolling Westfall]
 [G 56.4,47.6 Westfall]Puhu: *Captain Danuvin* [QT102 Patrolling Westfall]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT13 The People's Militia]
-[G 46.1,38.1 Westfall]Kerää *Molsen Farm Water Sample* (Molsen Farm Water Well) [QC92742,2 Testing the Wells]
-[G 29.3,32.9 Westfall]Kerää *Murloc Eye* (Murloc Hunter, Murloc Warrior, Murloc Netter); Kerää *Longshore Murloc Gill* (Murloc Warrior, Murloc Hunter, Murloc Netter) [QC38,2 Westfall Stew] [QC92744,1 Murloc Gills]
-[G 54.0,31.0 Westfall]Tapa *Harvest Watcher* [QC9,1 The Killing Fields]
-[G 56.4,30.5 Westfall]Puhu: *Salma Saldean* [QT22 Goretusk Liver Pie] [QT38 Westfall Stew]
+[G 57.1,39.2 Westfall]Kerää *Goretusk Liver* (Goretusk, Young Goretusk, Great Goretusk) [QC22,1 Goretusk Liver Pie]
+[G 59.9,19.4 Westfall]Puhu: *Verna Furlbrow* [QA36 Westfall Stew] [QA151 Poor Old Blanchy]
+[G 60.0,19.4 Westfall]Puhu: *Farmer Furlbrow* [QA64 The Forgotten Heirloom]
+[G 56.4,30.5 Westfall]Puhu: *Salma Saldean* [QT22 Goretusk Liver Pie] [QT36 Westfall Stew] [QA38 Westfall Stew]
+[G 54.0,31.0 Westfall]Kerää *Harvester Gyrostabilizer* (Harvest Watcher, Harvest Golem, Harvest Reaper); Kerää *Golem Isospring* (Harvest Watcher, Harvest Golem, Rusty Harvest Golem); Kerää *Okra* (Harvest Watcher, Harvest Golem, Rusty Harvest Golem); Kerää *Stringy Vulture Meat* (Fleshripper, Young Fleshripper, Greater Fleshripper) [QC92909,2 Harvesting the Harvesters] [QC92909,1 Harvesting the Harvesters] [QC38,4 Westfall Stew] [QC38,1 Westfall Stew]
+[G 49.8,23.5 Westfall]Kerää *Goretusk Snout* (Goretusk, Young Goretusk); Kerää *Furlbrow's Pocket Watch* (Furlbrow's Wardrobe) [QC38,3 Westfall Stew] [QC64,1 The Forgotten Heirloom]
 [G 56.6,18.7 Westfall]Kerää *Jansen Stead Water Sample* (Jansen Stead Water Well); Kerää *Handful of Oats* (Sack of Oats) [QC92742,1 Testing the Wells] [QC151,1 Poor Old Blanchy]
 [G 59.9,19.4 Westfall]Puhu: *Verna Furlbrow* [QT151 Poor Old Blanchy]
 [G 60.0,19.4 Westfall]Puhu: *Farmer Furlbrow* [QT64 The Forgotten Heirloom]
-[G 56.0,31.2 Westfall]Puhu: *Farmer Saldean* [QT9 The Killing Fields]
+[G 47.4,9.4 Westfall]Kerää *Murloc Eye* (Murloc Hunter, Murloc Warrior, Murloc Netter); Kerää *Longshore Murloc Gill* (Murloc Warrior, Murloc Hunter, Murloc Netter) [QC38,2 Westfall Stew] [QC92744,1 Murloc Gills]
+[G 46.1,38.1 Westfall]Kerää *Molsen Farm Water Sample* (Molsen Farm Water Well) [QC92742,2 Testing the Wells]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92742 Testing the Wells] [QT92744 Murloc Gills] [QA92745 The State of the Mines]
+[G 52.2,52.8 Westfall][V Myy harmaat roinat] (*Christopher Hewen*)
+[G 52.9,53.7 Westfall][V Osta ruokaa, noin 20] (*Innkeeper Heather*)
 [G 29.8,48.1 Westfall]Tapa *Riverpaw Miner* [QC92745,2 The State of the Mines]
 [G 44.8,23.1 Westfall]Tapa *Kobold Digger* [QC92745,1 The State of the Mines]
-[H Hearthstone: Innkeeper Heather] (jos cooldownilla, juokse tai lennä)
+[G 51.5,32.3 Westfall]Puhu: *Ozwin Ironsprocket* [QT92909 Harvesting the Harvesters]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92745 The State of the Mines] [QA92747 Moonbrook Espionage]
 [O][A Alchemy1][G 42.8,72.8 Westfall]Ammattitehtävä (Alchemy 1+): puhu *Odd Child* [QA92109 My First Alchemy Set] Tavoite: Bring 5 Empty Vials, 5 Silverleaf, and 5 Peacebloom to the young, aspiring alchemist inside the barn of Moonbrook in Westfall.
 [G 43.1,68.8 Westfall]Kerää *Suspicious Industrial Supplies* (Suspicious Crate) [QC92747,1 Moonbrook Espionage]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92747 Moonbrook Espionage]
+[G 56.0,31.2 Westfall]Puhu: *Farmer Saldean* [QT9 The Killing Fields]
+[G 56.4,30.5 Westfall]Puhu: *Salma Saldean* [QT38 Westfall Stew]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
 
 Guidelime.registerGuide([[
@@ -748,7 +748,6 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 47.6,52.6 Dun Morogh][T Rogue-trainer (taso 14)] (*Hogral Bakkan*): Parry, Sinister Strike r3, Kick, Slice And Dice, Heavy Linen Bandage, Journeyman First Aid, Garrote
 [G 45.3,52.2 Dun Morogh][V Myy harmaat roinat] ja [R korjaa varusteet] (*Grawn Thromwyn*)
-[G 47.4,52.5 Dun Morogh][V Osta ruokaa, noin 20] (*Innkeeper Belm*)
 [OC]Matkusta: *Loch Modan*. Dun Moroghin itäpäästä tunnelin läpi Loch Modaniin. Thelsamar on länsiosassa
 [G 33.9,51.0 Loch Modan][P Thelsamar]Hae flight path (*Thorgrum Borrelson*)
 [G 22.1,73.1 Loch Modan]Puhu: *Mountaineer Cobbleflint* [QA224 In Defense of the King's Lands]
@@ -780,17 +779,12 @@ Guidelime.registerGuide([[
 [G 34.8,49.3 Loch Modan]Puhu: *Vidra Hearthstove* [QT418 Thelsamar Blood Sausages]
 [G 34.8,48.6 Loch Modan][V Myy harmaat roinat] (*Yanni Stoutheart*)
 [G 35.5,48.4 Loch Modan][V Osta ruokaa, noin 20] (*Innkeeper Hearthstove*)
-[G 63.6,47.9 Loch Modan]Puhu: *Bingles Blastenheimer* [QA2038 Bingles' Missing Supplies]
 [G 65.9,65.6 Loch Modan]Puhu: *Prospector Ironband* [QA298 Excavation Progress Report]
 [G 81.8,61.7 Loch Modan]Puhu: *Marek Ironheart* [QA385 Crocolisk Hunting]
-[G 66.9,52.1 Loch Modan]Kerää *Crocolisk Meat* (Daggerfang, Loch Crocolisk); Kerää *Crocolisk Skin* (Daggerfang, Loch Crocolisk) [QC385,1 Crocolisk Hunting] [QC385,2 Crocolisk Hunting]
+[G 66.4,52.7 Loch Modan]Kerää *Crocolisk Meat* (Daggerfang, Loch Crocolisk); Kerää *Crocolisk Skin* (Daggerfang, Loch Crocolisk) [QC385,1 Crocolisk Hunting] [QC385,2 Crocolisk Hunting]
 [G 81.8,61.7 Loch Modan]Puhu: *Marek Ironheart* [QT385 Crocolisk Hunting]
 [H Hearthstone: Innkeeper Hearthstove] (jos cooldownilla, juokse tai lennä)
 [G 37.2,47.4 Loch Modan]Puhu: *Jern Hornhelm* [QT298 Excavation Progress Report] [QA301 Report to Ironforge]
-[G 48.7,30.1 Loch Modan]Kerää *Bingles' Wrench* (Bingles's Toolbucket) [QC2038,1 Bingles' Missing Supplies]
-[G 48.4,20.5 Loch Modan]Kerää *Bingles' Screwdriver* (Bingles's Toolbucket); Kerää *Bingles' Hammer* (Bingles's Toolbucket) [QC2038,2 Bingles' Missing Supplies] [QC2038,3 Bingles' Missing Supplies]
-[G 54.2,26.6 Loch Modan]Kerää *Bingles' Blastencapper* (Bingles's Blastencapper) [QC2038,4 Bingles' Missing Supplies]
-[G 63.6,47.9 Loch Modan]Puhu: *Bingles Blastenheimer* [QT2038 Bingles' Missing Supplies]
 [G 23.5,74.5 Loch Modan]Puhu: *Mountaineer Wallbang* [QT263 In Defense of the King's Lands]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QT267 The Trogg Threat]
 [G 23.2,73.7 Loch Modan]Puhu: *Captain Rugelfuss* [QA217 In Defense of the King's Lands]
@@ -833,9 +827,8 @@ Guidelime.registerGuide([[
 [A Dwarf,Gnome][G 51.5,26.3 Ironforge]Puhu: *Golnir Bouldertoe* [QT6391 Ride to Ironforge] [QA6388 Gryth Thurden]
 [A Dwarf,Gnome][G 55.5,47.7 Ironforge]Puhu: *Gryth Thurden* [QT6388 Gryth Thurden] [QA6392 Return to Brock]
 [G 69.2,50.5 Ironforge]Puhu: *Gnoarn* [QA2041 Speak with Shoni]
-[G 33.2,48.0 Ironforge]Puhu: *Afadra Dunwall* [QA96394 The Restless Dead]
 [G 32.2,44.5 Ironforge]Puhu: *Thom Filch* [QA96403 Important Heirlooms]
-[H Hearthstone: Innkeeper Hearthstove] (jos cooldownilla, juokse tai lennä)
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Thelsamar]
 [G 37.2,47.4 Loch Modan]Puhu: *Jern Hornhelm* [QT302 Powder to Ironband] [QA273 Resupplying the Excavation]
 [A Dwarf,Gnome][G 37.0,47.8 Loch Modan]Puhu: *Brock Stoneseeker* [QT6392 Return to Brock]
 [G 35.8,43.5 Loch Modan][V Myy harmaat roinat] ja [R korjaa varusteet] (*Vrok Blunderblast*)
@@ -846,14 +839,17 @@ Guidelime.registerGuide([[
 [G 65.9,65.6 Loch Modan]Puhu: *Prospector Ironband* [QT309 Protecting the Shipment]
 [OC]*Dungeon: The Hall of Thanes* (suositus taso 17+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Ironforge) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Ironforge]
+[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
+[G 34.6,51.6 Dun Morogh]Puhu: *Afadra Dunwall* [QA96394 The Restless Dead]
+[OC]Matkusta: *Ironforge*. Ironforge: lento, tai Deeprun Tram Stormwindista
 [G 27.6,47.8 Ironforge]Dungeonissa: looti *Dark Iron Map* aloittaa questin [QA96391 Underground Map]
 [G 27.6,47.8 Ironforge]Dungeonin sisällä - Puhu: *Ghostly Attendant* [QA96395 An Ancient Grudge]
 [G 27.6,47.8 Ironforge]*Mene dungeoniin: The Hall of Thanes*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *Enraged Apparition*; Tapa *Tormented Soul*; Tapa *Faldrim Anvilmar*; Kerää *Dwarven Heirloom* (Dwarven Heirloom) [QC96394,1 The Restless Dead] [QC96394,2 The Restless Dead] [QC96395,1 An Ancient Grudge] [QC96403,1 Important Heirlooms]
 [G 27.6,47.8 Ironforge]Dungeonin sisällä - Puhu: *Ghostly Attendant* [QT96395 An Ancient Grudge]
-[G 33.2,48.0 Ironforge]Puhu: *Afadra Dunwall* [QT96394 The Restless Dead]
 [G 32.2,44.5 Ironforge]Puhu: *Thom Filch* [QT96403 Important Heirlooms]
 [OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
 [G 64.9,58.5 Dun Morogh]Puhu: *Earthseer Farsen* [QT96391 Underground Map] [QA96393 Old Ironforge Incursion]
+[G 34.6,51.6 Dun Morogh]Puhu: *Afadra Dunwall* [QT96394 The Restless Dead]
 [OC]Matkusta: *Ironforge*. Ironforge: lento, tai Deeprun Tram Stormwindista
 [G 27.6,47.8 Ironforge]*Mene dungeoniin: The Hall of Thanes*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Durgen Dirgehammer's Head* (Durgen Dirgehammer) [QC96393,1 Old Ironforge Incursion]
 [G 39.1,56.2 Ironforge]Puhu: *King Magni Bronzebeard* [QT96393 Old Ironforge Incursion]
@@ -873,37 +869,29 @@ Guidelime.registerGuide([[
 [G 39.0,54.8 Westfall]Kerää *Flask of Oil* (Harvest Watcher, Harvest Golem, Rusty Harvest Golem) [QC103,1 Keeper of the Flame]
 [G 30.0,86.0 Westfall]Puhu: *Captain Grayson* [QT103 Keeper of the Flame]
 [G 57.7,53.9 Westfall][V Myy harmaat roinat] (*William MacGregor*)
-[G 52.9,53.7 Westfall][V Osta ruokaa, noin 20] (*Innkeeper Heather*)
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT14 The People's Militia]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Stormwind]
 [G 64.6,37.2 Stormwind City]Puhu: *Furen Longbeard* [QT1338 Stormpike's Order]
 [G 62.6,34.1 Stormwind City]Puhu: *Shoni the Shilent* [QT2041 Speak with Shoni] [QA2040 Underground Assault]
-[G 59.7,33.8 Stormwind City]Puhu: *Grimand Elmore* [QA353 Stormpike's Delivery]
 [G 59.4,34.3 Stormwind City]Puhu: *Borgus Steelhand* [QA97894 Business in Auberdine]
 [G 61.9,30.6 Stormwind City]Puhu: *Sprite Jumpsprocket* [QT92748 Explosive Consultation] [QA92750 Detonation at a Distance]
 [G 30.5,28.8 Stormwind City]Puhu: *Manifest Clerk Philmor* [QA97220 Philmor's Favor]
 [G 38.8,62.4 Stormwind City]Puhu: *Roy Lewells* [QA97234 Reading Room]
 [G 66.6,73.4 Stormwind City]Puhu: *Elaine Trias* [QT97220 Philmor's Favor] [QA97222 Gatehouse Goods]
-[G 66.5,74.8 Stormwind City]Käytä / kerää: *Gatehouse Door* [QC97222,1 Gatehouse Goods]
-[G 66.6,73.4 Stormwind City]Puhu: *Elaine Trias* [QT97222 Gatehouse Goods]
-[G 80.3,70.1 Stormwind City]Puhu: *Jasper Fel* [QT92750 Detonation at a Distance]
-[O][A Mining50][G 59.2,37.8 Stormwind City]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 150]
-[O][A Alchemy50][G 55.7,86.1 Stormwind City]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 150]
-[G 80.3,70.1 Stormwind City]Puhu: *Jasper Fel* [QA92751 Detonation at a Distance]
-[A Human][G 77.2,61.0 Stormwind City]Puhu: *Osric Strang* [QT6281 Continue to Stormwind] [QA6261 Dungar Longdrink]
-[A Human][G 71.3,72.2 Stormwind City]Puhu: *Dungar Longdrink* [QT6261 Dungar Longdrink] [QA6285 Return to Lewis]
+[G 80.3,70.1 Stormwind City]Puhu: *Jasper Fel* [QT92750 Detonation at a Distance] [QA92751 Detonation at a Distance]
 [G 75.0,30.1 Stormwind City]Puhu: *Donyal Tovald* [QT97234 Reading Room] [QA97237 Shelf Picked]
 [G 75.6,30.5 Stormwind City]Kerää *Trollbane Conquests* (Trollbane Conquests); Kerää *Field Accounts of Horde Razings* (Field Accounts of Horde Razings); Kerää *The Forsaken Ally* (The Forsaken Ally); Kerää *Cycles of Morality* (Cycles of Morality) [QC97237,2 Shelf Picked] [QC97237,1 Shelf Picked] [QC97237,3 Shelf Picked] [QC97237,4 Shelf Picked]
 [G 61.9,30.6 Stormwind City]Puhu: *Sprite Jumpsprocket* [QT92751 Detonation at a Distance]
 [G 38.8,62.4 Stormwind City]Puhu: *Roy Lewells* [QT97237 Shelf Picked]
-[G 37.1,74.2 Stormwind City][V Myy harmaat roinat] (*Liv Bradford*)
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Sentinel Hill]
-[A Human][G 57.0,47.2 Westfall]Puhu: *Quartermaster Lewis* [QT6285 Return to Lewis]
-[G 56.5,52.6 Westfall]Lennä (*Thor*): [F Lakeshire]
+[G 66.5,74.8 Stormwind City]Käytä / kerää: *Gatehouse Door* [QC97222,1 Gatehouse Goods]
+[G 66.6,73.4 Stormwind City]Puhu: *Elaine Trias* [QT97222 Gatehouse Goods]
+[G 66.6,73.4 Stormwind City][V Myy harmaat roinat] (*Elaine Trias*)
+[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
+[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Lakeshire]
 [G 17.6,43.8 Redridge Mountains]Puhu: *Chef Breanna* [QA92 Redridge Goulash]
 [O][A Blacksmithing35][G 25.9,47.3 Redridge Mountains]Ammattitehtävä: palauta *Verner Osgood* [QT1618 Gearing Redridge] (jos tavoite valmis)
 [G 21.5,44.3 Redridge Mountains]Puhu: *Darcy* [QA129 A Free Lunch]
-[G 24.9,44.5 Redridge Mountains]Puhu: *Magistrate Solomon* [QA120 Messenger to Stormwind]
+[G 25.9,47.3 Redridge Mountains]Puhu: *Verner Osgood* [QA1097 Elmore's Task]
 [G 27.1,48.6 Redridge Mountains]Puhu: *Foreman Oslow* [QA125 The Lost Tools]
 [G 36.4,54.7 Redridge Mountains]Kerää *Oslow's Toolbox* (Sunken Chest) [QC125,1 The Lost Tools]
 [G 24.2,53.6 Redridge Mountains]Puhu: *Shawn* [QA3741 Hilary's Necklace]
@@ -912,11 +900,11 @@ Guidelime.registerGuide([[
 [G 12.6,55.3 Redridge Mountains]Kerää *Great Goretusk Snout* (Great Goretusk, Bellygrub) [QC92,1 Redridge Goulash]
 [G 10.4,71.3 Redridge Mountains]Puhu: *Guard Parker* [QT129 A Free Lunch] [QA130 Visit the Herbalist] [QA244 Encroaching Gnolls]
 [G 25.6,60.0 Redridge Mountains]Puhu: *Deputy Feldon* [QT244 Encroaching Gnolls] [QA246 Assessing the Threat] [QA98407 Show of Force]
-[G 22.0,45.5 Redridge Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kimberly Hiett*)
-[G 21.9,44.8 Redridge Mountains][S Aseta Hearthstone tähän] (*Innkeeper Brianna*)
 [G 16.8,46.3 Redridge Mountains]Puhu: *Martie Jainrose* [QT130 Visit the Herbalist] [QA131 Delivering Daffodils]
 [G 27.1,48.6 Redridge Mountains]Puhu: *Foreman Oslow* [QT125 The Lost Tools]
-[G 44.7,42.6 Redridge Mountains]Kerää *Crisp Spider Meat* (Greater Tarantula, Tarantula); Kerää *Tough Condor Meat* (Dire Condor) [QC92,3 Redridge Goulash] [QC92,2 Redridge Goulash]
+[G 43.7,42.6 Redridge Mountains]Kerää *Crisp Spider Meat* (Greater Tarantula, Tarantula) [QC92,3 Redridge Goulash]
+[G 47.3,38.8 Redridge Mountains]Kerää *Tough Condor Meat* (Dire Condor) [QC92,2 Redridge Goulash]
+[G 22.0,45.5 Redridge Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kimberly Hiett*)
 [G 21.5,44.3 Redridge Mountains]Puhu: *Darcy* [QT131 Delivering Daffodils]
 [G 17.6,43.8 Redridge Mountains]Puhu: *Chef Breanna* [QT92 Redridge Goulash]
 [G 10.5,59.5 Redridge Mountains]Tapa *Redridge Mongrel*; Kerää *Spiked Collar* (Redridge Thrasher) [QC246,1 Assessing the Threat] [QC98407,1 Show of Force]
@@ -925,23 +913,25 @@ Guidelime.registerGuide([[
 [OC]*Dungeon: The Deadmines* (suositus taso 18+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Westfall) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Sentinel Hill]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QA65 The Defias Brotherhood]
-[H Hearthstone: Innkeeper Brianna] (jos cooldownilla, juokse tai lennä)
+[G 56.5,52.6 Westfall]Lennä (*Thor*): [F Lakeshire]
 [G 21.4,45.4 Redridge Mountains]Puhu: *Wiley the Black* [QT65 The Defias Brotherhood] [QA132 The Defias Brotherhood]
 [G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Sentinel Hill]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT132 The Defias Brotherhood] [QA135 The Defias Brotherhood]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Stormwind]
-[O][A First Aid50][G 53.0,44.7 Stormwind City]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Shaina Fuller*) [LE First Aid 150]
-[O][A Cooking50][G 78.2,53.1 Stormwind City]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Stephen Ryback*) [LE Cooking 150]
-[O][A Fishing50][G 55.0,69.7 Stormwind City]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Arnold Leland*) [LE Fishing 150]
-[O][A Herbalism50][G 54.3,84.1 Stormwind City]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 150]
-[O][A Skinning50][G 72.1,62.2 Stormwind City]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 150]
-[O][A Blacksmithing50][G 64.1,37.0 Stormwind City]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Dane Lindgren*) [LE Blacksmithing 150]
-[O][A Enchanting50][G 53.0,73.7 Stormwind City]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Betty Quin*) [LE Enchanting 150]
-[O][A Engineering50][G 61.9,30.6 Stormwind City]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Sprite Jumpsprocket*) [LE Engineering 150]
-[O][A Leatherworking50][G 72.1,62.9 Stormwind City]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Randal Worth*) [LE Leatherworking 150]
-[O][A Tailoring50][G 53.5,81.5 Stormwind City]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Lawrence Schneider*) [LE Tailoring 150]
+[G 80.3,68.6 Stormwind City][T Rogue-trainer (taso 20)] (*Lord Tony Romano*): Pick Pocket, Pick Lock, Stealth r2, Anti-venom(fa), Wool Bandage, Rupture, Ambush
+[O][A Mining50][G 59.2,37.8 Stormwind City]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 150]
+[O][A Mining125][G 59.2,37.8 Stormwind City]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 225]
+[O][A Herbalism125][G 54.3,84.1 Stormwind City]Ammatti Herbalism 125+: opettele Expert Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 225]
+[O][A Skinning125][G 72.1,62.2 Stormwind City]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 225]
+[O][A Alchemy50][G 55.7,86.1 Stormwind City]Ammatti Alchemy 50+: opettele Journeyman Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 150]
+[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
+[O][A Blacksmithing125][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 225]
+[O][A Enchanting125][G 52.9,74.5 Stormwind City]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 225]
+[O][A Engineering125][G 62.1,30.3 Stormwind City]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Lilliam Sparkspindle*) [LE Engineering 225]
+[O][A Leatherworking125][G 71.7,63.0 Stormwind City]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Simon Tanner*) [LE Leatherworking 225]
+[O][A Tailoring125][G 53.1,81.3 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 225]
 [G 78.3,70.7 Stormwind City]Puhu: *Master Mathias Shaw* [QT135 The Defias Brotherhood] [QA141 The Defias Brotherhood]
-[G 78.6,70.9 Stormwind City][V Myy harmaat roinat] (*Sloan McCoy*)
+[G 76.8,66.0 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Officer Areyn*)
 [G 61.9,30.6 Stormwind City]Puhu: *Sprite Jumpsprocket* [QA92749 A Dynamite Plan]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Sentinel Hill]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT141 The Defias Brotherhood] [QA142 The Defias Brotherhood]
@@ -957,18 +947,17 @@ Guidelime.registerGuide([[
 [G 42.5,71.7 Westfall]*Mene dungeoniin: The Deadmines*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Head of VanCleef* (Edwin VanCleef); Kerää *Gnoam Sprecklesprocket* (Sneed's Shredder); Kerää *Rough Dynamite* [QC166,1 The Defias Brotherhood] [QC2040,1 Underground Assault] [QC92749,1 A Dynamite Plan]
 [G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT166 The Defias Brotherhood]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Stormwind]
-[G 77.4,65.3 Stormwind City][T Rogue-trainer (taso 20)] (*Osborne the Night Man*): Pick Pocket, Pick Lock, Stealth r2, Anti-venom(fa), Wool Bandage, Rupture, Ambush
-[O][A Mining125][G 59.2,37.8 Stormwind City]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 225]
-[O][A Herbalism125][G 54.3,84.1 Stormwind City]Ammatti Herbalism 125+: opettele Expert Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 225]
-[O][A Skinning125][G 72.1,62.2 Stormwind City]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 225]
-[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
-[O][A Blacksmithing125][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 225]
-[O][A Enchanting125][G 52.9,74.5 Stormwind City]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 225]
-[O][A Engineering125][G 62.1,30.3 Stormwind City]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Lilliam Sparkspindle*) [LE Engineering 225]
-[O][A Leatherworking125][G 71.7,63.0 Stormwind City]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Simon Tanner*) [LE Leatherworking 225]
-[O][A Tailoring125][G 53.1,81.3 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 225]
+[O][A First Aid50][G 53.0,44.7 Stormwind City]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Shaina Fuller*) [LE First Aid 150]
+[O][A Cooking50][G 78.2,53.1 Stormwind City]Ammatti Cooking 50+: opettele Journeyman Cooking ja uudet reseptit (*Stephen Ryback*) [LE Cooking 150]
+[O][A Fishing50][G 55.0,69.7 Stormwind City]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Arnold Leland*) [LE Fishing 150]
+[O][A Herbalism50][G 54.3,84.1 Stormwind City]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 150]
+[O][A Skinning50][G 72.1,62.2 Stormwind City]Ammatti Skinning 50+: opettele Journeyman Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 150]
+[O][A Blacksmithing50][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 150]
+[O][A Enchanting50][G 53.0,73.7 Stormwind City]Ammatti Enchanting 50+: opettele Journeyman Enchanting ja uudet reseptit (*Betty Quin*) [LE Enchanting 150]
+[O][A Engineering50][G 61.9,30.6 Stormwind City]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Sprite Jumpsprocket*) [LE Engineering 150]
+[O][A Leatherworking50][G 71.7,63.0 Stormwind City]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Simon Tanner*) [LE Leatherworking 150]
+[O][A Tailoring50][G 53.5,81.5 Stormwind City]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Lawrence Schneider*) [LE Tailoring 150]
 [G 61.9,30.6 Stormwind City]Puhu: *Sprite Jumpsprocket* [QT92749 A Dynamite Plan] [QA92752 Explosive Consultation]
-[G 59.3,33.8 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kathrum Axehand*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Sentinel Hill]
 [G 52.5,53.0 Westfall]Puhu: *Alba Fairmoon* [QT92752 Explosive Consultation] [QA92753 Destruction in Deadmines]
 [G 42.5,71.7 Westfall]*Mene dungeoniin: The Deadmines*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *(DNT) Kill Credit: Place Explosives* [QC92753,1 Destruction in Deadmines]
@@ -988,6 +977,8 @@ Guidelime.registerGuide([[
 [G 80.1,69.9 Stormwind City]Puhu: *Doc Mixilpixil* [QT2607 The Touch of Zanzil] [QA2608 The Touch of Zanzil]
 [G 80.1,70.1 Stormwind City]Diagnosis Complete [QC2608,1 The Touch of Zanzil]
 [G 80.1,69.9 Stormwind City]Puhu: *Doc Mixilpixil* [QT2608 The Touch of Zanzil] [QA2609 The Touch of Zanzil]
+[G 58.4,69.0 Stormwind City][V Myy harmaat roinat] (*Frederick Stover*)
+[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
 [G 69.3,71.6 Stormwind City]Kerää *Simple Wildflowers* (Bernard Gump, Felicia Gump) [QC2609,1 The Touch of Zanzil]
 [G 63.8,73.1 Stormwind City]Kerää *Leaded Vial* (Edna Mullby, Maria Lumere, Sloan McCoy) [QC2609,2 The Touch of Zanzil]
 [G 50.6,60.1 Stormwind City]Kerää *Spool of Light Chartreuse Silk Thread* (Spool of Light Chartreuse Silk Thread) [QC2609,4 The Touch of Zanzil]
@@ -995,15 +986,12 @@ Guidelime.registerGuide([[
 [G 47.8,85.0 The Barrens]Kerää *Bronze Tube* (Box of Assorted Parts) [QC2609,3 The Touch of Zanzil]
 [OC]Matkusta: *Stormwind City*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Stormwind: lento, tai Deeprun Tram Ironforgesta
 [G 80.1,69.9 Stormwind City]Puhu: *Doc Mixilpixil* [QT2609 The Touch of Zanzil]
-[G 80.3,70.1 Stormwind City][V Myy harmaat roinat] (*Jasper Fel*)
-[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore). Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore][P Auberdine]Hae flight path (*Caylais Moonfeather*)
 [O][A Cooking10][G 37.7,40.7 Darkshore]Ammattitehtävä (Cooking 10+): puhu *Alanndarian Nightsong* [QA2178 Easy Strider Living] Tavoite: Bring back 5 Strider Meat to Alanndarian Nightsong in Auberdine.
 [G 38.1,41.2 Darkshore]Puhu: *Gorbold Steelhand* [QT97894 Business in Auberdine] [QA982 Deep Ocean, Vast Sea]
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QA97914 Expanding Horizons]
 [O][A Fishing30][G 37.0,44.1 Darkshore]Ammattitehtävä (Fishing 30+): puhu *Wizbang Cranktoggle* [QA1579 Gaffer Jacks] Tavoite: Bring 8 Gaffer Jacks to Wizbang Cranktoggle in Auberdine.
-[G 37.7,43.4 Darkshore]Puhu: *Sentinel Glynda Nal'Shea* [QA4811 The Red Crystal]
 [G 37.3,43.6 Darkshore]Puhu: *Barithras Moonshade* [QA947 Cave Mushrooms]
 [G 37.2,44.2 Darkshore]Klikkaa: *WANTED: Murkdeep!* [QA4740 WANTED: Murkdeep!] [QA98025 WANTED: Jai'vhanel]
 [G 36.1,44.9 Darkshore]Puhu: *Gubber Blump* [QA1138 Fruit of the Sea]
@@ -1020,68 +1008,61 @@ Guidelime.registerGuide([[
 [G 44.7,33.0 Darkshore]Tapa *Rabid Thistle Bear* [QC2118,1 Plagued Lands]
 [O][A Fishing30][G 37.0,44.1 Darkshore]Ammattitehtävä: palauta *Wizbang Cranktoggle* [QT1579 Gaffer Jacks] (jos tavoite valmis)
 [O][A Fishing30][G 37.0,44.1 Darkshore]Ammattitehtävä (Fishing 30+): puhu *Wizbang Cranktoggle* [QA1580 Electropellers] Tavoite: Bring 12 Electropellers to Wizbang Cranktoggle in Auberdine.
-[G 38.8,43.4 Darkshore]Puhu: *Tharnariun Treetender* [QT2118 Plagued Lands]
-[O][A Mining50][G 38.2,41.0 Darkshore]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 150]
-[G 38.8,43.4 Darkshore]Puhu: *Tharnariun Treetender* [QA2138 Cleansing of the Infected]
-[G 39.0,61.5 Darkshore]Tapa *Rabid Thistle Bear* [QC2138,1 Cleansing of the Infected]
+[G 38.8,43.4 Darkshore]Puhu: *Tharnariun Treetender* [QT2118 Plagued Lands] [QA2138 Cleansing of the Infected]
 [G 37.1,62.2 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4722 Beached Sea Turtle]
+[G 39.0,61.5 Darkshore]Tapa *Rabid Thistle Bear*; Kerää *Anaya's Pendant* (Anaya Dawnrunner) [QC2138,1 Cleansing of the Infected] [QC963,1 For Love Eternal]
+[G 44.2,60.9 Darkshore]Kerää *Feather of Jai'vhanel* (Jai'vhanel) [QC98025,1 WANTED: Jai'vhanel]
 [G 36.0,70.9 Darkshore]Klikkaa: *Beached Sea Creature* [QA4728 Beached Sea Creature]
-[G 36.4,76.5 Darkshore]Tapa *Murkdeep* [QC4740,1 WANTED: Murkdeep!]
 [G 32.7,80.8 Darkshore]Klikkaa: *Beached Sea Creature* [QA4730 Beached Sea Creature]
 [G 31.7,83.7 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4731 Beached Sea Turtle]
 [G 31.2,85.6 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4732 Beached Sea Turtle]
 [G 31.3,87.4 Darkshore]Klikkaa: *Beached Sea Creature* [QA4733 Beached Sea Creature]
 [G 38.6,87.3 Darkshore]Puhu: *Therylune* [QA945 Therylune's Escape]
-[G 40.5,87.1 Darkshore]Escort Therylune away from the Master's Glaive [QC945,1 Therylune's Escape]
-[G 45.9,90.3 Darkshore]Puhu: *Sentinel Aynasha* [QA5713 One Shot.  One Kill.]
-[G 45.9,90.4 Darkshore]Protect Aynasha [QC5713,1 One Shot.  One Kill.]
-[G 43.5,60.3 Darkshore]Kerää *Feather of Jai'vhanel* (Jai'vhanel); Kerää *Anaya's Pendant* (Anaya Dawnrunner) [QC98025,1 WANTED: Jai'vhanel] [QC963,1 For Love Eternal]
-[O][A Fishing30][G 37.0,44.1 Darkshore]Ammattitehtävä: palauta *Wizbang Cranktoggle* [QT1580 Electropellers] (jos tavoite valmis)
+[G 36.4,76.5 Darkshore]Tapa *Murkdeep* [QC4740,1 WANTED: Murkdeep!]
 [G 37.0,44.1 Darkshore][S Aseta Hearthstone tähän] (*Innkeeper Shaussiy*)
-[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT4723 Beached Sea Creature] [QT4722 Beached Sea Turtle] [QT4728 Beached Sea Creature] [QT4730 Beached Sea Creature] [QT4731 Beached Sea Turtle] [QT4732 Beached Sea Turtle] [QT4733 Beached Sea Creature]
+[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT4723 Beached Sea Creature] [QT4722 Beached Sea Turtle]
+[O][A Fishing30][G 37.0,44.1 Darkshore]Ammattitehtävä: palauta *Wizbang Cranktoggle* [QT1580 Electropellers] (jos tavoite valmis)
+[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT4728 Beached Sea Creature] [QT4730 Beached Sea Creature] [QT4731 Beached Sea Turtle] [QT4732 Beached Sea Turtle] [QT4733 Beached Sea Creature]
 [O][A Cooking10][G 37.7,40.7 Darkshore]Ammattitehtävä: palauta *Alanndarian Nightsong* [QT2178 Easy Strider Living] (jos tavoite valmis)
 [G 37.7,43.4 Darkshore]Puhu: *Sentinel Glynda Nal'Shea* [QT4740 WANTED: Murkdeep!] [QT98025 WANTED: Jai'vhanel]
 [G 38.8,43.4 Darkshore]Puhu: *Tharnariun Treetender* [QT2138 Cleansing of the Infected] [QA2139 Tharnariun's Hope]
-[G 38.1,41.1 Darkshore][V Myy harmaat roinat] (*Elisa Steelhand*)
-[G 47.2,48.7 Darkshore]Locate the large, red crystal on Darkshore's eastern mountain range; Käytä / kerää: *Mysterious Red Crystal* [QC4811,2 The Red Crystal] [QC4811,1 The Red Crystal]
-[G 37.7,43.4 Darkshore]Puhu: *Sentinel Glynda Nal'Shea* [QT4811 The Red Crystal] [QA4812 As Water Cascades]
-[G 37.8,44.0 Darkshore]Kerää *Moonwell Water Tube* (Auberdine Moonwell) [QC4812,1 As Water Cascades]
-[G 47.3,48.7 Darkshore]Klikkaa: *Mysterious Red Crystal* [QT4812 As Water Cascades] [QA4813 The Fragments Within]
-[G 38.2,28.8 Darkshore]Kerää *Silver Dawning's Lockbox* (Silver Dawning's Lockbox); Kerää *Mist Veil's Lockbox* (Mist Veil's Lockbox) [QC982,1 Deep Ocean, Vast Sea] [QC982,2 Deep Ocean, Vast Sea]
-[G 44.2,20.6 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4725 Beached Sea Turtle]
-[G 45.4,20.0 Darkshore]Kerää *Fine Crab Chunks* (Reef Crawler, Encrusted Tide Crawler) [QC1138,1 Fruit of the Sea]
-[G 53.1,18.1 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4727 Beached Sea Turtle]
+[G 50.9,34.7 Darkshore]Find a corrupt furbolg camp; Kerää *Scaber Stalk* (Scaber Stalk) [QC984,1 How Big a Threat?] [QC947,1 Cave Mushrooms]
+[G 55.8,35.8 Darkshore]Kerää *Death Cap* (Death Cap) [QC947,2 Cave Mushrooms]
 [G 55.0,24.9 Darkshore]Puhu: *Balthule Shadowstrike* [QT965 The Tower of Althalaxx] [QA966 The Tower of Althalaxx]
-[G 56.3,26.7 Darkshore]Kerää *Worn Parchment* (Dark Strand Fanatic) [QC966,1 The Tower of Althalaxx]
-[G 55.0,24.9 Darkshore]Puhu: *Balthule Shadowstrike* [QT966 The Tower of Althalaxx] [QA967 The Tower of Althalaxx]
-[G 55.7,34.9 Darkshore]Kerää *Scaber Stalk* (Scaber Stalk); Kerää *Death Cap* (Death Cap); Find a corrupt furbolg camp [QC947,1 Cave Mushrooms] [QC947,2 Cave Mushrooms] [QC984,1 How Big a Threat?]
-[H Hearthstone: Innkeeper Shaussiy] (jos cooldownilla, juokse tai lennä)
-[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT984 How Big a Threat?]
-[O][A Engineering50][G 38.3,41.1 Darkshore]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Jenna Lemkenilli*) [LE Engineering 150]
-[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QA985 How Big a Threat?] [QA4761 Thundris Windweaver]
-[O][A Blacksmithing50][G 38.2,40.9 Darkshore]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Delfrum Flintbeard*) [LE Blacksmithing 150]
-[G 37.7,43.4 Darkshore]Puhu: *Sentinel Glynda Nal'Shea* [QT4813 The Fragments Within]
+[G 53.1,18.1 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4727 Beached Sea Turtle]
+[G 52.8,17.8 Darkshore]Kerää *Fine Crab Chunks* (Reef Crawler, Encrusted Tide Crawler) [QC1138,1 Fruit of the Sea]
+[G 44.2,20.6 Darkshore]Klikkaa: *Beached Sea Turtle* [QA4725 Beached Sea Turtle]
+[G 39.6,27.5 Darkshore]Kerää *Mist Veil's Lockbox* (Mist Veil's Lockbox); Kerää *Silver Dawning's Lockbox* (Silver Dawning's Lockbox) [QC982,2 Deep Ocean, Vast Sea] [QC982,1 Deep Ocean, Vast Sea]
+[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT984 How Big a Threat?] [QA985 How Big a Threat?] [QA4761 Thundris Windweaver]
 [G 37.3,43.6 Darkshore]Puhu: *Barithras Moonshade* [QT947 Cave Mushrooms] [QA948 Onu]
 [G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT4725 Beached Sea Turtle] [QT4727 Beached Sea Turtle]
 [G 36.1,44.9 Darkshore]Puhu: *Gubber Blump* [QT1138 Fruit of the Sea]
 [G 35.7,43.7 Darkshore]Puhu: *Cerellean Whiteclaw* [QT963 For Love Eternal]
-[O][A Tailoring50][G 38.2,40.5 Darkshore]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Grondal Moonbreeze*) [LE Tailoring 150]
+[G 36.1,44.9 Darkshore][V Myy harmaat roinat] (*Gubber Blump*)
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4761 Thundris Windweaver] [QA4762 The Cliffspring River]
+[G 56.3,26.7 Darkshore]Kerää *Worn Parchment* (Dark Strand Fanatic) [QC966,1 The Tower of Althalaxx]
+[G 55.0,24.9 Darkshore]Puhu: *Balthule Shadowstrike* [QT966 The Tower of Althalaxx] [QA967 The Tower of Althalaxx]
 [G 50.8,25.6 Darkshore]Kerää *Cliffspring River Sample* (Cliffspring River Waterfall) [QC4762,1 The Cliffspring River]
-[G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4762 The Cliffspring River] [QA4763 The Blackwood Corrupted]
+[H Hearthstone: Innkeeper Shaussiy] (jos cooldownilla, juokse tai lennä)
+[G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4762 The Cliffspring River]
+[O][A Mining50][G 38.2,41.0 Darkshore]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 150]
+[O][A Mining125][G 38.2,41.0 Darkshore]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 225]
+[G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QA4763 The Blackwood Corrupted]
 [G 52.5,33.4 Darkshore]Kerää *Talisman of Corruption* (Xabraxxis' Demon Bag) [QC4763,1 The Blackwood Corrupted]
 [G 51.5,38.3 Darkshore]Tapa *Den Mother* [QC2139,1 Tharnariun's Hope]
 [G 43.5,76.3 Darkshore]Puhu: *Onu* [QT948 Onu] [QA944 The Master's Glaive]
 [G 38.5,86.5 Darkshore]Enter the Master's Glaive [QC944,1 The Master's Glaive]
 [G 38.6,86.2 Darkshore]Klikkaa: *Scrying Bowl* [QT944 The Master's Glaive] [QA949 The Twilight Camp]
 [G 38.5,86.0 Darkshore]Klikkaa: *Twilight Tome* [QT949 The Twilight Camp] [QA950 Return to Onu] [QA98042 It's All Fun and Games Until...]
-[G 38.8,86.6 Darkshore]Kerää *Peerless Eye* (Twilight Thug, Twilight Disciple) [QC98042,1 It's All Fun and Games Until...]
+[G 38.8,86.6 Darkshore]Kerää *Peerless Eye* (Twilight Thug, Twilight Disciple); Escort Therylune away from the Master's Glaive [QC98042,1 It's All Fun and Games Until...] [QC945,1 Therylune's Escape]
 [G 43.5,76.3 Darkshore]Puhu: *Onu* [QT950 Return to Onu]
 [G 39.7,54.4 Darkshore]Tapa *Blackwood Windtalker* [QC985,2 How Big a Threat?]
 [G 39.3,52.2 Darkshore]Tapa *Blackwood Pathfinder* [QC985,1 How Big a Threat?]
 [G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT985 How Big a Threat?]
-[O][A Mining125][G 38.2,41.0 Darkshore]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 225]
 [G 38.8,43.4 Darkshore]Puhu: *Tharnariun Treetender* [QT2139 Tharnariun's Hope]
+[O][A Blacksmithing50][G 38.2,40.9 Darkshore]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Delfrum Flintbeard*) [LE Blacksmithing 150]
+[O][A Engineering50][G 38.3,41.1 Darkshore]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Jenna Lemkenilli*) [LE Engineering 150]
+[O][A Tailoring50][G 38.2,40.5 Darkshore]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Grondal Moonbreeze*) [LE Tailoring 150]
 [G 38.1,41.2 Darkshore]Puhu: *Gorbold Steelhand* [QT982 Deep Ocean, Vast Sea]
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT4763 The Blackwood Corrupted] [QT98042 It's All Fun and Games Until...]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
@@ -1090,7 +1071,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
 [N22-26 Darkshore, Redridge, Stonetalon + RoL (Rogue)]
-[NX26-30 Duskwood, Redridge, Westfall (Rogue)]
+[NX26-31 Duskwood, Darkshore, Westfall (Rogue)]
 [OC]Matkusta: *Teldrassil*. Auberdinen laiturilta laiva Rut'theran Villageen (Teldrassil)
 [G 58.4,94.0 Teldrassil][P Rut'theran Village]Hae flight path (*Vesprystus*)
 [OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
@@ -1107,7 +1088,7 @@ Guidelime.registerGuide([[
 [G 22.0,45.5 Redridge Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kimberly Hiett*)
 [G 19.0,32.6 Redridge Mountains]Kerää *Iron Pike* (Redridge Basher, Redridge Mystic, Redridge Brute); Kerää *Iron Rivet* (Redridge Basher, Redridge Mystic, Redridge Brute) [QC89,1 The Everstill Bridge] [QC89,2 The Everstill Bridge]
 [G 27.1,48.6 Redridge Mountains]Puhu: *Foreman Oslow* [QT89 The Everstill Bridge] [QA98386 Alther's Mill]
-[G 44.7,42.6 Redridge Mountains]Tapa *Greater Tarantula*; Käytä / kerää: *Tarantula Egg* [QC98386,1 Alther's Mill] [QC98386,2 Alther's Mill]
+[G 43.7,42.6 Redridge Mountains]Tapa *Greater Tarantula*; Käytä / kerää: *Tarantula Egg* [QC98386,1 Alther's Mill] [QC98386,2 Alther's Mill]
 [G 53.9,43.7 Redridge Mountains]Kerää *Battleworn Axe* (Blackrock Outrunner, Blackrock Grunt, Blackrock Summoner) [QC20,1 Blackrock Menace]
 [G 67.4,78.9 Redridge Mountains]Kerää *Blackrock Supplies* (Blackrock Supplies); Kerää *Stolen Weapon* (Weapon Rack, Stolen Weapon) [QC98387,2 Blackrock Blockade] [QC98387,1 Blackrock Blockade]
 [G 27.1,48.6 Redridge Mountains]Puhu: *Foreman Oslow* [QT98386 Alther's Mill]
@@ -1151,30 +1132,26 @@ Guidelime.registerGuide([[
 [G 45.0,6.8 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hjoldir Stoneblade*)
 [G 18.1,51.5 Ironforge][V Osta ruokaa, noin 20] (*Innkeeper Firebrew*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[O][A Mining50][G 38.2,41.0 Darkshore]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 150]
-[G 37.4,41.8 Darkshore]Puhu: *Archaeologist Hollee* [QA729 The Absent Minded Prospector] [QA98461 Unrequited Love]
-[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QA986 A Lost Master]
-[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QA87760 Holy Diver]
 [G 43.5,76.3 Darkshore]Puhu: *Onu* [QA951 Mathystra Relics]
 [G 43.6,76.4 Darkshore]Puhu: *Arbal* [QA98013 Swelling Forces]
 [G 44.4,76.4 Darkshore]Puhu: *Kerlonian Evershade* [QA5321 The Sleeper Has Awakened]
-[G 37.6,83.9 Darkshore]Kerää *Fine Moonstalker Pelt* (Moonstalker Sire, Moonstalker Matriarch) [QC986,1 A Lost Master]
-[G 35.7,83.7 Darkshore]Puhu: *Prospector Remtravel* [QT729 The Absent Minded Prospector] [QA731 The Absent Minded Prospector]
-[G 35.7,84.0 Darkshore]Escort Prospector Remtravel [QC731,1 The Absent Minded Prospector]
-[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT986 A Lost Master] [QA993 A Lost Master]
-[G 37.4,41.8 Darkshore]Puhu: *Archaeologist Hollee* [QT731 The Absent Minded Prospector] [QA741 The Absent Minded Prospector]
+[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QA87760 Holy Diver]
+[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QA986 A Lost Master]
+[G 37.4,41.8 Darkshore]Puhu: *Archaeologist Hollee* [QA98461 Unrequited Love]
 [G 56.7,22.5 Darkshore]Kerää *Mathystra Relic* (Mathystra Relic); Tapa *Stormscale Sorceress*; Tapa *Stormscale Myrmidon*; Tapa *Stormscale Warrior* [QC951,1 Mathystra Relics] [QC98013,2 Swelling Forces] [QC98013,1 Swelling Forces] [QC98013,3 Swelling Forces]
+[G 59.9,11.8 Darkshore]Kerää *Fine Moonstalker Pelt* (Moonstalker Sire, Moonstalker Matriarch) [QC986,1 A Lost Master]
 [G 56.7,13.5 Darkshore]Puhu: *Gelkak Gyromast* [QA2098 Gyromast's Retrieval]
 [G 56.4,12.5 Darkshore]Kerää *Bottom of Gelkak's Key* (Raging Reef Crawler, Encrusted Tide Crawler) [QC2098,3 Gyromast's Retrieval]
-[G 50.2,10.8 Darkshore]Kerää *Rod of Deep Dominion* (Stormscale Beastmistress) [QC87760,1 Holy Diver]
+[G 50.4,10.0 Darkshore]Kerää *Rod of Deep Dominion* (Stormscale Beastmistress) [QC87760,1 Holy Diver]
 [G 38.7,21.8 Darkshore]Kerää *Middle of Gelkak's Key* (Greymist Coastrunner, Greymist Seer, Greymist Tidehunter) [QC2098,2 Gyromast's Retrieval]
-[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT87760 Holy Diver]
+[G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT986 A Lost Master] [QA993 A Lost Master]
 [G 43.5,76.3 Darkshore]Puhu: *Onu* [QT951 Mathystra Relics]
 [G 43.6,76.4 Darkshore]Puhu: *Arbal* [QT98013 Swelling Forces]
-[G 45.0,85.3 Darkshore]Puhu: *Volcor* [QT993 A Lost Master] [QA994 Escape Through Force]
+[G 40.9,82.3 Darkshore]Kerää *Top of Gelkak's Key* (Giant Foreststrider) [QC2098,1 Gyromast's Retrieval]
 [G 42.0,90.5 Darkshore]Escort Kerlonian Evershade on the road south to his bag [QC5321,1 The Sleeper Has Awakened]
-[G 40.9,82.3 Darkshore]Kerää *Top of Gelkak's Key* (Giant Foreststrider); Help Volcor to the road [QC2098,1 Gyromast's Retrieval] [QC994,1 Escape Through Force]
-[O][A Engineering50][G 38.3,41.1 Darkshore]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Jenna Lemkenilli*) [LE Engineering 150]
+[G 45.0,85.3 Darkshore]Puhu: *Volcor* [QT993 A Lost Master] [QA994 Escape Through Force]
+[G 41.9,81.8 Darkshore]Help Volcor to the road [QC994,1 Escape Through Force]
+[G 36.6,45.6 Darkshore]Puhu: *Gwennyth Bly'Leggonde* [QT87760 Holy Diver]
 [G 39.4,43.5 Darkshore]Puhu: *Terenthis* [QT994 Escape Through Force]
 [G 39.3,43.5 Darkshore]Puhu: *Sentinel Selarin* [QA990 Trek to Ashenvale]
 [G 56.7,13.5 Darkshore]Puhu: *Gelkak Gyromast* [QT2098 Gyromast's Retrieval]
@@ -1183,14 +1160,12 @@ Guidelime.registerGuide([[
 [O][G 56.7,13.5 Darkshore]Puhu: *Gelkak Gyromast* [QT2078 Gyromast's Revenge] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Ashenvale*. Lennä Astranaariin. Ensimmäisellä kerralla: Darkshoren eteläpäästä tietä Ashenvaleen, Astranaar on keskellä
 [G 34.4,48.0 Ashenvale][P Astranaar]Hae flight path (*Daelyshia*)
+[G 34.7,48.8 Ashenvale]Puhu: *Shindrell Swiftfire* [QA1008 The Zoram Strand]
 [O][A Leatherworking50][G 36.0,52.1 Ashenvale]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Aayndia Floralwind*) [LE Leatherworking 150]
 [O][A Leatherworking125][G 36.0,52.1 Ashenvale]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Aayndia Floralwind*) [LE Leatherworking 225]
-[G 34.9,49.8 Ashenvale]Puhu: *Sentinel Thenysil* [QA1070 On Guard in Stonetalon]
-[G 34.7,48.8 Ashenvale]Puhu: *Shindrell Swiftfire* [QA1008 The Zoram Strand]
 [G 35.8,49.1 Ashenvale]Puhu: *Faldreas Goeth'Shael* [QA1056 Journey to Stonetalon Peak]
 [G 36.6,49.6 Ashenvale]Puhu: *Raene Wolfrunner* [QT990 Trek to Ashenvale] [QA991 Raene's Cleansing]
 [G 27.3,35.6 Ashenvale]Puhu: *Liladris Moonriver* [QT5321 The Sleeper Has Awakened]
-[G 26.6,36.7 Ashenvale]Puhu: *Sentinel Onaeya* [QT5713 One Shot.  One Kill.]
 [G 26.4,38.6 Ashenvale]Puhu: *Orendil Broadleaf* [QA1010 Bathran's Hair]
 [G 26.2,38.7 Ashenvale]Puhu: *Delgren the Purifier* [QT967 The Tower of Althalaxx] [QA970 The Tower of Althalaxx]
 [G 20.3,42.3 Ashenvale]Puhu: *Teronis' Corpse* [QT991 Raene's Cleansing] [QA1023 Raene's Cleansing]
@@ -1206,11 +1181,10 @@ Guidelime.registerGuide([[
 [G 26.2,38.7 Ashenvale]Puhu: *Delgren the Purifier* [QT970 The Tower of Althalaxx]
 [G 26.4,38.6 Ashenvale]Puhu: *Orendil Broadleaf* [QT1010 Bathran's Hair] [QA1020 Orendil's Cure]
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1020 Orendil's Cure] [QA1033 Elune's Tear]
+[G 35.8,52.0 Ashenvale][V Myy harmaat roinat] (*Xai'ander*)
 [G 53.5,46.2 Ashenvale]Puhu: *Shael'dryn* [QT1024 Raene's Cleansing]
 [G 46.4,46.4 Ashenvale]Kerää *Elune's Tear* (Elune's Tear) [QC1033,1 Elune's Tear]
-[G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1033 Elune's Tear]
-[G 37.0,49.2 Ashenvale][V Myy harmaat roinat] (*Innkeeper Kimlya*)
-[G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QA1034 The Ruins of Stardust]
+[G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1033 Elune's Tear] [QA1034 The Ruins of Stardust]
 [G 33.3,67.8 Ashenvale]Kerää *Handful of Stardust* (Stardust Covered Bush) [QC1034,1 The Ruins of Stardust]
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1034 The Ruins of Stardust]
 [G 22.6,51.9 Ashenvale]Puhu: *Therysil* [QT945 Therylune's Escape]
@@ -1229,10 +1203,12 @@ Guidelime.registerGuide([[
 [G 45.1,67.0 Duskwood]Puhu: *Watcher Dodds* [QA245 Eight-Legged Menaces]
 [G 77.5,44.3 Duskwood][P Darkshire]Hae flight path (*Felicia Maline*)
 [O][A Cooking50][G 73.8,43.5 Duskwood]Ammattitehtävä (Cooking 50+): puhu *Chef Grual* [QA90 Seasoned Wolf Kabobs] Tavoite: Gather 10 Lean Wolf Flanks and Stormwind Seasoning Herbs and return to Chef Grual in Darkshire.
+[O][A Mining50][G 74.0,49.6 Duskwood]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Matt Johnson*) [LE Mining 150]
 [O][A Mining125][G 74.0,49.6 Duskwood]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Matt Johnson*) [LE Mining 225]
 [O][A Blacksmithing50][G 74.0,48.5 Duskwood]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Clarise Gnarltree*) [LE Blacksmithing 150]
 [O][A Blacksmithing125][G 74.0,48.5 Duskwood]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Clarise Gnarltree*) [LE Blacksmithing 225]
 [G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QA96139 The Valor Family]
+[O][A Engineering50][G 77.4,48.8 Duskwood]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Finbus Geargrind*) [LE Engineering 150]
 [O][A Engineering125][G 77.4,48.8 Duskwood]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Finbus Geargrind*) [LE Engineering 225]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA56 The Night Watch]
 [G 75.3,48.8 Duskwood]Puhu: *Elaine Carevin* [QA164 Deliveries to Sven]
@@ -1250,7 +1226,6 @@ Guidelime.registerGuide([[
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT157 Deliver the Thread] [QA158 Zombie Juice]
 [G 7.7,33.2 Duskwood]Puhu: *Lars* [QT226 Wolves at Our Heels]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT164 Deliveries to Sven]
-[O][A Mining50][G 74.0,49.6 Duskwood]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Matt Johnson*) [LE Mining 150]
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT158 Zombie Juice] [QA156 Gather Rot Blossoms]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT56 The Night Watch]
 [G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QT96139 The Valor Family]
@@ -1264,8 +1239,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N26-30 Duskwood, Redridge, Westfall (Rogue)]
-[NX30-34 Wetlands, Ashenvale, Darkshore + WC/BFD/Stocks (Rogue)]
+[N26-31 Duskwood, Darkshore, Westfall (Rogue)]
+[NX31-34 Ashenvale, Darkshore, Barrens + WC/BFD/Stocks (Rogue)]
 [G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Stormwind]
 [G 80.3,68.6 Stormwind City][T Rogue-trainer (taso 26)] (*Lord Tony Romano*): Kick r2, Heavy Wool Bandage
 [O][A First Aid50][G 53.0,44.7 Stormwind City]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Shaina Fuller*) [LE First Aid 150]
@@ -1281,41 +1256,14 @@ Guidelime.registerGuide([[
 [O][A Enchanting125][G 52.9,74.5 Stormwind City]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 225]
 [O][A Tailoring50][G 53.5,81.5 Stormwind City]Ammatti Tailoring 50+: opettele Journeyman Tailoring ja uudet reseptit (*Lawrence Schneider*) [LE Tailoring 150]
 [O][A Tailoring125][G 53.1,81.3 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 225]
-[G 69.2,82.7 Stormwind City]Puhu: *General Marcus Jonathan* [QT120 Messenger to Stormwind] [QT95195 Bloodied Insignia]
-[G 56.3,54.0 Stormwind City]Puhu: *Orphan Matron Nightingale* [QT92415 Remember That I Love You] [QA95161 Remember That I Love You]
-[G 55.0,54.2 Stormwind City]Puhu: *Brother Kristoff* [QA343 Speaking of Fortitude]
-[G 57.7,47.9 Stormwind City]Puhu: *Baros Alexston* [QT97914 Expanding Horizons]
-[G 62.6,34.1 Stormwind City]Puhu: *Shoni the Shilent* [QT2040 Underground Assault]
+[G 69.2,82.7 Stormwind City]Puhu: *General Marcus Jonathan* [QT95195 Bloodied Insignia]
 [G 68.0,28.9 Stormwind City]Puhu: *Lady Dena Kennedy* [QT95189 Crest of Lordaeron]
-[G 77.1,30.2 Stormwind City]Puhu: *Milton Sheaf* [QT343 Speaking of Fortitude] [QA344 Brother Paxton]
+[G 62.6,34.1 Stormwind City]Puhu: *Shoni the Shilent* [QT2040 Underground Assault]
+[G 59.7,33.8 Stormwind City]Puhu: *Grimand Elmore* [QT1097 Elmore's Task]
+[G 57.7,47.9 Stormwind City]Puhu: *Baros Alexston* [QT97914 Expanding Horizons]
+[G 56.3,54.0 Stormwind City]Puhu: *Orphan Matron Nightingale* [QT92415 Remember That I Love You] [QA95161 Remember That I Love You]
 [G 57.7,47.9 Stormwind City]Puhu: *Baros Alexston* [QA97926 Making Do]
 [G 53.5,57.6 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Agustus Moulaine*)
-[G 69.2,82.7 Stormwind City]Puhu: *General Marcus Jonathan* [QA121 Messenger to Stormwind]
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Lakeshire]
-[G 24.9,44.5 Redridge Mountains]Puhu: *Magistrate Solomon* [QT121 Messenger to Stormwind] [QA143 Messenger to Westfall]
-[G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Sentinel Hill]
-[G 56.3,47.5 Westfall]Puhu: *Gryan Stoutmantle* [QT143 Messenger to Westfall] [QA144 Messenger to Westfall]
-[G 56.5,52.6 Westfall]Lennä (*Thor*): [F Lakeshire]
-[G 24.9,44.5 Redridge Mountains]Puhu: *Magistrate Solomon* [QT144 Messenger to Westfall] [QA145 Messenger to Darkshire]
-[G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Darkshire]
-[G 71.9,46.4 Duskwood]Puhu: *Lord Ello Ebonlocke* [QT145 Messenger to Darkshire] [QA146 Messenger to Darkshire]
-[G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Lakeshire]
-[G 24.9,44.5 Redridge Mountains]Puhu: *Magistrate Solomon* [QT146 Messenger to Darkshire]
-[G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Stormwind]
-[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
-[G 49.6,40.4 Elwynn Forest]Puhu: *Brother Paxton* [QT344 Brother Paxton] [QA345 Ink Supplies]
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Lakeshire]
-[G 27.1,48.6 Redridge Mountains]Puhu: *Foreman Oslow* [QT345 Ink Supplies] [QA347 Rethban Ore]
-[G 15.1,23.6 Redridge Mountains]Kerää *Rethban Ore* (Redridge Drudger, Tin Vein, Copper Vein) [QC347,1 Rethban Ore]
-[G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Stormwind]
-[OC]Matkusta: *Elwynn Forest*. Stormwindin portista ulos Elwynn Forestiin. Goldshire on tien varrella
-[G 49.6,40.4 Elwynn Forest]Puhu: *Brother Paxton* [QT347 Rethban Ore] [QA346 Return to Kristoff]
-[OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
-[O][A Engineering50][G 61.9,30.6 Stormwind City]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Sprite Jumpsprocket*) [LE Engineering 150]
-[G 55.0,54.2 Stormwind City]Puhu: *Brother Kristoff* [QT346 Return to Kristoff]
-[G 53.5,57.6 Stormwind City][V Myy harmaat roinat] (*Agustus Moulaine*)
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Thelsamar]
-[G 24.8,18.4 Loch Modan]Puhu: *Mountaineer Stormpike* [QT353 Stormpike's Delivery]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 37.4,40.1 Darkshore]Puhu: *Thundris Windweaver* [QT97926 Making Do]
 [XP22 Tavoitetaso 22: jos olet alle, toista edellinen dungeon tai grindaa]
@@ -1324,14 +1272,12 @@ Guidelime.registerGuide([[
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA57 The Night Watch]
 [G 75.8,47.6 Duskwood]Puhu: *Calor* [QA173 Worgen in the Woods]
 [G 75.8,45.3 Duskwood]Puhu: *Madame Eva* [QA66 The Legend of Stalvan] [QA101 The Totem of Infliction]
+[G 63.4,44.2 Duskwood]Tapa *Nightbane Shadow Weaver* [QC173,1 Worgen in the Woods]
 [G 72.5,46.9 Duskwood]Puhu: *Clerk Daltry* [QT66 The Legend of Stalvan] [QA67 The Legend of Stalvan]
-[G 79.8,48.0 Duskwood]Puhu: *Viktori Prism'Antras* [QA174 Look To The Stars]
+[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT173 Worgen in the Woods] [QA221 Worgen in the Woods]
 [G 81.1,56.2 Duskwood]Tapa *Skeletal Horror* [QC57,2 The Night Watch]
 [G 82.1,68.7 Duskwood]Kerää *Skeleton Finger* (Skeletal Horror, Skeletal Warder, Skeletal Raider) [QC101,3 The Totem of Infliction]
-[G 67.3,70.8 Duskwood]Tapa *Nightbane Shadow Weaver* [QC173,1 Worgen in the Woods]
-[G 73.9,44.4 Duskwood][S Aseta Hearthstone tähän] (*Innkeeper Trelayne*)
-[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT173 Worgen in the Woods] [QA221 Worgen in the Woods]
-[G 71.3,23.7 Duskwood]Kerää *Vial of Spider Venom* (Black Widow Hatchling, Pygmy Venom Web Spider, Venom Web Spider) [QC101,2 The Totem of Infliction]
+[G 67.3,69.2 Duskwood]Tapa *Nightbane Dark Runner* [QC221,1 Worgen in the Woods]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QA133 Ghoulish Effigy]
 [G 25.8,32.9 Duskwood]Kerää *Ghoul Fang* (Plague Spreader, Brain Eater, Fetid Corpse); Kerää *Ghoul Rib* (Plague Spreader, Brain Eater, Bone Chewer) [QC101,1 The Totem of Infliction] [QC133,1 Ghoulish Effigy]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT133 Ghoulish Effigy] [QA134 Ogre Thieves]
@@ -1339,35 +1285,26 @@ Guidelime.registerGuide([[
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QA95 Sven's Revenge]
 [G 33.4,76.3 Duskwood]Kerää *Abercrombie's Crate* (Abercrombie's Crate) [QC134,1 Ogre Thieves]
 [G 49.9,77.7 Duskwood]Klikkaa: *Mound of loose dirt* [QT95 Sven's Revenge] [QA230 Sven's Camp]
-[G 65.4,67.8 Duskwood]Tapa *Nightbane Dark Runner* [QC221,1 Worgen in the Woods]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT57 The Night Watch] [QA58 The Night Watch]
+[G 73.0,44.4 Duskwood]Puhu: *Avette Fellwood* [QT95161 Remember That I Love You]
+[G 71.3,23.7 Duskwood]Kerää *Vial of Spider Venom* (Black Widow Hatchling, Pygmy Venom Web Spider, Venom Web Spider) [QC101,2 The Totem of Infliction]
 [G 28.1,31.5 Duskwood]Puhu: *Abercrombie* [QT134 Ogre Thieves] [QA160 Note to the Mayor]
 [G 25.4,30.6 Duskwood]Tapa *Plague Spreader* [QC58,1 The Night Watch]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT230 Sven's Camp] [QA262 The Shadowy Figure]
-[H Hearthstone: Innkeeper Trelayne] (jos cooldownilla, juokse tai lennä)
 [G 71.9,46.4 Duskwood]Puhu: *Lord Ello Ebonlocke* [QT160 Note to the Mayor] [QA251 Translate Abercrombie's Note]
+[G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QT251 Translate Abercrombie's Note]
+[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT221 Worgen in the Woods]
 [G 75.8,45.3 Duskwood]Puhu: *Madame Eva* [QT101 The Totem of Infliction] [QT262 The Shadowy Figure] [QA265 The Shadowy Search Continues]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT58 The Night Watch]
 [G 72.5,46.9 Duskwood]Puhu: *Clerk Daltry* [QT265 The Shadowy Search Continues] [QA266 Inquire at the Inn]
-[G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT266 Inquire at the Inn] [QA453 Finding the Shadowy Figure]
-[G 73.0,44.4 Duskwood]Puhu: *Avette Fellwood* [QT95161 Remember That I Love You]
+[G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT266 Inquire at the Inn]
+[G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QA453 Finding the Shadowy Figure]
+[G 73.0,44.4 Duskwood][V Myy harmaat roinat] (*Avette Fellwood*)
 [G 18.4,56.4 Duskwood]Puhu: *Jitters* [QT453 Finding the Shadowy Figure] [QA268 Return to Sven]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT268 Return to Sven] [QA323 Proving Your Worth]
 [G 13.8,34.5 Duskwood]Tapa *Skeletal Warder*; Tapa *Skeletal Healer*; Tapa *Skeletal Raider* [QC323,3 Proving Your Worth] [QC323,2 Proving Your Worth] [QC323,1 Proving Your Worth]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT323 Proving Your Worth] [QA269 Seeking Wisdom]
-[G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QT251 Translate Abercrombie's Note]
-[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT221 Worgen in the Woods] [QA222 Worgen in the Woods]
-[G 73.5,68.5 Duskwood]Tapa *Nightbane Vile Fang* [QC222,1 Worgen in the Woods]
-[G 73.5,77.0 Duskwood]Tapa *Nightbane Tainted One* [QC222,2 Worgen in the Woods]
-[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT222 Worgen in the Woods]
-[O][A Mining125][G 74.0,49.6 Duskwood]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Matt Johnson*) [LE Mining 225]
-[O][A Blacksmithing50][G 74.0,48.5 Duskwood]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Clarise Gnarltree*) [LE Blacksmithing 150]
-[O][A Blacksmithing125][G 74.0,48.5 Duskwood]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Clarise Gnarltree*) [LE Blacksmithing 225]
-[G 75.8,47.6 Duskwood]Puhu: *Calor* [QA223 Worgen in the Woods]
-[O][A Engineering125][G 77.4,48.8 Duskwood]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Finbus Geargrind*) [LE Engineering 225]
-[G 73.9,44.4 Duskwood][V Myy roinat. Osta ruokaa, noin 20] (*Innkeeper Trelayne*)
-[G 75.3,49.0 Duskwood]Puhu: *Jonathan Carevin* [QT223 Worgen in the Woods]
-[G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Sentinel Hill]
+[OC]Matkusta: *Westfall*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 41.5,66.7 Westfall]Klikkaa: *Old Footlocker* [QT67 The Legend of Stalvan] [QA68 The Legend of Stalvan]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Darkshire]
 [G 72.5,46.9 Duskwood]Puhu: *Clerk Daltry* [QT68 The Legend of Stalvan] [QA69 The Legend of Stalvan]
@@ -1377,6 +1314,7 @@ Guidelime.registerGuide([[
 [O][A Leatherworking50][G 46.4,62.0 Elwynn Forest]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Adele Fielder*) [LE Leatherworking 150]
 [G 43.8,65.8 Elwynn Forest]Puhu: *Innkeeper Farley* [QT69 The Legend of Stalvan] [QA70 The Legend of Stalvan]
 [G 42.0,66.4 Elwynn Forest][V Myy harmaat roinat] ja [R korjaa varusteet] (*Nordun Steadysight*)
+[G 43.8,65.8 Elwynn Forest][V Osta ruokaa, noin 20] (*Innkeeper Farley*)
 [G 44.3,65.8 Elwynn Forest]Kerää *An Undelivered Letter* (Storage Chest) [QC70,1 The Legend of Stalvan]
 [OC]Matkusta: *Stormwind City*. Stormwind: lento, tai Deeprun Tram Ironforgesta
 [O][A Leatherworking125][G 71.7,63.0 Stormwind City]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Simon Tanner*) [LE Leatherworking 225]
@@ -1386,7 +1324,7 @@ Guidelime.registerGuide([[
 [G 84.6,69.4 Elwynn Forest]Puhu: *Marshal Haggard* [QT74 The Legend of Stalvan] [QA75 The Legend of Stalvan]
 [G 85.7,69.5 Elwynn Forest]Kerää *A Faded Journal Page* (Marshal Haggard's Chest) [QC75,1 The Legend of Stalvan]
 [G 84.6,69.4 Elwynn Forest]Puhu: *Marshal Haggard* [QT75 The Legend of Stalvan] [QA78 The Legend of Stalvan]
-[H Hearthstone: Innkeeper Trelayne] (jos cooldownilla, juokse tai lennä)
+[OC]Matkusta: *Duskwood*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 73.8,44.5 Duskwood]Puhu: *Tavernkeep Smitts* [QT78 The Legend of Stalvan] [QA79 The Legend of Stalvan]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT79 The Legend of Stalvan] [QA80 The Legend of Stalvan]
 [G 72.5,46.9 Duskwood]Puhu: *Clerk Daltry* [QT80 The Legend of Stalvan] [QA97 The Legend of Stalvan]
@@ -1406,18 +1344,12 @@ Guidelime.registerGuide([[
 [G 26.4,57.9 Redridge Mountains]Puhu: *Guard Howe* [QT128 Blackrock Bounty]
 [G 69.8,52.2 Redridge Mountains]Kerää *Shadowhide Pendant* (Shadowhide Warrior, Shadowhide Darkweaver, Shadowhide Slayer) [QC91,1 Solomon's Law]
 [G 75.1,37.1 Redridge Mountains]Kerää *Fangore's Paw* (Lieutenant Fangore) [QC180,1 WANTED: Lieutenant Fangore]
-[O][A Fishing50][G 21.9,51.1 Redridge Mountains]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Matthew Hooper*) [LE Fishing 150]
 [G 24.9,44.5 Redridge Mountains]Puhu: *Magistrate Solomon* [QT180 WANTED: Lieutenant Fangore]
 [G 24.6,44.3 Redridge Mountains]Puhu: *Bailiff Conacher* [QT91 Solomon's Law]
 [XP22 Tavoitetaso 22: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Menethil Harbor]
-[G 11.5,52.2 Wetlands]Puhu: *Tarrel Rockweaver* [QT98461 Unrequited Love]
-[G 10.7,61.0 Wetlands][S Aseta Hearthstone tähän] (*Innkeeper Helbrek*)
-[G 11.5,52.2 Wetlands]Puhu: *Tarrel Rockweaver* [QA305 In Search of The Excavation Team]
-[O][A Herbalism50][G 8.0,55.8 Wetlands]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Telurinon Moonshadow*) [LE Herbalism 150]
-[O][A Herbalism125][G 8.0,55.8 Wetlands]Ammatti Herbalism 125+: opettele Expert Herbalism ja uudet reseptit (*Telurinon Moonshadow*) [LE Herbalism 225]
+[H Hearthstone: Innkeeper Helbrek] (jos cooldownilla, juokse tai lennä)
+[G 11.5,52.2 Wetlands]Puhu: *Tarrel Rockweaver* [QT98461 Unrequited Love] [QA305 In Search of The Excavation Team]
 [G 10.8,55.9 Wetlands]Puhu: *Harlo Barnaby* [QA472 Fall of Dun Modr]
-[O][A First Aid50][G 10.8,61.4 Wetlands]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Fremal Doohickey*) [LE First Aid 150]
 [G 9.9,57.5 Wetlands]Puhu: *Captain Stoutfist* [QA464 War Banners]
 [G 8.3,58.6 Wetlands]Puhu: *Karl Boran* [QA281 Reclaiming Goods]
 [G 11.8,58.0 Wetlands]Puhu: *Sida* [QA470 Digging Through the Ooze]
@@ -1425,7 +1357,12 @@ Guidelime.registerGuide([[
 [G 13.6,38.2 Wetlands]Klikkaa: *Sealed Barrel* [QT284 The Search Continues] [QA285 Search More Hovels]
 [G 13.9,34.8 Wetlands]Klikkaa: *Half-buried Barrel* [QT285 Search More Hovels] [QA286 Return the Statuette]
 [G 8.3,58.6 Wetlands]Puhu: *Karl Boran* [QT286 Return the Statuette] [QA98189 Return the Statuette]
-[G 9.9,57.5 Wetlands]Puhu: *Captain Stoutfist* [QT98189 Return the Statuette] [QA98190 A Friend of the Family]
+[G 9.9,57.5 Wetlands]Puhu: *Captain Stoutfist* [QT98189 Return the Statuette]
+[O][A First Aid50][G 10.8,61.4 Wetlands]Ammatti First Aid 50+: opettele Journeyman First Aid ja uudet reseptit (*Fremal Doohickey*) [LE First Aid 150]
+[O][A Fishing50][G 8.1,58.6 Wetlands]Ammatti Fishing 50+: opettele Journeyman Fishing ja uudet reseptit (*Harold Riggs*) [LE Fishing 150]
+[O][A Herbalism50][G 8.0,55.8 Wetlands]Ammatti Herbalism 50+: opettele Journeyman Herbalism ja uudet reseptit (*Telurinon Moonshadow*) [LE Herbalism 150]
+[O][A Herbalism125][G 8.0,55.8 Wetlands]Ammatti Herbalism 125+: opettele Expert Herbalism ja uudet reseptit (*Telurinon Moonshadow*) [LE Herbalism 225]
+[G 9.9,57.5 Wetlands]Puhu: *Captain Stoutfist* [QA98190 A Friend of the Family]
 [G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QA294 Ormer's Revenge]
 [G 38.9,52.3 Wetlands]Puhu: *Merrin Rockweaver* [QT305 In Search of The Excavation Team] [QA306 In Search of The Excavation Team]
 [G 38.8,52.4 Wetlands]Puhu: *Prospector Whelgar* [QA299 Uncovering the Past]
@@ -1435,39 +1372,26 @@ Guidelime.registerGuide([[
 [G 49.4,42.1 Wetlands]Puhu: *Howin Kindfeather* [QA98245 Razormaw Needling]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QA277 Fire Taboo]
 [G 67.3,36.3 Wetlands]Kerää *Razormaw Incisor* (Highland Razormaw, Elder Razormaw) [QC98245,1 Razormaw Needling]
-[G 58.9,45.1 Wetlands]Klikkaa: *Dragonmaw Armaments* [QA98293 Forced Disarmament]
+[G 58.9,45.2 Wetlands]Klikkaa: *Dragonmaw Armaments* [QA98293 Forced Disarmament]
 [G 53.5,54.6 Wetlands]Klikkaa: *Tattered Spellbook* [QA98223 Old Habits]
 [G 49.4,42.1 Wetlands]Puhu: *Howin Kindfeather* [QT98245 Razormaw Needling]
 [G 45.6,34.5 Wetlands]Kerää *Crude Flint* (Mosshide Fenrunner, Mosshide Trapper, Mosshide Brute) [QC277,1 Fire Taboo]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QT277 Fire Taboo] [QA275 Blisters on The Land]
 [G 54.0,41.4 Wetlands]Tapa *Fen Creeper* [QC275,1 Blisters on The Land]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QT275 Blisters on The Land]
+[G 49.8,18.3 Wetlands]Puhu: *Longbraid the Grim* [QT472 Fall of Dun Modr]
 [G 47.4,27.7 Wetlands]Kerää *Sida's Bag* (Black Ooze, Monstrous Ooze, Crimson Ooze) [QC470,1 Digging Through the Ooze]
 [G 28.9,42.4 Wetlands]Tapa *Mottled Raptor*; Tapa *Mottled Screecher* [QC294,1 Ormer's Revenge] [QC294,2 Ormer's Revenge]
 [G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QT294 Ormer's Revenge] [QA295 Ormer's Revenge]
 [G 35.9,49.4 Wetlands]Tapa *Mottled Scytheclaw*; Tapa *Mottled Razormaw* [QC295,1 Ormer's Revenge] [QC295,2 Ormer's Revenge]
 [G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QT295 Ormer's Revenge] [QA296 Ormer's Revenge]
 [G 33.3,51.5 Wetlands]Kerää *Sarltooth's Talon* (Sarltooth) [QC296,1 Ormer's Revenge]
+[G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QT296 Ormer's Revenge]
 [G 11.5,52.2 Wetlands]Puhu: *Tarrel Rockweaver* [QT306 In Search of The Excavation Team]
 [G 9.9,57.5 Wetlands]Puhu: *Captain Stoutfist* [QT464 War Banners] [QT98223 Old Habits] [QT98293 Forced Disarmament]
-[G 10.0,58.0 Wetlands]Puhu: *Red Jack Flint* [QA1132 Fiora Longears]
 [G 11.8,58.0 Wetlands]Puhu: *Sida* [QT470 Digging Through the Ooze]
-[G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QT296 Ormer's Revenge]
-[G 49.8,18.3 Wetlands]Puhu: *Longbraid the Grim* [QT472 Fall of Dun Modr]
-[G 49.9,12.6 Wetlands]Puhu: *Comar Villard* [QA87318 Hearts of the Lost]
-[G 51.5,9.0 Wetlands]Puhu: *Essene Villard* [QT87318 Hearts of the Lost]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
-[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N30-34 Wetlands, Ashenvale, Darkshore + WC/BFD/Stocks (Rogue)]
-[NX34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Rogue)]
 [XP23 Tavoitetaso 23: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Ironforge]
-[G 52.0,14.8 Ironforge][T Rogue-trainer (taso 30)] (*Hulfdan Blackbeard*): Instant Poison 2, Sinister Strike, Kidney Shot, Garrote r3
-[G 45.0,6.8 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hjoldir Stoneblade*)
-[G 18.1,51.5 Ironforge][V Osta ruokaa, noin 20] (*Innkeeper Firebrew*)
+[G 11.3,58.4 Wetlands][V Myy harmaat roinat] (*Naela Trance*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Astranaar]
 [G 26.2,38.7 Ashenvale]Puhu: *Delgren the Purifier* [QA973 The Tower of Althalaxx]
@@ -1475,7 +1399,6 @@ Guidelime.registerGuide([[
 [G 36.6,49.6 Ashenvale]Puhu: *Raene Wolfrunner* [QA1025 An Aggressive Defense] [QA1054 Culling the Threat]
 [G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QA1035 Fallen Sky Lake]
 [G 25.3,60.7 Ashenvale]Kerää *Ilkrud Magthrull's Tome* (Ilkrud Magthrull) [QC973,1 The Tower of Althalaxx]
-[G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QA1022 The Howling Vale]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QA1021 Vile Satyr! Dryads in Danger!]
 [G 26.2,38.7 Ashenvale]Puhu: *Delgren the Purifier* [QT973 The Tower of Althalaxx] [QA1140 The Tower of Althalaxx]
 [G 26.2,38.9 Ashenvale]Puhu: *Feero Ironhand* [QA976 Supplies to Auberdine]
@@ -1483,7 +1406,6 @@ Guidelime.registerGuide([[
 [G 7.2,13.1 Ashenvale]Kerää *Ring of Zoram* (Ruuzel) [QC1009,1 Ruuzel]
 [G 29.5,16.8 Ashenvale]Protect Feero Ironhand [QC976,1 Supplies to Auberdine]
 [G 39.6,36.3 Ashenvale]Kerää *Dal Bloodclaw's Skull* (Dal Bloodclaw) [QC1054,1 Culling the Threat]
-[G 50.5,39.1 Ashenvale]Käytä / kerää: *Tome of Mel'Thandris* [QC1022,1 The Howling Vale]
 [G 53.5,46.2 Ashenvale]Puhu: *Shael'dryn* [QA1026 Raene's Cleansing]
 [G 54.4,35.4 Ashenvale]Kerää *Iron Shaft* (Worn Chest) [QC1026,1 Raene's Cleansing]
 [G 53.5,46.2 Ashenvale]Puhu: *Shael'dryn* [QT1026 Raene's Cleansing] [QA1027 Raene's Cleansing]
@@ -1493,7 +1415,6 @@ Guidelime.registerGuide([[
 [O][A Alchemy125][G 50.9,67.1 Ashenvale]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Kylanna*) [LE Alchemy 225]
 [G 49.5,67.1 Ashenvale]Puhu: *Shandrina* [QA86757 Slowing the Orc Advance]
 [G 63.0,71.6 Ashenvale]Klikkaa: *Gleaming Crescent Pendant* [QA98027 Gleaming Crescent Necklace]
-[G 66.7,82.2 Ashenvale]Kerää *Fallen Moonstone* (Shadethicket Oracle) [QC1035,1 Fallen Sky Lake]
 [G 70.5,73.6 Ashenvale]Kerää *Iron Pommel* (Rusty Chest) [QC1027,1 Raene's Cleansing]
 [G 66.6,57.0 Ashenvale]Käytä / kerää: *Circle of Imprisonment* [QC1140,1 The Tower of Althalaxx]
 [G 78.3,44.8 Ashenvale]Puhu: *Anilia* [QT1021 Vile Satyr! Dryads in Danger!] [QA1031 The Branch of Cenarius]
@@ -1509,25 +1430,38 @@ Guidelime.registerGuide([[
 [G 53.5,46.2 Ashenvale]Puhu: *Shael'dryn* [QT1055 Raene's Cleansing] [QA1029 Raene's Cleansing]
 [O][A Leatherworking50][G 36.0,52.1 Ashenvale]Ammatti Leatherworking 50+: opettele Journeyman Leatherworking ja uudet reseptit (*Aayndia Floralwind*) [LE Leatherworking 150]
 [O][A Leatherworking125][G 36.0,52.1 Ashenvale]Ammatti Leatherworking 125+: opettele Expert Leatherworking ja uudet reseptit (*Aayndia Floralwind*) [LE Leatherworking 225]
-[G 34.5,49.9 Ashenvale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Tandaan Lightmane*)
+[G 34.5,49.9 Ashenvale][V Myy harmaat roinat] (*Tandaan Lightmane*)
+[G 37.0,49.2 Ashenvale][V Osta ruokaa, noin 20] (*Innkeeper Kimlya*)
 [G 37.0,49.2 Ashenvale][S Aseta Hearthstone tähän] (*Innkeeper Kimlya*)
+[G 36.6,50.0 Ashenvale]Puhu: *Maliynn* [QT98027 Gleaming Crescent Necklace]
 [G 36.6,49.6 Ashenvale]Puhu: *Raene Wolfrunner* [QT1054 Culling the Threat] [QT1025 An Aggressive Defense] [QT1029 Raene's Cleansing]
-[G 22.2,53.0 Ashenvale]Puhu: *Sentinel Melyria Frostshadow* [QT1022 The Howling Vale] [QA1037 Velinde Starsong]
-[G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1031 The Branch of Cenarius] [QA1032 Satyr Slaying!]
 [G 26.2,38.7 Ashenvale]Puhu: *Delgren the Purifier* [QT976 Supplies to Auberdine] [QT1140 The Tower of Althalaxx] [QA1167 The Tower of Althalaxx]
-[H Hearthstone: Innkeeper Kimlya] (jos cooldownilla, juokse tai lennä)
-[G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
+[G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1031 The Branch of Cenarius] [QA1032 Satyr Slaying!]
 [G 49.5,67.1 Ashenvale]Puhu: *Shandrina* [QT86757 Slowing the Orc Advance]
+[G 66.7,82.2 Ashenvale]Kerää *Fallen Moonstone* (Shadethicket Oracle) [QC1035,1 Fallen Sky Lake]
 [G 75.3,72.0 Ashenvale]Kerää *Bottle of Disease* (Bottle of Disease) [QC1011,1 Forsaken Diseases]
 [G 81.9,52.1 Ashenvale]Kerää *Satyr Horns* (Bleakheart Shadowstalker, Xavian Felsworn, Felmusk Shadowstalker) [QC1032,1 Satyr Slaying!]
 [G 85.2,44.7 Ashenvale]Puhu: *Kayneth Stillwind* [QT1011 Forsaken Diseases] [QA1012 Insane Druids]
 [G 86.2,45.9 Ashenvale]Puhu: *Maseara Autumnmoon* [QT98418 Shared Fury]
 [G 78.0,72.7 Ashenvale]Tapa *Uthil Mooncall*; Tapa *Taneel Darkwood*; Tapa *Mavoris Cloudsbreak* [QC1012,2 Insane Druids] [QC1012,1 Insane Druids] [QC1012,3 Insane Druids]
 [G 85.2,44.7 Ashenvale]Puhu: *Kayneth Stillwind* [QT1012 Insane Druids]
-[G 36.6,50.0 Ashenvale]Puhu: *Maliynn* [QT98027 Gleaming Crescent Necklace]
+[H Hearthstone: Innkeeper Kimlya] (jos cooldownilla, juokse tai lennä)
+[G 37.4,51.8 Ashenvale]Puhu: *Pelturas Whitemoon* [QT1035 Fallen Sky Lake]
 [G 21.7,53.3 Ashenvale]Puhu: *Illiyana* [QT1032 Satyr Slaying!]
 [G 14.8,31.3 Ashenvale]Puhu: *Talen* [QT1009 Ruuzel]
-[G 34.4,48.0 Ashenvale]Lennä (*Daelyshia*): [F Auberdine]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
+[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
+[N31-34 Ashenvale, Darkshore, Barrens + WC/BFD/Stocks (Rogue)]
+[NX34-38 Hillsbrad, Wetlands, Arathi + RFK/Gnomer (Rogue)]
+[G 34.4,48.0 Ashenvale]Lennä (*Daelyshia*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
+[G 37.0,21.9 Darnassus][T Rogue-trainer (taso 30)] (*Syurna*): Instant Poison 2, Sinister Strike, Kidney Shot, Garrote r3
+[G 58.8,44.5 Darnassus][V Myy harmaat roinat] ja [R korjaa varusteet] (*Ariyell Skyshadow*)
+[OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
+[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Auberdine]
 [G 55.0,24.9 Darkshore]Puhu: *Balthule Shadowstrike* [QT1167 The Tower of Althalaxx] [QA1143 The Tower of Althalaxx]
 [G 56.0,26.3 Darkshore]Kerää *Athrikus Narassin's Head* (Athrikus Narassin) [QC1143,1 The Tower of Althalaxx]
 [G 55.0,24.9 Darkshore]Puhu: *Balthule Shadowstrike* [QT1143 The Tower of Althalaxx] [QA981 The Tower of Althalaxx]
@@ -1537,14 +1471,13 @@ Guidelime.registerGuide([[
 [G 63.1,37.2 The Barrens][P Ratchet]Hae flight path (*Bragok*)
 [G 46.0,35.7 The Barrens]Puhu: *Nalpak* [QA1486 Deviate Hides]
 [G 46.0,35.7 The Barrens]Puhu: *Ebru* [QA1487 Deviate Eradication]
-[G 47.8,85.0 The Barrens]Kerää *Bronze Tube* (Box of Assorted Parts) [QC174,1 Look To The Stars]
 [OC]*Dungeon: Wailing Caverns* (suositus taso 23+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (The Barrens) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [O][A Herbalism1][G 62.4,37.6 The Barrens]Ammattitehtävä (Herbalism 1+): puhu *Mebok Mizzyrix* [QA866 Root Samples] Tavoite: Bring 8 Root Samples to Mebok Mizzyrix in Ratchet.
+[O][A Engineering50][G 62.7,36.3 The Barrens]Ammatti Engineering 50+: opettele Journeyman Engineering ja uudet reseptit (*Tinkerwiz*) [LE Engineering 150]
 [G 62.4,37.6 The Barrens]Puhu: *Mebok Mizzyrix* [QA865 Raptor Horns]
 [G 56.7,47.4 The Barrens]Kerää *Intact Raptor Horn* (Sunscale Scytheclaw, Ishamuhale) [QC865,1 Raptor Horns]
 [G 62.4,37.6 The Barrens]Puhu: *Mebok Mizzyrix* [QT865 Raptor Horns] [QA1491 Smart Drinks]
 [G 62.2,37.5 The Barrens][V Myy harmaat roinat] ja [R korjaa varusteet] (*Ironzar*)
-[G 62.0,39.4 The Barrens][V Osta ruokaa, noin 20] (*Innkeeper Wiley*)
 [G 46.0,36.5 The Barrens]*Mene dungeoniin: Wailing Caverns*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Deviate Hide* (Deviate Coiler, Deviate Stinglash, Deviate Creeper); Tapa *Deviate Ravager*; Tapa *Deviate Viper*; Tapa *Deviate Shambler*; Tapa *Deviate Dreadfang*; Kerää *Wailing Essence* (Devouring Ectoplasm, Evolving Ectoplasm, Nightmare Ectoplasm) [QC1486,1 Deviate Hides] [QC1487,1 Deviate Eradication] [QC1487,2 Deviate Eradication] [QC1487,3 Deviate Eradication] [QC1487,4 Deviate Eradication] [QC1491,1 Smart Drinks]
 [G 46.0,35.7 The Barrens]Puhu: *Nalpak* [QT1486 Deviate Hides]
 [G 46.0,35.7 The Barrens]Puhu: *Ebru* [QT1487 Deviate Eradication]
@@ -1567,13 +1500,15 @@ Guidelime.registerGuide([[
 [G 55.2,24.0 Darnassus]Puhu: *Argent Guard Manados* [QA1199 Twilight Falls]
 [OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
 [G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Auberdine]
+[O][A Mining50][G 38.2,41.0 Darkshore]Ammatti Mining 50+: opettele Journeyman Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 150]
 [O][A Mining125][G 38.2,41.0 Darkshore]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Kurdram Stonehammer*) [LE Mining 225]
+[O][A Blacksmithing50][G 38.2,40.9 Darkshore]Ammatti Blacksmithing 50+: opettele Journeyman Blacksmithing ja uudet reseptit (*Delfrum Flintbeard*) [LE Blacksmithing 150]
 [G 38.3,43.0 Darkshore]Puhu: *Gershala Nightwhisper* [QA1275 Researching the Corruption]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
 [O][A Blacksmithing125][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 225]
 [O][A Engineering125][G 67.5,42.9 Ironforge]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Trixie Quikswitch*) [LE Engineering 225]
 [G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QA971 Knowledge in the Deeps]
-[H Hearthstone: Innkeeper Kimlya] (jos cooldownilla, juokse tai lennä)
+[OC]Matkusta: *Ashenvale*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Astranaariin. Ensimmäisellä kerralla: Darkshoren eteläpäästä tietä Ashenvaleen, Astranaar on keskellä
 [G 14.5,14.2 Ashenvale]*Mene dungeoniin: Blackfathom Deeps*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Lorgalis Manuscript* (Pitted Iron Chest); Kerää *Twilight Pendant* (Twilight Acolyte, Twilight Reaver, Twilight Aquamancer); Kerää *Corrupted Brain Stem* (Fallenroot Satyr, Fallenroot Rogue, Fallenroot Shadowstalker) [QC971,1 Knowledge in the Deeps] [QC1199,1 Twilight Falls] [QC1275,1 Researching the Corruption]
 [G 14.5,14.2 Ashenvale]Dungeonin sisällä - Puhu: *Argent Guard Thaelrid* [QT1198 In Search of Thaelrid] [QA1200 Blackfathom Villainy]
 [G 14.5,14.2 Ashenvale]*Mene dungeoniin: Blackfathom Deeps*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Head of Kelris* (Twilight Lord Kelris) [QC1200,1 Blackfathom Villainy]
@@ -1584,27 +1519,14 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Stonetalon Mountains*. Lennä Stonetalon Peakiin. Ensimmäisellä kerralla: Ashenvalen lounaiskulmasta Stonetalon Mountainsiin
 [G 36.4,7.2 Stonetalon Mountains][P Stonetalon Peak]Hae flight path (*Teloren*)
 [G 37.1,8.1 Stonetalon Mountains]Puhu: *Keeper Albagorm* [QT1056 Journey to Stonetalon Peak] [QA1057 Reclaiming the Charred Vale]
-[G 31.1,58.5 Stonetalon Mountains]Tapa *Bloodfury Ambusher*; Tapa *Bloodfury Harpy* [QC1057,2 Reclaiming the Charred Vale] [QC1057,1 Reclaiming the Charred Vale]
-[G 30.1,67.5 Stonetalon Mountains]Tapa *Bloodfury Slayer*; Tapa *Bloodfury Roguefeather* [QC1057,3 Reclaiming the Charred Vale] [QC1057,4 Reclaiming the Charred Vale]
+[G 35.6,7.3 Stonetalon Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Illyanie*)
+[G 48.7,39.9 Stonetalon Mountains]Puhu: *Night Elf Courier* [QA86574 Stonetalon Supply Run]
+[G 48.3,41.5 Stonetalon Mountains]Kerää *Stonetalon Supply Bundle* (Pridewing Wyvern, Pridewing Consort, Pridewing Skyhunter) [QC86574,1 Stonetalon Supply Run]
+[G 34.5,60.8 Stonetalon Mountains]Tapa *Bloodfury Harpy* [QC1057,1 Reclaiming the Charred Vale]
+[G 30.8,68.9 Stonetalon Mountains]Tapa *Bloodfury Roguefeather*; Tapa *Bloodfury Slayer* [QC1057,4 Reclaiming the Charred Vale] [QC1057,3 Reclaiming the Charred Vale]
+[G 30.7,61.7 Stonetalon Mountains]Tapa *Bloodfury Ambusher* [QC1057,2 Reclaiming the Charred Vale]
 [G 37.1,8.1 Stonetalon Mountains]Puhu: *Keeper Albagorm* [QT1057 Reclaiming the Charred Vale] [QA1059 Reclaiming the Charred Vale]
-[G 59.9,66.8 Stonetalon Mountains]Puhu: *Kaela Shadowspear* [QT1070 On Guard in Stonetalon]
-[G 59.9,66.8 Stonetalon Mountains]Puhu: *Kaela Shadowspear* [QA1085 On Guard in Stonetalon]
-[G 59.5,67.2 Stonetalon Mountains]Puhu: *Gaxim Rustfizzle* [QT1085 On Guard in Stonetalon] [QA1071 A Gnome's Respite]
-[G 63.4,56.8 Stonetalon Mountains]Tapa *Venture Co. Deforester*; Tapa *Venture Co. Logger* [QC1071,2 A Gnome's Respite] [QC1071,1 A Gnome's Respite]
-[G 59.5,67.2 Stonetalon Mountains]Puhu: *Gaxim Rustfizzle* [QT1071 A Gnome's Respite] [QA1072 An Old Colleague] [QA1075 A Scroll from Mauren]
-[OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
-[G 72.1,51.9 Ironforge]Puhu: *Lomac Gearstrip* [QT1072 An Old Colleague]
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Stormwind]
-[G 53.0,86.6 Stormwind City]Puhu: *Collin Mauren* [QT1075 A Scroll from Mauren] [QA1076 Devils in Westfall]
-[G 52.6,83.7 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Evan Larson*)
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Sentinel Hill]
-[G 40.0,60.9 Westfall]Kerää *Dust Devil Debris* (Dust Devil) [QC1076,1 Devils in Westfall]
-[G 56.5,52.6 Westfall]Lennä (*Thor*): [F Stormwind]
-[G 53.0,86.6 Stormwind City]Puhu: *Collin Mauren* [QT1076 Devils in Westfall] [QA1077 Special Delivery for Gaxim]
-[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Astranaar]
-[OC]Matkusta: *Stonetalon Mountains*. Lennä Stonetalon Peakiin. Ensimmäisellä kerralla: Ashenvalen lounaiskulmasta Stonetalon Mountainsiin
-[G 59.5,67.2 Stonetalon Mountains]Puhu: *Gaxim Rustfizzle* [QT1077 Special Delivery for Gaxim]
+[G 35.8,5.7 Stonetalon Mountains]Puhu: *Innkeeper Faralia* [QT86574 Stonetalon Supply Run]
 [OC]*Dungeon: The Stockade* (suositus taso 24+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Stormwind City) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
@@ -1627,42 +1549,35 @@ Guidelime.registerGuide([[
 [G 49.7,18.2 Wetlands]Puhu: *Motley Garmason* [QT303 The Dark Iron War] [QA378 The Fury Runs Deep]
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Darkshire]
 [G 71.9,47.8 Duskwood]Puhu: *Councilman Millstipe* [QT377 Crime and Punishment]
+[G 74.0,48.9 Duskwood][V Myy harmaat roinat] (*Morg Gnarltree*)
+[G 73.9,44.4 Duskwood][V Osta ruokaa, noin 20] (*Innkeeper Trelayne*)
 [G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Lakeshire]
 [G 21.2,46.6 Redridge Mountains]Puhu: *Guard Berton* [QT386 What Comes Around...]
-[G 22.0,45.5 Redridge Mountains][V Myy harmaat roinat] (*Kimberly Hiett*)
 [G 25.5,59.4 Redridge Mountains]Lennä (*Ariena Stormfeather*): [F Stormwind]
 [G 52.4,70.0 Stormwind City]*Mene dungeoniin: The Stockade*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Head of Deepfury* (Kam Deepfury); Kerää *Head of Bazil Thredd* (Bazil Thredd) [QC378,1 The Fury Runs Deep] [QC391,1 The Stockade Riots]
-[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
 [G 51.5,69.4 Stormwind City]Puhu: *Warden Thelwater* [QT391 The Stockade Riots]
 [XP25 Tavoitetaso 25: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
-[G 79.8,48.0 Duskwood]Puhu: *Viktori Prism'Antras* [QT174 Look To The Stars] [QA175 Look To The Stars]
+[G 73.9,44.4 Duskwood][S Aseta Hearthstone tähän] (*Innkeeper Trelayne*)
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA98 The Legend of Stalvan]
-[G 82.0,59.1 Duskwood]Puhu: *Blind Mary* [QT175 Look To The Stars] [QA177 Look To The Stars]
-[G 80.9,72.0 Duskwood]Kerää *Mary's Looking Glass* (Insane Ghoul) [QC177,1 Look To The Stars]
-[G 79.8,48.0 Duskwood]Puhu: *Viktori Prism'Antras* [QT177 Look To The Stars] [QA181 Look To The Stars]
-[G 36.6,81.3 Duskwood]Kerää *Ogre's Monocle* (Zzarc' Vul) [QC181,1 Look To The Stars]
-[G 79.8,48.0 Duskwood]Puhu: *Viktori Prism'Antras* [QT181 Look To The Stars]
+[G 75.8,47.6 Duskwood]Puhu: *Calor* [QA222 Worgen in the Woods]
 [G 77.3,36.2 Duskwood]Kerää *Mistmantle Family Ring* (Stalvan Mistmantle) [QC98,1 The Legend of Stalvan]
-[G 17.7,29.1 Duskwood]Klikkaa: *A Weathered Grave* [QA225 The Weathered Grave]
-[G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QT225 The Weathered Grave] [QA227 Morgan Ladimore]
 [G 75.8,45.3 Duskwood]Puhu: *Madame Eva* [QT98 The Legend of Stalvan]
+[G 73.5,68.5 Duskwood]Tapa *Nightbane Vile Fang* [QC222,1 Worgen in the Woods]
+[G 73.5,77.0 Duskwood]Tapa *Nightbane Tainted One* [QC222,2 Worgen in the Woods]
+[G 75.8,47.6 Duskwood]Puhu: *Calor* [QT222 Worgen in the Woods] [QA223 Worgen in the Woods]
+[G 75.3,49.0 Duskwood]Puhu: *Jonathan Carevin* [QT223 Worgen in the Woods]
+[G 17.7,29.1 Duskwood]Klikkaa: *A Weathered Grave* [QA225 The Weathered Grave]
+[H Hearthstone: Innkeeper Trelayne] (jos cooldownilla, juokse tai lennä)
+[G 72.6,47.6 Duskwood]Puhu: *Sirra Von'Indi* [QT225 The Weathered Grave] [QA227 Morgan Ladimore]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT227 Morgan Ladimore]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
-[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Rogue)]
-[NX38-42 1K Needles, Barrens, STV + Exc. Site (Rogue)]
 [O][G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA228 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 74.0,48.9 Duskwood][V Myy harmaat roinat] (*Morg Gnarltree*)
-[G 73.9,44.4 Duskwood][V Osta ruokaa, noin 20] (*Innkeeper Trelayne*)
 [O][G 16.7,37.4 Duskwood]Kerää *Mor'Ladim's Skull* (Mor'Ladim (elite, ryhmä)) [QC228,1 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT228 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA229 The Daughter Who Lived] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 74.0,47.8 Duskwood]Puhu: *Watcher Ladimore* [QT229 The Daughter Who Lived] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 74.0,47.8 Duskwood]Puhu: *Watcher Ladimore* [QA231 A Daughter's Love] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[G 74.0,48.9 Duskwood][V Myy harmaat roinat] (*Morg Gnarltree*)
 [O][G 17.7,29.1 Duskwood]Klikkaa: *A Weathered Grave* [QT231 A Daughter's Love] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP26 Tavoitetaso 26: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 56.5,52.6 Westfall]Lennä (*Thor*): [F Menethil Harbor]
@@ -1678,19 +1593,19 @@ Guidelime.registerGuide([[
 [G 52.4,56.0 Hillsbrad Foothills]Puhu: *Darren Malvew* [QA564 Costly Menace]
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QA505 Syndicate Assassins]
 [G 48.3,60.0 Hillsbrad Foothills]Puhu: *Emissary Jacques* [QA92432 An Alarming Request]
-[G 51.2,58.9 Hillsbrad Foothills][S Aseta Hearthstone tähän] (*Innkeeper Anderson*)
-[G 48.3,60.1 Hillsbrad Foothills]Puhu: *Image of Archmage Modera* [QT92432 An Alarming Request]
 [G 48.6,64.4 Hillsbrad Foothills]Tapa *Torn Fin Tidehunter*; Tapa *Torn Fin Oracle* [QC536,1 Down the Coast] [QC536,2 Down the Coast]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT536 Down the Coast] [QA559 Farren's Proof]
 [G 46.0,64.0 Hillsbrad Foothills]Kerää *Murloc Head* (Torn Fin Coastrunner, Torn Fin Muckdweller, Torn Fin Oracle) [QC559,1 Farren's Proof]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT559 Farren's Proof] [QA560 Farren's Proof]
-[G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QT560 Farren's Proof] [QA561 Farren's Proof]
+[G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QT560 Farren's Proof]
+[G 51.2,58.9 Hillsbrad Foothills][S Aseta Hearthstone tähän] (*Innkeeper Anderson*)
+[G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QA561 Farren's Proof]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT561 Farren's Proof] [QA562 Stormwind Ho!]
 [G 54.4,62.0 Hillsbrad Foothills]Tapa *Daggerspine Siren*; Tapa *Daggerspine Shorehunter* [QC562,2 Stormwind Ho!] [QC562,1 Stormwind Ho!]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT562 Stormwind Ho!] [QA563 Reassignment]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [G 58.4,68.9 Alterac Mountains]Tapa *Syndicate Thief* [QC505,2 Syndicate Assassins]
-[G 58.3,67.9 Alterac Mountains]Klikkaa: *Syndicate Documents* [QA510 Foreboding Plans] [QA511 Encrypted Letter]
+[G 58.3,67.9 Alterac Mountains]Klikkaa: *Syndicate Documents* [QA510 Foreboding Plans]
 [G 58.2,67.2 Alterac Mountains]Tapa *Syndicate Footpad* [QC505,1 Syndicate Assassins]
 [G 50.3,59.3 Alterac Mountains]Kerää *Dirty Knucklebones* (Crushridge Ogre, Crushridge Brute) [QC500,1 Crushridge Bounty]
 [G 44.2,76.7 Alterac Mountains]Tapa *Hulking Mountain Lion* [QC564,2 Costly Menace]
@@ -1698,13 +1613,19 @@ Guidelime.registerGuide([[
 [G 38.8,24.6 Hillsbrad Foothills]Tapa *Mountain Lion* [QC564,1 Costly Menace]
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT505 Syndicate Assassins] [QT510 Foreboding Plans] [QA512 Noble Deaths]
 [G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QT500 Crushridge Bounty]
-[G 50.6,57.1 Hillsbrad Foothills]Puhu: *Loremaster Dibbs* [QT511 Encrypted Letter] [QA514 Letter to Stormpike]
 [G 52.4,56.0 Hillsbrad Foothills]Puhu: *Darren Malvew* [QT564 Costly Menace]
 [G 51.2,57.0 Hillsbrad Foothills][V Myy harmaat roinat] ja [R korjaa varusteet] (*Robert Aebischer*)
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [G 61.1,43.8 Alterac Mountains]Kerää *Alterac Signet Ring* (Syndicate Sentry, Syndicate Spy, Syndicate Assassin) [QC512,1 Noble Deaths]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT512 Noble Deaths]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
+[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
+[N34-38 Hillsbrad, Wetlands, Arathi + RFK/Gnomer (Rogue)]
+[NX38-42 Desolace, STV, Alterac + Exc. Site (Rogue)]
 [OC]*Dungeon: Razorfen Kraul* (suositus taso 28+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (The Barrens) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Ratchet]
@@ -1725,10 +1646,12 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
 [G 77.4,65.3 Stormwind City][T Rogue-trainer (taso 34)] (*Osborne the Night Man*): Blind, Blinding Powder, Sprint r2
+[O][A Mining125][G 59.2,37.8 Stormwind City]Ammatti Mining 125+: opettele Expert Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 225]
 [O][A Mining200][G 59.2,37.8 Stormwind City]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 300]
 [O][A Herbalism200][G 31.5,62.6 Stormwind City]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Shylamiir*) [LE Herbalism 300]
 [O][A Skinning125][G 72.1,62.2 Stormwind City]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 225]
 [O][A Skinning200][G 72.1,62.2 Stormwind City]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 300]
+[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
 [O][A Blacksmithing125][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 225]
 [O][A Enchanting125][G 52.9,74.5 Stormwind City]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 225]
 [O][A Engineering125][G 62.1,30.3 Stormwind City]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Lilliam Sparkspindle*) [LE Engineering 225]
@@ -1736,16 +1659,11 @@ Guidelime.registerGuide([[
 [O][A Tailoring125][G 53.1,81.3 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 225]
 [O][A Tailoring200][G 53.1,81.3 Stormwind City]Ammatti Tailoring 200+: opettele Artisan Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 300]
 [G 49.9,46.0 Stormwind City]Puhu: *Bishop Farthing* [QT269 Seeking Wisdom] [QA270 The Doomed Fleet]
-[G 49.6,44.5 Stormwind City]Puhu: *Thomas* [QA1274 The Missing Diplomat]
 [G 51.0,48.4 Stormwind City]Puhu: *Brother Sarno* [QA2923 Tinkmaster Overspark]
 [G 62.6,34.1 Stormwind City]Puhu: *Shoni the Shilent* [QA2928 Gyrodrillmatic Excavationators]
-[G 80.2,44.1 Stormwind City]Puhu: *Bishop DeLavey* [QT1274 The Missing Diplomat] [QA1241 The Missing Diplomat]
 [G 51.5,69.4 Stormwind City]Puhu: *Warden Thelwater* [QA392 The Curious Visitor]
 [G 50.5,87.5 Stormwind City]Puhu: *Archmage Malin* [QA690 Malin's Request]
 [G 51.8,93.6 Stormwind City]Puhu: *Angus Stern* [QA1260 Morgan Stern]
-[G 76.3,85.1 Stormwind City]Puhu: *Jorgen* [QT1241 The Missing Diplomat] [QA1242 The Missing Diplomat]
-[G 60.4,75.3 Stormwind City][S Aseta Hearthstone tähän] (*Innkeeper Allison*)
-[G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QT1242 The Missing Diplomat] [QA1243 The Missing Diplomat]
 [G 57.7,47.9 Stormwind City]Puhu: *Baros Alexston* [QT392 The Curious Visitor] [QA393 Shadow of the Past]
 [G 78.3,70.7 Stormwind City]Puhu: *Master Mathias Shaw* [QT393 Shadow of the Past] [QA350 Look to an Old Friend]
 [G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QT350 Look to an Old Friend] [QA2745 Infiltrating the Castle]
@@ -1755,17 +1673,17 @@ Guidelime.registerGuide([[
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QA98191 A Friend of the Family]
 [G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family] [QA98219 The Shamed Lieutenant]
 [G 48.1,55.1 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gregory Ardus*)
+[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Menethil Harbor]
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT270 The Doomed Fleet] [QA321 Lightforge Iron]
 [G 12.1,64.2 Wetlands]Klikkaa: *Waterlogged Chest* [QT321 Lightforge Iron] [QA324 The Lost Ingots]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Southshore]
+[H Hearthstone: Innkeeper Anderson] (jos cooldownilla, juokse tai lennä)
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT98219 The Shamed Lieutenant]
 [OC]Matkusta: *Arathi Highlands*. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 [G 22.3,95.8 Arathi Highlands]Kerää *Lightforge Ingot* (Bluegill Raider) [QC324,1 The Lost Ingots]
 [OC]Matkusta: *Wetlands*. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT324 The Lost Ingots] [QA322 Blessed Arm]
-[H Hearthstone: Innkeeper Allison] (jos cooldownilla, juokse tai lennä)
-[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
 [G 59.7,33.8 Stormwind City]Puhu: *Grimand Elmore* [QT322 Blessed Arm] [QA325 Armed and Ready]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
 [G 7.8,34.1 Duskwood]Puhu: *Sven Yorgen* [QT325 Armed and Ready]
@@ -1785,43 +1703,20 @@ Guidelime.registerGuide([[
 [G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QT434 The Attack!] [QA394 The Head of the Beast]
 [G 78.3,70.7 Stormwind City]Puhu: *Master Mathias Shaw* [QT394 The Head of the Beast] [QA395 Brotherhood's End]
 [G 57.7,47.9 Stormwind City]Puhu: *Baros Alexston* [QT395 Brotherhood's End] [QA396 An Audience with the King]
+[G 53.5,57.6 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Agustus Moulaine*)
 [G 80.1,38.2 Stormwind City]Puhu: *Lady Katrana Prestor* [QT396 An Audience with the King]
-[XP28 Tavoitetaso 28: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 77.1,30.2 Stormwind City][V Myy harmaat roinat] (*Milton Sheaf*)
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
-[G 74.8,44.2 Duskwood]Puhu: *Watcher Backus* [QT1243 The Missing Diplomat] [QA1244 The Missing Diplomat]
-[G 23.9,72.1 Duskwood]Kerää *Defias Docket* (Defias Strongbox) [QC1244,1 The Missing Diplomat]
-[G 74.8,44.2 Duskwood]Puhu: *Watcher Backus* [QT1244 The Missing Diplomat] [QA1245 The Missing Diplomat]
-[G 77.5,44.3 Duskwood]Lennä (*Felicia Maline*): [F Stormwind]
-[G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QT1245 The Missing Diplomat]
-[G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QA1246 The Missing Diplomat]
-[G 74.3,59.2 Stormwind City]Puhu: *Dashel Stonefist* [QT1246 The Missing Diplomat] [QA1447 The Missing Diplomat]
-[G 74.3,59.2 Stormwind City]Puhu: *Dashel Stonefist* [QC1447,1 The Missing Diplomat]
-[G 74.3,59.2 Stormwind City]Puhu: *Dashel Stonefist* [QT1447 The Missing Diplomat] [QA1247 The Missing Diplomat]
-[G 66.0,74.1 Stormwind City]Puhu: *Elling Trias* [QT1247 The Missing Diplomat] [QA1248 The Missing Diplomat]
-[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Menethil Harbor]
-[G 10.6,60.8 Wetlands]Puhu: *Mikhail* [QT1248 The Missing Diplomat] [QA1249 The Missing Diplomat]
-[G 10.5,60.3 Wetlands]Puhu: *Tapoke "Slim" Jahn* [QC1249,1 The Missing Diplomat]
-[G 10.6,60.8 Wetlands]Puhu: *Mikhail* [QT1249 The Missing Diplomat]
-[G 10.5,60.3 Wetlands]Puhu: *Tapoke "Slim" Jahn* [QA1250 The Missing Diplomat]
-[G 10.6,60.8 Wetlands]Puhu: *Mikhail* [QT1250 The Missing Diplomat] [QA1264 The Missing Diplomat]
-[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Ratchet]
-[OC]Matkusta: *Dustwallow Marsh*. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
-[G 67.5,51.3 Dustwallow Marsh][P Theramore]Hae flight path (*Baldruc*)
-[G 68.0,48.7 Dustwallow Marsh]Puhu: *Commander Samaul* [QT1264 The Missing Diplomat] [QA1265 The Missing Diplomat]
-[G 67.5,48.0 Dustwallow Marsh][V Myy harmaat roinat] ja [R korjaa varusteet] (*Torq Ironblast*)
-[G 66.6,45.2 Dustwallow Marsh][V Osta ruokaa, noin 20] (*Innkeeper Janene*)
-[G 59.9,40.9 Dustwallow Marsh]Sentry Point explored [QC1265,1 The Missing Diplomat]
-[G 66.4,49.3 Dustwallow Marsh]Puhu: *Archmage Tervosh* [QT1265 The Missing Diplomat] [QA1266 The Missing Diplomat]
-[G 45.2,24.6 Dustwallow Marsh]Puhu: *Private Hendel* [QT1266 The Missing Diplomat] [QA1324 The Missing Diplomat]
-[G 45.2,24.6 Dustwallow Marsh]Puhu: *Private Hendel* [QC1324,1 The Missing Diplomat]
-[G 66.4,49.3 Dustwallow Marsh]Puhu: *Archmage Tervosh* [QT1324 The Missing Diplomat]
 [OC]*Dungeon: Gnomeregan* (suositus taso 29+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Dun Morogh) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
-[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Rut'theran Village]
-[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
-[G 34.5,25.9 Darnassus][T Rogue-trainer (taso 36)] (*Erion Shadewhisper*): Blind, Blinding Powder, Sprint r2, Rupture r3, Instant Posion 3
-[G 58.8,44.5 Darnassus][V Myy harmaat roinat] ja [R korjaa varusteet] (*Ariyell Skyshadow*)
+[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Ironforge]
+[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
+[O][A Engineering200][G 68.5,43.5 Ironforge]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Springspindle Fizzlegear*) [LE Engineering 300]
+[G 69.5,50.3 Ironforge]Puhu: *Tinkmaster Overspark* [QT2923 Tinkmaster Overspark] [QA2922 Save Techbot's Brain!]
+[G 69.2,50.5 Ironforge]Puhu: *Gnoarn* [QA2927 The Day After]
+[G 68.8,49.0 Ironforge]Puhu: *High Tinker Mekkatorque* [QA2929 The Grand Betrayal]
+[OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
+[G 45.9,49.4 Dun Morogh]Puhu: *Ozzie Togglevolt* [QT2927 The Day After] [QA2926 Gnogaine]
+[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Rut'theran Village]
+[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
 [O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
 [O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
 [G 59.5,45.4 Darnassus]Puhu: *Mathiel* [QA2925 Klockmort's Essentials]
@@ -1830,15 +1725,9 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Stonetalon Mountains*. Lennä Stonetalon Peakiin. Ensimmäisellä kerralla: Ashenvalen lounaiskulmasta Stonetalon Mountainsiin
 [G 59.5,67.2 Stonetalon Mountains]Puhu: *Gaxim Rustfizzle* [QA2931 Castpipe's Task]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
-[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
-[O][A Engineering200][G 68.5,43.5 Ironforge]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Springspindle Fizzlegear*) [LE Engineering 300]
-[G 69.5,50.3 Ironforge]Puhu: *Tinkmaster Overspark* [QT2923 Tinkmaster Overspark] [QA2922 Save Techbot's Brain!]
-[G 69.2,50.5 Ironforge]Puhu: *Gnoarn* [QA2927 The Day After]
-[G 68.8,49.0 Ironforge]Puhu: *High Tinker Mekkatorque* [QA2929 The Grand Betrayal]
-[G 69.8,48.1 Ironforge]Puhu: *Master Mechanic Castpipe* [QT2931 Castpipe's Task] [QA2930 Data Rescue]
 [G 67.9,46.1 Ironforge]Puhu: *Klockmort Spannerspan* [QT2925 Klockmort's Essentials] [QA2924 Essential Artificials]
+[G 69.8,48.1 Ironforge]Puhu: *Master Mechanic Castpipe* [QT2931 Castpipe's Task] [QA2930 Data Rescue]
 [OC]Matkusta: *Dun Morogh*. Ironforgen portista ulos Dun Moroghiin
-[G 45.9,49.4 Dun Morogh]Puhu: *Ozzie Togglevolt* [QT2927 The Day After] [QA2926 Gnogaine]
 [G 24.3,39.8 Dun Morogh]Dungeonin sisällä - Puhu: *Kernobee* [QA2904 A Fine Mess]
 [G 24.3,39.8 Dun Morogh]Dungeonissa: looti *Grime-Encrusted Ring* aloittaa questin [QA2945 Grime-Encrusted Ring]
 [G 24.3,39.8 Dun Morogh]Dungeonin sisällä - Klikkaa: *The Sparklematic 5200* [QA2951 The Sparklematic 5200!]
@@ -1846,6 +1735,7 @@ Guidelime.registerGuide([[
 [G 24.3,39.8 Dun Morogh]Dungeonin sisällä - Klikkaa: *The Sparklematic 5200* [QT2945 Grime-Encrusted Ring] [QA2947 Return of the Ring] [QT2951 The Sparklematic 5200!] [QA2952 The Sparklematic 5200!]
 [G 24.3,39.8 Dun Morogh]*Mene dungeoniin: Gnomeregan*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Suorita tehtävä dungeonissa
 [G 24.3,39.8 Dun Morogh]Dungeonin sisällä - Klikkaa: *The Sparklematic 5200* [QT2952 The Sparklematic 5200!]
+[G 45.3,52.2 Dun Morogh][V Myy harmaat roinat] (*Grawn Thromwyn*)
 [G 45.9,49.4 Dun Morogh]Puhu: *Ozzie Togglevolt* [QT2926 Gnogaine] [QA2962 The Only Cure is More Green Glow]
 [G 24.3,39.8 Dun Morogh]*Mene dungeoniin: Gnomeregan*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *High Potency Radioactive Fallout* (Irradiated Slime, Corrosive Lurker, Irradiated Horror) [QC2962,1 The Only Cure is More Green Glow]
 [G 45.9,49.4 Dun Morogh]Puhu: *Ozzie Togglevolt* [QT2962 The Only Cure is More Green Glow]
@@ -1865,17 +1755,6 @@ Guidelime.registerGuide([[
 [G 43.2,92.6 Arathi Highlands]Puhu: *Foggy MacKreel* [QA647 MacKreel's Moonshine]
 [G 31.8,82.7 Arathi Highlands]Puhu: *Lolo the Lookout* [QA663 Land Ho!]
 [G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT663 Land Ho!]
-[G 32.8,81.5 Arathi Highlands]Puhu: *First Mate Nilzlix* [QA662 Deep Sea Salvage]
-[G 34.0,80.8 Arathi Highlands]Puhu: *Captain Steelgut* [QA664 Drowned Sorrows]
-[G 33.9,80.5 Arathi Highlands]Puhu: *Professor Phizzlethorpe* [QA665 Sunken Treasure]
-[G 33.9,80.6 Arathi Highlands]Defend Professor Phizzlethorpe [QC665,1 Sunken Treasure]
-[G 33.9,80.5 Arathi Highlands]Puhu: *Doctor Draxlegauge* [QT665 Sunken Treasure] [QA666 Sunken Treasure]
-[G 23.1,84.5 Arathi Highlands]Kerää *Maiden's Folly Charts* (Maiden's Folly Charts); Tapa *Daggerspine Sorceress*; Kerää *Spirit of Silverpine Log* (Spirit of Silverpine Log); Kerää *Spirit of Silverpine Charts* (Spirit of Silverpine Charts) [QC662,1 Deep Sea Salvage] [QC664,2 Drowned Sorrows] [QC662,4 Deep Sea Salvage] [QC662,3 Deep Sea Salvage]
-[G 23.4,85.1 Arathi Highlands]Kerää *Maiden's Folly Log* (Maiden's Folly Log); Kerää *Elven Gem* (Calcified Elven Gem); Tapa *Daggerspine Raider* [QC662,2 Deep Sea Salvage] [QC666,1 Sunken Treasure] [QC664,1 Drowned Sorrows]
-[G 32.8,81.5 Arathi Highlands]Puhu: *First Mate Nilzlix* [QT662 Deep Sea Salvage]
-[G 34.0,80.8 Arathi Highlands]Puhu: *Captain Steelgut* [QT664 Drowned Sorrows]
-[G 33.9,80.5 Arathi Highlands]Puhu: *Doctor Draxlegauge* [QT666 Sunken Treasure] [QA668 Sunken Treasure]
-[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT668 Sunken Treasure] [QA669 Sunken Treasure]
 [G 46.2,47.8 Arathi Highlands]Puhu: *Apprentice Kryten* [QT691 Worth Its Weight in Gold]
 [G 46.6,47.0 Arathi Highlands]Puhu: *Skuerto* [QT690 Malin's Request] [QA693 Wand over Fist]
 [G 62.5,33.7 Arathi Highlands]Klikkaa: *Shards of Myzrael* [QA642 The Princess Trapped]
@@ -1899,94 +1778,65 @@ Guidelime.registerGuide([[
 [O][G 46.2,47.8 Arathi Highlands]Puhu: *Apprentice Kryten* [QA695 An Apprentice's Enchantment] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 46.6,47.0 Arathi Highlands]Puhu: *Skuerto* [QT695 An Apprentice's Enchantment] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 46.6,47.0 Arathi Highlands]Puhu: *Skuerto* [QA696 Attack on the Tower] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 46.0,47.7 Arathi Highlands][V Myy harmaat roinat] (*Jannos Ironwill*)
 [O][G 18.2,68.1 Arathi Highlands]Kerää *Trelane's Phylactery* (Trelane's Footlocker); Kerää *Trelane's Ember Agate* (Trelane's Lockbox); Kerää *Trelane's Orb* (Trelane's Chest) [QC696,1 Attack on the Tower] [QC696,3 Attack on the Tower] [QC696,2 Attack on the Tower] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 46.6,47.0 Arathi Highlands]Puhu: *Skuerto* [QT696 Attack on the Tower] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 46.6,47.0 Arathi Highlands]Puhu: *Skuerto* [QA697 Malin's Request] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[H Hearthstone: Innkeeper Allison] (jos cooldownilla, juokse tai lennä)
+[G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Stormwind]
+[G 77.4,65.3 Stormwind City][T Rogue-trainer (taso 36)] (*Osborne the Night Man*): Blind, Blinding Powder, Sprint r2, Rupture r3, Instant Posion 3
 [O][A Mining200][G 59.2,37.8 Stormwind City]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Gelman Stonehand*) [LE Mining 300]
 [O][A Herbalism200][G 54.3,84.1 Stormwind City]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Tannysa*) [LE Herbalism 300]
 [O][A Skinning125][G 72.1,62.2 Stormwind City]Ammatti Skinning 125+: opettele Expert Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 225]
 [O][A Skinning200][G 72.1,62.2 Stormwind City]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Maris Granger*) [LE Skinning 300]
+[O][A Alchemy125][G 55.7,86.1 Stormwind City]Ammatti Alchemy 125+: opettele Expert Alchemy ja uudet reseptit (*Lilyssia Nightbreeze*) [LE Alchemy 225]
+[O][A Blacksmithing125][G 63.7,37.0 Stormwind City]Ammatti Blacksmithing 125+: opettele Expert Blacksmithing ja uudet reseptit (*Therum Deepforge*) [LE Blacksmithing 225]
 [O][A Enchanting125][G 52.9,74.5 Stormwind City]Ammatti Enchanting 125+: opettele Expert Enchanting ja uudet reseptit (*Lucan Cordell*) [LE Enchanting 225]
+[O][A Engineering125][G 62.1,30.3 Stormwind City]Ammatti Engineering 125+: opettele Expert Engineering ja uudet reseptit (*Lilliam Sparkspindle*) [LE Engineering 225]
 [O][A Tailoring125][G 52.2,83.1 Stormwind City]Ammatti Tailoring 125+: opettele Expert Tailoring ja uudet reseptit (*Sellandus*) [LE Tailoring 225]
 [O][A Tailoring200][G 53.1,81.3 Stormwind City]Ammatti Tailoring 200+: opettele Artisan Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 300]
 [O][G 50.5,87.5 Stormwind City]Puhu: *Archmage Malin* [QT697 Malin's Request] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP30 Tavoitetaso 30: jos olet alle, toista edellinen dungeon tai grindaa]
+[G 51.8,83.5 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Wynne Larson*)
+[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Thalanaar]
 [OC]Matkusta: *Thousand Needles*. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
 [G 78.1,77.1 Thousand Needles]Puhu: *Fizzle Brassbolts* [QA1104 Salt Flat Venom]
 [G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QA1105 Hardened Shells]
 [G 77.8,77.3 Thousand Needles]Puhu: *Kravel Koalbeard* [QA1110 Rocket Car Parts] [QA5762 Hemet Nesingwary]
-[G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QA1176 Load Lightening]
-[G 87.9,65.4 Thousand Needles]Kerää *Hollow Vulture Bone* (Salt Flats Scavenger, Salt Flats Vulture) [QC1176,1 Load Lightening]
-[G 83.8,72.2 Thousand Needles]Kerää *Salty Scorpid Venom* (Scorpid Reaver, Scorpid Terror) [QC1104,1 Salt Flat Venom]
 [G 81.6,78.0 Thousand Needles]Puhu: *Trackmaster Zherin* [QA1175 A Bump in the Road]
 [G 77.8,84.2 Thousand Needles]Kerää *Rocket Car Parts* (Rocket Car Rubble); Tapa *Saltstone Gazer* [QC1110,1 Rocket Car Parts] [QC1175,3 A Bump in the Road]
 [G 77.8,77.3 Thousand Needles]Puhu: *Kravel Koalbeard* [QT1110 Rocket Car Parts]
 [G 79.1,70.1 Thousand Needles]Tapa *Saltstone Crystalhide* [QC1175,2 A Bump in the Road]
 [G 77.6,64.9 Thousand Needles]Tapa *Saltstone Basilisk* [QC1175,1 A Bump in the Road]
 [G 76.2,58.6 Thousand Needles]Kerää *Hardened Tortoise Shell* (Sparkleshell Snapper, Sparkleshell Tortoise, Sparkleshell Borer) [QC1105,1 Hardened Shells]
+[G 83.8,72.2 Thousand Needles]Kerää *Salty Scorpid Venom* (Scorpid Reaver, Scorpid Terror) [QC1104,1 Salt Flat Venom]
+[G 81.6,78.0 Thousand Needles]Puhu: *Trackmaster Zherin* [QT1175 A Bump in the Road]
 [G 78.1,77.1 Thousand Needles]Puhu: *Fizzle Brassbolts* [QT1104 Salt Flat Venom]
 [G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QT1105 Hardened Shells]
 [G 78.1,77.1 Thousand Needles]Puhu: *Fizzle Brassbolts* [QA1106 Martek the Exiled]
-[G 81.6,78.0 Thousand Needles]Puhu: *Trackmaster Zherin* [QT1175 A Bump in the Road]
-[G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QT1176 Load Lightening] [QA1178 Goblin Sponsorship]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
-[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N38-42 1K Needles, Barrens, STV + Exc. Site (Rogue)]
-[NX42-46 Wetlands, Arathi, Badlands + Dalaran/SM/RFD/Ulda (Rogue)]
 [O][G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QA1107 Encrusted Tail Fins] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Ratchet]
-[G 62.7,36.2 The Barrens]Puhu: *Gazlowe* [QT1178 Goblin Sponsorship] [QA1180 Goblin Sponsorship]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Sentinel Hill]
-[OC]Matkusta: *Stranglethorn Vale*. Lennä Booty Bayhin tai juokse Duskwoodista etelään Stranglethorn Valeen (Rebel Camp pohjoisessa)
-[G 27.5,77.8 Stranglethorn Vale][P Booty Bay]Hae flight path (*Gyll*)
-[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 38)] (*Ian Strom*): Sinister Strike r6, Garrote r4
-[G 26.4,73.6 Stranglethorn Vale]Puhu: *Wharfmaster Lozgil* [QT1180 Goblin Sponsorship] [QA1181 Goblin Sponsorship]
-[O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
-[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
-[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT1181 Goblin Sponsorship] [QA1182 Goblin Sponsorship]
-[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Jutak*)
-[G 27.0,77.3 Stranglethorn Vale][V Osta ruokaa, noin 20] (*Innkeeper Skindle*)
-[O][G 25.3,25.7 Stranglethorn Vale]Kerää *Encrusted Tail Fin* (Saltscale Warrior (elite, ryhmä), Saltscale Oracle (elite, ryhmä), Saltscale Tide Lord (elite, ryhmä)) [QC1107,1 Encrusted Tail Fins] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 43.3,20.3 Stranglethorn Vale]Kerää *Fuel Regulator Blueprints* (Cozzle's Footlocker) [QC1182,1 Goblin Sponsorship]
-[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT1182 Goblin Sponsorship] [QA1183 Goblin Sponsorship]
-[G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Thelsamar]
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Thelsamar]
 [OC]Matkusta: *Badlands*. Loch Modanin etelän solasta Badlandsiin (lähin lento Thelsamar)
 [G 42.2,52.7 Badlands]Puhu: *Martek the Exiled* [QT1106 Martek the Exiled] [QA1108 Indurium]
 [G 49.7,64.3 Badlands]Kerää *Indurium Flake* (Stonevault Bonesnapper, Stonevault Shaman) [QC1108,1 Indurium]
 [G 42.2,52.7 Badlands]Puhu: *Martek the Exiled* [QT1108 Indurium] [QA1137 News for Fizzle]
+[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Sentinel Hill]
+[OC]Matkusta: *Stranglethorn Vale*. Lennä Booty Bayhin tai juokse Duskwoodista etelään Stranglethorn Valeen (Rebel Camp pohjoisessa)
+[O][G 25.3,25.7 Stranglethorn Vale]Kerää *Encrusted Tail Fin* (Saltscale Warrior (elite, ryhmä), Saltscale Oracle (elite, ryhmä), Saltscale Tide Lord (elite, ryhmä)) [QC1107,1 Encrusted Tail Fins] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Thalanaar]
 [OC]Matkusta: *Thousand Needles*. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
 [O][G 78.1,77.1 Thousand Needles]Puhu: *Wizzle Brassbolts* [QT1107 Encrusted Tail Fins] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 78.1,77.1 Thousand Needles]Puhu: *Fizzle Brassbolts* [QT1137 News for Fizzle]
-[G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QT1183 Goblin Sponsorship] [QA1186 The Eighteenth Pilot] [QA1190 Keeping Pace]
-[G 80.3,76.1 Thousand Needles]Puhu: *Razzeric* [QT1186 The Eighteenth Pilot] [QA1187 Razzeric's Tweaking]
+[G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QA1190 Keeping Pace]
 [G 77.2,77.4 Thousand Needles]Klikkaa: *Rizzle's Unguarded Plans* [QT1190 Keeping Pace] [QA1194 Rizzle's Schematics]
 [G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QT1194 Rizzle's Schematics]
-[OC]Matkusta: *Dustwallow Marsh*. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
-[G 54.1,56.5 Dustwallow Marsh]Kerää *Seaforium Booster* (Gizmorium Shipping Crate) [QC1187,1 Razzeric's Tweaking]
-[OC]Matkusta: *Thousand Needles*. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
-[G 80.3,76.1 Thousand Needles]Puhu: *Razzeric* [QT1187 Razzeric's Tweaking] [QA1188 Safety First]
-[OC]Matkusta: *Tanaris*. Lennä Gadgetzaniin (Tanaris)
-[G 51.0,29.3 Tanaris][P Gadgetzan]Hae flight path (*Bera Stonehammer*)
-[O][A Cooking225][G 52.6,28.1 Tanaris]Ammattitehtävä (Cooking 225+): puhu *Dirge Quikcleave* [QA6610 Clamlette Surprise] Tavoite: Dirge Quikcleave wants you to get the following items:  12 Giant Eggs. You will find those on the Rocs wandering Tanaris or any other species of large bird.  10...
-[O][A Engineering200][G 52.3,27.7 Tanaris]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Buzzek Bracketswing*) [LE Engineering 300]
-[G 51.0,27.2 Tanaris]Puhu: *Shreev* [QT1188 Safety First] [QA1189 Safety First]
-[G 50.7,27.5 Tanaris][V Myy harmaat roinat] (*Blizrik Buckshot*)
-[OC]Matkusta: *Thousand Needles*. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
-[G 80.3,76.1 Thousand Needles]Puhu: *Razzeric* [QT1189 Safety First]
 [XP30 Tavoitetaso 30: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Stonetalon Peak]
 [OC]Matkusta: *Desolace*. Lennä Nijel's Pointiin. Ensimmäisellä kerralla: Stonetalon Mountainsin eteläpäästä Desolaceen
 [G 64.7,10.5 Desolace][P Nijel's Point]Hae flight path (*Baritanas Skyriver*)
+[G 67.9,8.3 Desolace][V Myy harmaat roinat] (*Maxton Strang*)
+[G 66.3,6.5 Desolace][S Aseta Hearthstone tähän] (*Innkeeper Lyshaerya*)
 [G 66.5,7.9 Desolace]Puhu: *Brother Anton* [QA261 Down the Scarlet Path]
 [G 66.7,10.9 Desolace]Puhu: *Corporal Melkins* [QA1387 Centaur Bounty]
 [G 66.7,10.9 Desolace]Puhu: *Captain Pentigast* [QA93224 Carved Centaur Totems]
@@ -2021,8 +1871,8 @@ Guidelime.registerGuide([[
 [G 38.9,27.2 Desolace]Puhu: *Azore Aldamort* [QA5741 Sceptre of Light]
 [G 36.1,30.4 Desolace]Klikkaa: *Rackmore's Log* [QA6161 Claim Rackmore's Treasure!]
 [G 34.9,31.4 Desolace]Kerää *Rackmore's Silver Key* (Drysnap Crawler, Drysnap Pincer); Kerää *Rackmore's Golden Key* (Slitherblade Myrmidon, Slitherblade Naga, Slitherblade Sea Witch) [QC6161,1 Claim Rackmore's Treasure!] [QC6161,2 Claim Rackmore's Treasure!]
+[H Hearthstone: Innkeeper Lyshaerya] (jos cooldownilla, juokse tai lennä)
 [G 67.9,8.3 Desolace][V Myy harmaat roinat] (*Maxton Strang*)
-[G 66.3,6.5 Desolace][S Aseta Hearthstone tähän] (*Innkeeper Lyshaerya*)
 [G 66.5,7.9 Desolace]Puhu: *Brother Anton* [QT261 Down the Scarlet Path] [QA1052 Down the Scarlet Path]
 [G 66.7,10.9 Desolace]Puhu: *Corporal Melkins* [QT1387 Centaur Bounty]
 [G 66.7,10.9 Desolace]Puhu: *Captain Pentigast* [QT93224 Carved Centaur Totems]
@@ -2032,38 +1882,50 @@ Guidelime.registerGuide([[
 [G 30.0,8.7 Desolace]Klikkaa: *Rackmore's Chest* [QT6161 Claim Rackmore's Treasure!]
 [G 28.2,6.7 Desolace]Kerää *Book of the Ancients* (Lord Kragaru) [QC6027,1 Book of the Ancients]
 [G 38.9,27.2 Desolace]Puhu: *Azore Aldamort* [QT6027 Book of the Ancients]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
+[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
+[N38-42 Desolace, STV, Alterac + Exc. Site (Rogue)]
+[NX42-46 Arathi, Dustwallow, Swamp + Dalaran/SM/RFD/Ulda (Rogue)]
 [XP31 Tavoitetaso 31: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Booty Bay]
-[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT669 Sunken Treasure] [QA670 Sunken Treasure]
-[G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QA189 Bloodscalp Ears] [QA213 Hostile Takeover]
-[G 26.9,77.2 Stranglethorn Vale]Puhu: *Krazek* [QA198 Supplies to Private Thorsen] [QA201 Investigate the Camp] [QA616 The Haunted Isle]
-[G 27.0,77.3 Stranglethorn Vale]Puhu: *Tokal* [QT79235 On the Lam]
-[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QA605 Singing Blue Shards]
-[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT616 The Haunted Isle] [QA578 The Stone of the Tides]
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Sentinel Hill]
+[OC]Matkusta: *Stranglethorn Vale*. Lennä Booty Bayhin tai juokse Duskwoodista etelään Stranglethorn Valeen (Rebel Camp pohjoisessa)
+[G 27.5,77.8 Stranglethorn Vale][P Booty Bay]Hae flight path (*Gyll*)
+[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 38)] (*Ian Strom*): Sinister Strike r6, Garrote r4
+[O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
+[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA606 Scaring Shaky]
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QA575 Supply and Demand]
+[G 27.6,77.5 Stranglethorn Vale]Puhu: *Scooty* [QT2904 A Fine Mess]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QA605 Singing Blue Shards]
+[G 26.9,77.2 Stranglethorn Vale]Puhu: *Krazek* [QA198 Supplies to Private Thorsen] [QA616 The Haunted Isle]
+[G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QA189 Bloodscalp Ears] [QA213 Hostile Takeover]
+[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT616 The Haunted Isle] [QA578 The Stone of the Tides]
 [G 28.1,76.2 Stranglethorn Vale]Puhu: *First Mate Crazz* [QA595 The Bloodsail Buccaneers]
 [G 32.3,68.4 Stranglethorn Vale]Kerää *Mistvale Giblets* (Elder Mistvale Gorilla) [QC606,1 Scaring Shaky]
 [G 27.3,69.5 Stranglethorn Vale]Klikkaa: *Bloodsail Correspondence* [QT595 The Bloodsail Buccaneers] [QA597 The Bloodsail Buccaneers]
 [G 28.1,76.2 Stranglethorn Vale]Puhu: *First Mate Crazz* [QT597 The Bloodsail Buccaneers] [QA599 The Bloodsail Buccaneers]
-[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT599 The Bloodsail Buccaneers]
-[G 27.0,77.2 Stranglethorn Vale]Puhu: *Nixxrax Fillamug* [QT98463 Talk of the Town]
-[G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QA587 Up to Snuff]
 [G 26.9,73.6 Stranglethorn Vale]Puhu: *"Shaky" Phillipe* [QT606 Scaring Shaky] [QA607 Return to MacKinley]
 [G 40.4,52.1 Stranglethorn Vale]Kerää *Singing Crystal Shard* (Ironjaw Basilisk, Cold Eye Basilisk, Crystal Spine Basilisk) [QC605,1 Singing Blue Shards]
 [G 51.0,35.2 Stranglethorn Vale]Puhu: *Gnaz Blunderflame* [QA97420 Reduce, Reuse, Reconcile]
 [G 44.9,23.6 Stranglethorn Vale]Kerää *Tumbled Crystal* (Venture Co. Geologist) [QC213,1 Hostile Takeover]
 [G 42.6,18.8 Stranglethorn Vale]Kerää *Drum of Crude Oil* (Venture Co. Mechanic) [QC97420,1 Reduce, Reuse, Reconcile]
-[G 31.5,12.8 Stranglethorn Vale]Klikkaa: *Thoroughly Scavenged Supplies* [QA97328 Anything of Value]
+[G 35.7,10.5 Stranglethorn Vale]Puhu: *Barnil Stonepot* [QA583 Welcome to the Jungle]
+[G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT5762 Hemet Nesingwary] [QT583 Welcome to the Jungle] [QA194 Raptor Mastery]
+[G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QA185 Tiger Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QA190 Panther Mastery]
+[G 31.5,12.9 Stranglethorn Vale]Klikkaa: *Thoroughly Scavenged Supplies* [QA97328 Anything of Value]
+[G 23.7,15.4 Stranglethorn Vale]Tapa *Stranglethorn Raptor* [QC194,1 Raptor Mastery]
 [G 23.5,12.8 Stranglethorn Vale]Puhu: *Zimmix Sputterspark* [QA97329 Where's the Key?]
 [G 22.3,13.1 Stranglethorn Vale]Kerää *Bloodscalp Ear* (Bloodscalp Mystic, Bloodscalp Scout, Bloodscalp Headhunter); Kerää *Primitive Key* (Bloodscalp Mystic, Bloodscalp Scout, Bloodscalp Headhunter) [QC189,1 Bloodscalp Ears] [QC97329,1 Where's the Key?]
 [G 23.5,12.8 Stranglethorn Vale]Puhu: *Zimmix Sputterspark* [QT97329 Where's the Key?] [QA97331 Zimmix's Great Escape]
-[G 35.6,10.6 Stranglethorn Vale]Locate the hunters' camp [QC201,1 Investigate the Camp]
+[G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT194 Raptor Mastery] [QA195 Raptor Mastery]
 [G 40.3,8.4 Stranglethorn Vale]Puhu: *Private Thorsen* [QT198 Supplies to Private Thorsen] [QA215 Jungle Secrets]
 [G 44.3,7.9 Stranglethorn Vale]Puhu: *Wendel Mathers* [QA97047 The Cook in the Cage]
 [G 38.0,3.3 Stranglethorn Vale]Puhu: *Sergeant Yohwa* [QA203 The Second Rebellion] [QA204 Bad Medicine]
-[G 37.7,3.3 Stranglethorn Vale]Puhu: *Corporal Kaleb* [QA210 Krazek's Cookery]
 [G 38.0,3.0 Stranglethorn Vale]Puhu: *Lieutenant Doren* [QT215 Jungle Secrets] [QA200 Bookie Herod]
 [G 43.7,9.4 Stranglethorn Vale]Klikkaa: *Bookie Herod's Records* [QT200 Bookie Herod] [QA328 The Hidden Key]
 [G 44.3,9.6 Stranglethorn Vale]Kerää *Venom Fern Extract* (Kurzen Supplies); Kerää *Jungle Remedy* (Kurzen Medicine Man, Kurzen Witch Doctor, Kurzen Headshrinker) [QC204,2 Bad Medicine] [QC204,1 Bad Medicine]
@@ -2071,83 +1933,103 @@ Guidelime.registerGuide([[
 [G 49.6,7.6 Stranglethorn Vale]Klikkaa: *Bookie Herod's Strongbox* [QT328 The Hidden Key] [QA329 The Spy Revealed!]
 [G 45.0,8.3 Stranglethorn Vale]Tapa *Kurzen Jungle Fighter* [QC203,1 The Second Rebellion]
 [G 44.3,7.9 Stranglethorn Vale]Puhu: *Wendel Mathers* [QT97047 The Cook in the Cage] [QA97048 Returning to Port]
+[G 42.9,10.5 Stranglethorn Vale]Tapa *Young Panther* [QC190,1 Panther Mastery]
+[G 37.8,19.8 Stranglethorn Vale]Tapa *Lashtail Raptor* [QC195,1 Raptor Mastery]
+[G 36.1,11.7 Stranglethorn Vale]Tapa *Young Stranglethorn Tiger* [QC185,1 Tiger Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT190 Panther Mastery] [QA191 Panther Mastery]
+[G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT185 Tiger Mastery] [QA186 Tiger Mastery]
 [G 38.0,3.3 Stranglethorn Vale]Puhu: *Sergeant Yohwa* [QT203 The Second Rebellion] [QT204 Bad Medicine] [QA574 Special Forces]
 [G 38.0,3.0 Stranglethorn Vale]Puhu: *Lieutenant Doren* [QT329 The Spy Revealed!] [QA330 Patrol Schedules]
 [G 37.7,3.4 Stranglethorn Vale]Puhu: *Corporal Sethman* [QT330 Patrol Schedules] [QA331 Report to Doren]
 [G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QA207 Kurzen's Mystery]
-[G 35.6,8.1 Stranglethorn Vale]Kerää *Large River Crocolisk Skin* (River Crocolisk) [QC575,1 Supply and Demand]
-[G 29.5,19.1 Stranglethorn Vale]Kerää *The First Troll Legend* (Moon Over the Vale) [QC207,1 Kurzen's Mystery]
+[G 30.4,8.8 Stranglethorn Vale]Tapa *Panther* [QC191,1 Panther Mastery]
+[G 35.0,14.2 Stranglethorn Vale]Tapa *Stranglethorn Tiger* [QC186,1 Tiger Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT191 Panther Mastery] [QA192 Panther Mastery]
+[G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT186 Tiger Mastery] [QA187 Tiger Mastery]
+[G 31.9,16.1 Stranglethorn Vale]Tapa *Elder Stranglethorn Tiger* [QC187,1 Tiger Mastery]
+[G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT187 Tiger Mastery] [QA188 Tiger Mastery]
+[G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT195 Raptor Mastery] [QA196 Raptor Mastery]
+[G 31.8,16.4 Stranglethorn Vale]Kerää *Paw of Sin'Dall* (Sin'Dall); Kerää *The First Troll Legend* (Moon Over the Vale) [QC188,1 Tiger Mastery] [QC207,1 Kurzen's Mystery]
 [G 24.8,23.0 Stranglethorn Vale]Kerää *The Second Troll Legend* (Gri'lek the Wanderer); Locate the haunted island [QC207,2 Kurzen's Mystery] [QC578,1 The Stone of the Tides]
 [G 22.9,12.0 Stranglethorn Vale]Kerää *The Third Troll Legend* (Fall of Gurubashi); Kerää *The Fourth Troll Legend* (The Emperor's Tomb) [QC207,3 Kurzen's Mystery] [QC207,4 Kurzen's Mystery]
 [G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QT207 Kurzen's Mystery] [QA205 Troll Witchery]
 [G 45.8,7.8 Stranglethorn Vale]Tapa *Kurzen Commando*; Tapa *Kurzen Headshrinker* [QC574,1 Special Forces] [QC574,2 Special Forces]
+[G 46.5,22.5 Stranglethorn Vale]Tapa *Shadowmaw Panther* [QC192,1 Panther Mastery]
 [G 51.0,35.2 Stranglethorn Vale]Puhu: *Gnaz Blunderflame* [QT97420 Reduce, Reuse, Reconcile]
 [G 47.0,32.5 Stranglethorn Vale]Kerää *Skullsplitter Fetish* (Skullsplitter Mystic, Skullsplitter Witch Doctor) [QC205,1 Troll Witchery]
+[G 34.6,40.1 Stranglethorn Vale]Tapa *Jungle Stalker* [QC196,1 Raptor Mastery]
+[G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT196 Raptor Mastery]
+[G 35.6,10.6 Stranglethorn Vale]Puhu: *Ajeck Rouack* [QT188 Tiger Mastery]
+[G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT192 Panther Mastery]
+[G 35.6,8.1 Stranglethorn Vale]Kerää *Large River Crocolisk Skin* (River Crocolisk) [QC575,1 Supply and Demand]
 [G 38.0,3.0 Stranglethorn Vale]Puhu: *Lieutenant Doren* [QT331 Report to Doren] [QT574 Special Forces]
 [G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QT205 Troll Witchery] [QA95786 An Acquaintance in Southshore]
-[G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT5762 Hemet Nesingwary]
-[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 40)] (*Ian Strom*): Eviscerate r6, Safe Fall, Stealth r3, Mutilate r2
 [G 27.0,77.3 Stranglethorn Vale][S Aseta Hearthstone tähän] (*Innkeeper Skindle*)
-[G 26.4,73.6 Stranglethorn Vale]Puhu: *Wharfmaster Lozgil* [QT97328 Anything of Value] [QT97331 Zimmix's Great Escape]
-[G 26.9,83.8 Stranglethorn Vale]Kerää *Snuff* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC587,1 Up to Snuff]
-[O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
-[G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QT587 Up to Snuff]
+[G 26.4,73.6 Stranglethorn Vale]Puhu: *Wharfmaster Lozgil* [QT97328 Anything of Value]
+[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 40)] (*Ian Strom*): Eviscerate r6, Safe Fall, Stealth r3, Mutilate r2
+[G 26.4,73.6 Stranglethorn Vale]Puhu: *Wharfmaster Lozgil* [QT97331 Zimmix's Great Escape]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QA617 Akiris by the Bundle]
-[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT578 The Stone of the Tides] [QA601 Water Elementals]
-[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QA604 The Bloodsail Buccaneers]
+[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT599 The Bloodsail Buccaneers] [QA604 The Bloodsail Buccaneers]
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT189 Bloodscalp Ears] [QT213 Hostile Takeover] [QA209 Skullsplitter Tusks]
-[G 26.9,77.2 Stranglethorn Vale]Puhu: *Krazek* [QT201 Investigate the Camp] [QT210 Krazek's Cookery] [QA627 Favor for Krazek]
 [G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT605 Singing Blue Shards] [QA600 Venture Company Mining]
-[G 27.6,77.5 Stranglethorn Vale]Puhu: *Scooty* [QT2904 A Fine Mess]
+[G 27.0,77.2 Stranglethorn Vale]Puhu: *Nixxrax Fillamug* [QT98463 Talk of the Town]
+[G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QA587 Up to Snuff]
+[G 27.0,77.3 Stranglethorn Vale]Puhu: *Tokal* [QT79235 On the Lam]
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT575 Supply and Demand] [QA577 Some Assembly Required]
 [G 28.6,75.9 Stranglethorn Vale]Puhu: *Dizzy One-Eye* [QA576 Keep An Eye Out]
 [G 28.4,75.4 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Bubbles*)
 [G 27.0,77.3 Stranglethorn Vale][V Osta ruokaa, noin 20] (*Innkeeper Skindle*)
-[G 26.9,83.8 Stranglethorn Vale]Kerää *Dizzy's Eye* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock); Kerää *Bloodsail Orders* (Bloodsail Orders); Kerää *Bloodsail Charts* (Bloodsail Charts); Tapa *Bloodsail Swashbuckler* [QC576,1 Keep An Eye Out] [QC604,3 The Bloodsail Buccaneers] [QC604,2 The Bloodsail Buccaneers] [QC604,1 The Bloodsail Buccaneers]
-[G 42.2,46.2 Stranglethorn Vale]Kerää *Singing Blue Crystal* (Venture Co. Strip Miner, Venture Co. Tinkerer, Venture Co. Surveyor); Kerää *Skullsplitter Tusk* (Skullsplitter Warrior, Skullsplitter Axe Thrower, Skullsplitter Mystic) [QC600,1 Venture Company Mining] [QC209,1 Skullsplitter Tusks]
-[G 39.1,31.9 Stranglethorn Vale]Kerää *Snapjaw Crocolisk Skin* (Snapjaw Crocolisk) [QC577,1 Some Assembly Required]
-[G 27.2,28.2 Stranglethorn Vale]Kerää *Akiris Reed* (Brinescale Skirmisher, Naga Explorer) [QC617,1 Akiris by the Bundle]
-[G 20.9,23.3 Stranglethorn Vale]Kerää *Water Elemental Bracers* (Lesser Water Elemental) [QC601,1 Water Elementals]
-[H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
+[G 27.9,64.6 Stranglethorn Vale]Kerää *Akiris Reed* (Naga Explorer) [QC617,1 Akiris by the Bundle]
+[G 31.0,81.1 Stranglethorn Vale]Tapa *Bloodsail Swashbuckler*; Kerää *Bloodsail Charts* (Bloodsail Charts); Kerää *Bloodsail Orders* (Bloodsail Orders); Kerää *Dizzy's Eye* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC604,1 The Bloodsail Buccaneers] [QC604,2 The Bloodsail Buccaneers] [QC604,3 The Bloodsail Buccaneers] [QC576,1 Keep An Eye Out]
+[G 26.9,83.8 Stranglethorn Vale]Kerää *Snuff* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC587,1 Up to Snuff]
+[O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
+[G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QT587 Up to Snuff]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QT617 Akiris by the Bundle] [QA623 Akiris by the Bundle]
-[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT601 Water Elementals] [QA602 Magical Analysis]
-[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT604 The Bloodsail Buccaneers]
-[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT600 Venture Company Mining] [QA621 Zanzil's Secret]
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley] [QA609 Voodoo Dues]
+[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [G 27.7,76.7 Stranglethorn Vale]Puhu: *Captain Aransas* [QT97048 Returning to Port]
 [G 28.6,75.9 Stranglethorn Vale]Puhu: *Dizzy One-Eye* [QT576 Keep An Eye Out]
-[G 38.7,59.8 Stranglethorn Vale]Kerää *Zanzil's Mixture* (Zanzil Naga, Zanzil Zombie, Zanzil Witch Doctor); Kerää *Chucky's Huge Ring* (Chucky "Ten Thumbs") [QC621,1 Zanzil's Secret] [QC609,3 Voodoo Dues]
-[G 35.3,51.3 Stranglethorn Vale]Kerää *Maury's Clubbed Foot* (Maury "Club Foot" Wilkins); Kerää *Jon-Jon's Golden Spyglass* (Jon-Jon the Crow) [QC609,1 Voodoo Dues] [QC609,2 Voodoo Dues]
+[G 42.2,46.2 Stranglethorn Vale]Kerää *Singing Blue Crystal* (Venture Co. Strip Miner, Venture Co. Tinkerer, Venture Co. Surveyor); Kerää *Skullsplitter Tusk* (Skullsplitter Warrior, Skullsplitter Axe Thrower, Skullsplitter Mystic) [QC600,1 Venture Company Mining] [QC209,1 Skullsplitter Tusks]
+[G 39.1,31.9 Stranglethorn Vale]Kerää *Snapjaw Crocolisk Skin* (Snapjaw Crocolisk) [QC577,1 Some Assembly Required]
+[G 20.9,23.3 Stranglethorn Vale]Kerää *Water Elemental Bracers* (Lesser Water Elemental) [QC601,1 Water Elementals]
+[H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
+[G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT601 Water Elementals] [QA602 Magical Analysis]
+[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT604 The Bloodsail Buccaneers]
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT209 Skullsplitter Tusks]
-[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT621 Zanzil's Secret]
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT609 Voodoo Dues]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT600 Venture Company Mining]
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley]
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT577 Some Assembly Required]
 [O][G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QA628 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 28.2,22.3 Stranglethorn Vale]Kerää *Elder Crocolisk Skin* (Elder Saltwater Crocolisk (elite, ryhmä)) [QC628,1 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QA197 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QA193 Panther Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 38.0,3.0 Stranglethorn Vale]Puhu: *Lieutenant Doren* [QA202 Colonel Kurzen] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 48.2,7.3 Stranglethorn Vale]Tapa *Kurzen Elite*; Tapa *Kurzen Subchief*; Kerää *Kurzen's Head* (Colonel Kurzen (elite, ryhmä)) [QC202,1 Colonel Kurzen] [QC202,2 Colonel Kurzen] [QC202,3 Colonel Kurzen] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 38.0,3.0 Stranglethorn Vale]Puhu: *Lieutenant Doren* [QT202 Colonel Kurzen] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QA206 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 48.7,24.2 Stranglethorn Vale]Kerää *Fang of Bhag'thera* (Bhag'thera (elite, ryhmä)) [QC193,1 Panther Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 52.9,27.6 Stranglethorn Vale]Kerää *Mind's Eye* (Mai'Zoth (elite, ryhmä)) [QC206,1 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.5,10.6 Stranglethorn Vale]Puhu: *Sir S. J. Erlgadin* [QT193 Panther Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QT206 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 30.8,43.0 Stranglethorn Vale]Kerää *Talon of Tethis* (Tethis (elite, ryhmä)) [QC197,1 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT197 Raptor Mastery] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QA208 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 38.2,35.6 Stranglethorn Vale]Kerää *Head of Bangalash* (King Bangalash (elite, ryhmä)) [QC208,1 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT208 Big Game Hunter] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] (*Jutak*)
 [O][G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT628 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP32 Tavoitetaso 32: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 28.1,77.6 Stranglethorn Vale][V Myy harmaat roinat] (*Qixdi Goodstitch*)
 [G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Southshore]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [G 18.8,78.5 Alterac Mountains]Puhu: *Archmage Ansirem Runeweaver* [QT602 Magical Analysis] [QA603 Ansirem's Key]
+[G 9.5,62.2 Alterac Mountains]Puhu: *Magus Olvek* [QA96800 Past Due]
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 50.6,57.1 Hillsbrad Foothills]Puhu: *Loremaster Dibbs* [QT95786 An Acquaintance in Southshore]
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Raleigh the Devout* [QT1052 Down the Scarlet Path] [QA1053 In the Name of the Light]
 [G 52.1,58.7 Hillsbrad Foothills]Puhu: *Brewmeister Bilger* [QT647 MacKreel's Moonshine]
 [G 50.4,59.0 Hillsbrad Foothills]Puhu: *Phin Odelic* [QT661 Hints of a New Plague?]
-[G 48.3,60.1 Hillsbrad Foothills]Puhu: *Image of Archmage Modera* [QA92457 Starving Arcane]
-[G 51.2,57.0 Hillsbrad Foothills][V Myy harmaat roinat] ja [R korjaa varusteet] (*Robert Aebischer*)
-[OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[G 16.6,68.1 Alterac Mountains]Tapa *Saturated Remnant*; Tapa *Mana Echo* [QC92457,2 Starving Arcane] [QC92457,3 Starving Arcane]
-[OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [O][G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QA504 Crushridge Warmongers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[G 51.2,57.0 Hillsbrad Foothills][V Myy harmaat roinat] ja [R korjaa varusteet] (*Robert Aebischer*)
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [O][G 36.7,54.1 Alterac Mountains]Tapa *Crushridge Warmonger (elite, ryhmä)* [QC504,1 Crushridge Warmongers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
@@ -2164,19 +2046,19 @@ Guidelime.registerGuide([[
 [G 47.8,56.2 Wetlands]*Mene dungeoniin: Excavation Site*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Horrible Rootcore* (Highland Horror); Kerää *Titan Relic* (Relic Guardian) [QC95646,1 Horrors in the Highland] [QC95810,1 Lost Relic Carry]
 [G 38.8,52.4 Wetlands]Puhu: *Prospector Whelgar* [QT95810 Lost Relic Carry] [QA98824 Prehistoric Prism]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QT95646 Horrors in the Highland]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
-[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N42-46 Wetlands, Arathi, Badlands + Dalaran/SM/RFD/Ulda (Rogue)]
-[NX46-50 Badlands, Tanaris, Feralas (Rogue)]
 [XP33 Tavoitetaso 33: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Arathi Highlands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
-[G 83.5,35.5 Arathi Highlands]Kerää *Lesser Bloodstone Ore* (Lesser Bloodstone Deposit) [QC627,1 Favor for Krazek]
-[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT670 Sunken Treasure] [QA667 Death From Below]
-[G 31.9,81.8 Arathi Highlands]Defend Shakes O'Breen [QC667,1 Death From Below]
-[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT667 Death From Below]
+[G 32.8,81.5 Arathi Highlands]Puhu: *First Mate Nilzlix* [QA662 Deep Sea Salvage]
+[G 34.0,80.8 Arathi Highlands]Puhu: *Captain Steelgut* [QA664 Drowned Sorrows]
+[G 33.9,80.5 Arathi Highlands]Puhu: *Professor Phizzlethorpe* [QA665 Sunken Treasure]
+[G 33.9,80.6 Arathi Highlands]Defend Professor Phizzlethorpe [QC665,1 Sunken Treasure]
+[G 33.9,80.5 Arathi Highlands]Puhu: *Doctor Draxlegauge* [QT665 Sunken Treasure] [QA666 Sunken Treasure]
+[G 23.1,84.5 Arathi Highlands]Kerää *Maiden's Folly Charts* (Maiden's Folly Charts); Tapa *Daggerspine Sorceress*; Kerää *Spirit of Silverpine Log* (Spirit of Silverpine Log); Kerää *Spirit of Silverpine Charts* (Spirit of Silverpine Charts) [QC662,1 Deep Sea Salvage] [QC664,2 Drowned Sorrows] [QC662,4 Deep Sea Salvage] [QC662,3 Deep Sea Salvage]
+[G 23.4,85.1 Arathi Highlands]Kerää *Maiden's Folly Log* (Maiden's Folly Log); Kerää *Elven Gem* (Calcified Elven Gem); Tapa *Daggerspine Raider* [QC662,2 Deep Sea Salvage] [QC666,1 Sunken Treasure] [QC664,1 Drowned Sorrows]
+[G 32.8,81.5 Arathi Highlands]Puhu: *First Mate Nilzlix* [QT662 Deep Sea Salvage]
+[G 34.0,80.8 Arathi Highlands]Puhu: *Captain Steelgut* [QT664 Drowned Sorrows]
+[G 33.9,80.5 Arathi Highlands]Puhu: *Doctor Draxlegauge* [QT666 Sunken Treasure] [QA668 Sunken Treasure]
+[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT668 Sunken Treasure] [QA669 Sunken Treasure]
 [O][G 36.2,57.4 Arathi Highlands]Klikkaa: *Stone of Inner Binding* [QA652 Breaking the Keystone] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 63.9,30.0 Arathi Highlands]Kerää *Rod of Order* (Fozruk (elite, ryhmä)) [QC652,1 Breaking the Keystone] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QT652 Breaking the Keystone] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -2203,6 +2085,13 @@ Guidelime.registerGuide([[
 [G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Refuge Pointe]
 [O][G 62.6,34.1 Arathi Highlands]Kerää *Eldritch Shackles* (Myzrael (elite, ryhmä)) [QC656,1 Summoning the Princess] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 62.5,33.7 Arathi Highlands]Klikkaa: *Shards of Myzrael* [QT656 Summoning the Princess] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
+[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
+[N42-46 Arathi, Dustwallow, Swamp + Dalaran/SM/RFD/Ulda (Rogue)]
+[NX46-50 Badlands, Tanaris, Feralas (Rogue)]
 [OC]*Dungeon: City of Dalaran* (suositus taso 33+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Alterac Mountains) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Stormwind]
 [O][A Blacksmithing210][G 62.9,36.8 Stormwind City]Ammattitehtävä (Blacksmithing 210+): puhu *Hank the Hammer* [QA2758 The Origins of Smithing] Tavoite: Bring six Golden Scale Bracers to Hank the Hammer in Stormwind.
@@ -2210,19 +2099,19 @@ Guidelime.registerGuide([[
 [G 31.5,62.6 Stormwind City]Puhu: *Shylamiir* [QA92456 A Green Sample]
 [G 48.7,87.6 Stormwind City]Puhu: *High Sorcerer Andromath* [QA92489 Power Overwhelming]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Southshore]
+[OC]Matkusta: *Silverpine Forest*. 
+[G 68.6,45.1 Silverpine Forest]Puhu: *Image of Archmage Modera* [QT92432 An Alarming Request] [QA92457 Starving Arcane] [QA92458 Heart of Disruption]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[G 20.1,63.7 Alterac Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Anthony Durain*)
-[G 21.2,63.1 Alterac Mountains]Tapa *Arcanic Enigma* [QC92489,1 Power Overwhelming]
-[G 8.5,59.2 Alterac Mountains]*Mene dungeoniin: City of Dalaran*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Fel Infused Blossom*; Tapa *Seeking Remnant* [QC92456,1 A Green Sample] [QC92457,1 Starving Arcane]
-[OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
-[G 48.3,60.1 Hillsbrad Foothills]Puhu: *Image of Archmage Modera* [QT92457 Starving Arcane]
+[G 8.5,59.2 Alterac Mountains]*Mene dungeoniin: City of Dalaran*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Fel Infused Blossom*; Tapa *Seeking Remnant*; Tapa *Saturated Remnant*; Tapa *Mana Echo*; Kerää *Arcane Mote* (Shade of the Archmage); Tapa *Arcanic Enigma* [QC92456,1 A Green Sample] [QC92457,1 Starving Arcane] [QC92457,2 Starving Arcane] [QC92457,3 Starving Arcane] [QC92458,1 Heart of Disruption] [QC92489,1 Power Overwhelming]
+[OC]Matkusta: *Silverpine Forest*. 
+[G 68.6,45.1 Silverpine Forest]Puhu: *Image of Archmage Modera* [QT92457 Starving Arcane] [QT92458 Heart of Disruption]
 [OC]*Dungeon: Scarlet Monastery* (suositus taso 34+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Tirisfal Glades) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Ironforge]
 [O][A Blacksmithing200][G 50.3,43.6 Ironforge]Ammattitehtävä: palauta *Ironus Coldsteel* [QT5284 The Way of the Weaponsmith] (jos tavoite valmis)
 [G 75.0,12.5 Ironforge]Puhu: *Librarian Mae Paledust* [QA1050 Mythology of the Titans]
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
 [OC]Matkusta: *Tirisfal Glades*. 
-[G 82.6,33.8 Tirisfal Glades]*Mene dungeoniin: Scarlet Monastery*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Mythology of the Titans* (Mythology of the Titans); Tapa *High Inquisitor Whitemane*; Tapa *Scarlet Commander Mograine*; Tapa *Herod*; Tapa *Houndmaster Loksey* [QC1050,1 Mythology of the Titans] [QC1053,1 In the Name of the Light] [QC1053,2 In the Name of the Light] [QC1053,3 In the Name of the Light] [QC1053,4 In the Name of the Light]
+[G 82.6,33.8 Tirisfal Glades]*Mene dungeoniin: Scarlet Monastery*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Mythology of the Titans* (Mythology of the Titans); Tapa *High Inquisitor Whitemane*; Tapa *Scarlet Commander Mograine*; Tapa *Herod*; Tapa *Houndmaster Loksey*; Kerää *The Lost Magic of the Runemasters* [QC1050,1 Mythology of the Titans] [QC1053,1 In the Name of the Light] [QC1053,2 In the Name of the Light] [QC1053,3 In the Name of the Light] [QC1053,4 In the Name of the Light] [QC96800,1 Past Due]
 [G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Ironforge]
 [G 75.0,12.5 Ironforge]Puhu: *Librarian Mae Paledust* [QT1050 Mythology of the Titans]
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
@@ -2230,23 +2119,13 @@ Guidelime.registerGuide([[
 [G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Ironforge]
 [G 36.4,3.6 Ironforge]Puhu: *Talvash del Kissel* [QT2947 Return of the Ring]
 [G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QT971 Knowledge in the Deeps]
-[G 69.8,48.1 Ironforge]Puhu: *Master Mechanic Castpipe* [QT2930 Data Rescue]
-[G 69.5,50.3 Ironforge]Puhu: *Tinkmaster Overspark* [QT2922 Save Techbot's Brain!]
-[G 68.8,49.0 Ironforge]Puhu: *High Tinker Mekkatorque* [QT2929 The Grand Betrayal]
-[G 67.9,46.1 Ironforge]Puhu: *Klockmort Spannerspan* [QT2924 Essential Artificials]
-[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [G 69.9,18.6 Ironforge]Puhu: *High Explorer Magellas* [QT98824 Prehistoric Prism]
-[G 74.6,11.7 Ironforge]Puhu: *Prospector Stormpike* [QT514 Letter to Stormpike]
-[G 74.6,11.7 Ironforge]Puhu: *Prospector Stormpike* [QA525 Further Mysteries]
-[G 67.8,42.5 Ironforge][V Myy harmaat roinat] (*Gearcutter Cogspinner*)
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
-[G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT525 Further Mysteries] [QA537 Dark Council]
-[OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[G 61.0,44.1 Alterac Mountains]Tapa *Argus Shadow Mage* [QC537,1 Dark Council]
-[G 39.2,14.3 Alterac Mountains]Kerää *Head of Nagaz* (Nagaz) [QC537,2 Dark Council]
-[OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
-[G 48.1,59.1 Hillsbrad Foothills]Puhu: *Magistrate Henry Maleb* [QT537 Dark Council]
-[G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Stormwind]
+[G 67.9,46.1 Ironforge]Puhu: *Klockmort Spannerspan* [QT2924 Essential Artificials]
+[G 69.8,48.1 Ironforge]Puhu: *Master Mechanic Castpipe* [QT2930 Data Rescue]
+[G 68.8,49.0 Ironforge]Puhu: *High Tinker Mekkatorque* [QT2929 The Grand Betrayal]
+[G 69.5,50.3 Ironforge]Puhu: *Tinkmaster Overspark* [QT2922 Save Techbot's Brain!]
+[G 66.2,54.5 Ironforge][V Myy harmaat roinat] (*Soolie Berryfizz*)
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Stormwind]
 [O][A Blacksmithing210][G 62.9,36.8 Stormwind City]Ammattitehtävä: palauta *Hank the Hammer* [QT2758 The Origins of Smithing] (jos tavoite valmis)
 [O][A Blacksmithing210][G 62.9,36.8 Stormwind City]Ammattitehtävä (Blacksmithing 210+): puhu *Hank the Hammer* [QA2759 In Search of Galvan] Tavoite: Speak with McGavan in Booty Bay.
 [G 62.6,34.1 Stormwind City]Puhu: *Shoni the Shilent* [QT2928 Gyrodrillmatic Excavationators]
@@ -2258,19 +2137,20 @@ Guidelime.registerGuide([[
 [G 51.8,93.6 Stormwind City]Puhu: *Angus Stern* [QA212 A Meal Served Cold]
 [XP35 Tavoitetaso 35: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Ratchet]
+[OC]Matkusta: *Dustwallow Marsh*. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh][P Theramore]Hae flight path (*Baldruc*)
 [O][A First Aid225][G 67.8,49.0 Dustwallow Marsh]Ammattitehtävä: palauta *Doctor Gustaf VanHowzen* [QT6625 Alliance Trauma] (jos tavoite valmis)
 [O][A First Aid225][G 67.8,49.0 Dustwallow Marsh]Ammattitehtävä (First Aid 225+): puhu *Doctor Gustaf VanHowzen* [QA6624 Triage] Tavoite: Save patients by using Triage Bandages to tend to their wounds. You must save 15 patients before 6 of them die from their injuries.  Remember the order of triage!...
 [G 66.2,46.1 Dustwallow Marsh]Puhu: *Guard Byron* [QA1282 They Call Him Smiling Jim]
 [G 66.3,45.5 Dustwallow Marsh]Puhu: *Morgan Stern* [QT1260 Morgan Stern] [QA1204 Mudrock Soup and Bugs]
 [G 67.9,48.2 Dustwallow Marsh]Puhu: *Clerk Lendry* [QT1302 James Hyal]
-[G 66.6,45.2 Dustwallow Marsh][S Aseta Hearthstone tähän] (*Innkeeper Janene*)
 [G 68.2,48.6 Dustwallow Marsh]Puhu: *Captain Garran Vimes* [QT1282 They Call Him Smiling Jim]
-[G 67.5,48.0 Dustwallow Marsh][V Myy harmaat roinat] (*Torq Ironblast*)
 [G 60.6,47.2 Dustwallow Marsh]Kerää *Forked Mudrock Tongue* (Mudrock Burrower, Mudrock Tortoise, Mudrock Borer) [QC1204,1 Mudrock Soup and Bugs]
 [G 66.3,45.5 Dustwallow Marsh]Puhu: *Morgan Stern* [QT1204 Mudrock Soup and Bugs] [QA1258 ... and Bugs]
 [G 55.4,25.9 Dustwallow Marsh]Klikkaa: *Loose Dirt* [QA1219 The Orc Report]
 [G 46.9,17.5 Dustwallow Marsh]Puhu: *"Stinky" Ignatz* [QA1222 Stinky's Escape]
+[G 48.9,24.6 Dustwallow Marsh]Help Stinky find Bogbean Leaves [QC1222,1 Stinky's Escape]
 [G 35.1,38.3 Dustwallow Marsh]Puhu: *Mudcrush Durtfeet* [QA1177 Hungry!]
 [G 29.7,47.6 Dustwallow Marsh]Klikkaa: *Hoofprints* [QA1284 Suspicious Hoofprints]
 [G 29.8,48.2 Dustwallow Marsh]Klikkaa: *Theramore Guard Badge* [QA1252 Lieutenant Paval Reethe]
@@ -2278,7 +2158,7 @@ Guidelime.registerGuide([[
 [G 41.0,75.7 Dustwallow Marsh]Puhu: *Drazzit Dripvalve* [QA98205 Whelps are the Worst!] [QA98215 Dragon Scales, Post Burnt Tails]
 [G 40.4,75.6 Dustwallow Marsh]Kerää *Shed Dark Dragonscale* (Searing Hatchling, Searing Whelp, Firemane Scout); Tapa *Searing Hatchling*; Tapa *Searing Whelp* [QC98215,1 Dragon Scales, Post Burnt Tails] [QC98205,1 Whelps are the Worst!] [QC98205,2 Whelps are the Worst!]
 [G 41.0,75.7 Dustwallow Marsh]Puhu: *Drazzit Dripvalve* [QT98215 Dragon Scales, Post Burnt Tails] [QT98205 Whelps are the Worst!]
-[H Hearthstone: Innkeeper Janene] (jos cooldownilla, juokse tai lennä)
+[G 66.6,45.2 Dustwallow Marsh][S Aseta Hearthstone tähän] (*Innkeeper Janene*)
 [G 65.0,47.0 Dustwallow Marsh]Puhu: *Theramore Lieutenant* [QT1219 The Orc Report] [QA1220 Captain Vimes]
 [O][A First Aid225][G 67.8,49.0 Dustwallow Marsh]Ammattitehtävä: palauta *Doctor Gustaf VanHowzen* [QT6624 Triage] (jos tavoite valmis)
 [G 68.2,48.6 Dustwallow Marsh]Puhu: *Captain Garran Vimes* [QT1220 Captain Vimes] [QT1252 Lieutenant Paval Reethe] [QT1253 The Black Shield] [QT1284 Suspicious Hoofprints] [QA1259 Lieutenant Paval Reethe] [QA1319 The Black Shield]
@@ -2286,40 +2166,39 @@ Guidelime.registerGuide([[
 [G 64.8,50.4 Dustwallow Marsh]Puhu: *Caz Twosprocket* [QT1319 The Black Shield] [QA1320 The Black Shield]
 [G 68.8,53.2 Dustwallow Marsh]Puhu: *Privateer Groy* [QT623 Akiris by the Bundle]
 [G 68.2,48.6 Dustwallow Marsh]Puhu: *Captain Garran Vimes* [QT1285 Daelin's Men] [QT1320 The Black Shield]
-[G 66.5,45.1 Dustwallow Marsh]Puhu: *Fiora Longears* [QT1132 Fiora Longears]
+[G 66.3,45.5 Dustwallow Marsh]Puhu: *Morgan Stern* [QT1222 Stinky's Escape]
 [G 66.6,45.2 Dustwallow Marsh][V Myy harmaat roinat] (*Innkeeper Janene*)
 [G 56.2,20.8 Dustwallow Marsh]Kerää *Mirefin Head* (Mirefin Warrior, Mirefin Murloc, Mirefin Coastrunner) [QC1177,1 Hungry!]
-[G 48.9,24.6 Dustwallow Marsh]Help Stinky find Bogbean Leaves [QC1222,1 Stinky's Escape]
 [G 35.1,38.3 Dustwallow Marsh]Puhu: *Mudcrush Durtfeet* [QT1177 Hungry!]
-[G 66.3,45.5 Dustwallow Marsh]Puhu: *Morgan Stern* [QT1222 Stinky's Escape]
-[G 66.5,45.1 Dustwallow Marsh]Puhu: *Fiora Longears* [QA1133 Journey to Astranaar]
-[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Astranaar]
-[G 34.7,48.8 Ashenvale]Puhu: *Shindrell Swiftfire* [QT1133 Journey to Astranaar]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Lakeshire]
 [OC]Matkusta: *Swamp of Sorrows*. Duskwoodista Deadwind Passin läpi itään Swamp of Sorrowsiin, tai lennä Nethergarde Keepiin ja juokse pohjoiseen
 [G 91.9,91.4 Swamp of Sorrows]Kerää *Pristine Crawler Leg* (Monstrous Crawler, Silt Crawler) [QC1258,1 ... and Bugs]
-[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[H Hearthstone: Innkeeper Janene] (jos cooldownilla, juokse tai lennä)
 [G 66.3,45.5 Dustwallow Marsh]Puhu: *Morgan Stern* [QT1258 ... and Bugs]
 [XP37 Tavoitetaso 37: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Booty Bay]
 [O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
 [G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QT603 Ansirem's Key] [QA610 "Pretty Boy" Duncan]
-[G 26.9,77.2 Stranglethorn Vale]Puhu: *Krazek* [QT627 Favor for Krazek] [QA622 Return to Corporal Kaleb]
-[G 27.4,69.4 Stranglethorn Vale]Kerää *Catelyn's Blade* ("Pretty Boy" Duncan) [QC610,1 "Pretty Boy" Duncan]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QA621 Zanzil's Secret]
 [O][A Blacksmithing210][G 28.9,75.4 Stranglethorn Vale]Ammattitehtävä: palauta *McGavan* [QT2759 In Search of Galvan] (jos tavoite valmis)
+[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
+[G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT669 Sunken Treasure] [QA670 Sunken Treasure]
 [G 27.6,76.7 Stranglethorn Vale]Puhu: *Fin Fizracket* [QA348 Stranglethorn Fever]
-[G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QT610 "Pretty Boy" Duncan]
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA2872 Stoley's Debt]
-[G 35.0,60.9 Stranglethorn Vale]Kerää *Heart of Mokk* (Mokk the Savage) [QC348,1 Stranglethorn Fever]
-[G 37.7,3.3 Stranglethorn Vale]Puhu: *Corporal Kaleb* [QT622 Return to Corporal Kaleb]
-[G 27.7,42.7 Stranglethorn Vale]Kerää *Chilled Basilisk Haunch* (Cold Eye Basilisk) [QC212,1 A Meal Served Cold]
-[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 44)] (*Ian Strom*): Rupture r4, Instant Poison r4, Gouge r2, Gouge r3
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA609 Voodoo Dues] [QA2872 Stoley's Debt]
+[G 35.0,60.9 Stranglethorn Vale]Kerää *Heart of Mokk* (Mokk the Savage); Kerää *Zanzil's Mixture* (Zanzil Naga, Zanzil Zombie, Zanzil Witch Doctor) [QC348,1 Stranglethorn Fever] [QC621,1 Zanzil's Secret]
+[G 40.0,58.2 Stranglethorn Vale]Kerää *Chucky's Huge Ring* (Chucky "Ten Thumbs") [QC609,3 Voodoo Dues]
+[G 36.2,43.6 Stranglethorn Vale]Kerää *Chilled Basilisk Haunch* (Cold Eye Basilisk) [QC212,1 A Meal Served Cold]
+[G 35.3,51.3 Stranglethorn Vale]Kerää *Maury's Clubbed Foot* (Maury "Club Foot" Wilkins); Kerää *Jon-Jon's Golden Spyglass* (Jon-Jon the Crow) [QC609,1 Voodoo Dues] [QC609,2 Voodoo Dues]
+[G 27.4,69.4 Stranglethorn Vale]Kerää *Catelyn's Blade* ("Pretty Boy" Duncan) [QC610,1 "Pretty Boy" Duncan]
 [G 27.6,76.7 Stranglethorn Vale]Puhu: *Fin Fizracket* [QT348 Stranglethorn Fever]
-[O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT609 Voodoo Dues]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT621 Zanzil's Secret]
+[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 44)] (*Ian Strom*): Rupture r4, Instant Poison r4, Gouge r2, Gouge r3
+[G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QT610 "Pretty Boy" Duncan]
 [O][G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QA611 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 50.4,28.5 Stranglethorn Vale]Kerää *Maury's Key* (Mosh'Ogg Mauler (elite, ryhmä), Mosh'Ogg Shaman (elite, ryhmä), Mosh'Ogg Lord (elite, ryhmä)) [QC613,1 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 22.4,23.0 Stranglethorn Vale]Kerää *Stone of the Tides* (Gazban) [QC611,1 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT611 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -2330,9 +2209,6 @@ Guidelime.registerGuide([[
 [G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Lakeshire]
 [OC]Matkusta: *Swamp of Sorrows*. Duskwoodista Deadwind Passin läpi itään Swamp of Sorrowsiin, tai lennä Nethergarde Keepiin ja juokse pohjoiseen
 [G 15.8,40.8 Swamp of Sorrows]Kerää *Khadgar's Essays on Dimensional Convergence* (Tangled Horror, Swampwalker, Swampwalker Elder) [QC1364,1 Mazen's Behest]
-[G 65.5,18.2 Swamp of Sorrows]Puhu: *Galen Goodward* [QA1393 Galen's Escape]
-[G 53.1,29.6 Swamp of Sorrows]Escort Galen out of the Fallow Sanctuary. [QC1393,1 Galen's Escape]
-[G 47.8,39.8 Swamp of Sorrows]Klikkaa: *Galen's Strongbox* [QT1393 Galen's Escape]
 [G 26.7,59.8 Swamp of Sorrows]Puhu: *Watcher Biggs* [QA1396 Encroaching Wildlife]
 [G 25.4,59.3 Swamp of Sorrows]Tapa *Sorrow Spinner*; Tapa *Young Sawtooth Crocolisk* [QC1396,2 Encroaching Wildlife] [QC1396,1 Encroaching Wildlife]
 [G 37.2,45.1 Swamp of Sorrows]Tapa *Swamp Jaguar* [QC1396,3 Encroaching Wildlife]
@@ -2372,7 +2248,7 @@ Guidelime.registerGuide([[
 [G 66.6,22.0 Badlands]Kerää *Supply Crate* (Excavation Supply Crate) [QC718,1 Mirages]
 [G 53.8,43.3 Badlands]Puhu: *Sigrun Ironhew* [QT718 Mirages] [QA733 Scrounging]
 [G 61.9,54.3 Badlands]Puhu: *Garek* [QA732 Tremors of the Earth]
-[G 51.4,76.9 Badlands]Puhu: *Theldurin the Lost* [QT709 Solution to Doom] [QA727 To Ironforge for Yagyin's Digest]
+[G 51.4,76.9 Badlands]Puhu: *Theldurin the Lost* [QT709 Solution to Doom]
 [G 16.2,85.5 Badlands]Kerää *Bracers of Rock Binding* (Greater Rock Elemental) [QC712,1 Study of the Elements: Rock]
 [G 9.6,83.9 Badlands]Kerää *Scrap Metal* (Dustbelcher Mauler, Dustbelcher Ogre Mage, Dustbelcher Wyrmhunter) [QC733,1 Scrounging]
 [G 12.6,75.5 Badlands]Kerää *Sign of the Earth* (Boss Tho'grun) [QC732,1 Tremors of the Earth]
@@ -2381,35 +2257,25 @@ Guidelime.registerGuide([[
 [G 42.4,52.9 Badlands]Puhu: *Rigglefuzz* [QT703 Barbecued Buzzard Wings]
 [G 61.9,54.3 Badlands]Puhu: *Garek* [QT732 Tremors of the Earth]
 [G 53.8,43.3 Badlands]Puhu: *Sigrun Ironhew* [QT733 Scrounging]
-[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Southshore]
+[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Refuge Pointe]
+[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT670 Sunken Treasure] [QA667 Death From Below]
+[G 31.9,81.8 Arathi Highlands]Defend Shakes O'Breen [QC667,1 Death From Below]
+[G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT667 Death From Below]
+[G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Southshore]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[G 84.5,80.3 Alterac Mountains]Puhu: *Fahrad* [QA80526 Fool Me Twice]
+[G 84.5,80.3 Alterac Mountains]Puhu: *Fahrad* [QA80453 Best Laid Plans] [QA80526 Fool Me Twice]
+[G 86.0,80.0 Alterac Mountains]Puhu: *Zan Shivsproket* [QT80453 Best Laid Plans] [QA80454 One Last Drop]
 [G 84.5,80.3 Alterac Mountains]Speak to Fahrad when you're ready to hear his plan.
 [G 84.5,80.3 Alterac Mountains]Puhu: *Fahrad* [QT80526 Fool Me Twice]
+[G 9.5,62.2 Alterac Mountains]Puhu: *Magus Olvek* [QT96800 Past Due]
 [G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Ironforge]
 [O][A Mining200][G 50.0,26.3 Ironforge]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Geofram Bouldertoe*) [LE Mining 300]
 [O][A Herbalism200][G 55.9,59.1 Ironforge]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Reyna Stonebranch*) [LE Herbalism 300]
 [O][A Skinning200][G 39.9,32.5 Ironforge]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Balthus Stoneflayer*) [LE Skinning 300]
-[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [O][A Engineering200][G 68.5,43.5 Ironforge]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Springspindle Fizzlegear*) [LE Engineering 300]
-[G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QT727 To Ironforge for Yagyin's Digest]
 [G 74.2,9.4 Ironforge]Puhu: *Krom Stoutarm* [QA1360 Reclaimed Treasures]
 [G 74.6,11.7 Ironforge]Puhu: *Prospector Stormpike* [QA2398 The Lost Dwarves]
-[O][G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QA735 The Star, the Hand and the Heart] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Southshore]
-[OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[O][G 35.6,54.4 Alterac Mountains]Kerää *Star of Xil'yeh* (Grel'borg the Miser (elite, ryhmä)) [QC735,1 The Star, the Hand and the Heart] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Booty Bay]
-[O][G 47.7,44.2 Stranglethorn Vale]Kerää *The Legacy Heart* (Mogh the Undying (elite, ryhmä)) [QC735,3 The Star, the Hand and the Heart] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[H Hearthstone: Innkeeper Janene] (jos cooldownilla, juokse tai lennä)
-[O][G 59.7,10.1 Dustwallow Marsh]Kerää *Hand of Dagun* (Dagun the Ravenous (elite, ryhmä)) [QC735,2 The Star, the Hand and the Heart] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
-[O][G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QT735 The Star, the Hand and the Heart] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 50.8,5.6 Ironforge]Puhu: *Gerrig Bonegrip* [QA737 Forbidden Knowledge]
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Thelsamar]
-[OC]Matkusta: *Badlands*. Loch Modanin etelän solasta Badlandsiin (lähin lento Thelsamar)
-[G 51.4,76.9 Badlands]Puhu: *Theldurin the Lost* [QT737 Forbidden Knowledge]
-[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Stormwind]
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Stormwind]
 [O][A Tailoring200][G 53.1,81.3 Stormwind City]Ammatti Tailoring 200+: opettele Artisan Tailoring ja uudet reseptit (*Georgio Bolero*) [LE Tailoring 300]
 [G 51.8,93.6 Stormwind City]Puhu: *Angus Stern* [QT212 A Meal Served Cold]
 [G 52.6,83.7 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Evan Larson*)
@@ -2449,6 +2315,7 @@ Guidelime.registerGuide([[
 [G 53.4,43.4 Badlands]Puhu: *Prospector Ryedol* [QT723 Prospect of Faith] [QA724 Prospect of Faith]
 [G 42.4,52.9 Badlands]Puhu: *Rigglefuzz* [QT2418 Power Stones]
 [G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Ironforge]
+[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [G 77.5,11.8 Ironforge]Puhu: *Historian Karnik* [QT724 Prospect of Faith] [QA725 Passing Word of a Threat]
 [G 77.3,9.7 Ironforge]Puhu: *Advisor Belgrum* [QT725 Passing Word of a Threat] [QA726 Passing Word of a Threat]
 [G 77.5,11.8 Ironforge]Puhu: *Historian Karnik* [QT726 Passing Word of a Threat]
@@ -2487,64 +2354,54 @@ Guidelime.registerGuide([[
 [G 52.0,14.8 Ironforge][T Rogue-trainer (taso 46)] (*Hulfdan Blackbeard*): Garrote r5, Sinister Strike r7, Gouge r4
 [G 45.0,6.8 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hjoldir Stoneblade*)
 [G 18.1,51.5 Ironforge][V Osta ruokaa, noin 20] (*Innkeeper Firebrew*)
-[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
-[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
+[OC]Matkusta: *Tanaris*. Lennä Gadgetzaniin (Tanaris)
+[G 51.0,29.3 Tanaris][P Gadgetzan]Hae flight path (*Bera Stonehammer*)
 [G 67.1,24.0 Tanaris]Puhu: *Stoley* [QT2872 Stoley's Debt] [QA2873 Stoley's Shipment]
 [G 67.1,23.9 Tanaris]Puhu: *Security Chief Bilgewhizzle* [QA8366 Southsea Shakedown] [QA97530 Dunemaul Dues]
 [G 67.0,22.4 Tanaris]Puhu: *Yeh'kinya* [QA3520 Screecher Spirits]
 [G 66.8,22.3 Tanaris]Klikkaa: *Wanted Poster* [QA2781 WANTED: Caliph Scorpidsting] [QA2875 WANTED: Andre Firebeard]
 [G 66.6,22.3 Tanaris]Puhu: *Haughty Modiste* [QA8365 Pirate Hats Ahoy!]
-[O][A Cooking225][G 52.6,28.1 Tanaris]Ammattitehtävä: palauta *Dirge Quikcleave* [QT6610 Clamlette Surprise] (jos tavoite valmis)
 [O][A Cooking225][G 52.6,28.1 Tanaris]Ammattitehtävä: palauta *Dirge Quikcleave* [QT6612 I Know A Guy...] (jos tavoite valmis)
+[O][A Cooking225][G 52.6,28.1 Tanaris]Ammattitehtävä (Cooking 225+): puhu *Dirge Quikcleave* [QA6610 Clamlette Surprise] Tavoite: Dirge Quikcleave wants you to get the following items:  12 Giant Eggs. You will find those on the Rocs wandering Tanaris or any other species of large bird.  10...
 [G 52.5,27.9 Tanaris][S Aseta Hearthstone tähän] (*Innkeeper Fizzgrimble*)
 [G 52.8,27.4 Tanaris]Puhu: *Andi Lynn* [QA5863 The Dunemaul Compound]
 [G 52.5,28.4 Tanaris]Puhu: *Spigot Operator Luglunket* [QA1707 Water Pouch Bounty]
 [G 52.5,28.5 Tanaris]Puhu: *Chief Engineer Bilgewhizzle* [QA1690 Wastewander Justice]
 [G 51.8,28.7 Tanaris]Puhu: *Marin Noggenfogger* [QA2605 The Thirsty Goblin]
-[G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QA992 Gadgetzan Water Survey]
-[G 39.0,29.0 Tanaris]Kerää *Tapped Dowsing Widget* (Sandsorrow Watch Water Hole) [QC992,1 Gadgetzan Water Survey]
-[G 43.0,41.3 Tanaris]Puhu: *Odd Totem* [QA95753 Challenge of the Desert Wolf]
+[G 60.4,24.8 Tanaris]Tapa *Wastewander Bandit* [QC1690,1 Wastewander Justice]
+[G 63.9,29.1 Tanaris]Tapa *Wastewander Thief*; Kerää *Wastewander Water Pouch* (Wastewander Thief, Wastewander Shadow Mage, Wastewander Rogue) [QC1690,2 Wastewander Justice] [QC1707,1 Water Pouch Bounty]
+[H Hearthstone: Innkeeper Fizzgrimble] (jos cooldownilla, juokse tai lennä)
+[G 52.5,28.4 Tanaris]Puhu: *Spigot Operator Luglunket* [QT1707 Water Pouch Bounty]
+[G 52.5,28.5 Tanaris]Puhu: *Chief Engineer Bilgewhizzle* [QT1690 Wastewander Justice] [QA1691 More Wastewander Justice]
+[G 60.8,32.9 Tanaris]Tapa *Wastewander Rogue*; Tapa *Wastewander Shadow Mage* [QC1691,1 More Wastewander Justice] [QC1691,3 More Wastewander Justice]
+[G 61.8,38.2 Tanaris]Kerää *Caliph Scorpidsting's Head* (Caliph Scorpidsting); Tapa *Wastewander Assassin* [QC2781,1 WANTED: Caliph Scorpidsting] [QC1691,2 More Wastewander Justice]
 [G 52.7,45.9 Tanaris]Puhu: *Marvon Rivetseeker* [QA3161 Gahz'ridian]
 [G 52.3,45.3 Tanaris]Kerää *Gahz'ridian Ornament* (Gahz'ridian) [QC3161,1 Gahz'ridian]
-[G 60.1,37.0 Tanaris]Kerää *Wastewander Water Pouch* (Wastewander Thief, Wastewander Shadow Mage, Wastewander Rogue); Kerää *Caliph Scorpidsting's Head* (Caliph Scorpidsting); Tapa *Wastewander Bandit* [QC1707,1 Water Pouch Bounty] [QC2781,1 WANTED: Caliph Scorpidsting] [QC1690,1 Wastewander Justice]
-[G 63.7,31.7 Tanaris]Tapa *Wastewander Thief* [QC1690,2 Wastewander Justice]
-[H Hearthstone: Innkeeper Fizzgrimble] (jos cooldownilla, juokse tai lennä)
-[G 52.5,28.5 Tanaris]Puhu: *Chief Engineer Bilgewhizzle* [QT1690 Wastewander Justice] [QT2781 WANTED: Caliph Scorpidsting] [QA1691 More Wastewander Justice]
-[G 60.8,32.9 Tanaris]Tapa *Wastewander Rogue*; Tapa *Wastewander Shadow Mage*; Tapa *Wastewander Assassin* [QC1691,1 More Wastewander Justice] [QC1691,3 More Wastewander Justice] [QC1691,2 More Wastewander Justice]
-[G 52.5,28.5 Tanaris]Puhu: *Chief Engineer Bilgewhizzle* [QT1691 More Wastewander Justice]
-[G 52.5,28.4 Tanaris]Puhu: *Spigot Operator Luglunket* [QT1707 Water Pouch Bounty]
-[G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT992 Gadgetzan Water Survey] [QA82 Noxious Lair Investigation]
-[G 45.7,37.8 Tanaris]Reach Old Totem [QC95753,1 Challenge of the Desert Wolf]
-[G 40.5,52.4 Tanaris]Kerää *Brilliantly Polished Bangle* (Dunemaul Brute, Dunemaul Enforcer, Dunemaul Warlock) [QC97530,1 Dunemaul Dues]
-[G 31.2,64.7 Tanaris]Kerää *Laden Dew Gland* (Thistleshrub Dew Collector) [QC2605,1 The Thirsty Goblin]
-[G 35.7,40.7 Tanaris]Kerää *Centipaar Insect Parts* (Centipaar Stinger, Centipaar Wasp, Centipaar Swarmer) [QC82,1 Noxious Lair Investigation]
-[G 51.8,28.7 Tanaris]Puhu: *Marin Noggenfogger* [QT2605 The Thirsty Goblin] [QA2606 In Good Taste]
-[G 51.1,26.9 Tanaris]Puhu: *Sprinkle* [QT2606 In Good Taste] [QA2641 Sprinkle's Secret Ingredient]
-[G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT82 Noxious Lair Investigation]
-[G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QA10 The Scrimshank Redemption]
+[O][A Cooking225][G 52.6,28.1 Tanaris]Ammattitehtävä: palauta *Dirge Quikcleave* [QT6610 Clamlette Surprise] (jos tavoite valmis)
+[G 52.5,28.5 Tanaris]Puhu: *Chief Engineer Bilgewhizzle* [QT1691 More Wastewander Justice] [QT2781 WANTED: Caliph Scorpidsting]
 [G 71.0,43.1 Tanaris]Tapa *Southsea Freebooter*; Kerää *Southsea Pirate Hat* (Southsea Swashbuckler, Southsea Dock Worker, Southsea Freebooter); Tapa *Southsea Pirate*; Kerää *Stoley's Shipment* (Stolen Cargo) [QC8366,2 Southsea Shakedown] [QC8365,1 Pirate Hats Ahoy!] [QC8366,1 Southsea Shakedown] [QC2873,1 Stoley's Shipment]
 [G 72.7,47.8 Tanaris]Tapa *Southsea Swashbuckler*; Tapa *Southsea Dock Worker*; Kerää *Firebeard's Head* (Andre Firebeard) [QC8366,4 Southsea Shakedown] [QC8366,3 Southsea Shakedown] [QC2875,1 WANTED: Andre Firebeard]
 [G 67.1,24.0 Tanaris]Puhu: *Stoley* [QT2873 Stoley's Shipment] [QA2874 Deliver to MacKinley]
-[G 67.1,23.9 Tanaris]Puhu: *Security Chief Bilgewhizzle* [QT97530 Dunemaul Dues] [QT2875 WANTED: Andre Firebeard] [QT8366 Southsea Shakedown]
-[G 66.6,22.3 Tanaris]Puhu: *Haughty Modiste* [QT8365 Pirate Hats Ahoy!]
-[O][A Engineering200][G 52.3,27.7 Tanaris]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Buzzek Bracketswing*) [LE Engineering 300]
+[G 67.1,23.9 Tanaris]Puhu: *Security Chief Bilgewhizzle* [QT2875 WANTED: Andre Firebeard] [QT8366 Southsea Shakedown]
+[G 52.7,45.9 Tanaris]Puhu: *Marvon Rivetseeker* [QT3161 Gahz'ridian]
+[G 41.2,51.9 Tanaris]Tapa *Dunemaul Brute*; Kerää *Brilliantly Polished Bangle* (Dunemaul Brute, Dunemaul Enforcer, Dunemaul Warlock) [QC5863,1 The Dunemaul Compound] [QC97530,1 Dunemaul Dues]
+[G 41.5,57.8 Tanaris]Tapa *Gor'marok the Ravager* [QC5863,3 The Dunemaul Compound]
+[G 31.2,64.7 Tanaris]Kerää *Laden Dew Gland* (Thistleshrub Dew Collector) [QC2605,1 The Thirsty Goblin]
+[G 39.9,50.9 Tanaris]Tapa *Dunemaul Enforcer* [QC5863,2 The Dunemaul Compound]
+[G 51.8,28.7 Tanaris]Puhu: *Marin Noggenfogger* [QT2605 The Thirsty Goblin] [QA2606 In Good Taste]
+[G 51.1,26.9 Tanaris]Puhu: *Sprinkle* [QT2606 In Good Taste] [QA2641 Sprinkle's Secret Ingredient]
 [G 51.6,26.8 Tanaris]Puhu: *Tran'rek* [QA3362 Thistleshrub Valley]
-[G 45.7,37.7 Tanaris]Puhu: *Odd Totem* [QT95753 Challenge of the Desert Wolf]
-[G 39.9,50.9 Tanaris]Tapa *Dunemaul Enforcer*; Tapa *Dunemaul Brute* [QC5863,2 The Dunemaul Compound] [QC5863,1 The Dunemaul Compound]
+[G 50.7,27.5 Tanaris][V Myy harmaat roinat] (*Blizrik Buckshot*)
 [G 29.5,60.5 Tanaris]Puhu: *Tooga* [QA1560 Tooga's Quest]
 [G 28.9,61.9 Tanaris]Tapa *Thistleshrub Rootshaper*; Tapa *Gnarled Thistleshrub* [QC3362,2 Thistleshrub Valley] [QC3362,1 Thistleshrub Valley]
-[G 41.5,57.8 Tanaris]Tapa *Gor'marok the Ravager* [QC5863,3 The Dunemaul Compound]
-[G 56.0,71.2 Tanaris]Kerää *Scrimshank's Surveying Gear* (Scrimshank's Surveying Gear) [QC10,1 The Scrimshank Redemption]
-[G 52.7,45.9 Tanaris]Puhu: *Marvon Rivetseeker* [QT3161 Gahz'ridian]
-[H Hearthstone: Innkeeper Fizzgrimble] (jos cooldownilla, juokse tai lennä)
-[G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT10 The Scrimshank Redemption] [QA110 Insect Part Analysis]
-[G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT110 Insect Part Analysis] [QA113 Insect Part Analysis]
-[G 50.2,27.5 Tanaris]Puhu: *Senior Surveyor Fizzledowser* [QT113 Insect Part Analysis] [QA162 Rise of the Silithid]
 [G 51.6,26.8 Tanaris]Puhu: *Tran'rek* [QT3362 Thistleshrub Valley]
 [G 52.8,27.4 Tanaris]Puhu: *Andi Lynn* [QT5863 The Dunemaul Compound]
-[G 52.5,27.9 Tanaris][V Myy harmaat roinat] (*Innkeeper Fizzgrimble*)
 [G 66.6,25.7 Tanaris]Puhu: *Torta* [QC1560,1 Tooga's Quest]
 [G 66.6,25.7 Tanaris]Puhu: *Torta* [QT1560 Tooga's Quest]
+[G 67.1,23.9 Tanaris]Puhu: *Security Chief Bilgewhizzle* [QT97530 Dunemaul Dues]
+[G 66.6,22.3 Tanaris]Puhu: *Haughty Modiste* [QT8365 Pirate Hats Ahoy!]
 [XP43 Tavoitetaso 43: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Thalanaar]
 [G 89.6,46.6 Feralas]Puhu: *Falfindel Waywarder* [QT1059 Reclaiming the Charred Vale] [QT1101 The Crone of the Kraul]
@@ -2557,6 +2414,8 @@ Guidelime.registerGuide([[
 [G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
 [G 30.2,43.2 Feralas][P Feathermoon]Hae flight path (*Fyldren Moonfeather*)
 [O][A Alchemy200][G 32.6,43.8 Feralas]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Kylanna Windwhisper*) [LE Alchemy 300]
+[G 30.8,43.1 Feralas][V Myy harmaat roinat] (*Dulciea Frostmoon*)
+[G 31.0,43.5 Feralas][S Aseta Hearthstone tähän] (*Innkeeper Shyria*)
 [G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QA2982 The High Wilderness]
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QA4124 The Missing Courier]
 [G 30.3,46.2 Feralas]Puhu: *Shandris Feathermoon* [QA2866 The Ruins of Solarsal]
@@ -2572,8 +2431,7 @@ Guidelime.registerGuide([[
 [OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 45.4,65.0 Feralas]Klikkaa: *Wrecked Row Boat* [QT4125 The Missing Courier] [QA4127 Boat Wreckage]
 [G 51.8,60.5 Feralas]Kerää *Thick Yeti Hide* (Feral Scar Yeti, Hulking Feral Scar, Enraged Feral Scar) [QC2821,1 The Mark of Quality]
-[G 60.0,63.3 Feralas]Tapa *Gordunni Shaman* [QC2982,2 The High Wilderness]
-[G 59.7,57.3 Feralas]Tapa *Gordunni Brute*; Tapa *Gordunni Warlock* [QC2982,3 The High Wilderness] [QC2982,1 The High Wilderness]
+[G 59.5,57.0 Feralas]Tapa *Gordunni Warlock*; Tapa *Gordunni Brute* [QC2982,1 The High Wilderness] [QC2982,3 The High Wilderness]
 [G 67.3,46.7 Feralas]Tapa *Grimtotem Shaman*; Tapa *Grimtotem Raider* [QC2970,3 Doling Justice] [QC2970,2 Doling Justice]
 [G 66.0,45.6 Feralas]Puhu: *Jer'kai Moonweaver* [QT2970 Doling Justice] [QA2972 Doling Justice]
 [G 42.4,22.0 Feralas]Puhu: *Rockbiter* [QA2844 The Giant Guardian]
@@ -2584,9 +2442,7 @@ Guidelime.registerGuide([[
 [G 42.4,22.0 Feralas]Puhu: *Rockbiter* [QT2845 Wandering Shay]
 [G 42.1,38.6 Feralas]Kerää *Water Elemental Core* (Sea Spray, Sea Elemental) [QC7721,1 Fuel for the Zapping]
 [G 44.8,43.4 Feralas]Puhu: *Zorbin Fandazzle* [QT7721 Fuel for the Zapping] [QT7003 Zapped Giants]
-[G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
-[G 30.8,43.1 Feralas][V Myy harmaat roinat] (*Dulciea Frostmoon*)
-[G 31.0,43.5 Feralas][S Aseta Hearthstone tähän] (*Innkeeper Shyria*)
+[H Hearthstone: Innkeeper Shyria] (jos cooldownilla, juokse tai lennä)
 [G 31.9,45.1 Feralas]Puhu: *Ginro Hearthkindle* [QT4127 Boat Wreckage] [QA4129 The Knife Revealed]
 [G 32.5,43.8 Feralas]Puhu: *Quintis Jonespyre* [QT4129 The Knife Revealed] [QA4130 Psychometric Reading]
 [G 31.9,45.1 Feralas]Puhu: *Ginro Hearthkindle* [QT4130 Psychometric Reading] [QA4131 The Woodpaw Gnolls]
@@ -2595,29 +2451,33 @@ Guidelime.registerGuide([[
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2849 Wild Leather Vest] Tavoite: Bring 2 Turtle Scale Breastplates, 2 Turtle Scale Gloves, and a Wildvine to Pratt McGrubben in Feathermoon Stronghold.
 [O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2850 Wild Leather Helmet] Tavoite: Bring 2 Nightscape Tunics, 2 Nightscape Headbands, and a Wildvine to Pratt McGrubben in Feathermoon Stronghold.
 [G 30.6,42.7 Feralas]Puhu: *Pratt McGrubben* [QT2821 The Mark of Quality] [QA7733 Improved Quality]
+[G 30.6,42.7 Feralas][V Myy harmaat roinat] (*Pratt McGrubben*)
 [OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 52.4,29.7 Feralas]Kerää *Rage Scar Yeti Hide* (Rage Scar Yeti, Elder Rage Scar, Ferocious Rage Scar) [QC7733,1 Improved Quality]
-[H Hearthstone: Innkeeper Shyria] (jos cooldownilla, juokse tai lennä)
-[G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QT2982 The High Wilderness] [QA3445 The Sunken Temple]
-[G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT2870 Against Lord Shalzaru] [QA2871 Delivering the Relic]
-[G 30.1,45.1 Feralas]Puhu: *Vestia Moonspear* [QT2871 Delivering the Relic]
+[G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
 [G 30.6,42.7 Feralas]Puhu: *Pratt McGrubben* [QT7733 Improved Quality]
+[G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT2870 Against Lord Shalzaru] [QA2871 Delivering the Relic]
 [OC]Feathermoon Strongholdin laiturilta laiva mantereelle (Forgotten Coast)
 [G 60.8,49.8 Feralas]Puhu: *Screecher Spirit* [QC3520,1 Screecher Spirits]
 [G 73.3,56.3 Feralas]Klikkaa: *Large Leather Backpacks* [QT4131 The Woodpaw Gnolls] [QA4135 The Writhing Deep]
 [G 72.1,63.7 Feralas]Klikkaa: *Zukk'ash Pod* [QT4135 The Writhing Deep] [QA4265 Freed from the Hive]
 [G 72.1,63.8 Feralas]Free Raschal. [QC4265,1 Freed from the Hive]
-[G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
+[G 60.0,63.3 Feralas]Tapa *Gordunni Shaman* [QC2982,2 The High Wilderness]
+[G 43.0,43.0 Feralas]Forgotten Coastin laiturilta laiva Feathermoon Strongholdiin (saarella)
+[G 31.8,45.6 Feralas]Puhu: *Angelas Moonbreeze* [QT2982 The High Wilderness] [QA3445 The Sunken Temple]
 [G 31.9,45.1 Feralas]Puhu: *Ginro Hearthkindle* [QT4265 Freed from the Hive] [QA4266 A Hero's Welcome]
 [G 30.3,46.2 Feralas]Puhu: *Shandris Feathermoon* [QT4266 A Hero's Welcome] [QA4267 Rise of the Silithid]
-[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Thelsamar]
-[OC]Matkusta: *Badlands*. Loch Modanin etelän solasta Badlandsiin (lähin lento Thelsamar)
-[O][G 61.9,54.3 Badlands]Puhu: *Garek* [QA717 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 81.9,49.5 Badlands]Kerää *Blacklash's Bindings* (Blacklash (elite, ryhmä)); Kerää *Chains of Hematus* (Hematus (elite, ryhmä)) [QC717,1 Tremors of the Earth] [QC717,2 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[O][G 61.9,54.3 Badlands]Puhu: *Garek* [QT717 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2848 Wild Leather Shoulders] (jos tavoite valmis)
+[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2849 Wild Leather Vest] (jos tavoite valmis)
+[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2850 Wild Leather Helmet] (jos tavoite valmis)
+[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2851 Wild Leather Boots] Tavoite: Bring 2 Nightscape Pants, 2 Nightscape Boots, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
+[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2852 Wild Leather Leggings] Tavoite: Bring 2 Turtle Scale Helms, 2 Turtle Scale Bracers, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
+[G 30.1,45.1 Feralas]Puhu: *Vestia Moonspear* [QT2871 Delivering the Relic]
 [XP44 Tavoitetaso 44: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Refuge Pointe]
+[G 30.8,43.1 Feralas][V Myy harmaat roinat] (*Dulciea Frostmoon*)
+[G 31.0,43.5 Feralas][V Osta ruokaa, noin 20] (*Innkeeper Shyria*)
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Refuge Pointe]
 [OC]Matkusta: *The Hinterlands*. Lennä Aerie Peakiin. Ensimmäisellä kerralla: Hillsbradin koillisnurkasta polkua Hinterlandsiin, Aerie Peak on länsiosassa
 [G 11.1,46.1 The Hinterlands][P Aerie Peak]Hae flight path (*Guthrum Thunderfist*)
 [G 14.8,44.6 The Hinterlands]Puhu: *Fraggar Thundermantle* [QA2877 Skulk Rock Clean-up] [QA2880 Troll Necklace Bounty]
@@ -2634,17 +2494,28 @@ Guidelime.registerGuide([[
 [G 14.4,42.6 The Hinterlands]Puhu: *Farseer Maret Firetend* [QT86616 Repurposed Totems]
 [G 49.0,68.7 The Hinterlands]Search the Altar of Zul [QC2989,1 The Altar of Zul]
 [G 9.8,44.5 The Hinterlands]Puhu: *Gryphon Master Talonaxe* [QT2989 The Altar of Zul] [QA2990 Thadius Grimshade]
+[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Thelsamar]
+[OC]Matkusta: *Badlands*. Loch Modanin etelän solasta Badlandsiin (lähin lento Thelsamar)
+[O][G 61.9,54.3 Badlands]Puhu: *Garek* [QA717 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 81.9,49.5 Badlands]Kerää *Blacklash's Bindings* (Blacklash (elite, ryhmä)); Kerää *Chains of Hematus* (Hematus (elite, ryhmä)) [QC717,1 Tremors of the Earth] [QC717,2 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 61.9,54.3 Badlands]Puhu: *Garek* [QT717 Tremors of the Earth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Southshore]
+[OC]Matkusta: *Silverpine Forest*. 
+[G 47.1,71.0 Silverpine Forest]Klikkaa: *Dead Drop* [QA80455 Biding Our Time]
+[OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
+[G 84.5,80.3 Alterac Mountains]Puhu: *Fahrad* [QT80455 Biding Our Time]
+[OC]Matkusta: *Silverpine Forest*. 
+[G 47.1,71.0 Silverpine Forest]Klikkaa: *Dead Drop* [QT80454 One Last Drop]
 [XP44 Tavoitetaso 44: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Booty Bay]
+[G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Booty Bay]
 [G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 48)] (*Ian Strom*): Eviscerate r7, Sap r3
 [O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
+[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Jutak*)
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QA608 The Bloodsail Buccaneers]
 [G 26.9,77.2 Stranglethorn Vale]Puhu: *Krazek* [QA2864 Tran'rek]
 [G 29.3,88.3 Stranglethorn Vale]Tapa *Captain Keelhaul*; Tapa *Fleet Master Firallon*; Tapa *Captain Stillwater* [QC608,2 The Bloodsail Buccaneers] [QC608,3 The Bloodsail Buccaneers] [QC608,1 The Bloodsail Buccaneers]
 [G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT2874 Deliver to MacKinley]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT608 The Bloodsail Buccaneers]
-[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Jutak*)
-[G 27.0,77.3 Stranglethorn Vale][V Osta ruokaa, noin 20] (*Innkeeper Skindle*)
 [G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Nethergarde Keep]
 [G 67.7,19.2 Blasted Lands]Puhu: *Watcher Mahar Ba* [QT1364 Mazen's Behest]
 [G 66.9,19.5 Blasted Lands]Puhu: *Thadius Grimshade* [QT2990 Thadius Grimshade] [QA2991 Nekrum's Medallion]
@@ -2652,11 +2523,12 @@ Guidelime.registerGuide([[
 [G 50.5,14.2 Blasted Lands]Puhu: *Bloodmage Drazial* [QA2581 Snickerfang Jowls] [QA2583 A Boar's Vitality] [QA2585 The Decisive Striker]
 [G 49.4,16.4 Blasted Lands]Kerää *Scorpok Pincer* (Scorpok Stinger); Kerää *Snickerfang Jowl* (Starving Snickerfang, Snickerfang Hyena) [QC2581,3 Snickerfang Jowls] [QC2583,2 A Boar's Vitality] [QC2585,1 The Decisive Striker] [QC2581,1 Snickerfang Jowls]
 [G 48.3,17.8 Blasted Lands]Kerää *Snickerfang Jowl* (Starving Snickerfang, Snickerfang Hyena); Kerää *Vulture Gizzard* (Black Slayer, Bonepicker) [QC2603,2 Vulture's Vigor] [QC2585,2 The Decisive Striker] [QC2601,2 The Basilisk's Bite] [QC2603,1 Vulture's Vigor]
+[G 61.1,30.4 Blasted Lands]Kerää *Basilisk Brain* (Redstone Crystalhide, Redstone Basilisk) [QC2583,3 A Boar's Vitality] [QC2601,1 The Basilisk's Bite]
 [G 63.5,17.0 Blasted Lands]Puhu: *Bernie Heisten* [QA87295 Deflective Surface]
-[G 61.1,30.4 Blasted Lands]Kerää *Basilisk Brain* (Redstone Crystalhide, Redstone Basilisk); Kerää *Redstone Basilisk Scale* (Redstone Crystalhide, Redstone Basilisk) [QC2583,3 A Boar's Vitality] [QC2601,1 The Basilisk's Bite] [QC87295,1 Deflective Surface]
-[G 63.5,17.0 Blasted Lands]Puhu: *Bernie Heisten* [QT87295 Deflective Surface]
 [G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT2603 Vulture's Vigor] [QT2601 The Basilisk's Bite]
-[G 44.4,34.0 Blasted Lands]Kerää *Blasted Boar Lung* (Helboar, Ashmane Boar) [QC2581,2 Snickerfang Jowls] [QC2583,1 A Boar's Vitality] [QC2585,3 The Decisive Striker]
+[G 54.6,36.8 Blasted Lands]Kerää *Blasted Boar Lung* (Helboar, Ashmane Boar) [QC2581,2 Snickerfang Jowls] [QC2583,1 A Boar's Vitality] [QC2585,3 The Decisive Striker]
+[G 61.1,30.4 Blasted Lands]Kerää *Redstone Basilisk Scale* (Redstone Crystalhide, Redstone Basilisk) [QC87295,1 Deflective Surface]
+[G 63.5,17.0 Blasted Lands]Puhu: *Bernie Heisten* [QT87295 Deflective Surface]
 [G 50.5,14.2 Blasted Lands]Puhu: *Bloodmage Drazial* [QT2581 Snickerfang Jowls] [QT2583 A Boar's Vitality] [QT2585 The Decisive Striker]
 [XP46 Tavoitetaso 46: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Searing Gorge*. Lennä Thorium Pointiin, tai Loch Modanin kautta Badlandsiin ja sieltä länteen Searing Gorgeen
@@ -2694,9 +2566,9 @@ Guidelime.registerGuide([[
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
 [G 54.1,55.9 Dustwallow Marsh]Kerää *Overdue Package* (Damaged Crate) [QC4450,3 Ledger from Tanaris]
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[O][A Engineering200][G 52.3,27.7 Tanaris]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Buzzek Bracketswing*) [LE Engineering 300]
 [G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QT4450 Ledger from Tanaris]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
-[G 52.9,15.0 Ironforge][T Rogue-trainer (taso 50)] (*Ormyr Flinteye*): Kidney Shot r2, Sap r3, Mutilate r3
 [O][A Mining200][G 50.0,26.3 Ironforge]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Geofram Bouldertoe*) [LE Mining 300]
 [O][A Herbalism200][G 55.9,59.1 Ironforge]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Reyna Stonebranch*) [LE Herbalism 300]
 [O][A Skinning200][G 39.9,32.5 Ironforge]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Balthus Stoneflayer*) [LE Skinning 300]
@@ -2706,11 +2578,11 @@ Guidelime.registerGuide([[
 [G 74.6,11.7 Ironforge]Puhu: *Prospector Stormpike* [QT2240 The Hidden Chamber]
 [G 75.8,23.4 Ironforge]Puhu: *Laris Geardawdle* [QA4512 A Little Slime Goes a Long Way]
 [G 71.5,15.7 Ironforge]Puhu: *Curator Thorius* [QT3368 Suntara Stones]
-[G 52.0,14.8 Ironforge]Puhu: *Hulfdan Blackbeard* [QA8233 A Simple Request]
+[G 51.5,15.3 Ironforge][T Rogue-trainer (taso 50)] (*Fenthwick*): Kidney Shot r2, Sap r3, Mutilate r3
 [G 36.4,3.6 Ironforge]Puhu: *Talvash del Kissel* [QT2361 Restoring the Necklace]
 [G 31.0,4.8 Ironforge]Puhu: *Tymor* [QT3448 Passing the Burden] [QA3449 Arcane Runes]
 [G 27.2,8.3 Ironforge]Puhu: *Bink* [QA2861 Tabetha's Task]
-[G 18.1,51.5 Ironforge]Puhu: *Innkeeper Firebrew* [QA3790 Assisting Arch Druid Staghelm]
+[G 52.0,14.8 Ironforge]Puhu: *Hulfdan Blackbeard* [QA8233 A Simple Request]
 [G 55.9,81.4 Ironforge]Puhu: *Courier Hammerfall* [QA5090 A Call to Arms: The Plaguelands!]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
 
@@ -2718,7 +2590,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
 [N50-54 Tanaris, Azshara, Alterac + ZF/Mara/ST (Rogue)]
-[NX54-57 Tanaris, Felwood, Barrens (Rogue)]
+[NX54-57 Tanaris, Felwood, Barrens + BRD (Rogue)]
 [XP46 Tavoitetaso 46: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 54.9,87.4 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Olthran Craghelm*)
 [G 18.1,51.5 Ironforge][V Osta ruokaa, noin 20] (*Innkeeper Firebrew*)
@@ -2753,8 +2625,12 @@ Guidelime.registerGuide([[
 [G 42.4,64.2 Azshara]Kerää *Rubbing: Rune of Sael'hai* (Rune of Sael'hai) [QC3449,4 Arcane Runes]
 [G 39.4,55.5 Azshara]Kerää *Rubbing: Rune of Markri* (Rune of Markri) [QC3449,3 Arcane Runes]
 [G 53.5,21.8 Azshara]Puhu: *Kim'jael* [QA3601 Kim'jael Indeed!]
-[G 58.4,25.0 Azshara]Kerää *Kim'Jael's Compass* (Kim'jael's Equipment); Kerää *Kim'Jael's Scope* (Kim'jael's Equipment); Kerää *Kim'Jael's Stuffed Chicken* (Kim'jael's Equipment); Kerää *Kim'Jael's Wizzlegoober* (Kim'jael's Equipment) [QC3601,1 Kim'jael Indeed!] [QC3601,2 Kim'jael Indeed!] [QC3601,3 Kim'jael Indeed!] [QC3601,4 Kim'jael Indeed!]
+[G 57.7,21.0 Azshara]Klikkaa: *Legashi Cauldron* [QA86925 Toil and Trouble] [QA86926 Felfire Burn, Cauldron Bubble]
+[G 60.8,18.9 Azshara]Kerää *Legashi Firewater Recipe* (Legashi Hellraiser, Legashi Soulstealer, Legashi Blackguard) [QC86925,1 Toil and Trouble]
+[G 61.5,25.1 Azshara]Kerää *Fel Mote* (Fel Mote); Kerää *Kim'Jael's Compass* (Kim'jael's Equipment); Kerää *Kim'Jael's Scope* (Kim'jael's Equipment); Kerää *Kim'Jael's Stuffed Chicken* (Kim'jael's Equipment) [QC86926,2 Felfire Burn, Cauldron Bubble] [QC3601,1 Kim'jael Indeed!] [QC3601,2 Kim'jael Indeed!] [QC3601,3 Kim'jael Indeed!]
+[G 58.4,25.0 Azshara]Kerää *Kim'Jael's Wizzlegoober* (Kim'jael's Equipment) [QC3601,4 Kim'jael Indeed!]
 [G 53.5,21.8 Azshara]Puhu: *Kim'jael* [QT3601 Kim'jael Indeed!] [QA5534 Kim'jael's "Missing" Equipment]
+[G 57.7,21.0 Azshara]Klikkaa: *Legashi Cauldron* [QT86925 Toil and Trouble] [QT86926 Felfire Burn, Cauldron Bubble]
 [G 42.0,38.9 Azshara]Puhu: *Ekkal* [QA86746 The Legashi Threat]
 [G 44.8,43.5 Azshara]Kerää *Some Rune* (Spitelash Siren, Spitelash Myrmidon, Spitelash Battlemaster) [QC5534,1 Kim'jael's "Missing" Equipment]
 [G 39.6,50.2 Azshara]Kerää *Rubbing: Rune of Jin'yael* (Rune of Jin'yael); Kerää *Rubbing: Rune of Beth'Amara* (Rune of Beth'Amara) [QC3449,2 Arcane Runes] [QC3449,1 Arcane Runes]
@@ -2773,8 +2649,8 @@ Guidelime.registerGuide([[
 [G 11.4,78.2 Azshara]Puhu: *Loh'atu* [QT5536 A Land Filled with Hatred] [QT5535 Spiritual Unrest]
 [G 12.6,77.4 Azshara]Puhu: *Berdun Cliffbrew* [QT89001 Home on the Range] [QA89013 Gettin' Buzzed]
 [G 11.8,78.4 Azshara]Puhu: *Commander Truesong* [QT88807 Slay the Spitelash] [QA88809 Preserving Eldarath]
-[G 17.3,60.1 Azshara]Kerää *Wild Honey* (Honey Wasp) [QC89013,1 Gettin' Buzzed]
-[G 34.2,58.0 Azshara]Kerää *Lord Sarthiss' Head* (Lord Sarthiss); Kerää *Eldarath Relic* (Spitelash Siren, Spitelash Myrmidon, Spitelash Serpent Guard) [QC88809,2 Preserving Eldarath] [QC88809,1 Preserving Eldarath]
+[G 18.3,59.7 Azshara]Kerää *Wild Honey* (Honey Wasp) [QC89013,1 Gettin' Buzzed]
+[G 34.3,57.8 Azshara]Kerää *Lord Sarthiss' Head* (Lord Sarthiss); Kerää *Eldarath Relic* (Spitelash Siren, Spitelash Myrmidon, Spitelash Serpent Guard) [QC88809,2 Preserving Eldarath] [QC88809,1 Preserving Eldarath]
 [H Hearthstone: Berdun Cliffbrew] (jos cooldownilla, juokse tai lennä)
 [G 12.6,77.4 Azshara]Puhu: *Berdun Cliffbrew* [QT89013 Gettin' Buzzed]
 [G 11.8,78.4 Azshara]Puhu: *Commander Truesong* [QT88809 Preserving Eldarath]
@@ -2789,7 +2665,7 @@ Guidelime.registerGuide([[
 [G 86.0,78.9 Alterac Mountains]Puhu: *Lord Jorach Ravenholdt* [QT8233 A Simple Request] [QA8234 Sealed Azure Bag]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talrendis Point]
-[G 45.4,26.4 Azshara]Kerää *Sealed Azure Bag* (Blackmaw Shaman, Timbermaw Shaman) [QC8234,1 Sealed Azure Bag]
+[G 45.2,25.8 Azshara]Kerää *Sealed Azure Bag* (Blackmaw Shaman, Timbermaw Shaman) [QC8234,1 Sealed Azure Bag]
 [G 29.2,40.2 Azshara]Puhu: *Archmage Xylem* [QT8234 Sealed Azure Bag] [QA8235 Encoded Fragments]
 [G 41.8,69.8 Azshara]Kerää *Encoded Fragment* (Forest Ooze) [QC8235,1 Encoded Fragments]
 [G 29.2,40.2 Azshara]Puhu: *Archmage Xylem* [QT8235 Encoded Fragments] [QA8236 The Azure Key]
@@ -2905,10 +2781,14 @@ Guidelime.registerGuide([[
 [G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Refuge Pointe]
 [OC]Matkusta: *The Hinterlands*. Lennä Aerie Peakiin. Ensimmäisellä kerralla: Hillsbradin koillisnurkasta polkua Hinterlandsiin, Aerie Peak on länsiosassa
 [G 33.8,75.2 The Hinterlands]Puhu: *Atal'ai Exile* [QT1446 Jammal'an the Prophet]
+[G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Stormwind]
+[G 69.5,40.4 Stormwind City]Puhu: *Brohann Caskbelly* [QT1475 Into The Temple of Atal'Hakkar]
+[G 60.4,75.3 Stormwind City]Puhu: *Innkeeper Allison* [QA3789 Assisting Arch Druid Staghelm]
 [XP50 Tavoitetaso 50: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
 [G 67.0,22.4 Tanaris]Puhu: *Yeh'kinya* [QT3528 The God Hakkar]
+[O][A Engineering200][G 52.3,27.7 Tanaris]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Buzzek Bracketswing*) [LE Engineering 300]
 [G 51.6,26.8 Tanaris]Puhu: *Tran'rek* [QA4504 Super Sticky]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Marshal's Refuge]
 [G 47.5,15.2 Un'Goro Crater]Kerää *Super Sticky Tar* (Tar Lurker, Tar Lord, Tar Beast) [QC4504,1 Super Sticky]
@@ -2969,8 +2849,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
 [GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N54-57 Tanaris, Felwood, Barrens (Rogue)]
-[NX57-60 Searing Gorge, Winterspring, Tanaris + BRD/LBRS/DM/Scholo (Rogue)]
+[N54-57 Tanaris, Felwood, Barrens + BRD (Rogue)]
+[NX57-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Rogue)]
 [XP51 Tavoitetaso 51: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Astranaar]
 [OC]Matkusta: *Felwood*. Lennä Talonbranch Gladeen tai Ashenvalen pohjoisosasta tietä Felwoodiin
@@ -2987,7 +2867,7 @@ Guidelime.registerGuide([[
 [G 32.2,67.1 Felwood]Tapa *Xavathras* [QC4421,4 The Corruption of the Jadefire]
 [G 34.5,60.4 Felwood]Tapa *Jaedenar Hound*; Tapa *Jaedenar Cultist*; Tapa *Jaedenar Adept*; Tapa *Jaedenar Guardian* [QC5155,1 Forces of Jaedenar] [QC5155,4 Forces of Jaedenar] [QC5155,3 Forces of Jaedenar] [QC5155,2 Forces of Jaedenar]
 [G 40.3,58.9 Felwood]Kerää *Filled Tainted Ooze Jar* (Tainted Ooze) [QC4512,2 A Little Slime Goes a Long Way]
-[G 42.0,47.4 Felwood]Klikkaa: *Statue of Malorne* [QA86611 Stag Lord's Bauble]
+[G 42.0,47.3 Felwood]Klikkaa: *Statue of Malorne* [QA86611 Stag Lord's Bauble]
 [G 62.5,24.2 Felwood][P Talonbranch Glade]Hae flight path (*Mishellena*)
 [G 59.3,20.2 Felwood]Kerää *Blood Amber* (Warpwood Moss Flayer, Warpwood Shredder) [QC4101,1 Cleansing Felwood]
 [G 64.8,8.1 Felwood]Puhu: *Nafien* [QT8462 Speak to Nafien] [QA8461 Deadwood of the North]
@@ -3020,90 +2900,20 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
 [O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
 [O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
-[G 41.8,85.6 Darnassus]Puhu: *Gracina Spiritmight* [QT162 Rise of the Silithid] [QT4267 Rise of the Silithid] [QA4493 March of the Silithid]
-[G 31.2,84.5 Darnassus]Puhu: *Chief Archaeologist Greywhisker* [QT741 The Absent Minded Prospector]
-[G 39.1,81.6 Darnassus]Puhu: *Tyrande Whisperwind* [QT2972 Doling Justice]
-[G 47.8,82.0 Darnassus]Puhu: *Herald Moonstalker* [QA1047 The New Frontier]
 [G 69.5,67.8 Darnassus]Puhu: *Treshala Fallowbrook* [QT1142 Mortality Wanes]
 [G 37.9,20.9 Darnassus][T Rogue-trainer (taso 54)] (*Anishar*): Garrote r6, Sinister Strike r8
-[G 61.8,39.2 Darnassus]Puhu: *Thyn'tel Bladeweaver* [QT1037 Velinde Starsong]
 [G 56.2,24.4 Darnassus]Puhu: *Dawnwatcher Selgorm* [QT1200 Blackfathom Villainy]
 [G 55.2,24.0 Darnassus]Puhu: *Argent Guard Manados* [QT1199 Twilight Falls]
-[G 34.8,9.3 Darnassus]Puhu: *Arch Druid Fandral Staghelm* [QT1047 The New Frontier] [QT3790 Assisting Arch Druid Staghelm] [QA3764 Un'Goro Soil] [QA6761 The New Frontier]
-[G 35.4,8.4 Darnassus]Puhu: *Mathrengyl Bearwalker* [QT6761 The New Frontier] [QA6762 Rabine Saturna]
-[G 61.8,39.2 Darnassus]Puhu: *Thyn'tel Bladeweaver* [QA1038 Velinde's Effects]
-[G 62.3,83.3 Darnassus]Kerää *Velinde's Journal* (Velinde's Locker) [QC1038,1 Velinde's Effects]
-[G 31.2,84.5 Darnassus]Puhu: *Chief Archaeologist Greywhisker* [QA942 The Absent Minded Prospector]
-[G 61.8,39.2 Darnassus]Puhu: *Thyn'tel Bladeweaver* [QT1038 Velinde's Effects] [QA1039 The Barrens Port]
-[G 58.8,44.5 Darnassus][V Myy harmaat roinat] ja [R korjaa varusteet] (*Ariyell Skyshadow*)
+[G 34.8,9.3 Darnassus]Puhu: *Arch Druid Fandral Staghelm* [QT3789 Assisting Arch Druid Staghelm]
+[G 39.1,81.6 Darnassus]Puhu: *Tyrande Whisperwind* [QT2972 Doling Justice]
+[G 41.8,85.6 Darnassus]Puhu: *Gracina Spiritmight* [QT4267 Rise of the Silithid]
+[G 56.9,76.3 Darnassus][V Myy harmaat roinat] ja [R korjaa varusteet] (*Caynrus*)
 [OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
-[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Ratchet]
-[G 63.4,38.5 The Barrens]Puhu: *Wharfmaster Dizzywig* [QT1039 The Barrens Port] [QA1040 Passage to Booty Bay]
-[G 63.1,37.2 The Barrens]Lennä (*Bragok*): [F Thalanaar]
+[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Thalanaar]
 [G 65.9,45.6 Feralas]Puhu: *Kindal Moonweaver* [QA3841 An Orphan Looking For a Home]
 [G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Gadgetzan]
 [OC]Matkusta: *Thousand Needles*. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
 [G 78.3,74.7 Thousand Needles]Puhu: *Quentin* [QT3841 An Orphan Looking For a Home]
-[OC]Matkusta: *Tanaris*. Lennä Gadgetzaniin (Tanaris)
-[G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT4493 March of the Silithid] [QA4496 Bungle in the Jungle]
-[G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Marshal's Refuge]
-[G 46.4,53.4 Un'Goro Crater]Kerää *Un'Goro Soil* (Un'Goro Dirt Pile) [QC3764,1 Un'Goro Soil] [QC4496,2 Bungle in the Jungle]
-[G 50.1,76.0 Un'Goro Crater]Kerää *Gorishi Scent Gland* (Gorishi Reaver, Gorishi Worker, Gorishi Wasp) [QC4496,1 Bungle in the Jungle]
-[G 45.2,5.8 Un'Goro Crater]Lennä (*Gryfe*): [F Rut'theran Village]
-[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
-[G 31.5,8.2 Darnassus]Puhu: *Jenal* [QT3764 Un'Goro Soil]
-[G 34.8,9.3 Darnassus]Puhu: *Arch Druid Fandral Staghelm* [QA3781 Morrowgrain Research]
-[G 35.4,8.4 Darnassus]Puhu: *Mathrengyl Bearwalker* [QT3781 Morrowgrain Research]
-[OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
-[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Feathermoon]
-[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2848 Wild Leather Shoulders] (jos tavoite valmis)
-[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2849 Wild Leather Vest] (jos tavoite valmis)
-[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä: palauta *Pratt McGrubben* [QT2850 Wild Leather Helmet] (jos tavoite valmis)
-[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2851 Wild Leather Boots] Tavoite: Bring 2 Nightscape Pants, 2 Nightscape Boots, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
-[O][A Leatherworking225][G 30.6,42.7 Feralas]Ammattitehtävä (Leatherworking 225+): puhu *Pratt McGrubben* [QA2852 Wild Leather Leggings] Tavoite: Bring 2 Turtle Scale Helms, 2 Turtle Scale Bracers, and 2 Wildvines to Pratt McGrubben in Feathermoon Stronghold.
-[G 31.0,43.5 Feralas]Puhu: *Innkeeper Shyria* [QA3788 Jonespyre's Request]
-[G 32.5,43.8 Feralas]Puhu: *Quintis Jonespyre* [QT3788 Jonespyre's Request]
-[G 30.2,43.2 Feralas]Lennä (*Fyldren Moonfeather*): [F Gadgetzan]
-[G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT4496 Bungle in the Jungle] [QA4507 Pawn Captures Queen]
-[G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Talonbranch Glade]
-[OC]Matkusta: *Moonglade*. Felwoodin pohjoispäästä Timbermaw Holdin kautta Moongladeen
-[G 51.7,45.1 Moonglade]Puhu: *Rabine Saturna* [QT6762 Rabine Saturna] [QA1124 Wasteland]
-[G 62.5,24.2 Felwood]Lennä (*Mishellena*): [F Marshal's Refuge]
-[OC]Matkusta: *Silithus*. Un'Goro Craterin luoteiskulmasta Silithusiin. Cenarion Hold on keskellä
-[G 81.9,18.9 Silithus]Puhu: *Layo Starstrike* [QT1124 Wasteland] [QA1125 The Spirits of Southwind]
-[G 64.9,47.2 Silithus]Tapa *Tortured Druid*; Tapa *Tortured Sentinel* [QC1125,1 The Spirits of Southwind] [QC1125,2 The Spirits of Southwind]
-[G 81.9,18.9 Silithus]Puhu: *Layo Starstrike* [QT1125 The Spirits of Southwind] [QA1126 Hive in the Tower]
-[G 60.2,52.5 Silithus]Kerää *Encrusted Silithid Object* (Hive'Ashi Ambusher) [QC1126,1 Hive in the Tower]
-[G 81.9,18.9 Silithus]Puhu: *Layo Starstrike* [QT1126 Hive in the Tower] [QA6844 Umber, Archivist]
-[G 45.2,5.8 Un'Goro Crater]Lennä (*Gryfe*): [F Talonbranch Glade]
-[OC]Matkusta: *Moonglade*. Felwoodin pohjoispäästä Timbermaw Holdin kautta Moongladeen
-[G 44.9,35.6 Moonglade]Puhu: *Umber* [QT6844 Umber, Archivist] [QA6845 Uncovering Past Secrets]
-[G 51.7,45.1 Moonglade]Puhu: *Rabine Saturna* [QT6845 Uncovering Past Secrets]
-[G 62.5,24.2 Felwood]Lennä (*Mishellena*): [F Marshal's Refuge]
-[G 43.9,81.4 Un'Goro Crater]Kerää *Gorishi Queen Brain* (Gorishi Hive Queen) [QC4507,1 Pawn Captures Queen]
-[G 45.2,5.8 Un'Goro Crater]Lennä (*Gryfe*): [F Gadgetzan]
-[G 50.9,27.0 Tanaris]Puhu: *Alchemist Pestlezugg* [QT4507 Pawn Captures Queen] [QA4508 Calm Before the Storm]
-[G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Rut'theran Village]
-[OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen
-[G 41.8,85.6 Darnassus]Puhu: *Gracina Spiritmight* [QT4508 Calm Before the Storm] [QA4510 Calm Before the Storm]
-[G 39.4,42.4 Darnassus]Puhu: *Idriana* [QT4510 Calm Before the Storm]
-[G 46.9,57.0 Darnassus][V Myy harmaat roinat] (*Voloren*)
-[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 10.8,60.4 Wetlands]Puhu: *Archaeologist Flagongut* [QT942 The Absent Minded Prospector] [QA943 The Absent Minded Prospector]
-[G 22.2,53.5 Wetlands]Kerää *Stone of Relu* (Mottled Raptor, Mottled Screecher, Mottled Scytheclaw) [QC943,1 The Absent Minded Prospector]
-[G 38.9,52.2 Wetlands]Kerää *Flagongut's Fossil* (Flagongut's Fossil) [QC943,2 The Absent Minded Prospector]
-[G 10.8,60.4 Wetlands]Puhu: *Archaeologist Flagongut* [QT943 The Absent Minded Prospector]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Booty Bay]
-[G 27.4,74.1 Stranglethorn Vale]Puhu: *Caravaneer Ruzzgot* [QT1040 Passage to Booty Bay] [QA1041 The Caravan Road]
-[G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Darkshire]
-[G 72.5,46.9 Duskwood]Puhu: *Clerk Daltry* [QT1041 The Caravan Road] [QA1042 The Carevin Family]
-[G 75.3,49.0 Duskwood]Puhu: *Jonathan Carevin* [QT1042 The Carevin Family] [QA1043 The Scythe of Elune]
-[G 73.5,79.1 Duskwood]Käytä / kerää: *Mound of Dirt* [QC1043,1 The Scythe of Elune]
-[G 75.3,49.0 Duskwood]Puhu: *Jonathan Carevin* [QT1043 The Scythe of Elune] [QA1044 Answered Questions]
-[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Rut'theran Village]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
-[G 61.8,39.2 Darnassus]Puhu: *Thyn'tel Bladeweaver* [QT1044 Answered Questions]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
 [O][A Fishing175][G 28.2,75.0 Ironforge]Ammattitehtävä (Fishing 175+): puhu *Barrus* [QA8229 Could I get a Fishing Flier?]
 [O][A Fishing175][G 28.2,75.0 Ironforge]Ammattitehtävä: palauta *Barrus* [QT8229 Could I get a Fishing Flier?] (jos tavoite valmis)
@@ -3114,7 +2924,6 @@ Guidelime.registerGuide([[
 [G 38.4,55.3 Ironforge]Puhu: *Royal Historian Archesonus* [QC3702,1 The Smoldering Ruins of Thaurissan]
 [G 38.4,55.3 Ironforge]Puhu: *Royal Historian Archesonus* [QT3702 The Smoldering Ruins of Thaurissan] [QA3701 The Smoldering Ruins of Thaurissan]
 [G 31.0,4.8 Ironforge]Puhu: *Tymor* [QT3461 Return to Tymor]
-[G 38.2,5.2 Ironforge][V Myy harmaat roinat] (*Ingrys Stonebrow*)
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Marshal's Refuge]
 [G 41.1,64.2 Un'Goro Crater]Kerää *Filled Pure Sample Jar* (Glutinous Ooze, Primal Ooze, Muculent Ooze) [QC4513,1 A Little Slime Goes a Long Way]
@@ -3133,30 +2942,21 @@ Guidelime.registerGuide([[
 [G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5215 The Scourge Cauldrons] [QA5216 Target: Felstone Field]
 [G 40.0,71.6 Western Plaguelands]Tapa *Andorhal Tower One* [QC5097,1 All Along the Watchtowers]
 [G 39.5,66.8 Western Plaguelands]Puhu: *Chromie* [QA4971 A Matter of Time]
-[G 44.3,63.2 Western Plaguelands]Tapa *Andorhal Tower Three*; Tapa *Temporal Parasite* [QC5097,3 All Along the Watchtowers] [QC4971,1 A Matter of Time]
+[G 42.3,66.2 Western Plaguelands]Tapa *Andorhal Tower Two*; Tapa *Andorhal Tower Three*; Tapa *Temporal Parasite* [QC5097,2 All Along the Watchtowers] [QC5097,3 All Along the Watchtowers] [QC4971,1 A Matter of Time]
 [G 39.5,66.8 Western Plaguelands]Puhu: *Chromie* [QT4971 A Matter of Time] [QA4972 Counting Out Time]
-[G 40.9,67.1 Western Plaguelands]Kerää *Andorhal Watch* (Small Lockbox); Tapa *Andorhal Tower Two* [QC4972,1 Counting Out Time] [QC5097,2 All Along the Watchtowers]
-[G 53.7,64.7 Western Plaguelands]Puhu: *Mulgris Deepriver* [QA4984 The Wildlife Suffers Too]
-[G 47.4,49.6 Western Plaguelands]Klikkaa: *Locked Cabinet* [QA5060 Locked Away]
-[G 48.2,49.7 Western Plaguelands]Kerää *Dalson Cabinet Key* (Farmer Dalson) [QC5060,1 Locked Away]
-[G 47.4,49.6 Western Plaguelands]Klikkaa: *Locked Cabinet* [QT5060 Locked Away]
-[G 45.7,48.3 Western Plaguelands]Tapa *Diseased Wolf* [QC4984,1 The Wildlife Suffers Too]
-[G 38.4,54.0 Western Plaguelands]Puhu: *Janice Felstone* [QA5021 Better Late Than Never]
-[G 38.7,55.2 Western Plaguelands]Klikkaa: *Janice's Parcel* [QT5021 Better Late Than Never] [QA5022 Better Late Than Never]
-[G 36.9,57.4 Western Plaguelands]Kerää *Felstone Field Cauldron Key* (Cauldron Lord Bilemaw) [QC5216,1 Target: Felstone Field]
-[G 37.2,56.8 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5216 Target: Felstone Field] [QA5217 Return to Chillwind Camp]
-[G 53.7,64.7 Western Plaguelands]Puhu: *Mulgris Deepriver* [QT4984 The Wildlife Suffers Too] [QA4985 The Wildlife Suffers Too]
-[G 53.4,60.0 Western Plaguelands]Tapa *Diseased Grizzly* [QC4985,1 The Wildlife Suffers Too]
-[G 53.7,64.7 Western Plaguelands]Puhu: *Mulgris Deepriver* [QT4985 The Wildlife Suffers Too] [QA4986 Glyphed Oaken Branch]
+[G 40.9,67.1 Western Plaguelands]Kerää *Andorhal Watch* (Small Lockbox) [QC4972,1 Counting Out Time]
 [G 46.6,71.0 Western Plaguelands]Tapa *Andorhal Tower Four* [QC5097,4 All Along the Watchtowers]
 [G 42.7,84.0 Western Plaguelands]Puhu: *Commander Ashlam Valorfist* [QT5097 All Along the Watchtowers] [QA5533 Scholomance]
 [G 42.7,83.8 Western Plaguelands]Puhu: *Alchemist Arbington* [QT5533 Scholomance] [QA5537 Skeletal Fragments]
-[G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5217 Return to Chillwind Camp] [QA5219 Target: Dalson's Tears]
 [G 45.7,75.0 Western Plaguelands]Kerää *Skeletal Fragments* (Skeletal Acolyte, Skeletal Flayer, Skeletal Executioner) [QC5537,1 Skeletal Fragments]
 [G 42.7,83.8 Western Plaguelands]Puhu: *Alchemist Arbington* [QT5537 Skeletal Fragments] [QA5538 Mold Rhymes With...]
 [G 39.5,66.8 Western Plaguelands]Puhu: *Chromie* [QT4972 Counting Out Time]
-[G 46.1,52.6 Western Plaguelands]Kerää *Dalson's Tears Cauldron Key* (Cauldron Lord Malvinious) [QC5219,1 Target: Dalson's Tears]
-[G 46.2,51.9 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5219 Target: Dalson's Tears] [QA5220 Return to Chillwind Camp]
+[G 36.9,57.4 Western Plaguelands]Kerää *Felstone Field Cauldron Key* (Cauldron Lord Bilemaw) [QC5216,1 Target: Felstone Field]
+[G 38.4,54.0 Western Plaguelands]Puhu: *Janice Felstone* [QA5021 Better Late Than Never]
+[G 38.7,55.2 Western Plaguelands]Klikkaa: *Janice's Parcel* [QT5021 Better Late Than Never] [QA5022 Better Late Than Never]
+[G 37.2,56.8 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5216 Target: Felstone Field] [QA5217 Return to Chillwind Camp]
+[G 47.4,49.6 Western Plaguelands]Klikkaa: *Locked Cabinet* [QA5060 Locked Away]
+[G 48.2,49.7 Western Plaguelands]Kerää *Dalson Cabinet Key* (Farmer Dalson) [QC5060,1 Locked Away]
 [G 51.9,28.1 Western Plaguelands]Puhu: *Kirsta Deepshadow* [QA6004 Unfinished Business]
 [G 54.0,24.4 Western Plaguelands]Puhu: *Lord Tirion Fordring* [QA5542 Demon Dogs] [QA5543 Blood Tinged Skies] [QA5544 Carrion Grubbage]
 [G 53.8,37.8 Western Plaguelands]Tapa *Scarlet Mage* [QC6004,3 Unfinished Business]
@@ -3165,29 +2965,26 @@ Guidelime.registerGuide([[
 [G 51.9,28.1 Western Plaguelands]Puhu: *Kirsta Deepshadow* [QT6004 Unfinished Business] [QA6023 Unfinished Business]
 [G 55.1,23.6 Western Plaguelands]Tapa *Cavalier Durgen* [QC6023,2 Unfinished Business]
 [G 57.8,36.1 Western Plaguelands]Tapa *Huntsman Radley* [QC6023,1 Unfinished Business]
-[G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5220 Return to Chillwind Camp] [QA5222 Target: Writhing Haunt]
+[G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5217 Return to Chillwind Camp] [QA5219 Target: Dalson's Tears]
 [G 43.1,84.3 Western Plaguelands][V Myy harmaat roinat] (*Leonard Porter*)
+[G 46.1,52.6 Western Plaguelands]Kerää *Dalson's Tears Cauldron Key* (Cauldron Lord Malvinious) [QC5219,1 Target: Dalson's Tears]
+[G 46.2,51.9 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5219 Target: Dalson's Tears] [QA5220 Return to Chillwind Camp]
+[G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5220 Return to Chillwind Camp] [QA5222 Target: Writhing Haunt]
 [G 52.9,66.1 Western Plaguelands]Kerää *Writhing Haunt Cauldron Key* (Cauldron Lord Razarch) [QC5222,1 Target: Writhing Haunt]
 [G 53.0,65.6 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5222 Target: Writhing Haunt] [QA5223 Return to Chillwind Camp]
 [G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5223 Return to Chillwind Camp] [QA5225 Target: Gahrron's Withering]
 [G 62.2,59.1 Western Plaguelands]Kerää *Gahrron's Withering Cauldron Key* (Cauldron Lord Soulwrath) [QC5225,1 Target: Gahrron's Withering]
 [G 62.5,58.5 Western Plaguelands]Klikkaa: *Scourge Cauldron* [QT5225 Target: Gahrron's Withering] [QA5226 Return to Chillwind Camp]
 [G 43.0,84.5 Western Plaguelands]Puhu: *High Priestess MacDonnell* [QT5226 Return to Chillwind Camp]
+[G 47.4,49.6 Western Plaguelands]Klikkaa: *Locked Cabinet* [QT5060 Locked Away]
 [G 51.9,28.1 Western Plaguelands]Puhu: *Kirsta Deepshadow* [QT6023 Unfinished Business]
 [O][G 51.9,28.1 Western Plaguelands]Puhu: *Kirsta Deepshadow* [QA6025 Unfinished Business] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 45.8,18.2 Western Plaguelands]Overlook Hearthglen from a high vantage point [QC6025,1 Unfinished Business] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 51.9,28.1 Western Plaguelands]Puhu: *Kirsta Deepshadow* [QT6025 Unfinished Business] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
-[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Rut'theran Village]
-[OC]Matkusta: *Darnassus*. Darnassus: lennä Rut'theran Villageen ja kulje portaalista Darnassukseen
-[G 37.9,20.9 Darnassus][T Rogue-trainer (taso 56)] (*Anishar*): Eviscerate r8
-[O][A Alchemy200][G 54.9,24.0 Darnassus]Ammatti Alchemy 200+: opettele Artisan Alchemy ja uudet reseptit (*Ainethil*) [LE Alchemy 300]
-[O][A Leatherworking200][G 64.4,21.5 Darnassus]Ammatti Leatherworking 200+: opettele Artisan Leatherworking ja uudet reseptit (*Telonis*) [LE Leatherworking 300]
-[G 35.4,8.4 Darnassus]Puhu: *Mathrengyl Bearwalker* [QT4986 Glyphed Oaken Branch]
-[G 58.8,44.5 Darnassus][V Myy harmaat roinat] ja [R korjaa varusteet] (*Ariyell Skyshadow*)
-[G 67.4,15.7 Darnassus][V Osta ruokaa, noin 20] (*Innkeeper Saelienne*)
-[OC]Matkusta: *Teldrassil*. Darnassuksen portaalista alas Rut'theran Villageen (Teldrassil)
-[G 58.4,94.0 Teldrassil]Lennä (*Vesprystus*): [F Gadgetzan]
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[G 51.5,28.8 Tanaris][V Myy harmaat roinat] (*Krinkle Goodsteel*)
+[G 52.5,27.9 Tanaris][V Osta ruokaa, noin 20] (*Innkeeper Fizzgrimble*)
 [G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QT5538 Mold Rhymes With...] [QA5801 Fire Plume Forged]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Marshal's Refuge]
 [G 48.9,47.0 Un'Goro Crater]Kerää *Unfinished Skeleton Key* (Fire Plume Ridge Lava Lake) [QC5801,1 Fire Plume Forged]
@@ -3199,7 +2996,7 @@ Guidelime.registerGuide([[
 [O][G 42.7,83.8 Western Plaguelands]Puhu: *Alchemist Arbington* [QT5803 Araj's Scarab] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP52 Tavoitetaso 52: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Thorium Point]
-[G 14.5,35.8 Searing Gorge]Klikkaa: *Weathered Etching* [QA81900 The Burning Beast]
+[G 14.6,36.4 Searing Gorge]Klikkaa: *Weathered Etching* [QA81900 The Burning Beast]
 [G 32.1,94.7 Searing Gorge]Puhu: *Lothos Riftwaker* [QA7848 Attunement to the Core]
 [OC]Matkusta: *Burning Steppes*. Lennä Morgan's Vigiliin (Burning Steppes) tai Redridgesta pohjoiseen
 [G 29.0,28.9 Burning Steppes]Puhu: *Franclorn Forgewright* [QA3801 Dark Iron Legacy] [QT3801 Dark Iron Legacy] [QA3802 Dark Iron Legacy]
@@ -3207,34 +3004,27 @@ Guidelime.registerGuide([[
 [G 65.2,23.9 Burning Steppes]Puhu: *Maxwort Uberglint* [QA4123 The Heart of the Mountain] [QA4296 Tablet of the Seven]
 [G 61.1,31.2 Burning Steppes]Kerää *Broodling Essence* (Broodling Essence) [QC4726,1 Broodling Essence]
 [G 65.2,24.0 Burning Steppes]Puhu: *Tinkee Steamboil* [QT4726 Broodling Essence] [QA4808 Felnok Steelspring]
+[G 54.2,38.3 Burning Steppes]Käytä / kerää: *Thaurissan Relic*; Kerää *Tablet Transcript* (Tablet of the Seven) [QC3701,1 The Smoldering Ruins of Thaurissan] [QC4296,1 Tablet of the Seven]
 [G 84.3,68.3 Burning Steppes][P Morgan's Vigil]Hae flight path (*Borgus Stoutarm*)
 [G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QA3823 Extinguish the Firegut] [QA4283 FIFTY! YEP!] [QA4286 The Good Stuff]
 [G 76.0,50.4 Burning Steppes]Tapa *Firegut Ogre*; Tapa *Firegut Brute* [QC3823,2 Extinguish the Firegut] [QC3823,3 Extinguish the Firegut]
 [G 81.6,48.2 Burning Steppes]Tapa *Firegut Ogre Mage* [QC3823,1 Extinguish the Firegut]
 [G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QT3823 Extinguish the Firegut] [QA3824 Gor'tesh the Brute Lord]
-[G 54.7,53.5 Burning Steppes]Kerää *Gor'tesh's Lopped Off Head* (Grubbub, Gor'tesh); Kerää *Blackrock Medallion* (Blackrock Slayer, Blackrock Warlock, Blackrock Soldier) [QC3824,1 Gor'tesh the Brute Lord] [QC4283,1 FIFTY! YEP!]
+[G 56.3,54.1 Burning Steppes]Kerää *Gor'tesh's Lopped Off Head* (Grubbub, Gor'tesh); Kerää *Blackrock Medallion* (Blackrock Slayer, Blackrock Warlock, Blackrock Soldier) [QC3824,1 Gor'tesh the Brute Lord] [QC4283,1 FIFTY! YEP!]
 [G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QT3824 Gor'tesh the Brute Lord] [QT4283 FIFTY! YEP!] [QA3825 Ogre Head On A Stick = Party]
-[G 54.1,40.8 Burning Steppes]Kerää *Tablet Transcript* (Tablet of the Seven) [QC4296,1 Tablet of the Seven]
-[G 35.9,20.4 Burning Steppes]Kerää *Dark Iron Fanny Pack* (Rugged Traveler, Ragged Traveler) [QC4286,1 The Good Stuff]
-[G 54.2,38.3 Burning Steppes]Käytä / kerää: *Thaurissan Relic* [QC3701,1 The Smoldering Ruins of Thaurissan]
 [G 81.0,46.8 Burning Steppes]Käytä / kerää: *Soft Dirt Mound* [QC3825,1 Ogre Head On A Stick = Party]
-[G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QT3825 Ogre Head On A Stick = Party] [QT4286 The Good Stuff]
+[G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QT3825 Ogre Head On A Stick = Party]
 [G 65.2,23.9 Burning Steppes]Puhu: *Maxwort Uberglint* [QT4296 Tablet of the Seven]
 [OC]Matkusta: *Searing Gorge*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 41.1,25.6 Searing Gorge]Puhu: *Dying Archaeologist* [QT3371 Dwarven Justice]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
-[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
-[N57-60 Searing Gorge, Winterspring, Tanaris + BRD/LBRS/DM/Scholo (Rogue)]
 [O][G 41.1,25.6 Searing Gorge]Puhu: *Dying Archaeologist* [QA3372 Release Them] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 38.8,28.5 Searing Gorge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Master Smith Burninate*)
 [O][G 29.1,25.9 Searing Gorge]Kerää *Mysterious Artifact* (Twilight Artifact) [QC3372,1 Release Them] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 41.2,25.4 Searing Gorge]Klikkaa: *Altar of Suntara* [QT3372 Release Them] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 41.1,25.6 Searing Gorge]Puhu: *Dying Archaeologist* [QA3566 Rise, Obsidion!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 41.3,25.5 Searing Gorge]Kerää *Head of Lathoric the Black* (Lathoric the Black (elite, ryhmä)); Kerää *Heart of Obsidion* (Obsidion (elite, ryhmä)) [QC3566,1 Rise, Obsidion!] [QC3566,2 Rise, Obsidion!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 37.9,30.9 Searing Gorge]Lennä (*Lanie Reed*): [F Ironforge]
+[G 52.9,15.0 Ironforge][T Rogue-trainer (taso 56)] (*Ormyr Flinteye*): Eviscerate r8
+[G 45.0,6.8 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hjoldir Stoneblade*)
 [O][G 71.5,15.7 Ironforge]Puhu: *Curator Thorius* [QT3566 Rise, Obsidion!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]*Dungeon: Blackrock Depths* (suositus taso 53+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Searing Gorge) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 38.4,55.3 Ironforge]Puhu: *Royal Historian Archesonus* [QT3701 The Smoldering Ruins of Thaurissan]
@@ -3258,7 +3048,8 @@ Guidelime.registerGuide([[
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Morgan's Vigil]
 [G 66.1,21.9 Burning Steppes]Puhu: *Yuka Screwspigot* [QT4324 Yuka Screwspigot] [QA4136 Ribbly Screwspigot]
 [OC]Matkusta: *Searing Gorge*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
-[G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Puhu: *Kalaran Windblade*; Kerää *Ironfel* (Fineous Darkvire); Kerää *Black Dragonflight Molt* (Frenzied Black Drake); Kerää *The Heart of the Mountain* (Heart of the Mountain); Kerää *Lost Thunderbrew Recipe* (Hurley Blackbreath, Blackbreath Crony); Kerää *Ribbly's Head* (Ribbly Screwspigot); Tapa *Overmaster Pyron*; Kerää *Core Fragment* (Core Fragment) [QC3441,1 Divine Retribution] [QC3802,1 Dark Iron Legacy] [QC4023,1 A Taste of Flame] [QC4123,1 The Heart of the Mountain] [QC4126,1 Hurley Blackbreath] [QC4136,1 Ribbly Screwspigot] [QC4262,1 Overmaster Pyron] [QC7848,1 Attunement to the Core]
+[G 34.8,85.3 Searing Gorge]Dungeonissa: looti *Craftsman's Writ: Truesilver Transformer* aloittaa questin [QA94340 Craftsman's Writ: Truesilver Transformer]
+[G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Puhu: *Kalaran Windblade*; Kerää *Ironfel* (Fineous Darkvire); Kerää *Black Dragonflight Molt* (Frenzied Black Drake); Kerää *The Heart of the Mountain* (Heart of the Mountain); Kerää *Lost Thunderbrew Recipe* (Hurley Blackbreath, Blackbreath Crony); Kerää *Ribbly's Head* (Ribbly Screwspigot); Tapa *Overmaster Pyron*; Kerää *Dark Iron Fanny Pack* (Anvilrage Overseer, Anvilrage Warden, Anvilrage Guardsman); Kerää *Core Fragment* (Core Fragment); Kerää *Craftsman's Writ: Truesilver Transformer*; Kerää *Truesilver Transformer* (Anvilrage Marshal, Rage Talon Dragonspawn, Blackhand Iron Guard) [QC3441,1 Divine Retribution] [QC3802,1 Dark Iron Legacy] [QC4023,1 A Taste of Flame] [QC4123,1 The Heart of the Mountain] [QC4126,1 Hurley Blackbreath] [QC4136,1 Ribbly Screwspigot] [QC4262,1 Overmaster Pyron] [QC4286,1 The Good Stuff] [QC7848,1 Attunement to the Core] [QC94340,1 Craftsman's Writ: Truesilver Transformer] [QC94340,2 Craftsman's Writ: Truesilver Transformer]
 [O][G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *Black Dragonspawn*; Tapa *Black Drake*; Tapa *Black Wyrmkin* [QC4182,2 Dragonkin Menace] [QC4182,3 Dragonkin Menace] [QC4182,4 Dragonkin Menace] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Klikkaa: *Monument of Franclorn Forgewright* [QT3802 Dark Iron Legacy]
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Kharan Mighthammer* [QT4341 Kharan Mighthammer] [QA4342 Kharan's Tale]
@@ -3294,9 +3085,6 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Princess Moira Bronzebeard* [QT4362 The Fate of the Kingdom] [QA4363 The Princess's Surprise]
 [O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3452 The Flame's Casing] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QA3453 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
-[G 37.9,30.9 Searing Gorge]Lennä (*Lanie Reed*): [F Ironforge]
-[G 39.1,56.2 Ironforge]Puhu: *King Magni Bronzebeard* [QT4363 The Princess's Surprise]
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Thorium Point]
 [O][G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Depths*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Puhu: *Kalaran Windblade* [QC3453,1 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QT3453 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.1,39.0 Searing Gorge]Puhu: *Kalaran Windblade* [QA3454 The Torch of Retribution] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -3309,6 +3097,12 @@ Guidelime.registerGuide([[
 [O][G 44.0,60.9 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,2 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 50.1,54.7 Searing Gorge]Käytä / kerää: *Sentry Brazier* [QC3463,3 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 39.2,39.0 Searing Gorge]Puhu: *Squire Maltrake* [QT3463 Set Them Ablaze!] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Rogue. Quest-data: QuestieDB.]
+[GA Human,Dwarf,NightElf,Gnome,Skyborne,Rogue]
+[N57-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Rogue)]
 [XP54 Tavoitetaso 54: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talonbranch Glade]
@@ -3316,51 +3110,38 @@ Guidelime.registerGuide([[
 [G 31.3,45.2 Winterspring]Puhu: *Donova Snowden* [QT980 The New Springs] [QA4842 Strange Sources] [QA5082 Threat of the Winterfall]
 [G 27.7,34.5 Winterspring]Puhu: *Salfa* [QT8465 Speak to Salfa] [QA8464 Winterfall Activity]
 [G 30.1,35.6 Winterspring]Tapa *Winterfall Pathfinder*; Tapa *Winterfall Totemic* [QC5082,1 Threat of the Winterfall] [QC5082,3 Threat of the Winterfall]
-[G 52.0,30.4 Winterspring]Puhu: *Wynd Nightchaser* [QT5249 To Winterspring!]
+[G 52.0,30.4 Winterspring]Puhu: *Wynd Nightchaser* [QT5249 To Winterspring!] [QA5244 The Ruins of Kel'Theril]
 [G 62.3,36.6 Winterspring][P Everlook]Hae flight path (*Maethrya*)
-[G 52.1,30.4 Winterspring]Puhu: *Jaron Stoneshaper* [QA4861 Enraged Wildkin]
+[G 52.1,30.4 Winterspring]Puhu: *Jaron Stoneshaper* [QT5244 The Ruins of Kel'Theril] [QA4861 Enraged Wildkin] [QA5245 Troubled Spirits of Kel'Theril]
 [G 61.4,38.8 Winterspring][S Aseta Hearthstone tähän] (*Innkeeper Vizzie*)
-[G 60.9,37.6 Winterspring]Puhu: *Umi Rumplesnicker* [QA3783 Are We There, Yeti?]
+[G 61.3,36.9 Winterspring]Puhu: *Nami* [QA84146 Red Bag Blues]
 [G 60.8,37.8 Winterspring]Puhu: *Evie Whirlbrew* [QA92859 Shroud of the Winter Wilds]
 [G 61.6,38.6 Winterspring]Puhu: *Felnok Steelspring* [QT4808 Felnok Steelspring] [QA4809 Chillwind Horns]
 [G 61.4,39.0 Winterspring]Puhu: *Gregor Greystone* [QA6028 The Everlook Report] [QA6030 Duke Nicholas Zverenhoff]
-[G 65.3,39.6 Winterspring]Kerää *Thick Yeti Fur* (Ice Thistle Yeti, Rogue Ice Thistle); Tapa *Winterfall Ursa*; Tapa *Winterfall Shaman*; Tapa *Winterfall Den Watcher* [QC3783,1 Are We There, Yeti?] [QC8464,3 Winterfall Activity] [QC8464,1 Winterfall Activity] [QC5082,2 Threat of the Winterfall]
-[G 67.1,35.1 Winterspring]Tapa *Winterfall Den Watcher*; Kerää *Winterspring Owl Feather* (Winterspring Owl, Winterspring Screecher) [QC8464,2 Winterfall Activity] [QC92859,2 Shroud of the Winter Wilds]
-[G 60.9,37.6 Winterspring]Puhu: *Umi Rumplesnicker* [QT3783 Are We There, Yeti?] [QA977 Are We There, Yeti?]
-[G 64.9,40.4 Winterspring]Kerää *Pristine Yeti Horn* (Ice Thistle Matriarch, Ice Thistle Patriarch) [QC977,1 Are We There, Yeti?]
-[G 60.9,37.6 Winterspring]Puhu: *Umi Rumplesnicker* [QT977 Are We There, Yeti?] [QA5163 Are We There, Yeti?]
+[G 64.2,36.8 Winterspring]Kerää *Winterspring Owl Feather* (Winterspring Owl, Winterspring Screecher); Tapa *Winterfall Ursa*; Tapa *Winterfall Shaman*; Tapa *Winterfall Den Watcher* [QC92859,2 Shroud of the Winter Wilds] [QC8464,3 Winterfall Activity] [QC8464,1 Winterfall Activity] [QC5082,2 Threat of the Winterfall]
+[G 67.1,35.1 Winterspring]Tapa *Winterfall Den Watcher* [QC8464,2 Winterfall Activity]
 [G 61.9,25.9 Winterspring]Kerää *Uncracked Chillwind Horn* (Chillwind Ravager, Chillwind Chimaera, Fledgling Chillwind); Kerää *Chillwind Chimaera Fur* (Chillwind Ravager, Chillwind Chimaera, Fledgling Chillwind) [QC4809,1 Chillwind Horns] [QC92859,1 Shroud of the Winter Wilds]
 [G 60.8,37.8 Winterspring]Puhu: *Evie Whirlbrew* [QT92859 Shroud of the Winter Wilds] [QA98462 Shroud of the Winter Wilds]
-[G 61.5,38.6 Winterspring]Puhu: *Legacki* [QC5163,1 Are We There, Yeti?]
 [G 61.6,38.6 Winterspring]Puhu: *Felnok Steelspring* [QT4809 Chillwind Horns] [QA4810 Return to Tinkee]
-[G 64.2,36.8 Winterspring]Kerää *Winterspring Owl Feather* (Winterspring Owl, Winterspring Screecher) [QC98462,2 Shroud of the Winter Wilds]
-[G 61.9,25.9 Winterspring]Kerää *Chillwind Chimaera Fur* (Chillwind Ravager, Chillwind Chimaera, Fledgling Chillwind) [QC98462,1 Shroud of the Winter Wilds]
-[G 60.8,37.8 Winterspring]Puhu: *Evie Whirlbrew* [QT98462 Shroud of the Winter Wilds]
-[G 60.8,37.8 Winterspring][V Myy harmaat roinat] (*Evie Whirlbrew*)
-[G 61.4,38.8 Winterspring][V Osta ruokaa, noin 20] (*Innkeeper Vizzie*)
+[G 55.1,43.0 Winterspring]Kerää *First Relic Fragment* (Highborne Relic Fragment); Kerää *Fourth Relic Fragment* (Highborne Relic Fragment); Kerää *Second Relic Fragment* (Highborne Relic Fragment); Kerää *Third Relic Fragment* (Highborne Relic Fragment) [QC5245,1 Troubled Spirits of Kel'Theril] [QC5245,4 Troubled Spirits of Kel'Theril] [QC5245,2 Troubled Spirits of Kel'Theril] [QC5245,3 Troubled Spirits of Kel'Theril]
 [G 59.0,59.8 Winterspring]Klikkaa: *Damaged Crate* [QT4861 Enraged Wildkin] [QA4863 Enraged Wildkin]
 [G 61.4,60.7 Winterspring]Klikkaa: *Jaron's Wagon* [QT4863 Enraged Wildkin] [QA4864 Enraged Wildkin]
 [G 61.4,60.7 Winterspring]Kerää *Jaron's Supplies* (Jaron's Supplies); Kerää *Blue-feathered Amulet* (Moontouched Owlbeast, Crazed Owlbeast, Berserk Owlbeast) [QC4864,1 Enraged Wildkin] [QC4864,2 Enraged Wildkin]
 [G 59.8,74.2 Winterspring]Discover Darkwhisper Gorge [QC4842,1 Strange Sources]
-[G 52.1,30.4 Winterspring]Puhu: *Jaron Stoneshaper* [QT4864 Enraged Wildkin]
-[G 27.7,34.5 Winterspring]Puhu: *Salfa* [QT8464 Winterfall Activity]
 [G 31.3,45.2 Winterspring]Puhu: *Donova Snowden* [QT4842 Strange Sources] [QT5082 Threat of the Winterfall]
-[G 62.5,24.2 Felwood]Lennä (*Mishellena*): [F Gadgetzan]
-[G 51.1,26.9 Tanaris]Puhu: *Sprinkle* [QC5163,2 Are We There, Yeti?]
-[G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Marshal's Refuge]
-[G 43.7,9.4 Un'Goro Crater]Puhu: *Quixxil* [QC5163,3 Are We There, Yeti?]
-[H Hearthstone: Innkeeper Vizzie] (jos cooldownilla, juokse tai lennä)
-[O][A Engineering250][G 60.9,37.6 Winterspring]Ammattitehtävä (Engineering 250+): puhu *Umi Rumplesnicker* [QA8798 A Yeti of Your Own]
-[O][A Engineering250][G 60.9,37.6 Winterspring]Ammattitehtävä: palauta *Umi Rumplesnicker* [QT8798 A Yeti of Your Own] (jos tavoite valmis)
-[G 60.9,37.6 Winterspring]Puhu: *Umi Rumplesnicker* [QT5163 Are We There, Yeti?]
+[G 27.7,34.5 Winterspring]Puhu: *Salfa* [QT8464 Winterfall Activity]
+[G 52.1,30.4 Winterspring]Puhu: *Jaron Stoneshaper* [QT4864 Enraged Wildkin]
+[G 56.5,25.6 Winterspring]Kerää *Chillwind Chimaera Fur* (Chillwind Ravager, Chillwind Chimaera, Fledgling Chillwind) [QC98462,1 Shroud of the Winter Wilds]
+[G 64.2,36.8 Winterspring]Kerää *Winterspring Owl Feather* (Winterspring Owl, Winterspring Screecher) [QC98462,2 Shroud of the Winter Wilds]
+[G 60.8,37.8 Winterspring]Puhu: *Evie Whirlbrew* [QT98462 Shroud of the Winter Wilds]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
 [G 77.4,65.3 Stormwind City][T Rogue-trainer (taso 58)] (*Osborne the Night Man*): Kick r4, Sprint r3
 [G 57.2,48.1 Stormwind City]Puhu: *Royal Factor Bathrilor* [QT5022 Better Late Than Never] [QA5048 Good Natured Emma]
 [G 60.2,57.0 Stormwind City]Puhu: *Ol' Emma* [QT5048 Good Natured Emma] [QA5050 Good Luck Charm]
-[G 69.5,40.4 Stormwind City]Puhu: *Brohann Caskbelly* [QT1475 Into The Temple of Atal'Hakkar]
 [XP55 Tavoitetaso 55: jos olet alle, toista edellinen dungeon tai grindaa]
-[G 63.3,37.7 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Kaita Deepforge*)
+[G 53.5,57.6 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Agustus Moulaine*)
+[G 60.4,75.3 Stormwind City][V Osta ruokaa, noin 20] (*Innkeeper Allison*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Chillwind Camp]
 [G 38.4,54.0 Western Plaguelands]Puhu: *Janice Felstone* [QT5050 Good Luck Charm]
 [G 43.0,83.5 Western Plaguelands]Puhu: *Argent Officer Pureheart* [QT6028 The Everlook Report]
@@ -3372,42 +3153,55 @@ Guidelime.registerGuide([[
 [G 22.9,73.0 Eastern Plaguelands]Klikkaa: *Torn Scroll* [QA6024 Hameya's Plea]
 [G 27.1,70.4 Eastern Plaguelands]Tapa *Plaguebat* [QC5543,1 Blood Tinged Skies]
 [G 28.8,63.3 Eastern Plaguelands]Kerää *Slab of Carrion Worm Meat* (Carrion Grub, Carrion Devourer) [QC5544,1 Carrion Grubbage]
-[G 20.8,60.5 Eastern Plaguelands]Tapa *Plaguehound Runt* [QC5542,1 Demon Dogs]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5543 Blood Tinged Skies] [QT5544 Carrion Grubbage]
 [G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QA6164 Augustus' Receipt Book]
 [G 14.0,24.2 Eastern Plaguelands]Kerää *Augustus' Receipt Book* (Augustus' Receipt Book); Kerää *Plagueland Termites* (Large Termite Mound) [QC6164,1 Augustus' Receipt Book] [QC5903,1 A Plague Upon Thee]
 [G 38.8,31.7 Eastern Plaguelands]Tapa *Frenzied Plaguehound* [QC5542,3 Demon Dogs]
+[G 46.5,16.0 Eastern Plaguelands]Puhu: *Aurora Skycaller* [QT5245 Troubled Spirits of Kel'Theril] [QA5246 Fragments of the Past]
 [G 62.0,11.1 Eastern Plaguelands]Kerää *Hameya's Key* (Infiltrator Hameya) [QC6024,1 Hameya's Plea]
 [G 71.8,49.6 Eastern Plaguelands][P Light's Hope Chapel]Hae flight path (*Khaelyn Steelwing*)
 [G 71.8,48.5 Eastern Plaguelands][S Aseta Hearthstone tähän] (*Jessica Chambers*)
-[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA6021 Zaeldarr the Outcast]
-[G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT6030 Duke Nicholas Zverenhoff]
 [G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QA5211 Defenders of Darrowshire]
-[G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QA5529 Plagued Hatchlings]
-[G 42.7,46.7 Eastern Plaguelands]Tapa *Plaguehound* [QC5542,2 Demon Dogs]
-[G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QT6164 Augustus' Receipt Book]
-[G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5542 Demon Dogs]
-[G 23.1,72.6 Eastern Plaguelands]Kerää *Zaeldarr's Head* (Zaeldarr the Outcast) [QC6021,1 Zaeldarr the Outcast]
-[G 23.6,73.8 Eastern Plaguelands]Klikkaa: *Mound of Dirt* [QT6024 Hameya's Plea]
+[G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT6030 Duke Nicholas Zverenhoff]
+[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA6021 Zaeldarr the Outcast]
+[G 68.2,56.3 Eastern Plaguelands]Tapa *Plaguehound* [QC5542,2 Demon Dogs]
+[G 53.3,58.3 Eastern Plaguelands]Puhu: *Orthas* [QA84319 Oh No Ye Don't!]
 [G 31.1,78.0 Eastern Plaguelands]Puhu: *Pamela Redpath* [QT5142 Little Pamela]
+[G 23.6,73.8 Eastern Plaguelands]Klikkaa: *Mound of Dirt* [QT6024 Hameya's Plea]
+[G 23.1,72.6 Eastern Plaguelands]Kerää *Zaeldarr's Head* (Zaeldarr the Outcast) [QC6021,1 Zaeldarr the Outcast]
+[G 20.8,60.5 Eastern Plaguelands]Tapa *Plaguehound Runt* [QC5542,1 Demon Dogs]
+[G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5542 Demon Dogs]
+[G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QT6164 Augustus' Receipt Book]
+[G 21.4,25.2 Eastern Plaguelands]Kerää *Partially-Digested Plate Armor* (Stitched Horror, Abomination) [QC84319,1 Oh No Ye Don't!]
+[G 53.3,58.3 Eastern Plaguelands]Puhu: *Orthas* [QT84319 Oh No Ye Don't!]
 [G 54.3,57.3 Eastern Plaguelands]Puhu: *Darrowshire Spirit* [QC5211,1 Defenders of Darrowshire]
-[H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
-[G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QT5211 Defenders of Darrowshire]
 [G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QT6021 Zaeldarr the Outcast]
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Morgan's Vigil]
-[G 66.1,21.9 Burning Steppes]Puhu: *Yuka Screwspigot* [QT4136 Ribbly Screwspigot]
+[G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QT5211 Defenders of Darrowshire]
+[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
+[OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
+[G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talrendis Point]
+[G 41.5,52.5 Azshara]Kerää *Sacred Highborne Writings* (Sacred Highborne Writings) [QC5246,1 Fragments of the Past]
+[H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
+[G 46.5,16.0 Eastern Plaguelands]Puhu: *Aurora Skycaller* [QT5246 Fragments of the Past]
+[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Thorium Point]
+[OC]Matkusta: *Burning Steppes*. Lennä Morgan's Vigiliin (Burning Steppes) tai Redridgesta pohjoiseen
+[G 53.0,24.4 Burning Steppes]Puhu: *Red Bag* [QT84146 Red Bag Blues]
 [G 65.9,21.9 Burning Steppes]Puhu: *Kibler* [QA4729 Kibler's Exotic Pets] [QA4862 En-Ay-Es-Tee-Why]
+[G 66.1,21.9 Burning Steppes]Puhu: *Yuka Screwspigot* [QT4136 Ribbly Screwspigot]
 [G 65.0,23.8 Burning Steppes]Puhu: *Ragged John* [QA4866 Mother's Milk]
 [G 65.0,23.8 Burning Steppes]Puhu: *Ragged John* [QC4866,1 Mother's Milk]
 [G 65.0,23.8 Burning Steppes]Puhu: *Ragged John* [QT4866 Mother's Milk]
 [G 65.2,23.9 Burning Steppes]Puhu: *Maxwort Uberglint* [QT4123 The Heart of the Mountain]
 [G 65.2,24.0 Burning Steppes]Puhu: *Tinkee Steamboil* [QT4810 Return to Tinkee]
 [G 95.1,31.6 Burning Steppes]Puhu: *Cyrus Therepentous* [QT4024 A Taste of Flame]
+[G 84.6,68.7 Burning Steppes]Puhu: *Oralius* [QT4286 The Good Stuff]
 [G 85.8,69.0 Burning Steppes]Puhu: *Helendis Riverhorn* [QA4701 Put Her Down]
 [G 85.4,70.1 Burning Steppes]Puhu: *Jalinda Sprig* [QT4263 Incendius!]
 [G 85.2,68.4 Burning Steppes][V Myy harmaat roinat] ja [R korjaa varusteet] (*Felder Stover*)
 [G 84.3,68.3 Burning Steppes]Lennä (*Borgus Stoutarm*): [F Nethergarde Keep]
-[G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT81900 The Burning Beast]
+[G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT81900 The Burning Beast] [QA81917 Chains That Bind]
+[G 63.8,30.1 Blasted Lands]Kerää *Infernal Chain Link* (Shadowsworn Cultist, Shadowsworn Thug, Shadowsworn Adept) [QC81917,1 Chains That Bind]
+[G 50.6,14.3 Blasted Lands]Puhu: *Bloodmage Lynnore* [QT81917 Chains That Bind]
 [OC]*Dungeon: Blackrock Depths* (suositus taso 56+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Searing Gorge) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 65.5,24.3 Blasted Lands]Lennä (*Alexandra Constantine*): [F Stormwind]
 [O][G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QA4185 The True Masters] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -3462,8 +3256,13 @@ Guidelime.registerGuide([[
 [G 37.9,30.9 Searing Gorge]Lennä (*Lanie Reed*): [F Morgan's Vigil]
 [G 85.8,69.0 Burning Steppes]Puhu: *Helendis Riverhorn* [QT4701 Put Her Down]
 [G 84.7,69.0 Burning Steppes]Puhu: *Marshal Maxwell* [QT5002 Message to Maxwell] [QA5081 Maxwell's Mission] [QT5089 General Drakkisath's Command]
-[G 85.2,68.4 Burning Steppes][V Myy harmaat roinat] (*Felder Stover*)
 [G 65.9,21.9 Burning Steppes]Puhu: *Kibler* [QT4729 Kibler's Exotic Pets] [QT4862 En-Ay-Es-Tee-Why]
+[G 84.3,68.3 Burning Steppes]Lennä (*Borgus Stoutarm*): [F Booty Bay]
+[G 26.8,77.2 Stranglethorn Vale][T Rogue-trainer (taso 60)] (*Ian Strom*): Gouge r5, Stealth r4, Rupture r6, Instant Poison r6, Eviscerate r9, Mutilate r4
+[O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
+[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] ja [R korjaa varusteet] (*Jutak*)
+[G 27.0,77.3 Stranglethorn Vale][V Osta ruokaa, noin 20] (*Innkeeper Skindle*)
+[G 28.5,75.9 Stranglethorn Vale]Puhu: *Pix Xizzix* [QA96075 In Demand - Blackrock Legal Records]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Everlook]
 [G 61.0,38.8 Winterspring]Puhu: *Malyfous Darkhammer* [QT5047 Pip Quickwit, At Your Service!]
@@ -3474,10 +3273,12 @@ Guidelime.registerGuide([[
 [G 56.4,87.8 Dustwallow Marsh]Kerää *Forged Seal of Ascension* (Forged Seal of Ascension) [QC4743,1 Seal of Ascension]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Thorium Point]
-[G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Spire*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *War Master Voone*; Tapa *Highlord Omokk*; Tapa *Overlord Wyrmthalak* [QC5081,1 Maxwell's Mission] [QC5081,2 Maxwell's Mission] [QC5081,3 Maxwell's Mission]
+[G 34.8,85.3 Searing Gorge]*Mene dungeoniin: Blackrock Spire*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *War Master Voone*; Tapa *Highlord Omokk*; Tapa *Overlord Wyrmthalak*; Kerää *Nefarion's Remit* (General Drakkisath); Kerää *Overseer's License* (Overlord Wyrmthalak); Kerää *Bronzebeard Wedding Contract* (Emperor Dagran Thaurissan) [QC5081,1 Maxwell's Mission] [QC5081,2 Maxwell's Mission] [QC5081,3 Maxwell's Mission] [QC96075,1 In Demand - Blackrock Legal Records] [QC96075,2 In Demand - Blackrock Legal Records] [QC96075,3 In Demand - Blackrock Legal Records]
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Scarshield Infiltrator* [QT4743 Seal of Ascension]
 [G 37.9,30.9 Searing Gorge]Lennä (*Lanie Reed*): [F Morgan's Vigil]
 [G 84.7,69.0 Burning Steppes]Puhu: *Marshal Maxwell* [QT5081 Maxwell's Mission]
+[G 84.3,68.3 Burning Steppes]Lennä (*Borgus Stoutarm*): [F Booty Bay]
+[G 28.5,75.9 Stranglethorn Vale]Puhu: *Pix Xizzix* [QT96075 In Demand - Blackrock Legal Records]
 [XP56 Tavoitetaso 56: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Marshal's Refuge]
@@ -3494,6 +3295,7 @@ Guidelime.registerGuide([[
 [G 51.1,38.3 Silithus]Puhu: *Windcaller Proudhorn* [QT8280 Securing the Supply Lines] [QA8281 Stepping Up Security]
 [G 54.1,30.3 Silithus]Kerää *Sand Skitterer Fang* (Sand Skitterer); Kerää *Stonelash Scorpid Stinger* (Stonelash Scorpid) [QC8277,2 Deadly Desert Venom] [QC8277,1 Deadly Desert Venom]
 [G 51.6,38.6 Silithus]Puhu: *Beetix Ficklespragg* [QT8277 Deadly Desert Venom] [QA8278 Noggle's Last Hope]
+[G 48.7,37.0 Silithus]Puhu: *Khur Hornstriker* [QT94340 Craftsman's Writ: Truesilver Transformer]
 [G 26.4,15.9 Silithus]Kerää *Twilight Tablet Fragment* (Twilight Tablet Fragment) [QC8284,1 The Twilight Mystery]
 [G 33.3,51.1 Silithus]Puhu: *Marshal Bluewall* [QT9415 Report to Marshal Bluewall]
 [G 34.9,54.1 Silithus]Kerää *Stonelash Pincer Stinger* (Stonelash Pincer); Tapa *Dredge Crusher* [QC8278,2 Noggle's Last Hope] [QC8281,1 Stepping Up Security]
@@ -3502,12 +3304,14 @@ Guidelime.registerGuide([[
 [G 72.4,15.6 Silithus]Kerää *Vyral's Signet Ring* (Vyral the Vile) [QC8321,1 Vyral the Vile]
 [G 48.6,37.8 Silithus]Puhu: *Bor Wildmane* [QT8318 Secret Communication]
 [G 48.6,37.9 Silithus]Puhu: *Huum Wildmane* [QT8321 Vyral the Vile]
-[G 49.7,37.5 Silithus]Puhu: *Geologist Larksbane* [QT8284 The Twilight Mystery] [QA8285 The Deserter]
+[G 49.7,37.5 Silithus]Puhu: *Geologist Larksbane* [QT8284 The Twilight Mystery]
+[G 51.9,39.2 Silithus][V Myy harmaat roinat] (*Calandrath*)
+[G 51.9,39.2 Silithus][S Aseta Hearthstone tähän] (*Calandrath*)
+[G 49.7,37.5 Silithus]Puhu: *Geologist Larksbane* [QA8285 The Deserter]
 [G 51.2,38.9 Silithus]Puhu: *Vargus* [QT8800 Cenarion Battlegear]
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8285 The Deserter] [QA8279 The Twilight Lexicon]
 [G 45.0,72.6 Silithus]Kerää *Rock Stalker Fang* (Rock Stalker); Kerää *Stonelash Flayer Stinger* (Stonelash Flayer) [QC8278,3 Noggle's Last Hope] [QC8278,1 Noggle's Last Hope]
-[G 51.9,39.2 Silithus][V Myy roinat. Osta ruokaa, noin 20] (*Calandrath*)
-[G 51.9,39.2 Silithus][S Aseta Hearthstone tähän] (*Calandrath*)
+[H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
 [G 51.6,38.6 Silithus]Puhu: *Beetix Ficklespragg* [QT8278 Noggle's Last Hope]
 [G 51.6,38.5 Silithus]Puhu: *Noggle Ficklespragg* [QA8282 Noggle's Lost Satchel]
 [G 51.1,38.3 Silithus]Puhu: *Windcaller Proudhorn* [QT8281 Stepping Up Security]
@@ -3516,31 +3320,35 @@ Guidelime.registerGuide([[
 [G 16.1,86.4 Silithus]Kerää *Twilight Lexicon - Chapter 2* (Twilight Keeper Exeter) [QC8279,2 The Twilight Lexicon]
 [G 44.6,91.4 Silithus]Kerää *Noggle's Satchel* (Noggle's Satchel) [QC8282,1 Noggle's Lost Satchel]
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8279 The Twilight Lexicon] [QA8287 A Terrible Purpose] [QA8323 True Believers]
-[H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
 [G 51.6,38.5 Silithus]Puhu: *Noggle Ficklespragg* [QT8282 Noggle's Lost Satchel]
 [G 49.2,34.2 Silithus]Puhu: *Commander Mar'alith* [QT8287 A Terrible Purpose]
 [G 40.9,42.2 Silithus]Kerää *Encrypted Twilight Text* (Twilight Avenger, Twilight Geolord, Twilight Stonecaller) [QC8323,1 True Believers]
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8323 True Believers]
-[XP58 Tavoitetaso 58: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Chillwind Camp]
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
+[G 56.4,74.1 Stormwind City]Puhu: *Crier Goodman* [QA7494 Feathermoon Stronghold]
+[G 78.3,70.7 Stormwind City]Puhu: *Master Mathias Shaw* [QA97883 End of the Dark Horde]
+[G 67.2,85.5 Stormwind City]Puhu: *Major Mattingly* [QT97883 End of the Dark Horde]
+[G 64.0,77.5 Stormwind City][V Myy harmaat roinat] (*Rebecca Laughlin*)
+[G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Ironforge]
+[G 39.1,56.2 Ironforge]Puhu: *King Magni Bronzebeard* [QT4363 The Princess's Surprise]
+[G 43.5,52.6 Ironforge]Puhu: *Deliana* [QA8910 An Earnest Proposition]
+[G 43.6,52.6 Ironforge]Puhu: *Deliana* [QA97447 An Earnest Proposition]
+[G 47.1,13.8 Ironforge]Puhu: *Eldrun Stormbreaker* [QA97169 The Darkreaver Menace]
+[XP58 Tavoitetaso 58: jos olet alle, toista edellinen dungeon tai grindaa]
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Chillwind Camp]
 [G 43.4,84.8 Western Plaguelands]Puhu: *Nathaniel Dumah* [QT5903 A Plague Upon Thee] [QA5904 A Plague Upon Thee]
 [G 43.5,83.7 Western Plaguelands]Puhu: *Weldon Barov* [QA5343 Barov Family Fortune]
-[G 43.1,84.3 Western Plaguelands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Leonard Porter*)
 [G 70.2,73.7 Western Plaguelands]Puhu: *Eva Sarkhoff* [QA5382 Doctor Theolen Krastinov, the Butcher]
 [G 48.3,32.0 Western Plaguelands]Klikkaa: *Termite Barrel* [QT5904 A Plague Upon Thee] [QA6389 A Plague Upon Thee]
+[G 43.4,84.8 Western Plaguelands]Puhu: *Nathaniel Dumah* [QT6389 A Plague Upon Thee]
 [G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Light's Hope Chapel]
-[G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QA5212 The Flesh Does Not Lie]
+[G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QA5212 The Flesh Does Not Lie] [QA5529 Plagued Hatchlings]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QA5251 The Archivist]
+[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Craftsman Wilhelm*)
 [G 71.9,48.3 Eastern Plaguelands]Puhu: *Leonid Barthalomew the Revered* [QA5243 Houses of the Holy]
 [G 70.9,48.4 Eastern Plaguelands]Puhu: *Smokey LaRue* [QA5214 The Great Ezra Grimm]
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Chillwind Camp]
-[G 43.4,84.8 Western Plaguelands]Puhu: *Nathaniel Dumah* [QT6389 A Plague Upon Thee]
 [OC]*Dungeon: Dire Maul* (suositus taso 58+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Feralas) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
-[G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Stormwind]
-[G 77.4,65.3 Stormwind City][T Rogue-trainer (taso 60)] (*Osborne the Night Man*): Gouge r5, Stealth r4, Rupture r6, Instant Poison r6, Eviscerate r9, Mutilate r4
-[G 76.8,66.0 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Officer Areyn*)
-[G 56.4,74.1 Stormwind City]Puhu: *Crier Goodman* [QA7494 Feathermoon Stronghold]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Thalanaar]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QA7441 Pusillin and the Elder Azj'Tordin]
@@ -3561,20 +3369,23 @@ Guidelime.registerGuide([[
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Klikkaa: *Treasure of the Shen'dralar* [QT7877 The Treasure of the Shen'dralar]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QT7441 Pusillin and the Elder Azj'Tordin]
 [G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
-[G 30.8,43.1 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 31.6,43.5 Feralas]Puhu: *Scholar Runethorn* [QT7482 Elven Legends]
+[G 30.8,43.1 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT7488 Lethtendris's Web]
 [OC]*Dungeon: Scholomance* (suositus taso 58+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Western Plaguelands) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Aerie Peak]
 [OC]Matkusta: *Western Plaguelands*. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
-[G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *The Deed to Brill* (The Deed to Brill); Kerää *The Deed to Caer Darrow* (The Deed to Caer Darrow); Kerää *The Deed to Southshore* (The Deed to Southshore); Kerää *The Deed to Tarren Mill* (The Deed to Tarren Mill); Tapa *Doctor Theolen Krastinov*; Käytä / kerää: *Remains of Eva Sarkhoff*; Käytä / kerää: *Remains of Lucien Sarkhoff*; Tapa *Plagued Hatchling* [QC5343,1 Barov Family Fortune] [QC5343,2 Barov Family Fortune] [QC5343,3 Barov Family Fortune] [QC5343,4 Barov Family Fortune] [QC5382,1 Doctor Theolen Krastinov, the Butcher] [QC5382,2 Doctor Theolen Krastinov, the Butcher] [QC5382,3 Doctor Theolen Krastinov, the Butcher] [QC5529,1 Plagued Hatchlings]
+[G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *The Deed to Brill* (The Deed to Brill); Kerää *The Deed to Caer Darrow* (The Deed to Caer Darrow); Kerää *The Deed to Southshore* (The Deed to Southshore); Kerää *The Deed to Tarren Mill* (The Deed to Tarren Mill); Tapa *Doctor Theolen Krastinov*; Käytä / kerää: *Remains of Eva Sarkhoff*; Käytä / kerää: *Remains of Lucien Sarkhoff*; Tapa *Plagued Hatchling*; Kerää *Darkreaver's Head* (Death Knight Darkreaver) [QC5343,1 Barov Family Fortune] [QC5343,2 Barov Family Fortune] [QC5343,3 Barov Family Fortune] [QC5343,4 Barov Family Fortune] [QC5382,1 Doctor Theolen Krastinov, the Butcher] [QC5382,2 Doctor Theolen Krastinov, the Butcher] [QC5382,3 Doctor Theolen Krastinov, the Butcher] [QC5529,1 Plagued Hatchlings] [QC97169,1 The Darkreaver Menace]
 [G 70.2,73.7 Western Plaguelands]Puhu: *Eva Sarkhoff* [QT5382 Doctor Theolen Krastinov, the Butcher] [QA5515 Krastinov's Bag of Horrors]
 [G 43.5,83.7 Western Plaguelands]Puhu: *Weldon Barov* [QT5343 Barov Family Fortune]
 [G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Light's Hope Chapel]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5529 Plagued Hatchlings]
-[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] ja [R korjaa varusteet] (*Craftsman Wilhelm*)
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Chillwind Camp]
+[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Ironforge]
+[G 47.1,13.8 Ironforge]Puhu: *Eldrun Stormbreaker* [QT97169 The Darkreaver Menace]
+[G 45.0,6.8 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hjoldir Stoneblade*)
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Aerie Peak]
+[OC]Matkusta: *Western Plaguelands*. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
 [G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Krastinov's Bag of Horrors* (Jandice Barov) [QC5515,1 Krastinov's Bag of Horrors]
 [G 70.2,73.7 Western Plaguelands]Puhu: *Eva Sarkhoff* [QT5515 Krastinov's Bag of Horrors] [QA5384 Kirtonos the Herald]
 [G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Tapa *Kirtonos the Herald* [QC5384,1 Kirtonos the Herald]
@@ -3592,15 +3403,13 @@ Guidelime.registerGuide([[
 [G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA5281 The Restless Souls]
 [G 11.4,26.6 Eastern Plaguelands]Puhu: *Egan* [QT5281 The Restless Souls] [QA5282 The Restless Souls]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QA5742 Redemption]
-[G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Ironforge]
-[G 43.5,52.6 Ironforge]Puhu: *Deliana* [QA8910 An Earnest Proposition]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Everlook]
-[G 53.5,13.9 Winterspring]Kerää *Winterspring Blood Sample* (Shardtooth Mauler, Elder Shardtooth, Frostsaber Stalker) [QC8910,1 An Earnest Proposition]
+[G 54.6,13.6 Winterspring]Kerää *Winterspring Blood Sample* (Shardtooth Mauler, Elder Shardtooth, Frostsaber Stalker) [QC8910,1 An Earnest Proposition] [QC97447,1 An Earnest Proposition]
 [OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Light's Hope Chapel]
 [G 26.5,10.4 Eastern Plaguelands]Dungeonin sisällä - Puhu: *Aurius* [QA5122 The Medallion of Faith]
-[G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Medallion of Faith* (Malor's Strongbox); Kerää *Plagued Flesh Sample* (Ravaged Cadaver, Mangled Cadaver, Plague Ghoul); Kerää *Grimm's Premium Tobacco* (Ezra Grimm); Kerää *Stratholme Holy Water* (Supply Crate, Stratholme Supply Crate); Tapa *Archivist Galford*; Käytä / kerää: *Scarlet Archive*; Tapa *Restless Soul*; Puhu: *Tirion Fordring*; Kerää *Shadowcraft Bracers* (Smolderthorn Shadow Hunter, Plague Ghoul, Scholomance Occultist) [QC5122,1 The Medallion of Faith] [QC5212,1 The Flesh Does Not Lie] [QC5214,1 The Great Ezra Grimm] [QC5243,1 Houses of the Holy] [QC5251,1 The Archivist] [QC5251,2 The Archivist] [QC5282,1 The Restless Souls] [QC5742,1 Redemption] [QC8910,2 An Earnest Proposition]
+[G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Medallion of Faith* (Malor's Strongbox); Kerää *Plagued Flesh Sample* (Ravaged Cadaver, Mangled Cadaver, Plague Ghoul); Kerää *Grimm's Premium Tobacco* (Ezra Grimm); Kerää *Stratholme Holy Water* (Supply Crate, Stratholme Supply Crate); Tapa *Archivist Galford*; Käytä / kerää: *Scarlet Archive*; Tapa *Restless Soul*; Puhu: *Tirion Fordring*; Kerää *Shadowcraft Bracers* (Smolderthorn Shadow Hunter, Plague Ghoul, Scholomance Occultist); Kerää *Bindings of Elements* (Crypt Crawler, Crypt Beast, Splintered Skeleton) [QC5122,1 The Medallion of Faith] [QC5212,1 The Flesh Does Not Lie] [QC5214,1 The Great Ezra Grimm] [QC5243,1 Houses of the Holy] [QC5251,1 The Archivist] [QC5251,2 The Archivist] [QC5282,1 The Restless Souls] [QC5742,1 Redemption] [QC8910,2 An Earnest Proposition] [QC97447,2 An Earnest Proposition]
 [G 26.5,10.4 Eastern Plaguelands]Dungeonin sisällä - Puhu: *Aurius* [QT5122 The Medallion of Faith] [QA5125 Aurius' Reckoning]
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Suorita tehtävä dungeonissa
 [G 26.5,10.4 Eastern Plaguelands]Dungeonin sisällä - Puhu: *Aurius* [QT5125 Aurius' Reckoning]
@@ -3610,24 +3419,61 @@ Guidelime.registerGuide([[
 [G 23.9,74.2 Eastern Plaguelands]Kerää *Taelan's Hammer* (Mercutio Filthgorger) [QC5781,1 Of Forgotten Memories]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5781 Of Forgotten Memories] [QA5845 Of Lost Honor]
 [G 62.5,26.8 Eastern Plaguelands]Kerää *Symbol of Lost Honor* (Symbol of Lost Honor) [QC5845,1 Of Lost Honor]
-[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [G 70.9,48.4 Eastern Plaguelands]Puhu: *Smokey LaRue* [QT5214 The Great Ezra Grimm]
 [G 71.9,48.3 Eastern Plaguelands]Puhu: *Leonid Barthalomew the Revered* [QT5243 Houses of the Holy]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5212 The Flesh Does Not Lie] [QA5213 The Active Agent]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5251 The Archivist]
+[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5845 Of Lost Honor] [QA5846 Of Love and Family]
-[OC]Matkusta: *Western Plaguelands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
+[G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Ironforge]
+[G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8910 An Earnest Proposition] [QA8922 A Supernatural Device]
+[G 43.6,52.6 Ironforge]Puhu: *Deliana* [QT97447 An Earnest Proposition]
+[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Aerie Peak]
+[OC]Matkusta: *Western Plaguelands*. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
 [G 65.8,75.4 Western Plaguelands]Puhu: *Artist Renfray* [QT5846 Of Love and Family] [QA5848 Of Love and Family]
-[G 11.1,46.1 The Hinterlands]Lennä (*Guthrum Thunderfist*): [F Ironforge]
-[G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8910 An Earnest Proposition]
-[G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Light's Hope Chapel]
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8922 A Supernatural Device] [QA8921 The Ectoplasmic Distiller]
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Morgan's Vigil]
+[G 45.3,43.4 Burning Steppes]Kerää *Volcanic Ash* (Volcanic Ash) [QC8921,4 The Ectoplasmic Distiller]
+[G 84.3,68.3 Burning Steppes]Lennä (*Borgus Stoutarm*): [F Light's Hope Chapel]
 [G 26.5,10.4 Eastern Plaguelands]Dungeonissa: looti *Head of Balnazzar* aloittaa questin [QA5262 The Truth Comes Crashing Down]
-[G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Scourge Data* (Scourge Data); Kerää *Of Love and Family* (Unfinished Painting) [QC5213,1 The Active Agent] [QC5848,1 Of Love and Family]
+[G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Scourge Data* (Scourge Data); Kerää *Of Love and Family* (Unfinished Painting); Kerää *Delicate Arcanite Converter*; Kerää *Greater Eternal Essence*; Kerää *Stonescale Oil* [QC5213,1 The Active Agent] [QC5848,1 Of Love and Family] [QC8921,1 The Ectoplasmic Distiller] [QC8921,2 The Ectoplasmic Distiller] [QC8921,3 The Ectoplasmic Distiller]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5848 Of Love and Family]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5262 The Truth Comes Crashing Down] [QA5263 Above and Beyond]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5213 The Active Agent]
 [G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8921 The Ectoplasmic Distiller] [QA8924 Hunting for Ectoplasm]
+[H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
+[G 62.4,53.0 Silithus]Kerää *Scorched Ectoplasm* (Tortured Sentinel, Tortured Druid) [QC8924,1 Hunting for Ectoplasm]
+[G 50.6,34.5 Silithus]Lennä (*Cloud Skydancer*): [F Everlook]
+[G 53.3,43.2 Winterspring]Kerää *Frozen Ectoplasm* (Suffering Highborne, Anguished Highborne) [QC8924,2 Hunting for Ectoplasm]
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Light's Hope Chapel]
+[G 52.6,58.2 Eastern Plaguelands]Kerää *Stable Ectoplasm* (Hate Shrieker, Death Singer, Torn Screamer) [QC8924,3 Hunting for Ectoplasm]
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8924 Hunting for Ectoplasm] [QA8925 A Portable Power Source]
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Morgan's Vigil]
+[G 35.4,57.8 Burning Steppes]Kerää *Magma Core* (Magma Lord Bokk) [QC8925,1 A Portable Power Source]
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8925 A Portable Power Source]
+[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QA8928 A Shifty Merchant] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Light's Hope Chapel]
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Head of Baron Rivendare* (Baron Rivendare) [QC5263,1 Above and Beyond]
+[O][G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Varaa ruokaa ja myrkyt aseisiin). Kerää *Fel Elemental Rod* [QC8928,1 A Shifty Merchant] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
+[OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
+[G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
+[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8928 A Shifty Merchant] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QA8977 Return to Deliana] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
+[O][G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8977 Return to Deliana] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
