@@ -6,6 +6,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 
 ## Questit, jotka puuttuvat oppaasta
 - **Camping 101: Cooking (Zephras)**: palauttaja ei ole reitin varrella.
+- **Blood in the Streets** ja jatko **Heart of Disruption** (Horde, Dalaran, v4.3): QuestieDB:n uusi tavoite on tason 60 NPC, jota oppaan reitinlaskenta pitää liian vaikeana kohteena. Voit tehdä ne itse, jos olet Dalaran Patrolsin jälkeen alueella.
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **Weed Whacked** (Stranglethorn Vale): QuestieDB-datassa questin antajalta puuttuu faction-tieto.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.

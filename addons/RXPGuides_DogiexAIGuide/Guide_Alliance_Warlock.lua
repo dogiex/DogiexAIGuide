@@ -9184,7 +9184,7 @@ step
     .goto 1416/0,546.45,394.75
     >>|cRXP_WARN_Mene dungeoniin: City of Dalaran|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
     >>Tee Healthstone ja Soulstone, varaa 5+ Soul Shardia
-    >>Kerää |cRXP_LOOT_Fel Infused Blossom|r
+    >>Kerää |cRXP_LOOT_Fel Infused Blossom|r (|cRXP_PICK_Fel Plant|r)
     >>Tapa |cRXP_ENEMY_Seeking Remnant|r
     >>Tapa |cRXP_ENEMY_Saturated Remnant|r
     >>Tapa |cRXP_ENEMY_Mana Echo|r

@@ -1935,7 +1935,7 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Silverpine Forest*. 
 [G 68.6,45.1 Silverpine Forest]Puhu: *Image of Archmage Modera* [QT92432 An Alarming Request] [QA92457 Starving Arcane] [QA92458 Heart of Disruption]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
-[G 8.5,59.2 Alterac Mountains]*Mene dungeoniin: City of Dalaran*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Fel Infused Blossom*; Tapa *Seeking Remnant*; Tapa *Saturated Remnant*; Tapa *Mana Echo*; Kerää *Arcane Mote* (Shade of the Archmage); Tapa *Arcanic Enigma* [QC92456,1 A Green Sample] [QC92457,1 Starving Arcane] [QC92457,2 Starving Arcane] [QC92457,3 Starving Arcane] [QC92458,1 Heart of Disruption] [QC92489,1 Power Overwhelming]
+[G 8.5,59.2 Alterac Mountains]*Mene dungeoniin: City of Dalaran*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Fel Infused Blossom* (Fel Plant); Tapa *Seeking Remnant*; Tapa *Saturated Remnant*; Tapa *Mana Echo*; Kerää *Arcane Mote* (Shade of the Archmage); Tapa *Arcanic Enigma* [QC92456,1 A Green Sample] [QC92457,1 Starving Arcane] [QC92457,2 Starving Arcane] [QC92457,3 Starving Arcane] [QC92458,1 Heart of Disruption] [QC92489,1 Power Overwhelming]
 [OC]Matkusta: *Silverpine Forest*. 
 [G 68.6,45.1 Silverpine Forest]Puhu: *Image of Archmage Modera* [QT92457 Starving Arcane] [QT92458 Heart of Disruption]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")

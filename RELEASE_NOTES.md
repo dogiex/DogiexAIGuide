@@ -1,3 +1,36 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.3
+
+Quest-datan päivitys (QuestieDB 4f628e8 -> 48ce570, 1.1.3; 9 committia):
+- Quest-, NPC- ja objektikorjauksia (mm. Dalaranin ja Hillsbradin questit, Henrig Lonebrow's Journalin sijainti). Oppaan questeista muuttui 2: Dalaran Patrols siirtyi datassa Alterac Mountainsiin ja Blood in the Streetsin tavoite on nyt puhuminen Image of Archmage Moderalle paikkatriggerin sijaan.
+- Datakorjausten myötä reitille tuli kaikille Horden luokille Opportunistic Education (Dalaran, antaja lisättiin dataan) ja Valuable Vantages (Hillsbrad, tavoitteet lisättiin dataan).
+
+Datan perusteella pois (Horde, kaikki luokat):
+- Blood in the Streets ja sen jatko Heart of Disruption (Dalaran). Uuden tavoitteen NPC on datassa tasoa 60, ja reittisuunnittelija pitää sitä liian korkeatasoisena kohteena, joten ketju ei mahdu reitille. Ks. Tunnetut ongelmat.
+
+Reittisiirtymät (Horde; class- ja dungeon-questit ennallaan):
+- Warrior: pois Study of the Elements: Rock -ketju (3 questia, Badlands).
+- Hunter, Priest ja Warlock: pois Investigate the Camp (Stranglethorn). Mage: pois Galen's Escape, tilalle Investigate the Camp.
+- Paladin: uutena Melorin ketju Thunder Bluffissa (Melor Sends Word, Steelsnap, Frostmaw, Deadmire, Mirrorscale).
+- Shaman: pois Message to Freewind Post.
+- Warlock: uutena Blackmaw Pouches (Azshara).
+- Vaihtoehtoiset saman questin versiot vaihtuivat (eri antaja): A Call to Arms: The Plaguelands! (Mage, Warrior), The New Frontier (Paladin), Call of Air (Shaman).
+- Alliance: questit ennallaan; vain Fel Infused Blossom -askeleen tekstiin tuli kohteen nimi (Fel Plant).
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5876 -> 5858 min (-0,3 %), Alliance 6171 -> 6171 min (ennallaan).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 48ce570 (1.1.3). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.3.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.3.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.2
 
 Quest-datan päivitys (QuestieDB 0f37b70 -> 4f628e8, 1.1.3; 18 committia):
