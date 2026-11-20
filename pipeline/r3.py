@@ -276,7 +276,7 @@ class Sim3(Sim):
             return p
         if p:
             for ob in p['obs']:
-                if ob['loc'][4] and ob['loc'][4]>s.L+3.5: return None
+                if ob['loc'][4] and ob['loc'][4]>s.L+3.5 and not all(k=='npc' and friendly(x) for k,x in obj_sources(ob['ob'])): return None   # v4.4: kuten class-questeilla
         return p
     def defer_ok(s,vi,v,qid,p):
         """v2.0 (ehdotus B2): dungeon-käynnin palautus kaukana olevalle NPC:lle tehdään myöhemmällä normaalilla käynnillä,

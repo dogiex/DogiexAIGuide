@@ -1,3 +1,33 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.4
+
+Reitinlaskennan korjaus (käyttäjän päätös 20.11.2026):
+- Questin tavoite, joka on puhuminen ystävälliselle NPC:lle (esim. Image of Archmage Moderalle), hylättiin ennen liian korkeatasoisena kohteena, jos NPC oli yli 3,5 tasoa pelaajaa korkeampi. Class-questeilla tätä ei tehty, muilla questeilla tehtiin. Nyt ystävällinen NPC ei estä questia millään questilla.
+- Tämän vuoksi reitille palasi questeja ja ketjuja, joiden porttiquestissa on tällainen tavoite.
+
+Mitä muuttui:
+- Horde, kaikki luokat: Blood in the Streets ja Heart of Disruption (Dalaran) taas mukana, ja 15-16 muuta questia lisää, lähinnä Blasted Landsin ja Swamp of Sorrowsin ketjuja (mm. The Disgraced One, Heroes of Old, Fall From Grace, Report to Helgrum) sekä Hidden Enemies.
+- Zephras Isle (molemmat factionit): aloitukseen 18-37 questia lisää (mm. The High Order ja Shen'dar Highlandsin questit). Camping 101: Cooking tehdään nyt Zephrasin omana versiona (ennen Razor Hillin tai Dolanaarin versio).
+- Tirisfal-aloitukset: 2-3 questia lisää.
+- Alliance Mage, Paladin, Rogue, Warlock ja Warrior: noin 80-110 questia lisää (esim. Mage 944 -> 1037). Palasi mm. The Missing Diplomat -ketju sekä Stormwindin, Stranglethornin, Ashenvalen, Tanariksen, Darkshoren ja Darnassuksen questeja; pois jäi Desolacen questeja (Warriorilla myös Thousand Needles). Alliance Shaman: 21 lisää.
+- Ammattitehtävät: A Yeti of Your Own palasi Alliancen Magelle, Paladinille, Roguelle, Warlockille ja Warriorille, Master of the Wild Leather Alliancen Magelle, Warlockille ja Warriorille.
+- Reitin muutoksen vuoksi pois jääneet ammattitehtävät: Camping 101: Leatherworking ja Camping 101: Skinning Horden Shamanin Mulgore-aloituksesta (Warriorilla nyt mukana) sekä Camping 101: Fishing ja Camping 101: Tailoring Alliancen Warriorin Zephras-aloituksesta.
+- Muut reittisiirtymät: Alliancen Priestin Northshire-aloituksesta pois Wine Shop Advert, Horden Paladinilta pois Tablet of the Seven ja Roguelta Investigate the Camp.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-questien kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5858 -> 5893 min (+0,6 %), Alliance 6171 -> 6379 min (+3,4 %). Aika kasvaa, koska reitillä on enemmän questeja ja valmiita ketjuja; käyttäjä hyväksyi tämän.
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 48ce570 (1.1.3). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.4.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.4.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.3
 
 Quest-datan päivitys (QuestieDB 4f628e8 -> 48ce570, 1.1.3; 9 committia):

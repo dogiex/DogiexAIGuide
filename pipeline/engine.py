@@ -232,7 +232,7 @@ class Sim:
             # objective mobs too high?
             for ob in p['obs']:
                 ml=ob['loc'][4]
-                if ml and ml>s.L+3.5: return None
+                if ml and ml>s.L+3.5 and not all(k=='npc' and friendly(x) for k,x in obj_sources(ob['ob'])): return None   # v4.4: ystävällinen NPC (puhu-krediitti) ei ole tapettava kohde
         return p
     def run(s):
         for vi,v in enumerate(s.visits):

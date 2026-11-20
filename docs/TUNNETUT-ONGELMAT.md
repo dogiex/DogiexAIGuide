@@ -5,8 +5,6 @@ Nämä asiat tiedetään jo. Niistä ei tarvitse tehdä uutta ilmoitusta, ellei 
 Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-datasta, joten osa puutteista korjautuu, kun QuestieDB päivittyy.
 
 ## Questit, jotka puuttuvat oppaasta
-- **Camping 101: Cooking (Zephras)**: palauttaja ei ole reitin varrella.
-- **Blood in the Streets** ja jatko **Heart of Disruption** (Horde, Dalaran, v4.3): QuestieDB:n uusi tavoite on tason 60 NPC, jota oppaan reitinlaskenta pitää liian vaikeana kohteena. Voit tehdä ne itse, jos olet Dalaran Patrolsin jälkeen alueella.
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **Weed Whacked** (Stranglethorn Vale): QuestieDB-datassa questin antajalta puuttuu faction-tieto.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
@@ -33,7 +31,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Ammatit
 - **Guidelime** näyttää ammattitehtävän palautusrivin, vaikka tehtävää ei olisi otettu.
 - **Artisan-tason** tehtävävaatimukset ja erikoistumiset (Gnome/Goblin Engineering, Armorsmith/Weaponsmith) ovat mukana vain tehtävinä, ilman tarkempaa opastusta. Ammattitehtävät yli taidon 250 puuttuvat.
-- Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi v4.2:sta alkaen **A Yeti of Your Own** (Engineering) puuttuu osalta luokista ja **Wild Leather** -tehtävät (Leatherworking) Alliancen Magelta, Paladinilta, Shamanilta ja Warlockilta.
+- Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi **A Yeti of Your Own** (Engineering) puuttuu osalta luokista (v4.4:ssä Horden Hunterilta, Magelta, Paladinilta, Priestiltä, Roguelta, Shamanilta ja Warlockilta sekä Alliancen Shamanilta) ja **Wild Leather** -tehtävät (Leatherworking) osalta Alliancen luokista.
 
 ## Dungeonit
 - **Ruins of Lordaeron** (Alliance): reitti kulkee Southshoresta Undercityyn, joten PvP-merkintä tulee päälle Undercityssä.
