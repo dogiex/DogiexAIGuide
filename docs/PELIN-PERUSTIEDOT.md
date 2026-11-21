@@ -1,6 +1,6 @@
 # Pelin perustiedot
 
-Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 20.11.2026. Siirretty claude.ai-projektista repoon 13.11.2026.
+Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 21.11.2026. Siirretty claude.ai-projektista repoon 13.11.2026.
 
 ## Peli
 - Versio: World of Warcraft: Forever (RestedXP:n pelityyppi "camelot", TOC Interface 16001)
@@ -102,6 +102,9 @@ Täydennä puuttuvat kohdat (merkitty "?"). Päivitetty 20.11.2026. Siirretty cl
 - Dun Moroghin spawnit (käyttäjän päätös 13.11.2026: korjaus myös Hordelle): QuestieDB-viennissä alueen 1 spawnit ovat JSON-listana, ja elig.py `spawns_of` ohitti ne. Korjaus on nyt käytössä molemmille factioneille. Horde-opas ajettiin kokonaan uudelleen (runall.sh, 9 luokkaa): compare.py ei löytänyt yhtään muuttunutta questia, kaikki tasolle 60, Guidelime-tiedostot identtiset v1.5:n kanssa. Uutta versiota ei julkaistu, koska opas ei muuttunut.
 
 ## Avoimet asiat
+- QuestieDB 5b857c2 (21.11.2026, 5 committia 48ce570:n jälkeen, 1.1.3: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys sekä quest-XP-data) odottaa: uudelleenrakennus heikensi dungeon-kattavuutta, joten v4.4 jäi voimaan eikä state.json:n committia päivitetty (vertailu toistuu seuraavalla ajolla). Rakennus muuten kunnossa (kaikki tasolle 60, validointi 0 virhettä, Lua-koe ok, timesim Horde -0,5 %, Alliance -0,0 %).
+  - City of Dalaran, kaikki Alliance-luokat (4/4 -> 2/4): QuestieDB poisti Emissary Jacquesilta (247264, Hillsbrad) faction-tiedon `A`, joten hänen ainoana antamansa An Alarming Request 92432 ei kelpaa, ja sitä esiquestina vaativat Starving Arcane 92457 ja Heart of Disruption 92458 jäävät pois. Peruste datassa; todennäköisesti QuestieDB-virhe (sama tilanne kuin Weed Whacked 97453).
+  - Blackrock Spire, Alliance Shaman (16/21 -> 15/21): In Demand - Blackrock Legal Records 96075 (vaatii tason 60, Pix Xizzix Booty Bayssä) jää pois, koska reitti siirtyi ja BRD/LBRS-käynnit osuvat tasolle 59,3. Questin data ei muuttunut, joten kyse on reittisiirtymästä ilman suoraa dataperustetta. Korjaus vaatisi koodimuutoksen (esim. tason 60 dungeon-questin otto ennen viimeistä BRD/LBRS-käyntiä); ei tehty ajastetussa ajossa.
 - Taming the Beast, Zephras Isle (v4.2): QuestieDB 4f628e8 merkitsi pet-ketjun 94013, 94050, 94978 ja 94979 vain Alliancen Skybornelle (rotumaski 2^32, ennen molemmat Skybornet), joten Horden Skyborne-Hunterille jää ketjusta vain Taming the Beast 94007 (ennen 4/4, nyt 1/1). Voi olla QuestieDB-virhe; paranee datakorjauksella.
 - Questiketjut (v4.0): kesken jääviä ketjuja on yhä noin 45 rotua kohti. Syyt: jatkon data puuttuu QuestieDB:stä (noin 30 katkoa per luokka, `chainfail` osien JSONissa), jatko vaatii muita questeja, tai jatko on dungeon- tai class-quest. Aloitusalueen ketjut tehdään aloitusosassa loppuun, vaikka pääreitti kulkisi myöhemmin samalla alueella, koska pääreitti on yhteinen eri aloituksille (esim. Durotarin Demon Seed -ketju vie Barrensiin tasolla 12, noin 20 min).
 - Elite-questien aika: aikasimulaatio laskee elite-tapot kuten tavalliset (18 s), joten ryhmän etsiminen ja vaikeus eivät näy; ohittaminen säästää Hordella noin 85 min (tselite.py).
