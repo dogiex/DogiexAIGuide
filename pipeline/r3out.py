@@ -417,6 +417,7 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 has=any(s2['type']!='visit' for s2 in simsteps[idx+1:idx+2])
                 if has:
                     if nm not in chap['dungeons']: chap['dungeons'].append(nm)
+                    if v.get('dqlv'): add(dict(t='xp',level=v['dqlv']))   # v4.5: tavoitetaso dungeon-questin vaatimustasoon (r3.py)
                     add(dict(t='dnote',d=v['block'],level=v.get('min') or int(lvl)))
             elif v.get('lvl6'):
                 # aloitusalueen tasokäynti: grindaa tasolle 6 alueella ja opettele taidot sen trainerilta

@@ -1,3 +1,45 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.5
+
+Quest-datan päivitys (QuestieDB 48ce570 -> 9921e9b, 1.1.4; 21 committia):
+- Foreverin quest-, NPC-, objekti- ja esinedatan päivitykset, quest-XP-data ja quest-korjauksia. Oppaan questeista muuttui 50.
+- Uutena kaikille Horden luokille mm. An Earnest Proposition, Scalebeard, The Source of the Corruption, Ward Restocking, Gritty Business, Stolen Freewind Supplies ja Swift as the Wind; kaikille Alliancen luokille mm. A Binding Contract, Fledgling Rescue, Hearts of the Lost, Bring Back a Bang, Accessories of the Lost, The Source of the Corruption ja Trying Times.
+
+Reitinlaskennan korjaus (käyttäjän päätös 22.11.2026):
+- Jos dungeon-quest vaatii enintään yhden tason enemmän kuin pelaajalla on dungeonin viimeisellä käynnillä, oppaaseen tulee ennen käyntiä tavoitetaso questin vaatimustasoon. Ennen quest jäi silloin kokonaan pois.
+- Käytännössä: Blackrock Depthsin viimeisen käynnin edessä on Alliancessa tavoitetaso 60, ja In Demand - Blackrock Legal Records (Blackrock Spire) pysyy reitillä. Horden reitti ei muuttunut tämän vuoksi.
+- Sivuvaikutus Alliancessa: aiemmin tämä quest esti questien karsinnan kokonaan (karsinta perutaan, jos se veisi dungeon-questin), joten reitillä oli noin 90-120 aika–XP-suhteeltaan heikkoa questia per luokka (Shamania lukuun ottamatta). Nyt karsinta toimii taas, ja ne jäävät pois.
+
+Datan perusteella pois:
+- City of Dalaran (Alliance, kaikki luokat): An Alarming Request, Starving Arcane ja Heart of Disruption. Questin antajalta (Emissary Jacques) puuttuu nyt datasta faction-tieto. Todennäköisesti QuestieDB-virhe; ks. Tunnetut ongelmat.
+- Seeking the Kor Gem (Horden Paladin): quest on nyt datassa A Moon-Kissed Bladen alaquest, eikä A Moon-Kissed Blade ole reitillä (puutteellinen data).
+
+Karsinnan vuoksi pois (Alliance, normaaleja questeja; class- ja dungeon-questit ennallaan):
+- Druid, Hunter, Mage, Paladin, Priest, Rogue, Warlock, Warrior: mm. Messenger to Stormwind/Westfall/Darkshire, Look To The Stars, Speaking of Fortitude -ketju, Encrypted Letter -ketju, Velinde Starsong -ketju (Barrens Port, Scythe of Elune), The Missing Diplomat -ketju, Stonetalonin ja Feralasin questeja, Goblin Sponsorship -ketju (Druid, Hunter, Priest, Rogue), Magen, Warlockin ja Warriorin Stranglethornin Nesingwary-ketjut sekä Magen, Roguen, Warlockin ja Warriorin The Absent Minded Prospector.
+- Tilalle Magelle, Warlockille ja Warriorille mm. Desolacen questeja (Vahlarriel's Search, Kodo Roundup, Gizelton Caravan) sekä Paladinille, Warlockille ja Warriorille Shimmering Flatsin questeja (Goblin Sponsorship, Rocket Car Parts); muille Draenethyst Crystals -ketju ja A Call to Arms: The Plaguelands!.
+- Ammattitehtävät, jotka jäivät pois reitin muutoksen vuoksi: My First Alchemy Set kaikilta Alliancen luokilta, A Yeti of Your Own kaikilta paitsi Shamanilta (ei ollut ennenkään) ja Master of the Wild Leather Druidilta, Hunterilta, Magelta, Priestiltä, Warlockilta ja Warriorilta.
+- Alliance Shaman (911 questia, ennen 934): pois mm. The Black Shield -ketju, Galen's Escape ja The Divination -ketju; uutena mm. Tanariksen kuljetusquestit ja Trouble in Winterspring!.
+- Alliance Paladin: reitille tuli Oi!, joka on QuestieDB:ssä mutta jonka olemassaolo Foreverissa on epävarma (Season of Discovery -quest). Ohita, jos sitä ei löydy.
+
+Reittisiirtymät (Horde; class- ja dungeon-questit ennallaan):
+- Warrior 948 -> 915: pois mm. Are We There, Yeti? -ketju ja A Yeti of Your Own (ammattitehtävä), Un'Goro Soil, Uldumin ketju, Tablet of the Seven, Southwindin ketju, A Bundle of Hides; uutena Study of the Elements: Rock -ketju.
+- Rogue 904 -> 950: samat ketjut uutena (myös A Yeti of Your Own).
+- Muut: Hunter, Paladin, Priest ja Warlock pois Family Tree, Mage, Paladin, Shaman ja Warrior pois Investigate the Camp, Mage ja Warlock pois Study of the Elements: Rock, Paladin pois A Worthy Endeavor ja uutena Collection of Goods, Warlock uutena Deadmire ja Mirrorscale; vaihtoehtoisten versioiden vaihtoja (A Call to Arms: The Plaguelands!, Assisting Arch Druid Runetotem, The New Frontier).
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Kattavuus heikkeni vain yllä mainituissa datan perusteella (Dalaran, Seeking the Kor Gem).
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää kummallakin): Horde 5885 -> 5906 min (+0,4 %), Alliance 6379 -> 6224 min (-2,4 %). Alliance Shaman 6166 -> 6280 min (grindaus tasolle 60 ennen viimeistä Blackrock Depths -käyntiä).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 9921e9b (1.1.4). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.5.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.5.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.4
 
 Reitinlaskennan korjaus (käyttäjän päätös 20.11.2026):

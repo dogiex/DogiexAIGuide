@@ -7,17 +7,18 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Questit, jotka puuttuvat oppaasta
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **Weed Whacked** (Stranglethorn Vale): QuestieDB-datassa questin antajalta puuttuu faction-tieto.
+- **An Alarming Request, Starving Arcane ja Heart of Disruption** (Alliance, Dalaran, v4.5): QuestieDB-datassa questin antajalta (Emissary Jacques) puuttuu faction-tieto, joten ne puuttuvat oppaasta.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
 ## Class-questit, jotka eivät ole reitillä
 - **Season of Discovery -rune-questit**, jotka ovat QuestieDB:n Forever-datassa, mutta joiden olemassaolo Foreverissa on epävarma: Elemental Aid (Shaman), The Talisman of Kazdor ja The Eye of Bhossca (Rogue), Oi! (Paladin).
-- **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen.
+- **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen. v4.5:stä alkaen myös Seeking the Kor Gem puuttuu, koska se on datassa A Moon-Kissed Bladen osa.
 - **Call of Fire** (Skyborne Shaman, ohjausquest Zephras Islelle): QuestieDB-datassa ei ole questin antajaa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
 - **Taming the Beast** (Horden Skyborne Hunter, v4.2): QuestieDB merkitsee Zephras Islen pet-ketjun nyt vain Alliancen Skybornelle, joten oppaassa on ketjusta vain yksi quest. Korjautuu, jos data korjataan.
 
 ### Alliance (v3.0)
-- **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest.
+- **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest (v4.5:stä alkaen se on reitillä, mutta sen olemassaolo Foreverissa on epävarma: ohita, jos sitä ei löydy).
 - **Rogue**: Ravenholdtin ketju (Syndicate Sabotage, What's the Big Idea?, Covert Extraction, A Way In, Master of Disguise) jää pois kuten Hordella, koska The Manor, Ravenholdt alkaa esineestä. SI:7 ja To Hulfdan! ovat vaihtoehtoisia ohjausquesteja.
 - **Mage**: Investigate the Blue Recluse -ketju (Manaweave Robe) ei ole reitillä, ja Research Access vaatii Season of Discovery -kirjastoquestit.
 - **Warlock**: You Have Served Us Well (esiquest ei reitillä) ja Seeking Strahad.
@@ -31,7 +32,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Ammatit
 - **Guidelime** näyttää ammattitehtävän palautusrivin, vaikka tehtävää ei olisi otettu.
 - **Artisan-tason** tehtävävaatimukset ja erikoistumiset (Gnome/Goblin Engineering, Armorsmith/Weaponsmith) ovat mukana vain tehtävinä, ilman tarkempaa opastusta. Ammattitehtävät yli taidon 250 puuttuvat.
-- Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi **A Yeti of Your Own** (Engineering) puuttuu osalta luokista (v4.4:ssä Horden Hunterilta, Magelta, Paladinilta, Priestiltä, Roguelta, Shamanilta ja Warlockilta sekä Alliancen Shamanilta) ja **Wild Leather** -tehtävät (Leatherworking) osalta Alliancen luokista.
+- Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi **A Yeti of Your Own** (Engineering) puuttuu osalta luokista (v4.5:ssä kaikilta paitsi Horden Druidilta ja Roguelta) ja **Wild Leather** -tehtävät (Leatherworking) sekä **My First Alchemy Set** (Alchemy) osalta tai kaikilta Alliancen luokista.
 
 ## Dungeonit
 - **Ruins of Lordaeron** (Alliance): reitti kulkee Southshoresta Undercityyn, joten PvP-merkintä tulee päälle Undercityssä.

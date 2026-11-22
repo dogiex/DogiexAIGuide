@@ -300,6 +300,12 @@ class Sim3(Sim):
             # tavoitetaso ketjun ensimmäiseen otettavaan questiin, ettei ketju jää pois
             rl=[q(x,'requiredLevel') or 1 for x in only if x not in s.done and x not in s.log and s.prereq_ok(x)]
             if rl and s.L<min(rl)<=v['tmin']: v['min']=min(rl)
+        if d and s.L<60 and s.next_block(vi+1,d) is None:
+            # v4.5 (käyttäjän päätös 22.11.2026, vaihtoehto A): dungeonin viimeisellä käynnillä tavoitetaso, jos dungeon-quest jäisi pois
+            # vain siksi, että vaatimustaso on enintään yhden tason päässä (esim. In Demand - Blackrock Legal Records 96075, taso 60)
+            rl=[q(x,'requiredLevel') or 1 for x in only if x in QD and x not in s.done and x not in s.log and x not in s.skip
+                and s.prereq_ok(x) and s.L<(q(x,'requiredLevel') or 1)<=L0+1 and s.plan3(x,v['zones'],d)]
+            if rl and max(rl)>(v.get('min') or 0): v=dict(v,min=max(rl),dqlv=max(rl))   # kopio: ei jää käyntilistaan seuraaviin simulaatioajoihin
         s.emit(type='visit',vi=vi,v=v,level=round(L0,2))
         mn=v.get('min')
         if mn and s.L<mn:
