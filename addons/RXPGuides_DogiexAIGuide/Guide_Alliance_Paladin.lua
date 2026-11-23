@@ -7241,7 +7241,6 @@ step
     .goto 1453/0,881.97,-8577.32
     >>Puhu: |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
     .turnin 98191 >>Palauta: A Friend of the Family
-    .accept 98219 >>Ota: The Shamed Lieutenant
     .target Lord Grayson Shadowbreaker
 step
     .goto 1453/0,886.66,-8634.31
@@ -7266,16 +7265,6 @@ step
     .goto 1437/0,-889.97,-3917.43
     >>Klikkaa: |cRXP_PICK_Waterlogged Chest|r
     .accept 324 >>Ota: The Lost Ingots
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Southshore >>Lennä: Southshore
-    .target Shellei Brondir
-    .zoneskip Hillsbrad Foothills
-step
-    .goto 1424/0,-581.33,-845.87
-    >>Puhu: |cRXP_FRIENDLY_Lieutenant Farren Orinelle|r
-    .turnin 98219 >>Palauta: The Shamed Lieutenant
-    .target Lieutenant Farren Orinelle
 step
     .zone Arathi Highlands >>Matkusta: Arathi Highlands. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 step
@@ -11582,34 +11571,16 @@ step
     .mob Black Slayer
     .mob Bonepicker
 step
-    .goto 1419/0,-3288.52,-11245.60
-    >>Kerää |cRXP_LOOT_Basilisk Brain|r (|cRXP_ENEMY_Redstone Crystalhide|r, |cRXP_ENEMY_Redstone Basilisk|r)
-    .complete 2583,3
-    .complete 2601,1
-    .mob Redstone Crystalhide
-    .mob Redstone Basilisk
-step
     .goto 1419/0,-3368.92,-10946.33
     >>Puhu: |cRXP_FRIENDLY_Bernie Heisten|r
     .accept 87295 >>Ota: Deflective Surface
     .target Bernie Heisten
 step
-    .goto 1419/0,-2936.77,-10886.03
-    >>Puhu: |cRXP_FRIENDLY_Bloodmage Lynnore|r
-    .turnin 2603 >>Palauta: Vulture's Vigor
-    .turnin 2601 >>Palauta: The Basilisk's Bite
-    .target Bloodmage Lynnore
-step
-    .goto 1419/0,-3070.77,-11388.53
-    >>Kerää |cRXP_LOOT_Blasted Boar Lung|r (|cRXP_ENEMY_Helboar|r, |cRXP_ENEMY_Ashmane Boar|r)
-    .complete 2581,2
-    .complete 2583,1
-    .complete 2585,3
-    .mob Helboar
-    .mob Ashmane Boar
-step
     .goto 1419/0,-3288.52,-11245.60
+    >>Kerää |cRXP_LOOT_Basilisk Brain|r (|cRXP_ENEMY_Redstone Crystalhide|r, |cRXP_ENEMY_Redstone Basilisk|r)
     >>Kerää |cRXP_LOOT_Redstone Basilisk Scale|r (|cRXP_ENEMY_Redstone Crystalhide|r, |cRXP_ENEMY_Redstone Basilisk|r)
+    .complete 2583,3
+    .complete 2601,1
     .complete 87295,1
     .mob Redstone Crystalhide
     .mob Redstone Basilisk
@@ -11618,6 +11589,20 @@ step
     >>Puhu: |cRXP_FRIENDLY_Bernie Heisten|r
     .turnin 87295 >>Palauta: Deflective Surface
     .target Bernie Heisten
+step
+    .goto 1419/0,-2936.77,-10886.03
+    >>Puhu: |cRXP_FRIENDLY_Bloodmage Lynnore|r
+    .turnin 2603 >>Palauta: Vulture's Vigor
+    .turnin 2601 >>Palauta: The Basilisk's Bite
+    .target Bloodmage Lynnore
+step
+    .goto 1419/0,-2729.07,-11326.00
+    >>Kerää |cRXP_LOOT_Blasted Boar Lung|r (|cRXP_ENEMY_Helboar|r, |cRXP_ENEMY_Ashmane Boar|r)
+    .complete 2581,2
+    .complete 2583,1
+    .complete 2585,3
+    .mob Helboar
+    .mob Ashmane Boar
 step
     .goto 1419/0,-2933.42,-10883.80
     >>Puhu: |cRXP_FRIENDLY_Bloodmage Drazial|r

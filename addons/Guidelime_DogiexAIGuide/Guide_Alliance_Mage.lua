@@ -1477,7 +1477,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Mage)]
-[NX38-42 1K Needles, Desolace, Dustwallow + Exc. Site (Mage)]
+[NX38-42 1K Needles, Desolace, Dustwallow + Exc. Site/Dalaran (Mage)]
 [XP25 Tavoitetaso 25: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Darkshire]
 [G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA98 The Legend of Stalvan]
@@ -1580,14 +1580,12 @@ Guidelime.registerGuide([[
 [G 75.8,36.7 Stormwind City]Puhu: *Major Samuelson* [QT563 Reassignment]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QT98190 A Friend of the Family]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QA98191 A Friend of the Family]
-[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family] [QA98219 The Shamed Lieutenant]
+[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family]
 [G 48.1,55.1 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gregory Ardus*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Menethil Harbor]
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT270 The Doomed Fleet] [QA321 Lightforge Iron]
 [G 12.1,64.2 Wetlands]Klikkaa: *Waterlogged Chest* [QT321 Lightforge Iron] [QA324 The Lost Ingots]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Southshore]
-[G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT98219 The Shamed Lieutenant]
-[G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Refuge Pointe]
+[OC]Matkusta: *Arathi Highlands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 22.3,95.8 Arathi Highlands]Kerää *Lightforge Ingot* (Bluegill Raider) [QC324,1 The Lost Ingots]
 [OC]Matkusta: *Wetlands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT324 The Lost Ingots] [QA322 Blessed Arm]
@@ -1774,8 +1772,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
-[N38-42 1K Needles, Desolace, Dustwallow + Exc. Site (Mage)]
-[NX42-46 Wetlands, Arathi, Badlands + Dalaran/SM/RFD/Ulda (Mage)]
+[N38-42 1K Needles, Desolace, Dustwallow + Exc. Site/Dalaran (Mage)]
+[NX42-46 Alterac, Dustwallow, STV + SM/RFD/Ulda (Mage)]
 [XP30 Tavoitetaso 30: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Stonetalon Peak]
 [OC]Matkusta: *Desolace*. Lennä Nijel's Pointiin. Ensimmäisellä kerralla: Stonetalon Mountainsin eteläpäästä Desolaceen
@@ -1891,11 +1889,13 @@ Guidelime.registerGuide([[
 [G 35.7,10.8 Stranglethorn Vale]Puhu: *Hemet Nesingwary* [QT5762 Hemet Nesingwary]
 [H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
 [G 26.4,73.6 Stranglethorn Vale]Puhu: *Wharfmaster Lozgil* [QT97328 Anything of Value] [QT97331 Zimmix's Great Escape]
-[G 26.9,83.8 Stranglethorn Vale]Kerää *Snuff* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC587,1 Up to Snuff]
 [O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
+[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
+[G 27.7,76.7 Stranglethorn Vale]Puhu: *Captain Aransas* [QT97048 Returning to Port]
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley]
+[G 26.9,83.8 Stranglethorn Vale]Kerää *Snuff* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC587,1 Up to Snuff]
 [G 26.9,77.3 Stranglethorn Vale]Puhu: *Deeg* [QT587 Up to Snuff]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QA617 Akiris by the Bundle]
-[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT578 The Stone of the Tides] [QA601 Water Elementals]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QA604 The Bloodsail Buccaneers]
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT189 Bloodscalp Ears] [QT213 Hostile Takeover] [QA209 Skullsplitter Tusks]
@@ -1906,23 +1906,15 @@ Guidelime.registerGuide([[
 [G 27.9,64.6 Stranglethorn Vale]Kerää *Akiris Reed* (Naga Explorer) [QC617,1 Akiris by the Bundle]
 [G 31.0,81.1 Stranglethorn Vale]Tapa *Bloodsail Swashbuckler*; Kerää *Bloodsail Charts* (Bloodsail Charts); Kerää *Bloodsail Orders* (Bloodsail Orders); Kerää *Dizzy's Eye* (Bloodsail Sea Dog, Bloodsail Elder Magus, Bloodsail Warlock) [QC604,1 The Bloodsail Buccaneers] [QC604,2 The Bloodsail Buccaneers] [QC604,3 The Bloodsail Buccaneers] [QC576,1 Keep An Eye Out]
 [G 26.8,76.4 Stranglethorn Vale]Puhu: *Privateer Bloads* [QT617 Akiris by the Bundle] [QA623 Akiris by the Bundle]
+[G 28.6,75.9 Stranglethorn Vale]Puhu: *Dizzy One-Eye* [QT576 Keep An Eye Out]
+[G 28.4,75.4 Stranglethorn Vale][V Myy harmaat roinat] (*Bubbles*)
 [G 42.2,46.2 Stranglethorn Vale]Kerää *Singing Blue Crystal* (Venture Co. Strip Miner, Venture Co. Tinkerer, Venture Co. Surveyor); Kerää *Skullsplitter Tusk* (Skullsplitter Warrior, Skullsplitter Axe Thrower, Skullsplitter Mystic) [QC600,1 Venture Company Mining] [QC209,1 Skullsplitter Tusks]
 [G 39.1,31.9 Stranglethorn Vale]Kerää *Snapjaw Crocolisk Skin* (Snapjaw Crocolisk) [QC577,1 Some Assembly Required]
 [G 20.9,23.3 Stranglethorn Vale]Kerää *Water Elemental Bracers* (Lesser Water Elemental) [QC601,1 Water Elementals]
 [G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT601 Water Elementals] [QA602 Magical Analysis]
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT607 Return to MacKinley] [QA609 Voodoo Dues]
-[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT600 Venture Company Mining] [QA621 Zanzil's Secret]
 [G 27.2,77.0 Stranglethorn Vale]Puhu: *Fleet Master Seahorn* [QT604 The Bloodsail Buccaneers]
-[G 27.7,76.7 Stranglethorn Vale]Puhu: *Captain Aransas* [QT97048 Returning to Port]
-[G 28.6,75.9 Stranglethorn Vale]Puhu: *Dizzy One-Eye* [QT576 Keep An Eye Out]
-[G 28.4,75.4 Stranglethorn Vale][V Myy harmaat roinat] (*Bubbles*)
-[G 27.0,77.3 Stranglethorn Vale][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Skindle*)
-[G 38.7,59.8 Stranglethorn Vale]Kerää *Zanzil's Mixture* (Zanzil Naga, Zanzil Zombie, Zanzil Witch Doctor); Kerää *Chucky's Huge Ring* (Chucky "Ten Thumbs") [QC621,1 Zanzil's Secret] [QC609,3 Voodoo Dues]
-[G 35.3,51.3 Stranglethorn Vale]Kerää *Maury's Clubbed Foot* (Maury "Club Foot" Wilkins); Kerää *Jon-Jon's Golden Spyglass* (Jon-Jon the Crow) [QC609,1 Voodoo Dues] [QC609,2 Voodoo Dues]
-[H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
 [G 27.0,77.1 Stranglethorn Vale]Puhu: *Kebok* [QT209 Skullsplitter Tusks]
-[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT621 Zanzil's Secret]
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT609 Voodoo Dues]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT600 Venture Company Mining]
 [G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT577 Some Assembly Required]
 [O][G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QA628 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 28.2,22.3 Stranglethorn Vale]Kerää *Elder Crocolisk Skin* (Elder Saltwater Crocolisk (elite, ryhmä)) [QC628,1 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -1932,6 +1924,7 @@ Guidelime.registerGuide([[
 [O][G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QA206 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 52.9,27.6 Stranglethorn Vale]Kerää *Mind's Eye* (Mai'Zoth (elite, ryhmä)) [QC206,1 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 37.8,3.6 Stranglethorn Vale]Puhu: *Brother Nimetz* [QT206 Mai'Zoth] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[H Hearthstone: Innkeeper Skindle] (jos cooldownilla, juokse tai lennä)
 [O][G 28.3,77.6 Stranglethorn Vale]Puhu: *Drizzlik* [QT628 Excelsior] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP32 Tavoitetaso 32: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Southshore]
@@ -1947,6 +1940,7 @@ Guidelime.registerGuide([[
 [G 50.4,59.0 Hillsbrad Foothills]Puhu: *Phin Odelic* [QT661 Hints of a New Plague?]
 [O][G 49.5,58.7 Hillsbrad Foothills]Puhu: *Marshal Redpath* [QA504 Crushridge Warmongers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 51.2,57.0 Hillsbrad Foothills][V Myy harmaat roinat] ja [R korjaa varusteet] (*Robert Aebischer*)
+[G 51.2,58.9 Hillsbrad Foothills][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Anderson*)
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [O][G 36.7,54.1 Alterac Mountains]Tapa *Crushridge Warmonger (elite, ryhmä)* [QC504,1 Crushridge Warmongers] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
@@ -1963,13 +1957,6 @@ Guidelime.registerGuide([[
 [G 47.8,56.2 Wetlands]*Mene dungeoniin: Excavation Site*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Horrible Rootcore* (Highland Horror); Kerää *Titan Relic* (Relic Guardian) [QC95646,1 Horrors in the Highland] [QC95810,1 Lost Relic Carry]
 [G 38.8,52.4 Wetlands]Puhu: *Prospector Whelgar* [QT95810 Lost Relic Carry] [QA98824 Prehistoric Prism]
 [G 56.4,40.4 Wetlands]Puhu: *Rethiel the Greenwarden* [QT95646 Horrors in the Highland]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Skyborne,Mage]
-[N42-46 Wetlands, Arathi, Badlands + Dalaran/SM/RFD/Ulda (Mage)]
-[NX46-50 Badlands, Dustwallow, Tanaris (Mage)]
 [XP33 Tavoitetaso 33: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Arathi Highlands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 32.3,81.4 Arathi Highlands]Puhu: *Shakes O'Breen* [QT670 Sunken Treasure] [QA667 Death From Below]
@@ -1980,7 +1967,6 @@ Guidelime.registerGuide([[
 [O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QT652 Breaking the Keystone] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 36.1,58.1 Arathi Highlands]Klikkaa: *Keystone* [QA653 Myzrael's Allies] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [G 45.7,46.1 Arathi Highlands]Lennä (*Cedrik Prose*): [F Ironforge]
-[G 27.2,8.3 Ironforge][T Mage-trainer (taso 42)] (*Bink*): Arcane Intellect r4, Cone of Cold r3, Conure Food r5, Fireball r8
 [O][A First Aid225][G 55.1,58.3 Ironforge]Ammattitehtävä (First Aid 225+): puhu *Nissa Firestone* [QA6625 Alliance Trauma] Tavoite: Travel to Theramore in the Dustwallow Marsh and speak with Doctor Gustaf VanHowzen about joining the ranks of Alliance Trauma.
 [O][A Blacksmithing200][G 50.3,43.6 Ironforge]Ammattitehtävä (Blacksmithing 200+): puhu *Ironus Coldsteel* [QA5284 The Way of the Weaponsmith] Tavoite: To become a Weaponsmith, you must make the following items and return them to Ironus: 4 Moonsteel Broadswords, 4 Massive Iron Axes, 2 Heavy Mithril Axes, and 2 Big...
 [O][A Cooking225][G 60.1,36.4 Ironforge]Ammattitehtävä (Cooking 225+): puhu *Daryl Riknussun* [QA6612 I Know A Guy...] Tavoite: Travel to Gadgetzan in the Tanaris desert and speak with Dirge Quikcleave about advancing your cooking career.
@@ -2009,6 +1995,13 @@ Guidelime.registerGuide([[
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Southshore]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
 [G 8.5,59.2 Alterac Mountains]*Mene dungeoniin: City of Dalaran*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Fel Infused Blossom* (Fel Plant); Tapa *Arcanic Enigma* [QC92456,1 A Green Sample] [QC92489,1 Power Overwhelming]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
+[GA Human,Gnome,Skyborne,Mage]
+[N42-46 Alterac, Dustwallow, STV + SM/RFD/Ulda (Mage)]
+[NX46-50 Badlands, Dustwallow, Tanaris (Mage)]
 [OC]*Dungeon: Scarlet Monastery* (suositus taso 34+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Tirisfal Glades) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 49.3,52.3 Hillsbrad Foothills]Lennä (*Darla Harris*): [F Ironforge]
 [O][A Blacksmithing200][G 50.3,43.6 Ironforge]Ammattitehtävä: palauta *Ironus Coldsteel* [QT5284 The Way of the Weaponsmith] (jos tavoite valmis)
@@ -2024,7 +2017,9 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Hillsbrad Foothills*. Menethil Harborista pohjoiseen Thandol Spanin yli Arathiin ja länteen Southshoreen, tai lennä Southshoreen
 [G 51.5,58.4 Hillsbrad Foothills]Puhu: *Raleigh the Devout* [QT1053 In the Name of the Light]
 [OC]Matkusta: *Alterac Mountains*. Southshoresta pohjoiseen Alterac Mountainsiin
+[G 17.7,69.5 Alterac Mountains][T Mage-trainer (taso 42)] (*Jessa Weaver*): Arcane Intellect r4, Cone of Cold r3, Conure Food r5, Fireball r8
 [G 9.5,62.2 Alterac Mountains]Puhu: *Magus Olvek* [QT96800 Past Due]
+[G 12.0,70.5 Alterac Mountains][V Myy harmaat roinat] ja [R korjaa varusteet] (*Abra Cadabra*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Theramore]
 [G 46.1,57.1 Dustwallow Marsh]Puhu: *Tabetha* [QT1951 Rituals of Power] [QA1952 Mage's Wand]
@@ -2038,7 +2033,6 @@ Guidelime.registerGuide([[
 [G 67.9,46.1 Ironforge]Puhu: *Klockmort Spannerspan* [QT2924 Essential Artificials]
 [G 69.8,48.1 Ironforge]Puhu: *Master Mechanic Castpipe* [QT2930 Data Rescue]
 [G 68.8,49.0 Ironforge]Puhu: *High Tinker Mekkatorque* [QT2929 The Grand Betrayal]
-[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [G 69.5,50.3 Ironforge]Puhu: *Tinkmaster Overspark* [QT2922 Save Techbot's Brain!]
 [G 66.2,54.5 Ironforge][V Myy harmaat roinat] (*Soolie Berryfizz*)
 [G 18.1,51.5 Ironforge][V Osta ruokaa ja vettä vain tarvittaessa (Conjure Food/Water riittää yleensä)] (*Innkeeper Firebrew*)
@@ -2090,21 +2084,28 @@ Guidelime.registerGuide([[
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Booty Bay]
 [O][A Fishing125][G 27.4,77.2 Stranglethorn Vale]Ammatti Fishing 125+: osta ja lue kirja *Expert Fishing - The Bass and You* (*Old Man Heming*) avataksesi Expert Fishing [LE Fishing 225]
 [G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QT603 Ansirem's Key] [QA610 "Pretty Boy" Duncan]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QA621 Zanzil's Secret]
 [O][A Blacksmithing210][G 28.9,75.4 Stranglethorn Vale]Ammattitehtävä: palauta *McGavan* [QT2759 In Search of Galvan] (jos tavoite valmis)
-[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA2872 Stoley's Debt]
+[O][A Blacksmithing200][G 29.0,75.6 Stranglethorn Vale]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Brikk Keencraft*) [LE Blacksmithing 300]
 [G 27.6,76.7 Stranglethorn Vale]Puhu: *Fin Fizracket* [QA348 Stranglethorn Fever]
-[G 35.0,60.9 Stranglethorn Vale]Kerää *Heart of Mokk* (Mokk the Savage) [QC348,1 Stranglethorn Fever]
-[G 27.7,42.7 Stranglethorn Vale]Kerää *Chilled Basilisk Haunch* (Cold Eye Basilisk) [QC212,1 A Meal Served Cold]
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA609 Voodoo Dues] [QA2872 Stoley's Debt]
+[G 35.0,60.9 Stranglethorn Vale]Kerää *Heart of Mokk* (Mokk the Savage); Kerää *Zanzil's Mixture* (Zanzil Naga, Zanzil Zombie, Zanzil Witch Doctor) [QC348,1 Stranglethorn Fever] [QC621,1 Zanzil's Secret]
+[G 40.0,58.2 Stranglethorn Vale]Kerää *Chucky's Huge Ring* (Chucky "Ten Thumbs") [QC609,3 Voodoo Dues]
+[G 36.2,43.6 Stranglethorn Vale]Kerää *Chilled Basilisk Haunch* (Cold Eye Basilisk) [QC212,1 A Meal Served Cold]
+[G 35.3,51.3 Stranglethorn Vale]Kerää *Maury's Clubbed Foot* (Maury "Club Foot" Wilkins); Kerää *Jon-Jon's Golden Spyglass* (Jon-Jon the Crow) [QC609,1 Voodoo Dues] [QC609,2 Voodoo Dues]
 [G 27.4,69.4 Stranglethorn Vale]Kerää *Catelyn's Blade* ("Pretty Boy" Duncan) [QC610,1 "Pretty Boy" Duncan]
 [G 27.6,76.7 Stranglethorn Vale]Puhu: *Fin Fizracket* [QT348 Stranglethorn Fever]
+[G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT609 Voodoo Dues]
+[G 27.1,77.2 Stranglethorn Vale]Puhu: *Crank Fizzlebub* [QT621 Zanzil's Secret]
 [G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QT610 "Pretty Boy" Duncan]
-[O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 27.3,77.5 Stranglethorn Vale]Puhu: *Catelyn the Blade* [QA611 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
+[O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QA613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 50.4,28.5 Stranglethorn Vale]Kerää *Maury's Key* (Mosh'Ogg Mauler (elite, ryhmä), Mosh'Ogg Shaman (elite, ryhmä), Mosh'Ogg Lord (elite, ryhmä)) [QC613,1 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 22.4,23.0 Stranglethorn Vale]Kerää *Stone of the Tides* (Gazban) [QC611,1 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 27.2,76.9 Stranglethorn Vale]Puhu: *Baron Revilgaz* [QT611 The Curse of the Tides] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 27.8,77.1 Stranglethorn Vale]Puhu: *"Sea Wolf" MacKinley* [QT613 Cracking Maury's Foot] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [XP38 Tavoitetaso 38: jos olet alle, toista edellinen dungeon tai grindaa]
+[G 27.5,77.5 Stranglethorn Vale][V Myy harmaat roinat] (*Jutak*)
 [G 27.5,77.8 Stranglethorn Vale]Lennä (*Gyll*): [F Lakeshire]
 [OC]Matkusta: *Swamp of Sorrows*. Duskwoodista Deadwind Passin läpi itään Swamp of Sorrowsiin, tai lennä Nethergarde Keepiin ja juokse pohjoiseen
 [G 15.8,36.5 Swamp of Sorrows]Kerää *Khadgar's Essays on Dimensional Convergence* (Tangled Horror, Swampwalker, Swampwalker Elder) [QC1364,1 Mazen's Behest]
@@ -2185,7 +2186,6 @@ Guidelime.registerGuide([[
 [O][A Mining200][G 50.0,26.3 Ironforge]Ammatti Mining 200+: opettele Artisan Mining ja uudet reseptit (*Geofram Bouldertoe*) [LE Mining 300]
 [O][A Herbalism200][G 55.9,59.1 Ironforge]Ammatti Herbalism 200+: opettele Artisan Herbalism ja uudet reseptit (*Reyna Stonebranch*) [LE Herbalism 300]
 [O][A Skinning200][G 39.9,32.5 Ironforge]Ammatti Skinning 200+: opettele Artisan Skinning ja uudet reseptit (*Balthus Stoneflayer*) [LE Skinning 300]
-[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [O][A Engineering200][G 68.5,43.5 Ironforge]Ammatti Engineering 200+: opettele Artisan Engineering ja uudet reseptit (*Springspindle Fizzlegear*) [LE Engineering 300]
 [G 74.2,9.4 Ironforge]Puhu: *Krom Stoutarm* [QA1360 Reclaimed Treasures]
 [G 74.6,11.7 Ironforge]Puhu: *Prospector Stormpike* [QA2398 The Lost Dwarves]
@@ -2241,6 +2241,7 @@ Guidelime.registerGuide([[
 [G 53.4,43.4 Badlands]Puhu: *Prospector Ryedol* [QT723 Prospect of Faith] [QA724 Prospect of Faith]
 [G 42.4,52.9 Badlands]Puhu: *Rigglefuzz* [QT2418 Power Stones]
 [G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Ironforge]
+[O][A Blacksmithing200][G 52.5,41.5 Ironforge]Ammatti Blacksmithing 200+: opettele Artisan Blacksmithing ja uudet reseptit (*Bengus Deepforge*) [LE Blacksmithing 300]
 [G 77.5,11.8 Ironforge]Puhu: *Historian Karnik* [QT724 Prospect of Faith] [QA725 Passing Word of a Threat]
 [G 77.3,9.7 Ironforge]Puhu: *Advisor Belgrum* [QT725 Passing Word of a Threat] [QA726 Passing Word of a Threat]
 [G 77.5,11.8 Ironforge]Puhu: *Historian Karnik* [QT726 Passing Word of a Threat]
@@ -2274,7 +2275,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
 [N46-50 Badlands, Dustwallow, Tanaris (Mage)]
-[NX50-54 Searing Gorge, Swamp, Dustwallow + ZF/Mara/ST (Mage)]
+[NX50-54 Tanaris, Azshara, Swamp + ZF/Mara/ST (Mage)]
 [G 33.9,51.0 Loch Modan]Lennä (*Thorgrum Borrelson*): [F Ironforge]
 [G 27.2,8.6 Ironforge][T Mage-trainer (taso 46)] (*Dink*): Ice Barrier r2, Arcane Explosion r5, Fire Blast r6, Mage Armor r2, Scorch r5
 [G 23.1,15.9 Ironforge][V Myy harmaat roinat] ja [R korjaa varusteet] (*Harick Boulderdrum*)
@@ -2498,13 +2499,6 @@ Guidelime.registerGuide([[
 [G 65.6,62.2 Searing Gorge]Klikkaa: *Wooden Outhouse* [QT4449 Caught!] [QA4450 Ledger from Tanaris]
 [G 65.5,62.2 Searing Gorge]Kerää *Goodsteel Ledger* (Goodsteel Ledger) [QC4450,1 Ledger from Tanaris]
 [G 64.0,68.0 Searing Gorge]Kerää *Solid Crystal Leg Shaft* (Glassweb Spider) [QC4450,2 Ledger from Tanaris]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
-[GA Human,Gnome,Skyborne,Mage]
-[N50-54 Searing Gorge, Swamp, Dustwallow + ZF/Mara/ST (Mage)]
-[NX54-58 Tanaris, Felwood, Barrens + BRD (Mage)]
 [G 37.9,30.9 Searing Gorge]Lennä (*Lanie Reed*): [F Nethergarde Keep]
 [OC]Matkusta: *Swamp of Sorrows*. Duskwoodista Deadwind Passin läpi itään Swamp of Sorrowsiin, tai lennä Nethergarde Keepiin ja juokse pohjoiseen
 [G 92.2,64.6 Swamp of Sorrows]Kerää *Goodsteel's Balanced Flameberge* (Jarquia) [QC4450,4 Ledger from Tanaris]
@@ -2513,6 +2507,13 @@ Guidelime.registerGuide([[
 [G 54.1,55.9 Dustwallow Marsh]Kerää *Overdue Package* (Damaged Crate) [QC4450,3 Ledger from Tanaris]
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
 [G 51.5,28.8 Tanaris]Puhu: *Krinkle Goodsteel* [QT4450 Ledger from Tanaris]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
+[GA Human,Gnome,Skyborne,Mage]
+[N50-54 Tanaris, Azshara, Swamp + ZF/Mara/ST (Mage)]
+[NX54-57 Tanaris, Felwood, Barrens + BRD (Mage)]
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
 [G 77.5,11.8 Ironforge]Puhu: *Historian Karnik* [QA3448 Passing the Burden]
 [G 77.3,9.7 Ironforge]Puhu: *Advisor Belgrum* [QT1139 The Lost Tablets of Will]
@@ -2783,8 +2784,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
-[N54-58 Tanaris, Felwood, Barrens + BRD (Mage)]
-[NX58-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Mage)]
+[N54-57 Tanaris, Felwood, Barrens + BRD (Mage)]
+[NX57-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Mage)]
 [XP51 Tavoitetaso 51: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Astranaar]
 [OC]Matkusta: *Felwood*. Lennä Talonbranch Gladeen tai Ashenvalen pohjoisosasta tietä Felwoodiin
@@ -3054,7 +3055,7 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Mage. Quest-data: QuestieDB.]
 [GA Human,Gnome,Skyborne,Mage]
-[N58-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Mage)]
+[N57-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Mage)]
 [XP54 Tavoitetaso 54: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talonbranch Glade]

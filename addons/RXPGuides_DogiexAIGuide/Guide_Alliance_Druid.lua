@@ -5803,7 +5803,7 @@ RXPGuides.RegisterGuide([[
 #name 30-34 Wetlands, Ashenvale, Darkshore + WC/BFD/Stocks (Druid)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
-#next 34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)
+#next 34-39 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)
 
 step
     .xp 23 >>Tavoitetaso 23 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
@@ -6618,10 +6618,10 @@ step
 RXPGuides.RegisterGuide([[
 #forever
 << Alliance Druid
-#name 34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)
+#name 34-39 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
-#next 38-42 1K Needles, Desolace, STV + Exc. Site/Dalaran (Druid)
+#next 39-42 Desolace, STV, Alterac + Exc. Site/Dalaran (Druid)
 
 step
     .goto 1431/0,-1151.17,-10559.07
@@ -7104,7 +7104,6 @@ step
     .goto 1453/0,881.97,-8577.32
     >>Puhu: |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
     .turnin 98191 >>Palauta: A Friend of the Family
-    .accept 98219 >>Ota: The Shamed Lieutenant
     .target Lord Grayson Shadowbreaker
 step
     .goto 1453/0,886.66,-8634.31
@@ -7130,16 +7129,6 @@ step
     >>Klikkaa: |cRXP_PICK_Waterlogged Chest|r
     .turnin 321 >>Palauta: Lightforge Iron
     .accept 324 >>Ota: The Lost Ingots
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Southshore >>Lennä: Southshore
-    .target Shellei Brondir
-    .zoneskip Hillsbrad Foothills
-step
-    .goto 1424/0,-581.33,-845.87
-    >>Puhu: |cRXP_FRIENDLY_Lieutenant Farren Orinelle|r
-    .turnin 98219 >>Palauta: The Shamed Lieutenant
-    .target Lieutenant Farren Orinelle
 step
     .zone Arathi Highlands >>Matkusta: Arathi Highlands. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 step
@@ -7965,16 +7954,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Pozzik|r
     .turnin 1194 >>Palauta: Rizzle's Schematics
     .target Pozzik
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Alliance Druid
-#name 38-42 1K Needles, Desolace, STV + Exc. Site/Dalaran (Druid)
-#version 1
-#group Dogiex's AI Guide: 1-60 (Forever)
-#next 42-46 Alterac, Dustwallow, Swamp + SM/RFD/Ulda (Druid)
-
 step
     .xp 30 >>Tavoitetaso 30 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -8234,6 +8213,16 @@ step
     >>Puhu: |cRXP_FRIENDLY_Azore Aldamort|r
     .turnin 6027 >>Palauta: Book of the Ancients
     .target Azore Aldamort
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Alliance Druid
+#name 39-42 Desolace, STV, Alterac + Exc. Site/Dalaran (Druid)
+#version 1
+#group Dogiex's AI Guide: 1-60 (Forever)
+#next 42-46 Alterac, Dustwallow, Swamp + SM/RFD/Ulda (Druid)
+
 step
     .xp 31 >>Tavoitetaso 31 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step

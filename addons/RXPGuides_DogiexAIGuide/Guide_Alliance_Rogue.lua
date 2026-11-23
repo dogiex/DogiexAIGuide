@@ -8862,7 +8862,6 @@ step
     .goto 1453/0,881.97,-8577.32
     >>Puhu: |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
     .turnin 98191 >>Palauta: A Friend of the Family
-    .accept 98219 >>Ota: The Shamed Lieutenant
     .target Lord Grayson Shadowbreaker
 step
     .goto 1453/0,886.66,-8634.31
@@ -8888,14 +8887,6 @@ step
     >>Klikkaa: |cRXP_PICK_Waterlogged Chest|r
     .turnin 321 >>Palauta: Lightforge Iron
     .accept 324 >>Ota: The Lost Ingots
-step
-    .hs >>Hearthstone: Innkeeper Anderson
-    .cooldown item,6948,>0
-step
-    .goto 1424/0,-581.33,-845.87
-    >>Puhu: |cRXP_FRIENDLY_Lieutenant Farren Orinelle|r
-    .turnin 98219 >>Palauta: The Shamed Lieutenant
-    .target Lieutenant Farren Orinelle
 step
     .zone Arathi Highlands >>Matkusta: Arathi Highlands. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 step
@@ -10337,16 +10328,12 @@ step
     .goto 1434/0,536.18,-14299.82
     >>Puhu: |cRXP_FRIENDLY_Wharfmaster Lozgil|r
     .turnin 97328 >>Palauta: Anything of Value
+    .turnin 97331 >>Palauta: Zimmix's Great Escape
     .target Wharfmaster Lozgil
 step
     .goto 1434/0,509.38,-14450.84
     .trainer >>Rogue-trainer (taso 40): Eviscerate r6, Safe Fall, Stealth r3, Mutilate r2
     .target Ian Strom
-step
-    .goto 1434/0,536.18,-14299.82
-    >>Puhu: |cRXP_FRIENDLY_Wharfmaster Lozgil|r
-    .turnin 97331 >>Palauta: Zimmix's Great Escape
-    .target Wharfmaster Lozgil
 step
     .goto 1434/0,453.23,-14431.70
     >>Puhu: |cRXP_FRIENDLY_Captain Aransas|r

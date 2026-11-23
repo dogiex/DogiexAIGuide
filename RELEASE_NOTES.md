@@ -1,3 +1,29 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.6
+
+Quest-datan päivitys (QuestieDB 9921e9b -> e3c3bc4, 1.1.4; 5 committia):
+- The Shamed Lieutenant (98219) on nyt datassa Down the Coastin (536) ohjausquest (breadcrumb). Muut commitit koskevat tavoitetekstien käännöksiä eivätkä muuta reittiä.
+
+Datan perusteella pois (Alliance, kaikki luokat):
+- The Shamed Lieutenant: reitti tekee Down the Coastin aiemmin, ja ohjausquestia ei voi ottaa, kun kohdequest on jo tehty. Vanha opas antoi questin vasta Down the Coastin jälkeen. Samalla jäi pois palautusmatka Southshoreen (Druidilla lento, Warriorilla hearthstone ja juoksu).
+- Druid: lukujen rajat siirtyivät, "34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer" on nyt 34-39 ja "38-42 1K Needles, Desolace, STV + Exc. Site/Dalaran" on nyt "39-42 Desolace, STV, Alterac + Exc. Site/Dalaran". Jos olit näissä luvuissa, valitse luku uudelleen oppaan valikosta.
+
+Horden reitti ei muuttunut.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Alliance 6224 -> 6220 min (-0,1 %), Horde ennallaan.
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit e3c3bc4 (1.1.4). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.6.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.6.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.5
 
 Quest-datan päivitys (QuestieDB 48ce570 -> 9921e9b, 1.1.4; 21 committia):

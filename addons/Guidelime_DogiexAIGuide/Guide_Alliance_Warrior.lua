@@ -1948,13 +1948,11 @@ Guidelime.registerGuide([[
 [G 75.8,36.7 Stormwind City]Puhu: *Major Samuelson* [QT563 Reassignment]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QT98190 A Friend of the Family]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QA98191 A Friend of the Family]
-[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family] [QA98219 The Shamed Lieutenant]
+[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family]
 [G 48.1,55.1 Stormwind City][V Myy harmaat roinat] (*Gregory Ardus*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Menethil Harbor]
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT270 The Doomed Fleet] [QA321 Lightforge Iron]
 [G 12.1,64.2 Wetlands]Klikkaa: *Waterlogged Chest* [QT321 Lightforge Iron] [QA324 The Lost Ingots]
-[H Hearthstone: Innkeeper Anderson] (jos cooldownilla, juokse tai lennä)
-[G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT98219 The Shamed Lieutenant]
 [OC]Matkusta: *Arathi Highlands*. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 [G 22.3,95.8 Arathi Highlands]Kerää *Lightforge Ingot* (Bluegill Raider) [QC324,1 The Lost Ingots]
 [OC]Matkusta: *Wetlands*. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla

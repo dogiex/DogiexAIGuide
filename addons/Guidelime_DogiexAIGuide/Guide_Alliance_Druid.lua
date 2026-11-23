@@ -1142,7 +1142,7 @@ Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Druid. Quest-data: QuestieDB.]
 [GA NightElf,Skyborne,Druid]
 [N30-34 Wetlands, Ashenvale, Darkshore + WC/BFD/Stocks (Druid)]
-[NX34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)]
+[NX34-39 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)]
 [XP23 Tavoitetaso 23: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Stormwind]
 [G 35.8,67.4 Stormwind City][T Druid-trainer (taso 30)] (*Sheldras Moontree*): Bash r2, Faerie Fire Feral r2, Faerie Fire r2, Mark of the Wild r4, Regrowth r4, Travel
@@ -1301,8 +1301,8 @@ Guidelime.registerGuide([[
 Guidelime.registerGuide([[
 [D Dogiex's AI Guide: 1-60 (Forever) - Alliance Druid. Quest-data: QuestieDB.]
 [GA NightElf,Skyborne,Druid]
-[N34-38 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)]
-[NX38-42 1K Needles, Desolace, STV + Exc. Site/Dalaran (Druid)]
+[N34-39 Duskwood, Wetlands, Hillsbrad + RFK/Gnomer (Druid)]
+[NX39-42 Desolace, STV, Alterac + Exc. Site/Dalaran (Druid)]
 [O][G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QA228 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 16.7,37.4 Duskwood]Kerää *Mor'Ladim's Skull* (Mor'Ladim (elite, ryhmä)) [QC228,1 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
 [O][G 73.5,46.8 Duskwood]Puhu: *Commander Althea Ebonlocke* [QT228 Mor'Ladim] *Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi*
@@ -1396,14 +1396,12 @@ Guidelime.registerGuide([[
 [G 75.8,36.7 Stormwind City]Puhu: *Major Samuelson* [QT563 Reassignment]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QT98190 A Friend of the Family]
 [G 80.2,38.4 Stormwind City]Puhu: *Highlord Bolvar Fordragon* [QA98191 A Friend of the Family]
-[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family] [QA98219 The Shamed Lieutenant]
+[G 48.4,50.2 Stormwind City]Puhu: *Lord Grayson Shadowbreaker* [QT98191 A Friend of the Family]
 [G 48.1,55.1 Stormwind City][V Myy harmaat roinat] ja [R korjaa varusteet] (*Gregory Ardus*)
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Menethil Harbor]
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QT270 The Doomed Fleet]
 [G 10.6,60.6 Wetlands]Puhu: *Glorin Steelbrow* [QA321 Lightforge Iron]
 [G 12.1,64.2 Wetlands]Klikkaa: *Waterlogged Chest* [QT321 Lightforge Iron] [QA324 The Lost Ingots]
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Southshore]
-[G 51.5,58.4 Hillsbrad Foothills]Puhu: *Lieutenant Farren Orinelle* [QT98219 The Shamed Lieutenant]
 [OC]Matkusta: *Arathi Highlands*. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 [G 22.3,95.8 Arathi Highlands]Kerää *Lightforge Ingot* (Bluegill Raider) [QC324,1 The Lost Ingots]
 [OC]Matkusta: *Wetlands*. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
@@ -1565,13 +1563,6 @@ Guidelime.registerGuide([[
 [G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QA1190 Keeping Pace]
 [G 77.2,77.4 Thousand Needles]Klikkaa: *Rizzle's Unguarded Plans* [QT1190 Keeping Pace] [QA1194 Rizzle's Schematics]
 [G 80.2,75.9 Thousand Needles]Puhu: *Pozzik* [QT1194 Rizzle's Schematics]
-]], "Dogiex's AI Guide: 1-60 (Forever)")
-
-Guidelime.registerGuide([[
-[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Druid. Quest-data: QuestieDB.]
-[GA NightElf,Skyborne,Druid]
-[N38-42 1K Needles, Desolace, STV + Exc. Site/Dalaran (Druid)]
-[NX42-46 Alterac, Dustwallow, Swamp + SM/RFD/Ulda (Druid)]
 [XP30 Tavoitetaso 30: jos olet alle, toista edellinen dungeon tai grindaa]
 [OC]Matkusta: *Desolace*. Lennä Nijel's Pointiin. Ensimmäisellä kerralla: Stonetalon Mountainsin eteläpäästä Desolaceen
 [G 64.7,10.5 Desolace][P Nijel's Point]Hae flight path (*Baritanas Skyriver*)
@@ -1622,6 +1613,13 @@ Guidelime.registerGuide([[
 [G 30.0,8.7 Desolace]Klikkaa: *Rackmore's Chest* [QT6161 Claim Rackmore's Treasure!]
 [G 28.2,6.7 Desolace]Kerää *Book of the Ancients* (Lord Kragaru) [QC6027,1 Book of the Ancients]
 [G 38.9,27.2 Desolace]Puhu: *Azore Aldamort* [QT6027 Book of the Ancients]
+]], "Dogiex's AI Guide: 1-60 (Forever)")
+
+Guidelime.registerGuide([[
+[D Dogiex's AI Guide: 1-60 (Forever) - Alliance Druid. Quest-data: QuestieDB.]
+[GA NightElf,Skyborne,Druid]
+[N39-42 Desolace, STV, Alterac + Exc. Site/Dalaran (Druid)]
+[NX42-46 Alterac, Dustwallow, Swamp + SM/RFD/Ulda (Druid)]
 [XP31 Tavoitetaso 31: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 64.7,10.5 Desolace]Lennä (*Baritanas Skyriver*): [F Rut'theran Village]
 [OC]Matkusta: *Darnassus*. Rut'theran Villagen portaalista Darnassukseen

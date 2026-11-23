@@ -9775,7 +9775,6 @@ step
     .goto 1453/0,881.97,-8577.32
     >>Puhu: |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
     .turnin 98191 >>Palauta: A Friend of the Family
-    .accept 98219 >>Ota: The Shamed Lieutenant
     .target Lord Grayson Shadowbreaker
 step
     .goto 1453/0,886.66,-8634.31
@@ -9797,14 +9796,6 @@ step
     >>Klikkaa: |cRXP_PICK_Waterlogged Chest|r
     .turnin 321 >>Palauta: Lightforge Iron
     .accept 324 >>Ota: The Lost Ingots
-step
-    .hs >>Hearthstone: Innkeeper Anderson
-    .cooldown item,6948,>0
-step
-    .goto 1424/0,-581.33,-845.87
-    >>Puhu: |cRXP_FRIENDLY_Lieutenant Farren Orinelle|r
-    .turnin 98219 >>Palauta: The Shamed Lieutenant
-    .target Lieutenant Farren Orinelle
 step
     .zone Arathi Highlands >>Matkusta: Arathi Highlands. Lennä Refuge Pointeen. Ensimmäisellä kerralla: Wetlandsista pohjoiseen Thandol Spanin yli
 step
