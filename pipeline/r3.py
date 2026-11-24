@@ -82,6 +82,9 @@ def ancestors(qs,done=()):
                 if p in Q and p not in anc and p not in done and depth<10: anc.add(p); up(p,depth+1)
     for x in qs: up(x)
     return anc
+# QuestieDB poisti tavoitteen (triggerEnd = {}) dungeon-questin esiquestilta, jonka antaja ja palauttaja on sama NPC (Test of Faith 1149, QuestieDB 1983fd1):
+# reititetään kuten class-quest (tavoiteteksti antajan luona), muuten koko ketju dungeon-questeineen jää pois.
+DQ_NOOBJ={x for x in ancestors(set(QD)) if q(x,'triggerEnd')==[]}
 def obj_location_any(ob,zones):
     src=obj_sources(ob)
     for z in zones:
@@ -230,7 +233,7 @@ class Sim3(Sim):
                 if ob['type']=='item' and ob['ids'][0] in I: nm=[]
                 loc=(d,DUNG[d][3],1,[('npc',n(i,'name')) for k,i in obj_sources(ob) if k=='npc'][:3],None)
             obs.append(dict(idx=idx,ob=ob,loc=loc,done=False))
-        if not obs and st[:2]==fi[:2] and qid in CLASSQ and not d:
+        if not obs and st[:2]==fi[:2] and ((qid in CLASSQ and not d) or qid in DQ_NOOBJ):
             tx=(aslist(q(qid,'objectivesText')) or [''])[0] or 'Suorita questin tavoite'
             obs.append(dict(idx=0,ob=dict(type='event',ids=[],text=tx),loc=(st[2],st[3],1,[],None),done=False))
         if not obs and st[:2]==fi[:2]:

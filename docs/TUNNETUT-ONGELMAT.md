@@ -6,7 +6,6 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 
 ## Questit, jotka puuttuvat oppaasta
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
-- **Weed Whacked** (Stranglethorn Vale): QuestieDB-datassa questin antajalta puuttuu faction-tieto.
 - **An Alarming Request, Starving Arcane ja Heart of Disruption** (Alliance, Dalaran, v4.5): QuestieDB-datassa questin antajalta (Emissary Jacques) puuttuu faction-tieto, joten ne puuttuvat oppaasta.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
@@ -15,6 +14,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen. v4.5:stä alkaen myös Seeking the Kor Gem puuttuu, koska se on datassa A Moon-Kissed Bladen osa.
 - **Call of Fire** (Skyborne Shaman, ohjausquest Zephras Islelle): QuestieDB-datassa ei ole questin antajaa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
+- **Goblin Lockpicks** (Rogue, v4.7): on nyt QuestieDB-datassa The Horn of Xelthosin osa, joten opas ohjaa The Horn of Xelthosiin.
 - **Taming the Beast** (Horden Skyborne Hunter, v4.2): QuestieDB merkitsee Zephras Islen pet-ketjun nyt vain Alliancen Skybornelle, joten oppaassa on ketjusta vain yksi quest. Korjautuu, jos data korjataan.
 
 ### Alliance (v3.0)
@@ -35,6 +35,8 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - Ammattitehtävä on oppaassa vain, jos reitti kulkee sen antajan ja palauttajan kautta. Siksi **A Yeti of Your Own** (Engineering) puuttuu osalta luokista (v4.5:ssä kaikilta paitsi Horden Druidilta ja Roguelta) ja **Wild Leather** -tehtävät (Leatherworking) sekä **My First Alchemy Set** (Alchemy) osalta tai kaikilta Alliancen luokista.
 
 ## Dungeonit
+- **Test of Faith** (Horde, Thousand Needles, v4.7): QuestieDB-datassa ei ole enää hyppypaikan sijaintia, joten opas näyttää tehtävän tekstin Dorn Plainstalkerin luona. Hyppää lankuilta Thousand Needlesin reunalla ja palaa Dornin luo. Ketju jatkuu Scarlet Monasteryn Test of Lore -questiin.
+- **Craftsman's Writ: Truesilver Transformer** (Blackrock Depths, v4.7): QuestieDB merkitsi sen toistettavaksi päivittäiseksi questiksi, joten se ei ole enää oppaassa.
 - **Ruins of Lordaeron** (Alliance): reitti kulkee Southshoresta Undercityyn, joten PvP-merkintä tulee päälle Undercityssä.
 - **RestedXP:n dungeon-asetukset** eivät piilota oppaan dungeon-askeleita (opas ei käytä `.dungeon`-merkintöjä). Jos et tee dungeonia, ohita sen askeleet käsin.
 

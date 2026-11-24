@@ -1,4 +1,4 @@
-Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v4.6)
+Dogiex's AI Guide: 1-60 (Forever) - Horde ja Alliance, kaikki rodut ja luokat - RestedXP Guides -lisäosa, WoW Forever (v4.7)
 
 ASENNUS
 1. Asenna ilmainen RestedXP Guides -addon (Forever-versio). Poista vanha kansio RXPGuides_DogiexAIGuide ennen uuden

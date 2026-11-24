@@ -1,3 +1,41 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.7
+
+Quest-datan päivitys (QuestieDB e3c3bc4 -> 47a4756, 1.1.5; 14 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, quest-korjauksia, Craftsman's Writ -questit toistettaviksi). Oppaan questeista muuttui 14, ja 3 questia lisättiin dataan.
+
+Uutta reitillä (datan korjausten ansiosta):
+- Horde, kaikki luokat: Weed Whacked (Stranglethorn; antajalle tuli faction-tieto), Just Compensation (antaja ja palauttaja lisättiin dataan) ja Witch Doctor Ti'ik.
+- Kaikki luokat molemmilla factioneilla: Microcrystal Contamination (antaja lisättiin dataan).
+- Rogue (molemmat factionit): The Horn of Xelthos (aloitusobjekti lisättiin dataan); Horden Tirisfal-aloituksessa myös.
+- Alliance: Camping 101: Mining nyt kaikille Alliancen roduille (Northshire-aloitukset ja Dwarf Shaman).
+- Horde Warlock: Mor'zul Bloodbringer -ketjun alku (7562, 7563, 7564, 7628).
+
+Datan perusteella pois:
+- Craftsman's Writ: Truesilver Transformer (Blackrock Depths, kaikki luokat): QuestieDB merkitsi sen toistettavaksi päivittäiseksi questiksi.
+- Goblin Lockpicks (Rogue, molemmat factionit): on nyt datassa The Horn of Xelthosin alaquest; tilalle The Horn of Xelthos.
+
+Reittisiirtymät (questien määrä ei laskenut, kattavuus ennallaan):
+- Horde Druid ja Rogue: pois Study of the Elements: Rock (710-712), Timbermaw Ally ja Speak to Nafien (8460, 8462); tilalle Mechanical Romance (84137, 84138). Vaihtoehtoiset versiot vaihtuivat: Assisting Arch Druid Runetotem 3784 -> 3762 ja A Call to Arms: The Plaguelands! 5093 -> 5095.
+- Alliance Druid (924 -> 912 questia, normaaleja questeja): pois Journey to Stonetalon Peak, Reclaiming the Charred Vale, Elmore's Task, Freedom for All Creatures ja Doling Justice (2969, 2970, 2972), An Orphan Looking For a Home (3841), Better Late Than Never (5021, 5022), Good Natured Emma ja Good Luck Charm (5048, 5050); vaihtoehtoiset versiot 3789 -> 3763 ja 5066 -> 5091. Simuloitu aika lyheni (NightElf -13 min, Skyborne -20 min).
+- Alliance Shaman: uutena Bingles' Missing Supplies.
+
+Korjaus rakennusputkeen:
+- QuestieDB poisti Test of Faithin (1149) tavoitteen ("hyppää lankuilta"), jolloin quest jäi ilman tavoitetta, ja putki hylkäsi sen. Koko Test of-ketju (1149-1160, 6627) ja sen Scarlet Monastery -quest Test of Lore (1160) olisivat pudonneet kaikilta Horden luokilta. Nyt tällainen dungeon-questin esiquest reititetään: oppaassa on tavoiteteksti Dorn Plainstalkerin luona, ja ketju säilyy. Hyppypaikan koordinaatti ei ole enää datassa, joten askel näyttää Dornin sijainnin.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-kattavuus ennallaan lukuun ottamatta yllä olevia datamuutoksia (BRD 1 quest vähemmän, Goblin Lockpicks).
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5904 -> 5900 min (-0,1 %), Alliance 6220 -> 6211 min (-0,1 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 47a4756 (1.1.5). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.7.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.7.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.6
 
 Quest-datan päivitys (QuestieDB 9921e9b -> e3c3bc4, 1.1.4; 5 committia):
