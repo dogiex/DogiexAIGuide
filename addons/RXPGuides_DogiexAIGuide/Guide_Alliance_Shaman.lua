@@ -71,19 +71,17 @@ step
     >>Kerää |cRXP_LOOT_Felix's Box|r (|cRXP_PICK_Felix's Box|r)
     >>Tapa |cRXP_ENEMY_Frostmane Troll Whelp|r
     >>Kerää |cRXP_LOOT_Felix's Chest|r (|cRXP_PICK_Felix's Chest|r)
+    >>Tapa |cRXP_ENEMY_Rockjaw Trogg|r
     .complete 3361,1
     .complete 182,1
     .complete 3361,2
-    .mob Frostmane Troll Whelp
-step
-    .goto 1426/0,384.18,-6106.79
-    .trainer >>Shaman-trainer (taso 4): Earth Shock
-    .target Tremor Totem
-step
-    .goto 1426/0,615.16,-6415.10
-    >>Tapa |cRXP_ENEMY_Rockjaw Trogg|r
     .complete 170,1
+    .mob Frostmane Troll Whelp
     .mob Rockjaw Trogg
+step
+    .goto 1426/0,384.18,-6049.99
+    .trainer >>Shaman-trainer (taso 4): Earth Shock
+    .target Teo Hammerstorm
 step
     .goto 1426/0,565.91,-6362.57
     >>Puhu: |cRXP_FRIENDLY_Grelin Whitebeard|r
@@ -351,7 +349,7 @@ step
     .accept 99162 >>Ota: Treacherous Cold
     .target Father Gavin
 step
-    .goto 1426/0,-1005.17,-5341.45
+    .goto 1426/0,-985.47,-5325.03
     >>Tapa |cRXP_ENEMY_Minor Ice Elemental|r
     .complete 99160,1
     .mob Minor Ice Elemental
@@ -731,13 +729,13 @@ step
     .accept 432 >>Ota: Those Blasted Troggs!
     .target Foreman Stonebrow
 step
-    .goto 1426/0,-1674.97,-5692.77
-    >>Tapa |cRXP_ENEMY_Rockjaw Bonesnapper|r
+    .goto 1426/0,-1660.19,-5712.47
     >>Tapa |cRXP_ENEMY_Rockjaw Skullthumper|r
-    .complete 433,1
+    >>Tapa |cRXP_ENEMY_Rockjaw Bonesnapper|r
     .complete 432,1
-    .mob Rockjaw Bonesnapper
+    .complete 433,1
     .mob Rockjaw Skullthumper
+    .mob Rockjaw Bonesnapper
 step
     .goto 1426/0,-1601.09,-5725.60
     >>Puhu: |cRXP_FRIENDLY_Foreman Stonebrow|r
@@ -749,7 +747,7 @@ step
     .turnin 433 >>Palauta: The Public Servant
     .target Senator Mehr Stonehallow
 step
-    .goto 1426/0,-1704.52,-5640.23
+    .goto 1426/0,-1719.29,-5656.65
     >>Kerää |cRXP_LOOT_Pristine Leopard Pelt|r (|cRXP_ENEMY_Elder Snow Leopard|r)
     .complete 95212,1
     .mob Elder Snow Leopard
@@ -1468,7 +1466,7 @@ step
     .accept 2038 >>Ota: Bingles' Missing Supplies
     .target Bingles Blastenheimer
 step
-    .goto 1432/0,-3734.26,-5363.14
+    .goto 1432/0,-3731.50,-5357.62
     >>Kerää |cRXP_LOOT_Crocolisk Meat|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     >>Kerää |cRXP_LOOT_Crocolisk Skin|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     .complete 385,1
@@ -3297,7 +3295,7 @@ step
     .mob Raging Reef Crawler
     .mob Encrusted Tide Crawler
 step
-    .goto 1439/1,-359.53,7896.67
+    .goto 1439/1,-307.13,7770.03
     >>Kerää |cRXP_LOOT_Rod of Deep Dominion|r (|cRXP_ENEMY_Stormscale Beastmistress|r)
     .complete 87760,1
     .mob Stormscale Beastmistress
@@ -4568,7 +4566,7 @@ step
     .accept 277 >>Ota: Fire Taboo
     .target Rethiel the Greenwarden
 step
-    .goto 1437/0,-2825.34,-3393.74
+    .goto 1437/0,-2825.34,-3390.99
     >>Klikkaa: |cRXP_PICK_Dragonmaw Armaments|r
     .accept 98293 >>Ota: Forced Disarmament
 step
@@ -6927,7 +6925,7 @@ step
 step
     .zone Thousand Needles >>Matkusta: Thousand Needles. Feralasin Thalanaarista itään tai Tanarisista pohjoiseen Thousand Needlesiin
 step
-    .goto 1441/1,-2070.13,-5151.73
+    .goto 1441/1,-2074.53,-5151.73
     >>Kerää |cRXP_LOOT_Eye of the Tempest|r (|cRXP_ENEMY_Ravaging Tempest (elite, ryhmä)|r)
     .complete 96135,1
 step
@@ -8181,9 +8179,13 @@ step
 step
     .zone Alterac Mountains >>Matkusta: Alterac Mountains. Southshoresta pohjoiseen Alterac Mountainsiin
 step
-    .goto 1416/0,256.93,34.67
+    .goto 1416/0,385.73,385.60
     >>Puhu: |cRXP_FRIENDLY_Archmage Ansirem Runeweaver|r
     .turnin 602 >>Palauta: Magical Analysis
+    .target Archmage Ansirem Runeweaver
+step
+    .goto 1416/0,385.73,385.60
+    >>Puhu: |cRXP_FRIENDLY_Archmage Ansirem Runeweaver|r
     .accept 603 >>Ota: Ansirem's Key
     .target Archmage Ansirem Runeweaver
 step
@@ -8435,7 +8437,7 @@ step
 step
     .zone Badlands >>Matkusta: Badlands. Loch Modanin etelän solasta Badlandsiin (lähin lento Thelsamar)
 step
-    .goto 1418/0,-3357.74,-7164.84
+    .goto 1418/0,-3352.77,-7163.18
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     .turnin 687 >>Palauta: Theldurin the Lost
     .accept 692 >>Ota: The Lost Fragments
@@ -8450,12 +8452,12 @@ step
     .complete 692,3
     .mob Enraged Rock Elemental
 step
-    .goto 1418/0,-3357.74,-7164.84
+    .goto 1418/0,-3352.77,-7163.18
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     .turnin 692 >>Palauta: The Lost Fragments
     .target Theldurin the Lost
 step
-    .goto 1418/0,-3357.74,-7164.84
+    .goto 1418/0,-3352.77,-7163.18
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     >>|cRXP_WARN_Elite-quest (ryhmä): voit ohittaa tämän, jos se tuntuu vaikealta, tai pyytää kavereita avuksi|r
     .accept 656 >>Ota: Summoning the Princess
@@ -9113,7 +9115,7 @@ step
     .mob Stonevault Bonesnapper
     .mob Stonevault Shaman
 step
-    .goto 1418/0,-3357.74,-7164.84
+    .goto 1418/0,-3352.77,-7163.18
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     .accept 709 >>Ota: Solution to Doom
     .target Theldurin the Lost
@@ -9170,7 +9172,7 @@ step
     .accept 732 >>Ota: Tremors of the Earth
     .target Garek
 step
-    .goto 1418/0,-3357.74,-7164.84
+    .goto 1418/0,-3352.77,-7163.18
     >>Puhu: |cRXP_FRIENDLY_Theldurin the Lost|r
     .turnin 709 >>Palauta: Solution to Doom
     .target Theldurin the Lost
@@ -11029,7 +11031,7 @@ step
     .accept 86925 >>Ota: Toil and Trouble
     .accept 86926 >>Ota: Felfire Burn, Cauldron Bubble
 step
-    .goto 1447/1,-6263.80,4651.89
+    .goto 1447/1,-6263.80,4655.27
     >>Kerää |cRXP_LOOT_Satyrweed|r (|cRXP_PICK_Satyrweed Bramble|r)
     >>Kerää |cRXP_LOOT_Legashi Firewater Recipe|r (|cRXP_ENEMY_Legashi Hellraiser|r, |cRXP_ENEMY_Legashi Soulstealer|r, |cRXP_ENEMY_Legashi Blackguard|r)
     .complete 86926,1
@@ -11169,7 +11171,7 @@ step
     .accept 88809 >>Ota: Preserving Eldarath
     .target Commander Truesong
 step
-    .goto 1447/1,-4194.90,3306.15
+    .goto 1447/1,-4225.33,3319.68
     >>Kerää |cRXP_LOOT_Wild Honey|r (|cRXP_ENEMY_Honey Wasp|r)
     .complete 89013,1
     .mob Honey Wasp
@@ -13915,7 +13917,7 @@ step
     .complete 5542,2
     .mob Plaguehound
 step
-    .goto 1423/0,-4553.56,2014.67
+    .goto 1423/0,-4557.86,2014.67
     >>Puhu: |cRXP_FRIENDLY_Orthas|r
     .accept 84319 >>Ota: Oh No Ye Don't!
     .target Orthas
@@ -13955,7 +13957,7 @@ step
     .mob Stitched Horror
     .mob Abomination
 step
-    .goto 1423/0,-4553.56,2014.67
+    .goto 1423/0,-4557.86,2014.67
     >>Puhu: |cRXP_FRIENDLY_Orthas|r
     .turnin 84319 >>Palauta: Oh No Ye Don't!
     .target Orthas
@@ -15029,7 +15031,7 @@ step
     .target Caylais Moonfeather
     .zoneskip Winterspring
 step
-    .goto 1452/1,-4200.37,7894.33
+    .goto 1452/1,-4207.47,7894.33
     >>Kerää |cRXP_LOOT_Winterspring Blood Sample|r (|cRXP_ENEMY_Shardtooth Mauler|r, |cRXP_ENEMY_Elder Shardtooth|r, |cRXP_ENEMY_Frostsaber Stalker|r)
     .complete 97447,1
     .mob Shardtooth Mauler

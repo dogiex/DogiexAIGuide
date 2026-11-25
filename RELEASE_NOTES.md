@@ -1,3 +1,34 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.8
+
+Quest-datan päivitys (QuestieDB 47a4756 -> 4377c98, 1.1.6; 14 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, quest-korjauksia, ratsuquestien roturajat, NPC-factionien korjauksia). Oppaan questeista muuttui 6, ja 1 quest lisättiin dataan.
+
+Uutta reitillä (datan korjausten ansiosta):
+- Skyborne Shaman: Call of Fire (98517, ohjausquest Zephras Islelle), aloittaja lisättiin dataan (avoin v1.6:sta).
+- Undead (Horde Mage, Paladin, Priest, Rogue, Warlock, Warrior): An Epic Ride (99211), antaja ja palauttaja lisättiin dataan.
+
+Datan perusteella pois:
+- Horde, kaikki luokat: The Source of the Corruption (91952, Felwood/Hyjal). QuestieDB merkitsi palauttajan Ketharasin vain Alliancelle ystävälliseksi (ennen molemmat). Todennäköisesti datavirhe, ks. tunnetut ongelmat.
+- Your First Riding Wolf (96994), Swift as the Wind (99204) ja An Epic Ride (99215) ovat nyt datassa vain Orcille (ennen myös Tauren, Troll ja Undead); pois Horden Druidilta (Tauren, Skyborne) sekä Paladinilta ja Priestiltä (Undead, Troll).
+
+Reittisiirtymät (kattavuus ennallaan):
+- Horde Druid (956 -> 955 questia, lasku johtuu ratsuquesteista): vaihtoehtoiset versiot vaihtuivat Assisting Arch Druid Runetotem 3762 -> 3784 ja A Call to Arms: The Plaguelands! 5095 -> 5093, ja uutena Study of the Elements: Rock (710-712).
+- Alliance: questit ennallaan; NPC-spawnien koordinaatit tarkentuivat, ja osa askelista vaihtoi järjestystä niiden mukana.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5900 -> 5909 min (+0,2 %), Alliance 6211 -> 6208 min (-0,0 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 4377c98 (1.1.6). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.8.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.8.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.7
 
 Quest-datan päivitys (QuestieDB e3c3bc4 -> 47a4756, 1.1.5; 14 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, quest-korjauksia, Craftsman's Writ -questit toistettaviksi). Oppaan questeista muuttui 14, ja 3 questia lisättiin dataan.

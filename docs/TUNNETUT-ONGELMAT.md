@@ -7,12 +7,12 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Questit, jotka puuttuvat oppaasta
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **An Alarming Request, Starving Arcane ja Heart of Disruption** (Alliance, Dalaran, v4.5): QuestieDB-datassa questin antajalta (Emissary Jacques) puuttuu faction-tieto, joten ne puuttuvat oppaasta.
+- **The Source of the Corruption** (Horde, Felwood/Mount Hyjal, v4.8): QuestieDB-datassa palauttaja Ketharas on nyt vain Alliancelle ystävällinen, joten quest puuttuu Horden oppaasta. Jos teet sen pelissä, kerro onnistuiko palautus Hordella.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
 ## Class-questit, jotka eivät ole reitillä
 - **Season of Discovery -rune-questit**, jotka ovat QuestieDB:n Forever-datassa, mutta joiden olemassaolo Foreverissa on epävarma: Elemental Aid (Shaman), The Talisman of Kazdor ja The Eye of Bhossca (Rogue), Oi! (Paladin).
 - **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen. v4.5:stä alkaen myös Seeking the Kor Gem puuttuu, koska se on datassa A Moon-Kissed Bladen osa.
-- **Call of Fire** (Skyborne Shaman, ohjausquest Zephras Islelle): QuestieDB-datassa ei ole questin antajaa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
 - **Goblin Lockpicks** (Rogue, v4.7): on nyt QuestieDB-datassa The Horn of Xelthosin osa, joten opas ohjaa The Horn of Xelthosiin.
 - **Taming the Beast** (Horden Skyborne Hunter, v4.2): QuestieDB merkitsee Zephras Islen pet-ketjun nyt vain Alliancen Skybornelle, joten oppaassa on ketjusta vain yksi quest. Korjautuu, jos data korjataan.

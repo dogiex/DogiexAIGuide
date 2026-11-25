@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: RestedXP: Dogiex's AI Guide: 1-60 (Forever)
 ## Notes: Levutusreitti WoW Foreveriin, kaikki Horde- ja Alliance-rodut ja -luokat
-## Version: 4.7
+## Version: 4.8
 ## Dependencies: RXPGuides
 
 Guide_Warrior.lua
