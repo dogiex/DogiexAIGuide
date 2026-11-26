@@ -7,7 +7,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Questit, jotka puuttuvat oppaasta
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **An Alarming Request, Starving Arcane ja Heart of Disruption** (Alliance, Dalaran, v4.5): QuestieDB-datassa questin antajalta (Emissary Jacques) puuttuu faction-tieto, joten ne puuttuvat oppaasta.
-- **The Source of the Corruption** (Horde, Felwood/Mount Hyjal, v4.8): QuestieDB-datassa palauttaja Ketharas on nyt vain Alliancelle ystävällinen, joten quest puuttuu Horden oppaasta. Jos teet sen pelissä, kerro onnistuiko palautus Hordella.
+- **The Source of the Corruption** (Felwood/Mount Hyjal, Horde v4.8, Alliance v4.9): QuestieDB-datassa palauttaja Ketharas on vain Alliancelle ystävällinen ja nyt vain Mount Hyjalissa, joten quest puuttuu kummankin factionin oppaasta. Jos teet sen pelissä, kerro missä Ketharas on ja onnistuiko palautus.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
 ## Class-questit, jotka eivät ole reitillä
@@ -15,7 +15,6 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **A Moon-Kissed Blade** (Undead Paladin): data on puutteellinen. v4.5:stä alkaen myös Seeking the Kor Gem puuttuu, koska se on datassa A Moon-Kissed Bladen osa.
 - **Master of Disguise** (Rogue): antajalla ja palauttajalla ei ole sijaintia datassa.
 - **Goblin Lockpicks** (Rogue, v4.7): on nyt QuestieDB-datassa The Horn of Xelthosin osa, joten opas ohjaa The Horn of Xelthosiin.
-- **Taming the Beast** (Horden Skyborne Hunter, v4.2): QuestieDB merkitsee Zephras Islen pet-ketjun nyt vain Alliancen Skybornelle, joten oppaassa on ketjusta vain yksi quest. Korjautuu, jos data korjataan.
 
 ### Alliance (v3.0)
 - **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest (v4.5:stä alkaen se on reitillä, mutta sen olemassaolo Foreverissa on epävarma: ohita, jos sitä ei löydy).
@@ -43,6 +42,6 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 ## Reitti
 - **Questiketjut** (v4.0): aloitettu ketju tehdään loppuun, mutta osa ketjuista jää kesken, koska jatkon tiedot puuttuvat QuestieDB:stä (sijainti tai esineen lähde) tai jatko vaatii muita questeja. Nämä tulevat oppaaseen, kun data korjautuu.
 - **Ketjujen elite-questit** (v4.0) ovat vapaaehtoisia ryhmäquesteja. Jos ohitat sellaisen, RestedXP ohittaa sen palautus- ja jatkoaskeleet itsestään; Guidelimessä ne ovat valinnaisia rivejä.
-- **Osa questeista jätetään tarkoituksella pois** (v2.0): normaali quest, jonka juoksu ja tapot vievät yli kaksi kertaa niin kauan kuin saman XP:n grindaaminen, ei ole reitillä. Ketjut (v4.0) arvioidaan kokonaisuutena raja-arvolla kolme kertaa, ja liian kallis ketju jätetään kokonaan aloittamatta. Class- ja dungeon-questit ovat aina mukana.
+- **Osa questeista jätetään tarkoituksella pois** (v2.0): normaali quest, jonka juoksu ja tapot vievät yli kaksi kertaa niin kauan kuin saman XP:n grindaaminen, ei ole reitillä. Ketjut (v4.0) arvioidaan kokonaisuutena raja-arvolla kolme kertaa, ja liian kallis ketju jätetään kokonaan aloittamatta. Class- ja dungeon-questit ovat aina mukana. Jos karsinta veisi class- tai dungeon-questin, karsinta jätetään sillä luokalla tekemättä: v4.9:ssä näin käy Horden Warriorilla, jonka reitillä on siksi noin 45 questia enemmän ja simuloitu aika on noin 3 % pidempi.
 - **Teldrassil ja Darnassus** (Alliance): ensimmäisellä kerralla laiva Auberdinesta ja Rut'theranin lentopaikka laiturilta, sen jälkeen lento Rut'theraniin ja portaali Darnassukseen. Opas olettaa, että Auberdinen ja Rut'theranin välinen lento on käytössä.
 - **Deathskip** (tasot 1-15) olettaa, että kuoltuasi heräät lähimmällä hautausmaalla. Hautausmaan valinta pelissä voi poiketa arviosta; jos heräät muualla, kävele kohteeseen.

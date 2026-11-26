@@ -1,3 +1,41 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.9
+
+Quest-datan päivitys (QuestieDB 4377c98 -> 498734b, 1.1.6; 13 committia: Foreverin quest-, objekti- ja esinedatan päivitys, NPC-spawnien harvennus, preQuestSingle-kenttien poisto preQuestGroupin hyväksi, quest-relaatioiden korjauksia, käännökset). Oppaan questeista muuttui 25 (lähinnä vaihtoehtoversiot `exclusiveTo`, esiquestiryhmät ja rotumaskit).
+
+Uutta reitillä (datan korjausten ansiosta):
+- Skyborne Hunter: Taming the Beast / Training the Beast (94013, 94050, 94978, 94979), rotumaski sisältää nyt Skybornen.
+- Horde Paladin: A Worthy Endeavor, Due Sacrifice, Exorcising Terrordale (97174-97176).
+- Alliance, kaikki luokat: Just Compensation (97448), antaja ja palauttaja Deliana lisättiin dataan.
+
+Datan perusteella pois:
+- Alliance, kaikki luokat: The Source of the Corruption (91952). QuestieDB poisti palauttajan Ketharasin Felwood-sijainnin, ja jäljelle jäi vain Mount Hyjal, joka ei ole reitillä. Horde menetti questin jo v4.8:ssa.
+
+Reittisiirtymät (NPC-spawnien muutokset siirsivät reittiä; kattavuus ennallaan, ei class-, dungeon- tai ammattiquesteja ellei mainittu):
+- Horde, kaikki luokat: uutena Seals of the Sin'dorei -ketju (91497, 91500, 91531, 91538, 91547).
+- Horde Druid (955 -> 957): pois Study of the Elements: Rock (710-712); vaihtoehtoversiot vaihtuivat takaisin Assisting Arch Druid Runetotem 3784 -> 3762 ja A Call to Arms: The Plaguelands! 5093 -> 5095.
+- Horde Warlock (934 -> 937): pois Timbermaw Ally (8460) ja Speak to Nafien (8462).
+- Horde Warrior (918 -> 965): pois 710-712, 8460, 8462; vaihtoehtoversiot The New Frontier 1004 -> 1018 ja A Call to Arms 5094 -> 5095. Questeja tuli 54 lisää, koska heikkojen questien karsinta peruttiin Warriorilla (se olisi pudottanut class-questin A Troubled Spirit 8417). Simuloitu aika Warriorilla noin +3 % (ks. tunnetut ongelmat).
+- Alliance, useimmat luokat: uutena Bingles' Missing Supplies (2038) ja Better Late Than Never -ketju (5021, 5022, 5048, 5050; Druid, Hunter, Priest, Rogue).
+- Alliance Shaman: Bingles' Missing Supplies (2038) pois, tilalle The Divination -ketju (2992-2994).
+- Alliance Druid: pois Therylune's Escape (945). Alliance Rogue: pois Stonetalon Supply Run (86574).
+- Alliance Warlock (922 -> 918): pois Journey to Stonetalon Peak (1056), Reclaiming the Charred Vale (1057, 1059), Galen's Escape (1393) ja Stonetalon Supply Run (86574); simuloitu aika lyheni.
+- Alliance Warrior (937 -> 936): pois Draenethyst Crystals (1389), Taking the Bait Back (93430), The Visiting Mage (93464), Notes on Draenethyst (93465, 93678) ja ammattiquest Ingredients for the Forge (86776, Mining; reitti ei enää kulje sen kautta); vaihtoehtoversiot Assisting Arch Druid Staghelm 3763 -> 3789 ja A Call to Arms 5090 -> 5066; uutena A Meal Served Cold (212) ja The Divination -ketju (2992-2994).
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-kattavuus ennallaan tai parempi.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5909 -> 5935 min (+0,4 %; Warrior +167...+195 min, muut -28...+13 min), Alliance 6208 -> 6196 min (-0,2 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 498734b (1.1.6). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.9.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.9.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.8
 
 Quest-datan päivitys (QuestieDB 47a4756 -> 4377c98, 1.1.6; 14 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, quest-korjauksia, ratsuquestien roturajat, NPC-factionien korjauksia). Oppaan questeista muuttui 6, ja 1 quest lisättiin dataan.
