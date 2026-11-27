@@ -1299,7 +1299,7 @@ Guidelime.registerGuide([[
 [G 38.2,50.9 Wetlands]Puhu: *Ormer Ironbraid* [QT296 Ormer's Revenge]
 [G 49.9,12.6 Wetlands]Puhu: *Comar Villard* [QA87318 Hearts of the Lost]
 [G 51.5,9.0 Wetlands]Puhu: *Essene Villard* [QT87318 Hearts of the Lost] [QA88757 Accessories of the Lost]
-[G 51.4,8.2 Wetlands]Kerää *Essene's Necklace*; Kerää *Essene's Waterskin*; Kerää *Essene's Spellbook* [QC88757,1 Accessories of the Lost] [QC88757,3 Accessories of the Lost] [QC88757,2 Accessories of the Lost]
+[G 51.4,8.2 Wetlands]Kerää *Essene's Necklace* (Essene's Necklace); Kerää *Essene's Waterskin* (Essene's Waterskin); Kerää *Essene's Spellbook* (Essene's Spellbook) [QC88757,1 Accessories of the Lost] [QC88757,3 Accessories of the Lost] [QC88757,2 Accessories of the Lost]
 [G 51.5,9.0 Wetlands]Puhu: *Essene Villard* [QT88757 Accessories of the Lost]
 ]], "Dogiex's AI Guide: 1-60 (Forever)")
 
@@ -3122,23 +3122,21 @@ Guidelime.registerGuide([[
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT6030 Duke Nicholas Zverenhoff]
 [G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA6021 Zaeldarr the Outcast]
 [G 68.2,56.3 Eastern Plaguelands]Tapa *Plaguehound* [QC5542,2 Demon Dogs]
-[G 53.4,58.5 Eastern Plaguelands]Puhu: *Orthas* [QA84319 Oh No Ye Don't!]
+[G 54.3,57.3 Eastern Plaguelands]Puhu: *Darrowshire Spirit* [QC5211,1 Defenders of Darrowshire]
 [G 31.1,78.0 Eastern Plaguelands]Puhu: *Pamela Redpath* [QT5142 Little Pamela]
 [G 23.6,73.8 Eastern Plaguelands]Klikkaa: *Mound of Dirt* [QT6024 Hameya's Plea]
 [G 23.1,72.6 Eastern Plaguelands]Kerää *Zaeldarr's Head* (Zaeldarr the Outcast) [QC6021,1 Zaeldarr the Outcast]
 [G 20.8,60.5 Eastern Plaguelands]Tapa *Plaguehound Runt* [QC5542,1 Demon Dogs]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5542 Demon Dogs]
 [G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QT6164 Augustus' Receipt Book]
-[G 21.4,25.2 Eastern Plaguelands]Kerää *Partially-Digested Plate Armor* (Stitched Horror, Abomination) [QC84319,1 Oh No Ye Don't!]
-[G 53.4,58.5 Eastern Plaguelands]Puhu: *Orthas* [QT84319 Oh No Ye Don't!]
-[G 54.3,57.3 Eastern Plaguelands]Puhu: *Darrowshire Spirit* [QC5211,1 Defenders of Darrowshire]
+[H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
 [G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QT6021 Zaeldarr the Outcast]
 [G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QT5211 Defenders of Darrowshire]
-[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [OC]Matkusta: *Darkshore*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 [G 36.3,45.6 Darkshore]Lennä (*Caylais Moonfeather*): [F Talrendis Point]
 [G 41.5,52.5 Azshara]Kerää *Sacred Highborne Writings* (Sacred Highborne Writings) [QC5246,1 Fragments of the Past]
-[H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
+[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Light's Hope Chapel]
 [G 46.5,16.0 Eastern Plaguelands]Puhu: *Aurora Skycaller* [QT5246 Fragments of the Past]
 [G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Morgan's Vigil]
 [G 66.1,21.9 Burning Steppes]Puhu: *Yuka Screwspigot* [QT4136 Ribbly Screwspigot]
@@ -3175,8 +3173,7 @@ Guidelime.registerGuide([[
 [G 66.9,24.0 Tanaris]Puhu: *Prospector Ironboot* [QA5065 The Lost Tablets of Mosh'aru]
 [G 51.0,29.3 Tanaris]Lennä (*Bera Stonehammer*): [F Everlook]
 [G 55.1,13.3 Winterspring]Kerää *Winterspring Blood Sample* (Shardtooth Mauler, Elder Shardtooth, Frostsaber Stalker) [QC8907,1 An Earnest Proposition]
-[OC]Matkusta: *Wetlands*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-[G 9.5,59.7 Wetlands]Lennä (*Shellei Brondir*): [F Light's Hope Chapel]
+[H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
 [G 63.4,7.8 Eastern Plaguelands]Kerää *Third Mosh'aru Tablet* (Third Mosh'aru Tablet); Kerää *Fourth Mosh'aru Tablet* (Fourth Mosh'aru Tablet) [QC5065,1 The Lost Tablets of Mosh'aru] [QC5065,2 The Lost Tablets of Mosh'aru]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
@@ -3270,7 +3267,6 @@ Guidelime.registerGuide([[
 [G 71.3,72.2 Stormwind City]Lennä (*Dungar Longdrink*): [F Ironforge]
 [G 43.5,52.6 Ironforge]Puhu: *Deliana* [QT8907 An Earnest Proposition]
 [G 43.6,52.6 Ironforge]Puhu: *Deliana* [QT97448 Just Compensation] [QA97447 An Earnest Proposition]
-[G 47.1,13.8 Ironforge]Puhu: *Eldrun Stormbreaker* [QA97169 The Darkreaver Menace]
 [XP58 Tavoitetaso 58: jos olet alle, toista edellinen dungeon tai grindaa]
 [G 55.5,47.7 Ironforge]Lennä (*Gryth Thurden*): [F Chillwind Camp]
 [G 43.4,84.8 Western Plaguelands]Puhu: *Nathaniel Dumah* [QT5903 A Plague Upon Thee] [QA5904 A Plague Upon Thee]
@@ -3305,8 +3301,8 @@ Guidelime.registerGuide([[
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Klikkaa: *Treasure of the Shen'dralar* [QT7877 The Treasure of the Shen'dralar]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QT7441 Pusillin and the Elder Azj'Tordin]
 [G 89.5,45.9 Feralas]Lennä (*Thyssiana*): [F Feathermoon]
-[G 30.8,43.1 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 31.6,43.5 Feralas]Puhu: *Scholar Runethorn* [QT7482 Elven Legends]
+[G 30.8,43.1 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Dulciea Frostmoon*)
 [G 30.4,46.2 Feralas]Puhu: *Latronicus Moonspear* [QT7488 Lethtendris's Web]
 [OC]*Dungeon: Scholomance* (suositus taso 58+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Western Plaguelands) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [OC]Matkusta: *Ironforge*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforge: lento, tai Deeprun Tram Stormwindista
@@ -3319,17 +3315,14 @@ Guidelime.registerGuide([[
 [G 45.3,43.4 Burning Steppes]Kerää *Volcanic Ash* (Volcanic Ash) [QC8921,4 The Ectoplasmic Distiller]
 [G 84.3,68.3 Burning Steppes]Lennä (*Borgus Stoutarm*): [F Aerie Peak]
 [OC]Matkusta: *Western Plaguelands*. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
-[G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *The Deed to Brill* (The Deed to Brill); Kerää *The Deed to Caer Darrow* (The Deed to Caer Darrow); Kerää *The Deed to Southshore* (The Deed to Southshore); Kerää *The Deed to Tarren Mill* (The Deed to Tarren Mill); Tapa *Doctor Theolen Krastinov*; Käytä / kerää: *Remains of Eva Sarkhoff*; Käytä / kerää: *Remains of Lucien Sarkhoff*; Tapa *Plagued Hatchling*; Kerää *Delicate Arcanite Converter*; Kerää *Greater Eternal Essence*; Kerää *Stonescale Oil*; Kerää *Darkreaver's Head* (Death Knight Darkreaver) [QC5343,1 Barov Family Fortune] [QC5343,2 Barov Family Fortune] [QC5343,3 Barov Family Fortune] [QC5343,4 Barov Family Fortune] [QC5382,1 Doctor Theolen Krastinov, the Butcher] [QC5382,2 Doctor Theolen Krastinov, the Butcher] [QC5382,3 Doctor Theolen Krastinov, the Butcher] [QC5529,1 Plagued Hatchlings] [QC8921,1 The Ectoplasmic Distiller] [QC8921,2 The Ectoplasmic Distiller] [QC8921,3 The Ectoplasmic Distiller] [QC97169,1 The Darkreaver Menace]
+[G 69.7,73.2 Western Plaguelands]*Mene dungeoniin: Scholomance*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *The Deed to Brill* (The Deed to Brill); Kerää *The Deed to Caer Darrow* (The Deed to Caer Darrow); Kerää *The Deed to Southshore* (The Deed to Southshore); Kerää *The Deed to Tarren Mill* (The Deed to Tarren Mill); Tapa *Doctor Theolen Krastinov*; Käytä / kerää: *Remains of Eva Sarkhoff*; Käytä / kerää: *Remains of Lucien Sarkhoff*; Tapa *Plagued Hatchling*; Kerää *Delicate Arcanite Converter*; Kerää *Greater Eternal Essence*; Kerää *Stonescale Oil* [QC5343,1 Barov Family Fortune] [QC5343,2 Barov Family Fortune] [QC5343,3 Barov Family Fortune] [QC5343,4 Barov Family Fortune] [QC5382,1 Doctor Theolen Krastinov, the Butcher] [QC5382,2 Doctor Theolen Krastinov, the Butcher] [QC5382,3 Doctor Theolen Krastinov, the Butcher] [QC5529,1 Plagued Hatchlings] [QC8921,1 The Ectoplasmic Distiller] [QC8921,2 The Ectoplasmic Distiller] [QC8921,3 The Ectoplasmic Distiller]
 [G 70.2,73.7 Western Plaguelands]Puhu: *Eva Sarkhoff* [QT5382 Doctor Theolen Krastinov, the Butcher] [QA5515 Krastinov's Bag of Horrors]
 [G 43.5,83.7 Western Plaguelands]Puhu: *Weldon Barov* [QT5343 Barov Family Fortune]
 [G 42.9,85.1 Western Plaguelands]Lennä (*Bibilfaz Featherwhistle*): [F Light's Hope Chapel]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5529 Plagued Hatchlings]
-[G 71.8,49.6 Eastern Plaguelands]Lennä (*Khaelyn Steelwing*): [F Ironforge]
-[G 47.1,13.8 Ironforge]Puhu: *Eldrun Stormbreaker* [QT97169 The Darkreaver Menace]
 [OC]Matkusta: *Dustwallow Marsh*. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 [G 67.5,51.3 Dustwallow Marsh]Lennä (*Baldruc*): [F Gadgetzan]
 [G 52.5,27.2 Tanaris]Puhu: *Mux Manascrambler* [QT8921 The Ectoplasmic Distiller] [QA8924 Hunting for Ectoplasm]
-[G 52.5,27.9 Tanaris][V Myy harmaat roinat] (*Innkeeper Fizzgrimble*)
 [H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
 [G 62.4,53.0 Silithus]Kerää *Scorched Ectoplasm* (Tortured Sentinel, Tortured Druid) [QC8924,1 Hunting for Ectoplasm]
 [G 50.6,34.5 Silithus]Lennä (*Cloud Skydancer*): [F Everlook]
@@ -3403,11 +3396,11 @@ Guidelime.registerGuide([[
 [G 23.9,74.2 Eastern Plaguelands]Kerää *Taelan's Hammer* (Mercutio Filthgorger) [QC5781,1 Of Forgotten Memories]
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5781 Of Forgotten Memories] [QA5845 Of Lost Honor]
 [G 62.5,26.8 Eastern Plaguelands]Kerää *Symbol of Lost Honor* (Symbol of Lost Honor) [QC5845,1 Of Lost Honor]
+[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [G 70.9,48.4 Eastern Plaguelands]Puhu: *Smokey LaRue* [QT5214 The Great Ezra Grimm]
 [G 71.9,48.3 Eastern Plaguelands]Puhu: *Leonid Barthalomew the Revered* [QT5243 Houses of the Holy]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5212 The Flesh Does Not Lie] [QA5213 The Active Agent]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5251 The Archivist]
-[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5845 Of Lost Honor] [QA5846 Of Love and Family]
 [OC]Matkusta: *Western Plaguelands*. Kävele suoraan, kohde on lähellä (lento ei säästä aikaa)
 [G 65.8,75.4 Western Plaguelands]Puhu: *Artist Renfray* [QT5846 Of Love and Family] [QA5848 Of Love and Family]
@@ -3420,6 +3413,7 @@ Guidelime.registerGuide([[
 [G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5848 Of Love and Family]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5262 The Truth Comes Crashing Down] [QA5263 Above and Beyond]
 [G 71.7,49.9 Eastern Plaguelands]Puhu: *Betina Bigglezink* [QT5213 The Active Agent]
+[G 71.2,49.9 Eastern Plaguelands][V Myy harmaat roinat] (*Craftsman Wilhelm*)
 [G 26.5,10.4 Eastern Plaguelands]*Mene dungeoniin: Stratholme*. Korjaa ja osta vettä ennen sisäänmenoa (Tee vettä ja ruokaa koko ryhmälle). Kerää *Head of Baron Rivendare* (Baron Rivendare) [QC5263,1 Above and Beyond]
 [G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT5263 Above and Beyond]
 [OC]Reitti päättyy tähän. Jos et ole vielä 60: toista dungeoneita tai tee Foreverin uusien alueiden questeja.

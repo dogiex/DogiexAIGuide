@@ -6770,9 +6770,9 @@ step
     .target Essene Villard
 step
     .goto 1437/0,-2515.19,-2373.93
-    >>Kerää |cRXP_LOOT_Essene's Necklace|r
-    >>Kerää |cRXP_LOOT_Essene's Waterskin|r
-    >>Kerää |cRXP_LOOT_Essene's Spellbook|r
+    >>Kerää |cRXP_LOOT_Essene's Necklace|r (|cRXP_PICK_Essene's Necklace|r)
+    >>Kerää |cRXP_LOOT_Essene's Waterskin|r (|cRXP_PICK_Essene's Waterskin|r)
+    >>Kerää |cRXP_LOOT_Essene's Spellbook|r (|cRXP_PICK_Essene's Spellbook|r)
     .complete 88757,1
     .complete 88757,3
     .complete 88757,2
@@ -15695,10 +15695,9 @@ step
     .complete 5542,2
     .mob Plaguehound
 step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .accept 84319 >>Ota: Oh No Ye Don't!
-    .target Orthas
+    .goto 1423/0,-4592.28,2049.07
+    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
+    .complete 5211,1
 step
     .goto 1423/0,-3594.20,1455.67
     >>Puhu: |cRXP_FRIENDLY_Pamela Redpath|r
@@ -15729,20 +15728,8 @@ step
     .turnin 6164 >>Palauta: Augustus' Receipt Book
     .target Augustus the Touched
 step
-    .goto 1423/0,-3176.90,2969.27
-    >>Kerää |cRXP_LOOT_Partially-Digested Plate Armor|r (|cRXP_ENEMY_Stitched Horror|r, |cRXP_ENEMY_Abomination|r)
-    .complete 84319,1
-    .mob Stitched Horror
-    .mob Abomination
-step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .turnin 84319 >>Palauta: Oh No Ye Don't!
-    .target Orthas
-step
-    .goto 1423/0,-4592.28,2049.07
-    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
-    .complete 5211,1
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-5263.41,2152.27
     >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
@@ -15753,14 +15740,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
     .turnin 5211 >>Palauta: Defenders of Darrowshire
     .target Carlin Redpath
-step
-    .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
-    .target Craftsman Wilhelm
-step
-    .goto 1423/0,-5345.15,2300.76
-    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Jessica Chambers
 step
     .zone Darkshore >>Matkusta: Darkshore. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 step
@@ -15773,8 +15752,12 @@ step
     >>Kerää |cRXP_LOOT_Sacred Highborne Writings|r (|cRXP_PICK_Sacred Highborne Writings|r)
     .complete 5246,1
 step
-    .hs >>Hearthstone: Jessica Chambers
-    .cooldown item,6948,>0
+    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+step
+    .goto 1437/0,-782.03,-3793.12
+    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
+    .target Shellei Brondir
+    .zoneskip Eastern Plaguelands
 step
     .goto 1423/0,-4256.72,3233.00
     >>Puhu: |cRXP_FRIENDLY_Aurora Skycaller|r
@@ -15934,12 +15917,8 @@ step
     .accept 5065 >>Ota: The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
 step
-    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
-    .target Shellei Brondir
-    .zoneskip Eastern Plaguelands
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-4983.77,3468.07
     >>Kerää |cRXP_LOOT_Third Mosh'aru Tablet|r (|cRXP_PICK_Third Mosh'aru Tablet|r)
@@ -16432,11 +16411,6 @@ step
     .accept 8909 >>Ota: An Earnest Proposition
     .target Deliana
 step
-    .goto 1455/0,-1085.98,-4642.05
-    >>Puhu: |cRXP_FRIENDLY_Eldrun Stormbreaker|r
-    .accept 97169 >>Ota: The Darkreaver Menace
-    .target Eldrun Stormbreaker
-step
     .xp 58 >>Tavoitetaso 58 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
     .goto 1455/0,-1152.39,-4821.12
@@ -16634,14 +16608,14 @@ step
     .target Thyssiana
     .zoneskip Feralas
 step
-    .goto 1444/1,3301.76,-4365.95
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Dulciea Frostmoon)
-    .target Dulciea Frostmoon
-step
     .goto 1444/1,3245.47,-4382.17
     >>Puhu: |cRXP_FRIENDLY_Scholar Runethorn|r
     .turnin 7482 >>Palauta: Elven Legends
     .target Scholar Runethorn
+step
+    .goto 1444/1,3301.76,-4365.95
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Dulciea Frostmoon)
+    .target Dulciea Frostmoon
 step
     .goto 1444/1,3328.87,-4507.27
     >>Puhu: |cRXP_FRIENDLY_Latronicus Moonspear|r
@@ -16670,7 +16644,6 @@ step
     >>Käytä / kerää: |cRXP_PICK_Remains of Eva Sarkhoff|r
     >>Käytä / kerää: |cRXP_PICK_Remains of Lucien Sarkhoff|r
     >>Tapa |cRXP_ENEMY_Plagued Hatchling|r
-    >>Kerää |cRXP_LOOT_Darkreaver's Head|r (|cRXP_ENEMY_Death Knight Darkreaver|r)
     .complete 5343,1
     .complete 5343,2
     .complete 5343,3
@@ -16679,7 +16652,6 @@ step
     .complete 5382,2
     .complete 5382,3
     .complete 5529,1
-    .complete 97169,1
 step
     .goto 1422/0,-2601.93,1253.93
     >>Puhu: |cRXP_FRIENDLY_Eva Sarkhoff|r
@@ -16702,26 +16674,14 @@ step
     .turnin 5529 >>Palauta: Plagued Hatchlings
     .target Betina Bigglezink
 step
+    .goto 1423/0,-5321.05,2261.20
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Craftsman Wilhelm)
+    .target Craftsman Wilhelm
+step
     .goto 1423/0,-5345.58,2269.80
-    .fly Ironforge >>Lennä: Ironforge
+    .fly Chillwind Camp >>Lennä: Chillwind Camp
     .target Khaelyn Steelwing
-    .zoneskip Ironforge
-step
-    .goto 1455/0,-1085.98,-4642.05
-    >>Puhu: |cRXP_FRIENDLY_Eldrun Stormbreaker|r
-    .turnin 97169 >>Palauta: The Darkreaver Menace
-    .target Eldrun Stormbreaker
-step
-    .goto 1455/0,-1069.29,-4605.07
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hjoldir Stoneblade)
-    .target Hjoldir Stoneblade
-step
-    .goto 1455/0,-1152.39,-4821.12
-    .fly Aerie Peak >>Lennä: Aerie Peak
-    .target Gryth Thurden
-    .zoneskip The Hinterlands
-step
-    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
+    .zoneskip Western Plaguelands
 step
     .goto 1422/0,-2580.43,1268.27
     >>|cRXP_WARN_Mene dungeoniin: Scholomance|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa
@@ -16913,10 +16873,6 @@ step
     >>Kerää |cRXP_LOOT_Symbol of Lost Honor|r (|cRXP_PICK_Symbol of Lost Honor|r)
     .complete 5845,1
 step
-    .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
-    .target Craftsman Wilhelm
-step
     .goto 1423/0,-5306.43,2304.20
     >>Puhu: |cRXP_FRIENDLY_Smokey LaRue|r
     .turnin 5214 >>Palauta: The Great Ezra Grimm
@@ -16937,6 +16893,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
     .turnin 5251 >>Palauta: The Archivist
     .target Duke Nicholas Zverenhoff
+step
+    .goto 1423/0,-5321.05,2261.20
+    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
+    .target Craftsman Wilhelm
 step
     .goto 1423/0,-2479.96,2671.13
     >>Puhu: |cRXP_FRIENDLY_Tirion Fordring|r
@@ -16985,10 +16945,6 @@ step
     .turnin 8922 >>Palauta: A Supernatural Device
     .accept 8921 >>Ota: The Ectoplasmic Distiller
     .target Mux Manascrambler
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Myy harmaat roinat (Innkeeper Fizzgrimble)
-    .target Innkeeper Fizzgrimble
 step
     .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 step
@@ -17039,6 +16995,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Betina Bigglezink|r
     .turnin 5213 >>Palauta: The Active Agent
     .target Betina Bigglezink
+step
+    .goto 1423/0,-5321.05,2261.20
+    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
+    .target Craftsman Wilhelm
 step
     .zone Dustwallow Marsh >>Matkusta: Dustwallow Marsh. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
 step
@@ -17176,10 +17136,6 @@ step
     .isQuestTurnedIn 8928
     .accept 8977 >>Ota: Return to Deliana
     .target Mux Manascrambler
-step
-    .goto 1446/1,-3841.94,-7158.86
-    .vendor >>Myy harmaat roinat (Innkeeper Fizzgrimble)
-    .target Innkeeper Fizzgrimble
 step
     +Matkusta: Dun Morogh. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Ironforgen portista ulos Dun Moroghiin
 step

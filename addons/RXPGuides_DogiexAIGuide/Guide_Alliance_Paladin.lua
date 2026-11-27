@@ -142,7 +142,7 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Dwarf
-#next 10-14 Dun Morogh, Durotar, Loch Modan (Paladin)
+#next 10-14 Dun Morogh, Duskwood, Durotar (Paladin)
 
 step
     .goto 1426/0,388.61,-6093.33
@@ -238,11 +238,6 @@ step
     .complete 98319,1
     .complete 98321,1
     .mob Mountaineer Cornelius
-step
-    .goto 1426/0,-428.94,-5581.13
-    >>Puhu: |cRXP_FRIENDLY_Tognus Flintfire|r
-    .turnin 98321 >>Palauta: Flintfire's Shipment
-    .target Tognus Flintfire
 step
     .goto 1426/0,-665.34,-5499.05
     >>Puhu: |cRXP_FRIENDLY_Loslor Rudge|r
@@ -433,23 +428,18 @@ step
     .turnin 400 >>Palauta: Tools for Steelgrill
     .target Beldin Steelgrill
 step
-    .goto 1426/0,-497.89,-5643.52
-    >>Puhu: |cRXP_FRIENDLY_Senir Whitebeard|r
-    .turnin 98323 >>Palauta: Secure the Mountain
-    .target Senir Whitebeard
+    .goto 1426/0,-428.94,-5581.13
+    >>Puhu: |cRXP_FRIENDLY_Tognus Flintfire|r
+    .turnin 98321 >>Palauta: Flintfire's Shipment
+    .target Tognus Flintfire
 step
-    .goto 1426/0,-428.45,-5590.65
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Grawn Thromwyn)
-    .target Grawn Thromwyn
+    .goto 1426/0,-423.03,-5582.12
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Gamili Frosthide)
+    .target Gamili Frosthide
 step
     .goto 1426/0,-531.38,-5601.49
     .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
     .target Innkeeper Belm
-step
-    .goto 1426/0,-202.39,-6014.53
-    >>Puhu: |cRXP_FRIENDLY_Hegnar Rumbleshot|r
-    .turnin 5541 >>Palauta: Ammo for Rumbleshot
-    .target Hegnar Rumbleshot
 step
     .goto 1426/0,314.73,-5377.57
     >>Puhu: |cRXP_FRIENDLY_Rejold Barleybrew|r
@@ -516,17 +506,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Pilot Bellowfiz|r
     .turnin 320 >>Palauta: Return to Bellowfiz
     .target Pilot Bellowfiz
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Alliance Paladin
-#name 10-14 Dun Morogh, Durotar, Loch Modan (Paladin)
-#version 1
-#group Dogiex's AI Guide: 1-60 (Forever)
-#defaultfor Dwarf
-#next 12-15 Westfall (Paladin)
-
 step
     .goto 1426/0,-430.91,-5582.45
     >>|cRXP_WARN_Ammattitehtävä (Blacksmithing)|r: palauta jos tavoite on valmis, muuten ohita
@@ -552,15 +531,53 @@ step
     .skill blacksmithing,150,1,1
     .target Tognus Flintfire
 step
-    .goto 1426/0,-458.49,-5499.05
-    >>Puhu: |cRXP_FRIENDLY_Razzle Sprysprocket|r
-    .accept 412 >>Ota: Operation Recombobulation
-    .target Razzle Sprysprocket
+    .goto 1426/0,-497.89,-5643.52
+    >>Puhu: |cRXP_FRIENDLY_Senir Whitebeard|r
+    .turnin 98323 >>Palauta: Secure the Mountain
+    .target Senir Whitebeard
+step
+    .goto 1426/0,-202.39,-6014.53
+    >>Puhu: |cRXP_FRIENDLY_Hegnar Rumbleshot|r
+    .turnin 5541 >>Palauta: Ammo for Rumbleshot
+    .target Hegnar Rumbleshot
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Alliance Paladin
+#name 10-14 Dun Morogh, Duskwood, Durotar (Paladin)
+#version 1
+#group Dogiex's AI Guide: 1-60 (Forever)
+#defaultfor Dwarf
+#next 12-15 Westfall (Paladin)
+
+step
+    .zone Duskwood >>Matkusta: Duskwood. Elwynnin kaakkoiskulmasta etelään Duskwoodiin. Darkshire on itäosassa
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Puhu: |cRXP_FRIENDLY_Ada Gelhardt|r
+    .accept 95771 >>Ota: A Taste of Darkness
+    .target Ada Gelhardt
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Suorita questin tavoite
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Puhu: |cRXP_FRIENDLY_Ada Gelhardt|r
+    .turnin 95771 >>Palauta: A Taste of Darkness
+    .target Ada Gelhardt
+step
+    +Matkusta: Dun Morogh. Ironforgen portista ulos Dun Moroghiin
 step
     .goto 1426/0,-497.89,-5643.52
     >>Puhu: |cRXP_FRIENDLY_Senir Whitebeard|r
     .accept 287 >>Ota: Frostmane Hold
     .target Senir Whitebeard
+step
+    .goto 1426/0,-458.49,-5499.05
+    >>Puhu: |cRXP_FRIENDLY_Razzle Sprysprocket|r
+    .accept 412 >>Ota: Operation Recombobulation
+    .target Razzle Sprysprocket
 step
     .goto 1426/0,98.03,-5571.28
     >>Puhu: |cRXP_FRIENDLY_Tundra MacGrann|r
@@ -677,6 +694,9 @@ step
     .goto 1426/0,-542.22,-5586.71
     .trainer >>Paladin-trainer (taso 12): Seal of Righteousness R2, Blessing of Might R2
     .target Azar Stronghammer
+step
+    .hs >>Hearthstone: Innkeeper Belm
+    .cooldown item,6948,>0
 step
     .goto 1426/0,-542.22,-5587.70
     >>Puhu: |cRXP_FRIENDLY_Azar Stronghammer|r
@@ -894,8 +914,7 @@ step
     .accept 1783 >>Ota: The Tome of Divinity
     .target Muiredon Battleforge
 step
-    .hs >>Hearthstone: Innkeeper Belm
-    .cooldown item,6948,>0
+    +Matkusta: Dun Morogh. Ironforgen portista ulos Dun Moroghiin
 step
     .goto 1426/0,-2054.19,-5784.70
     >>Tapa |cRXP_ENEMY_Narm Faulk|r
@@ -931,10 +950,6 @@ step
     .goto 1432/0,-2929.93,-5424.77
     .fp Thelsamar >>Hae flight path: Thelsamar
     .target Thorgrum Borrelson
-step
-    .goto 1432/0,-2973.79,-5377.86
-    .home >>Aseta Hearthstone tähän (Innkeeper Hearthstove)
-    .target Innkeeper Hearthstove
 step
     .goto 1432/0,-2892.97,-5401.77
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Kadrell|r
@@ -1005,6 +1020,14 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Kadrell|r
     .turnin 416 >>Palauta: Rat Catching
     .target Mountaineer Kadrell
+step
+    .goto 1432/0,-2932.13,-5343.64
+    .vendor >>Myy harmaat roinat (Morhan Coppertongue)
+    .target Morhan Coppertongue
+step
+    .goto 1432/0,-2973.79,-5377.86
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Hearthstove
 step
     .goto 1432/0,-2646.65,-5854.68
     >>|cRXP_WARN_Ammattitehtävä (Blacksmithing)|r: palauta jos tavoite on valmis, muuten ohita
@@ -1125,12 +1148,10 @@ step
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Thurgrum Deepforge)
     .target Thurgrum Deepforge
 step
-    .goto 1455/0,-857.09,-4840.69
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Firebrew
-step
-    .hs >>Hearthstone: Innkeeper Hearthstove
-    .cooldown item,6948,>0
+    .goto 1455/0,-1152.39,-4821.12
+    .fly Thelsamar >>Lennä: Thelsamar
+    .target Gryth Thurden
+    .zoneskip Loch Modan
 step
     .goto 1432/0,-3014.33,-5366.82
     >>Puhu: |cRXP_FRIENDLY_Brock Stoneseeker|r
@@ -1272,7 +1293,7 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
-#next 10-12 Elwynn Forest, Durotar (Paladin)
+#next 10-12 Elwynn Forest, Duskwood, Durotar (Paladin)
 
 step
     .goto 1429/0,-161.82,-8902.45
@@ -1669,7 +1690,7 @@ step
 RXPGuides.RegisterGuide([[
 #forever
 << Alliance Paladin
-#name 10-12 Elwynn Forest, Durotar (Paladin)
+#name 10-12 Elwynn Forest, Duskwood, Durotar (Paladin)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
 #defaultfor Human
@@ -1784,6 +1805,21 @@ step
     .goto 1453/0,607.27,-8790.45
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Gunther Weller)
     .target Gunther Weller
+step
+    .zone Duskwood >>Matkusta: Duskwood. Elwynnin kaakkoiskulmasta etelään Duskwoodiin. Darkshire on itäosassa
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Puhu: |cRXP_FRIENDLY_Ada Gelhardt|r
+    .accept 95771 >>Ota: A Taste of Darkness
+    .target Ada Gelhardt
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Suorita questin tavoite
+step
+    .goto 1431/0,714.53,-10227.87
+    >>Puhu: |cRXP_FRIENDLY_Ada Gelhardt|r
+    .turnin 95771 >>Palauta: A Taste of Darkness
+    .target Ada Gelhardt
 step
     .hs >>Hearthstone: Innkeeper Farley
     .cooldown item,6948,>0
@@ -1917,6 +1953,14 @@ step
     >>Scout through the Jasperlode Mine
     .complete 76,1
 step
+    .goto 1429/0,77.32,-9476.23
+    .vendor >>Myy harmaat roinat (Nordun Steadysight)
+    .target Nordun Steadysight
+step
+    .goto 1429/0,16.23,-9462.58
+    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
+    .target Innkeeper Farley
+step
     .goto 1429/0,74.20,-9464.89
     >>Puhu: |cRXP_FRIENDLY_Marshal Dughan|r
     .turnin 39 >>Palauta: Deliver Thomas' Report
@@ -2028,10 +2072,6 @@ step
     .goto 1453/0,607.27,-8790.45
     .vendor >>Myy harmaat roinat ja korjaa varusteet (Gunther Weller)
     .target Gunther Weller
-step
-    .goto 1453/0,673.64,-8867.71
-    .vendor >>Osta vettä (Ice Cold Milk) ja ruokaa, noin 20+20
-    .target Innkeeper Allison
 step
     .zone Durotar >>Matkusta: Durotar. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore). 
 step
@@ -5865,9 +5905,9 @@ step
     .target Essene Villard
 step
     .goto 1437/0,-2515.19,-2373.93
-    >>Kerää |cRXP_LOOT_Essene's Necklace|r
-    >>Kerää |cRXP_LOOT_Essene's Waterskin|r
-    >>Kerää |cRXP_LOOT_Essene's Spellbook|r
+    >>Kerää |cRXP_LOOT_Essene's Necklace|r (|cRXP_PICK_Essene's Necklace|r)
+    >>Kerää |cRXP_LOOT_Essene's Waterskin|r (|cRXP_PICK_Essene's Waterskin|r)
+    >>Kerää |cRXP_LOOT_Essene's Spellbook|r (|cRXP_PICK_Essene's Spellbook|r)
     .complete 88757,1
     .complete 88757,3
     .complete 88757,2
@@ -8506,9 +8546,26 @@ step
 step
     .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
 step
+    .goto 1437/0,-724.55,-3763.08
+    >>Puhu: |cRXP_FRIENDLY_Harold Riggs|r
+    .accept 96449 >>Ota: Aeonas's Secret Refuge
+    .target Harold Riggs
+step
     .goto 1437/0,-782.03,-3793.12
-    .fly Stormwind >>Lennä: Stormwind
+    .fly Ironforge >>Lennä: Ironforge
     .target Shellei Brondir
+    .zoneskip Ironforge
+step
+    +Matkusta: Dun Morogh. Ironforgen portista ulos Dun Moroghiin
+step
+    .goto 1426/0,1240.63,-6362.57
+    >>Puhu: |cRXP_FRIENDLY_Slain Scarlet Crusader|r
+    .turnin 96449 >>Palauta: Aeonas's Secret Refuge
+    .target Slain Scarlet Crusader
+step
+    .goto 1455/0,-1152.39,-4821.12
+    .fly Stormwind >>Lennä: Stormwind
+    .target Gryth Thurden
     .zoneskip Stormwind City
 step
     .goto 1453/0,881.45,-8577.55
@@ -8532,28 +8589,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Katherine the Pure|r
     .turnin 79940 >>Palauta: A Lost Brother
     .target Katherine the Pure
-step
-    .goto 1453/0,484.25,-8832.50
-    .fly Menethil Harbor >>Lennä: Menethil Harbor
-    .target Dungar Longdrink
-    .zoneskip Wetlands
-step
-    .goto 1437/0,-724.55,-3763.08
-    >>Puhu: |cRXP_FRIENDLY_Harold Riggs|r
-    .accept 96449 >>Ota: Aeonas's Secret Refuge
-    .target Harold Riggs
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Ironforge >>Lennä: Ironforge
-    .target Shellei Brondir
-    .zoneskip Ironforge
-step
-    +Matkusta: Dun Morogh. Ironforgen portista ulos Dun Moroghiin
-step
-    .goto 1426/0,1240.63,-6362.57
-    >>Puhu: |cRXP_FRIENDLY_Slain Scarlet Crusader|r
-    .turnin 96449 >>Palauta: Aeonas's Secret Refuge
-    .target Slain Scarlet Crusader
 step
     .xp 31 >>Tavoitetaso 31 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -11394,11 +11429,6 @@ step
 step
     .goto 1445/1,-4466.25,-3622.33
     >>Puhu: |cRXP_FRIENDLY_Elrick|r
-    .turnin 81764 >>Palauta: The Mysterious Merchant
-    .target Elrick
-step
-    .goto 1445/1,-4466.25,-3622.33
-    >>Puhu: |cRXP_FRIENDLY_Elrick|r
     .accept 81765 >>Ota: Elrick, Paladin of the Silver Hand
     .target Elrick
 step
@@ -11406,6 +11436,11 @@ step
     >>Puhu: |cRXP_FRIENDLY_Innkeeper Janene|r
     .turnin 81765 >>Palauta: Elrick, Paladin of the Silver Hand
     .target Innkeeper Janene
+step
+    .goto 1445/1,-4466.25,-3622.33
+    >>Puhu: |cRXP_FRIENDLY_Elrick|r
+    .turnin 81764 >>Palauta: The Mysterious Merchant
+    .target Elrick
 step
     .xp 44 >>Tavoitetaso 44 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -11904,7 +11939,7 @@ RXPGuides.RegisterGuide([[
 #name 50-54 Azshara, Tanaris, WPL + ZF/Mara/ST (Paladin)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
-#next 54-58 Tanaris, Felwood, Barrens + BRD (Paladin)
+#next 54-57 Tanaris, Felwood, Barrens (Paladin)
 
 step
     .zone Dustwallow Marsh >>Matkusta: Dustwallow Marsh. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Lennä Theramoreen tai laiva Menethil Harborista Theramoreen
@@ -13262,10 +13297,10 @@ step
 RXPGuides.RegisterGuide([[
 #forever
 << Alliance Paladin
-#name 54-58 Tanaris, Felwood, Barrens + BRD (Paladin)
+#name 54-57 Tanaris, Felwood, Barrens (Paladin)
 #version 1
 #group Dogiex's AI Guide: 1-60 (Forever)
-#next 58-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Paladin)
+#next 57-60 Winterspring, WPL, EPL + BRD/LBRS/DM/Scholo (Paladin)
 
 step
     .xp 51 >>Tavoitetaso 51 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
@@ -13569,6 +13604,18 @@ step
     .goto 1423/0,-4553.56,2014.67
     >>Puhu: |cRXP_FRIENDLY_Orthas|r
     .turnin 84318 >>Palauta: Oi!
+    .accept 84319 >>Ota: Oh No Ye Don't!
+    .target Orthas
+step
+    .goto 1423/0,-3546.88,2952.07
+    >>Kerää |cRXP_LOOT_Partially-Digested Plate Armor|r (|cRXP_ENEMY_Stitched Horror|r, |cRXP_ENEMY_Abomination|r)
+    .complete 84319,1
+    .mob Stitched Horror
+    .mob Abomination
+step
+    .goto 1423/0,-4553.56,2014.67
+    >>Puhu: |cRXP_FRIENDLY_Orthas|r
+    .turnin 84319 >>Palauta: Oh No Ye Don't!
     .target Orthas
 step
     .zone Darkshore >>Matkusta: Darkshore. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
@@ -14253,6 +14300,15 @@ step
     .isOnQuest 3566
     .turnin 3566 >>Palauta: Rise, Obsidion!
     .target Curator Thorius
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+<< Alliance Paladin
+#name 57-60 Winterspring, WPL, EPL + BRD/LBRS/DM/Scholo (Paladin)
+#version 1
+#group Dogiex's AI Guide: 1-60 (Forever)
+
 step
     +|cRXP_WARN_Dungeon: Blackrock Depths|r (suositus taso 53+, ryhmä). Seuraavat askeleet hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Searing Gorge) ja palauttavat questit. Etsi ryhmä jo matkalla. Jos et tee dungeonia, ohita nämä askeleet.
 step
@@ -14815,15 +14871,6 @@ step
     .isOnQuest 3463
     .turnin 3463 >>Palauta: Set Them Ablaze!
     .target Squire Maltrake
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-<< Alliance Paladin
-#name 58-60 Searing Gorge, Winterspring, WPL + BRD/LBRS/DM/Scholo (Paladin)
-#version 1
-#group Dogiex's AI Guide: 1-60 (Forever)
-
 step
     .xp 54 >>Tavoitetaso 54 ennen seuraavaa aluetta. Jos olet alle: toista edellinen dungeon tai grindaa
 step
@@ -15165,10 +15212,9 @@ step
     .complete 5542,2
     .mob Plaguehound
 step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .accept 84319 >>Ota: Oh No Ye Don't!
-    .target Orthas
+    .goto 1423/0,-4592.28,2049.07
+    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
+    .complete 5211,1
 step
     .goto 1423/0,-3594.20,1455.67
     >>Puhu: |cRXP_FRIENDLY_Pamela Redpath|r
@@ -15199,20 +15245,8 @@ step
     .turnin 6164 >>Palauta: Augustus' Receipt Book
     .target Augustus the Touched
 step
-    .goto 1423/0,-3176.90,2969.27
-    >>Kerää |cRXP_LOOT_Partially-Digested Plate Armor|r (|cRXP_ENEMY_Stitched Horror|r, |cRXP_ENEMY_Abomination|r)
-    .complete 84319,1
-    .mob Stitched Horror
-    .mob Abomination
-step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .turnin 84319 >>Palauta: Oh No Ye Don't!
-    .target Orthas
-step
-    .goto 1423/0,-4592.28,2049.07
-    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
-    .complete 5211,1
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-5263.41,2152.27
     >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
@@ -15223,10 +15257,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
     .turnin 5211 >>Palauta: Defenders of Darrowshire
     .target Carlin Redpath
-step
-    .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
-    .target Craftsman Wilhelm
 step
     .zone Darkshore >>Matkusta: Darkshore. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 step
@@ -15239,8 +15269,12 @@ step
     >>Kerää |cRXP_LOOT_Sacred Highborne Writings|r (|cRXP_PICK_Sacred Highborne Writings|r)
     .complete 5246,1
 step
-    .hs >>Hearthstone: Jessica Chambers
-    .cooldown item,6948,>0
+    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+step
+    .goto 1437/0,-782.03,-3793.12
+    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
+    .target Shellei Brondir
+    .zoneskip Eastern Plaguelands
 step
     .goto 1423/0,-4256.72,3233.00
     >>Puhu: |cRXP_FRIENDLY_Aurora Skycaller|r
@@ -15400,12 +15434,8 @@ step
     .accept 5065 >>Ota: The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
 step
-    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
-    .target Shellei Brondir
-    .zoneskip Eastern Plaguelands
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-4983.77,3468.07
     >>Kerää |cRXP_LOOT_Third Mosh'aru Tablet|r (|cRXP_PICK_Third Mosh'aru Tablet|r)
@@ -15898,20 +15928,15 @@ step
     .target Dungar Longdrink
     .zoneskip Ironforge
 step
-    .goto 1455/0,-1085.98,-4642.05
-    >>Puhu: |cRXP_FRIENDLY_Eldrun Stormbreaker|r
-    .accept 97169 >>Ota: The Darkreaver Menace
-    .target Eldrun Stormbreaker
+    .goto 1455/0,-1057.51,-4846.76
+    >>Puhu: |cRXP_FRIENDLY_Deliana|r
+    .accept 8908 >>Ota: An Earnest Proposition
+    .target Deliana
 step
     .goto 1455/0,-1058.30,-4846.76
     >>Puhu: |cRXP_FRIENDLY_Deliana|r
     .turnin 97448 >>Palauta: Just Compensation
     .accept 97447 >>Ota: An Earnest Proposition
-    .target Deliana
-step
-    .goto 1455/0,-1057.51,-4846.76
-    >>Puhu: |cRXP_FRIENDLY_Deliana|r
-    .accept 8908 >>Ota: An Earnest Proposition
     .target Deliana
 step
     .goto 1455/0,-908.88,-4612.50
@@ -16200,7 +16225,6 @@ step
     >>Käytä / kerää: |cRXP_PICK_Remains of Eva Sarkhoff|r
     >>Käytä / kerää: |cRXP_PICK_Remains of Lucien Sarkhoff|r
     >>Tapa |cRXP_ENEMY_Plagued Hatchling|r
-    >>Kerää |cRXP_LOOT_Darkreaver's Head|r (|cRXP_ENEMY_Death Knight Darkreaver|r)
     .complete 5343,1
     .complete 5343,2
     .complete 5343,3
@@ -16209,7 +16233,6 @@ step
     .complete 5382,2
     .complete 5382,3
     .complete 5529,1
-    .complete 97169,1
 step
     .goto 1422/0,-2601.93,1253.93
     >>Puhu: |cRXP_FRIENDLY_Eva Sarkhoff|r
@@ -16232,26 +16255,14 @@ step
     .turnin 5529 >>Palauta: Plagued Hatchlings
     .target Betina Bigglezink
 step
+    .goto 1423/0,-5321.05,2261.20
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Craftsman Wilhelm)
+    .target Craftsman Wilhelm
+step
     .goto 1423/0,-5345.58,2269.80
-    .fly Ironforge >>Lennä: Ironforge
+    .fly Chillwind Camp >>Lennä: Chillwind Camp
     .target Khaelyn Steelwing
-    .zoneskip Ironforge
-step
-    .goto 1455/0,-1085.98,-4642.05
-    >>Puhu: |cRXP_FRIENDLY_Eldrun Stormbreaker|r
-    .turnin 97169 >>Palauta: The Darkreaver Menace
-    .target Eldrun Stormbreaker
-step
-    .goto 1455/0,-1069.29,-4605.07
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Hjoldir Stoneblade)
-    .target Hjoldir Stoneblade
-step
-    .goto 1455/0,-1152.39,-4821.12
-    .fly Aerie Peak >>Lennä: Aerie Peak
-    .target Gryth Thurden
-    .zoneskip The Hinterlands
-step
-    .zone Western Plaguelands >>Matkusta: Western Plaguelands. Lennä Chillwind Campiin. Ensimmäisellä kerralla: Southshoresta pohjoiseen Alteracin läpi Western Plaguelandsiin
+    .zoneskip Western Plaguelands
 step
     .goto 1422/0,-2580.43,1268.27
     >>|cRXP_WARN_Mene dungeoniin: Scholomance|r. Korjaa varusteet ja osta vettä ennen sisäänmenoa

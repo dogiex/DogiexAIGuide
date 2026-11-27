@@ -17,7 +17,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **Goblin Lockpicks** (Rogue, v4.7): on nyt QuestieDB-datassa The Horn of Xelthosin osa, joten opas ohjaa The Horn of Xelthosiin.
 
 ### Alliance (v3.0)
-- **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest (v4.5:stä alkaen se on reitillä, mutta sen olemassaolo Foreverissa on epävarma: ohita, jos sitä ei löydy).
+- **Paladin**: The Test of Righteousness vaatii esineet Deadminesista ja Shadowfang Keepistä sekä Purified Kor Gemin (sama rakenne kuin Horden A Moon-Kissed Bladella), A Brother In Need -ketjun esiquest alkaa esineestä ja NPC:ltä puuttuu sijainti, Materials of Significance -questin esineillä ei ole lähdettä datassa, Oi! on Season of Discovery -quest (Alliancella v4.5:stä ja Hordella v4.10:stä alkaen se on reitillä, mutta sen olemassaolo Foreverissa on epävarma: ohita, jos sitä ei löydy).
 - **Rogue**: Ravenholdtin ketju (Syndicate Sabotage, What's the Big Idea?, Covert Extraction, A Way In, Master of Disguise) jää pois kuten Hordella, koska The Manor, Ravenholdt alkaa esineestä. SI:7 ja To Hulfdan! ovat vaihtoehtoisia ohjausquesteja.
 - **Mage**: Investigate the Blue Recluse -ketju (Manaweave Robe) ei ole reitillä, ja Research Access vaatii Season of Discovery -kirjastoquestit.
 - **Warlock**: You Have Served Us Well (esiquest ei reitillä) ja Seeking Strahad.

@@ -15009,17 +15009,6 @@ step
     .turnin 3563 >>Palauta: Jes'rimon's Payment to Jediga
     .target Jediga
 step
-    .goto 1447/1,-4757.77,3982.40
-    >>Puhu: |cRXP_FRIENDLY_Archmage Xylem|r
-    .accept 90789 >>Ota: Scalebeard
-    .target Archmage Xylem
-step
-    .goto 1447/1,-5797.29,3688.24
-    >>Kerää |cRXP_LOOT_Prismatic Shell|r (|cRXP_ENEMY_Scalebeard|r, |cRXP_ENEMY_Warlord Krellian|r)
-    .complete 90789,1
-    .mob Scalebeard
-    .mob Warlord Krellian
-step
     .goto 1447/1,-5406.83,4026.36
     >>Puhu: |cRXP_FRIENDLY_Ekkal|r
     .accept 97327 >>Ota: Blackmaw Pouches
@@ -15046,11 +15035,6 @@ step
     .turnin 96246 >>Palauta: Blackmaw Pouches
     .target Ekkal
 step
-    .goto 1447/1,-4757.77,3982.40
-    >>Puhu: |cRXP_FRIENDLY_Archmage Xylem|r
-    .turnin 90789 >>Palauta: Scalebeard
-    .target Archmage Xylem
-step
     .goto 1447/1,-4390.64,3663.89
     .fly Thunder Bluff >>Lennä: Thunder Bluff
     .target Kroum
@@ -15076,14 +15060,14 @@ step
     .target Tal
     .zoneskip Orgrimmar
 step
-    .goto 1454/1,-4279.37,1792.32
-    .trainer >>Rogue-trainer (taso 58): Kick r4, Sprint r3
-    .target Gest
-step
     .goto 1454/1,-4459.05,1954.90
     >>Puhu: |cRXP_FRIENDLY_Jes'rimon|r
     .turnin 4300 >>Palauta: Bone-Bladed Weapons
     .target Jes'rimon
+step
+    .goto 1454/1,-4279.37,1792.32
+    .trainer >>Rogue-trainer (taso 58): Kick r4, Sprint r3
+    .target Gest
 step
     .goto 1454/1,-4470.27,1837.04
     >>Puhu: |cRXP_FRIENDLY_Zilzibin Drumlore|r
@@ -16599,34 +16583,36 @@ step
     .accept 6133 >>Ota: The Ranger Lord's Behest
     .target Nathanos Blightcaller
 step
-    .goto 1423/0,-3151.08,1957.33
-    >>Tapa |cRXP_ENEMY_Plaguehound Runt|r
+    .goto 1423/0,-3284.45,1957.33
     >>Tapa |cRXP_ENEMY_Plaguebat|r
-    .complete 5542,1
     .complete 5543,1
-    .mob Plaguehound Runt
     .mob Plaguebat
 step
-    .goto 1423/0,-3495.25,1877.07
-    >>Kerää |cRXP_LOOT_Slab of Carrion Worm Meat|r (|cRXP_ENEMY_Carrion Grub|r, |cRXP_ENEMY_Carrion Devourer|r)
-    .complete 5544,1
-    .mob Carrion Grub
-    .mob Carrion Devourer
+    .goto 1423/0,-4187.89,2653.93
+    >>Tapa |cRXP_ENEMY_Monstrous Plaguebat|r
+    >>Tapa |cRXP_ENEMY_Frenzied Plaguehound|r
+    .complete 6042,2
+    .complete 5542,3
+    .mob Monstrous Plaguebat
+    .mob Frenzied Plaguehound
 step
-    .goto 1423/0,-3972.78,2100.67
-    >>Tapa |cRXP_ENEMY_Noxious Plaguebat|r
-    .complete 6042,1
-    .mob Noxious Plaguebat
+    .goto 1423/0,-4174.98,3238.73
+    >>Tapa |cRXP_ENEMY_Ranger|r
+    >>Tapa |cRXP_ENEMY_Woodsman|r
+    >>Tapa |cRXP_ENEMY_Pathstrider|r
+    >>Kerää |cRXP_LOOT_Quel'Thalas Registry|r (|cRXP_PICK_Quel'Thalas Registry|r)
+    .complete 6133,2
+    .complete 6133,3
+    .complete 6133,1
+    .complete 6133,4
+    .mob Ranger
+    .mob Woodsman
+    .mob Pathstrider
 step
-    .goto 1423/0,-4209.40,2195.27
-    >>Tapa |cRXP_ENEMY_Plaguehound|r
-    .complete 5542,2
-    .mob Plaguehound
-step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .accept 84319 >>Ota: Oh No Ye Don't!
-    .target Orthas
+    .goto 1423/0,-4923.54,3373.47
+    >>Kerää |cRXP_LOOT_Hameya's Key|r (|cRXP_ENEMY_Infiltrator Hameya|r)
+    .complete 6024,1
+    .mob Infiltrator Hameya
 step
     .goto 1423/0,-5290.51,2328.57
     .fp Light's Hope Chapel >>Hae flight path: Light's Hope Chapel
@@ -16636,51 +16622,72 @@ step
     .home >>Aseta Hearthstone tähän (Jessica Chambers)
     .target Jessica Chambers
 step
-    .goto 1423/0,-5263.41,2152.27
-    >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
-    .accept 6021 >>Ota: Zaeldarr the Outcast
-    .target Caretaker Alen
+    .goto 1423/0,-5340.84,2258.33
+    >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
+    .accept 5211 >>Ota: Defenders of Darrowshire
+    .target Carlin Redpath
 step
     .goto 1423/0,-5336.54,2255.47
     >>Puhu: |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
     .turnin 6030 >>Palauta: Duke Nicholas Zverenhoff
     .target Duke Nicholas Zverenhoff
 step
-    .goto 1423/0,-5340.84,2258.33
-    >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
-    .accept 5211 >>Ota: Defenders of Darrowshire
-    .target Carlin Redpath
+    .goto 1423/0,-5263.41,2152.27
+    >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
+    .accept 6021 >>Ota: Zaeldarr the Outcast
+    .target Caretaker Alen
 step
-    .goto 1423/0,-4910.64,2645.33
-    >>Tapa |cRXP_ENEMY_Frenzied Plaguehound|r
-    >>Tapa |cRXP_ENEMY_Monstrous Plaguebat|r
-    .complete 5542,3
-    .complete 6042,2
-    .mob Frenzied Plaguehound
-    .mob Monstrous Plaguebat
-step
-    .goto 1423/0,-4717.04,2748.53
+    .goto 1423/0,-4592.28,2049.07
     >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
     .complete 5211,1
 step
-    .goto 1423/0,-4187.89,3241.60
-    >>Tapa |cRXP_ENEMY_Woodsman|r
-    >>Tapa |cRXP_ENEMY_Ranger|r
-    >>Tapa |cRXP_ENEMY_Pathstrider|r
-    >>Kerää |cRXP_LOOT_Quel'Thalas Registry|r (|cRXP_PICK_Quel'Thalas Registry|r)
-    .complete 6133,3
-    .complete 6133,2
-    .complete 6133,1
-    .complete 6133,4
-    .mob Woodsman
-    .mob Ranger
-    .mob Pathstrider
+    .goto 1423/0,-4209.40,2195.27
+    >>Tapa |cRXP_ENEMY_Plaguehound|r
+    .complete 5542,2
+    .mob Plaguehound
 step
-    .goto 1423/0,-3637.22,3270.27
-    >>Kerää |cRXP_LOOT_Partially-Digested Plate Armor|r (|cRXP_ENEMY_Stitched Horror|r, |cRXP_ENEMY_Abomination|r)
-    .complete 84319,1
-    .mob Stitched Horror
-    .mob Abomination
+    .goto 1423/0,-3972.78,2100.67
+    >>Tapa |cRXP_ENEMY_Noxious Plaguebat|r
+    .complete 6042,1
+    .mob Noxious Plaguebat
+step
+    .goto 1423/0,-3495.25,1877.07
+    >>Kerää |cRXP_LOOT_Slab of Carrion Worm Meat|r (|cRXP_ENEMY_Carrion Grub|r, |cRXP_ENEMY_Carrion Devourer|r)
+    .complete 5544,1
+    .mob Carrion Grub
+    .mob Carrion Devourer
+step
+    .goto 1423/0,-3211.31,1871.33
+    >>Puhu: |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .turnin 6042 >>Palauta: Un-Life's Little Annoyances
+    .turnin 6133 >>Palauta: The Ranger Lord's Behest
+    .target Nathanos Blightcaller
+step
+    .goto 1423/0,-3594.20,1455.67
+    >>Puhu: |cRXP_FRIENDLY_Pamela Redpath|r
+    .turnin 5142 >>Palauta: Little Pamela
+    .target Pamela Redpath
+step
+    .goto 1423/0,-3271.54,1576.07
+    >>Klikkaa: |cRXP_PICK_Mound of Dirt|r
+    .turnin 6024 >>Palauta: Hameya's Plea
+step
+    .goto 1423/0,-3250.03,1610.47
+    >>Kerää |cRXP_LOOT_Zaeldarr's Head|r (|cRXP_ENEMY_Zaeldarr the Outcast|r)
+    .complete 6021,1
+    .mob Zaeldarr the Outcast
+step
+    .goto 1423/0,-3151.08,1957.33
+    >>Tapa |cRXP_ENEMY_Plaguehound Runt|r
+    .complete 5542,1
+    .mob Plaguehound Runt
+step
+    .goto 1423/0,-2479.96,2671.13
+    >>Puhu: |cRXP_FRIENDLY_Tirion Fordring|r
+    .turnin 5542 >>Palauta: Demon Dogs
+    .turnin 5543 >>Palauta: Blood Tinged Skies
+    .turnin 5544 >>Palauta: Carrion Grubbage
+    .target Tirion Fordring
 step
     .goto 1423/0,-2746.69,2934.87
     >>Puhu: |cRXP_FRIENDLY_Augustus the Touched|r
@@ -16696,59 +16703,22 @@ step
     .turnin 6164 >>Palauta: Augustus' Receipt Book
     .target Augustus the Touched
 step
-    .goto 1423/0,-2479.96,2671.13
-    >>Puhu: |cRXP_FRIENDLY_Tirion Fordring|r
-    .turnin 5542 >>Palauta: Demon Dogs
-    .turnin 5543 >>Palauta: Blood Tinged Skies
-    .turnin 5544 >>Palauta: Carrion Grubbage
-    .target Tirion Fordring
-step
-    .goto 1423/0,-3211.31,1871.33
-    >>Puhu: |cRXP_FRIENDLY_Nathanos Blightcaller|r
-    .turnin 6042 >>Palauta: Un-Life's Little Annoyances
-    .turnin 6133 >>Palauta: The Ranger Lord's Behest
-    .target Nathanos Blightcaller
-step
-    .goto 1423/0,-3250.03,1610.47
-    >>Kerää |cRXP_LOOT_Zaeldarr's Head|r (|cRXP_ENEMY_Zaeldarr the Outcast|r)
-    .complete 6021,1
-    .mob Zaeldarr the Outcast
-step
-    .goto 1423/0,-3594.20,1455.67
-    >>Puhu: |cRXP_FRIENDLY_Pamela Redpath|r
-    .turnin 5142 >>Palauta: Little Pamela
-    .target Pamela Redpath
-step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .turnin 84319 >>Palauta: Oh No Ye Don't!
-    .target Orthas
+    .goto 1423/0,-3959.88,2920.53
+    >>Kerää |cRXP_LOOT_Plagueland Termites|r (|cRXP_PICK_Large Termite Mound|r)
+    .complete 5901,1
 step
     .hs >>Hearthstone: Jessica Chambers
     .cooldown item,6948,>0
-step
-    .goto 1423/0,-5263.41,2152.27
-    >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
-    .turnin 6021 >>Palauta: Zaeldarr the Outcast
-    .target Caretaker Alen
 step
     .goto 1423/0,-5340.84,2258.33
     >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
     .turnin 5211 >>Palauta: Defenders of Darrowshire
     .target Carlin Redpath
 step
-    .goto 1423/0,-4923.54,3373.47
-    >>Kerää |cRXP_LOOT_Hameya's Key|r (|cRXP_ENEMY_Infiltrator Hameya|r)
-    .complete 6024,1
-    .mob Infiltrator Hameya
-step
-    .goto 1423/0,-4071.73,3006.53
-    >>Kerää |cRXP_LOOT_Plagueland Termites|r (|cRXP_PICK_Large Termite Mound|r)
-    .complete 5901,1
-step
-    .goto 1423/0,-3271.54,1576.07
-    >>Klikkaa: |cRXP_PICK_Mound of Dirt|r
-    .turnin 6024 >>Palauta: Hameya's Plea
+    .goto 1423/0,-5263.41,2152.27
+    >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
+    .turnin 6021 >>Palauta: Zaeldarr the Outcast
+    .target Caretaker Alen
 step
     .goto 1423/0,-5290.51,2328.57
     .fly Flame Crest >>Lennä: Flame Crest
@@ -17115,14 +17085,6 @@ step
     .goto 1451/1,757.52,-6848.01
     >>Puhu: |cRXP_FRIENDLY_Windcaller Proudhorn|r
     .turnin 8276 >>Palauta: Taking Back Silithus
-    .target Windcaller Proudhorn
-step
-    .goto 1451/1,730.00,-6867.99
-    .home >>Aseta Hearthstone tähän (Calandrath)
-    .target Calandrath
-step
-    .goto 1451/1,757.52,-6848.01
-    >>Puhu: |cRXP_FRIENDLY_Windcaller Proudhorn|r
     .accept 8280 >>Ota: Securing the Supply Lines
     .target Windcaller Proudhorn
 step
@@ -17130,6 +17092,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Beetix Ficklespragg|r
     .accept 8277 >>Ota: Deadly Desert Venom
     .target Beetix Ficklespragg
+step
+    .goto 1451/1,730.00,-6867.99
+    .home >>Aseta Hearthstone tähän (Calandrath)
+    .target Calandrath
 step
     .goto 1451/1,653.02,-6713.28
     >>Tapa |cRXP_ENEMY_Dredge Striker|r
@@ -17166,6 +17132,10 @@ step
     .turnin 8280 >>Palauta: Securing the Supply Lines
     .accept 8281 >>Ota: Stepping Up Security
     .target Windcaller Proudhorn
+step
+    .goto 1451/1,752.99,-6861.02
+    .vendor >>Myy harmaat roinat (Vargus)
+    .target Vargus
 step
     .goto 1451/1,653.02,-6662.18
     >>Kerää |cRXP_LOOT_Sand Skitterer Fang|r (|cRXP_ENEMY_Sand Skitterer|r)
@@ -17207,10 +17177,6 @@ step
     .turnin 8320 >>Palauta: Twilight Geolords
     .accept 8321 >>Ota: Vyral the Vile
     .target Huum Wildmane
-step
-    .goto 1451/1,842.16,-6817.81
-    .vendor >>Myy harmaat roinat (Khur Hornstriker)
-    .target Khur Hornstriker
 step
     .goto 1451/1,983.93,-7579.73
     >>Kerää |cRXP_LOOT_Stonelash Flayer Stinger|r (|cRXP_ENEMY_Stonelash Flayer|r)
@@ -17301,14 +17267,14 @@ step
     .accept 8323 >>Ota: True Believers
     .target Hermit Ortell
 step
-    .goto 1451/1,752.99,-6861.02
-    .vendor >>Myy harmaat roinat (Vargus)
-    .target Vargus
-step
     .goto 1451/1,740.10,-6852.66
     >>Puhu: |cRXP_FRIENDLY_Noggle Ficklespragg|r
     .turnin 8282 >>Palauta: Noggle's Lost Satchel
     .target Noggle Ficklespragg
+step
+    .goto 1451/1,730.00,-6867.99
+    .vendor >>Myy harmaat roinat (Calandrath)
+    .target Calandrath
 step
     .goto 1451/1,823.70,-6752.77
     >>Puhu: |cRXP_FRIENDLY_Commander Mar'alith|r
@@ -17532,13 +17498,13 @@ step
     .accept 7441 >>Ota: Pusillin and the Elder Azj'Tordin
     .target Azj'Tordin
 step
-    .goto 1444/1,233.34,-4484.56
-    .vendor >>Myy harmaat roinat ja korjaa varusteet (Cawind Trueaim)
-    .target Cawind Trueaim
-step
     .goto 1444/1,145.77,-4396.07
     >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
     .turnin 7492 >>Palauta: Camp Mojache
+    .target Talo Thornhoof
+step
+    .goto 1444/1,145.77,-4396.07
+    >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
     .accept 7489 >>Ota: Lethtendris's Web
     .target Talo Thornhoof
 step
@@ -17546,6 +17512,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Sage Korolusk|r
     .accept 7481 >>Ota: Elven Legends
     .target Sage Korolusk
+step
+    .goto 1444/1,249.32,-4339.54
+    .vendor >>Myy harmaat roinat ja korjaa varusteet (Worb Strongstitch)
+    .target Worb Strongstitch
 step
     .goto 1444/1,1327.27,-4456.30
     >>Dungeonin sisällä - Puhu: |cRXP_FRIENDLY_Knot Thimblejack|r

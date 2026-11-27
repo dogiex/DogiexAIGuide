@@ -2666,21 +2666,16 @@ Guidelime.registerGuide([[
 [G 51.2,82.1 Felwood]Puhu: *Greta Mosshoof* [QT5242 A Final Blow]
 [G 34.4,54.0 Felwood]Lennä (*Brakkar*): [F Valormok]
 [G 22.6,51.4 Azshara]Puhu: *Jediga* [QT3562 Magatha's Payment to Jediga] [QT3563 Jes'rimon's Payment to Jediga]
-[G 29.2,40.2 Azshara]Puhu: *Archmage Xylem* [QA90789 Scalebeard]
-[G 49.7,48.9 Azshara]Kerää *Prismatic Shell* (Scalebeard, Warlord Krellian) [QC90789,1 Scalebeard]
 [G 42.0,38.9 Azshara]Puhu: *Ekkal* [QA97327 Blackmaw Pouches]
 [G 35.1,24.1 Azshara]Kerää *Blackmaw Pouch* (Swarming Imp) [QC97327,1 Blackmaw Pouches]
 [G 42.0,38.9 Azshara]Puhu: *Ekkal* [QT97327 Blackmaw Pouches] [QA96246 Blackmaw Pouches]
 [G 35.1,24.1 Azshara]Kerää *Blackmaw Pouch* (Swarming Imp) [QC96246,1 Blackmaw Pouches]
 [G 42.0,38.9 Azshara]Puhu: *Ekkal* [QT96246 Blackmaw Pouches]
-[G 29.2,40.2 Azshara]Puhu: *Archmage Xylem* [QT90789 Scalebeard]
 [G 22.0,49.6 Azshara]Lennä (*Kroum*): [F Thunder Bluff]
-[G 77.1,27.0 Thunder Bluff][T Druid-trainer (taso 58)] (*Sheal Runetotem*): Ravage r4, Rejuvenation r10, Mangle r2, Entangling Roots r6, Lacerate r3
 [G 77.5,22.0 Thunder Bluff]Puhu: *Ghede* [QT3761 Un'Goro Soil]
 [G 78.6,28.6 Thunder Bluff]Puhu: *Arch Druid Hamuul Runetotem* [QA3782 Morrowgrain Research]
 [G 71.1,34.2 Thunder Bluff]Puhu: *Bashana Runetotem* [QT3782 Morrowgrain Research]
-[G 55.5,57.1 Thunder Bluff][V Myy harmaat roinat] ja [R korjaa varusteet] (*Hogor Thunderhoof*)
-[G 45.8,64.7 Thunder Bluff][V Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20] (*Innkeeper Pala*)
+[G 71.1,34.2 Thunder Bluff][V Myy harmaat roinat] (*Bashana Runetotem*)
 [G 47.0,49.8 Thunder Bluff]Lennä (*Tal*): [F Orgrimmar]
 [G 55.5,34.1 Orgrimmar]Puhu: *Jes'rimon* [QT4300 Bone-Bladed Weapons]
 [G 56.3,46.7 Orgrimmar]Puhu: *Zilzibin Drumlore* [QT4509 Calm Before the Storm] [QA4511 Calm Before the Storm]
@@ -2705,6 +2700,7 @@ Guidelime.registerGuide([[
 [G 54.8,76.3 Undercity]Puhu: *Andron Gant* [QT3542 Delivery to Andron Gant] [QA3564 Andron's Payment to Jediga]
 [G 58.0,91.8 Undercity]Puhu: *Lady Sylvanas Windrunner* [QA5961 The Champion of the Banshee Queen]
 [G 51.7,74.7 Undercity][V Myy harmaat roinat] (*Algernon*)
+[G 67.7,37.9 Undercity][V Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20] (*Innkeeper Norman*)
 [OC]Matkusta: *Orgrimmar*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Orgrimmar: lento (Kalimdor) tai zeppeliini Undercitystä / Grom'golista
 [G 45.1,63.9 Orgrimmar]Lennä (*Doras*): [F Marshal's Refuge]
 [G 55.6,66.1 Un'Goro Crater]Kerää *Merged Ooze Sample* (Primal Ooze, Gargantuan Ooze) [QC4642,1 Melding of Influences]
@@ -2779,6 +2775,7 @@ Guidelime.registerGuide([[
 [G 67.0,24.0 Tanaris]Puhu: *Yorba Screwspigot* [QA4324 Yuka Screwspigot]
 [G 51.6,25.4 Tanaris]Lennä (*Bulkrek Ragefist*): [F Thunder Bluff]
 [OC]Matkusta: *Mulgore*. Thunder Bluffista alas Mulgoreen
+[G 33.4,22.1 Mulgore][T Druid-trainer (taso 58)] (*Hana Lighthoof*): Ravage r4, Rejuvenation r10, Mangle r2, Entangling Roots r6, Lacerate r3
 [G 33.4,22.6 Mulgore]Puhu: *Alaana Stormwalker* [QA97197 Fragment of the Firelands]
 [OC]Matkusta: *Stranglethorn Vale*. Vaihda mannerta zeppeliinillä (Orgrimmar - Undercity / Grom'gol) ja lennä perille. Zeppeliini Orgrimmarin edustalta Grom'gol Base Campiin (Stranglethorn Vale)
 [G 32.5,29.4 Stranglethorn Vale]Lennä (*Thysta*): [F Flame Crest]
@@ -2960,34 +2957,32 @@ Guidelime.registerGuide([[
 [OC]Matkusta: *Eastern Plaguelands*. Western Plaguelandsin läpi itään Eastern Plaguelandsiin. Light's Hope Chapel on itäosassa
 [G 22.9,73.0 Eastern Plaguelands]Klikkaa: *Torn Scroll* [QA6024 Hameya's Plea]
 [G 22.2,63.5 Eastern Plaguelands]Puhu: *Nathanos Blightcaller* [QT5961 The Champion of the Banshee Queen] [QA6042 Un-Life's Little Annoyances] [QA6133 The Ranger Lord's Behest]
-[G 20.8,60.5 Eastern Plaguelands]Tapa *Plaguehound Runt*; Tapa *Plaguebat* [QC5542,1 Demon Dogs] [QC5543,1 Blood Tinged Skies]
-[G 28.8,63.3 Eastern Plaguelands]Kerää *Slab of Carrion Worm Meat* (Carrion Grub, Carrion Devourer) [QC5544,1 Carrion Grubbage]
-[G 39.9,55.5 Eastern Plaguelands]Tapa *Noxious Plaguebat* [QC6042,1 Un-Life's Little Annoyances]
-[G 45.4,52.2 Eastern Plaguelands]Tapa *Plaguehound* [QC5542,2 Demon Dogs]
-[G 53.4,58.5 Eastern Plaguelands]Puhu: *Orthas* [QA84319 Oh No Ye Don't!]
+[G 23.9,60.5 Eastern Plaguelands]Tapa *Plaguebat* [QC5543,1 Blood Tinged Skies]
+[G 44.9,36.2 Eastern Plaguelands]Tapa *Monstrous Plaguebat*; Tapa *Frenzied Plaguehound* [QC6042,2 Un-Life's Little Annoyances] [QC5542,3 Demon Dogs]
+[G 44.6,15.8 Eastern Plaguelands]Tapa *Ranger*; Tapa *Woodsman*; Tapa *Pathstrider*; Kerää *Quel'Thalas Registry* (Quel'Thalas Registry) [QC6133,2 The Ranger Lord's Behest] [QC6133,3 The Ranger Lord's Behest] [QC6133,1 The Ranger Lord's Behest] [QC6133,4 The Ranger Lord's Behest]
+[G 62.0,11.1 Eastern Plaguelands]Kerää *Hameya's Key* (Infiltrator Hameya) [QC6024,1 Hameya's Plea]
 [G 70.5,47.5 Eastern Plaguelands][P Light's Hope Chapel]Hae flight path (*Georgia*)
-[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA6021 Zaeldarr the Outcast]
-[G 71.8,48.5 Eastern Plaguelands][S Aseta Hearthstone tähän] (*Jessica Chambers*)
-[G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT6030 Duke Nicholas Zverenhoff]
 [G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QA5211 Defenders of Darrowshire]
-[G 61.7,36.5 Eastern Plaguelands]Tapa *Frenzied Plaguehound*; Tapa *Monstrous Plaguebat* [QC5542,3 Demon Dogs] [QC6042,2 Un-Life's Little Annoyances]
-[G 57.2,32.9 Eastern Plaguelands]Puhu: *Darrowshire Spirit* [QC5211,1 Defenders of Darrowshire]
-[G 44.9,15.7 Eastern Plaguelands]Tapa *Woodsman*; Tapa *Ranger*; Tapa *Pathstrider*; Kerää *Quel'Thalas Registry* (Quel'Thalas Registry) [QC6133,3 The Ranger Lord's Behest] [QC6133,2 The Ranger Lord's Behest] [QC6133,1 The Ranger Lord's Behest] [QC6133,4 The Ranger Lord's Behest]
-[G 32.1,14.7 Eastern Plaguelands]Kerää *Partially-Digested Plate Armor* (Stitched Horror, Abomination) [QC84319,1 Oh No Ye Don't!]
+[G 71.6,50.1 Eastern Plaguelands]Puhu: *Duke Nicholas Zverenhoff* [QT6030 Duke Nicholas Zverenhoff]
+[G 71.8,48.5 Eastern Plaguelands][S Aseta Hearthstone tähän] (*Jessica Chambers*)
+[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QA6021 Zaeldarr the Outcast]
+[G 54.3,57.3 Eastern Plaguelands]Puhu: *Darrowshire Spirit* [QC5211,1 Defenders of Darrowshire]
+[G 45.4,52.2 Eastern Plaguelands]Tapa *Plaguehound* [QC5542,2 Demon Dogs]
+[G 39.9,55.5 Eastern Plaguelands]Tapa *Noxious Plaguebat* [QC6042,1 Un-Life's Little Annoyances]
+[G 28.8,63.3 Eastern Plaguelands]Kerää *Slab of Carrion Worm Meat* (Carrion Grub, Carrion Devourer) [QC5544,1 Carrion Grubbage]
+[G 22.2,63.5 Eastern Plaguelands]Puhu: *Nathanos Blightcaller* [QT6042 Un-Life's Little Annoyances] [QT6133 The Ranger Lord's Behest]
+[G 31.1,78.0 Eastern Plaguelands]Puhu: *Pamela Redpath* [QT5142 Little Pamela]
+[G 23.6,73.8 Eastern Plaguelands]Klikkaa: *Mound of Dirt* [QT6024 Hameya's Plea]
+[G 23.1,72.6 Eastern Plaguelands]Kerää *Zaeldarr's Head* (Zaeldarr the Outcast) [QC6021,1 Zaeldarr the Outcast]
+[G 20.8,60.5 Eastern Plaguelands]Tapa *Plaguehound Runt* [QC5542,1 Demon Dogs]
+[G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5542 Demon Dogs] [QT5543 Blood Tinged Skies] [QT5544 Carrion Grubbage]
 [G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QA6164 Augustus' Receipt Book]
 [G 14.0,24.2 Eastern Plaguelands]Kerää *Augustus' Receipt Book* (Augustus' Receipt Book) [QC6164,1 Augustus' Receipt Book]
 [G 11.4,26.4 Eastern Plaguelands]Puhu: *Augustus the Touched* [QT6164 Augustus' Receipt Book]
-[G 5.2,35.6 Eastern Plaguelands]Puhu: *Tirion Fordring* [QT5542 Demon Dogs] [QT5543 Blood Tinged Skies] [QT5544 Carrion Grubbage]
-[G 22.2,63.5 Eastern Plaguelands]Puhu: *Nathanos Blightcaller* [QT6042 Un-Life's Little Annoyances] [QT6133 The Ranger Lord's Behest]
-[G 23.1,72.6 Eastern Plaguelands]Kerää *Zaeldarr's Head* (Zaeldarr the Outcast) [QC6021,1 Zaeldarr the Outcast]
-[G 31.1,78.0 Eastern Plaguelands]Puhu: *Pamela Redpath* [QT5142 Little Pamela]
-[G 53.4,58.5 Eastern Plaguelands]Puhu: *Orthas* [QT84319 Oh No Ye Don't!]
+[G 39.6,26.9 Eastern Plaguelands]Kerää *Plagueland Termites* (Large Termite Mound) [QC5901,1 A Plague Upon Thee]
 [H Hearthstone: Jessica Chambers] (jos cooldownilla, juokse tai lennä)
-[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QT6021 Zaeldarr the Outcast]
 [G 71.7,50.0 Eastern Plaguelands]Puhu: *Carlin Redpath* [QT5211 Defenders of Darrowshire]
-[G 62.0,11.1 Eastern Plaguelands]Kerää *Hameya's Key* (Infiltrator Hameya) [QC6024,1 Hameya's Plea]
-[G 42.2,23.9 Eastern Plaguelands]Kerää *Plagueland Termites* (Large Termite Mound) [QC5901,1 A Plague Upon Thee]
-[G 23.6,73.8 Eastern Plaguelands]Klikkaa: *Mound of Dirt* [QT6024 Hameya's Plea]
+[G 69.9,53.7 Eastern Plaguelands]Puhu: *Caretaker Alen* [QT6021 Zaeldarr the Outcast]
 [G 70.5,47.5 Eastern Plaguelands]Lennä (*Georgia*): [F Flame Crest]
 [G 65.0,23.8 Burning Steppes]Puhu: *Ragged John* [QA4866 Mother's Milk]
 [G 65.2,24.0 Burning Steppes]Puhu: *Tinkee Steamboil* [QT4810 Return to Tinkee]
@@ -3036,10 +3031,10 @@ Guidelime.registerGuide([[
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Puhu: *Bijou* [QT4982 Bijou's Belongings] [QA4983 Bijou's Reconnaissance Report]
 [G 34.8,85.3 Searing Gorge]Dungeonin sisällä - Klikkaa: *Drakkisath's Brand* [QT7761 Blackhand's Command]
 [G 34.8,30.9 Searing Gorge]Lennä (*Grisha*): [F Kargath]
+[G 2.9,47.2 Badlands][V Myy harmaat roinat] (*Sranda*)
 [G 6.0,47.7 Badlands]Puhu: *Galamav the Marksman* [QT4724 The Pack Mistress]
 [G 5.9,47.6 Badlands]Puhu: *Lexlort* [QT4983 Bijou's Reconnaissance Report]
 [G 5.8,47.5 Badlands]Puhu: *Warlord Goretooth* [QT4903 Warlord's Command]
-[G 2.9,47.2 Badlands][V Myy harmaat roinat] (*Sranda*)
 [G 4.0,44.8 Badlands]Lennä (*Gorrik*): [F Flame Crest]
 [G 65.9,21.9 Burning Steppes]Puhu: *Kibler* [QT4729 Kibler's Exotic Pets] [QT4862 En-Ay-Es-Tee-Why]
 [G 65.7,24.2 Burning Steppes]Lennä (*Vahgruk*): [F Booty Bay]
@@ -3062,7 +3057,6 @@ Guidelime.registerGuide([[
 [G 48.7,36.7 Silithus][P Cenarion Hold]Hae flight path (*Runk Windtamer*)
 [G 51.1,38.3 Silithus]Puhu: *Windcaller Proudhorn* [QT8276 Taking Back Silithus] [QA8280 Securing the Supply Lines]
 [G 51.6,38.6 Silithus]Puhu: *Beetix Ficklespragg* [QA8277 Deadly Desert Venom]
-[G 51.9,39.2 Silithus][S Aseta Hearthstone tähän] (*Calandrath*)
 [G 54.1,32.5 Silithus]Tapa *Dredge Striker* [QC8280,1 Securing the Supply Lines]
 [G 49.7,37.5 Silithus]Puhu: *Geologist Larksbane* [QA8284 The Twilight Mystery]
 [G 49.0,36.7 Silithus]Puhu: *Scout Bloodfist* [QA9416 Report to General Kirika]
@@ -3070,7 +3064,6 @@ Guidelime.registerGuide([[
 [G 48.6,37.8 Silithus]Puhu: *Bor Wildmane* [QA8318 Secret Communication]
 [G 48.6,37.9 Silithus]Puhu: *Huum Wildmane* [QA8320 Twilight Geolords]
 [G 51.1,38.3 Silithus]Puhu: *Windcaller Proudhorn* [QT8280 Securing the Supply Lines] [QA8281 Stepping Up Security]
-[G 51.2,38.9 Silithus][V Myy harmaat roinat] (*Vargus*)
 [G 54.1,30.3 Silithus]Kerää *Sand Skitterer Fang* (Sand Skitterer); Kerää *Stonelash Scorpid Stinger* (Stonelash Scorpid) [QC8277,2 Deadly Desert Venom] [QC8277,1 Deadly Desert Venom]
 [G 51.6,38.6 Silithus]Puhu: *Beetix Ficklespragg* [QT8277 Deadly Desert Venom] [QA8278 Noggle's Last Hope]
 [G 26.4,15.9 Silithus]Kerää *Twilight Tablet Fragment* (Twilight Tablet Fragment) [QC8284,1 The Twilight Mystery]
@@ -3080,22 +3073,23 @@ Guidelime.registerGuide([[
 [G 44.6,69.8 Silithus]Kerää *Stonelash Flayer Stinger* (Stonelash Flayer); Kerää *Rock Stalker Fang* (Rock Stalker) [QC8278,1 Noggle's Last Hope] [QC8278,3 Noggle's Last Hope]
 [G 50.8,69.5 Silithus]Puhu: *General Kirika* [QT9416 Report to General Kirika]
 [G 72.4,15.6 Silithus]Kerää *Vyral's Signet Ring* (Vyral the Vile) [QC8321,1 Vyral the Vile]
-[H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
 [G 51.6,38.6 Silithus]Puhu: *Beetix Ficklespragg* [QT8278 Noggle's Last Hope]
 [G 51.6,38.5 Silithus]Puhu: *Noggle Ficklespragg* [QA8282 Noggle's Lost Satchel]
+[G 51.9,39.2 Silithus][S Aseta Hearthstone tähän] (*Calandrath*)
 [G 51.1,38.3 Silithus]Puhu: *Windcaller Proudhorn* [QT8281 Stepping Up Security]
 [G 48.6,37.9 Silithus]Puhu: *Huum Wildmane* [QT8321 Vyral the Vile]
 [G 48.6,37.8 Silithus]Puhu: *Bor Wildmane* [QT8318 Secret Communication]
 [G 49.7,37.5 Silithus]Puhu: *Geologist Larksbane* [QT8284 The Twilight Mystery] [QA8285 The Deserter]
 [G 51.2,38.9 Silithus]Puhu: *Vargus* [QT8800 Cenarion Battlegear]
+[G 51.2,38.9 Silithus][V Myy harmaat roinat] (*Vargus*)
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8285 The Deserter] [QA8279 The Twilight Lexicon]
 [G 44.6,91.4 Silithus]Kerää *Noggle's Satchel* (Noggle's Satchel) [QC8282,1 Noggle's Lost Satchel]
 [G 16.1,86.4 Silithus]Kerää *Twilight Lexicon - Chapter 2* (Twilight Keeper Exeter) [QC8279,2 The Twilight Lexicon]
 [G 26.4,36.6 Silithus]Kerää *Twilight Lexicon - Chapter 1* (Twilight Keeper Mayna) [QC8279,1 The Twilight Lexicon]
 [G 40.9,42.2 Silithus]Kerää *Twilight Lexicon - Chapter 3* (Twilight Keeper Havunth) [QC8279,3 The Twilight Lexicon]
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8279 The Twilight Lexicon] [QA8287 A Terrible Purpose] [QA8323 True Believers]
+[H Hearthstone: Calandrath] (jos cooldownilla, juokse tai lennä)
 [G 51.6,38.5 Silithus]Puhu: *Noggle Ficklespragg* [QT8282 Noggle's Lost Satchel]
-[G 51.9,39.2 Silithus][V Myy harmaat roinat] (*Calandrath*)
 [G 49.2,34.2 Silithus]Puhu: *Commander Mar'alith* [QT8287 A Terrible Purpose]
 [G 40.9,42.2 Silithus]Kerää *Encrypted Twilight Text* (Twilight Avenger, Twilight Geolord, Twilight Stonecaller) [QC8323,1 True Believers]
 [G 67.2,69.8 Silithus]Puhu: *Hermit Ortell* [QT8323 True Believers]
@@ -3144,8 +3138,7 @@ Guidelime.registerGuide([[
 [OC]*Dungeon: Dire Maul* (suositus taso 58+, ryhmä). Seuraavat rivit hakevat puuttuvat dungeon-questit, vievät sisäänkäynnille (Feralas) ja palauttavat questit. Jos et tee dungeonia, ohita ne.
 [G 48.7,36.7 Silithus]Lennä (*Runk Windtamer*): [F Camp Mojache]
 [G 76.9,37.4 Feralas]Puhu: *Azj'Tordin* [QA7441 Pusillin and the Elder Azj'Tordin]
-[G 76.2,43.8 Feralas]Puhu: *Talo Thornhoof* [QT7492 Camp Mojache]
-[G 76.2,43.8 Feralas]Puhu: *Talo Thornhoof* [QA7489 Lethtendris's Web]
+[G 76.2,43.8 Feralas]Puhu: *Talo Thornhoof* [QT7492 Camp Mojache] [QA7489 Lethtendris's Web]
 [G 74.4,44.0 Feralas]Puhu: *Sage Korolusk* [QA7481 Elven Legends]
 [G 74.7,42.6 Feralas][V Myy harmaat roinat] ja [R korjaa varusteet] (*Worb Strongstitch*)
 [G 59.2,45.1 Feralas]Dungeonin sisällä - Puhu: *Knot Thimblejack* [QA5518 The Gordok Ogre Suit] [QA5525 Free Knot!]

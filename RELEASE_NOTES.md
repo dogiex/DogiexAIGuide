@@ -1,3 +1,34 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.10
+
+Quest-datan päivitys (QuestieDB 498734b -> 5c145e3, 1.1.6; 10 committia: Foreverin quest- ja NPC-korjauksia, Riverglades-questien korjaukset, DB-korjauksia, alueet). Oppaan questeista muuttui 11 (lähinnä tasovaatimukset ja luokkarajat), ja 1 quest lisättiin dataan (Field of Honor: Week 4, PvP, ei reitillä).
+
+Uutta reitillä (datan korjausten ansiosta):
+- Alliance Paladin (Coldridge- ja Northshire-aloitukset): A Taste of Darkness (95771), antaja ja palauttaja lisättiin dataan, ja quest on nyt Paladinille.
+- Horde Paladin: Oi! (84318), rotumaski sisältää nyt kaikki rodut (ennen vain Alliance). Season of Discovery -quest, olemassaolo Foreverissa epävarma: ohita, jos sitä ei löydy.
+
+Datan perusteella pois:
+- Oh No Ye Don't! (84319) on nyt vain Paladinille (taso 54, esiquest Oi!): pois kaikilta muilta luokilta kummallakin factionilla.
+- Scalebeard (90789) on nyt vain Magelle ja vaatii tason 60: pois kaikilta Horden luokilta (myös Magelta, koska reitti päättyy tasolle 60).
+- The Darkreaver Menace (97169, Scholomance) on nyt vain Shamanille (taso 58): pois Alliancen muilta luokilta. Siksi Scholomancen dungeon-questien määrä laski Alliancen muilla luokilla yhdellä; Alliance Shaman pitää questin.
+
+Reittisiirtymä (kattavuus ennallaan, normaali quest):
+- Alliance Rogue (915 -> 912, josta 2 yllä olevista datamuutoksista): pois End of the Dark Horde (97883, Stormwind, taso 60), koska reitti ei enää kulje Stormwindin kautta tasolla 60.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class-kattavuus ennallaan; dungeon-kattavuus ennallaan paitsi yllä mainittu Scholomance (datamuutos).
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5935 -> 5930 min (-0,1 %), Alliance 6196 -> 6199 min (+0,1 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei avoimia issueita.
+
+Quest-data: QuestieDB (Forever), commit 5c145e3 (1.1.6). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.10.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.10.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.9
 
 Quest-datan päivitys (QuestieDB 4377c98 -> 498734b, 1.1.6; 13 committia: Foreverin quest-, objekti- ja esinedatan päivitys, NPC-spawnien harvennus, preQuestSingle-kenttien poisto preQuestGroupin hyväksi, quest-relaatioiden korjauksia, käännökset). Oppaan questeista muuttui 25 (lähinnä vaihtoehtoversiot `exclusiveTo`, esiquestiryhmät ja rotumaskit).

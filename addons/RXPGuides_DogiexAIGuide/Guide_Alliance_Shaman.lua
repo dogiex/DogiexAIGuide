@@ -4694,9 +4694,9 @@ step
     .target Essene Villard
 step
     .goto 1437/0,-2515.19,-2373.93
-    >>Kerää |cRXP_LOOT_Essene's Necklace|r
-    >>Kerää |cRXP_LOOT_Essene's Waterskin|r
-    >>Kerää |cRXP_LOOT_Essene's Spellbook|r
+    >>Kerää |cRXP_LOOT_Essene's Necklace|r (|cRXP_PICK_Essene's Necklace|r)
+    >>Kerää |cRXP_LOOT_Essene's Waterskin|r (|cRXP_PICK_Essene's Waterskin|r)
+    >>Kerää |cRXP_LOOT_Essene's Spellbook|r (|cRXP_PICK_Essene's Spellbook|r)
     .complete 88757,1
     .complete 88757,3
     .complete 88757,2
@@ -13923,10 +13923,9 @@ step
     .complete 5542,2
     .mob Plaguehound
 step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .accept 84319 >>Ota: Oh No Ye Don't!
-    .target Orthas
+    .goto 1423/0,-4592.28,2049.07
+    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
+    .complete 5211,1
 step
     .goto 1423/0,-3594.20,1455.67
     >>Puhu: |cRXP_FRIENDLY_Pamela Redpath|r
@@ -13957,20 +13956,8 @@ step
     .turnin 6164 >>Palauta: Augustus' Receipt Book
     .target Augustus the Touched
 step
-    .goto 1423/0,-3176.90,2969.27
-    >>Kerää |cRXP_LOOT_Partially-Digested Plate Armor|r (|cRXP_ENEMY_Stitched Horror|r, |cRXP_ENEMY_Abomination|r)
-    .complete 84319,1
-    .mob Stitched Horror
-    .mob Abomination
-step
-    .goto 1423/0,-4553.56,2014.67
-    >>Puhu: |cRXP_FRIENDLY_Orthas|r
-    .turnin 84319 >>Palauta: Oh No Ye Don't!
-    .target Orthas
-step
-    .goto 1423/0,-4592.28,2049.07
-    >>Puhu: |cRXP_FRIENDLY_Darrowshire Spirit|r
-    .complete 5211,1
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-5263.41,2152.27
     >>Puhu: |cRXP_FRIENDLY_Caretaker Alen|r
@@ -13981,10 +13968,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Carlin Redpath|r
     .turnin 5211 >>Palauta: Defenders of Darrowshire
     .target Carlin Redpath
-step
-    .goto 1423/0,-5321.05,2261.20
-    .vendor >>Myy harmaat roinat (Craftsman Wilhelm)
-    .target Craftsman Wilhelm
 step
     .zone Darkshore >>Matkusta: Darkshore. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Laiva Menethil Harborista Auberdineen tai lento Rut'theranista. Auberdine on länsirannikolla
 step
@@ -13997,8 +13980,12 @@ step
     >>Kerää |cRXP_LOOT_Sacred Highborne Writings|r (|cRXP_PICK_Sacred Highborne Writings|r)
     .complete 5246,1
 step
-    .hs >>Hearthstone: Jessica Chambers
-    .cooldown item,6948,>0
+    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
+step
+    .goto 1437/0,-782.03,-3793.12
+    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
+    .target Shellei Brondir
+    .zoneskip Eastern Plaguelands
 step
     .goto 1423/0,-4256.72,3233.00
     >>Puhu: |cRXP_FRIENDLY_Aurora Skycaller|r
@@ -14158,12 +14145,8 @@ step
     .accept 5065 >>Ota: The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
 step
-    .zone Wetlands >>Matkusta: Wetlands. Vaihda mannerta laivalla (Menethil Harbor - Auberdine / Theramore) ja lennä perille. Loch Modanin luoteiskulmasta Dun Algazin solan läpi Wetlandsiin. Menethil Harbor on länsirannikolla
-step
-    .goto 1437/0,-782.03,-3793.12
-    .fly Light's Hope Chapel >>Lennä: Light's Hope Chapel
-    .target Shellei Brondir
-    .zoneskip Eastern Plaguelands
+    .hs >>Hearthstone: Jessica Chambers
+    .cooldown item,6948,>0
 step
     .goto 1423/0,-4983.77,3468.07
     >>Kerää |cRXP_LOOT_Third Mosh'aru Tablet|r (|cRXP_PICK_Third Mosh'aru Tablet|r)
