@@ -3023,21 +3023,21 @@ step
     .accept 92462 >>Ota: Infestation Investigation
     .target Elatrell Featherlight
 step
-    .goto 2521,43.80,26.20
+    .goto 2521,44.90,24.90
     >>Tapa |cRXP_ENEMY_Pesky Cirrusfly|r
     .complete 92462,1
     .mob Pesky Cirrusfly
+step
+    .goto 2521,43.80,24.10
+    >>Puhu: |cRXP_FRIENDLY_Halaan Hawk-Eye|r
+    .accept 94414 >>Ota: The Anchors of Zephras
+    .target Halaan Hawk-Eye
 step
     .goto 2521,43.40,24.80
     >>Puhu: |cRXP_FRIENDLY_Elatrell Featherlight|r
     .turnin 92462 >>Palauta: Infestation Investigation
     .accept 92463 >>Ota: The Cirrusfly Queen
     .target Elatrell Featherlight
-step
-    .goto 2521,43.80,24.10
-    >>Puhu: |cRXP_FRIENDLY_Halaan Hawk-Eye|r
-    .accept 94414 >>Ota: The Anchors of Zephras
-    .target Halaan Hawk-Eye
 step
     .goto 2521,42.00,23.50
     >>Puhu: |cRXP_FRIENDLY_Rorian the Dayseeker|r
@@ -3050,9 +3050,12 @@ step
     .accept 92465 >>Ota: Agitators
     .target Yala Windwatcher
 step
-    .goto 2521,46.80,22.20
+    .goto 2521,47.00,22.30
+    >>Tapa |cRXP_ENEMY_Roiling Winds|r
     >>Tapa |cRXP_ENEMY_Juvenile Vuldren|r
+    .complete 92465,2
     .complete 92461,1
+    .mob Roiling Winds
     .mob Juvenile Vuldren
 step
     .goto 2521,42.00,23.50
@@ -3136,13 +3139,14 @@ step
     .turnin 93552 >>Palauta: Harvesting Windstones
     .target Dalia the Collector
 step
-    .goto 2521,44.50,21.60
-    >>Tapa |cRXP_ENEMY_Roiling Winds|r
+    .goto 2521,46.40,21.60
     >>Tapa |cRXP_ENEMY_Al'Aketh Convert|r
-    .complete 92465,2
     .complete 92465,1
-    .mob Roiling Winds
     .mob Al'Aketh Convert
+step
+    .goto 2521,42.49,23.79
+    .trainer >>Hunter-trainer (taso 6): Hunter's Mark
+    .target Tai'ree Farsight
 step
     .goto 2521,47.20,22.00
     >>Puhu: |cRXP_FRIENDLY_Yala Windwatcher|r
@@ -3155,11 +3159,7 @@ step
     .turnin 92469 >>Palauta: Return to Rorian
     .target Rorian the Dayseeker
 step
-    .goto 2521,42.49,23.79
-    .trainer >>Hunter-trainer (taso 6): Hunter's Mark
-    .target Tai'ree Farsight
-step
-    .goto 2521,37.10,25.60
+    .goto 2521,39.80,27.20
     >>Tapa |cRXP_ENEMY_Ursera Scavenger|r
     >>Kerää |cRXP_LOOT_Head of Urs'anah|r (|cRXP_ENEMY_Urs'anah|r)
     .complete 92470,1
@@ -3253,7 +3253,7 @@ step
     .accept 96646 >>Ota: Camping 101: Cooking
     .target Raan Wildwind
 step
-    .goto 2521,40.40,45.40
+    .goto 2521,40.30,45.40
     >>Tapa |cRXP_ENEMY_Windshaper Novice Seer|r
     .complete 94413,1
     .mob Windshaper Novice Seer
@@ -3303,7 +3303,7 @@ step
     .accept 92553 >>Ota: Restocking the Larders
     .target Zerril Softbreeze
 step
-    .goto 2521,44.20,43.60
+    .goto 2521,44.50,43.00
     >>Kerää |cRXP_LOOT_Prideclaw Pelt|r (|cRXP_ENEMY_Prideclaw|r)
     .complete 92515,1
     .mob Prideclaw
@@ -3315,12 +3315,12 @@ step
 step
     .goto 2521,44.00,42.60
     >>Kerää |cRXP_LOOT_Strider Meat|r (|cRXP_ENEMY_Galestrider|r)
-    >>Kerää |cRXP_LOOT_Small Egg|r (|cRXP_ENEMY_Galestrider|r, |cRXP_ENEMY_Hippogryph Youth|r, |cRXP_ENEMY_Highlands Ursera|r)
+    >>Kerää |cRXP_LOOT_Small Egg|r (|cRXP_ENEMY_Galestrider|r, |cRXP_ENEMY_Hippogryph Youth|r, |cRXP_ENEMY_Shadowgale Ursera|r)
     .complete 92553,2
     .complete 92553,1
     .mob Galestrider
     .mob Hippogryph Youth
-    .mob Highlands Ursera
+    .mob Shadowgale Ursera
 step
     .goto 2521,43.90,43.80
     >>Puhu: |cRXP_FRIENDLY_Zerril Softbreeze|r
@@ -3511,7 +3511,7 @@ step
     .mob Al'Aketh Healer
     .mob Al'Aketh Stormcaller
 step
-    .goto 2521,62.90,63.30
+    .goto 2521,62.80,63.10
     >>Kerää |cRXP_LOOT_Windsong Crawler Meat|r (|cRXP_ENEMY_Windsong Crawler|r)
     >>Tapa |cRXP_ENEMY_Windsong Crawler|r
     .complete 93317,1
@@ -3544,7 +3544,7 @@ step
     .accept 94013 >>Ota: Taming the Beast
     .target Quel'ana Quickgale
 step
-    .goto 2521,59.70,72.70
+    .goto 2521,59.40,73.50
     >>Tapa |cRXP_ENEMY_Vuldren Alpha|r
     .complete 94013,1
     .mob Vuldren Alpha
@@ -3766,11 +3766,11 @@ step
     .turnin 94489 >>Palauta: The Wounds of Betrayal
     .target Elegael Thornpaw
 step
-    .goto 2521,63.90,45.50
-    >>Kerää |cRXP_LOOT_Al'Aketh Cultist's Ear|r (|cRXP_ENEMY_Al'Aketh Pillager|r, |cRXP_ENEMY_Al'Aketh Preacher|r, |cRXP_ENEMY_Al'Aketh Guardian|r)
+    .goto 2521,62.70,46.00
+    >>Kerää |cRXP_LOOT_Al'Aketh Cultist's Ear|r (|cRXP_ENEMY_Al'Aketh Preacher|r, |cRXP_ENEMY_Al'Aketh Pillager|r, |cRXP_ENEMY_Al'Aketh Guardian|r)
     .complete 93165,1
-    .mob Al'Aketh Pillager
     .mob Al'Aketh Preacher
+    .mob Al'Aketh Pillager
     .mob Al'Aketh Guardian
 step
     .goto 2521,63.80,36.00
@@ -3896,13 +3896,13 @@ step
     .accept 92645 >>Ota: Breaking the Breaker
     .target Yorana Windyreed
 step
-    .goto 2521,69.40,67.30
-    >>Tapa |cRXP_ENEMY_Al'Aketh Healer|r
+    .goto 2521,69.50,67.20
     >>Tapa |cRXP_ENEMY_Al'Aketh Brawler|r
-    .complete 92642,1
+    >>Tapa |cRXP_ENEMY_Al'Aketh Healer|r
     .complete 92642,2
-    .mob Al'Aketh Healer
+    .complete 92642,1
     .mob Al'Aketh Brawler
+    .mob Al'Aketh Healer
 step
     .goto 2521,69.70,67.10
     >>Puhu: |cRXP_FRIENDLY_Yorana Windyreed|r
@@ -3910,12 +3910,12 @@ step
     .target Yorana Windyreed
 step
     .goto 2521,66.00,67.40
-    >>Kerää |cRXP_LOOT_Al'Aketh Windstone Charm|r (|cRXP_ENEMY_Al'Aketh Pillager|r, |cRXP_ENEMY_Al'Aketh Preacher|r, |cRXP_ENEMY_Al'Aketh Guardian|r)
+    >>Kerää |cRXP_LOOT_Al'Aketh Windstone Charm|r (|cRXP_ENEMY_Al'Aketh Preacher|r, |cRXP_ENEMY_Al'Aketh Pillager|r, |cRXP_ENEMY_Al'Aketh Guardian|r)
     >>Tapa |cRXP_ENEMY_Commander Belguilos|r
     .complete 92834,1
     .complete 92645,1
-    .mob Al'Aketh Pillager
     .mob Al'Aketh Preacher
+    .mob Al'Aketh Pillager
     .mob Al'Aketh Guardian
     .mob Commander Belguilos
 step
@@ -4542,11 +4542,6 @@ step
     .turnin 418 >>Palauta: Thelsamar Blood Sausages
     .target Vidra Hearthstove
 step
-    .goto 1432/0,-3748.05,-5368.66
-    >>Puhu: |cRXP_FRIENDLY_Bingles Blastenheimer|r
-    .accept 2038 >>Ota: Bingles' Missing Supplies
-    .target Bingles Blastenheimer
-step
     .goto 1432/0,-3811.49,-5694.27
     >>Puhu: |cRXP_FRIENDLY_Prospector Ironband|r
     .accept 298 >>Ota: Excavation Progress Report
@@ -4561,13 +4556,18 @@ step
     .accept 385 >>Ota: Crocolisk Hunting
     .target Marek Ironheart
 step
-    .goto 1432/0,-3781.15,-5431.21
+    .goto 1432/0,-3855.62,-5416.49
     >>Kerää |cRXP_LOOT_Crocolisk Meat|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     >>Kerää |cRXP_LOOT_Crocolisk Skin|r (|cRXP_ENEMY_Daggerfang|r, |cRXP_ENEMY_Loch Crocolisk|r)
     .complete 385,1
     .complete 385,2
     .mob Daggerfang
     .mob Loch Crocolisk
+step
+    .goto 1432/0,-4250.07,-5622.52
+    >>Puhu: |cRXP_FRIENDLY_Marek Ironheart|r
+    .turnin 385 >>Palauta: Crocolisk Hunting
+    .target Marek Ironheart
 step
     .hs >>Hearthstone: Innkeeper Hearthstove
     .cooldown item,6948,>0
@@ -4577,30 +4577,6 @@ step
     .turnin 298 >>Palauta: Excavation Progress Report
     .accept 301 >>Ota: Report to Ironforge
     .target Jern Hornhelm
-step
-    .goto 1432/0,-3337.06,-5041.21
-    >>Kerää |cRXP_LOOT_Bingles' Wrench|r (|cRXP_PICK_Bingles's Toolbucket|r)
-    .complete 2038,1
-step
-    .goto 1432/0,-3328.78,-4864.61
-    >>Kerää |cRXP_LOOT_Bingles' Screwdriver|r (|cRXP_PICK_Bingles's Toolbucket|r)
-    >>Kerää |cRXP_LOOT_Bingles' Hammer|r (|cRXP_PICK_Bingles's Toolbucket|r)
-    .complete 2038,2
-    .complete 2038,3
-step
-    .goto 1432/0,-3488.77,-4976.83
-    >>Kerää |cRXP_LOOT_Bingles' Blastencapper|r (|cRXP_PICK_Bingles's Blastencapper|r)
-    .complete 2038,4
-step
-    .goto 1432/0,-3748.05,-5368.66
-    >>Puhu: |cRXP_FRIENDLY_Bingles Blastenheimer|r
-    .turnin 2038 >>Palauta: Bingles' Missing Supplies
-    .target Bingles Blastenheimer
-step
-    .goto 1432/0,-4250.07,-5622.52
-    >>Puhu: |cRXP_FRIENDLY_Marek Ironheart|r
-    .turnin 385 >>Palauta: Crocolisk Hunting
-    .target Marek Ironheart
 step
     .goto 1432/0,-2641.96,-5857.99
     >>Puhu: |cRXP_FRIENDLY_Mountaineer Wallbang|r
@@ -4641,82 +4617,6 @@ step
     .goto 1455/0,-1303.40,-4630.97
     >>Puhu: |cRXP_FRIENDLY_Prospector Stormpike|r
     .turnin 301 >>Palauta: Report to Ironforge
-    .target Prospector Stormpike
-step
-    .goto 1455/0,-1149.15,-4876.62
-    .trainer >>|cRXP_WARN_Ammatti: First Aid 50+|r. Opettele Journeyman First Aid (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Nissa Firestone|r
-    .skill firstaid,<50,1
-    .skill firstaid,150,1,1
-    .target Nissa Firestone
-step
-    .goto 1455/0,-1188.60,-4761.45
-    .trainer >>|cRXP_WARN_Ammatti: Cooking 50+|r. Opettele Journeyman Cooking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Daryl Riknussun|r
-    .skill cooking,<50,1
-    .skill cooking,150,1,1
-    .target Daryl Riknussun
-step
-    .goto 1455/0,-1093.64,-4605.70
-    .trainer >>|cRXP_WARN_Ammatti: Fishing 50+|r. Opettele Journeyman Fishing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Grimnur Stonebrand|r
-    .skill fishing,<50,1
-    .skill fishing,150,1,1
-    .target Grimnur Stonebrand
-step
-    .goto 1455/0,-1108.90,-4707.95
-    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Geofram Bouldertoe|r
-    .skill mining,<50,1
-    .skill mining,150,1,1
-    .target Geofram Bouldertoe
-step
-    .goto 1455/0,-1155.55,-4881.21
-    .trainer >>|cRXP_WARN_Ammatti: Herbalism 50+|r. Opettele Journeyman Herbalism (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Reyna Stonebranch|r
-    .skill herbalism,<50,1
-    .skill herbalism,150,1,1
-    .target Reyna Stonebranch
-step
-    .goto 1455/0,-1028.73,-4740.71
-    .trainer >>|cRXP_WARN_Ammatti: Skinning 50+|r. Opettele Journeyman Skinning (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Balthus Stoneflayer|r
-    .skill skinning,<50,1
-    .skill skinning,150,1,1
-    .target Balthus Stoneflayer
-step
-    .goto 1455/0,-1240.31,-4863.06
-    .trainer >>|cRXP_WARN_Ammatti: Alchemy 50+|r. Opettele Journeyman Alchemy (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Tally Berryfizz|r
-    .skill alchemy,<50,1
-    .skill alchemy,150,1,1
-    .target Tally Berryfizz
-step
-    .goto 1455/0,-1129.06,-4787.99
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Bengus Deepforge|r
-    .skill blacksmithing,<50,1
-    .skill blacksmithing,150,1,1
-    .target Bengus Deepforge
-step
-    .goto 1455/0,-1190.10,-4808.62
-    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Thonys Pillarstone|r
-    .skill enchanting,<50,1
-    .skill enchanting,150,1,1
-    .target Thonys Pillarstone
-step
-    .goto 1455/0,-1247.11,-4795.64
-    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Trixie Quikswitch|r
-    .skill engineering,<50,1
-    .skill engineering,150,1,1
-    .target Trixie Quikswitch
-step
-    .goto 1455/0,-1031.74,-4746.94
-    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Fimble Finespindle|r
-    .skill leatherworking,<50,1
-    .skill leatherworking,150,1,1
-    .target Fimble Finespindle
-step
-    .goto 1455/0,-1060.04,-4716.23
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Uthrar Threx|r
-    .skill tailoring,<50,1
-    .skill tailoring,150,1,1
-    .target Uthrar Threx
-step
-    .goto 1455/0,-1303.40,-4630.97
-    >>Puhu: |cRXP_FRIENDLY_Prospector Stormpike|r
     .accept 302 >>Ota: Powder to Ironband
     .target Prospector Stormpike
 step << Dwarf
@@ -4751,6 +4651,18 @@ step
     .fly Thelsamar >>Lennä: Thelsamar
     .target Gryth Thurden
     .zoneskip Loch Modan
+step
+    .goto 1432/0,-3014.88,-5367.00
+    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Brock Stoneseeker|r
+    .skill mining,<50,1
+    .skill mining,150,1,1
+    .target Brock Stoneseeker
+step
+    .goto 1432/0,-3016.26,-5395.89
+    .trainer >>|cRXP_WARN_Ammatti: Alchemy 50+|r. Opettele Journeyman Alchemy (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Ghak Healtouch|r
+    .skill alchemy,<50,1
+    .skill alchemy,150,1,1
+    .target Ghak Healtouch
 step
     .goto 1432/0,-3019.85,-5359.46
     >>Puhu: |cRXP_FRIENDLY_Jern Hornhelm|r
@@ -4830,6 +4742,66 @@ step
     >>Dungeonin sisällä - Puhu: |cRXP_FRIENDLY_Ghostly Attendant|r
     .turnin 96395 >>Palauta: An Ancient Grudge
     .target Ghostly Attendant
+step
+    .goto 1455/0,-1149.15,-4876.62
+    .trainer >>|cRXP_WARN_Ammatti: First Aid 50+|r. Opettele Journeyman First Aid (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Nissa Firestone|r
+    .skill firstaid,<50,1
+    .skill firstaid,150,1,1
+    .target Nissa Firestone
+step
+    .goto 1455/0,-1188.60,-4761.45
+    .trainer >>|cRXP_WARN_Ammatti: Cooking 50+|r. Opettele Journeyman Cooking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Daryl Riknussun|r
+    .skill cooking,<50,1
+    .skill cooking,150,1,1
+    .target Daryl Riknussun
+step
+    .goto 1455/0,-1093.64,-4605.70
+    .trainer >>|cRXP_WARN_Ammatti: Fishing 50+|r. Opettele Journeyman Fishing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Grimnur Stonebrand|r
+    .skill fishing,<50,1
+    .skill fishing,150,1,1
+    .target Grimnur Stonebrand
+step
+    .goto 1455/0,-1155.55,-4881.21
+    .trainer >>|cRXP_WARN_Ammatti: Herbalism 50+|r. Opettele Journeyman Herbalism (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Reyna Stonebranch|r
+    .skill herbalism,<50,1
+    .skill herbalism,150,1,1
+    .target Reyna Stonebranch
+step
+    .goto 1455/0,-1028.73,-4740.71
+    .trainer >>|cRXP_WARN_Ammatti: Skinning 50+|r. Opettele Journeyman Skinning (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Balthus Stoneflayer|r
+    .skill skinning,<50,1
+    .skill skinning,150,1,1
+    .target Balthus Stoneflayer
+step
+    .goto 1455/0,-1126.77,-4790.52
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Groum Stonebeard|r
+    .skill blacksmithing,<50,1
+    .skill blacksmithing,150,1,1
+    .target Groum Stonebeard
+step
+    .goto 1455/0,-1186.15,-4809.04
+    .trainer >>|cRXP_WARN_Ammatti: Enchanting 50+|r. Opettele Journeyman Enchanting (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Gimble Thistlefuzz|r
+    .skill enchanting,<50,1
+    .skill enchanting,150,1,1
+    .target Gimble Thistlefuzz
+step
+    .goto 1455/0,-1247.11,-4795.64
+    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Trixie Quikswitch|r
+    .skill engineering,<50,1
+    .skill engineering,150,1,1
+    .target Trixie Quikswitch
+step
+    .goto 1455/0,-1020.43,-4742.72
+    .trainer >>|cRXP_WARN_Ammatti: Leatherworking 50+|r. Opettele Journeyman Leatherworking (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Gretta Finespindle|r
+    .skill leatherworking,<50,1
+    .skill leatherworking,150,1,1
+    .target Gretta Finespindle
+step
+    .goto 1455/0,-1054.75,-4724.15
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Jormund Stonebrow|r
+    .skill tailoring,<50,1
+    .skill tailoring,150,1,1
+    .target Jormund Stonebrow
 step
     .goto 1455/0,-974.50,-4823.55
     >>Puhu: |cRXP_FRIENDLY_Afadra Dunwall|r
@@ -5045,10 +5017,6 @@ step
     .accept 125 >>Ota: The Lost Tools
     .target Foreman Oslow
 step
-    .goto 1433/0,-2471.43,-9367.01
-    >>Kerää |cRXP_LOOT_Oslow's Toolbox|r (|cRXP_PICK_Sunken Chest|r)
-    .complete 125,1
-step
     .goto 1433/0,-2206.59,-9351.08
     >>Puhu: |cRXP_FRIENDLY_Shawn|r
     .accept 3741 >>Ota: Hilary's Necklace
@@ -5101,19 +5069,25 @@ step
     .accept 131 >>Ota: Delivering Daffodils
     .target Martie Jainrose
 step
+    .goto 1433/0,-2471.43,-9367.01
+    >>Kerää |cRXP_LOOT_Oslow's Toolbox|r (|cRXP_PICK_Sunken Chest|r)
+    .complete 125,1
+step
+    .goto 1433/0,-2668.98,-9162.85
+    >>Kerää |cRXP_LOOT_Crisp Spider Meat|r (|cRXP_ENEMY_Greater Tarantula|r, |cRXP_ENEMY_Tarantula|r)
+    .complete 92,3
+    .mob Greater Tarantula
+    .mob Tarantula
+step
+    .goto 1433/0,-2564.78,-9093.35
+    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
+    .complete 92,2
+    .mob Dire Condor
+step
     .goto 1433/0,-2269.55,-9278.69
     >>Puhu: |cRXP_FRIENDLY_Foreman Oslow|r
     .turnin 125 >>Palauta: The Lost Tools
     .target Foreman Oslow
-step
-    .goto 1433/0,-2666.81,-9110.73
-    >>Kerää |cRXP_LOOT_Crisp Spider Meat|r (|cRXP_ENEMY_Greater Tarantula|r, |cRXP_ENEMY_Tarantula|r)
-    >>Kerää |cRXP_LOOT_Tough Condor Meat|r (|cRXP_ENEMY_Dire Condor|r)
-    .complete 92,3
-    .complete 92,2
-    .mob Greater Tarantula
-    .mob Tarantula
-    .mob Dire Condor
 step
     .goto 1433/0,-2147.98,-9216.43
     >>Puhu: |cRXP_FRIENDLY_Darcy|r
@@ -5371,29 +5345,9 @@ step
     .skill cooking,<10,1
     .target Alanndarian Nightsong
 step
-    .goto 1439/1,436.29,6542.56
-    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Kurdram Stonehammer|r
-    .skill mining,<50,1
-    .skill mining,150,1,1
-    .target Kurdram Stonehammer
-step
-    .goto 1439/1,440.22,6546.06
-    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Delfrum Flintbeard|r
-    .skill blacksmithing,<50,1
-    .skill blacksmithing,150,1,1
-    .target Delfrum Flintbeard
-step
-    .goto 1439/1,433.02,6537.76
-    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Jenna Lemkenilli|r
-    .skill engineering,<50,1
-    .skill engineering,150,1,1
-    .target Jenna Lemkenilli
-step
-    .goto 1439/1,436.95,6563.52
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Grondal Moonbreeze|r
-    .skill tailoring,<50,1
-    .skill tailoring,150,1,1
-    .target Grondal Moonbreeze
+    .goto 1439/1,515.55,6406.32
+    .home >>Aseta Hearthstone tähän (Innkeeper Shaussiy)
+    .target Innkeeper Shaussiy
 step
     .goto 1439/1,446.12,6534.27
     >>Puhu: |cRXP_FRIENDLY_Gorbold Steelhand|r
@@ -5404,14 +5358,6 @@ step
     .goto 1439/1,491.97,6582.30
     >>Puhu: |cRXP_FRIENDLY_Thundris Windweaver|r
     .accept 954 >>Ota: Bashal'Aran
-    .target Thundris Windweaver
-step
-    .goto 1439/1,515.55,6406.32
-    .home >>Aseta Hearthstone tähän (Innkeeper Shaussiy)
-    .target Innkeeper Shaussiy
-step
-    .goto 1439/1,491.97,6582.30
-    >>Puhu: |cRXP_FRIENDLY_Thundris Windweaver|r
     .accept 958 >>Ota: Tools of the Highborne
     .accept 97914 >>Ota: Expanding Horizons
     .target Thundris Windweaver
@@ -5427,6 +5373,12 @@ step
     >>Puhu: |cRXP_FRIENDLY_Sentinel Glynda Nal'Shea|r
     .accept 4811 >>Ota: The Red Crystal
     .target Sentinel Glynda Nal'Shea
+step
+    .goto 1439/1,436.29,6542.56
+    .trainer >>|cRXP_WARN_Ammatti: Mining 50+|r. Opettele Journeyman Mining (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Kurdram Stonehammer|r
+    .skill mining,<50,1
+    .skill mining,150,1,1
+    .target Kurdram Stonehammer
 step
     .goto 1439/1,498.52,6429.47
     >>Puhu: |cRXP_FRIENDLY_Barithras Moonshade|r
@@ -5540,6 +5492,18 @@ step
     .skill fishing,<30,1
     .target Wizbang Cranktoggle
 step
+    .goto 1439/1,440.22,6546.06
+    .trainer >>|cRXP_WARN_Ammatti: Blacksmithing 50+|r. Opettele Journeyman Blacksmithing (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Delfrum Flintbeard|r
+    .skill blacksmithing,<50,1
+    .skill blacksmithing,150,1,1
+    .target Delfrum Flintbeard
+step
+    .goto 1439/1,433.02,6537.76
+    .trainer >>|cRXP_WARN_Ammatti: Engineering 50+|r. Opettele Journeyman Engineering (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Jenna Lemkenilli|r
+    .skill engineering,<50,1
+    .skill engineering,150,1,1
+    .target Jenna Lemkenilli
+step
     .goto 1439/1,400.27,6438.20
     >>Puhu: |cRXP_FRIENDLY_Tharnariun Treetender|r
     .turnin 2118 >>Palauta: Plagued Lands
@@ -5558,19 +5522,20 @@ step
     >>Tapa |cRXP_ENEMY_Rabid Thistle Bear|r
     >>Kerää |cRXP_LOOT_Anaya's Pendant|r (|cRXP_ENEMY_Anaya Dawnrunner|r)
     >>Kerää |cRXP_LOOT_Highborne Relic|r (|cRXP_ENEMY_Writhing Highborne|r, |cRXP_ENEMY_Wailing Highborne|r, |cRXP_ENEMY_Cursed Highborne|r)
-    >>Kerää |cRXP_LOOT_Feather of Jai'vhanel|r (|cRXP_ENEMY_Jai'vhanel|r)
     .complete 2138,1
     .complete 963,1
     .complete 958,1
-    .complete 98025,1
     .mob Rabid Thistle Bear
     .mob Anaya Dawnrunner
     .mob Writhing Highborne
     .mob Wailing Highborne
 step
-    .goto 1439/1,164.47,5634.73
+    .goto 1439/1,46.57,5682.77
+    >>Kerää |cRXP_LOOT_Feather of Jai'vhanel|r (|cRXP_ENEMY_Jai'vhanel|r)
     >>Käytä / kerää: |cRXP_PICK_Ancient Flame|r
+    .complete 98025,1
     .complete 957,1
+    .mob Jai'vhanel
 step
     .goto 1439/1,583.67,5237.37
     >>Klikkaa: |cRXP_PICK_Beached Sea Creature|r
@@ -5720,6 +5685,12 @@ step
     .goto 1439/1,515.55,6406.32
     .vendor >>Osta ammuksia (quiver täyteen), vettä (Melon Juice) ja ruokaa itsellesi ja lemmikille
     .target Innkeeper Shaussiy
+step
+    .goto 1439/1,436.95,6563.52
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Grondal Moonbreeze|r
+    .skill tailoring,<50,1
+    .skill tailoring,150,1,1
+    .target Grondal Moonbreeze
 step
     .goto 1439/1,491.97,6582.30
     >>Puhu: |cRXP_FRIENDLY_Thundris Windweaver|r
@@ -6150,12 +6121,6 @@ step
     .skill engineering,150,1,1
     .target Jenna Lemkenilli
 step
-    .goto 1439/1,436.95,6563.52
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Grondal Moonbreeze|r
-    .skill tailoring,<50,1
-    .skill tailoring,150,1,1
-    .target Grondal Moonbreeze
-step
     .goto 1439/1,491.97,6508.07
     >>Puhu: |cRXP_FRIENDLY_Archaeologist Hollee|r
     .accept 729 >>Ota: The Absent Minded Prospector
@@ -6239,7 +6204,7 @@ step
     .mob Raging Reef Crawler
     .mob Encrusted Tide Crawler
 step
-    .goto 1439/1,-294.03,7761.30
+    .goto 1439/1,-366.08,7853.00
     >>Kerää |cRXP_LOOT_Rod of Deep Dominion|r (|cRXP_ENEMY_Stormscale Beastmistress|r)
     .complete 87760,1
     .mob Stormscale Beastmistress
@@ -6378,6 +6343,12 @@ step
     .skill leatherworking,<125,1
     .skill leatherworking,225,1,1
     .target Telonis
+step
+    .goto 1457/1,2267.27,10080.37
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Me'lynn|r
+    .skill tailoring,<50,1
+    .skill tailoring,150,1,1
+    .target Me'lynn
 step
     .goto 1457/1,2267.27,10080.37
     .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Me'lynn|r
@@ -6856,12 +6827,6 @@ step
     .skill herbalism,225,1,1
     .target Tannysa
 step
-    .goto 1453/0,793.70,-8939.53
-    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Lawrence Schneider|r
-    .skill tailoring,<50,1
-    .skill tailoring,150,1,1
-    .target Lawrence Schneider
-step
     .goto 1453/0,520.57,-8953.78
     >>Puhu: |cRXP_FRIENDLY_General Marcus Jonathan|r
     .turnin 95195 >>Palauta: Bloodied Insignia
@@ -7239,6 +7204,12 @@ step
     .skill leatherworking,<125,1
     .skill leatherworking,225,1,1
     .target Simon Tanner
+step
+    .goto 1453/0,816.46,-8958.87
+    .trainer >>|cRXP_WARN_Ammatti: Tailoring 50+|r. Opettele Journeyman Tailoring (max 150) ja uudet reseptit: |cRXP_FRIENDLY_Sellandus|r
+    .skill tailoring,<50,1
+    .skill tailoring,150,1,1
+    .target Sellandus
 step
     .goto 1453/0,816.46,-8958.87
     .trainer >>|cRXP_WARN_Ammatti: Tailoring 125+|r. Opettele Expert Tailoring (max 225) ja uudet reseptit: |cRXP_FRIENDLY_Sellandus|r
@@ -13586,7 +13557,7 @@ step
     .accept 86925 >>Ota: Toil and Trouble
     .accept 86926 >>Ota: Felfire Burn, Cauldron Bubble
 step
-    .goto 1447/1,-6263.80,4655.27
+    .goto 1447/1,-6263.80,4651.89
     >>Kerää |cRXP_LOOT_Satyrweed|r (|cRXP_PICK_Satyrweed Bramble|r)
     >>Kerää |cRXP_LOOT_Legashi Firewater Recipe|r (|cRXP_ENEMY_Legashi Hellraiser|r, |cRXP_ENEMY_Legashi Soulstealer|r, |cRXP_ENEMY_Legashi Blackguard|r)
     .complete 86926,1
@@ -15612,7 +15583,7 @@ step
     .accept 3824 >>Ota: Gor'tesh the Brute Lord
     .target Oralius
 step
-    .goto 1428/0,-1901.14,-8081.47
+    .goto 1428/0,-1898.21,-8087.33
     >>Kerää |cRXP_LOOT_Gor'tesh's Lopped Off Head|r (|cRXP_ENEMY_Grubbub|r, |cRXP_ENEMY_Gor'tesh|r)
     >>Kerää |cRXP_LOOT_Blackrock Medallion|r (|cRXP_ENEMY_Blackrock Slayer|r, |cRXP_ENEMY_Blackrock Warlock|r, |cRXP_ENEMY_Blackrock Soldier|r)
     .complete 3824,1
@@ -17688,7 +17659,7 @@ step
     .target Caylais Moonfeather
     .zoneskip Winterspring
 step
-    .goto 1452/1,-4228.77,7903.80
+    .goto 1452/1,-4278.47,7903.80
     >>Kerää |cRXP_LOOT_Winterspring Blood Sample|r (|cRXP_ENEMY_Shardtooth Mauler|r, |cRXP_ENEMY_Elder Shardtooth|r, |cRXP_ENEMY_Frostsaber Stalker|r)
     .complete 8906,1
     .complete 97447,1

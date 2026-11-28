@@ -8,6 +8,7 @@ Opasta ei ole pelitestattu kokonaisuutena. Quest-data tulee QuestieDB:n Forever-
 - **Noin 30 questia kummallekin factionille**: kohde on elite- tai rare-mob (esim. WANTED: Bruuz, Chol'aruk the Ravener) tai Foreverin uusi quest ilman sijaintitietoa (esim. Finding Warmth, Rime's Wrath, Important Heirlooms).
 - **An Alarming Request, Starving Arcane ja Heart of Disruption** (Alliance, Dalaran, v4.5): QuestieDB-datassa questin antajalta (Emissary Jacques) puuttuu faction-tieto, joten ne puuttuvat oppaasta.
 - **The Source of the Corruption** (Felwood/Mount Hyjal, Horde v4.8, Alliance v4.9): QuestieDB-datassa palauttaja Ketharas on vain Alliancelle ystävällinen ja nyt vain Mount Hyjalissa, joten quest puuttuu kummankin factionin oppaasta. Jos teet sen pelissä, kerro missä Ketharas on ja onnistuiko palautus.
+- **Ratsuquestit Your First Riding Wolf ja An Epic Ride** (Horde, v4.11): QuestieDB näyttää ne nyt vasta, kun hahmolla on Riding-taito, eikä opas opeta ratsastusta, joten ne puuttuvat oppaasta.
 - **22 questia**, joiden tavoite-esineelle datassa ei ole lähdettä (esim. Elixir of Agony, Coolant Heads Prevail), ja 3 maineeseen sidottua questia.
 
 ## Class-questit, jotka eivät ole reitillä

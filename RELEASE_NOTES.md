@@ -1,3 +1,29 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.11
+
+Quest-datan päivitys (QuestieDB 5c145e3 -> 593e1d5, 1.1.6; 19 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, ratsuquestien tavoitteet ja Riding-taitovaatimus, Riverglades-questien korjauksia, uusien dungeonien merkinnät, käännökset). Oppaan questeista muuttui 13, ja dataan lisättiin 2 questia (tason 60 setti-questit, eivät reitillä).
+
+Datan perusteella pois:
+- Horden ratsuquestit Your First Riding Wolf (96994, Orc) ja An Epic Ride (99215 Orc, 99211 Undead): pois Hunterilta, Shamanilta (96994, 99215), Paladinilta ja Priestiltä (99211) sekä Magelta, Roguelta, Warlockilta ja Warriorilta (kaikki kolme). QuestieDB näyttää ne nyt vasta, kun hahmolla on Riding-taito (requiredSpell 33388 / 33391), eikä opas opeta ratsastusta.
+
+Reittisiirtymät (kattavuus ennallaan; normaaleja questeja ellei mainittu):
+- Horde Warrior (963 -> 919): heikkojen questien karsinta toimii taas (v4.9:ssä se peruttiin kokonaan, ks. Korjatut). Pois 44 aika-XP-suhteeltaan heikkoa questia, mm. Are We There, Yeti? -ketju (977, 3783, 5163) ja siihen liittyvä ammattiquest A Yeti of Your Own (8798, Engineering), Un'Goro-questit (3761, 3762, 3782, 4296, 2954, 2965-2968), Feralasin 1123-1126, A Bundle of Hides -ketju (6361-6364), 201, 494, 728, 736, 737, 868, 893, 1153, 1164, 1238-1240, 1261, 1262, 1393, 2440, 4449, 4450, 5361, 6541, 6542, 6844, 6845; versiot 1018 -> 1004, 5095 -> 5094; uutena Study of the Elements: Rock (710-712). Simuloitu aika lyheni 172-206 min.
+- Alliance, kaikki luokat: pois Bingles' Missing Supplies (2038, Loch Modan). Druid: uutena Therylune's Escape (945). Rogue: uutena Stonetalon Supply Run (86574). Warlock (916 -> 919): uutena 1056, 1057, 1059, 86574.
+
+Tarkistukset:
+- Kaikki luokat tasolle 60 kummallakin factionilla. Class- ja dungeon-kattavuus ennallaan.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5930 -> 5892 min (-0,6 %, Warrior -172...-206 min), Alliance 6199 -> 6193 min (-0,1 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: ei. Parannusehdotus #5 (hearthstonen asetuskohta) odottaa ylläpitäjän päätöstä.
+
+Quest-data: QuestieDB (Forever), commit 593e1d5 (1.1.6). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.11.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.11.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.10
 
 Quest-datan päivitys (QuestieDB 498734b -> 5c145e3, 1.1.6; 10 committia: Foreverin quest- ja NPC-korjauksia, Riverglades-questien korjaukset, DB-korjauksia, alueet). Oppaan questeista muuttui 11 (lähinnä tasovaatimukset ja luokkarajat), ja 1 quest lisättiin dataan (Field of Honor: Week 4, PvP, ei reitillä).
