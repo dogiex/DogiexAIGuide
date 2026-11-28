@@ -1,3 +1,22 @@
+Dogiex's AI Guide: 1-60 (Forever) v4.12
+
+Reitin parannus (ehdotus #5): Hearthstonen asetus ei enää jää erilliseksi juoksuksi kesken alueen tehtävien. Asetus tehdään nyt vain questin oton tai palautuksen yhteydessä enintään 80 jaardin päässä majatalosta. Jos sellaista askelta ei heti ole, asetus siirtyy seuraavaan samalla alueella. Ennen asetus saattoi tulla tavoiteaskeleen kohdalle, jolloin majatalolle juostiin erikseen (pahimmillaan noin 690 jaardia, esim. Grom'gol).
+
+- Kaikissa oppaissa yli 150 jaardin sivureissuja asetukselle 46 -> 0. Asetuksia on 53 vähemmän, joten hearthstonea käytetään hieman harvemmin (494 -> 474 kertaa).
+- Questit ja kattavuus ennallaan, kaikki luokat tasolle 60.
+- Simuloitu aika tasolle 60 (timesim.py, 18 s/tappo, 28 yhdistelmää): Horde 5892 -> 5890 min (-0,0 %), Alliance 6193 -> 6194 min (+0,0 %).
+- Validointi 0 virhettä ja Lua-latauskoe kaikille faction- ja luokkayhdistelmille.
+
+Korjatut issuet: #5 (parannusehdotus).
+
+Quest-data: QuestieDB (Forever), commit 593e1d5 (1.1.6). Opasta ei ole pelitestattu kokonaisuutena.
+
+Asennus: poista vanhat kansiot ja pura zip kansioon `World of Warcraft\_forever_\Interface\AddOns\`.
+- RestedXP: `RXPGuides_DogiexAIGuide_v4.12.zip` -> `Interface/AddOns/RXPGuides_DogiexAIGuide`
+- Guidelime: `Guidelime_DogiexAIGuide_v4.12.zip` -> `Interface/AddOns/Guidelime_DogiexAIGuide`
+
+---
+
 Dogiex's AI Guide: 1-60 (Forever) v4.11
 
 Quest-datan päivitys (QuestieDB 5c145e3 -> 593e1d5, 1.1.6; 19 committia: Foreverin quest-, NPC-, objekti- ja esinedatan päivitys, quest-XP-data, ratsuquestien tavoitteet ja Riding-taitovaatimus, Riverglades-questien korjauksia, uusien dungeonien merkinnät, käännökset). Oppaan questeista muuttui 13, ja dataan lisättiin 2 questia (tason 60 setti-questit, eivät reitillä).

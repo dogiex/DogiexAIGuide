@@ -491,7 +491,18 @@ def to_ir(simsteps,known_fp,bounds,start_level,done0=()):
                 r=min(rp,key=lambda r:D(r[1],h[1])); add(dict(t='vendor',area=ez,pos=r[1],npc=r[0])); S['sold']=(ez,ep,S['cnt'])
             add(dict(t='supplies',area=ez,pos=h[1],npc=h[0],level=level,repair=not rp)); S['vend']=S['cnt']
             if not S['block'] and (S['bind'] is None or S['bind'][2]!=h[0]) and ahead[idx]>=12:
-                add(dict(t='home',area=ez,pos=h[1],npc=h[0])); S['bind']=(ez,h[1],h[0],DUNG and (n(h[0],'name')))
+                # v4.12 (ehdotus #5, käyttäjän valinta 2, 28.11.2026): sidonta vain ota/palauta-askeleen vieressä majatalon lähellä
+                # (HOME_NEAR jaardia); muuten se siirtyy seuraavalle sellaiselle askeleelle samalla alueella (alla). Ennen sidonta
+                # lisättiin minkä tahansa askeleen kohdalle (myös tavoitteen, jopa noin 690 jaardin päässä), ja vendor_pass saattoi
+                # karsia huoltoaskeleet sen ympäriltä, jolloin sidonnasta tuli erillinen juoksu kesken käynnin.
+                if t in('accept','turnin') and DY(ez,h[1],ep)<=HOME_NEAR:
+                    add(dict(t='home',area=ez,pos=h[1],npc=h[0])); S['bind']=(ez,h[1],h[0],DUNG and (n(h[0],'name'))); S['phome']=None
+                else: S['phome']=(ez,h)
+        elif S.get('phome'):
+            pz,h=S['phome']
+            if pz!=ez or S['block'] or (S['bind'] and S['bind'][2]==h[0]): S['phome']=None
+            elif not indung and t in('accept','turnin') and DY(ez,h[1],ep)<=HOME_NEAR and ahead[idx]>=12:
+                flush(); add(dict(t='home',area=ez,pos=h[1],npc=h[0])); S['bind']=(ez,h[1],h[0],DUNG and (n(h[0],'name'))); S['phome']=None
         loc=st['loc']
         if t in('accept','turnin'):
             if S['pobj']: flush()
@@ -592,6 +603,7 @@ def reorder_visits(steps):
         for x,l_ in zip(new,lv): x['level']=l_
         out+=new; track(new)
     return out
+HOME_NEAR=80   # v4.12: Hearthstonen sidonta vain, kun ota/palauta-askel on enintään näin monen jaardin päässä majatalosta
 PRUNE_KC=float(os.environ.get('PRUNE_KC','3.0'))   # v4.0 (käyttäjän valinta B 17.11.2026): ketju (aloittaja + jatkot) kannattaa, jos lisäaika <= 3 x saman XP:n grindausaika
 PRUNE_K=2.0   # v2.0 (ehdotus C, käyttäjän päätös 15.11.2026): quest pois, jos sen lisäaika > 2 x saman XP:n grindausaika
 def _cnt(qid,idx):

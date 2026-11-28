@@ -296,10 +296,6 @@ step
     .complete 96821,1
     .mob Ridgeshade Creeper
 step
-    .goto 1411/1,-4686.09,340.52
-    .home >>Aseta Hearthstone tähän (Innkeeper Grosk)
-    .target Innkeeper Grosk
-step
     .goto 1411/1,-4674.99,63.46
     >>Tapa |cRXP_ENEMY_Ridgeshade Lurker|r
     .complete 96821,2
@@ -310,6 +306,10 @@ step
     .turnin 96652 >>Palauta: The Adventurer
     .accept 96604 >>Ota: The Great Outdoors
     .target Brakk
+step
+    .goto 1411/1,-4686.09,340.52
+    .home >>Aseta Hearthstone tähän (Innkeeper Grosk)
+    .target Innkeeper Grosk
 step
     .goto 1411/1,-4712.00,274.96
     >>Puhu: |cRXP_FRIENDLY_Gar'Thok|r
@@ -1130,15 +1130,15 @@ step
     .accept 96659 >>Ota: The Adventurer
     .target Chief Hawkwind
 step
-    .goto 1412/1,-347.44,-2365.23
-    .home >>Aseta Hearthstone tähän (Innkeeper Kauth)
-    .target Innkeeper Kauth
-step
     .goto 1412/1,-357.90,-2498.14
     >>Puhu: |cRXP_FRIENDLY_Kaga Wildhoof|r
     .turnin 96659 >>Palauta: The Adventurer
     .accept 96605 >>Ota: The Great Outdoors
     .target Kaga Wildhoof
+step
+    .goto 1412/1,-347.44,-2365.23
+    .home >>Aseta Hearthstone tähän (Innkeeper Kauth)
+    .target Innkeeper Kauth
 step
     .goto 1412/1,-382.52,-2395.59
     >>Puhu: |cRXP_FRIENDLY_Ruul Eagletalon|r
@@ -3382,10 +3382,6 @@ step
     .accept 903 >>Ota: Prowlers of the Barrens
     .target Sergra Darkthorn
 step
-    .goto 1413/1,-2645.40,-406.94
-    .home >>Aseta Hearthstone tähän (Innkeeper Boorand Plainswind)
-    .target Innkeeper Boorand Plainswind
-step
     .goto 1413/1,-2676.82,-542.74
     >>Puhu: |cRXP_FRIENDLY_Tonga Runetotem|r
     .accept 877 >>Ota: The Stagnant Oasis
@@ -3422,6 +3418,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Regthar Deathgate|r
     .turnin 850 >>Palauta: Kolkar Leaders
     .target Regthar Deathgate
+step
+    .goto 1413/1,-2645.40,-406.94
+    .home >>Aseta Hearthstone tähän (Innkeeper Boorand Plainswind)
+    .target Innkeeper Boorand Plainswind
 step
     .goto 1413/1,-2666.68,-481.94
     >>Puhu: |cRXP_FRIENDLY_Sergra Darkthorn|r
@@ -7906,10 +7906,6 @@ step
     .skill leatherworking,225,1,1
     .target Brawn
 step
-    .goto 1434/0,211.38,-12434.36
-    .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
-    .target Innkeeper Thulbek
-step
     .goto 1434/0,159.69,-12347.15
     >>Puhu: |cRXP_FRIENDLY_Kin'weelay|r
     .accept 596 >>Ota: Bloody Bone Necklaces
@@ -7925,6 +7921,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Gemmil|r
     .accept 97453 >>Ota: Weed Whacked
     .target Gemmil
+step
+    .goto 1434/0,211.38,-12434.36
+    .home >>Aseta Hearthstone tähän (Innkeeper Thulbek)
+    .target Innkeeper Thulbek
 step
     .goto 1434/0,166.07,-12398.20
     >>Puhu: |cRXP_FRIENDLY_Commander Aggro'gosh|r
@@ -8090,10 +8090,6 @@ step
     .fp Booty Bay >>Hae flight path: Booty Bay
     .target Gringer
 step
-    .goto 1434/0,495.34,-14457.65
-    .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
-    .target Innkeeper Skindle
-step
     .goto 1434/0,536.18,-14299.82
     >>Puhu: |cRXP_FRIENDLY_Wharfmaster Lozgil|r
     .turnin 97328 >>Palauta: Anything of Value
@@ -8134,6 +8130,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_First Mate Crazz|r
     .accept 595 >>Ota: The Bloodsail Buccaneers
     .target First Mate Crazz
+step
+    .goto 1434/0,495.34,-14457.65
+    .home >>Aseta Hearthstone tähän (Innkeeper Skindle)
+    .target Innkeeper Skindle
 step
     .goto 1434/0,446.85,-14448.71
     >>Puhu: |cRXP_FRIENDLY_"Sea Wolf" MacKinley|r
@@ -10376,15 +10376,15 @@ step
     .fp Kargath >>Hae flight path: Kargath
     .target Gorrik
 step
-    .goto 1418/0,-2149.31,-6650.09
-    .home >>Aseta Hearthstone tähän (Innkeeper Shul'kar)
-    .target Innkeeper Shul'kar
-step
     .goto 1418/0,-2240.85,-6672.32
     >>Puhu: |cRXP_FRIENDLY_Neeka Bloodscar|r
     .accept 1419 >>Ota: Coyote Thieves
     .accept 1420 >>Ota: Report to Helgrum
     .target Neeka Bloodscar
+step
+    .goto 1418/0,-2149.31,-6650.09
+    .home >>Aseta Hearthstone tähän (Innkeeper Shul'kar)
+    .target Innkeeper Shul'kar
 step
     .goto 1418/0,-2151.30,-6645.78
     >>Puhu: |cRXP_FRIENDLY_Gorn|r
@@ -11485,14 +11485,6 @@ step
     .turnin 7730 >>Palauta: Zukk'ash Infestation
     .target Hadoken Swiftstrider
 step
-    .goto 1444/1,243.07,-4460.01
-    .vendor >>Myy roinat. Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
-    .target Innkeeper Greul
-step
-    .goto 1444/1,243.07,-4460.01
-    .home >>Aseta Hearthstone tähän (Innkeeper Greul)
-    .target Innkeeper Greul
-step
     .goto 1444/1,236.12,-4335.83
     >>Puhu: |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 7731 >>Palauta: Stinglasher
@@ -11555,9 +11547,6 @@ step
     >>Puhu: |cRXP_FRIENDLY_Screecher Spirit|r
     .complete 3520,1
 step
-    .hs >>Hearthstone: Innkeeper Greul
-    .cooldown item,6948,>0
-step
     .goto 1444/1,268.78,-4354.83
     >>|cRXP_WARN_Ammattitehtävä (Leatherworking)|r: palauta jos tavoite on valmis, muuten ohita
     .turnin 2858 >>Palauta: Wild Leather Boots
@@ -11591,6 +11580,14 @@ step
     >>Puhu: |cRXP_FRIENDLY_Talo Thornhoof|r
     .turnin 3063 >>Palauta: Vengeance on the Northspring
     .target Talo Thornhoof
+step
+    .goto 1444/1,155.50,-4371.97
+    .vendor >>Myy harmaat roinat (Bronk)
+    .target Bronk
+step
+    .goto 1444/1,243.07,-4460.01
+    .vendor >>Osta vettä (Morning Glory Dew) ja ruokaa, noin 20+20
+    .target Innkeeper Greul
 step
     .goto 1444/1,197.89,-4422.01
     .fly Orgrimmar >>Lennä: Orgrimmar
@@ -11753,10 +11750,6 @@ step
     .fp Revantusk Village >>Hae flight path: Revantusk Village
     .target Gorkas
 step
-    .goto 1425/0,-4583.39,-622.09
-    .home >>Aseta Hearthstone tähän (Lard)
-    .target Lard
-step
     .goto 1425/0,-4578.00,-530.20
     >>Puhu: |cRXP_FRIENDLY_Qujo|r
     .accept 98203 >>Ota: Witch Doctor Ti'ik
@@ -11766,6 +11759,10 @@ step
     >>Puhu: |cRXP_FRIENDLY_Mystic Yayo'jin|r
     .accept 7844 >>Ota: Cannibalistic Cousins
     .target Mystic Yayo'jin
+step
+    .goto 1425/0,-4583.39,-622.09
+    .home >>Aseta Hearthstone tähän (Lard)
+    .target Lard
 step
     .goto 1425/0,-4624.20,-573.83
     >>Puhu: |cRXP_FRIENDLY_Huntsman Markhor|r
